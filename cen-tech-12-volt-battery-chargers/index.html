@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Cen Tech 12 Volt Battery Chargers</div>
@@ -89,136 +98,168 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SWBBM8S9L._AC_SX236_SY340_QL65_.jpg" alt="12 Volt Automatic Battery Float Trickle Charger by Cen-Tech" /></td>
 		 <td><strong>12 Volt Automatic Battery Float Trickle Charger by Cen-Tech</strong> by <em>Cen-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013XRK9H0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B013XRK9H0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="UpBright NEW AC Power Cord Charging Cable For Schumacher DSR PSJ-2212 PSJ-3612..." /></td>
 		 <td><strong>UpBright NEW AC Power Cord Charging Cable For Schumacher DSR PSJ-2212 PSJ-3612...</strong> by <em>UPBRIGHT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C4KKF86"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00C4KKF86"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Cen-Tech 60581 Manual Car Battery Charger with Engine Start, 10/2/50 Amp/12V" /></td>
 		 <td><strong>Cen-Tech 60581 Manual Car Battery Charger with Engine Start, 10/2/50 Amp/12V</strong> by <em>Cen-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006ZBAPV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B006ZBAPV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51UgvkYLIeL._AC_SX236_SY340_QL65_.jpg" alt="10/2/50 AMP, 12 Volt Battery Charger/Engine Starter" /></td>
 		 <td><strong>10/2/50 AMP, 12 Volt Battery Charger/Engine Starter</strong> by <em>Cen-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018ZRPHIO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B018ZRPHIO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YLk0+c68L._AC_SX236_SY340_QL65_.jpg" alt="New 12 Volt Deluxe Battery Maintainer and Float Charger" /></td>
 		 <td><strong>New 12 Volt Deluxe Battery Maintainer and Float Charger</strong> by <em>adirstor</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M6SN63N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07M6SN63N"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41D3VF5DFtL._AC_SX236_SY340_QL65_.jpg" alt="UpBright AC IN Power Charging Cord Outlet Charger Cable For CenTech 4-in-1 Jump..." /></td>
 		 <td><strong>UpBright AC IN Power Charging Cord Outlet Charger Cable For CenTech 4-in-1 Jump...</strong> by <em>UPBRIGHT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DX9MVXS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01DX9MVXS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vdwLTFFQL._AC_SX236_SY340_QL65_.jpg" alt="UpBright New 13.5V AC/DC Adapter Replacement for Cen-Tech CenTech 3 in 1 38391..." /></td>
 		 <td><strong>UpBright New 13.5V AC/DC Adapter Replacement for Cen-Tech CenTech 3 in 1 38391...</strong> by <em>UPBRIGHT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B015GQD5I6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51nfrAMXjsL._AC_SX236_SY340_QL65_.jpg" alt="MiBOXER-Battery-Charger-Display-Rechargeable" /></td>
-		 <td><strong>MiBOXER-Battery-Charger-Display-Rechargeable</strong> by <em>MiBOXER</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HGP6X5M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+TUc21e7L._AC_SX236_SY340_QL65_.jpg" alt="BONAI-Universal-Rechargeable-Batteries-Discharge" /></td>
-		 <td><strong>BONAI-Universal-Rechargeable-Batteries-Discharge</strong> by <em>BONAI</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075MBQMFJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B015GQD5I6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51tQqzLxUiL._AC_SX236_SY340_QL65_.jpg" alt="12 Volt Automatic Battery Float Trickle Charger by Cen-Tech by Cen-Tech" /></td>
 		 <td><strong>12 Volt Automatic Battery Float Trickle Charger by Cen-Tech by Cen-Tech</strong> by <em>Cen tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018RQDUNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B018RQDUNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41515xTKrwL._AC_SX236_SY340_QL65_.jpg" alt="UpBright NEW 12V - 13.5V AC/DC Adapter For CEN TECH 4 IN 1 3 IN 1 Portable Power..." /></td>
 		 <td><strong>UpBright NEW 12V - 13.5V AC/DC Adapter For CEN TECH 4 IN 1 3 IN 1 Portable Power...</strong> by <em>UPBRIGHT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00TOAZZZC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00TOAZZZC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51i3A3PMIfL._AC_SX236_SY340_QL65_.jpg" alt="Automatic Battery Float Charger from TNM" /></td>
 		 <td><strong>Automatic Battery Float Charger from TNM</strong> by <em>Cen-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Q1F2YJS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00Q1F2YJS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CKKPankML._AC_SX236_SY340_QL65_.jpg" alt="UpBright Car DC Adapter For Streamlight Waypoint Pistol Grip Spotlight 44900..." /></td>
 		 <td><strong>UpBright Car DC Adapter For Streamlight Waypoint Pistol Grip Spotlight 44900...</strong> by <em>UPBRIGHT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00S1ZD9GS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00S1ZD9GS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51acgCDdf7L._AC_SX236_SY340_QL65_.jpg" alt="LGM AC/DC Adapter for CEN TECH 4 in 1 3 in 1 Portable Power Pack # 69401 60657..." /></td>
 		 <td><strong>LGM AC/DC Adapter for CEN TECH 4 in 1 3 in 1 Portable Power Pack # 69401 60657...</strong> by <em>LGM</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GXF1FKM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GXF1FKM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yZOBWpSlL._AC_SX236_SY340_QL65_.jpg" alt="EPtech New Car DC Adapter for Halo Bolt 57720 58830 1201 HALO1201 ACDC Portable..." /></td>
 		 <td><strong>EPtech New Car DC Adapter for Halo Bolt 57720 58830 1201 HALO1201 ACDC Portable...</strong> by <em>EPtech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MGT6151"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07MGT6151"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uIVdufehL._AC_SX236_SY340_QL65_.jpg" alt="EPtech AC/DC Adapter Replacement for Halo Bolt 57720 58830 1201 HALO1201 ACDC..." /></td>
 		 <td><strong>EPtech AC/DC Adapter Replacement for Halo Bolt 57720 58830 1201 HALO1201 ACDC...</strong> by <em>EPtech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M5W6FHN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41176ygMfJL._AC_SX236_SY340_QL65_.jpg" alt="POWERAXIS-Eb1220bl-Eb1220hl-Eb1220hs-Eb1220rs" /></td>
-		 <td><strong>POWERAXIS-Eb1220bl-Eb1220hl-Eb1220hs-Eb1220rs</strong> by <em>POWERAXIS</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MTQS4RL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07M5W6FHN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

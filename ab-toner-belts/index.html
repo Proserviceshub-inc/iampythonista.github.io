@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ab Toner Belts</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51zjdfKnNxL._AC_SX236_SY340_QL65_.jpg" alt="AbXcore-Machine-Exercise-Equipment-Abdominal" /></td>
-		 <td><strong>AbXcore-Machine-Exercise-Equipment-Abdominal</strong> by <em>AbXcore</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017HWT1RQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41MjoIQQgJL._AC_SX236_SY340_QL65_.jpg" alt="ROKOO-Stimulator-Trainer-Replacement-Trimmer" /></td>
-		 <td><strong>ROKOO-Stimulator-Trainer-Replacement-Trimmer</strong> by <em>ROKOO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HMR97T5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAC6AOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKKKACiiigAprybCOM5p1RTDlaAF872pPOJOAuajxVXVI5ZNMlW3lMUoZGVwpbowOCBztPQ45wTQBfEhP8NG9uMAc1ymb+awuleGeGZpYZEjBLfKMBgD6fKT681Z1W1v8XUmmmSW3uoTE0W4qY22EB0z054I+hpAdCZWAyQoHrR5pxyVHrz0rl2s75tXsZ44pl09HiaWNufn8qZWO0np80Q+oz2oOl3r3+oPJA7W84mWEZ5BKqyluemQQPQ/WgDqPMJIAZcnpz1pGl2gMZFCnoSRg1zqaXqIspItpW5klgkilBGIlG3cvtgBh7596hn0G+ghgtYV86yikhniBbLwkTRs6c9RtDEfiPSgDqA5YZVwR7U4Fu5psYXywVQoD1BGD+NOxTAcpPesx7iYTSbZGA3HHNaY61zl7qEVtdOkgbu2R6Zqoq4Gml3Pxlwee4FaVc5banBPMsKh95bAGK6OiSsAUUUVIBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUcvUVJUcvVaAGUo4pBSigBrKx+7M6fTB/nUZt5z01CZfokf/wATU4ooAqmzuT/zFbj/AL9xf/E006WjD97eXrn1E7J/6DirtFAFGXTrOCFpXjluCvQPIzlj2HJpY5LCFjsQRkEAMqHBJAIAI6nnp1q1LCk4VZVDKp3bSMgn3qEadCFKB5PLzkJxtXjHAx0xxjpQBZVg6hhnB9Rg/lS0yONYo1jTO1eBmnUAOHWsOVd0j4badx5AB/nW2OtYj/61/wDeP86qIEUSCK4jyXkZjwxAwPwHFdHWEn+sT/eFbtOY2FFFFQIKKKKACiiigAooooAKKKKACiiigAooooAKzNW1FrGSFUiD7wTyemMf41p1x3jrUJ7CWwMAQ79+dwz6U1bqJmiNdmJ/49V/Oj+3pmbEdqrHGTz2rhD4kv1BOyH1+6f8aRPEd9KYyY4Rn+6p/wAaxxKm6TVHSRpS5VNOpsd9/bV1/wA+Q/76o/tu5HP2Mf8AfVctp11dXzsrMisOQRn/ABrqbTRIp7VJXnmVnGeCMfyryvZ5h/N+K/yOzmwvb8/8w/ty5yR9jGQcEbqT+358kfZBkdRu6VP/AMI/Bn/j4n/Mf4Un/CPQcn7RPz7j/Ck6eY9/xX+Q+bC9vzIf7fn/AOfQf99UDXpz0tV/76qb/hHoP+fmf8x/hVa/0Q29qXtJJZZiQFRiMEnjml7PMu/5f5BzYTt+Y/8At+cDP2QY+tH9vT/8+g/OuS1XUb3S9WOnsIZmVFZnAYDJ7dajOtXKrzGmPqaPZ5l3/FBzYXt+Z2B8QTgZNoMD3pGdQxLMBk5wa4pvEUw48tAO+WNdrgHBIByM8134GOJTl9Yfpt+hhXdJpeyHwurzRhSD8w/nW9WDDjz4sAD5x/Ot6u+RzBRRRUgFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFcN8Rvvad/wAD/pXc1w/xEGW04+7/ANKAOKK7lxSRjCj2qUcEZ9aAuFmXurkYpAb/AIdw9wAx+V8A16NtCAKowqjAFea+GWLzYHOO9elZyo+lMBelFJS0AFRSsS4UdBUtQZ+c59aAOD8SafKviO5uH+64UofbGP5g1l/YrrU7qKy09AZX5dj92Ne5Nei6xpn9qWgEZCzJ90t0I9DVbRNJXSYJFLCSeU5kkAxn0A9hQBV0vwdptiqtcIL2cdXlHyg+y9PzzUu4lj9a3FHH4VgqeT9aqIE8P/HzF/vit6sC3/4+of8AeFb9EgCiiipAKKKKACiiigAooooAKKKKACiiigAooooAK4j4hF/O00YHlnzNx754xXb1xHxEUn+zser/ANKAOObbuUDk5qZwBeXSccN/SqhP7xQTgZ5NWVDTzSG35aUZweuKQGv4UyJpvLQySdAi9TzXpJ4OBXK+CdFOnWL3k/zXExIUf3VrpfNUdc/lQ2luO1yWimeanc4pfMTj5uvSjmXcLMdVLULy305DNcuQp+6ijLOfQCrfmJ/eFc74vuXh+y+WMght304ounsFjB1DxTqlxeBoJfskIOBGuD+Z7mun0LV11S3EUzBb1B8y9BIPUVwLgmRMjgDJ+p//AFVbjdgy+VkMDwR1H40wPSgcZB44rjpNRu/Pnigt9wjkKKQhJb5c/TP/AOqprbxDfQKI5WW4U8ZcfMPxFXJBIAFicLjqWGeKadk3a4JXZDpr30mq2plUrDk7gQOTgY9/X9a62uesQwvIQz7zu64xXQ0N3E1YKKKKQBRRRQAUUVUvNV0/Tv8Aj+vra2/67TKn8zQBbormbn4i+FLRtsmswsf+mSvJ/wCgg1jXfxi8PQMVt4b669GjhCqf++iD+lAHf0V5Jd/Gudsix0RV9HnuM/8AjoA/nWFefFvxNcD91JZ2n/XGHcf/AB4mgD3iqk+q6fbS+VcX1tFL/ckmVT+RNeExeI/FGqYa41i8LOcLHE/lg59QuKdF4dslJN88lxMT8wjJwD6Z9axq14Uvi38jSFKU9j1i++InhnT2ZJNTR5F6pEpY/oMViv8AGPQhIAlrfPHnlvLAx+Ga851TQYzaNPZuZEi+8rj54/8A63sa5zuQeop06saqvEU4ODsz6K03xz4c1WZYbTVYDM2MI+UJJ7DOMn6VkfEV9h03nHzP/IV4VIish46V6be6hJqfgvwpc3rmSZhKhcnltp2gn3wBWhBnSyAZI71YgnSC7t5I+fLKq+O+c5/nVa52Bgw7U8ukNpKij5/OLE/jkUAeuaYpTTYge4JH0qUMo6sfyqDS5fN0i0kHRo6mUnAADD8T/hSfN9kat1HZXAzIKdn0daFDIDwWz6tTs+sZ/Shc3Uegq+WeMqxNc34ukAxGOvl5+ldGCAR+7I9DjpXM+KF3akAT1gzj8TTXmI5MHfFM3910GfwP+NaUapHAGOAazIm/0SYf7QP6Va3tOiEdFHSgCZWJkQ+rDFdM33jXJo+biPP98fzrqyCW4qogTWX/AB/Qf739K6CsCyBGoQZ9T/I1v05CKeranbaNpdxqF44SC3Qsx9fQD3JwPxry8/GyUwjGiBZDnkz5A9O2aPjJq8j3thoqORCIzdTKDw5JKqD9MMfxrzLNSB6dc/GHUYVV00e3eIj7wlbg/lWDffFbxReZEEltZL28qIMfzbP8q5KKeSDOwgqeqnpT3uLZwMW/lv65yKYF291nxBqOTfatdurfwGchf++RgVStdLjuWZZbu3tyOQZT976VJO7M/PXGMCtPRrG2ubaeSUiSQDCxNET83YA+/HvWVafJByLpx5pWMRrYrIyIyuFJAZTwQO9IYJB/AT9DVueKOK6njibdGjlVOc5APr3qBmCgknirTurkvchYbFyy4HuKEB81AR87dv7opHkZTj7zE5AP8NSWPz3YPU5yTTEdfp0f2azlnX76oQp9PWryH5AAgKou4df89ah05kktk2EOMYYA55qcwXAULF5hw33l6n2Oa8CtVUqsm+56SpvkjYYZWGowZUYlUo/+0MZ/z9a47WbQWWpyRqPlJ4+ldqIZEczzL87cIB0XPX8a5jxVJBNcq0EiyMgCybf4T6Vvg5/vbLaxFeFqSvvcw2+6a7USiTwH4cXP+rubhD7cg/1rie1dHbTbvBdlGOsOoyn8Ci/4GvXOEvzo2AA1WVtDdTbC/lsR+fFVUfzbcEelXLU5uEkUtkYJJOfyoEet6aqJpNmkRyiwqM+pxz+ualUKOqnHpxzWF4PvGuLG5gc5MUhZfYGtsFccEfiKmTl0KVupN+7zjYcj2o3R+4x9aYmzHJwfbNP2pj7+Pxpe+Huiq6BuHJJ7E1h+KIwJbaXHLRuh+gwa2wo7PnvWN4mcE2qD+65/lVK/UTt0OCRiYJ1/usDU0ExROOhqGMBWuD22EfiDQFxb7qYizbv5l3D6eYv86l8S6nex6w9rDcSRQKgOyI7SSepz1qppxze249ZF/nSeJj/xUVx8wXCr/Ktae7FLY2/h6Wa7uGZmYl+SxJP3fevRK88+HY/f3GM/6zv/ALteh0p7gtjwP4mzGb4g36n/AJYxRIP++A39a5Kuo+I3/JRdX+kP/opK5fvUjCkIpaKBh5swPDBv94VPBdxpFJ50k8TsMAQL8rfXmq9IxwMmpauC0AXRBwIjk8Bc8UjyENyQ0nt0WmkleB/rG/8AHRQE2jHWmIacAHnJPU1Y04n7TwcH1qEqOpAzT7RttyO2aBnX6KYLyWNrO0Ns0KlJpN3Ezf55yajv/EzwmYaf5T+SwUmUktIe5VR2HqT3q3phMmhzrbgCURuuB/exXK6bLaRXatfwtNAAd0atgk44/I15VOlGrUnKavy9DtlUlCEVF79Tq9O1ZdRme0meMzhcrJCxKOMc4zyCP6VzuutMn+izwxx/ZjtRkGPMBJOTS+H4nn16IxqQFJc+wqXxdcibUFjU5WL5M+/etKdONLE8kNrX9CZzc6PNLe9jDHSr+m3D7Gs+DEXEv0IBH9f0qgKuaWjPd/IhbA5wM13nKbdnNs3Rt0FaVpJsnAA4rHDYzuBVlPcYrRtJQ3QnIHamSegeByDLeFTwV6fiK6rY398flXG+CS8dxN8jBPLPzEYzzXWGWi4E2GA/hP4f/WpAzKeFWojLSeZTuMn3464z7Vznie52XMA/ux/zJraMlch41uDHd265wXjyPzNIDB85V887j83QfjUiuGg/pWMXO8gmrtvKQoFAi5pbbtRtv+uy/wA6XxJIF8RXZLhcBR056VXsJdmr2aDq1wn/AKEK7KbR9Plv5Lye3E074yXOV49ulaQdriauip8Ofma4cA7TKcE9/lr0Kue0nA1CNVUKqqcKowB+FdDSluM8J+Kln9l8evL2u7ZJB9R8v/slcYeteu/GbSjLpen6vGpJtJTHJgfwP3P0IA/4FXkb9akBKSiimMCcUiKzuioheWQhY0AyST0pCRgs33R+tdn4b0tNFtBrOpJm7lGLWA9VB7+xI/Ie5xXPiK6owvu+i7s0pU3UlboUrrwTcW2npJDN52o7S81uPT/ZPqP17VzOeoxgjgg9RXaa3rE2lq7iVv7Uu1wig48iL+8R6nnAPIzk1xeMd8nuT3rLByqzi3Ud+39duxdeMIytAQ0wkqwYdRT6aRkV2GB0Gmaq+nzLOgLwyAeYg9fUe9ac9vomppI0d4LZZiGlThckex+vauRs5/LbyZD8jdCexq0ygEgiuaphlOXPFuL8jWFZxXK1dHRzavZ6bE8elk3F3IArXDDpgYH1wK5S7fzJdu7dsOC3qe9TSSiGPK/fPCj+tUk5BJ5y3eqpUY0k7at7tinUc99h9bPhlzHqe4HHFY1dJ4PsvPuJbl8iJGWLj1IJ/pWxmdtasHbcyI2fVQa2rZUAGIYx9EFZ4a0sWSJnZ55BuSIAZYVsad5N9B5tu+MHDIwGVP4Eg/UGne4FuB8MOmPQVNvqNbN1YsrLn6mnG2nB4UH6EUgHb6N1R+TODzE34DNMYuv3kYfUUrgTF6q3+l2WswCK+iLFD+7kU4ZPoaUyCo21CK0uII7hwkdyxQOeiv2z7HkflTA5y4+H8vmE2upIyZ4EqYI/EVasvASIQb3UWcf3YU2/qa6Rn8snedoHUmkW5iY8SofxpOUU7NjUW9UiODStO0y3k+x2qrJtwZG+Zj+JqCrsrZhfBHSsxj5i8SDj7wHatI9hGnpP/ISX/dNdDXNaHJ5mpLgNgIcM3euloluIoa5pUWuaLeadNwlzEUz/AHT2P4HB/Cvmie3mtJ5bW5UpPbuY5FPYg4r6mry/4p+DYXgk8RWW2KdMC5j/AOew6Aj/AGh+tSB5JmkzuOOw6mpBHuA7A9/SgwhvkHCjqfWmBr+ErSzvtVLXbKzQrugt24ErD/PSug1rV10r/SLsLLqco/cWxOREOxb2Hp3rjFjMbo8bbHQ5VgeQaJEead555DLNIcs7HJJriq4X2lXnk9O39dO/U6IVuSHKlqRSSyTzST3EjSzSnc7seSaZU/k+4o8oV2LTRGBAaQ1P5ajqRSFFFAFV1yMVdikMtsrYwU+Uhaj8h2HyxsffFWbGBgZNwAUr+tICjcufMx/dGB9TTV+UAelap0K8lmZ9iqCeNx5xViHwzcMfmdfqOaYGINzsqRqzyOdqqoyWJ6ACvXLfwzJ4X8LaVbXO37ZNdNNPtOcErgLn2GPxzXK6TotxpF/FqFs6m6gO6MuuQPwNema5drrWiadcxBo98pJU9VIBBFDWgHN6la3MV/FqEJ/c+WEY7dxjYHggdvrWz4Yt7hZLm6mQRwyKkcKrnDAEktzz1bv70kTtahQJpNxHQcnH41pRS3DoHSdXHo6dPyoSdhE17cXNuqC2tftCyZD/AOxx6UaROzQm2a2eHyVHzN0Yn0pUuLxP+WUMn+6xT/Gl/tG5A/e6dIQP+eUit/PFMCzeXaWVm88rFRwqkDOGPA/WqmmalJNc+RcTKSynYO59PrxmnjVbdgRPa3US9xJAWH/juaFvdHWQSebBDIOjSjyiP++sUAaBCH76rjuSOlUJbaw1WaayubSGeGMBsg9/w+tXFa3vonjjmjmR1Iby3B4P0qs2hQBVVDIgU5GOv50gINVt4odMCxAgIVVcsTx9T1qnpwtBCxvIfN3yBFPpWjrmTYjIxlxWfZzSWilFjinUsH+9zxXgY6UVjE5du1+/Q9TD3eHsu/oU9oju2VeAHIA9qbAET5k3MVGC3RR7VIySC43yLt3sWqONZJcLAhK/3jXXk79yp6mWO+KPoaugF21ANIeSh6dB0rp65rw/bYvmmM6OVUrt3An8q6WvWlucAVwviuaTU9RFsM/ZrY9P7z+p+ld0TgE1zL2O92cjlmJP40IDiJfDdncHL2y7vVeDVc+DrEniNx/wI13v2DHaj7D7U7IDgf8AhDLP+6//AH1QPBln/dk/76rv/sXtR9i9qLIDgh4Nsu8bn/gRqRfCNgP+XfP1JruvsQ9KPsQ9KLIDi08L2afdtk/Kp10GBfuwqPwrrvsXtS/Y/aiyA5MaKg6IB+FMbwxazPuePDeq8V2H2MelPWzHpQBykehRqcncx9WqymlKvRa6MWY9KcLQelIDnxpw9Ku29tttBb44WTePxGD/ACrWFqPSpUtRjpQBjyWAMwkZcjGM+lWLO1MZkYDCtjj371pCDHAp4jNAFJ4pODGwXHUHvTolkIzJjHYirnln0zQEx/Dx7UAVnJRd2C3PakDrIdpXJPqKt7QRjB5pFhVTkGgDOn0qwuOZ7GB/cxioP7Es1/493urb/r3uZEH5A4rZ8oMCD3pgtBk9cDpQBhXek3LRBU1m+2A5CybJP1Zc/rVE6Xqkf+rvbWUf9Nbcg/mrf0rqZovl/GmpDuHJwScVxV8NCrO8op/I6adRxjozl1h1eFwWsrafHdLgqPyK0j6Xf33GpXojg/59bMFVP+83U/yrpTGSCMUwQDsOa2wtGFGLUFYivNzauyDQLCKzuwIYwihDgD8K6Os+wi2TEn+7WhW8tWYIRuVNVzbg9qs0VIyqbcUn2YelW6KdwKi24B6Uptgecc1aopXAqi2HpSi2HpVmincCv9mHpR9nHpViikBX+zj0pfIHpU9FAEPkD0pfJFS0UAReSKcIwBT6KAGeWKPLFPooAbsFHlinUUAM8oUhiFSUUARiICl2cU+igCB4s0giAHParAooHcqmGkEFWqWhaA9SKGPYSaloooEf/9k=" alt="Slendertone Abs Abdominal Muscle Toner" /></td>
 		 <td><strong>Slendertone Abs Abdominal Muscle Toner</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0118XMTV0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0118XMTV0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jdeNBiJsL._AC_SX236_SY340_QL65_.jpg" alt="The Flex Belt Flex System Abdominal Toning Belt, Black" /></td>
 		 <td><strong>The Flex Belt Flex System Abdominal Toning Belt, Black</strong> by <em>The Flex Belt</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00340H2TU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00340H2TU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Cl5stOLkL._AC_SX236_SY340_QL65_.jpg" alt="SUNMAS Electric Ab Belt for Women and Men - Effective Muscle Stimulator and Toner..." /></td>
 		 <td><strong>SUNMAS Electric Ab Belt for Women and Men - Effective Muscle Stimulator and Toner...</strong> by <em>SUNMAS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077T98ZK1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077T98ZK1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DIkFMwYmL._AC_SX236_SY340_QL65_.jpg" alt="FAMIDOC Waist Trimmer Ab Belt - FDES107(Newest Gel-Free Permanent Use Silicon..." /></td>
 		 <td><strong>FAMIDOC Waist Trimmer Ab Belt - FDES107(Newest Gel-Free Permanent Use Silicon...</strong> by <em>FAMIDOC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N7RAQ6F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N7RAQ6F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417CUZj+NpL._AC_SX236_SY340_QL65_.jpg" alt="Slendertone Abs3 Abdominal Muscle Toner - Core Abs Workout Belt" /></td>
 		 <td><strong>Slendertone Abs3 Abdominal Muscle Toner - Core Abs Workout Belt</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00V9M76A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00V9M76A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CdLTNQ9uL._AC_SX236_SY340_QL65_.jpg" alt="Slendertone Abs7 Abdominal Muscle Toner - Core Abs Workout Belt" /></td>
 		 <td><strong>Slendertone Abs7 Abdominal Muscle Toner - Core Abs Workout Belt</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B012VQ48XK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B012VQ48XK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61Uk6i0cM7L._AC_SX236_SY340_QL65_.jpg" alt="SHENGMI Muscle Toner, Abdominal Toning Belt Abs Trainer Body Fitness Belt Ab..." /></td>
 		 <td><strong>SHENGMI Muscle Toner, Abdominal Toning Belt Abs Trainer Body Fitness Belt Ab...</strong> by <em>SHENGMI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073ZCZ4PH"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51lS5GJKfmL._AC_SX236_SY340_QL65_.jpg" alt="AQUIVA-Neoprene-Trainer-Adjustable-Trimmer" /></td>
-		 <td><strong>AQUIVA-Neoprene-Trainer-Adjustable-Trimmer</strong> by <em>AQUIVA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0797QC997"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073ZCZ4PH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41p8LtbWz6L._AC_SX236_SY340_QL65_.jpg" alt="cicicute Pro EMS Abdominal Muscle Training Gear Toner Belt ABS Workout Toning..." /></td>
 		 <td><strong>cicicute Pro EMS Abdominal Muscle Training Gear Toner Belt ABS Workout Toning...</strong> by <em>cicicute</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G748N5R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G748N5R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UDtDxZqQL._AC_SX236_SY340_QL65_.jpg" alt="Slendertone CoreFit" /></td>
 		 <td><strong>Slendertone CoreFit</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07K1YCGLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07K1YCGLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YUK43bhsL._AC_SX236_SY340_QL65_.jpg" alt="Slendertone Abs5 Abdominal Muscle Toner - Core Abs Workout Belt - Black" /></td>
 		 <td><strong>Slendertone Abs5 Abdominal Muscle Toner - Core Abs Workout Belt - Black</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000WMNUXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000WMNUXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YJ-hVDsAL._AC_SX236_SY340_QL65_.jpg" alt="SHENGMI Abs Trainer Replacement Gel Sheet Abdominal Toning Belt Muscle Toner..." /></td>
 		 <td><strong>SHENGMI Abs Trainer Replacement Gel Sheet Abdominal Toning Belt Muscle Toner...</strong> by <em>AILIDA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078RD3FNL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B078RD3FNL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bdhqGTpkL._AC_SX236_SY340_QL65_.jpg" alt="Slendertone 0397-5044 Arms Muscle Trainer - Biceps and Triceps Workout" /></td>
 		 <td><strong>Slendertone 0397-5044 Arms Muscle Trainer - Biceps and Triceps Workout</strong> by <em>Slendertone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011U19SX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B011U19SX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51i9Q+1w1vL._AC_SX236_SY340_QL65_.jpg" alt="Abs Stimulator Muscle Toner - FDA Cleared | Rechargeable Wireless EMS Massager..." /></td>
 		 <td><strong>Abs Stimulator Muscle Toner - FDA Cleared | Rechargeable Wireless EMS Massager...</strong> by <em>Flextone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079Y3L143"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079Y3L143"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

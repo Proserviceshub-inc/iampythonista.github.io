@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Outdoor Ceiling Fans</div>
@@ -86,91 +95,99 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31eCfB+Cs7L._AC_SX236_SY340_QL65_.jpg" alt="Turbina-Brushed-Steel-Outdoor-Ceiling" /></td>
-		 <td><strong>Turbina-Brushed-Steel-Outdoor-Ceiling</strong> by <em>Casa Vieja</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M3MNHNL"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4146CfZJPzL._AC_SX236_SY340_QL65_.jpg" alt="Casa-Vieja-Turbina-Oil-Rubbed-Ceiling" /></td>
-		 <td><strong>Casa-Vieja-Turbina-Oil-Rubbed-Ceiling</strong> by <em>Casa Vieja</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007ZPDZLO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Harbor Breeze Twin Breeze Ii 74-in Oil-rubbed Bronze Outdoor Downrod Ceiling..." /></td>
 		 <td><strong>Harbor Breeze Twin Breeze Ii 74-in Oil-rubbed Bronze Outdoor Downrod Ceiling...</strong> by <em>Harbor Breeze</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00TKUVT7O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00TKUVT7O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KmX-kLVEL._AC_SX236_SY340_QL65_.jpg" alt="Honeywell Duvall 52-Inch Tropical Ceiling Fan with Five Wet Rated Wicker Blades..." /></td>
 		 <td><strong>Honeywell Duvall 52-Inch Tropical Ceiling Fan with Five Wet Rated Wicker Blades...</strong> by <em>Honeywell Ceiling Fans</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KGKEXUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KGKEXUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31uSb7s0m7L._AC_SX236_SY340_QL65_.jpg" alt="Merrimack 52-in Antique Bronze Downrod Mount Indoor/Outdoor Ceiling Fan with..." /></td>
 		 <td><strong>Merrimack 52-in Antique Bronze Downrod Mount Indoor/Outdoor Ceiling Fan with...</strong> by <em>Harbor Breeze</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MRNGTY0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MRNGTY0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/3178OkY2mEL._AC_SX236_SY340_QL65_.jpg" alt="Hunter 53119 Sea Wind 48-inch ETL Damp Listed, White Ceiling Fan with Five White..." /></td>
 		 <td><strong>Hunter 53119 Sea Wind 48-inch ETL Damp Listed, White Ceiling Fan with Five White...</strong> by <em>Hunter Fan Company</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ESVXP2M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00ESVXP2M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/316U8ZdFKXL._AC_SX236_SY340_QL65_.jpg" alt="Honeywell Belmar 52-Inch Indoor/Outdoor Ceiling Fan, Five Damp Rated Fan Blades..." /></td>
 		 <td><strong>Honeywell Belmar 52-Inch Indoor/Outdoor Ceiling Fan, Five Damp Rated Fan Blades...</strong> by <em>Honeywell Ceiling Fans</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KGKF11M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413dQloBIzL._AC_SX236_SY340_QL65_.jpg" alt="Casa-Venue-Oil-Brushed-Bronze-Ceiling" /></td>
-		 <td><strong>Casa-Venue-Oil-Brushed-Bronze-Ceiling</strong> by <em>Casa Vieja</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IPFMPXQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KGKF11M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41pYd3zz6SL._AC_SX236_SY340_QL65_.jpg" alt="Honeywell Palm Island 52-Inch Tropical Ceiling Fan, Five Palm Leaf Blades, Indoor..." /></td>
 		 <td><strong>Honeywell Palm Island 52-Inch Tropical Ceiling Fan, Five Palm Leaf Blades, Indoor...</strong> by <em>Honeywell Ceiling Fans</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KGKF2RA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00KGKF2RA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41weZxQ+TGL._AC_SX236_SY340_QL65_.jpg" alt="Hunter Fan Company 53323 Ceiling Fan, Premier Bronze" /></td>
 		 <td><strong>Hunter Fan Company 53323 Ceiling Fan, Premier Bronze</strong> by <em>Hunter Fan Company</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CDFYL6S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B01CDFYL6S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310UJdDGoXL._AC_SX236_SY340_QL65_.jpg" alt="Monte Carlo 3MAVR70BK Maverick Max Modern Ceiling Fan, 70-inch, Matte Black with..." /></td>
 		 <td><strong>Monte Carlo 3MAVR70BK Maverick Max Modern Ceiling Fan, 70-inch, Matte Black with...</strong> by <em>Monte Carlo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HN1WMSG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HN1WMSG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -178,7 +195,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -206,13 +223,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>
