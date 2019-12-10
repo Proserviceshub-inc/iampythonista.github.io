@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Indigi Phones</div>
@@ -89,96 +98,120 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="2017 6-inch GSM Unlocked Android 7.0 Nougat 4G LTE Smartphone by Indigi [Octa-CORE..." /></td>
 		 <td><strong>2017 6-inch GSM Unlocked Android 7.0 Nougat 4G LTE Smartphone by Indigi [Octa-CORE...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07541D3WF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07541D3WF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Indigi HOT PINK 2-in-1 Phablet 7.0in 3G SmartPhone Android 4.4 Tablet PC ATT..." /></td>
 		 <td><strong>Indigi HOT PINK 2-in-1 Phablet 7.0in 3G SmartPhone Android 4.4 Tablet PC ATT...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ISZWWJA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B01ISZWWJA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Ny4Fc-jpL._AC_SX236_SY340_QL65_.jpg" alt="Indigi Android 6.0 Wireless SmartPhone &amp; Tablet ( 7-inch HD Display - Bluetooth..." /></td>
 		 <td><strong>Indigi Android 6.0 Wireless SmartPhone &amp; Tablet ( 7-inch HD Display - Bluetooth...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PBFSCYK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00PBFSCYK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cE-hgW7UL._AC_SX236_SY340_QL65_.jpg" alt="Unlocked 7-inch Tablet Phone Android 4.0 Smart Cell Phone Multi-Touch Screen..." /></td>
 		 <td><strong>Unlocked 7-inch Tablet Phone Android 4.0 Smart Cell Phone Multi-Touch Screen...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EJXK10I"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KH367h50L._AC_SX236_SY340_QL65_.jpg" alt="Ticwatch-comfortable-Smartwatch-Shadow-Compatible-Assistant-x" /></td>
-		 <td><strong>Ticwatch-comfortable-Smartwatch-Shadow-Compatible-Assistant-x</strong> by <em>Ticwatch</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076HQPDRF"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51vD3u-CJHL._AC_SX236_SY340_QL65_.jpg" alt="TurtleArmor-Compatible-Rugged-Kickstand-Holster" /></td>
-		 <td><strong>TurtleArmor-Compatible-Rugged-Kickstand-Holster</strong> by <em>TurtleArmor</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079JR4TN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00EJXK10I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cE-hgW7UL._AC_SX236_SY340_QL65_.jpg" alt="Indigi 7in Unlocked! 3G SmartPhone &amp; TabletPC ( Android 6.0 + Bluetooth + WiFi..." /></td>
 		 <td><strong>Indigi 7in Unlocked! 3G SmartPhone &amp; TabletPC ( Android 6.0 + Bluetooth + WiFi...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PBFSBX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00PBFSBX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51EOtlC1hyL._AC_SX236_SY340_QL65_.jpg" alt="Indigi Android 4.4 Smart Watch Phone Mini Tablet PC w/ WiFi Bluetooth Google..." /></td>
 		 <td><strong>Indigi Android 4.4 Smart Watch Phone Mini Tablet PC w/ WiFi Bluetooth Google...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KEDKRNI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00KEDKRNI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JRaM5S7oL._AC_SX236_SY340_QL65_.jpg" alt="Indigi 2-in-1 Interchangeable GSM + Bluetooth Smart Watch &amp; Phone w/Camera ~Unlocked!" /></td>
 		 <td><strong>Indigi 2-in-1 Interchangeable GSM + Bluetooth Smart Watch &amp; Phone w/Camera ~Unlocked!</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FRKYZ4Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01FRKYZ4Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LuVYffkcL._AC_SX236_SY340_QL65_.jpg" alt="Indigi Universal iOS &amp; Android SmartWatch &amp; Phone (Built-in Camera + MP3 + SMS..." /></td>
 		 <td><strong>Indigi Universal iOS &amp; Android SmartWatch &amp; Phone (Built-in Camera + MP3 + SMS...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07452D1S4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07452D1S4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KqJEQ2JeL._AC_SX236_SY340_QL65_.jpg" alt="Indigi SWAP2 GSM Wireless Bluetooth Smart Watch Phone Camera Unlocked AT&amp;T /..." /></td>
 		 <td><strong>Indigi SWAP2 GSM Wireless Bluetooth Smart Watch Phone Camera Unlocked AT&amp;T /...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00XLYIBU8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00XLYIBU8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51v9Wh8mkXL._AC_SX236_SY340_QL65_.jpg" alt="Indigi Swatch-D6-08 3G GSM Unlocked Smart Watch &amp; Phone Android 5.1 OS Wi-Fi..." /></td>
 		 <td><strong>Indigi Swatch-D6-08 3G GSM Unlocked Smart Watch &amp; Phone Android 5.1 OS Wi-Fi...</strong> by <em>inDigi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CK5WBKR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07CK5WBKR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

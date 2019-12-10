@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Flushable Wipes</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61KZeG-Nh7L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Kandoo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003FGE1TC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SpnXXpsIL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Freshnaps</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQ68FN8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Cottonelle FreshCare Flushable Wipes for Adults, Wet Wipes, Alcohol Free, 336..." /></td>
 		 <td><strong>Cottonelle FreshCare Flushable Wipes for Adults, Wet Wipes, Alcohol Free, 336...</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B46WWN2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B46WWN2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZFhWw6X5L._AC_SX236_SY340_QL65_.jpg" alt="Cottonelle Flushable Toddler Wipes for Kids, 8 Flip-Top Packs, 360 Fragrance-Free..." /></td>
 		 <td><strong>Cottonelle Flushable Toddler Wipes for Kids, 8 Flip-Top Packs, 360 Fragrance-Free...</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0792GXBNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0792GXBNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XcLHCRGeL._AC_SX236_SY340_QL65_.jpg" alt="Cottonelle GentlePlus Flushable Wipes with Aloe &amp; Vitamin E, 42 Count (Pack of 6)" /></td>
 		 <td><strong>Cottonelle GentlePlus Flushable Wipes with Aloe &amp; Vitamin E, 42 Count (Pack of 6)</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B3Y9FY6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B3Y9FY6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51pJ3z1lWTL._AC_SX236_SY340_QL65_.jpg" alt="Scott Flushable Wipes, No Added Fragrance, 8 Soft Packs with 408 Wet Wipes Total..." /></td>
 		 <td><strong>Scott Flushable Wipes, No Added Fragrance, 8 Soft Packs with 408 Wet Wipes Total...</strong> by <em>Scott</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N7W1UOY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N7W1UOY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510r8MPQBsL._AC_SX236_SY340_QL65_.jpg" alt="DUDE Wipes Flushable Wet Wipes Dispenser (3 Packs 48 Wipes), Unscented Wet Wipes..." /></td>
 		 <td><strong>DUDE Wipes Flushable Wet Wipes Dispenser (3 Packs 48 Wipes), Unscented Wet Wipes...</strong> by <em>Dude Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NAPQ4QP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01NAPQ4QP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SRLxNpYeL._AC_SX236_SY340_QL65_.jpg" alt="Cottonelle FreshCare Flushable Wipes for Adults, Wet Wipes, Alcohol Free, 42..." /></td>
 		 <td><strong>Cottonelle FreshCare Flushable Wipes for Adults, Wet Wipes, Alcohol Free, 42...</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M5JILW7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Wa7FIQHtL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Kandoo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006KYCY5Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01M5JILW7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51q6pO8FxhL._AC_SX236_SY340_QL65_.jpg" alt="Cottonelle Flushable Wipes 252ct Refill" /></td>
 		 <td><strong>Cottonelle Flushable Wipes 252ct Refill</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011DX1GSC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B011DX1GSC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510GzW8e42L._AC_SX236_SY340_QL65_.jpg" alt="Charmin Freshmates Flushable Wet Wipes, 40 Count (Pack of 12)" /></td>
 		 <td><strong>Charmin Freshmates Flushable Wet Wipes, 40 Count (Pack of 12)</strong> by <em>Charmin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003WJ9GPQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003WJ9GPQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61KZeG-Nh7L._AC_SX236_SY340_QL65_.jpg" alt="Flushable Wet Wipes for Toddlers and Kids, Sensitive by Kandoo, Resealable for..." /></td>
 		 <td><strong>Flushable Wet Wipes for Toddlers and Kids, Sensitive by Kandoo, Resealable for...</strong> by <em>Kandoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003FGE1TC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003FGE1TC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vEChcm+qL._AC_SX236_SY340_QL65_.jpg" alt="Babyganics Flushable Baby Wipes, Fragrance Free, 60 Count - Packaging May Vary..." /></td>
 		 <td><strong>Babyganics Flushable Baby Wipes, Fragrance Free, 60 Count - Packaging May Vary...</strong> by <em>Babyganics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00NVLP2ZI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00NVLP2ZI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mrynZoqeL._AC_SX236_SY340_QL65_.jpg" alt="Amazon Elements Baby Wipes, Sensitive, 480 Count, Flip-Top Packs" /></td>
 		 <td><strong>Amazon Elements Baby Wipes, Sensitive, 480 Count, Flip-Top Packs</strong> by <em>Amazon Elements</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H53Y3LL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H53Y3LL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Efk54nTHL._AC_SX236_SY340_QL65_.jpg" alt="Flushable Wet Wipes for Kids, Sensitive by Kandoo, Hypoallergenic Potty Training..." /></td>
 		 <td><strong>Flushable Wet Wipes for Kids, Sensitive by Kandoo, Hypoallergenic Potty Training...</strong> by <em>Kandoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0083E62HA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0083E62HA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qOh-17YtL._AC_SX236_SY340_QL65_.jpg" alt="Cottonelle FreshCare Flushable Wipes, 42 Count, (Pack of 8) (Packaging May Vary)" /></td>
 		 <td><strong>Cottonelle FreshCare Flushable Wipes, 42 Count, (Pack of 8) (Packaging May Vary)</strong> by <em>Cottonelle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N288ZXE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N288ZXE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ipod Touch Cases For Kids</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gObbe-UWL._AC_SX236_SY340_QL65_.jpg" alt="ULAK-Screen-Protectors-Bumper-Generation" /></td>
-		 <td><strong>ULAK-Screen-Protectors-Bumper-Generation</strong> by <em>ULAK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MREIQS7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PM6WxXDCL._AC_SX236_SY340_QL65_.jpg" alt="ULAK-Generation-Impact-Protective-Purple" /></td>
-		 <td><strong>ULAK-Generation-Impact-Protective-Purple</strong> by <em>ULAK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JAA2NCI"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ULAK iPod Touch case,iPod Touch 5 6th Generation Case, Heavy Duty Shockproof..." /></td>
 		 <td><strong>ULAK iPod Touch case,iPod Touch 5 6th Generation Case, Heavy Duty Shockproof...</strong> by <em>ULAK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XXKHZ2V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XXKHZ2V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wgvTRO+UL._AC_SX236_SY340_QL65_.jpg" alt="TopSZ Mickey Case for iPod Touch 6th,5th,Silicone 3D Cartoon Animal Cover,Kids..." /></td>
 		 <td><strong>TopSZ Mickey Case for iPod Touch 6th,5th,Silicone 3D Cartoon Animal Cover,Kids...</strong> by <em>TopSZ</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KT343MW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KT343MW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Z6zMt3bxL._AC_SX236_SY340_QL65_.jpg" alt="MYTURTLE Shockproof Hybrid Case Hard Silicone Shell High Impact Cover with Stylus..." /></td>
 		 <td><strong>MYTURTLE Shockproof Hybrid Case Hard Silicone Shell High Impact Cover with Stylus...</strong> by <em>MY TURTLE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017I0RFYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017I0RFYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kveAjOX3L._AC_SX236_SY340_QL65_.jpg" alt="Joyleop Pink Unicorn Case for iPod Touch 6 5 Generation,Cute 3D Cartoon Animal..." /></td>
 		 <td><strong>Joyleop Pink Unicorn Case for iPod Touch 6 5 Generation,Cute 3D Cartoon Animal...</strong> by <em>Joyleop</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DGV8NLC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DGV8NLC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51hkrgivLeL._AC_SX236_SY340_QL65_.jpg" alt="ULAK iPod Touch Case for Kids, Cartoon Heavy Duty Protecftion Shockproof High..." /></td>
 		 <td><strong>ULAK iPod Touch Case for Kids, Cartoon Heavy Duty Protecftion Shockproof High...</strong> by <em>ULAK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HZCP9LU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HZCP9LU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qv5fkfyrL._AC_SX236_SY340_QL65_.jpg" alt="iPod Touch 6/5 Case, Wisdompro 3-Piece [3 in 1] Hybrid Shockproof [Soft Internal..." /></td>
 		 <td><strong>iPod Touch 6/5 Case, Wisdompro 3-Piece [3 in 1] Hybrid Shockproof [Soft Internal...</strong> by <em>Wisdompro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018SBQNMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B018SBQNMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51RMrSuC7KL._AC_SX236_SY340_QL65_.jpg" alt="iPod Touch Screen Protector, VL [Tempered Glass] for Apple iPod Touch 6th, 5th..." /></td>
 		 <td><strong>iPod Touch Screen Protector, VL [Tempered Glass] for Apple iPod Touch 6th, 5th...</strong> by <em>VL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MYLNVDE"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31tmX9jA-uL._AC_SX236_SY340_QL65_.jpg" alt="Artbling-Genaration-Silicone-Character-Protector" /></td>
-		 <td><strong>Artbling-Genaration-Silicone-Character-Protector</strong> by <em>Funermei</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J3FHXQQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MYLNVDE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WFKU+4i0L._AC_SX236_SY340_QL65_.jpg" alt="ULAK Case for iPod Touch 6th Generation, Anti Slip Anti-Scratch iPod Touch Case..." /></td>
 		 <td><strong>ULAK Case for iPod Touch 6th Generation, Anti Slip Anti-Scratch iPod Touch Case...</strong> by <em>ULAK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00B8PEMJQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00B8PEMJQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61ORFFf4YML._AC_SX236_SY340_QL65_.jpg" alt="iPod Touch 5 Case , iPod Touch 6 Case, Alkax Premium PU Leather Wallet Kickstand..." /></td>
 		 <td><strong>iPod Touch 5 Case , iPod Touch 6 Case, Alkax Premium PU Leather Wallet Kickstand...</strong> by <em>Alkax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M4JN7PS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M4JN7PS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51acBZiDxoL._AC_SX236_SY340_QL65_.jpg" alt="Griffin Purple Woogie Fee Plush Kid Case for iPhone and iPod touch - Half case..." /></td>
 		 <td><strong>Griffin Purple Woogie Fee Plush Kid Case for iPhone and iPod touch - Half case...</strong> by <em>Griffin Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009OMOHI6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B009OMOHI6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/516JOalb9aL._AC_SX236_SY340_QL65_.jpg" alt="Fisher-Price Laugh &amp; Learn Case for iPhone &amp; iPod Touch Devices" /></td>
 		 <td><strong>Fisher-Price Laugh &amp; Learn Case for iPhone &amp; iPod Touch Devices</strong> by <em>Fisher-Price</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004UU9W78"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004UU9W78"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vMEsN3kNL._AC_SX236_SY340_QL65_.jpg" alt="FunTeens Vivid Unicorn Case for Apple iPod Touch 6th 5th Generation 3D Cartoon..." /></td>
 		 <td><strong>FunTeens Vivid Unicorn Case for Apple iPod Touch 6th 5th Generation 3D Cartoon...</strong> by <em>FunTeens</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L8JHBV4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07L8JHBV4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uVWODkcJL._AC_SX236_SY340_QL65_.jpg" alt="ULAK Soft TPU Bumper PC Back Hybrid Case for iPod Touch 6/iPod Touch 5 - Retail..." /></td>
 		 <td><strong>ULAK Soft TPU Bumper PC Back Hybrid Case for iPod Touch 6/iPod Touch 5 - Retail...</strong> by <em>ULAK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B015QUIGEU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B015QUIGEU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51q-5v0UzHL._AC_SX236_SY340_QL65_.jpg" alt="iPod Touch 6 Case,iPod Touch 5 Case with Tempered Glass Screen Protector [2 Pack..." /></td>
 		 <td><strong>iPod Touch 6 Case,iPod Touch 5 Case with Tempered Glass Screen Protector [2 Pack...</strong> by <em>LeYi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FM5Z5C3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FM5Z5C3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

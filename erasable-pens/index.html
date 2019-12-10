@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Erasable Pens</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="Retractable-Erasable-Assorted-Mistakes-Disappear" /></td>
-		 <td><strong>Retractable-Erasable-Assorted-Mistakes-Disappear</strong> by <em>Pilot</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D9Z7GYL"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31HzgXUgWlL._AC_SX236_SY340_QL65_.jpg" alt="Pilot-Retractable-Erasable-Mistakes-Disappear" /></td>
-		 <td><strong>Pilot-Retractable-Erasable-Mistakes-Disappear</strong> by <em>Pilot</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009ZMFHT8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Xft+0dXhL._AC_SX236_SY340_QL65_.jpg" alt="Pilot FriXion Clicker Retractable Erasable Gel Pens Fine Point (.7) Assorted..." /></td>
 		 <td><strong>Pilot FriXion Clicker Retractable Erasable Gel Pens Fine Point (.7) Assorted...</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009QYH644"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009QYH644"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZRyC8ujkL._AC_SX236_SY340_QL65_.jpg" alt="Pilot FriXion Clicker 0.7mm, Erasable Gel Pens, Fine Point, Black Ink, Pack Of 6" /></td>
 		 <td><strong>Pilot FriXion Clicker 0.7mm, Erasable Gel Pens, Fine Point, Black Ink, Pack Of 6</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DMTPL9U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DMTPL9U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rKTTBUP-L._AC_SX236_SY340_QL65_.jpg" alt="PILOT Frixion Clicker Retractable Pens Retractable Erasable Gel Pens Fine Point..." /></td>
 		 <td><strong>PILOT Frixion Clicker Retractable Pens Retractable Erasable Gel Pens Fine Point...</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D9Z7GYL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07D9Z7GYL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51e27Z6z+3L._AC_SX236_SY340_QL65_.jpg" alt="PILOT FriXion Color Sticks Erasable Gel Pens 10-pack of Assorted Colors (32454..." /></td>
 		 <td><strong>PILOT FriXion Color Sticks Erasable Gel Pens 10-pack of Assorted Colors (32454...</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01KLLQ6PA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01KLLQ6PA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MoYEBmXTL._AC_SX236_SY340_QL65_.jpg" alt="ParKoo Retractable Erasable Gel Pens Clicker, Fine Point, Assorted Color Inks..." /></td>
 		 <td><strong>ParKoo Retractable Erasable Gel Pens Clicker, Fine Point, Assorted Color Inks...</strong> by <em>ParKoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BF61B8W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BF61B8W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AzKjF-ZpL._AC_SX236_SY340_QL65_.jpg" alt="Pilot FriXion Clicker Retractable Erasable Gel Pens, Fine Point, Blue Ink, 6..." /></td>
 		 <td><strong>Pilot FriXion Clicker Retractable Erasable Gel Pens, Fine Point, Blue Ink, 6...</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01EGKTKJQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01EGKTKJQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iDwdfE8TL._AC_SX236_SY340_QL65_.jpg" alt="Pilot FriXion Pencil, 0.7mm Ballpoint Pen, 12 Colors Set (LFP-156FN-12C)" /></td>
 		 <td><strong>Pilot FriXion Pencil, 0.7mm Ballpoint Pen, 12 Colors Set (LFP-156FN-12C)</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003R7XAW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AG9m2cnIL._AC_SX236_SY340_QL65_.jpg" alt="Pilot-Erasable-Assorted-Mistakes-Disappear" /></td>
-		 <td><strong>Pilot-Erasable-Assorted-Mistakes-Disappear</strong> by <em>Pilot</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003CQ75RK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003R7XAW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Cnjskaz+L._AC_SX236_SY340_QL65_.jpg" alt="Friction Erasable Pens - Value Pack of 6 Black and 6 Blue Pens with Ultra Fine..." /></td>
 		 <td><strong>Friction Erasable Pens - Value Pack of 6 Black and 6 Blue Pens with Ultra Fine...</strong> by <em>Hieno Supplies</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077HXFSVK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077HXFSVK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51EflfOSoCL._AC_SX236_SY340_QL65_.jpg" alt="ParKoo Retractable Erasable Gel Pens Clicker, Fine Point, Assorted Color Inks..." /></td>
 		 <td><strong>ParKoo Retractable Erasable Gel Pens Clicker, Fine Point, Assorted Color Inks...</strong> by <em>ParKoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07485X95K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07485X95K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41b3I+a206L._AC_SX236_SY340_QL65_.jpg" alt="Pilot Frixion Colors Erasable Marker - 12 Color set /Value set Which Attached..." /></td>
 		 <td><strong>Pilot Frixion Colors Erasable Marker - 12 Color set /Value set Which Attached...</strong> by <em>.Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F9MYPCS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00F9MYPCS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q9rEo9gWL._AC_SX236_SY340_QL65_.jpg" alt="Papermate Erasermate Medium Point (1.0 mm) Black Erasable Ballpoint Pens (Pack..." /></td>
 		 <td><strong>Papermate Erasermate Medium Point (1.0 mm) Black Erasable Ballpoint Pens (Pack...</strong> by <em>Eraser Mate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B24AH96"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01B24AH96"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KQ518UMmL._AC_SX236_SY340_QL65_.jpg" alt="ParKoo Erasable Gel Pens, Fine Point, Assorted Color Inks for Drawing Writing..." /></td>
 		 <td><strong>ParKoo Erasable Gel Pens, Fine Point, Assorted Color Inks for Drawing Writing...</strong> by <em>ParKoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C7386ZG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C7386ZG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+xAT83dXL._AC_SX236_SY340_QL65_.jpg" alt="ParKoo Retractable Erasable Gel Pens Clicker 0.5 mm, Extra Fine Point, 8 Black..." /></td>
 		 <td><strong>ParKoo Retractable Erasable Gel Pens Clicker 0.5 mm, Extra Fine Point, 8 Black...</strong> by <em>ParKoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JQ53K8X"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07JQ53K8X"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jxfO-IWlL._AC_SX236_SY340_QL65_.jpg" alt="Pilot FriXion Ball Erasable Gel Pens Fine Point (.7) 8-pk Pouch Black/Blue/Red..." /></td>
 		 <td><strong>Pilot FriXion Ball Erasable Gel Pens Fine Point (.7) 8-pk Pouch Black/Blue/Red...</strong> by <em>Pilot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004DOMK2U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004DOMK2U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best High Chair Toys</div>
@@ -86,115 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i2nw5g1LL._AC_SX236_SY340_QL65_.jpg" alt="Fat-Brain-Toys-FA089-1-pipSquigz" /></td>
-		 <td><strong>Fat-Brain-Toys-FA089-1-pipSquigz</strong> by <em>Fat Brain Toys</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00H4IQ3P2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Sassy Wonder Wheel Activity Center" /></td>
 		 <td><strong>Sassy Wonder Wheel Activity Center</strong> by <em>Sassy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004AHMCKA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004AHMCKA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Rpr36jcSL._AC_SX236_SY340_QL65_.jpg" alt="Sassy Fishy Fascination Station - 6+ Months 2-in-1 Toy Suction Cup Removable..." /></td>
 		 <td><strong>Sassy Fishy Fascination Station - 6+ Months 2-in-1 Toy Suction Cup Removable...</strong> by <em>Sassy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M1YKAT9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01M1YKAT9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HFUy62f0L._AC_SX236_SY340_QL65_.jpg" alt="Infantino Stick and Spin High Chair Pal" /></td>
 		 <td><strong>Infantino Stick and Spin High Chair Pal</strong> by <em>Infantino</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IR4F2A4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00IR4F2A4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jRlisJLZL._AC_SX236_SY340_QL65_.jpg" alt="Grapple Suction Baby Toy Holder 6-12 Months Green" /></td>
 		 <td><strong>Grapple Suction Baby Toy Holder 6-12 Months Green</strong> by <em>Grapple</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00X4M4U7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41L96bLqVZL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Grapple</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00X4M4U7K"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OY0FgYhqL._AC_SX236_SY340_QL65_.jpg" alt="Fat-Brain-Toys-pipSquigz-Loops" /></td>
-		 <td><strong>Fat-Brain-Toys-pipSquigz-Loops</strong> by <em>Fat Brain Toys</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076D7SQL5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00X4M4U7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41E9zxT0H2L._AC_SX236_SY340_QL65_.jpg" alt="Baby Einstein Sticky Spinner Activity Toy" /></td>
 		 <td><strong>Baby Einstein Sticky Spinner Activity Toy</strong> by <em>Baby Einstein</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DPBB4CT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07DPBB4CT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uxVs9s35L._AC_SX236_SY340_QL65_.jpg" alt="Melissa &amp; Doug First Bead Maze, Developmental Toys, Wooden Educational Toy, Quality..." /></td>
 		 <td><strong>Melissa &amp; Doug First Bead Maze, Developmental Toys, Wooden Educational Toy, Quality...</strong> by <em>Melissa &amp; Doug</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SONEQA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000SONEQA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZzXCJquML._AC_SX236_SY340_QL65_.jpg" alt="Sassy Discover The Sense Gift Set 0+ Month 4pc Set Includes Mini Bumpy Ball,..." /></td>
 		 <td><strong>Sassy Discover The Sense Gift Set 0+ Month 4pc Set Includes Mini Bumpy Ball,...</strong> by <em>Sassy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075S1211K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075S1211K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZzAsPnC2L._AC_SX236_SY340_QL65_.jpg" alt="Playgro High Chair Spinning Toy for baby infant toddler children 0182212107,..." /></td>
 		 <td><strong>Playgro High Chair Spinning Toy for baby infant toddler children 0182212107,...</strong> by <em>Playgro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EU8QBE2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00EU8QBE2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41w36WJH7BL._AC_SX236_SY340_QL65_.jpg" alt="Sassy Illumination Station" /></td>
 		 <td><strong>Sassy Illumination Station</strong> by <em>Sassy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002J4U8PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B002J4U8PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i2nw5g1LL._AC_SX236_SY340_QL65_.jpg" alt="Fat Brain Toys pipSquigz" /></td>
 		 <td><strong>Fat Brain Toys pipSquigz</strong> by <em>Fat Brain Toys</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00H4IQ3P2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00H4IQ3P2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415E77MFCIL._AC_SX236_SY340_QL65_.jpg" alt="Manhattan Toy Activity Loops Teether &amp; Early Development Baby Toy" /></td>
 		 <td><strong>Manhattan Toy Activity Loops Teether &amp; Early Development Baby Toy</strong> by <em>Manhattan Toy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XC1QK6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XC1QK6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

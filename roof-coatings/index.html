@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Roof Coatings</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ENyMr67EL._AC_SX236_SY340_QL65_.jpg" alt="Jetcoat-Elastomeric-Acrylic-Reflective-Protection" /></td>
-		 <td><strong>Jetcoat-Elastomeric-Acrylic-Reflective-Protection</strong> by <em>Jetcoat</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GZYXBL9"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oRhXKuZqL._AC_SX236_SY340_QL65_.jpg" alt="Liquid-Rubber-Seam-Tape-Restoration" /></td>
-		 <td><strong>Liquid-Rubber-Seam-Tape-Restoration</strong> by <em>Liquid Rubber USA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01EMBL2VS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Liquid Rubber Waterproof Sealant/Coating - 5 Gallon - Original Black - Environmentally..." /></td>
 		 <td><strong>Liquid Rubber Waterproof Sealant/Coating - 5 Gallon - Original Black - Environmentally...</strong> by <em>Liquid Rubber USA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YYKJDEQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YYKJDEQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515JIp8ozCL._AC_SX236_SY340_QL65_.jpg" alt="Kool Seal KST063600-16 Elastomeric Roof Coating, 115 fl oz., Liquid, White," /></td>
 		 <td><strong>Kool Seal KST063600-16 Elastomeric Roof Coating, 115 fl oz., Liquid, White,</strong> by <em>Kst Coatings</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001B1CHLM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001B1CHLM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411wf5Ay-vL._AC_SX236_SY340_QL65_.jpg" alt="KST COATINGS  KST063600-20 Elastomeric Roof Coating, 5-Gallon" /></td>
 		 <td><strong>KST COATINGS  KST063600-20 Elastomeric Roof Coating, 5-Gallon</strong> by <em>Kst Coatings</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001B1CHLW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001B1CHLW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xZMvDImjL._AC_SX236_SY340_QL65_.jpg" alt="KST COATINGS  KST0000MC-16    Mobile Coat Elastomeric 1-Gallon" /></td>
 		 <td><strong>KST COATINGS  KST0000MC-16    Mobile Coat Elastomeric 1-Gallon</strong> by <em>Kst Coatings</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001B175EQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B001B175EQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iLocTtA-L._AC_SX236_SY340_QL65_.jpg" alt="Liquid Rubber Color Waterproof Sealant/Coating (5 Gallon, White) - Environmentally..." /></td>
 		 <td><strong>Liquid Rubber Color Waterproof Sealant/Coating (5 Gallon, White) - Environmentally...</strong> by <em>Liquid Rubber USA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ETQYS2Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31PMp-liZ0L._AC_SX209_SY302_QL65_.jpg" alt="210-Elastomeric-Emulsion-gallon" /></td>
-		 <td><strong>210-Elastomeric-Emulsion-gallon</strong> by <em>Tucson Rubberized Coatings</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BHGFB6J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01ETQYS2Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51yQbXII7lL._AC_SX236_SY340_QL65_.jpg" alt="GACOROOF WHITE SILICONE ROOF COATING LOW-VOC" /></td>
 		 <td><strong>GACOROOF WHITE SILICONE ROOF COATING LOW-VOC</strong> by <em>GACOROOF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XH316J3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B06XH316J3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OldxYA2iL._AC_SX236_SY340_QL65_.jpg" alt="KST COATING KS0063300-20 White Roof Coat, 4.75 gallon" /></td>
 		 <td><strong>KST COATING KS0063300-20 White Roof Coat, 4.75 gallon</strong> by <em>Kst Coating</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OIOKPZY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00OIOKPZY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51GCUcSYccL._AC_SX236_SY340_QL65_.jpg" alt="Rubberseal Liquid Rubber Waterproofing and Protective Coating - Roll On WHITE..." /></td>
 		 <td><strong>Rubberseal Liquid Rubber Waterproofing and Protective Coating - Roll On WHITE...</strong> by <em>Rubberseal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PHNPG90"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00PHNPG90"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HMV5Z4W6L._AC_SX236_SY340_QL65_.jpg" alt=" Kool Seal RV Rubber Roof Top Coat, 1gal 63-900-1" /></td>
 		 <td><strong> Kool Seal RV Rubber Roof Top Coat, 1gal 63-900-1</strong> by <em>Kool Seal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0006I0OR0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0006I0OR0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51YHcrU0+-L._AC_SX236_SY340_QL65_.jpg" alt="GARDNER-GIBSON 1340461 1/20/5570 GAL S-100 Roof Coating" /></td>
 		 <td><strong>GARDNER-GIBSON 1340461 1/20/5570 GAL S-100 Roof Coating</strong> by <em>Unknown</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B012S6GKN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B012S6GKN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Y18lpE+UL._AC_SX236_SY340_QL65_.jpg" alt="Henry, W.W. Co. HE687406 Enviro Premium White Roof Coating, 5 Gal" /></td>
 		 <td><strong>Henry, W.W. Co. HE687406 Enviro Premium White Roof Coating, 5 Gal</strong> by <em>Henry, W.W. Co.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005HWWFHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B005HWWFHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hZ37Exv7L._AC_SX236_SY340_QL65_.jpg" alt="Dicor RPFRC1 Fiberglass RV Roof Coating - 1 Gallon" /></td>
 		 <td><strong>Dicor RPFRC1 Fiberglass RV Roof Coating - 1 Gallon</strong> by <em>Dicor</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007TQI96K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B007TQI96K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

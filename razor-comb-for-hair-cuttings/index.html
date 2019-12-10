@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Razor Comb For Hair Cuttings</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dWiKV-5SL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Schick</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MTAP5ID"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51s8Ek8N+9L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>WAHL</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00006IVEN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Tinkle Hair Cutter" /></td>
 		 <td><strong>Tinkle Hair Cutter</strong> by <em>Diane</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001DYM62C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001DYM62C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JJgJQJTsL._AC_SX236_SY340_QL65_.jpg" alt="Hair Thinning Razor,Hair Styling Razor, Feather Styling Razor, Thinner Razor,..." /></td>
 		 <td><strong>Hair Thinning Razor,Hair Styling Razor, Feather Styling Razor, Thinner Razor,...</strong> by <em>Awans</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008N8770C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008N8770C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SQG8wbU-L._AC_SX236_SY340_QL65_.jpg" alt="Tinkle Hair Cutter ( 3 Packs )" /></td>
 		 <td><strong>Tinkle Hair Cutter ( 3 Packs )</strong> by <em>RIVEA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00P04E61K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00P04E61K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZMJTi1EWL._AC_SX236_SY340_QL65_.jpg" alt="Seki Edge Haircutting Styling Razor Comb" /></td>
 		 <td><strong>Seki Edge Haircutting Styling Razor Comb</strong> by <em>Seki Edge</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SSDTTI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000SSDTTI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41VTrTuZgbL._AC_SX236_SY340_QL65_.jpg" alt="Zinnor Hair Cutter Comb Double Side Haircut Scissors Hair Cutting Comb with Stainless..." /></td>
 		 <td><strong>Zinnor Hair Cutter Comb Double Side Haircut Scissors Hair Cutting Comb with Stainless...</strong> by <em>Zinnor</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076P32YH5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076P32YH5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31pTIrRZWRL._AC_SX236_SY340_QL65_.jpg" alt="SE FC1003 Razor Comb with Extra Blades, Colors May Vary" /></td>
 		 <td><strong>SE FC1003 Razor Comb with Extra Blades, Colors May Vary</strong> by <em>SE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005OKJLEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B005OKJLEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31lza0TwyyL._AC_SX236_SY340_QL65_.jpg" alt="Conair Pro Jilbere De Paris Precision Cut Comb" /></td>
 		 <td><strong>Conair Pro Jilbere De Paris Precision Cut Comb</strong> by <em>Conair</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0041TDN00"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51akRJM78fL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Smithking</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C39ST7N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0041TDN00"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51RHpKZM+lL._AC_SX236_SY340_QL65_.jpg" alt="Universal Unisex Razor Comb Home Hair Cut Scissor (w/ 6 Bonus Replacement Razors)" /></td>
 		 <td><strong>Universal Unisex Razor Comb Home Hair Cut Scissor (w/ 6 Bonus Replacement Razors)</strong> by <em>Universal Tool</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005HFAY22"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B005HFAY22"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RgYEbMA-L._AC_SX236_SY340_QL65_.jpg" alt="Ram-Pro Combo Set, White Plastic Personal Double Edge Razor Comb Hair Beard Bikini..." /></td>
 		 <td><strong>Ram-Pro Combo Set, White Plastic Personal Double Edge Razor Comb Hair Beard Bikini...</strong> by <em>Ram-Pro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K5VSATG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01K5VSATG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eWrUkOKVL._AC_SX236_SY340_QL65_.jpg" alt="Diamond Edge Hair Styling Razor Kit" /></td>
 		 <td><strong>Diamond Edge Hair Styling Razor Kit</strong> by <em>Diamond Edge</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000UQE0GE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000UQE0GE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PKhC-sq0L._AC_SX236_SY340_QL65_.jpg" alt="ALAZCO Combo Set, White Plastic Personal Double Edge Razor Comb Hair Beard Bikini..." /></td>
 		 <td><strong>ALAZCO Combo Set, White Plastic Personal Double Edge Razor Comb Hair Beard Bikini...</strong> by <em>ALAZCO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00NWRG6SS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00NWRG6SS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51sP0IGUe6L._AC_SX236_SY340_QL65_.jpg" alt="Hair Thinning Razor, Feather Styling, Hair Styling Razor, 10 Spare Blades Hair..." /></td>
 		 <td><strong>Hair Thinning Razor, Feather Styling, Hair Styling Razor, 10 Spare Blades Hair...</strong> by <em>Awans</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008OVL36W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008OVL36W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TIGXgswlL._AC_SX236_SY340_QL65_.jpg" alt="Le Salon K4358 New Hair Trimmer Razor Blades Trimming Hair Sideburns Face Tool..." /></td>
 		 <td><strong>Le Salon K4358 New Hair Trimmer Razor Blades Trimming Hair Sideburns Face Tool...</strong> by <em>Le  Salon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0067M9WAE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0067M9WAE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41GBsBoCoPL._AC_SX236_SY340_QL65_.jpg" alt="LuckyFine Double Sides Hair Razor Comb Cutter Cutting Thinning Shaper Haircut..." /></td>
 		 <td><strong>LuckyFine Double Sides Hair Razor Comb Cutter Cutting Thinning Shaper Haircut...</strong> by <em>Y.F.M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CK2CN5J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07CK2CN5J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

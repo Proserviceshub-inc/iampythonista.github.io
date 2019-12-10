@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Rocker Recliners</div>
@@ -89,128 +98,156 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Ashley Furniture Signature Design - Tambo Rocker Recliner - Pull Tab Manual Reclining..." /></td>
 		 <td><strong>Ashley Furniture Signature Design - Tambo Rocker Recliner - Pull Tab Manual Reclining...</strong> by <em>Signature Design by Ashley</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01F8MBRGK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01F8MBRGK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="La-Z-Boy Anderson Reclina-Rocker Recliner, Sand" /></td>
 		 <td><strong>La-Z-Boy Anderson Reclina-Rocker Recliner, Sand</strong> by <em>La-Z-Boy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0788LWHX3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0788LWHX3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41T5yjdmsdL._AC_SX236_SY340_QL65_.jpg" alt="Naomi Home Odelia Swivel Rocker Recliner Cream/Microfiber" /></td>
 		 <td><strong>Naomi Home Odelia Swivel Rocker Recliner Cream/Microfiber</strong> by <em>Naomi Home</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071HY9S4D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071HY9S4D"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JB30LpDML._AC_SX236_SY340_QL65_.jpg" alt="Bonded Leather Rocker Recliner Living Room Chair (Brown)" /></td>
 		 <td><strong>Bonded Leather Rocker Recliner Living Room Chair (Brown)</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IWEUW9O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IWEUW9O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NuOPw8T2L._AC_SX236_SY340_QL65_.jpg" alt="Relaxzen Rocker Recliner, Gray Microfiber" /></td>
 		 <td><strong>Relaxzen Rocker Recliner, Gray Microfiber</strong> by <em>Relaxzen</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075Y2ZJ8V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075Y2ZJ8V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41QxGR8rgHL._AC_SX236_SY340_QL65_.jpg" alt="Oversize Ultra Comfortable Air Leather Fabric Rocker and Swivel Recliner Living..." /></td>
 		 <td><strong>Oversize Ultra Comfortable Air Leather Fabric Rocker and Swivel Recliner Living...</strong> by <em>Casa Andrea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KPQPK1M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41QxGR8rgHL._AC_SX236_SY340_QL65_.jpg" alt="Oversize-Comfortable-Leather-Fabric-Recliner" /></td>
-		 <td><strong>Oversize-Comfortable-Leather-Fabric-Recliner</strong> by <em>Casa Andrea</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KPQPK1M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51YTrtuRvAL._AC_SX236_SY340_QL65_.jpg" alt="Microfiber-Rocker-Swivel-Recliner-Living" /></td>
-		 <td><strong>Microfiber-Rocker-Swivel-Recliner-Living</strong> by <em>Divano Roma Furniture</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074HT99KG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KPQPK1M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51hy6F9G6GL._AC_SX236_SY340_QL65_.jpg" alt="Angel Line Rebecca Upholstered Swivel Gliding Recliner, Gray Linen with White..." /></td>
 		 <td><strong>Angel Line Rebecca Upholstered Swivel Gliding Recliner, Gray Linen with White...</strong> by <em>Angel Line</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076QMHHMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076QMHHMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51m9gloaqPL._AC_SX236_SY340_QL65_.jpg" alt="Esright Massage Recliner Chair Heated PU Leather Ergonomic Lounge 360 Degree..." /></td>
 		 <td><strong>Esright Massage Recliner Chair Heated PU Leather Ergonomic Lounge 360 Degree...</strong> by <em>Esright</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076QCTWZL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076QCTWZL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51YTrtuRvAL._AC_SX236_SY340_QL65_.jpg" alt="Brush Microfiber Rocker and Swivel Recliner Living Room Chair (Dark Grey)" /></td>
 		 <td><strong>Brush Microfiber Rocker and Swivel Recliner Living Room Chair (Dark Grey)</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074HT99KG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074HT99KG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WHBFqzhOL._AC_SX236_SY340_QL65_.jpg" alt="GDF Studio Elizabeth Tufted Charcoal Fabric Recliner Arm Chair" /></td>
 		 <td><strong>GDF Studio Elizabeth Tufted Charcoal Fabric Recliner Arm Chair</strong> by <em>GDF Studio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MXO8ARN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MXO8ARN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414+0gZk6wL._AC_SX236_SY340_QL65_.jpg" alt="Flash Furniture Riverstone Sierra Black Microfiber Rocker Recliner" /></td>
 		 <td><strong>Flash Furniture Riverstone Sierra Black Microfiber Rocker Recliner</strong> by <em>Flash Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B49766H"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07B49766H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RnG4cX9oL._AC_SX236_SY340_QL65_.jpg" alt="Baby Relax Mikayla Swivel Gliding Recliner, Gray Microfiber" /></td>
 		 <td><strong>Baby Relax Mikayla Swivel Gliding Recliner, Gray Microfiber</strong> by <em>Baby Relax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VAS7QS0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00VAS7QS0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514MJPDUrBL._AC_SX236_SY340_QL65_.jpg" alt="Flash Furniture Contemporary Super Soft Jesse Cocoa Chenille Rocker Recliner" /></td>
 		 <td><strong>Flash Furniture Contemporary Super Soft Jesse Cocoa Chenille Rocker Recliner</strong> by <em>Flash Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077G8DYX1"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51i-Nn-ip+L._AC_SX236_SY340_QL65_.jpg" alt="X-PROTECTOR-Premium-COLORS-Furniture-various" /></td>
-		 <td><strong>X-PROTECTOR-Premium-COLORS-Furniture-various</strong> by <em>X-Protector</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D93Z9ZA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077G8DYX1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/31qSBlCDWGL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>bosch meat grinder</strong></td>
+                 <td style="text-align: center;"><a href="/bosch-meat-grinder"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>purifier with ifd filters</strong></td>
+                 <td style="text-align: center;"><a href="/air-purifier-with-ifd-filters"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41N+6eg8dJL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>acoustic guitar pickups</strong></td>
+                 <td style="text-align: center;"><a href="/acoustic-guitar-pickups"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/314vq2TGQGL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>shoulder pads</strong></td>
+                 <td style="text-align: center;"><a href="/shoulder-pads"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

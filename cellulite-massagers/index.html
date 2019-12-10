@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Cellulite Massagers</div>
@@ -89,104 +98,156 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Di10eVHuL._AC_SX236_SY340_QL65_.jpg" alt="Scala Cellulite Massager and Remover Brush Mitt" /></td>
 		 <td><strong>Scala Cellulite Massager and Remover Brush Mitt</strong> by <em>Scala Beauty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GJ1UK3G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00GJ1UK3G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Anti Cellulite Cup with Cellulite Massager - Vacuum Suction Cup for Cellulite..." /></td>
 		 <td><strong>Anti Cellulite Cup with Cellulite Massager - Vacuum Suction Cup for Cellulite...</strong> by <em>New Body Life</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0746FV5KH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0746FV5KH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41utcEOFZDL._AC_SX236_SY340_QL65_.jpg" alt="Coolife Fascia Release Cellulite Blasting Remover Muscle Roller Massage Stick..." /></td>
 		 <td><strong>Coolife Fascia Release Cellulite Blasting Remover Muscle Roller Massage Stick...</strong> by <em>Coolife</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072XBDJ16"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072XBDJ16"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SatK9w4UL._AC_SX236_SY340_QL65_.jpg" alt="M3 Naturals Anti Cellulite Massage Oil All Natural Essential Oils Treatment Firms..." /></td>
 		 <td><strong>M3 Naturals Anti Cellulite Massage Oil All Natural Essential Oils Treatment Firms...</strong> by <em>M3 Naturals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076DSBHD1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076DSBHD1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DFbfj5I5L._AC_SX236_SY340_QL65_.jpg" alt="C.S.M. Body Brush for Wet or Dry Brushing - Gentle Exfoliating for Softer, Glowing..." /></td>
 		 <td><strong>C.S.M. Body Brush for Wet or Dry Brushing - Gentle Exfoliating for Softer, Glowing...</strong> by <em>C.S.M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0158S5BIY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0158S5BIY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41xCpij6ugL._AC_SX236_SY340_QL65_.jpg" alt="K-Beauty Cellulite Massager Remover Brush Mitt and Roller - For use with cream..." /></td>
 		 <td><strong>K-Beauty Cellulite Massager Remover Brush Mitt and Roller - For use with cream...</strong> by <em>K-Beauty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07912CYSV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07912CYSV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51yeWqkU9tL._AC_SX236_SY340_QL65_.jpg" alt="3-PIECE Anti-Cellulite Massager Set w/ Cellulite Roller, Brush Mitt, and Hand..." /></td>
 		 <td><strong>3-PIECE Anti-Cellulite Massager Set w/ Cellulite Roller, Brush Mitt, and Hand...</strong> by <em>Lifestyle Plus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UM9R4WQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00UM9R4WQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mwjJ2ZK1L._AC_SX236_SY340_QL65_.jpg" alt="VOYOR Handheld Massager Cordless Deep Tissue Cellulite Massager for Face, Hand..." /></td>
 		 <td><strong>VOYOR Handheld Massager Cordless Deep Tissue Cellulite Massager for Face, Hand...</strong> by <em>VOYOR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073XPR6MC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073XPR6MC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CeNEDqYIL._AC_SX236_SY340_QL65_.jpg" alt="Glo910 IR Anti Cellulite Massage Machine with 4 Interchangeable Heads Toning..." /></td>
 		 <td><strong>Glo910 IR Anti Cellulite Massage Machine with 4 Interchangeable Heads Toning...</strong> by <em>Glo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D86Q50Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01D86Q50Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rUILc0ZCL._AC_SX236_SY340_QL65_.jpg" alt="Majestic Pure Cellulite Cream, 87% Organic, Tight Muscles &amp; Joint and Muscle..." /></td>
 		 <td><strong>Majestic Pure Cellulite Cream, 87% Organic, Tight Muscles &amp; Joint and Muscle...</strong> by <em>Majestic Pure</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LX9IIDJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LX9IIDJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/512RNlupsEL._AC_SX236_SY340_QL65_.jpg" alt="Cellulite Massager - Sotica Cellulite Brush body Massager Cellulite Remover by..." /></td>
 		 <td><strong>Cellulite Massager - Sotica Cellulite Brush body Massager Cellulite Remover by...</strong> by <em>Sotica</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074Z1JT7W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074Z1JT7W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51vbQqw+-ML._AC_SX236_SY340_QL65_.jpg" alt="100% Natural Arabica Coffee Scrub with Organic Coffee, Coconut and Shea Butter..." /></td>
 		 <td><strong>100% Natural Arabica Coffee Scrub with Organic Coffee, Coconut and Shea Butter...</strong> by <em>First Botany Cosmeceuticals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0169PFLFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0169PFLFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414kaFW0s+L._AC_SX236_SY340_QL65_.jpg" alt="FDA cleared OTC HealthmateForever YK15AB TENS unit with 4 outputs, apply 8 pads..." /></td>
 		 <td><strong>FDA cleared OTC HealthmateForever YK15AB TENS unit with 4 outputs, apply 8 pads...</strong> by <em>HealthmateForever</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00O7CM12W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00O7CM12W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

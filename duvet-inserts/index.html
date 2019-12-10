@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Duvet Inserts</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TtzuBw1jL._AC_SX236_SY340_QL65_.jpg" alt="Kingsley-Trend-Alternative-Microfiber-Hypoallergic" /></td>
-		 <td><strong>Kingsley-Trend-Alternative-Microfiber-Hypoallergic</strong> by <em>Kingsley Trend</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HPC33C3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51p-ke2YHEL._AC_SX236_SY340_QL65_.jpg" alt="Comforter-Alternative-Reversible-Collection-Hypoallergenic" /></td>
-		 <td><strong>Comforter-Alternative-Reversible-Collection-Hypoallergenic</strong> by <em>TEKAMON</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07873SLWP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="LINENSPA All-Season White Down Alternative Quilted Comforter - Corner Duvet Tabs..." /></td>
 		 <td><strong>LINENSPA All-Season White Down Alternative Quilted Comforter - Corner Duvet Tabs...</strong> by <em>Linenspa</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VGR4VW4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00VGR4VW4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tYOYUwXaL._AC_SX236_SY340_QL65_.jpg" alt="Utopia Bedding Comforter Duvet Insert - Quilted Comforter with Corner Tabs -..." /></td>
 		 <td><strong>Utopia Bedding Comforter Duvet Insert - Quilted Comforter with Corner Tabs -...</strong> by <em>Utopia Bedding</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00S1TC442"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00S1TC442"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WQ-eZHpkL._AC_SX236_SY340_QL65_.jpg" alt="Lavish Comforts Hotel Luxury All Season Down Alternative Comforter Duvet Insert..." /></td>
 		 <td><strong>Lavish Comforts Hotel Luxury All Season Down Alternative Comforter Duvet Insert...</strong> by <em>Lavish Comforts</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LX5UR58"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LX5UR58"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Z2OoPYkCL._AC_SX236_SY340_QL65_.jpg" alt="Utopia Bedding Lightweight Comforter, Ultra Soft Down Alternative - All Season..." /></td>
 		 <td><strong>Utopia Bedding Lightweight Comforter, Ultra Soft Down Alternative - All Season...</strong> by <em>Utopia Bedding</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JPECQBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JPECQBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wQWcL+hzL._AC_SX236_SY340_QL65_.jpg" alt="EASELAND All Season Queen/Full Soft Quilted Down Alternative Comforter Hotel..." /></td>
 		 <td><strong>EASELAND All Season Queen/Full Soft Quilted Down Alternative Comforter Hotel...</strong> by <em>EASELAND</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075GGR33H"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075GGR33H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZHyyrz3CL._AC_SX236_SY340_QL65_.jpg" alt="KingLinen White Down Alternative Comforter Duvet Insert King" /></td>
 		 <td><strong>KingLinen White Down Alternative Comforter Duvet Insert King</strong> by <em>KingLinen</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0060BSX6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0060BSX6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-qqgKPfeL._AC_SX236_SY340_QL65_.jpg" alt="ROSECOSE Luxurious All Seasons Goose Down Comforter King Size Duvet Insert Gray..." /></td>
 		 <td><strong>ROSECOSE Luxurious All Seasons Goose Down Comforter King Size Duvet Insert Gray...</strong> by <em>ROSECOSE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B2W6QMS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41idyqRDloL._AC_SX236_SY340_QL65_.jpg" alt="Luxury-Homes-Alternative-All-Season-Comforter" /></td>
-		 <td><strong>Luxury-Homes-Alternative-All-Season-Comforter</strong> by <em>Luxury Homes</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HKP78L4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B2W6QMS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51q19gZt5eL._AC_SX236_SY340_QL65_.jpg" alt="TEKAMON Queen Comforter Soft Quilted Down Alternative Duvet Insert with Corner..." /></td>
 		 <td><strong>TEKAMON Queen Comforter Soft Quilted Down Alternative Duvet Insert with Corner...</strong> by <em>TEKAMON</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07873R45W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07873R45W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5158EIJee-L._AC_SX236_SY340_QL65_.jpg" alt="ROSECOSE Luxurious Heavy Goose Down Comforter King Size Duvet Insert Pinch Pleat..." /></td>
 		 <td><strong>ROSECOSE Luxurious Heavy Goose Down Comforter King Size Duvet Insert Pinch Pleat...</strong> by <em>ROSECOSE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B2VJTRV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B2VJTRV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Q4qmBxYlL._AC_SX236_SY340_QL65_.jpg" alt="downluxe Lightweight Down Comforter(Queen,Whit... Weight Down Duvet Inserts..." /></td>
 		 <td><strong>downluxe Lightweight Down Comforter(Queen,Whit... Weight Down Duvet Inserts...</strong> by <em>downluxe</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M1E0I4I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M1E0I4I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5117LU1vG7L._AC_SX236_SY340_QL65_.jpg" alt="ROSECOSE Luxurious All Seasons Goose Down Comforter King Size Duvet Insert Gray..." /></td>
 		 <td><strong>ROSECOSE Luxurious All Seasons Goose Down Comforter King Size Duvet Insert Gray...</strong> by <em>ROSECOSE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078YQQDY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078YQQDY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413dnUtwPZL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics Reversible Microfiber Comforter - Full/Queen, Black" /></td>
 		 <td><strong>AmazonBasics Reversible Microfiber Comforter - Full/Queen, Black</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Q7OFEM2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00Q7OFEM2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ul-qrepPL._AC_SX236_SY340_QL65_.jpg" alt="Equinox All-Season White Quilted Comforter - Goose Down Alternative Queen Comforter..." /></td>
 		 <td><strong>Equinox All-Season White Quilted Comforter - Goose Down Alternative Queen Comforter...</strong> by <em>Equinox International</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IPSBWNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IPSBWNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

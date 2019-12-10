@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ativa Shredder</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rGO7x48dL._AC_SX236_SY340_QL65_.jpg" alt="Aurora-AU1210MA-Professional-Micro-Cut-Continuous" /></td>
-		 <td><strong>Aurora-AU1210MA-Professional-Micro-Cut-Continuous</strong> by <em>Aurora</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CX4DZ4Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41FCXr1akDL._AC_SX236_SY340_QL65_.jpg" alt="EverShred-12-Sheet-High-Security-Micro-Cut-Operation" /></td>
-		 <td><strong>EverShred-12-Sheet-High-Security-Micro-Cut-Operation</strong> by <em>bonsaii</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IOFD0VO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAFUAOMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAoqneatZWBC3NwiMf4ep/KqD+LdMXo7t9FoA26K5x/Gdkv3YZW/Sq7+N0H3LRvxagDq6K41/G05HyWiD6sTUR8W6m/+rhQfRSaAsdvRXAS+KdVJKl1jPoEwarN4g1Rut44+mBQOx6RQSB1IFeYvqt/J968lP/Aqga5nb708h/4EaAsepGaJfvSIPqwqFtRs0+9dQj6uK8uZmY/MxP1NN4oCx6a+t6bH969h/Bs1A3ibSl/5egfoprzg4qrcC7Z8W5jRMdWGTmgLHpT+MNIT/ls5+iGopfGdlFGJDbXRjPAfYAD+ZrltEv8ASnIW/sGhmQcyMdyufUV0FxqOmKqQNGksTAtgtxQAjeP7POEtJz9SBUMnxAQfcsH/AOBSD/CsHXr6zurQWtnaLEzH5pejKPb3rEs7KYMyRPLcHGdp5IoA9AsPHdpM4S8ge3J6OPmWult7y3u0DW8ySA/3TXjjHBIIwR1FS2uoXFi4aCQr7Z4pAeyUVxGk+NicJdru/n/9euustRttQj320obHVe4/CmFizRRRQIKKKKACiiigCtqGoW2mWb3V3II4k7nuewHvXDan4yvLwsloPs0J6EffI+vas34o6o58QaZp24+TEnnsvYsSQD+QP51kGTPNIZZWUtNudizE8knNWciszd3q+HBUHPUUASZqSK5eBWCBTnuyg1X3Z6c09Ukf7kbt9BQBaGpTjn5M4x92k/tC5/56Ypi2F6/3bSY/RDVlND1Jh/x7kfUgUWC5Ua4ldss2T64qMkkk9zWqnhvUHPzeWg9S1TL4VuD9+5iH0BNFguYeaCa6JfCaj794x+iY/rUi+FrUH5p5W+mBQFzlywppYV2C+G9OXqsjfV6eug6Ypz9lz9XY/wBaAucUWHrTS49a71dNsU+7aQj/AICKkW2t0+7bxD6IKAucBJcSSosaQR7R1cA7qVYLlsGOCZsdCENehbsDjAFIX96YjgZLDVbqdppoJXLDgeXtpy6RqmT5dvLGxGNwO013YYsSBnj1pCrH1oA4VPDmpgY8oZPJLyAmn/8ACM6kR0hH1f8A+tXbNFIOqkVGUIGWYKPViAKAONHhW/JyZYF9wxP9Ksf2fqelILmGbzGTkmLIYD+tdG09qBk3lvj1EgIrOufE3h+yYibWbYuOCsZLn9KANLQfGsN4Ut9QKxTHhZOit9fQ11g6V5Brd1pNy6TacXLycv8AJtU++D3rU8M+MJNLZLTUXaSyPCSHkxf4igZ6XRTY5EmjWSJg6MMqynIIp1AgooooA8U+KrGPxnG3pbIf1aqVrOJoFbPUVd+Li48Wwn1tF/8AQmrl9JvMZhY/SkM6AufWuu8GJa3ltcxXEKSTRMGUsMnaf/r/AM64xWDDIrT0LU5NL1JZYiPnG1gehFMD0lbaBB8kEa/RRUijHCqB9BXH33irV7a+heOG3k052AkKqfMjFWvE2t3Vnok1xpl8EuFwVO1TkE07COnJNKFZugNYcWrRrBH5lyzybRuOe+Oax/E+pmbTEFrcTROJkyyMRxnkUWC52WDTZQAmDIFJ9DyKxTqajaFhkPHcGsTRLh4/EOuSQxs7yNF8rN9wYP8AM0WEdcZoraN5ZpiYwMk4JxTxcRsAVVyDyCBWBf3N5PZTRLGmWXGN1PW5vUhj8xo4xtA6k0WC5sC9Q3bWwjfzFQOSemCSP6GkuZ2hhkmEW7YpO3djNYKfanv5JxcoFMSpnHoSfX3ptxKZYZI2vCNwI6ACnZAb8MzSwRyFI03qDgsTiq5vJP7Sa23RLGIhJuxk5JIx+lYvnQQwxq12z4AHDCoPtFiLppmkckoFwWJ7/wD16NA1OhvLzybSaRbhQ6qSMKOtRRahGbeN5btizKCcEDmufkv7FkZWhyGGOppv9rW6IqxQ4CjHKijQB3im+819KFleyxuLxCxVv4ec1qtqijIaed+PpXOalfR6hHGvkBTG4cN6EVGmoyRE4AbP97mlcLE+g3mY7uS5muLhmnbG+QnaOw61b1DUIjp9wvkjBjYcn2rDNwEZmUKpY5OBgVDJegghiMdxTuOxY0+5S38PW0FvGgIj5JHJPf8AWuKS2uLfUWnaDzTvJIx157V0jX6RrtU4UdqrSakB0xSCxZjmWeMSKCM9mGCKVpQinPPtWY2pkPnrVaa9aQ9aQzvvBvjddLuEsb5z9ikOFc/8sj/hXrCkMoZSCDyCO9fMDSnBB717L8KtffVdAksrhy01gwQE9Sh+7/UUAd3RRRQI8Z+L6geJrM+tqB/48a873NFKGXgivQ/jAMeJ7M+tsP8A0Jq8+lGRSKN2y1FZIgSee4qw18EYFRyOa5SCcwv14q019npTEd7BqayRjJ4Yc1Ndn7fpz2qFFDjBbHOK4myu3aHIJ4NXF1aWBeCRQI7WK8nihSPcPkUDIFQ3pfUIfKmY7Mg/lXIHX5uzUh16f+9RqPQ7T7RJgDceBjrTYJpLV5HgbY0v3z61xZ1yc/xGmnWbg/xGjUNDt2vJm+9JUT3Tn70zH8a4s6rcN/EaadQnP8RoDQ69rgHrIfzqI3EeeW/WuT+1zt3ajzZ2/vUWC51LXcK/xCom1CEdxXNbbhj0anrZ3L9EaiwXN1tViHQioH1hB0rOTSLt/wCBqsJ4fun6qadhXFfWCelV31Rz0rQj8L3DdeKtR+FG/iNFguc819K/rUZllfua61PDEa/eNWF0K2jHIH407CucT5cr9jThZyt2Ndo1jbRnouBUMslrEONtFgOWXTpD1U05dLcOQa15tQhXOMVX/tFCoI64oAy9Usvs9tHIP72011fwdujF4nu7fPyzW+ce4I/xrmtYu1uLNUHZs1s/CdseOUHrbyf0pMaPd6KKKQHjXxiH/FRWJ/6d/wD2Y1561ei/GQf8T3Tj625/9CNedN0pFFSVcHIpoNWSm+N/aq4XFMk6zwVp8eowXiv1RgRWprHh1YtMmmTrGN1Yng3Uv7Onugekiiug1LXxPp1zCFPzoRVLYRyCQgipVtVNV0mIFSLckUAWks1qwlhGcZqit2wNSC9cYoA1I9NhPpVqPS7fuBWMuoSDpUi6lMO9AHRRaXa/3RVqPT7UH7q1y66pP/ep39rTA48w5oA61LS1HRVFWFS2UdFFcYt9dSZ2lyPU8VIslw/35cexNAHYefap3WmtqVqn8S1x8hk6Kd31NQFpv7gI+tAHYvrdqmcMKqy+IYh90E1yxkcdY+PY0wzp33A/SgDem8RsfuLVKXXLhwccVlecnr+lG9WHysDQBPLf3EnVzVVpHY/MxpWyKjJ9aAGN9ach+UUxqRTxQAl1zF+NdH8Kv+R8h/64yfyrnJfmi/Guh+FzmPx7bAAHfFIp9vlz/Skxo98ooopCPH/jKP8AicaYf+mDf+hV5w1elfGUf8TTSz/0xb+deatSLFgGfMHtVQ9at2/ErZ6FTVeRcMcUCLukHFw/utasxBhkH+yayNMz55/3a02PyNnjjvVokykPFOBxUQZe7Cnh19RSGSg0+od/91c04GQ/wkfQGgRLuA6mnB89vzpgjcjARyfZDT1t5j/yxl/75pgSIwzyfwqdGVemKgFtLwfKb8WA/rUqwS90QfWQf0oAtJLkdaabjHeiNGUY2xfXcT/SnhSOskQ+kZP9aAGiYn1odyo6GngDIJmb/gCgfzzSssbdWlP1bH8qYFRnc9AahbdnnA+prQKQDpCM+pYmkDhBhERR7KKQGcVY8dfoM1J9kkZMqrZ+mKu+e4GAcfSmtIT1NAFMWdxjmRVH+0aPswX782f90VM7e9QsRQAgSBWG7zHA7ZxT3eF2JW3RV7DJ4/Wq5PNGeKAGy7WugAoVdnQV0PwyGfiBa47Ryf8AoJrmc/6QSf7ldP8AC4bvH0HtDIf0pMaPeqKKKQjyX4zD/TdKP+w4/UV5k1en/Gr5JNGkPTMin9K8xcYpFjrX/j4H0plwBuJxTrbi5Wi4HzNQIS0bZLGcnBIBAOMitppEUERQxJkdQgJ/M81hQnkfUVqjOc9qpElIzOerEmlWR/7xqL+I/WpFNAydZH/vH86kEjf3jUC08GmImEreppfMY9zUQNKDQBLuJ708fWoQacGoAsLxT8j1qANTg1AEuV7U7cMVDmlzQA8tTGakzTSaAAtSFuKQkU0sKAEJqNqVnqMucUANajPFMY049BQBCf8AXt/uV1nwpGfHaH0gk/kK5In9+x/2a6/4TDPjjPpbv/SpY0e60UUUAeVfHBM2OkN6SyD9BXlUTl4xn7w4NevfGlN2kaY3pO3/AKDXkEX8VIZNb/8AHwlPuB8zVHD/AK9PrUtwPmYUAVYzjNaUZPGazF4NaSHpiqQioeHP1py0x/8AWsPenLQImFPXpUQp4OKYD80bqb1oIoAk3il8wVEBxS4oAmEgpfMxUIFOxgUATCTNKZDUa8CnCgALmmlj60p96YCD3oAWg0YpCKAGk0wmlamE0ANY0pPSmMacT0oAhbPnNj+6K7T4SDPjRz6Wz/zFcbn95J9BXa/CEZ8Xzn0tm/mKljR7fRRRQB538YU3aHYE9BcEf+OmvGVG0sK9q+MA/wCKatG9Lof+gtXjDdc0h9BYuJk+tT3H3zVdP9av1qzcD5zQBSzgGr6HpWe33jV5D8oqkIgk/wBc31oHBol4mb60CgCVTThUYp4oEPFLTRTgKYAflXOOPWkMiLgk9RkVZiTzUZO+OKzbsH7Nxw8TfpSGb9n4d1jULQXllp809uejoBzTH0XVUBD6bdDHX90a6b4dfEaw0nTU0nVw0QViY5wMjB7Gu71bx5oFppk0yahFM5QhEj5LHHFAjw6W4jgH7w4I7VSl1btDH+LVXvpvPlLAdTVYDjPvQxl37ZPInL4J9KvW4xEC3JPrWdbRGWRVrWIAIA6ChABJppalbpUZNMQjGmGnU00AMNOphp5pAR5+eQ+wrufg4M+KLw+lsf8A0IVwp/5afhXffBdc+IdRb0tx/wChCkxo9oooooA4T4uJu8JRt/duUP6NXiRr3T4qru8Fyn+7NGf1rwtuKQwU/Op96t3H3zVIdR9auz/e/CgCg/3zVxD8o+lU5fvmrUZ+RfpVIRHL/rmpBRL/AK00CgCQU8cVGDTgaAJAaepqIGpBTETRyGNww7VLf2gli+0wjKMMMB2qsDVm1u2tX6bo24ZTQBzkkZilKmnDI5rpbzQk1KIzaawcjkx/xCufms57dyj5BHGGGCKWwyu3zNjuacEJcKOccfjU8FnLK4SFTJKe4HArVgsI7BcyEPP/AHR0X60AMt7f7LFlv9a4/Kn9KCSSWY5JppNMQjmozTjTCaADNIaM00mgBpNKTTSaX1pARk8SfUV6L8FFzqurN6QoP1rzk/df616X8Eh/pesN/sxj9TSYz16iiigDjvikM+B7v2eM/wDj1eEPXvfxNXd4Gv8A22H/AMeFeBMcqp9qQ+gnpV6bqPoKoVem5VPoKAKM33zViI/u1+lQTffqaI/u1qkIbN/rfwpoNLN9/wDCkFADxT6YKdQA8GpBUIp4NAiQGn7uKizRupgTRyvC4eJ2Rh3BxV4eIbrhZ0inxxmRATWWWpM0AaM2qzz/ACgJGPSNQtV8/nUAPNO3UAPLVGTSFuabmgBxNRk0tNIpAGaaeaDSE8UAI2KD1ppNKTzQAz+FvrXqHwRX5tYb/rmP/Qq8uP3W+ter/BJP9D1aT1kRf0NIZ6pRRRQBy/xGXd4H1L2VT/48K+feqCvob4gru8D6r7RA/qK+eoxmMUh9BuKuvyifQVVI4qwx/dR/7tAFWb/WCpIvuCo5+oNSQ/6sU0IZKP3n4Ui06f74+lMFMCQGnA0wUuaAHg04Go80uaBEmaXNRhqXNAyTNGaYDTqBC5NGTSUUAJmiikoAdnikNJR2oAaaaacaYaBjTS0hp1AEbfdP1r1/4KJjQ9Sf+9cgf+O14833T9TXtHwZTb4Yum/vXJ/kKQHotFFFAGB45Xd4L1cf9O5NfOsBzHX0f4xXd4P1cf8ATq/8q+boD+5pD6EjHipzzBH9KqM3FWVP+jx/SgCCftSwn92KSfkUsH3PxpoQTdV+lMFOm6rTKYDxS5ptGaAH0lGaM0ALkgUoNNpRQIkFOzUYp3SgB2aTNJmigBSaKSjtQAtFJS0ANNNNONNNAxpHNLSHrRQBE33T+Ne3/B9dvhBz/euG/pXiDfdr3b4TR7PBMR/vTOaQzt6KKKBGR4rGfCmrD/p1k/8AQTXzTB/qD9a+mfEwz4Y1Qf8ATrJ/6Ca+Z7f/AI92+tAxhNWozm3SqmasxHMKj3oASb7tLbjMf40kv3adbf6s/WhCEnH3ajqW4421DmmAtLSUtABS0lLQAop3WkooEKOKdnNNpaAHUUgBNGDQAvalAoxQBigBKKcaO1AxhFNNSGmEUAM70oFJ3pRQBC/3a9/+GCbPAtj/ALRY/qa+fn+7X0R8O02eBtLHrGT+ppAdPRRRQBm+IRnw7qQ9baT/ANBNfM1v/wAe7fWvpzXBnQtQHrbyf+gmvmS1/wBQ31oGQHvU8J+TFQnrT4TQBLL92n233G+tMk+6afacow96EILkcLUFWbr7q/Wq9MBKcKSlNAC0oFIKWgBwpaaDSigQtKKMU4CgAFLijFKBQAUYpcUuKAGmilIoxQMaRTSKf3ppFAEX8VOA60mPmp+ODQBUf7tfR3gVdngvSR/0wBr5xfoK+lfCCeX4S0pfS3X+VIDZooooAp6uM6NfD/pg/wD6Ca+YrQfuJPrX0/qgzpN4P+mD/wDoJr5isx/o0v1oGVm+8aWE/NQ/Dmkj+9QBO/3alshkSfWoT0qxp4yZfqKEIW8GET61Vq9fDESfWqVMBKWiloABS0lKKAFxTgKBThQIAKcBQBTgKADFKBRiloAUCgilooAbSU7FJigBpppp5FNIoGMA+anEfKTSAc05uEb6UCKbj5l/Cvpvw8nl+HtPX0t0/lXzMw/eIPcV9P6Su3SLNfSFP5CkMt0UUUAVtS/5Bd3/ANcX/wDQTXzFZ/8AHtL9a+nNT40q8/64P/6Ca+Y7L/USemaBlaT7xpqfep8v3zUa8NSAnJ4FW9NGZJh9KpZ6Vf0z/XTfQU0Ik1AfuV/3qoVo6h/qF/3qz6YhKXFFFAwpRRSigQ4U4CminigBRTxTRThQAtFFKKAFxS4oHWloAaRSYp5pKAGEU0ipCKaRQAzHND/6pvpTsUjj92aAK2M3EQ9WH86+n7AbdPth6RL/ACFfMiLm/tx6uP519PWw22sI9EUfpSGS0UUUAI6LJGyONysCCD3FeHeNvB9v4WuWe1kLW90xaOM/8sx3Fe5V518XbctpdlPjhXKn2zQB4tMPnNRjrU0336g70hkqmr+ncXEv+6Kzl6ir9hxcyf7opoRYvzmAfWqFXr7/AFH41RpiCloFLQAUCilFADhThTRThQA4U4U0U4UAKKd2po5p4oATvT6TFLQAEUlLQaAG0hpTSE0ANPehh8ho65pX/wBXQA23XdqtoPWRf519NxjESD0UV802C79csR6yr/OvpgDAApdSgooooEFcz8QNOOo+ELxUUmSECVQPbr+ma6amyxLNC8UgyjqVYeoNAHyrNy1QHrWt4i019H128sZBgxSED3HY/lWR3pDHr1FaFh/x9P8A7grPT7wq/Y/8fjf7lMRZvR/o/wCNUBWjej/Rz9RWeKYBS0lLQIKUUgpRQA4U8U0U8CgBRRSgU8AUwEFOFFKBQAtLRjilxxSAaetFL3pKAENNNKxphb8aAFA60sg/dj6ikUMc4FKwYrzjA70DLGjJv8RaeP8Apsv86+kq+d/C8D3XiqwjhQyMJQxA7Ad6+iKQBRRRQAUUUUAeA/FQhvHNzjtGgP8A3yK4ojmvXPjB4ZLLF4gtUJ2YiuQB2/hb+n5V5KeTmkMEHzitCy4vW/3KpRD5xV6yXN+R/wBM/wCtMRavB/ox+orPFaV4uLZvqKzhTEFJilxS/jQA2nAUDHrTgPrQAqg1IBTQcdBTw30FADgtOUAVHkjvxSjLH5cn6UDHgYb2p24VPb6RqV0wFtp11KT02xMa17bwF4luyNunNED3lYL/ADOaLgYO8U0yegrubb4TazLj7Re2sC98bnI/TH61t2fwhsI2BvNRuJ/URoEH9aLhY8qLe4pFDSMFjVnY8AKMk17pZ/D3w3Z4I08TMP4pnZ/0zj9K3rawtLJQtrawwgdBGgX+VID5yktZoJGjuIXhdeqSKVI/A1D5iBtoBJHoK+gNc8JaX4gkSW9iYTIMeZG21iPQ+tT6X4b0nRotllZRoepdhuYn6mgDxLSPCuua2yizsHjiY/66YFEA/Hr+Fei2nwo0mPy2uri5nIX51DBVJx2wM9a7yigDN0nw/pmhxldOs44SergZY/U9a0qKKACiiigAooooAiu7WG9tJba5jEkMylHU9CDXzl4u8J3XhPV3t5VZ7ORibefHDr6H3FfSVc/418Nr4o8PTWS4Fwh8yBj2cdPwPSgD50gGXFadlADO8mTuC44qjPb3dhdvaXEDxXUbbGjZec13Oi/D/Xb9VcotrC+CZJTg4+nWgdjm7mEvDtVSzswCqOSTU8fgzxDIAV0i5/FK9d8OeALDQ5Uup3N3eL0dh8qn2FdbQI8Ah+H3iWY4Gmsnu7AVej+FniRvvR26fWUGvcaKAPG4fhFrDkedd20Y+pNaEXwdk487VVHrsjzXqlFAHncHwg01D+/1C5l/3VC/41qW3ww8PQffimmP/TST/CuwooHcwoPBXh63IKaXASO75b+ZrTh0uwt/9RZW0X+5Eo/kKtUUCDpRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRSKdwzjFFAC0UUUAFFFFAFeXT7Oe4S4mtYZJ4/uyNGCy/Q1YoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBFUIoUdBRRRQB//2Q==" alt="AmazonBasics 12-Sheet High-Security Micro-Cut Paper, CD, and Credit Card Shredder..." /></td>
 		 <td><strong>AmazonBasics 12-Sheet High-Security Micro-Cut Paper, CD, and Credit Card Shredder...</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00D7H8XB6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00D7H8XB6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414vOJFt7qL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics 8-Sheet Cross-Cut Paper and Credit Card Shredder" /></td>
 		 <td><strong>AmazonBasics 8-Sheet Cross-Cut Paper and Credit Card Shredder</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YFTHJ9C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YFTHJ9C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XVyB18vmL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics 24-Sheet Cross-Cut Paper, CD, and Credit Card Shredder with Pullout..." /></td>
 		 <td><strong>AmazonBasics 24-Sheet Cross-Cut Paper, CD, and Credit Card Shredder with Pullout...</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HFJWMV4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HFJWMV4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41e3xGeJ3ZL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics 15-Sheet Cross-Cut Paper/ CD/ Credit Card Shredder" /></td>
 		 <td><strong>AmazonBasics 15-Sheet Cross-Cut Paper/ CD/ Credit Card Shredder</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M0FMM70"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M0FMM70"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41FCXr1akDL._AC_SX236_SY340_QL65_.jpg" alt="Bonsaii EverShred C149-C 18-Sheet Heavy Duty Cross-Cut Paper/CD/Credit Card Shredder..." /></td>
 		 <td><strong>Bonsaii EverShred C149-C 18-Sheet Heavy Duty Cross-Cut Paper/CD/Credit Card Shredder...</strong> by <em>bonsaii</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IOFD08C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00IOFD08C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ru1ZoKE9L._AC_SX236_SY340_QL65_.jpg" alt="Fellowes Powershred 79Ci 100% Jam Proof Medium, Duty Cross, Cut Shredder, 16..." /></td>
 		 <td><strong>Fellowes Powershred 79Ci 100% Jam Proof Medium, Duty Cross, Cut Shredder, 16...</strong> by <em>Fellowes</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000WB397I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000WB397I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cJ0dQs1pL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics 17-Sheet High-Security Micro-Cut Paper, CD, and Credit Card Shredder" /></td>
 		 <td><strong>AmazonBasics 17-Sheet High-Security Micro-Cut Paper, CD, and Credit Card Shredder</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Q3KG1L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JI8J2680L._AC_SX236_SY340_QL65_.jpg" alt="DocShred-C156-D-12-Sheet-Cross-Cut-Wastebasket" /></td>
-		 <td><strong>DocShred-C156-D-12-Sheet-Cross-Cut-Wastebasket</strong> by <em>bonsaii</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LL3IE2Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00Q3KG1L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eGXzNnwUL._AC_SX236_SY340_QL65_.jpg" alt="Fellowes Powershred 99Ci 100% Jam Proof Cross-Cut Paper Shredder" /></td>
 		 <td><strong>Fellowes Powershred 99Ci 100% Jam Proof Cross-Cut Paper Shredder</strong> by <em>Fellowes</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000YGO7HW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000YGO7HW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41k08lfwqVL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics 12 Sheet Cross-Cut Paper/CD/ Credit Card Shredder" /></td>
 		 <td><strong>AmazonBasics 12 Sheet Cross-Cut Paper/CD/ Credit Card Shredder</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0714PJR6F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0714PJR6F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414Pak2uw8L._AC_SX236_SY340_QL65_.jpg" alt="Fellowes 62MC 10-Sheet Micro-Cut Home and Office Paper Shredder with Safety Lock..." /></td>
 		 <td><strong>Fellowes 62MC 10-Sheet Micro-Cut Home and Office Paper Shredder with Safety Lock...</strong> by <em>Fellowes</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010E9M3KG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B010E9M3KG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jYqGkDHGL._AC_SX236_SY340_QL65_.jpg" alt="Fellowes Powershred 73Ci 100% Jam Proof Medium, Duty Cross, Cut Shredder, 12..." /></td>
 		 <td><strong>Fellowes Powershred 73Ci 100% Jam Proof Medium, Duty Cross, Cut Shredder, 12...</strong> by <em>Fellowes</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0092KZ94G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0092KZ94G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LQsfTdXUL._AC_SX236_SY340_QL65_.jpg" alt="Aurora AU870MA High-Security 8-Sheet Micro-Cut Paper Credit Card Shredder Black" /></td>
 		 <td><strong>Aurora AU870MA High-Security 8-Sheet Micro-Cut Paper Credit Card Shredder Black</strong> by <em>Aurora</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MYF6M0J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MYF6M0J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4165zXyJvcL._AC_SX236_SY340_QL65_.jpg" alt="Ativa 8 Sheet Micro-Cut Desktop Shredder, OMM83H" /></td>
 		 <td><strong>Ativa 8 Sheet Micro-Cut Desktop Shredder, OMM83H</strong> by <em>ATIVA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G3FV6L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07G3FV6L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31FS18QFnpL._AC_SX236_SY340_QL65_.jpg" alt="Ativa 20 Sheet Cross-Cut Shredder, OMX203P" /></td>
 		 <td><strong>Ativa 20 Sheet Cross-Cut Shredder, OMX203P</strong> by <em>ATIVA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G3GVJHV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07G3GVJHV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

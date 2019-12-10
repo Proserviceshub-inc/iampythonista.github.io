@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Brella Umbrellas</div>
@@ -86,115 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uo-Awxp0L._AC_SX236_SY340_QL65_.jpg" alt="AmaGo-Inverted-Umbrella-Self-Stand-Inside-Out" /></td>
-		 <td><strong>AmaGo-Inverted-Umbrella-Self-Stand-Inside-Out</strong> by <em>AmaGo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H95V8T3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41aAwFh7dFL._AC_SX236_SY340_QL65_.jpg" alt="BETTERBRELLA-Reverse-Open-Wind-Proof-Umbrella" /></td>
-		 <td><strong>BETTERBRELLA-Reverse-Open-Wind-Proof-Umbrella</strong> by <em>BETTERBRELLA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GKBB9RK"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="BAGAIL Double Layer Inverted Umbrellas Reverse Folding Umbrella Windproof UV..." /></td>
 		 <td><strong>BAGAIL Double Layer Inverted Umbrellas Reverse Folding Umbrella Windproof UV...</strong> by <em>BAGAIL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N99DAB7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N99DAB7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61bYeCI+owL._AC_SX236_SY340_QL65_.jpg" alt="Spar. Saa Double Layer Inverted Umbrella with C-Shaped Handle, Anti-UV Waterproof..." /></td>
 		 <td><strong>Spar. Saa Double Layer Inverted Umbrella with C-Shaped Handle, Anti-UV Waterproof...</strong> by <em>Siepasa</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076MR5RN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076MR5RN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41s3ZFlAZbL._AC_SX236_SY340_QL65_.jpg" alt="Sport-Brella X-Large Umbrella" /></td>
 		 <td><strong>Sport-Brella X-Large Umbrella</strong> by <em>Sport-Brella</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003DJ4FEM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003DJ4FEM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ck-n3LcJL._AC_SX236_SY340_QL65_.jpg" alt="EEZ-Y Compact Travel Umbrella w/Windproof Double Canopy Construction - Auto Open..." /></td>
 		 <td><strong>EEZ-Y Compact Travel Umbrella w/Windproof Double Canopy Construction - Auto Open...</strong> by <em>EEZ-Y</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019VGIP28"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AXG4jn7OL._AC_SX236_SY340_QL65_.jpg" alt="Better-Brella-C-Shaped-Umbrella-Red" /></td>
-		 <td><strong>Better-Brella-C-Shaped-Umbrella-Red</strong> by <em>BETTERBRELLA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07327L4LQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019VGIP28"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513cFI2QxzL._AC_SX236_SY340_QL65_.jpg" alt="EEZ-Y Reverse Inverted Windproof Umbrella - Upside Down Umbrellas with C-Shaped..." /></td>
 		 <td><strong>EEZ-Y Reverse Inverted Windproof Umbrella - Upside Down Umbrellas with C-Shaped...</strong> by <em>EEZ-Y</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072N7JQGF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072N7JQGF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rodm-C0tL._AC_SX236_SY340_QL65_.jpg" alt="His Private Items Upside Down Reversible Umbrella - Automatic Open and Close..." /></td>
 		 <td><strong>His Private Items Upside Down Reversible Umbrella - Automatic Open and Close...</strong> by <em>His Private Items</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075LMW6XH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075LMW6XH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gBOx5-neL._AC_SX236_SY340_QL65_.jpg" alt="Super-Brella - Portable Sun and Weather Shelter" /></td>
 		 <td><strong>Super-Brella - Portable Sun and Weather Shelter</strong> by <em>Sport-Brella</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0047ZADSI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0047ZADSI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515apE95sAL._AC_SX236_SY340_QL65_.jpg" alt="AWEOODS Inverted Umbrella Windproof Reverse Folding Double Layer Travel Umbrella..." /></td>
 		 <td><strong>AWEOODS Inverted Umbrella Windproof Reverse Folding Double Layer Travel Umbrella...</strong> by <em>AWEOODS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JSBH4J6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JSBH4J6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41glIHWfnML._AC_SX236_SY340_QL65_.jpg" alt="Umbrella Windproof Travel Umbrella Compact Folding Reverse Umbrella,LANBRELLA" /></td>
 		 <td><strong>Umbrella Windproof Travel Umbrella Compact Folding Reverse Umbrella,LANBRELLA</strong> by <em>LANBRELLA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073Q3F3F5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073Q3F3F5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31yZJA7IMDL._AC_SX236_SY340_QL65_.jpg" alt="Sport-Brella Versa-Brella All Position Umbrella with Universal Clamp" /></td>
 		 <td><strong>Sport-Brella Versa-Brella All Position Umbrella with Universal Clamp</strong> by <em>Sport-Brella</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HA2ZKCO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HA2ZKCO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51TJhvBlp4L._AC_SX236_SY340_QL65_.jpg" alt="Reverse Inverted Inside Out Umbrella - Upside Down UV Protection Unique Windproof..." /></td>
 		 <td><strong>Reverse Inverted Inside Out Umbrella - Upside Down UV Protection Unique Windproof...</strong> by <em>Dryzle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NBK4JIZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01NBK4JIZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Mouse For Carpal Tunnels</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31KW1zR1XZL._AC_SX236_SY340_QL65_.jpg" alt="White-Keyboard-Mouse-Wrist-Support" /></td>
-		 <td><strong>White-Keyboard-Mouse-Wrist-Support</strong> by <em>nOO1a</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MPZTP1X"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Urbo Wrist Compression Brace FDA &amp; CE Approved with Ergonomic Support for Computer..." /></td>
 		 <td><strong>Urbo Wrist Compression Brace FDA &amp; CE Approved with Ergonomic Support for Computer...</strong> by <em>Urbo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BK2YXCF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BK2YXCF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="M BRACE RCA - HEAVY DUTY - Carpal Tunnel Treatment Wrist Support (Regular, Black)" /></td>
 		 <td><strong>M BRACE RCA - HEAVY DUTY - Carpal Tunnel Treatment Wrist Support (Regular, Black)</strong> by <em>M BRACE RCA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PFUPRQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00PFUPRQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LSh4jAunL._AC_SX236_SY340_QL65_.jpg" alt="PolyGel Computer Gloves (Carpal Tunnel Relief) - Size: Medium/Large - One Pair..." /></td>
 		 <td><strong>PolyGel Computer Gloves (Carpal Tunnel Relief) - Size: Medium/Large - One Pair...</strong> by <em>PolyGel</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SNDCCV6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00SNDCCV6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41blaH-mcdL._AC_SX236_SY340_QL65_.jpg" alt="The Tunnel Tamer | Carpal Tunnel Prevention &amp; Wrist Pain Relief Brace for Nerve..." /></td>
 		 <td><strong>The Tunnel Tamer | Carpal Tunnel Prevention &amp; Wrist Pain Relief Brace for Nerve...</strong> by <em>BraceAbility</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075RHBJ4M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075RHBJ4M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ASKdsSk2L._AC_SX236_SY340_QL65_.jpg" alt="Keyboard Wrist Rest Pad - Full Mouse Pad Included for Set - Quality Memory Foam..." /></td>
 		 <td><strong>Keyboard Wrist Rest Pad - Full Mouse Pad Included for Set - Quality Memory Foam...</strong> by <em>CushionCare</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01A92ETXM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01A92ETXM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q8P98yCYL._AC_SX236_SY340_QL65_.jpg" alt="J-Tech Digital [V628] Wired Ergonomic Vertical USB Mouse with Adjustable Sensitivity..." /></td>
 		 <td><strong>J-Tech Digital [V628] Wired Ergonomic Vertical USB Mouse with Adjustable Sensitivity...</strong> by <em>J-Tech Digital</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0759V6FZC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0759V6FZC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vKh4vif0L._AC_SX236_SY340_QL65_.jpg" alt="Mueller Fitted Wrist Brace, Black, Right Hand, Small/Medium" /></td>
 		 <td><strong>Mueller Fitted Wrist Brace, Black, Right Hand, Small/Medium</strong> by <em>Mueller</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002NLGNW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515UWCoDgqL._AC_SX236_SY340_QL65_.jpg" alt="LIZIMANDU-Memory-Keyboard-Wrist-Support" /></td>
-		 <td><strong>LIZIMANDU-Memory-Keyboard-Wrist-Support</strong> by <em>lizimandu</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0714FHNX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PQEzmYMrL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics-SBD86WD-Gaming-Mouse-Pad" /></td>
-		 <td><strong>AmazonBasics-SBD86WD-Gaming-Mouse-Pad</strong> by <em>AmazonBasics</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06X3W3YQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002NLGNW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419OvlZSevL._AC_SX236_SY340_QL65_.jpg" alt="Wrist Brace Support Hand Left Right Carpal Tunnel Men Women Night Sleep Pack,..." /></td>
 		 <td><strong>Wrist Brace Support Hand Left Right Carpal Tunnel Men Women Night Sleep Pack,...</strong> by <em>FINGER TEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J2CPLSP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07J2CPLSP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51S1Sr7DRLL._AC_SX236_SY340_QL65_.jpg" alt="Adjust Wristband Steel Wrist Brace Wrist Support Splint Fractures Carpal Tunnel..." /></td>
 		 <td><strong>Adjust Wristband Steel Wrist Brace Wrist Support Splint Fractures Carpal Tunnel...</strong> by <em>MQ</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MDNSXJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MDNSXJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZlANJgO9L._AC_SX236_SY340_QL65_.jpg" alt="ATX Night Sleep Support Wrist Brace - Carpal Tunnel Relief - Fits Both Left &amp;..." /></td>
 		 <td><strong>ATX Night Sleep Support Wrist Brace - Carpal Tunnel Relief - Fits Both Left &amp;...</strong> by <em>ATX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GRPS8VC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GRPS8VC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FmwI1E-FL._AC_SX236_SY340_QL65_.jpg" alt="Jadedragon removable splint Wrist Brace Wris Support for Carpal Tunnel, Tendonitis..." /></td>
 		 <td><strong>Jadedragon removable splint Wrist Brace Wris Support for Carpal Tunnel, Tendonitis...</strong> by <em>Jadedragon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CT1X0DG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01CT1X0DG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41a84HSL6bL._AC_SX236_SY340_QL65_.jpg" alt="[1 Pair] Gel Carpal Tunnel Wrist Brace-Wrist Splint brace Support, Thumb Splintc..." /></td>
 		 <td><strong>[1 Pair] Gel Carpal Tunnel Wrist Brace-Wrist Splint brace Support, Thumb Splintc...</strong> by <em>Feetrelax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GV3ZC2T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GV3ZC2T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41w+-JjUPPL._AC_SX236_SY340_QL65_.jpg" alt="Wrist Brace Support Strap Band Pad Right Hand Left Value 2 Count, Elastic Compression..." /></td>
 		 <td><strong>Wrist Brace Support Strap Band Pad Right Hand Left Value 2 Count, Elastic Compression...</strong> by <em>FINGER TEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H83MFN1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07H83MFN1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

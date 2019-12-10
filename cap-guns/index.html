@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Cap Guns</div>
@@ -89,128 +98,156 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OgPfJlLHL._AC_SX236_SY340_QL65_.jpg" alt="Parris Doc Holliday Holster Set" /></td>
 		 <td><strong>Parris Doc Holliday Holster Set</strong> by <em>Parris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001AZV8DC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001AZV8DC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Parris Texas Ranger Double Holster Toy Cap Gun Set" /></td>
 		 <td><strong>Parris Texas Ranger Double Holster Toy Cap Gun Set</strong> by <em>Parris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0029S0IWQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0029S0IWQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ISB2Sc2IL._AC_SX236_SY340_QL65_.jpg" alt="Parris Billy the Kid Holster Set" /></td>
 		 <td><strong>Parris Billy the Kid Holster Set</strong> by <em>Parris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00W3QQ1I4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00W3QQ1I4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51lbxd7GxgL._AC_SX236_SY340_QL65_.jpg" alt="Parris Manufacturing Desert Fox WWII Die Cast Metal Toy Replica Luger Gun" /></td>
 		 <td><strong>Parris Manufacturing Desert Fox WWII Die Cast Metal Toy Replica Luger Gun</strong> by <em>Parris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06ZYTQKF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06ZYTQKF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419N3KMTVgL._AC_SX236_SY340_QL65_.jpg" alt="Sunny Days Entertainment Maxx Action Deluxe Western Toy Cap Gun Play Set (Ring..." /></td>
 		 <td><strong>Sunny Days Entertainment Maxx Action Deluxe Western Toy Cap Gun Play Set (Ring...</strong> by <em>Sunny Days Entertainment</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0731V7C3V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0731V7C3V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ipwQI4j2L._AC_SX236_SY340_QL65_.jpg" alt="Maxx Action Western Series Toy Cap Pistol Combo (Ring Caps) (Pack of 2)" /></td>
 		 <td><strong>Maxx Action Western Series Toy Cap Pistol Combo (Ring Caps) (Pack of 2)</strong> by <em>Sunny Days Entertainment</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Y4QC55E"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41A92u8cKqL._AC_SX236_SY340_QL65_.jpg" alt="Bastion-slide-Wesson-compact-engraved" /></td>
-		 <td><strong>Bastion-slide-Wesson-compact-engraved</strong> by <em>BASTION</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KO5QN98"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41s3Y4CVXHL._AC_SX236_SY340_QL65_.jpg" alt="Mantis-MT-1001-MantisX-Shooting-Performance" /></td>
-		 <td><strong>Mantis-MT-1001-MantisX-Shooting-Performance</strong> by <em>Mantis</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GF81M5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00Y4QC55E"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mIt1ctDmL._AC_SX236_SY340_QL65_.jpg" alt="Scout Double Pistol &amp; Holster Set, Shoots Roll Caps, Boxed" /></td>
 		 <td><strong>Scout Double Pistol &amp; Holster Set, Shoots Roll Caps, Boxed</strong> by <em>Paris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0007US6CC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0007US6CC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51h9d6hputL._AC_SX236_SY340_QL65_.jpg" alt="Big Tex Cowboy Collection Cap Pistol and Holster Set for Cosplay" /></td>
 		 <td><strong>Big Tex Cowboy Collection Cap Pistol and Holster Set for Cosplay</strong> by <em>Parris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B012AVOEFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B012AVOEFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41gaysoWS4L._AC_SX236_SY340_QL65_.jpg" alt="Rhode Island Cap Gun Super 007 Series" /></td>
 		 <td><strong>Rhode Island Cap Gun Super 007 Series</strong> by <em>Rhode Island Novelty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01E9MSGVY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01E9MSGVY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Bncad0ZWL._AC_SX236_SY340_QL65_.jpg" alt="Toy Cap Gun: Set Of 2 Police Style 38 Super Cap 8-Shot Revolvers" /></td>
 		 <td><strong>Toy Cap Gun: Set Of 2 Police Style 38 Super Cap 8-Shot Revolvers</strong> by <em>Magic Source</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DHOZKEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00DHOZKEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LldoIAooL._AC_SX236_SY340_QL65_.jpg" alt="Toysmith Wild West Metal Cap Gun" /></td>
 		 <td><strong>Toysmith Wild West Metal Cap Gun</strong> by <em>Toysmith</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003SN51IW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003SN51IW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31TkY0pMyvL._AC_SX236_SY340_QL65_.jpg" alt="Cowboy/girl Cap Gun Revolver" /></td>
 		 <td><strong>Cowboy/girl Cap Gun Revolver</strong> by <em>Unbranded</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JDO042C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JDO042C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61onm5XgmyL._AC_SX236_SY340_QL65_.jpg" alt="Wild West Cap Gun Pistol" /></td>
 		 <td><strong>Wild West Cap Gun Pistol</strong> by <em>JA-RU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009RBT0SQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dOU2U1IWL._AC_SX236_SY340_QL65_.jpg" alt="Explorer%C2%AE-Backpack-Zipper-Shooting-Pistols" /></td>
-		 <td><strong>Explorer%C2%AE-Backpack-Zipper-Shooting-Pistols</strong> by <em>Explorer</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BYE35WK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009RBT0SQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Raid Controllers</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ml7gwBdpL._AC_SX236_SY340_QL65_.jpg" alt="Express-Expansion-Controller-Rosewill-RC-508" /></td>
-		 <td><strong>Express-Expansion-Controller-Rosewill-RC-508</strong> by <em>Rosewill</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011LZY20G"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oJJdeLrSL._AC_SX236_SY340_QL65_.jpg" alt="Controller-Support-HyperDuo-Multiplier-88SE9230" /></td>
-		 <td><strong>Controller-Support-HyperDuo-Multiplier-88SE9230</strong> by <em>N N.ORANIE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KYP5RRL"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCACTAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0qf8Ath7opb/Y4YP+ejhpG/LK81DeWGoraSzJqtxJcRIXjjWONUZgMgEbckH0zWxRQBBZz/abZJf7wzU9cx4Q1G7nn1bT77YZLG42o6jG9TkZPvuVua6ekhtWCiiimIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiq9xqFnaAm5uoYsf33AoAsUVzt3450S0BxcPMR2jQ8/icCsS8+JsUcDyWtgz7QSN743YHsP60E8yO9oriYNd1HVNOgvRfLBDcxCRUt4BlcjpuYnOPpWVqOoXWn65od59tujbvc+XOssu4PkfLwAAP4qnmKd9z0uiiiqAKKKKACiiigDkbMCw+I93Fjal7b7gPUrg5/V666uS8Tn7F4p0G/6BpfJY9gDlf8A2f8ASutpIp9AooopkhRRRQAUUUUAFFFMlmigTfNIka+rsAKAH0VlTeJdKhYr9rWRum2IF/5cVl3fjiGBHePT7kxqpfzJcIpAGTjqScAnGKXMhXSOporzW7+JF9vjjisxEZVZgUTfsHQEnOMZIzxwDWa/iTWL5D9tvZYpI5WVkjDIJk7ELgED3JHQ9OlFwuerz3UFsu64njiHq7Bf51SbX7LJEHm3DAZxDExGPXPTHvmvE9V1dY1OzEpZA3B5BP8AtHP55r0Nb2O7hs7uaaaVJoUkkKcMgIyE54PWgDdl8RTMIjDaRxpKCVkuZwoHuQucVnza1qMqnN5HEwf7lvB1TuQzEj9KoZKW7ubYDZJmWTna3omO3bvUku8S3ME7RRB0DSRcc+iIefyzTA5nx94jvNNNnaWFzdrJOhmlmuZN3GcBAv3fc8dxXOnUrvUbi21F7MRwSQESRxKRE7KdpcD7q5JGcjGQe5ru7i1sdQaFtZjbUUwDKHXDxv2UEnn0JHWq/iqOeXwtFDa2sKC2m8t3jAVIEzwuMY/iA45/OgT2OGgaNr2GVkXhyVAyQmT2z25/Wut0TTLDXdSuY9RSQeQ0I2I+1ZEbIJ9fvAdDXH5xGMAgqcjPTB//AFV02j30enar9snYx21xatE8oBO1wQ6dPcEUXdhx1SOkn0y20W6ksLJGjtosGNC7NtBGeNxPcmsvxPCZPD0twjtvt9jrHnglXyWx6gMa0bjxJp/iTWimlrKzRwhpXkXYMZOCAeTzx0p1xYi8sZ4JUzlH2OeiEoVJz9DWfUp6o7fTLoXumWtypyJYlb8xVquZ+H12114RtQ5y8JaInOeh/wDr101WiVsFFFFMYUUUUAcv8QIGfw208Y+e3cSAjtjp+uK6O0uFu7OC4j+5NGsi/QjNVtbg+06LeR43ZiLAepHIH6Vy+heKbfSfCWnJdpLJKivDhAONjFecn0AqdncJSUY3Z21FcNN4/uJkkewsU8qIgSTOWdVz0zgDBPpmo3v9c1KwW8GomO1dxFJ5CLGYs4w+Tk9CDik5oxVZSdoJv+vM7xmVFLMwVRySTgCsu68T6NZlhLqMBZVLlY23kKOpwueBXkk9zDqPiQWdwb2ZFfBmnndthAzkqCRzjv0zU2tXNzp9lFc2Nx5AEp3mNVC5YcsBjgllOc+gp3ZXM27JHos3jW1EvlW1ncyvuC/OojAyu4H5ucY74rKm8Zarcws1lbWsDFAyKxaU5ydynbgZAHYkGuO0O8iudKjuLmZtyzPE8zc5LDIyMexrQUzvbNJLdusQLZjiQKP42b5jnkkL+L+1LUxnUkpcpck1nW5IGlvtSlV1PywxIIVfnpkZJ/PP41Tl0651WSOK1he5K4Fw8ib9mRxnd9T6ZpRHHBt8l3MseVEiyFvLIHBH8PBVjjvmt/RPE1tpukfZ9RuZLi5ErlAkbF5FJ759yR+VImEZVFaUjGuPCesx23nTviONssPMUAIOckZ9cdM1NNr6z6LHpzQKjQqJMH5XCZ6gdf8APtzp3HjRbiCRIdPYRuCu6aQKDweR+X6j1rlJtThgvrd2WV723DIjOAIkLDrt9OcnHaly3LUFBuNPqvUcI0sIDb/ajLbW6iRmUAblH3hu9eoxWRcalLcmNgqIY+VdEAJ/D9PequtX3k3Rswm0kh2OeOeoGfcn171Fa4eNmWQSK2QQedv5960jsbxs1fuVbuEKGl5YE8jgc16B4UupLjwfp7rIA9rI0S44cNkndjuApX+VcBeSrHDsdgXbgr1wPrXV/DyY3Gl6naYLeWwlLbuYkOQxHPOdo/OmM6ljF5soEzyl/wDVOBhZX/iZgeadCCrWhgtAd2URJjlZW6lwTgcdu1KsjiSGRriG2WWPa5hXIjj67WUdCagYw+QyOX3IwZoyRsSLPRT1BNAyT94luAsq5t5iIwP9YGPLOcDkenNV9etoLvQNQRjPNGu2WJrfiSZ+hZlPJUZyR6D2q20TNLcx/ZjHuiDEOcPBGOwyRkn6ZqWISXMePPEL3Fs0Zmt+tsmOMqAPmzTEeVyo8TspG+QdcDj/APVV6KS7+wpAhinZsAjbkA9eccZAP61VuAitGwP7pkHK8Z7Z65B74q3YsYLW68mJQ4VjyOuRyc/UUIhJvqLo6XieIre3N0tlc3avELiIBgAOduOnJHWutXw5aCZHv7y91CQZ/wBdNhQR7Dn9auaX4b0S80J72GzDXQgS4ikd2Yrlc8c46giiBwHQ9R/Ss5O7NUi18P7hor/W9Ncn9xPujBbOFPT9MV3Fea+HmTS/iEkMbsY7202Es2SXTjk+vA/OvSqpEoKKKKYwooooACAQQeQa8cvYnt7PVLNVLy2N/vCr3WRMZ/76jb869jrzjVoY7P4kBZ0D2+oQbfLbocMpYn/gLyVMloTOPNBxOUsdT2aeNPng2urFY8EYUMxOTznPOOnQDpV6Weez0WG8B80Skq6ocDEYBOR3wD+VTfFDT47XRNLv7SGGF7a4aNvJQKuTyOg7ba5HV7Se+ulliimkjkUNhRkJu5HsM7sfhSte1zn9nJSSb3Os1O0Oq6zGI7wvbPKEhNtIBHMeGIJ+oB/OofEjRRq+lMYXmKI8pjkDKvzHOAOh9j61jW3hu+udEjtZplss3BEMdy2FIz8zHGeBz0/pVrSPCy6QrXw1FWuGjXZGg2qW3ZdSc5JXAPHXNVYck0nZ6jYIY7SOWDRjLLYShXl87azAg4z/ALI/KtFr6PTGAuoh9oRwcSAchSucf3slB09TTILOzhu7iW2uLq+a5ypFrCVDM3JXa2Tj3HNF7pgvryGLzY7b7PbhpZmyd3T1ON2c/wCeKnS5lGKnU5k7mm8mLNmcHaI1Kq5wWb1znHcn8TVGLS0jhk/0uRVALE4x6en0FSRO0cZsBLZyiMeWXVsEEjhh1zj1GMUWPmXdp5ysPkBjeMrvXIx83Pfbk+/IoKvB+711M5Ft7u6W3+05uRgzKy4VFbkAN3NWpI9KWT7Vfzs5l5UsC3mYGAoUY6deauW6KiyTWsRaCdt4MjBETg4xnk9T+QqqmpGCV3giiTzCwzjPOeWDdwaRnHlormkY+raM+qX0P2KYRKqlAblcMV5IwMEdD68cVXXwvBbRGWe+kdwSPLQbS/OM554610Uz3snnSPLFMj4Vgik7v9kEjnp2z2qnbJdR3nmEO0A3LtI3DjGAF5AIOOvSmVCcnFqLt2KcOn6XHHloHlk7B/mGe2ef6VoeH2it/FNvuhYpeW7q0UAwZHQgjAA9Ov4050hmkMsMTGMr+9d+FU57AfhjFQXEU+l6vpd258grdqAyHPlI+Vbn1AINC3Jozn7ROTv0OxKOluZPs6MIpsPKeRI/ZWBPQZ9KfJuV7qGW4j2vh2jQFknkPZSOgHFRlY5ZJWg82Usn7uVRkKv8TuAD+dPjVw9o0VvBbiVCkRnbKbepkyckE9u9WegNRonkt2ImumXiRc/M0voMZyBUsH7qMPJFlILjDOv3pX64IPYfSodxFsq/aSogf91GAd0afxOD0P0p0ZjknlNv5z748xTDrEo+87YGPxpiON8Q28lvrdzBO0cswkkdZY+FO75gB9M4IA5qlpxAudpBCyLkk/n+FdF4iXGr2888caadcQDyV25a4kGAWYfMcgkf5Fc49tNbXKToZFhDEqzKuHA6jr09ScUiIt3aZ1fh/wAXWXhnTVtdQiuZZoEeIxxRhsruJQ5JA6E1Z02Q3+mwXkKYjmG6Nc5O339/auTtEl1KUM/l+cyMdpbPA9Me2Ox54qRCFs5YopbmK0tTgwGQgKCSCQMjOG5OR396TS6FqRuatKljr2iX67VliudskYI3lWxyR1xx/KvVq83svB9nFJ5bCa4j3/6yAbAy4AXpznd6nBH5Vz+reLvENlftpt1ct9oszsZR8onz04A9ME8j2qYyT2G009T2YyIHCF1DHopPJp1eV6RrEX/Erg+yeZdwXIeS/dyTIhJyQTyRjHGcdPw9UqyYu4UUUUFBXCfEC2K6rol2jbd832aRj/Aj5jJ/8i/pXd1ynxIs/tfg67YcGD96COuQMqB/wLbSYGB4vnudd8E3bNpksKlFuWMsifJgg7lAJJGM9h1NYHh2UJpUc5vJIWjQRM8BA83HAGT7Y5HpXe6Y0eraR0XZdxOnTPyON6D0wFdRXlGj2zTwS2EvyPHOU9lP3Tx+A/OpexhW+Hm7D31l3Xzkgi3oAB9oYyHgdOff/CrViIbqze+uoN90qZAZtiowbhgvfoOnqanLW+lyK8sCxWkWInmijBcuM4bHXBPPbmpVnhvrB7lziKOYRIfLw4GMrnk4HXuaOhEpR5HJR0+4p3HiiaSSKSGRoREu2IQKQB69f8Kg86S8thh5WSZi7RFs5kBxnA/A/jWUyBGlQsPlY7fT2rZ8NxzSyt5DiN4myGYEghhg8D0IH51bWmhFaiuS8b9D0nwyLIaFZH7JAWMYErMuWyDhuMcd688m83S9QubUTPGkU5RwCcMA2OfXiuu8LyusMtvdyNDJBdMHtwPlbfzg+3WtxtE017+a+e0V7qU5dmYsrZHYdMf4UrXQSpe1hFx0seUanbRx3syoQtuCCgzkAEdh9a0rG5WXSbOJmHmQyMgifILqeAR+f6V1Hi7TxbNY3NjaRLK6mFysQ+XAGCB2HWuY1RZhJFPdQNEWGxFZ9xOPXHTrSb6DxFW0HFL/ACHM9z9veK2d2ijOYwOUUY5z6kHI5rWaed78L9njWOTB/fHcdpA3MfT6e1ZYmexWIzM8qzjzUUHAI4ycg9eccg9KTVVnYbrPzGhYZkUchCfc/QH8aVrmlOcmlJpIczeTbkW5m2qVZ3PAJ6N9Rn0qjqsMcmgXSmdzK5LeUeQSoDA9OvTvWtGrtapCA6ySI6vlCwIIDY/McVFaukmkTLKVKlgoLj7pPPUDr97rSOSOktXtqdIt/wDbIba/ur3atzCrzSQjoCARGen40wrGLdy0MrlXDTHny2GeEBHQ9O9ZXhq6e38L2c5NtbJYzNB9oYgHeGI3P6gDFaxnjZpFF8JUmG6Ex8x3Dn7z/hWh6RO8MgluoZYIYdyB5EdhvT0RDzntxmmtPukhnu7wtuXE7xrgj0jOevvSQxhntDDZTS5yiJIxHmP1LgnGQPypUEsMAeMwRm3mwjj/AFm7uzDuBTAoeILU3GnxTBGe6hZlaVMhUHVU49SfX1rhYYRNNIspBkQFvmb5cDsPWvRNZjguNJuluLuTyVZZ0a3HM79CWHUjn/OK5BfD97dsp0nT3mVuSXQlV9Pai9iW0mM0eVltg0LLG8bkDc2CykH8TVm6t3+ySSGGON3Oyfkt5mfrzg4/zjNbGnfD/WmmE0hiteAVVnDBW4JIAGOcdPetyL4awTXCXGpahPNKqbCIhsGPT9aVxWueZPreu6lbKJ9TuxBDGUeNG8pVx05HXHGQea2dF0pbuzFwL9mkkbD/AC7iCAOQ7Hqe+M4zXp9t4L0K3Jb7Akrlt5aX5sn1I6VsQWtvbLtt4I4l9I0C/wAqRoea23h6ee3Etvb3rSltyFjtwGwW7BR6Y9q9Js1lSygSf/WrGof645qaigAooopgFUtZgFzo93G0fmfuywT1Ycj9QKu0UAeDXmp6rpWh2A0/UZ4UKva3PkkYZonKhsn7p2bOR7VQ8LXE8euOiy/vp0kjLSfN82NwJPc8GtXxFp6W+n61aAKVsNQWZSwPIkTaxx/vRn865W1la31G3b5xEWUuAuAB0PH0JqehMlo0dzqbW+rW7CO6aYNEBLMqbdskeWIC8D7p6e4+lZGiOkry2sZJhaIzmKbneyjOMjGOPSr9lvge5dPITC7kLL0OcMzAH3xnqRWfawiCG3mgjlgvAzbWDEswxxgjjuSRjPFC2ObmTg7iahb2lveSeYy4bkDnGO2ByfzqTSLi0N+lujGEuCRMEOEwCTjBBJIyORVTVIGgeGRsh2+brnAIyOfzqrCyxXcTE4XcNx9jwf61SV0KFNVKfM22d5poktdRntZJQ/mReePIUO24NjIIGT/+ut3xBrtxoVpazW9uk/2osN8xbCdCBgYJ4J+m2uR0XUPJ1rT4r2MJHHJ5czSZHDDB3Z7dPyrb8aanptzZfY7K7tJEhKPHHCpL+Zkg/MPl27T9cil0IhUSouzs0Ymq67qer6U0kk4QxTKStuNu1Tx16/rWRos/2fWo1nk4uEeJi5yBxnJzSLudGjUMVYjeF/iA6A/rV6Tz5YZI4LKG1gYDeNoBwD6n3xSvoFLFLktLVjmUTSx20hN15SgoYCBgnlgSOoHt6VoPJIjTKkErrGAqoRtVVIIJOPmIxgc/XiqulTf2RM9556koC2YxvbjnIB4P+fWs/VfFiahO00VtczM6nfLM4TcCDkFVHTHAGf61OuxdFPku910NuRydpYRwS7BKUUnkq3LMByMqffofWqAjdrq5t5QdrZJ8tOMg8Efn+Vc6usXs0Jli8i2H8RVMkDp1bOOn+etRvPeTysZ55rpgofZK7FVPZgM4zxxg4NVboL2TlLmdvTc09S0e5vdNlFkvmrBcb57VWAbLqAMDucg8DJ+aus8DeGvEGnaUTNEbY3DFRHNyY4j1BHUEkfhXEnz8xS+WfPEYI8wAbdrZXA6g+/OeelfQFlP9qsre4/56xq/5jNV5HXHaxz8fhi4khMdxdsFBwqL/AMs19FPvV6PwzYrI7yBpGdQhLNyB6cVsUUFFaHTrSBg0UCKQu3IGOPSrNFFABRRRQAUUUUAFFFFABRRRQAUUUUAeY+LbLHinU4CCq6hpjmMDjLRFXyPf/WV5UOGTYAXOU2qSxOe2ele2eOglnrWg6lIP3Sz+TM392NgUP/oz9K83bS4IJQFjlmkMo2RRrwxzhcZ4/wAmp6ilJR3LsFzChQLFOL68VC1wse6NF27vnPXgbjjB+7mmvD5OnxRFWs7sS8K+dqkk4c8ccFj61YhivrLbaX1syM6FUmWQGORAeFGPTIHXp7V3fhHQNKutDhuZrKNp2Y+YGyVDAkcAn0/nS62ONXc+SJ509ol/MtuBLhQAWgUygsAOF9utX7bwdeCN7htJuGhRSzGd/Lyvf5Rz03cD1Fexw28Nuu2CKOJfRFAH6VIQGUgjIPBqtTWNGSVub7jxW+b7fKXnLuyKVAQFVJ+pyf0rX1Twl/Y+iWeoWqrczzFA8RBYbmHAXHXnjpzkVem0IyWogtbK6fUY5mWSRwREVyeh6en610V/YXD+Bpba6+SeGDdlTyChyOR7AVmrvc56VJuUuZXPJ7lrl71t0zxWke3CAqgkHt0DEd615tONjZjXSDJAg+zZlOWJ65K5AGOgx6dDnmGOBpZA+ZXbbtIXgfpXUaJpd1c+FdUsEtth3pNDuGNzZBP4/L+tSq0ZO0T0VRklrocXLPNPFH9jjIwcghONueAOMcYI568VWTw8/PmSMGXBVmcDJ5JJAznkmu8tfBmozKDKViB9TWtbeBYVwbi5Zj6KKnnqy2RXs6a3Z50mjW4ijRyAqfd2ryPUZOc96vR6fEXJWBnDAA5zj246ev5n1r0y38L6Xb9IC59WP+FacNpb2/8AqYY4/dVANHs6kviY7wWyPNbXw/fzKBDZsoIwDtwPz6V6BoltPZaRbW9zjzY1KnBzxk4/TFX6K0hT5He4pT5lYKKKK1ICiiigAooooAKKKKACiiigAooooAKKKKAOT+JNq1x4OunQfNBiUfh0/XFcdfabqMtzazafC7uwS6jaKEuGBG5cnHTPWvTPEEIuNAv4z3gYjPqBkfyqDwnaXFh4W020u5I5JoIRGzRnK8cAD6DA/CpaInDnVrnJy6D4j1uWF5raCyjjJYK8nUkYJOMnoMAV1vhzSJ9GsHguZ0mZ5C42LgKCBx79K16KOXW5MaMYy5uoUUUVRqFIyh1KsAVYYIPcUtFAFaDTrO2AENtGuP8AZ5qzRRSSS2AKKKKYBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADJ4VuLeSGTlJFKN9CMVneHYzBo8Nu7l3t8xMzdSV4J/MVqVjaK3l6rrdtggJdLKufR41Jx/wINQBs0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSBFVmZVAZvvEDk/WiigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=" alt="LSI Logic Megaraid Eight-Port 6Gb/s PCI Express 3.0 SATA+SAS RAID Controller..." /></td>
 		 <td><strong>LSI Logic Megaraid Eight-Port 6Gb/s PCI Express 3.0 SATA+SAS RAID Controller...</strong> by <em>LSI Logic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008NF6TKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008NF6TKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Us33K1kPL._AC_SX236_SY340_QL65_.jpg" alt="I/O Crest 4 Port SATA III PCI-e 2.0 x1 Controller Card Marvell 9215 Non-Raid..." /></td>
 		 <td><strong>I/O Crest 4 Port SATA III PCI-e 2.0 x1 Controller Card Marvell 9215 Non-Raid...</strong> by <em>IO Crest</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00AZ9T3OU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00AZ9T3OU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Dki6MC+RL._AC_SX236_SY340_QL65_.jpg" alt="SAS9211-8I 8PORT Int 6GB Sata+sas Pcie 2.0" /></td>
 		 <td><strong>SAS9211-8I 8PORT Int 6GB Sata+sas Pcie 2.0</strong> by <em>LSI Logic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002RL8I7M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002RL8I7M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oJJdeLrSL._AC_SX236_SY340_QL65_.jpg" alt="4-Port SATA III 6Gbps PCIE RAID Host Controller Card Support HyperDuo SSD Tiering..." /></td>
 		 <td><strong>4-Port SATA III 6Gbps PCIE RAID Host Controller Card Support HyperDuo SSD Tiering...</strong> by <em>N N.ORANIE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KYP5RRL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KYP5RRL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21j1ugleQ3L._AC_SX200_SY289_QL65_.jpg" alt="Adaptec 2244100-R 5805 8-Channel SATA/SAS 512MB PCI-Express LP RAID Controller..." /></td>
 		 <td><strong>Adaptec 2244100-R 5805 8-Channel SATA/SAS 512MB PCI-Express LP RAID Controller...</strong> by <em>Adaptec</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0015DVE5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0015DVE5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NHlkXmQzL._AC_SX236_SY340_QL65_.jpg" alt="High Point SSD7101A-1 4X Dedicated 32Gbps M.2 Ports to PCIe 3.0 x16 RAID Controller" /></td>
 		 <td><strong>High Point SSD7101A-1 4X Dedicated 32Gbps M.2 Ports to PCIe 3.0 x16 RAID Controller</strong> by <em>High Point</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073W71K4Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FH44wO7BL._AC_SX236_SY340_QL65_.jpg" alt="QNINE-Adapter-Express-Controller-Expansion" /></td>
-		 <td><strong>QNINE-Adapter-Express-Controller-Expansion</strong> by <em>QNINE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075MDH28Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073W71K4Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41xEGMqa9BL._AC_SX236_SY340_QL65_.jpg" alt="LSI Logic SAS9260-8I Sgl Raid 8PORT Int 6GB Sas/sata Pcie 2.0 512MB" /></td>
 		 <td><strong>LSI Logic SAS9260-8I Sgl Raid 8PORT Int 6GB Sas/sata Pcie 2.0 512MB</strong> by <em>LSI Logic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002IT4YG2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B002IT4YG2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41+p2dbbDpL._AC_SX236_SY340_QL65_.jpg" alt="HighPoint RocketRAID 2720SGL 8-Port SAS 6Gb/s PCIe 2.0 x8 RAID HBA" /></td>
 		 <td><strong>HighPoint RocketRAID 2720SGL 8-Port SAS 6Gb/s PCIe 2.0 x8 RAID HBA</strong> by <em>High Point</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0050SLTPC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0050SLTPC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CxbJWJ0lL._AC_SX236_SY340_QL65_.jpg" alt="4 Port PCI Express 2.0 SATA III 6Gbps RAID Controller Card with HyperDuo SSD..." /></td>
 		 <td><strong>4 Port PCI Express 2.0 SATA III 6Gbps RAID Controller Card with HyperDuo SSD...</strong> by <em>StarTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BUC3N74"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BUC3N74"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RZylx7QXL._AC_SX236_SY340_QL65_.jpg" alt="Ableconn PEX-SAT4R 4-Port SATA 6G PCI Express 2.0 Host Adapter - PCIe AHCI SATA..." /></td>
 		 <td><strong>Ableconn PEX-SAT4R 4-Port SATA 6G PCI Express 2.0 Host Adapter - PCIe AHCI SATA...</strong> by <em>Ableconn</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M0M5NV7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M0M5NV7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PIVRaXU+L._AC_SX236_SY340_QL65_.jpg" alt="Vantec 4-Channel 6-Port SATA 6Gb/s PCIe RAID Host Card with HyperDuo Technology..." /></td>
 		 <td><strong>Vantec 4-Channel 6-Port SATA 6Gb/s PCIe RAID Host Card with HyperDuo Technology...</strong> by <em>Vantec</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EA0WMOS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00EA0WMOS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41igvkVZSdL._AC_SX236_SY340_QL65_.jpg" alt="Ableconn PEXM2-2SA Dual SATA M.2 SSD-HDD Hybrid RAID Controller PCI Express Card..." /></td>
 		 <td><strong>Ableconn PEXM2-2SA Dual SATA M.2 SSD-HDD Hybrid RAID Controller PCI Express Card...</strong> by <em>Ableconn</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N79SI9Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N79SI9Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41pSfLReGHL._AC_SX236_SY340_QL65_.jpg" alt="High Point RocketRAID 640L Internal 4 SATA Port PCI-Express 2.0 x4 SATA 6Gb/s..." /></td>
 		 <td><strong>High Point RocketRAID 640L Internal 4 SATA Port PCI-Express 2.0 x4 SATA 6Gb/s...</strong> by <em>High Point</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007P77WAW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B007P77WAW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51WjnU5jreL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>croquet sets</strong></td>
+                 <td style="text-align: center;"><a href="/croquet-sets"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51pZsMyGSiL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>teacher pens</strong></td>
+                 <td style="text-align: center;"><a href="/teacher-pens"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51LQs8UMeDL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>disney ball pit balls</strong></td>
+                 <td style="text-align: center;"><a href="/disney-ball-pit-balls"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41evP4lDL0L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>itch relief for dogs</strong></td>
+                 <td style="text-align: center;"><a href="/itch-relief-for-dogs"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

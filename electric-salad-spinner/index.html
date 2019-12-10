@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Electric Salad Spinner</div>
@@ -89,120 +98,156 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="OXO Steel Salad Spinner" /></td>
 		 <td><strong>OXO Steel Salad Spinner</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000ND5C9I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000ND5C9I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41K9RsAKi1L._AC_SX236_SY340_QL65_.jpg" alt="OXO Good Grips Salad Spinner, Large, Clear" /></td>
 		 <td><strong>OXO Good Grips Salad Spinner, Large, Clear</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004OCKR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00004OCKR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41H+7iRMfrL._AC_SX236_SY340_QL65_.jpg" alt="Emsa 513441 Turboline Salad Spinner, Medium, Silver" /></td>
 		 <td><strong>Emsa 513441 Turboline Salad Spinner, Medium, Silver</strong> by <em>EMSA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00B7D5Q12"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00B7D5Q12"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31KhOupPR0L._AC_SX236_SY340_QL65_.jpg" alt="Presto 02910 Salad Shooter Electric Slicer/Shredder" /></td>
 		 <td><strong>Presto 02910 Salad Shooter Electric Slicer/Shredder</strong> by <em>Presto</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00006IV0R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00006IV0R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rRCm3N+IL._AC_SX236_SY340_QL65_.jpg" alt="Leifheit Stainless Steel Salad Spinner, Gray" /></td>
 		 <td><strong>Leifheit Stainless Steel Salad Spinner, Gray</strong> by <em>Leifheit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01H4Y4E9M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01H4Y4E9M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Zxx+gdiuL._AC_SX236_SY340_QL65_.jpg" alt="OXO 1155901 Good Grips Green Salad Spinner, Large" /></td>
 		 <td><strong>OXO 1155901 Good Grips Green Salad Spinner, Large</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001QTVT4A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001QTVT4A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414OphticjL._AC_SX236_SY340_QL65_.jpg" alt="Kuechenprofi Stainless Steel/Plastic Salad Spinner, Silver" /></td>
 		 <td><strong>Kuechenprofi Stainless Steel/Plastic Salad Spinner, Silver</strong> by <em>Kuchenprofi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00008WVAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NjmeyCYlL._AC_SX236_SY340_QL65_.jpg" alt="Salad-Spinner-Lettuce-Vegetables-Included" /></td>
-		 <td><strong>Salad-Spinner-Lettuce-Vegetables-Included</strong> by <em>Shanik</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B4LC494"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00008WVAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sS4VX1dwL._AC_SX236_SY340_QL65_.jpg" alt="Gourmia GSA9230 Salad Maker Set Chef Salad Maker &amp; Mandoline Set With 7 Interchangeable..." /></td>
 		 <td><strong>Gourmia GSA9230 Salad Maker Set Chef Salad Maker &amp; Mandoline Set With 7 Interchangeable...</strong> by <em>Gourmia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MREJFXC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413F-vBGbnL._AC_SX236_SY340_QL65_.jpg" alt="5.5 Gallon Commercial Lettuce Salad Vegetable Fruit Dryer Spinner Electric New..." /></td>
-		 <td><strong>5.5 Gallon Commercial Lettuce Salad Vegetable Fruit Dryer Spinner Electric New...</strong> by <em>Interbuying</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078TBZX7J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MREJFXC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-1l90TSrL._AC_SX236_SY340_QL65_.jpg" alt="Salad Spinner Large 4.2 Quarts Serving Bowl Set - QUICK DRY DESIGN &amp; DISHWASHER..." /></td>
 		 <td><strong>Salad Spinner Large 4.2 Quarts Serving Bowl Set - QUICK DRY DESIGN &amp; DISHWASHER...</strong> by <em>Cave Tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GCYPGPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01GCYPGPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZmdWgcKaL._AC_SX236_SY340_QL65_.jpg" alt="Salad Spinner LOVKITCHEN Large 4 Quarts Fruits and Vegetables Dryer Quick Dry..." /></td>
 		 <td><strong>Salad Spinner LOVKITCHEN Large 4 Quarts Fruits and Vegetables Dryer Quick Dry...</strong> by <em>LOVKITCHEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074C8Y2CG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074C8Y2CG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NT1azDwiL._AC_SX236_SY340_QL65_.jpg" alt="NutriChef PKELS70 Small Countertop Appliance, 10.8&amp;quot, White" /></td>
 		 <td><strong>NutriChef PKELS70 Small Countertop Appliance, 10.8&amp;quot, White</strong> by <em>NutriChef</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0179ITYD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0179ITYD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qUVlObr5L._AC_SX236_SY340_QL65_.jpg" alt="Culina Space Saving Salad Spinner, 5-Quart" /></td>
 		 <td><strong>Culina Space Saving Salad Spinner, 5-Quart</strong> by <em>Culina</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00L1RZU38"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00L1RZU38"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hm9ErbhsL._AC_SX236_SY340_QL65_.jpg" alt="Westmark Germany Vegetable and Salad Spinner with Pouring Spout (Red)" /></td>
 		 <td><strong>Westmark Germany Vegetable and Salad Spinner with Pouring Spout (Red)</strong> by <em>Westmark</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0017VKO5C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0017VKO5C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Retractable Screen Doors</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51P4sJzs07L._AC_SX236_SY340_QL65_.jpg" alt="RHO-Waterproof-Instantly-Prevents-Intruding" /></td>
-		 <td><strong>RHO-Waterproof-Instantly-Prevents-Intruding</strong> by <em>by.RHO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0738M9P7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - White" /></td>
 		 <td><strong>ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - White</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KTDA8VY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KTDA8VY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-dzp0QKPL._AC_SX236_SY340_QL65_.jpg" alt="ODL Brisa Premium Retractable Screen Kit for 80 in. Inswing Hinged Double Doors..." /></td>
 		 <td><strong>ODL Brisa Premium Retractable Screen Kit for 80 in. Inswing Hinged Double Doors...</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KWJ8CHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KWJ8CHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mGmTd19nL._AC_SX236_SY340_QL65_.jpg" alt="ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - Sandstone" /></td>
 		 <td><strong>ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - Sandstone</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OPDBJ3U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OPDBJ3U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31uC0cY6RYL._AC_SX236_SY340_QL65_.jpg" alt="Casper Retractable Double Door Screen (White)" /></td>
 		 <td><strong>Casper Retractable Double Door Screen (White)</strong> by <em>Casper Screens</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N1FTTVR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N1FTTVR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31qHQr37gcL._AC_SX236_SY340_QL65_.jpg" alt="Bug Off 36 by 80 Instant Screen, Fits Standard Single Front Doors and 6-Foot..." /></td>
 		 <td><strong>Bug Off 36 by 80 Instant Screen, Fits Standard Single Front Doors and 6-Foot...</strong> by <em>Wolf &amp; Moon Products, Inc.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0017WOG9Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0017WOG9Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31O2BmeOa1L._AC_SX236_SY340_QL65_.jpg" alt="Brisa Retractable Screen Door Finish: White" /></td>
 		 <td><strong>Brisa Retractable Screen Door Finish: White</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00S4J7PT8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61IEoH7NZyL._AC_SX236_SY340_QL65_.jpg" alt="OMT-Super-Magnet-Auto-Close-Ultra-Fine-Mosquitos" /></td>
-		 <td><strong>OMT-Super-Magnet-Auto-Close-Ultra-Fine-Mosquitos</strong> by <em>OMT High Quality</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074RD9T2J"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61fkImTOKuL._AC_SX236_SY340_QL65_.jpg" alt="Screen-Door-Magnets-Walking-Rainbow" /></td>
-		 <td><strong>Screen-Door-Magnets-Walking-Rainbow</strong> by <em>Screen Door Magnets</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077CVCDF7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00S4J7PT8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61mzbWAhhYL._AC_SX236_SY340_QL65_.jpg" alt="Magnetic Screen Door 72x80, Mesh French Screen Fiber Heavy Duty Large Double..." /></td>
 		 <td><strong>Magnetic Screen Door 72x80, Mesh French Screen Fiber Heavy Duty Large Double...</strong> by <em>MAGZO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073YTBXZ5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073YTBXZ5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31cxseONDpL._AC_SX236_SY340_QL65_.jpg" alt="ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - Bronze" /></td>
 		 <td><strong>ODL Brisa Premium Retractable Screen for 80 in. Inswing Hinged Doors - Bronze</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KTDRO52"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KTDRO52"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31tIYRFNtmL._AC_SX236_SY340_QL65_.jpg" alt="ODL Brisa Premium Retractable Screen for 96 in. Inswing/Outswing Hinged Doors..." /></td>
 		 <td><strong>ODL Brisa Premium Retractable Screen for 96 in. Inswing/Outswing Hinged Doors...</strong> by <em>ODL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KTDX71C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00KTDX71C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419FEe5216L._AC_SX236_SY340_QL65_.jpg" alt="Bug Off 72R by 80 Instant Screen - Reversible Fits French Doors and Sliding Glass..." /></td>
 		 <td><strong>Bug Off 72R by 80 Instant Screen - Reversible Fits French Doors and Sliding Glass...</strong> by <em>Wolf &amp; Moon Products, Inc.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000VZMBBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000VZMBBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61IGEHqgREL._AC_SX236_SY340_QL65_.jpg" alt="Homitt Magnetic Screen Door with Heavy Duty Mesh Curtain and Full Frame Hook&amp;..." /></td>
 		 <td><strong>Homitt Magnetic Screen Door with Heavy Duty Mesh Curtain and Full Frame Hook&amp;...</strong> by <em>Homitt</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HUZB17I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HUZB17I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61ZAqe5lJYL._AC_SX236_SY340_QL65_.jpg" alt="Flux Phenom Reinforced Magnetic Screen Door, Fits Doors Up To 38 x 82-Inch" /></td>
 		 <td><strong>Flux Phenom Reinforced Magnetic Screen Door, Fits Doors Up To 38 x 82-Inch</strong> by <em>Flux Phenom</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ESSA9VO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01ESSA9VO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61IEoH7NZyL._AC_SX236_SY340_QL65_.jpg" alt="OMT Magnetic Screen Door | 34 x 82 | Superior Full Frame Seal | Heaviest Duty..." /></td>
 		 <td><strong>OMT Magnetic Screen Door | 34 x 82 | Superior Full Frame Seal | Heaviest Duty...</strong> by <em>OMT High Quality</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074RD9T2J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074RD9T2J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

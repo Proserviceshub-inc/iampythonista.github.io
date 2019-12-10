@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Oil Additives</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51aozki6dHL._AC_SX236_SY340_QL65_.jpg" alt="ZDDPPlus-Engine-Additive-Phosphorus-Bottle" /></td>
-		 <td><strong>ZDDPPlus-Engine-Additive-Phosphorus-Bottle</strong> by <em>ZDDPlus</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006O37MQW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Hhg4QOa3L._AC_SX236_SY340_QL65_.jpg" alt="ZDDPPlus-Engine-Additive-Phosphorus-Bottles" /></td>
-		 <td><strong>ZDDPPlus-Engine-Additive-Phosphorus-Bottles</strong> by <em>ZDDPlus</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006LB70SW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="REV-X Stiction Fix Oil Treatment - Two 4 fl. oz. Bottles" /></td>
 		 <td><strong>REV-X Stiction Fix Oil Treatment - Two 4 fl. oz. Bottles</strong> by <em>REV-X</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005DL3DHS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005DL3DHS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41P24OtIPVL._AC_SX236_SY340_QL65_.jpg" alt="BestLine 853796001049 Premium Synthetic Engine Treatment for Gasoline Engines..." /></td>
 		 <td><strong>BestLine 853796001049 Premium Synthetic Engine Treatment for Gasoline Engines...</strong> by <em>BestLine Lubricants</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0093XZDS4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0093XZDS4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51s8yrXL24L._AC_SX236_SY340_QL65_.jpg" alt="Archoil AR9100 Oil Additive (16oz) for All Vehicles - Powerstroke Cold Starts..." /></td>
 		 <td><strong>Archoil AR9100 Oil Additive (16oz) for All Vehicles - Powerstroke Cold Starts...</strong> by <em>Archoil</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005UO70ZO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005UO70ZO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BJzjoaVQL._AC_SX236_SY340_QL65_.jpg" alt="TriboTEX Oil Additive Car Engine Treatment: Add to Engine Oil - Makes High Mileage..." /></td>
 		 <td><strong>TriboTEX Oil Additive Car Engine Treatment: Add to Engine Oil - Makes High Mileage...</strong> by <em>TriboTEX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076YJ27VG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076YJ27VG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t5iHp5o7L._AC_SX236_SY340_QL65_.jpg" alt="Rislone 4104 Blackish Blue Nano Synthetic Oil Treatment, 16.9 Fluid_Ounces" /></td>
 		 <td><strong>Rislone 4104 Blackish Blue Nano Synthetic Oil Treatment, 16.9 Fluid_Ounces</strong> by <em>Rislone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WGPZ3VP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06WGPZ3VP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rijG7MNJL._AC_SX236_SY340_QL65_.jpg" alt="Liqui Moly 2009 Anti-Friction Oil Treatment -pk6" /></td>
 		 <td><strong>Liqui Moly 2009 Anti-Friction Oil Treatment -pk6</strong> by <em>Liqui Moly</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LU3Z2MC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00LU3Z2MC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Hhg4QOa3L._AC_SX236_SY340_QL65_.jpg" alt="ZDDPPlus ZDDP Engine Oil Additive Zinc &amp; Phosphorus 2 Bottles" /></td>
 		 <td><strong>ZDDPPlus ZDDP Engine Oil Additive Zinc &amp; Phosphorus 2 Bottles</strong> by <em>ZDDPlus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006LB70SW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51I7pja+2gL._AC_SX236_SY340_QL65_.jpg" alt="GoNMF-Ionic-Friction-Reducer-Engines" /></td>
-		 <td><strong>GoNMF-Ionic-Friction-Reducer-Engines</strong> by <em>GoNMF</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DFYFVP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B006LB70SW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51kACeuk6ML._AC_SX236_SY340_QL65_.jpg" alt="zMax 51-212 Engine Formula, 12 oz" /></td>
 		 <td><strong>zMax 51-212 Engine Formula, 12 oz</strong> by <em>zMax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002T5ZGUS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002T5ZGUS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411F0hoPlML._AC_SX236_SY340_QL65_.jpg" alt="Liqui Moly 2009 Anti-Friction Oil Treatment - 300 ml" /></td>
 		 <td><strong>Liqui Moly 2009 Anti-Friction Oil Treatment - 300 ml</strong> by <em>Liqui Moly</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003U4O414"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003U4O414"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AQSMyMioL._AC_SX236_SY340_QL65_.jpg" alt="XL Nanolube Engine Oil Additive &amp; Nano Treatment; Reduces Oil Burning &amp; Engine..." /></td>
 		 <td><strong>XL Nanolube Engine Oil Additive &amp; Nano Treatment; Reduces Oil Burning &amp; Engine...</strong> by <em>XL Nanolube</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01L9KNLLO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01L9KNLLO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LB222EOTL._AC_SX236_SY340_QL65_.jpg" alt="Marvel Mystery Oil 50721 Red MM12R Mystery Oil, 2 Pack (16 oz), 32. Fluid_Ounces" /></td>
 		 <td><strong>Marvel Mystery Oil 50721 Red MM12R Mystery Oil, 2 Pack (16 oz), 32. Fluid_Ounces</strong> by <em>Marvel Mystery Oil</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0725JQXKS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0725JQXKS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JFURRFzBL._AC_SX236_SY340_QL65_.jpg" alt="STP High Mileage Oil Treatment + Stop Leak (15 fl. oz.)" /></td>
 		 <td><strong>STP High Mileage Oil Treatment + Stop Leak (15 fl. oz.)</strong> by <em>STP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00D8OFQUE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00D8OFQUE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dwGMhOD8L._AC_SX236_SY340_QL65_.jpg" alt="Liqui Moly Jectron Gasoline Fuel Injection Cleaner-pk4" /></td>
 		 <td><strong>Liqui Moly Jectron Gasoline Fuel Injection Cleaner-pk4</strong> by <em>Liqui Moly</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LPV1LHE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LPV1LHE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

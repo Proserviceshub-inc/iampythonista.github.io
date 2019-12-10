@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Offset Umbrellas</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CVysqrZjL._AC_SX236_SY340_QL65_.jpg" alt="Abba-Patio-Cantilever-Umbrella-11-Feet" /></td>
-		 <td><strong>Abba-Patio-Cantilever-Umbrella-11-Feet</strong> by <em>Abba Patio</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079FW4BK6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31AeaQcu1tL._AC_SX236_SY340_QL65_.jpg" alt="Cloud-Mounatin-Umbrella-Polyester-Cantilever" /></td>
-		 <td><strong>Cloud-Mounatin-Umbrella-Polyester-Cantilever</strong> by <em>Cloud Mountain</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C3C6D8Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Abba Patio Offset Cantilever Umbrella 11-Feet Outdoor Patio Hanging Umbrella..." /></td>
 		 <td><strong>Abba Patio Offset Cantilever Umbrella 11-Feet Outdoor Patio Hanging Umbrella...</strong> by <em>Abba Patio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079FSWWY3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079FSWWY3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/316u+aBC4JL._AC_SX236_SY340_QL65_.jpg" alt="Abba Patio 9 by 12-Feet Rectangular Offset Cantilever Umbrella Dual Wind Vent..." /></td>
 		 <td><strong>Abba Patio 9 by 12-Feet Rectangular Offset Cantilever Umbrella Dual Wind Vent...</strong> by <em>Abba Patio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBL3RHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DBL3RHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ArG0yLlDL._AC_SX236_SY340_QL65_.jpg" alt="Le Papillon 10 ft Cantilever Umbrella Outdoor Offset Patio Umbrella Easy Open..." /></td>
 		 <td><strong>Le Papillon 10 ft Cantilever Umbrella Outdoor Offset Patio Umbrella Easy Open...</strong> by <em>Le Papillon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06X9F8PDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06X9F8PDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/319b8bb7u4L._AC_SX236_SY340_QL65_.jpg" alt="Sundale Outdoor 8.2ft Square Offset Hanging Umbrella Market Patio Umbrella Aluminum..." /></td>
 		 <td><strong>Sundale Outdoor 8.2ft Square Offset Hanging Umbrella Market Patio Umbrella Aluminum...</strong> by <em>Sundale Outdoor</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HHXWPPU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HHXWPPU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31yegiCf5RL._AC_SX236_SY340_QL65_.jpg" alt="PURPLE LEAF 10 Feet Double Top Deluxe Patio Umbrella Offset Hanging Umbrella..." /></td>
 		 <td><strong>PURPLE LEAF 10 Feet Double Top Deluxe Patio Umbrella Offset Hanging Umbrella...</strong> by <em>PURPLE LEAF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077R5QF8S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077R5QF8S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31vcvP2NBXL._AC_SX236_SY340_QL65_.jpg" alt="Grand patio Deluxe 10 FT Curvy Aluminum Offset Patio Umbrella with Handle and..." /></td>
 		 <td><strong>Grand patio Deluxe 10 FT Curvy Aluminum Offset Patio Umbrella with Handle and...</strong> by <em>Grand patio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GO6WPEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31f-qzczqnL._AC_SX236_SY340_QL65_.jpg" alt="Abba-Patio-12-Feet-Cantilever-Umbrella" /></td>
-		 <td><strong>Abba-Patio-12-Feet-Cantilever-Umbrella</strong> by <em>Abba Patio</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBLX4HQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01GO6WPEW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41w+eQXj3+L._AC_SX236_SY340_QL65_.jpg" alt="Best Choice Products 10ft Offset Hanging Outdoor Market Patio Umbrella" /></td>
 		 <td><strong>Best Choice Products 10ft Offset Hanging Outdoor Market Patio Umbrella</strong> by <em>Best Choice Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DE17EWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01DE17EWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31nX9jceO7L._AC_SX236_SY340_QL65_.jpg" alt="Best Choice Products 4-Piece Heavy-Duty Cantilever Offset Patio Umbrella Stand..." /></td>
 		 <td><strong>Best Choice Products 4-Piece Heavy-Duty Cantilever Offset Patio Umbrella Stand...</strong> by <em>Best Choice Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06X9PLTY5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06X9PLTY5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/312JkX8k4eL._AC_SX236_SY340_QL65_.jpg" alt="ABCCANOPY Patio Umbrellas Cantilever Umbrella Offset Hanging Umbrellas 10 FT..." /></td>
 		 <td><strong>ABCCANOPY Patio Umbrellas Cantilever Umbrella Offset Hanging Umbrellas 10 FT...</strong> by <em>ABCCANOPY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CBZRGRW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CBZRGRW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lmXVSrGEL._AC_SX236_SY340_QL65_.jpg" alt="ADA Kosycosy 10 ft LED Lighted Cantilever Umbrella LED Solar Power Patio Umbrella..." /></td>
 		 <td><strong>ADA Kosycosy 10 ft LED Lighted Cantilever Umbrella LED Solar Power Patio Umbrella...</strong> by <em>ADA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B2YKS22"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07B2YKS22"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/311YKBYGPhL._AC_SX236_SY340_QL65_.jpg" alt="G-House 11.5 FT Deluxe Cantilever Offset Hanging Umbrella 360 Rotation Foot Crank..." /></td>
 		 <td><strong>G-House 11.5 FT Deluxe Cantilever Offset Hanging Umbrella 360 Rotation Foot Crank...</strong> by <em>G-House</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BMNJ2WQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BMNJ2WQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31a+HSM+KxL._AC_SX236_SY340_QL65_.jpg" alt="PURPLE LEAF 10 Feet Double Top Deluxe Square Patio Umbrella Offset Hanging Umbrella..." /></td>
 		 <td><strong>PURPLE LEAF 10 Feet Double Top Deluxe Square Patio Umbrella Offset Hanging Umbrella...</strong> by <em>PURPLE LEAF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JP95WU4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JP95WU4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310VWXbbbRL._AC_SX236_SY340_QL65_.jpg" alt="FARLAND Offset Umbrella 10 Ft Cantilever Patio Umbrella Outdoor Market Umbrellas..." /></td>
 		 <td><strong>FARLAND Offset Umbrella 10 Ft Cantilever Patio Umbrella Outdoor Market Umbrellas...</strong> by <em>FARLAND</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073W6N1NC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B073W6N1NC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

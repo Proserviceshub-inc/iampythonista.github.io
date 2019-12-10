@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Varnish Removers</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SiEn1nbPL._AC_SX236_SY340_QL65_.jpg" alt="Sunnyside-Corporation-Multi-Strip-Professional-65732" /></td>
-		 <td><strong>Sunnyside-Corporation-Multi-Strip-Professional-65732</strong> by <em>Sunnyside Corporation</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0041NTALC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51m6MjdeFLL._AC_SX236_SY340_QL65_.jpg" alt="Sunnyside-Minute-Varnish-Remover-639G1" /></td>
-		 <td><strong>Sunnyside-Minute-Varnish-Remover-639G1</strong> by <em>Sunnyside Corporation</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B21WRB0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="3M Contour Surface Paint and Varnish Remover (9413NA)" /></td>
 		 <td><strong>3M Contour Surface Paint and Varnish Remover (9413NA)</strong> by <em>3M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004Z4DH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00004Z4DH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411ooXS7GbL._AC_SX236_SY340_QL65_.jpg" alt="Citri-Strip ECG73807 Paint and Varnish Remover, 17-Ounce, Aerosol" /></td>
 		 <td><strong>Citri-Strip ECG73807 Paint and Varnish Remover, 17-Ounce, Aerosol</strong> by <em>Citri-Strip</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SAA2IW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000SAA2IW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WdtYWX-SL._AC_SX236_SY340_QL65_.jpg" alt="EZ Strip Paint and Varnish Stripper 1 Quart" /></td>
 		 <td><strong>EZ Strip Paint and Varnish Stripper 1 Quart</strong> by <em>EZ Strip</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0786SJR9T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0786SJR9T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ojVW0NnEL._AC_SX236_SY340_QL65_.jpg" alt="Savogran 01113 Liquid Stripper Kutzit Paint/Varnish Remover" /></td>
 		 <td><strong>Savogran 01113 Liquid Stripper Kutzit Paint/Varnish Remover</strong> by <em>Savogran</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GP53ALK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GP53ALK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41EjYh5xmYL._AC_SX236_SY340_QL65_.jpg" alt="Dumond Chemicals 27691033322 Smart Strip Peel Away Advanced Paint Remover, 1-..." /></td>
 		 <td><strong>Dumond Chemicals 27691033322 Smart Strip Peel Away Advanced Paint Remover, 1-...</strong> by <em>Dumond Chemicals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001F0KO2S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001F0KO2S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SiEn1nbPL._AC_SX236_SY340_QL65_.jpg" alt="Sunnyside Back to Nature Multi-Strip Professional Paint &amp; Varnish Remover, Quart..." /></td>
 		 <td><strong>Sunnyside Back to Nature Multi-Strip Professional Paint &amp; Varnish Remover, Quart...</strong> by <em>Sunnyside Corporation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0041NTALC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0041NTALC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51zwhCm9elL._AC_SX236_SY340_QL65_.jpg" alt="Jasco QJBV00102 Varnish and Stain Remover, 1-Quart" /></td>
 		 <td><strong>Jasco QJBV00102 Varnish and Stain Remover, 1-Quart</strong> by <em>Jasco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000BZX6QY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Twql6B9JL._AC_SX236_SY340_QL65_.jpg" alt="Heritage-Natural-Finishes-Woodwork-Approved" /></td>
-		 <td><strong>Heritage-Natural-Finishes-Woodwork-Approved</strong> by <em>Heritage Natural Finishes</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079B2QYBF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000BZX6QY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uEu4+RLnL._AC_SX236_SY340_QL65_.jpg" alt="Jasco QJBP00202 Premium Paint and Epoxy Remover, 1-Quart" /></td>
 		 <td><strong>Jasco QJBP00202 Premium Paint and Epoxy Remover, 1-Quart</strong> by <em>Jasco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000BZZ5F4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000BZZ5F4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nCaWXw0uL._AC_SX236_SY340_QL65_.jpg" alt="3M(TM) Safest Stripper(TM) Paint and Varnish Remover 10101" /></td>
 		 <td><strong>3M(TM) Safest Stripper(TM) Paint and Varnish Remover 10101</strong> by <em>3M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00002NCJK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00002NCJK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mVtGjlPTL._AC_SX236_SY340_QL65_.jpg" alt="Winsor &amp; Newton Professional Acrylic Medium Varnish Remover, 125ml" /></td>
 		 <td><strong>Winsor &amp; Newton Professional Acrylic Medium Varnish Remover, 125ml</strong> by <em>Winsor &amp; Newton</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003T0TBLW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003T0TBLW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510rrboEZNL._AC_SX236_SY340_QL65_.jpg" alt="Savogran 01112 Liquid Stripper Kutzit Paint/Varnish Remover, Quart" /></td>
 		 <td><strong>Savogran 01112 Liquid Stripper Kutzit Paint/Varnish Remover, Quart</strong> by <em>Savogran</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003EAAVO8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003EAAVO8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ky4JPWgHL._AC_SX236_SY340_QL65_.jpg" alt="Winsor &amp; Newton Artisan Water Mixable Mediums Varnish Remover, 75ml" /></td>
 		 <td><strong>Winsor &amp; Newton Artisan Water Mixable Mediums Varnish Remover, 75ml</strong> by <em>Winsor &amp; Newton</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00A6WLIJ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00A6WLIJ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dZMRC0ymL._AC_SX236_SY340_QL65_.jpg" alt="Formbys 30010 Furniture Refinisher, 16-Ounce" /></td>
 		 <td><strong>Formbys 30010 Furniture Refinisher, 16-Ounce</strong> by <em>Formby</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000C018CM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000C018CM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/31qQxJd5c-L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>neon lighter fluids</strong></td>
+                 <td style="text-align: center;"><a href="/neon-lighter-fluids"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41uiUZrb7XL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>velvet kitten kitten heels</strong></td>
+                 <td style="text-align: center;"><a href="/velvet-kitten-kitten-heels"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41eZEvqsRKL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>ikea cookware sets</strong></td>
+                 <td style="text-align: center;"><a href="/ikea-cookware-sets"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/513dl5WTyyL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>adams golf drivers</strong></td>
+                 <td style="text-align: center;"><a href="/adams-golf-drivers"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

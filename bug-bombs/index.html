@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Bug Bombs</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61h0xusyXAL._AC_SX236_SY340_QL65_.jpg" alt="Hot-Shot-Bedbug-Fogger-2-Ounce" /></td>
-		 <td><strong>Hot-Shot-Bedbug-Fogger-2-Ounce</strong> by <em>Hot Shot</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0047P8G96"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61P6AsF6uCL._AC_SX236_SY340_QL65_.jpg" alt="TERRO-T300B-2-Pack-Liquid-Baits" /></td>
-		 <td><strong>TERRO-T300B-2-Pack-Liquid-Baits</strong> by <em>Terro</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00E4GACB8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Hot Shot Fogger6 With Odor Neutralizer, 3/2-Ounce, 2-Pack" /></td>
 		 <td><strong>Hot Shot Fogger6 With Odor Neutralizer, 3/2-Ounce, 2-Pack</strong> by <em>Hot Shot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00P7MZZAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00P7MZZAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61dh1EvqtbL._AC_SX236_SY340_QL65_.jpg" alt="Hot Shot No-Mess! Fogger With Odor Neutralizer, 3/1.2-Ounce" /></td>
 		 <td><strong>Hot Shot No-Mess! Fogger With Odor Neutralizer, 3/1.2-Ounce</strong> by <em>Hot Shot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0054NFWH4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0054NFWH4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61DmFOfo39L._AC_SX236_SY340_QL65_.jpg" alt="Black Flag Concentrated Fogger, 6/1.25-Ounce" /></td>
 		 <td><strong>Black Flag Concentrated Fogger, 6/1.25-Ounce</strong> by <em>Black Flag</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B015J2EZ0O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B015J2EZ0O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51c5u6AjUAL._AC_SX236_SY340_QL65_.jpg" alt="Hot Shot Indoor Fogger With Odor Neutralizer, 4/2-Ounce" /></td>
 		 <td><strong>Hot Shot Indoor Fogger With Odor Neutralizer, 4/2-Ounce</strong> by <em>Hot Shot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HH8HHHW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00HH8HHHW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61h0xusyXAL._AC_SX236_SY340_QL65_.jpg" alt="Hot Shot 95911 Bedbug and Flea Fogger, (3 count)" /></td>
 		 <td><strong>Hot Shot 95911 Bedbug and Flea Fogger, (3 count)</strong> by <em>Hot Shot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0047P8G96"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0047P8G96"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WoB-PlE3L._AC_SX236_SY340_QL65_.jpg" alt="Spectracide 100046128 Indoor Fogger" /></td>
 		 <td><strong>Spectracide 100046128 Indoor Fogger</strong> by <em>Spectracide</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0054NG066"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0054NG066"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51GVmcDTnQL._AC_SX236_SY340_QL65_.jpg" alt="ProControl Plus Total Release Fogger Bomb 1 Case (12 x 6 oz. Cans)" /></td>
 		 <td><strong>ProControl Plus Total Release Fogger Bomb 1 Case (12 x 6 oz. Cans)</strong> by <em>Pro Control Plus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00L9AM51W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Fi7B7bDvL._AC_SX236_SY340_QL65_.jpg" alt="Kantora-ULTRASONIC-Repellent-Repeller-Mosquitoes" /></td>
-		 <td><strong>Kantora-ULTRASONIC-Repellent-Repeller-Mosquitoes</strong> by <em>Kantora</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B2RJZW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00L9AM51W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WDKNuDO8L._AC_SX236_SY340_QL65_.jpg" alt="Raid Concentrated Deep Reach Fogger (3 Count)" /></td>
 		 <td><strong>Raid Concentrated Deep Reach Fogger (3 Count)</strong> by <em>Raid</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002ZWE5C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0002ZWE5C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rtKfgsjKL._AC_SX236_SY340_QL65_.jpg" alt="PCO Products Pyrethrin Fogger Bomb 1 Case 12 Cans X 5 oz. ea. 655030" /></td>
 		 <td><strong>PCO Products Pyrethrin Fogger Bomb 1 Case 12 Cans X 5 oz. ea. 655030</strong> by <em>PCO Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00L9LBOFO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00L9LBOFO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ZkMdQ6saL._AC_SX236_SY340_QL65_.jpg" alt="Beethoven TR 2 oz (1 Count) Total Release Insecticide Miticide Aerosol Fogger..." /></td>
 		 <td><strong>Beethoven TR 2 oz (1 Count) Total Release Insecticide Miticide Aerosol Fogger...</strong> by <em>BASF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00V9BFWPM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00V9BFWPM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DpMjsB+EL._AC_SX236_SY340_QL65_.jpg" alt="Pyrethrum Total Release Fogger, 2 Oz" /></td>
 		 <td><strong>Pyrethrum Total Release Fogger, 2 Oz</strong> by <em>Pyrethrum</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001H3IK74"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001H3IK74"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51L2CdGwQJL._AC_SX236_SY340_QL65_.jpg" alt="Harris Bed Bug Killer, Diatomaceous Earth Powder, Fast Kill with Extended Residual..." /></td>
 		 <td><strong>Harris Bed Bug Killer, Diatomaceous Earth Powder, Fast Kill with Extended Residual...</strong> by <em>Harris</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WD7RL6L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06WD7RL6L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51q+P0QGSzL._AC_SX236_SY340_QL65_.jpg" alt="Hot Shot No Mess Fogger With Odor Neutralizer Deeper Reaching Dry Fog Formula..." /></td>
 		 <td><strong>Hot Shot No Mess Fogger With Odor Neutralizer Deeper Reaching Dry Fog Formula...</strong> by <em>Hot Shot</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078YT7JDC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078YT7JDC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/517j7QZtRIL._AC_SX236_SY340_QL65_.jpg" alt="[2018 UPGRAEDE] Ultrasonic Pest Repeller &amp; Mouse Repeller Plug in Pest Control..." /></td>
 		 <td><strong>[2018 UPGRAEDE] Ultrasonic Pest Repeller &amp; Mouse Repeller Plug in Pest Control...</strong> by <em>Fomei</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BNYZL2M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07BNYZL2M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

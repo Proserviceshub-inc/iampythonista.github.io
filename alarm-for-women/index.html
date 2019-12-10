@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Alarm For Women</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51IgxcGSZ3L._AC_SX236_SY340_QL65_.jpg" alt="Personal-Alarm-Siren-Song-Safesound" /></td>
-		 <td><strong>Personal-Alarm-Siren-Song-Safesound</strong> by <em>SLFORCE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BVCZKRP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41s78TIbRCL._AC_SX236_SY340_QL65_.jpg" alt="Personal-WECLUB-Keychain-Security-Emergency" /></td>
-		 <td><strong>Personal-WECLUB-Keychain-Security-Emergency</strong> by <em>WECLUB</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M5T5V5Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Vigilant 130dB Personal Alarm - Backup Whistle - Button Activated with Hidden..." /></td>
 		 <td><strong>Vigilant 130dB Personal Alarm - Backup Whistle - Button Activated with Hidden...</strong> by <em>Vigilant Personal Protection Systems</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FX2PFFK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FX2PFFK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41agVgKPDtL._AC_SX236_SY340_QL65_.jpg" alt="Personal Alarm for Women 140DB Emergency Self-Defense Security Alarm Keychain..." /></td>
 		 <td><strong>Personal Alarm for Women 140DB Emergency Self-Defense Security Alarm Keychain...</strong> by <em>JIMITE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076FVX6S1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076FVX6S1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51leM8r2YRL._AC_SX236_SY340_QL65_.jpg" alt="WOHOME Safe Personal Alarm, 5 Pack Safesound Personal Alarm with LED Light Emergency..." /></td>
 		 <td><strong>WOHOME Safe Personal Alarm, 5 Pack Safesound Personal Alarm with LED Light Emergency...</strong> by <em>WOHOME</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H81BWXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H81BWXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51a86KZPwsL._AC_SX236_SY340_QL65_.jpg" alt="Safe Sound Personal Alarm, KOSIN 3 Pack 145DB Personal Security Alarm Keychain..." /></td>
 		 <td><strong>Safe Sound Personal Alarm, KOSIN 3 Pack 145DB Personal Security Alarm Keychain...</strong> by <em>KOSIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DMT8SLQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DMT8SLQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ewlCS3VxL._AC_SX236_SY340_QL65_.jpg" alt="Vigilant 130dB Personal Alarm - Backup Whistle - Button Activated with Hidden..." /></td>
 		 <td><strong>Vigilant 130dB Personal Alarm - Backup Whistle - Button Activated with Hidden...</strong> by <em>Vigilant Personal Protection Systems</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008QXXN5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008QXXN5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51A3VkCro6L._AC_SX236_SY340_QL65_.jpg" alt="TOODOO 130db Personal Security Alarm Keychain, Safesound Safety Emergency Alarms..." /></td>
 		 <td><strong>TOODOO 130db Personal Security Alarm Keychain, Safesound Safety Emergency Alarms...</strong> by <em>TOODOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BSBBXHS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BSBBXHS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ma7hLFfzL._AC_SX236_SY340_QL65_.jpg" alt="Personal Alarms for woman siren 140 DB with LED light (4 PACK),nuu you small..." /></td>
 		 <td><strong>Personal Alarms for woman siren 140 DB with LED light (4 PACK),nuu you small...</strong> by <em>Nuu You</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078Q38W8N"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HIxaozFKL._AC_SX236_SY340_QL65_.jpg" alt="Personal-Keychain-Women-140db-Emergency-Defense" /></td>
-		 <td><strong>Personal-Keychain-Women-140db-Emergency-Defense</strong> by <em>Pripaso</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JGBR6J4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078Q38W8N"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51V3PmhKS-L._AC_SX236_SY340_QL65_.jpg" alt="TOODOO 5 Pack Safesound Personal Alarm, 130 db Emergency Safety Key Chain, Self-Defense..." /></td>
 		 <td><strong>TOODOO 5 Pack Safesound Personal Alarm, 130 db Emergency Safety Key Chain, Self-Defense...</strong> by <em>TOODOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078HH6BLR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B078HH6BLR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QFNnSOY0L._AC_SX236_SY340_QL65_.jpg" alt="KOSIN Safe Sound Personal Alarm, 5 Pack 140DB Personal Security Alarm Keychain..." /></td>
 		 <td><strong>KOSIN Safe Sound Personal Alarm, 5 Pack 140DB Personal Security Alarm Keychain...</strong> by <em>KOSIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GRWNQ4M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GRWNQ4M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Vm2aI24ML._AC_SX236_SY340_QL65_.jpg" alt="TOODOO 5 Pack 130 db Safesound Personal Security Alarm Keychain, Safety Emergency..." /></td>
 		 <td><strong>TOODOO 5 Pack 130 db Safesound Personal Security Alarm Keychain, Safety Emergency...</strong> by <em>TOODOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077YF3SXY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B077YF3SXY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51GBJD0iaxL._AC_SX236_SY340_QL65_.jpg" alt="yougccc 130dB Personal Alarm Keychain, Emergency Safesound Self Defense Security..." /></td>
 		 <td><strong>yougccc 130dB Personal Alarm Keychain, Emergency Safesound Self Defense Security...</strong> by <em>yougccc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GX2BXQY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GX2BXQY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51IgxcGSZ3L._AC_SX236_SY340_QL65_.jpg" alt="Personal Alarm Siren Song - 130dB Safesound Personal Alarm Keychain with LED..." /></td>
 		 <td><strong>Personal Alarm Siren Song - 130dB Safesound Personal Alarm Keychain with LED...</strong> by <em>SLFORCE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BVCZKRP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BVCZKRP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51DVC6+Bv-L._AC_SX236_SY340_QL65_.jpg" alt="TOODOO 130db Safesound Personal Security Alarm Keychain, Safety Emergency Alarm..." /></td>
 		 <td><strong>TOODOO 130db Safesound Personal Security Alarm Keychain, Safety Emergency Alarm...</strong> by <em>TOODOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077HYKP1Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077HYKP1Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QUXtna5bL._AC_SX236_SY340_QL65_.jpg" alt="TOODOO 130 db Safesound Personal Security Alarm Keychain, Safety Emergency for..." /></td>
 		 <td><strong>TOODOO 130 db Safesound Personal Security Alarm Keychain, Safety Emergency for...</strong> by <em>TOODOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GBTRG28"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GBTRG28"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

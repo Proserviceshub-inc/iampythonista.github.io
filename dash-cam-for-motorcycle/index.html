@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Dash Cam For Motorcycle</div>
@@ -89,104 +98,120 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZoIOgszpL._AC_SX236_SY340_QL65_.jpg" alt="Motorcycle Recording Camera System by HaloCam, 1080P Dual Lens Dash Cam Dvr,..." /></td>
 		 <td><strong>Motorcycle Recording Camera System by HaloCam, 1080P Dual Lens Dash Cam Dvr,...</strong> by <em>HaloCam</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D371DRF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07D371DRF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Blueskysea DV688 Motorcycle Dash Cam 1080p Dual Lens Motorcycle Recording Camera..." /></td>
 		 <td><strong>Blueskysea DV688 Motorcycle Dash Cam 1080p Dual Lens Motorcycle Recording Camera...</strong> by <em>Blueskysea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DWT911R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DWT911R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41aAZ5bbWBL._AC_SX236_SY340_QL65_.jpg" alt="Blueskysea DV188 Motorcycle Recording Camera 1080p Dual Lens Video Driving Recorder..." /></td>
 		 <td><strong>Blueskysea DV188 Motorcycle Recording Camera 1080p Dual Lens Video Driving Recorder...</strong> by <em>Blueskysea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075FR7R3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075FR7R3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416G-MqnYfL._AC_SX236_SY340_QL65_.jpg" alt="Bike Camera,AUTOLOVER DV188 Motorcycle Dash cam 1080p Dual Lens Motorcycle Recording..." /></td>
 		 <td><strong>Bike Camera,AUTOLOVER DV188 Motorcycle Dash cam 1080p Dual Lens Motorcycle Recording...</strong> by <em>AUTOLOVER</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076P85P6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076P85P6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51K3rHNHT5L._AC_SX236_SY340_QL65_.jpg" alt="VSYSTO WiFi Support Waterproof Motorcycle Dual Dash Cam DVR with Separated 170..." /></td>
 		 <td><strong>VSYSTO WiFi Support Waterproof Motorcycle Dual Dash Cam DVR with Separated 170...</strong> by <em>VSYSTO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B9RHQWV"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yjoyOguzL._AC_SX236_SY340_QL65_.jpg" alt="RSC-Labs-Nano-Dashcam-Kit" /></td>
-		 <td><strong>RSC-Labs-Nano-Dashcam-Kit</strong> by <em>Global Teck Worldwide</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DGFZ754"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41K1Y3w7jtL._AC_SX236_SY340_QL65_.jpg" alt="Quarter-Full-HD-Camera-Surveillance-Security" /></td>
-		 <td><strong>Quarter-Full-HD-Camera-Surveillance-Security</strong> by <em>BPideals</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BQBFQQL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B9RHQWV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413gyL+fNyL._AC_SX236_SY340_QL65_.jpg" alt="Meknic A7 Motorcycle Camera, Dual Lens 1080P Video Security Motorbike Camera..." /></td>
 		 <td><strong>Meknic A7 Motorcycle Camera, Dual Lens 1080P Video Security Motorbike Camera...</strong> by <em>MEKNIC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G19RX7D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G19RX7D"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41pihk4aYBL._AC_SX236_SY340_QL65_.jpg" alt="Dash Cam for Motorcycle, OXOQO Motorbike Recorder Recording Camera with Dual-Track..." /></td>
 		 <td><strong>Dash Cam for Motorcycle, OXOQO Motorbike Recorder Recording Camera with Dual-Track...</strong> by <em>Umiwe</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078SSL7T9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B078SSL7T9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SgXG4581L._AC_SX236_SY340_QL65_.jpg" alt="YELIN 1080P Full HD 2.0 inch LCD Screen Waterproof Sports Action Camera Cam DV..." /></td>
 		 <td><strong>YELIN 1080P Full HD 2.0 inch LCD Screen Waterproof Sports Action Camera Cam DV...</strong> by <em>YELIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FXOYGPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01FXOYGPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Bpq-SrvPL._AC_SX236_SY340_QL65_.jpg" alt="VSYSTO 2CH Motorcycle Dash Cam Camera Recorder with Dual Separated Waterproof..." /></td>
 		 <td><strong>VSYSTO 2CH Motorcycle Dash Cam Camera Recorder with Dual Separated Waterproof...</strong> by <em>VSYSTO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C971CLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07C971CLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51el9eeBjQL._AC_SX236_SY340_QL65_.jpg" alt="Tachyon 1080p BikerCam Motorcycle Camera System" /></td>
 		 <td><strong>Tachyon 1080p BikerCam Motorcycle Camera System</strong> by <em>Tachyon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007M8QYBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51aLgDfVjbL._AC_SX236_SY340_QL65_.jpg" alt="Creations-Waterproof-Control-Mounting-Accessory" /></td>
-		 <td><strong>Creations-Waterproof-Control-Mounting-Accessory</strong> by <em>ifoxcreations</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077GZ2YB3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B007M8QYBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

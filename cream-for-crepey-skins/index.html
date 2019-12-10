@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Cream For Crepey Skins</div>
@@ -89,80 +98,120 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JR0rwwjcL._AC_SX236_SY340_QL65_.jpg" alt="Medix 5.5 Retinol Cream with Ferulic Acid Anti-Sagging Treatment. Targets Crepey..." /></td>
 		 <td><strong>Medix 5.5 Retinol Cream with Ferulic Acid Anti-Sagging Treatment. Targets Crepey...</strong> by <em>Medix 5.5</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N8UM9HR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N8UM9HR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Adamia Therapeutic Repair Lotion with Macadamia Nut Oil and Promega-7, 16 Ounce" /></td>
 		 <td><strong>Adamia Therapeutic Repair Lotion with Macadamia Nut Oil and Promega-7, 16 Ounce</strong> by <em>Adamia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018233T04"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B018233T04"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51geUE52AVL._AC_SX236_SY340_QL65_.jpg" alt="TreeActiv Crepey Skin Repair Treatment | Anti-Aging | Anti-Wrinkle | Organic..." /></td>
 		 <td><strong>TreeActiv Crepey Skin Repair Treatment | Anti-Aging | Anti-Wrinkle | Organic...</strong> by <em>TreeActiv</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074F45K6P"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074F45K6P"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412YLG2gKHL._AC_SX236_SY340_QL65_.jpg" alt="CUT THE CREPE - CREPEY SKIN BODY COMPLEX Ultra Repair Firming and Tightening..." /></td>
 		 <td><strong>CUT THE CREPE - CREPEY SKIN BODY COMPLEX Ultra Repair Firming and Tightening...</strong> by <em>Loyo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B51F86R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07B51F86R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31vFuJUzmYL._AC_SX236_SY340_QL65_.jpg" alt="Anti-Aging Cream - Skin Tightening Cream - Skin Anti-Aging Treatment - Premium..." /></td>
 		 <td><strong>Anti-Aging Cream - Skin Tightening Cream - Skin Anti-Aging Treatment - Premium...</strong> by <em>Stay Company</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C3V281K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C3V281K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-v-h6uPAL._AC_SX236_SY340_QL65_.jpg" alt="YEOUTH Neck Cream for Firming, Anti Aging Wrinkle Cream Moisturizer, Skin Tightening..." /></td>
 		 <td><strong>YEOUTH Neck Cream for Firming, Anti Aging Wrinkle Cream Moisturizer, Skin Tightening...</strong> by <em>Yeouth</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NBWW1H2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01NBWW1H2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OfcQFT1ML._AC_SX236_SY340_QL65_.jpg" alt="Advanced Clinicals Retinol Cream and Collagen Cream Skin Care set. Value anti-aging..." /></td>
 		 <td><strong>Advanced Clinicals Retinol Cream and Collagen Cream Skin Care set. Value anti-aging...</strong> by <em>Advanced Clinicals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C5RJHR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C5RJHR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/3134sFxLWWL._AC_SX236_SY340_QL65_.jpg" alt="Ultimate Crepey Skin Cream With Hyaluronic Acid, Argan Oil, Silk Peptides and..." /></td>
 		 <td><strong>Ultimate Crepey Skin Cream With Hyaluronic Acid, Argan Oil, Silk Peptides and...</strong> by <em>Diva Stuff</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075X31VDB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075X31VDB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41O7wATECWL._AC_SX236_SY340_QL65_.jpg" alt="Best Neck &amp; Chest Firming Cream for Sagging, Crepey Skin &amp; Wrinkles. Anti-Aging..." /></td>
 		 <td><strong>Best Neck &amp; Chest Firming Cream for Sagging, Crepey Skin &amp; Wrinkles. Anti-Aging...</strong> by <em>Voibella Beauty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HM5W152"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HM5W152"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41B+r0It8BL._AC_SX236_SY340_QL65_.jpg" alt="Oil Free Face Moisturizer - This Powerful Hyaluronic Acid Cream Face Lotion Is..." /></td>
 		 <td><strong>Oil Free Face Moisturizer - This Powerful Hyaluronic Acid Cream Face Lotion Is...</strong> by <em>Admire My Skin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XTM1HMB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XTM1HMB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -170,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -198,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Thatching Rakes</div>
@@ -89,88 +98,132 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31o+k9xQDmL._AC_SX236_SY340_QL65_.jpg" alt="Truper 32120 Tru Tough Thatching Rake, Wood Handle, 54-Inch" /></td>
 		 <td><strong>Truper 32120 Tru Tough Thatching Rake, Wood Handle, 54-Inch</strong> by <em>Truper</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005Q7CDFM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005Q7CDFM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCADRAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoorivH3xAh8KQfZbTZPqkq5VDyIh/eb+goA668vrXTrZ7i9uI4IUGWeRgoFea+IvjNa2zPBoFr9rccfaJ8rGD7L1P6VwNrZ+J/iPqhYvLc7T88sh2ww/0H0HNen+HfhHo+lqkuqE6jdDkhuIgfZe/40AecyfEbxpcubmO9lWMHgRWybB7fdOfxzWrp3xn1y0ITUbS2vFHUgGJz+IyP0r22OCGGERRRIkQGAiqAB+FZ2o+F9F1ZcX2mW0p/veWA35jmgDjdL+M+i3W1dRtbixfuwHmoPxHP6V2Ol+KdE1njT9St5n/uB8N+R5rktS+DWg3Sk2M1zZv7NvX8jz+tcbqfwd16xVpbCe3vQnICEo5+gPH60Ae60V418NfGmpWuuJ4d1l5JI5CY4/Ozvhcfw5POOMYPevZaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiis/WdXh0axa4l+ZzxHHnl29KUpKKuwM7xp4rg8JaI104WS6lJS3hJ++2Op9h1P4DvXinhbwzqXj/XpZ7qaQw7993dtyeew9z27AflW/4p0668Yanb3E90sM7FYlRv9XEhP598+9eu6Hotp4e0mHT7JNsUQ5Y9Xbux9zWdKtCqrwEmmSaXpVnounxWWnwLDBEMBVHU+pPcn1q5WDfeNNEspmgW7+13S/8ALvZqZpD+C/1qkbzxTrgKWdkmh2x4NxdESTY/2UHAP1NajN3Vda0/Q7X7RqV1HAnRQxyzn0VRyT7CsUXviLxBg6dCNEsGHFzdxh7h/wDdizhf+Bc+1XtK8LWGm3P21/MvdSIw17dNvkP07KPYAVtUAcu/h7X7IefpfiWeeccmHUY1eGQ+nygMg+lUNV+IMmgaZcDXNLmstTVD5Cj95BcN22yD8yDggetdldXMVnbSXE7hIoxlia8o8XPH4o/fagHREytsik/u89yO5PGa562IhRtzdRNpHNfDnTrvxH47TUJ2ZxbyG6uJT3bnA/E/oDX0DXnfhnwlqfhzQ7e78O6ik80yiS4tbhR5U5/2W6oR07iu00TVk1rTVulieCQM0csMn3opFOGU/Qit001dDNCiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEdzcxWlvJcTuEijXczHsK8x1bVH1a8e+uPkhQYijJ+6P8AE1v+Mrqa4vI9PXKW0aiSQ9nY9B+GM/jXKR2txqWoNBayrC9monTIzvYHgfSvMxEpV6qoR0XUiTu7GDrGsXNjFJmDy5hLsCygjAxn9a7XT9STx5baDp0xZokRp9RhUkAhflRWI7E8474rA1pW8Q6ZLqht4kktyIpoGOdzActn1yTj2+tdd8Nry2TTpLFpY0vAQ5hyA23HUD0rop040ZcsVuEdGdfZabZabCIrG0ht416LEgX+VWaKK6ywooqnqV8LK3yMGVuFH9aAOa8XzyyXSRyNixhALbSOXPTP6fnXIu7zO2/G0H5cenvXazeHW1vR5hPIVlkIeEt6g5BYe5rDi8Ha1IypIsES/wATmTP44FeTjMNOVTmgr3M5Jsg0W+vbyWDw1p9zJZq5e4nuIgN6RY6KTkAlu+K9B0rSrXRtPjsrJWWJMnLsWZmJyWJPUknNVdE8O2eiK0kSB7qRQss56sB2HoK1q9GhBwpqMty1sFFFFajCiiigAooooAKKKKACiiigAooooAKKKKACiiigAqvfXa2VpJO3O0cD1ParBIUEk4A6k1wPiDxvpl1dPYQNK8MEm17pE3RF+yhh35/OgCbUdL1DVtHmvYnPmBt4jxzKB1x6e30rjneV45J7d9snlsgHQ8jBr0CPxvo8ECQWkGoTPGoVII7OTcccAcgCqNh4Rl1e8uNS1aE6ck7Bo7GBgSo9Xbpk9wOlclejNzVSm9US12OT8NeHb/WJViZyIl2+a2PlXGcZ/vNycV3es+CLK+soDp5NjqdoAbW9j++rD+9/eB7/AFro7a1hs4EgtoliiQYCqKlranTafNLV/wBbDSsZHhnWW1vSFnmj8q7hdoLqL/nnKhww/qPYiteuXsd2m/ELUbQLi31O0S9XsBIhEb4HqQUJ+lbt9qMVkuD80pHC/wCPpWoya4uY7aPfIfoB1Y+grEtYX1e/eefmGM4x2z2Uf1ogtLnV5fOndkhP8XQkei+g963YokgiWKJQqKMACnsIf06UUUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFACOiyIyOAVYYIPcVxXhjw/ZxNJZ/Z0NrFIZjGeV37sr+WM/hXR6xqH2aLyYj++kHb+Ef41S8JXS3NteqYHilt7loZA55JAH+NMR0FFFFIYUUVkaxqBjxbQElzw23r9B7mgCjrvlyazp19by4m07zQcDIYSLt2+/OD+FW7HSXmf7RfgksciMnr7t/hWXdWrWviHw5C8hEs80skiIcLtSJiB74YrXXUxABgYHSiiikMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKpapqSabbbypklY7Y4x1Y/4VzfjjxLf6dNaaPo0JOoX6kic8iFAcFsetN0qOfUboWFzPLNPaxKJrlxyQfT3NMRHHc3wvRKsZu7vOcKuVU/8A1qNKutSiudRfT7XzHe5JuhwdsuACBz6Yrqbqez0HSZ7lwsNtbIXbA9P5ms/wdaSwaEtxcoUuL6RruRT1UucgH6DAouM45tc1271jUL68uZrGz0mQRGCEAL0BJkzknORj9K6ga/q+0MdMYhhkEIelcH4mQXdxN4iV1JnupTECT5bR2vQFf4i5VuT0HSvVRq0LaXb3ozi4jV407kkZApAZ8PiJpbaQSQGK4UdCOB9al0exLt9tuAdzf6sN1HufeuD1DxbHc+JdM07S5op2urxVupANy4JwV/z6V6r0psRzmsDHjXw0xHVbtB9Sin/2U10dc5qQ+0+PNCiU82ttc3LD2OxB/wChGujpDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACgkKCSQAOpNVr/UbTS7U3N/cx28AIBeRsDJ6Cue1XV570GKxt5bhf4Y4hkyehJ6AfWgCOWxivPEc93aM0txOqpvfpEq+noP61tXN/pfhqxH2y5jgUf3j88h9h1JPtWJY6L4iuLcpdXtvpSP977GPMmb6u3A/AVrab4V0vTZhciFri8H/L1csZJPwJ6fhQBkx2l94xvoLrUreSy0S3cSQ2UoxJcuOjSDso6hfxNdHq7Xi6PetpoBvRA5gB/v4O39auUUAeWyaF4Vk0qG2ltddkW3Q+VDIkuEY8tgYwCT17Vv2E13eQ6fZTxhLhYFUAD5UGMEnHQ4xxXQ63d/Z7QRqfnl4/Adf8PxqTSbQWtmpYfvZPmY/wBKYjg/DvgGKz+IN9d/ZJYtMsQhtPMJ/eyFRls9wDu/MV6VRXO+OPEUvhfw3LqFvGsk29Y0DjgE9zSGYekax/anxf1SNC3lWVgbYAr/ABCRSx/Mn68V31eLfDLX5v8AhNpkuYVmudaDSSSj5TEQGfgeh/wr2mgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACmTzx28TSSsFRe5pl3dxWcJlmbA7DufpXE6/qt7c2DXUIAZ5Ft7OM9JJWOAB69yT2ANAGhfK/ixpbB4gbEjEgYZCj1/wB709K29B0WDw/pEGn2zM6xDBdvvN9adoumDSdMiti3mSgbpZD/ABuep+lX6ACiiigAooqrqVz9lsncffPyr9TQBkP/AMTTXNv3oYzj22jr+ZroaydAtvLtWnI5lPy+yitamxIKbLFHPE0U0ayRuMMjjII9xTqKQzKsPDGi6Xfte2GmW1tcspXfEm3APoOg/CtWiigAooooAKKKKACiiigAooooAKKKKACiiuO134laPpFy1rAWvbhDhxCRtQ+hb1+lAHY0V59F8WtPbHm2E6/7rA1oQ/E/QJMb2njPvHn+VAHY1Wv76Owg3vyx4VR3NZcPjLQ5oi63yDjO1uCayBqNlquoGS/vYYoAOhfAIzwg/rTsBatbS58RXP2m7Yx2YOAAcF/ZfQe9Ns1TW/GcjRxqNN0BfIhCj5WuWA3kf7i4HsSaua74lttM0N5dNkhubp8Q2sMbg5kbhc+gHU+wq14a0yDRdEt9PinWeSMFpZQcmSRjlmP1JP4YpAa1FFFABRRRQAVgaxI95qEVnEehxx6nqfwFbF5dLaW5kbluir/eNZeiW7y3Et9LznKr7nuf6UxM2Y41ijWNBhUAAHoKdRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUVw3iLxdJLJJZaVJsRDtkuFPJPcL6fWsqtWNKN5CcktzpNR8R6dprGOSbzJhwY4vmI+vpXJa/8AEuTS7TzoLJGLNtVXYn8eK50YXp17mmSqsi7XQMvoRmuD67Jyv0MvaGbqnxK13Vrd40uPsqN8pWEBeD79a5aPEa4Tqa0/EVssVzALeDahUlii98+1ZccgUl2VhjOAR3r0qdRTipdzRSurjnJVsE80m81XEjMSzcE04Oa1GT+YRzk07z5CMFiR6ZqvnHUYpyuGYD3oAtLKyKXZ2UdgDyarpf3EcgaGeWMjkFXIpJjJcT+TAhduihRmrb6TDYor6tdiBiMiGMb3P1Has51Iw0e4r2Oh0D4ma3o8ipdSf2hag/Mkx+cD/Zb/ABr2Lw94l03xNY/adNnDY/1kTYDxn0Yf16V4HYW1ldxtJBZzOgON0kuCfwAq+mlSQw/adMeWyvlOEZJiuR35FYPE01LlloLnV7M+g6RmCqWYgADJJ7V86jxh4q0i6Xdql2WjYM0VxIXDAfXqDXrlp4mHiXQLW4ghePzwPNjwclum0eoJ7+ldC11RVy5LJJrN+qR5EXb/AGV7t9TXQxRrDEscYwqjAFVdNsvsVvhyDM/MjD19PoKuU2CCiiikMKKKKACiiigAooooAKKKKACiiigDivih4gfRvDYtrZ1W61F/IX5sMqEfMw/Qf8CFcRawJZWsVvGOEGD7nuas/GGaSXxTotqQnlpHvUj72WfBz7fKMfjUT/erzMe37qMavQXdS8GmClH1rzNTIXaCMZqFrKJjkqCfcVnzaxOp/c2pUdmfJyPwp9prccpCXK+U5ONwHyn/AArpeFrqPNYrkla5abTbV/vwIfwqH+wrHeHWHaQcjB4rQzRk+tYKpNbNk3ZUfT4n6ov5VWn8PwzoRGFjbjDY6VqbiKo6rOicuTsiXOPU1dOpU5lysE2tihPcWmgW0i2xHnsDmY8sT7VyGHmZpppDk8l253Gpridr66eV2+ReQPQV2HgfwWmv51PVQy6bGdsUKnHmkdf+A+uOp/GvboUnBXbu3udEVyq7OXstdn09PLtwvlk5IYda6PTNfh1NhCy+VP2XqG+lepx6Vp8MPkw2FtHDj/VrEuD9RjmuH8c+BraKxk1nQ4vs8tv809vHwpX+8o7Edx0x6Y5KuFhUu+pLUZFN9PTXbqHT3j3lmyXHBQd+a2JfHtj4c8S2un21uJtPs1MVw6DlDwMr9P61y+n67JY+G7rUo/8Aj8mP2dG7qe5/LmpvDmlLZ2DzXaB57tfnDjOEPY/XvWKksLR97VgvcWp7zDNHcQpNC6yRSKGR1OQwPQin15l8OtbbStRk8MXspMLZlsHfuOpTP6/n616bXVGSklJbGqd9QoooqgCiiigAooooAKKKKACiiigAooooA8n+L1msGtaJqjoFi5hkl78HIGPxasT+07Nm/wBcF+teteK/DsPijQp9Pl2rIw3QysufLcdD/T8a+f760u/D91Jp2s28kUkZIjcqcOoOMg9x71yYmh7Wz7ETjc62OaKT7kqN9GFS7cjHrXnv2mBrlGDMiAHJx/hTW1GWHctvM/XIkDMDj0rl+ot7Mz9mddPcapp4A4MKgKpAyAB/+qiXWrnU4fJbT4W3fxxx7cH1rmYfEWpxAD7TvB4xIAatx+ML2M7ZIoHA67Rj+RrtXtoRsops096x2IGAo9qXFc4fF0cbASW6ycZ3RSZH6gVYi8W6bIcSLNF7lc/yNeS8LWX2THkl2Ns1zPim42l0BxWzDrelz/cvYx/vnb/Oud8Q/vZpSORn8xmrw1NqquZWCK97Uwl3PCqKuWZgBj+Ve8zTWnhPwxGWBFtZxKoCjlj6/Uk5/GvCInW3uYZNpxG4Y/ga908XWE2qeF7q3tVDzMgZF9f8ivdRtLoebN4/u/7Zlu1Z/s+cRw5w2Ox9K9Y0m8GraXBcsmFuYslGHqOQa8NtND1C+1RLFY9t5FhQpXgAdya9y0e0bTdKt7aaRWe3i/eP0GQOTTQpW6HkmhwLb32p2Lx7o7e4O3PQFSRXQq+eTXP6E4ur7VL75sTTsQexySa3ENeDjHeqzKfxDbmyuL2azawlWLUIJle3kY4AbPQn0r2i1aZ7WJrlBHOUHmIpyA2OQDXjh9QeR0PpXqvh7Uf7T0a3nJ/eAbH/AN4cGunA1NHTZpTfQ06KKK9I1CiiigAooooAKKKKACiiigAooooAKpano2nazD5WpWUF0mCB5qAlc+h6j8Ku0UAccfhV4TJJGnOB6faJP8a0NN8CeG9LjdLfSLZxIfmM6+afzfOB9K6GigDmb74e+F72RppNFgEm3GIS0Q/JSB+lckPg1aPcoVupooj/AK0cNjI+6mR29TXqdFAHkV58DzybLWQfQTQ4/UH+lc5e/CjxLZb3EdrLGPl3JKOnTODX0BQQDjIBxzzQB8wzeEtdtQXbS7ptrAbki3qefata/tBJAQP9ZGNroeox7e1fRAAAwBgVhal4M0TVLiS4uLMCeQ5eSJihY+pxWNWm52cXsRJN7HzVOuGw3VeCBXsXgDxPDrGjw6fPKF1G0UJhjjzUHCkepxwfp71e1X4QaPd20v2Ke4t7oj927tuUexHpXnF78N/FmkzB47B5thystpIG59h979K2i31KautT2RLcK5EUKqzHJKrjNcf4/wDE8djp76Hpjm41K8/dyeT8xjU9V4/iPTFczDafEi/h+yrDqYQjH7391x9WxXdeBfhovh+4XVNXkS51MHMYQkrDkEE5/iPP4frVNkqNjC0n4fa5Z6bFF5MeWG9g0gBBPaqniC2n8JpbNqsZ23G4IYjuAIxkH869pqlq2j2OuWRs9St1uICwba3YjoQexrilhKcm27idNM8Lg8TWtzOlvBBPJLKwRFAHzEnAr2Twvot1olrNDczJIJGDqEz8pxzUGl+AfDujait9ZaeFuF5RmdmCH1AJ4NdJV08NTpy5o7jUEtUFFFFdBYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z" alt="Greenworks 14-Inch 10 Amp Corded Dethatcher 27022" /></td>
 		 <td><strong>Greenworks 14-Inch 10 Amp Corded Dethatcher 27022</strong> by <em>Greenworks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0030BG1HM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0030BG1HM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31vWG2+ZLkL._AC_SX236_SY340_QL65_.jpg" alt="True Temper 15-Inch Thatch Rake - 2914000" /></td>
 		 <td><strong>True Temper 15-Inch Thatch Rake - 2914000</strong> by <em>The AMES Companies, Inc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00U2KFXKA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00U2KFXKA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31j2bLzB2gL._AC_SX236_SY340_QL65_.jpg" alt="Stanley BDS7127 Thatching Rake" /></td>
 		 <td><strong>Stanley BDS7127 Thatching Rake</strong> by <em>Stanley</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075VFNWNN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075VFNWNN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ZBR7volOL._AC_SX236_SY340_QL65_.jpg" alt="Ames 15-Inch Adjustable Thatch Rake - 2915100" /></td>
 		 <td><strong>Ames 15-Inch Adjustable Thatch Rake - 2915100</strong> by <em>The AMES Companies, Inc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KYX3CYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KYX3CYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31oRPhgSk-L._AC_SX236_SY340_QL65_.jpg" alt="True Temper 1914000 Adjustable Thatching Rake with 54-Inch Wood Handle" /></td>
 		 <td><strong>True Temper 1914000 Adjustable Thatching Rake with 54-Inch Wood Handle</strong> by <em>The AMES Companies, Inc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004S1RW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00004S1RW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31SFmaKwaSL._AC_SX236_SY340_QL65_.jpg" alt="Thatch Rake, Straight, 54 in. Handle L" /></td>
 		 <td><strong>Thatch Rake, Straight, 54 in. Handle L</strong> by <em>True Temper</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XCJS6SY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B06XCJS6SY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21nNZ-gSr4L._AC_SX207_SY299_QL65_.jpg" alt="Thatching Rake with Adjustable Head, 60 Inch Handle" /></td>
 		 <td><strong>Thatching Rake with Adjustable Head, 60 Inch Handle</strong> by <em>A.M. Leonard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004FEBDI0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004FEBDI0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CFlfgtWXL._AC_SX236_SY340_QL65_.jpg" alt="Bully Tools 92312 Leaf and Thatching Rake with Fiberglass Handle and 24 Spring..." /></td>
 		 <td><strong>Bully Tools 92312 Leaf and Thatching Rake with Fiberglass Handle and 24 Spring...</strong> by <em>Bully Tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00315770C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00315770C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416PZuyzQpL._AC_SX236_SY340_QL65_.jpg" alt="Gardena 3395 Combisystem 12.8-Inch Thatching Cutter Rake Head" /></td>
 		 <td><strong>Gardena 3395 Combisystem 12.8-Inch Thatching Cutter Rake Head</strong> by <em>Gardena</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0001E3W8M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0001E3W8M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/3141SqB2OyL._AC_SX236_SY340_QL65_.jpg" alt="Gardena 3745 Combisystem 59-Inch Aluminum Garden Tool Handle" /></td>
 		 <td><strong>Gardena 3745 Combisystem 59-Inch Aluminum Garden Tool Handle</strong> by <em>Gardena</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0001E3WFA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0001E3WFA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -178,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -206,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

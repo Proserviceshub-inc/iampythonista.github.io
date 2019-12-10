@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Locker Locks</div>
@@ -89,96 +98,144 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WqDBwGjQL._AC_SX236_SY340_QL65_.jpg" alt="Puroma 2 Pack Combination Lock 4 Digit Padlock for School Gym Locker, Sports..." /></td>
 		 <td><strong>Puroma 2 Pack Combination Lock 4 Digit Padlock for School Gym Locker, Sports...</strong> by <em>Puroma</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075DFPR2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075DFPR2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Master Lock 1535DWD Padlock Set Your Own Word Combination Lock, 1 Pack, Assorted..." /></td>
 		 <td><strong>Master Lock 1535DWD Padlock Set Your Own Word Combination Lock, 1 Pack, Assorted...</strong> by <em>Master Lock</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009JTW84Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009JTW84Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41QnbL9jtLL._AC_SX236_SY340_QL65_.jpg" alt="Padlock - 4 Digit Combination Lock for Gym, Sports, School &amp; Employee Locker,..." /></td>
 		 <td><strong>Padlock - 4 Digit Combination Lock for Gym, Sports, School &amp; Employee Locker,...</strong> by <em>desired tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01A6RM7I4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01A6RM7I4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KVpX3RjML._AC_SX236_SY340_QL65_.jpg" alt="Puroma 2 Pack Combination Lock 4 Digit Padlock for School Gym Locker,Sports Locker..." /></td>
 		 <td><strong>Puroma 2 Pack Combination Lock 4 Digit Padlock for School Gym Locker,Sports Locker...</strong> by <em>Puroma</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GO0AU8G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01GO0AU8G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Am5qTGy4L._AC_SX236_SY340_QL65_.jpg" alt="Master Lock 1500iD Set Your Own Directional Combination Padlock, 1 Pack, Assorted..." /></td>
 		 <td><strong>Master Lock 1500iD Set Your Own Directional Combination Padlock, 1 Pack, Assorted...</strong> by <em>Master Lock</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002TSN4SQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B002TSN4SQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iFk8CF28L._AC_SX236_SY340_QL65_.jpg" alt="Master Lock 1505D Dial Combination Padlock 1 Pack Assorted" /></td>
 		 <td><strong>Master Lock 1505D Dial Combination Padlock 1 Pack Assorted</strong> by <em>Master Lock</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000BDB550"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000BDB550"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TqjigBrkL._AC_SX236_SY340_QL65_.jpg" alt="TSA Approved Luggage Travel Lock, Set-Your-Own Combination Lock for School Gym..." /></td>
 		 <td><strong>TSA Approved Luggage Travel Lock, Set-Your-Own Combination Lock for School Gym...</strong> by <em>BV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016OYT1XM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B016OYT1XM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51TCy9-rh9L._AC_SX236_SY340_QL65_.jpg" alt="2 Pack FortLocks Gym Locker Lock - 4 Digit, Heavy Duty, Hardened Stainless Steel..." /></td>
 		 <td><strong>2 Pack FortLocks Gym Locker Lock - 4 Digit, Heavy Duty, Hardened Stainless Steel...</strong> by <em>FortLocks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079Y4BL94"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079Y4BL94"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yIgmX1BPL._AC_SX236_SY340_QL65_.jpg" alt="KeeKit Combination Lock, 4 Digit Combination Padlock, Waterproof Gate Lock, Resettable..." /></td>
 		 <td><strong>KeeKit Combination Lock, 4 Digit Combination Padlock, Waterproof Gate Lock, Resettable...</strong> by <em>KeeKit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075MWNVQC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075MWNVQC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qOfIqRDwL._AC_SX236_SY340_QL65_.jpg" alt="Master Lock 1533TRI Combination Lock, 3 Pack, Assorted" /></td>
 		 <td><strong>Master Lock 1533TRI Combination Lock, 3 Pack, Assorted</strong> by <em>Master Lock</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000Y05NOE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000Y05NOE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41+BkGnlwIL._AC_SX236_SY340_QL65_.jpg" alt="Master Lock 141D Covered Aluminum Keyed Padlock, 1 Pack, Black" /></td>
 		 <td><strong>Master Lock 141D Covered Aluminum Keyed Padlock, 1 Pack, Black</strong> by <em>Master Lock</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004Y8C6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00004Y8C6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BxOg+OXZL._AC_SX236_SY340_QL65_.jpg" alt="ORIA Combination Lock, 4 Digit Combination Padlock Set, Metal and Plated Steel..." /></td>
 		 <td><strong>ORIA Combination Lock, 4 Digit Combination Padlock Set, Metal and Plated Steel...</strong> by <em>ORIA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GKSDOYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01GKSDOYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Composite Deck Cleaners</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rIPxxImvL._AC_SX236_SY340_QL65_.jpg" alt="Protect-Composite-Fencing-Sidewalks-Surfaces" /></td>
-		 <td><strong>Protect-Composite-Fencing-Sidewalks-Surfaces</strong> by <em>Resist Mist</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016MAB3FC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="Wash-Safe-Industries-WS-SC-1G-Composite" /></td>
-		 <td><strong>Wash-Safe-Industries-WS-SC-1G-Composite</strong> by <em>Wash Safe Industries</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CTRSYFY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Wash Safe Industries WS-SC-1G Clear Spray and Clean Composite Deck Cleaner, 1..." /></td>
 		 <td><strong>Wash Safe Industries WS-SC-1G Clear Spray and Clean Composite Deck Cleaner, 1...</strong> by <em>Wash Safe Industries</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CTRSYFY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01CTRSYFY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IMm+xn6lL._AC_SX236_SY340_QL65_.jpg" alt="RMR-86 Instant Mold Stain &amp; Mildew Stain Remover (1 Gallon)" /></td>
 		 <td><strong>RMR-86 Instant Mold Stain &amp; Mildew Stain Remover (1 Gallon)</strong> by <em>RMR Solutions</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MFGKWNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MFGKWNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jRmrp6Q-L._AC_SX236_SY340_QL65_.jpg" alt="Star Brite Non-Skid Deck Cleaner with PTEF" /></td>
 		 <td><strong>Star Brite Non-Skid Deck Cleaner with PTEF</strong> by <em>Star Brite</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0000C6HOI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0000C6HOI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sLR3H7svL._AC_SX236_SY340_QL65_.jpg" alt="Wash Safe Industries WS-SC-HE Spray and Clean Composite Deck Cleaner, Hose End..." /></td>
 		 <td><strong>Wash Safe Industries WS-SC-HE Spray and Clean Composite Deck Cleaner, Hose End...</strong> by <em>Wash Safe Industries</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01L3VAIK6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01L3VAIK6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cWcyZDm5L._AC_SX236_SY340_QL65_.jpg" alt="Windex Outdoor Glass and Patio Concentrated Cleaner, 32 Ounce, Pack of 2 (Packaging..." /></td>
 		 <td><strong>Windex Outdoor Glass and Patio Concentrated Cleaner, 32 Ounce, Pack of 2 (Packaging...</strong> by <em>Windex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07114L91X"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07114L91X"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XrlNuWvlL._AC_SX236_SY340_QL65_.jpg" alt="COMPOSITE DECK SPOT RMVR by POUR-N-RESTORE MfrPartNo PNRDK32OZ" /></td>
 		 <td><strong>COMPOSITE DECK SPOT RMVR by POUR-N-RESTORE MfrPartNo PNRDK32OZ</strong> by <em>POUR-N-RESTORE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0054JDYRS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0054JDYRS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rIPxxImvL._AC_SX236_SY340_QL65_.jpg" alt="Clean And Protect Your Composite Deck, Composite Or PVC Fencing, Pavers, Sidewalks..." /></td>
 		 <td><strong>Clean And Protect Your Composite Deck, Composite Or PVC Fencing, Pavers, Sidewalks...</strong> by <em>Resist Mist</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016MAB3FC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rHVV4SQJL._AC_SX236_SY340_QL65_.jpg" alt="Star-Brite-083200N-Surface-Degreaser" /></td>
-		 <td><strong>Star-Brite-083200N-Surface-Degreaser</strong> by <em>Star Brite</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004B7WBWI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B016MAB3FC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41t5XSJnOwL._AC_SX236_SY340_QL65_.jpg" alt="DEFY Composite Deck Cleaner, 2.25 LB Container" /></td>
 		 <td><strong>DEFY Composite Deck Cleaner, 2.25 LB Container</strong> by <em>DEFY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BW8H476"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00BW8H476"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AxzQLl9VL._AC_SX236_SY340_QL65_.jpg" alt="Spray &amp; Forget House &amp; Deck Cleaner Concentrate, 64 oz Bottle, 1 Count, Outdoor..." /></td>
 		 <td><strong>Spray &amp; Forget House &amp; Deck Cleaner Concentrate, 64 oz Bottle, 1 Count, Outdoor...</strong> by <em>Spray &amp; Forget</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C4TS7Q4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00C4TS7Q4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ga-CUW5AL._AC_SX236_SY340_QL65_.jpg" alt="Spray &amp; Forget Revolutionary Roof Cleaner Concentrate, 1 Gallon Bottle, 1 Count..." /></td>
 		 <td><strong>Spray &amp; Forget Revolutionary Roof Cleaner Concentrate, 1 Gallon Bottle, 1 Count...</strong> by <em>Spray &amp; Forget</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000QJ58WU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000QJ58WU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51yBoAEYX1L._AC_SX236_SY340_QL65_.jpg" alt="Moldex Deck Wash, 56 oz" /></td>
 		 <td><strong>Moldex Deck Wash, 56 oz</strong> by <em>Moldex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0152QZYUM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0152QZYUM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41o9CbmoE0L._AC_SX236_SY340_QL65_.jpg" alt="Dumond Chemicals, Inc. 2180 Peel Away Deck Cleaner, 1 Gallon" /></td>
 		 <td><strong>Dumond Chemicals, Inc. 2180 Peel Away Deck Cleaner, 1 Gallon</strong> by <em>Peel Away</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00552GNTK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00552GNTK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XtfFwhU4L._AC_SX236_SY340_QL65_.jpg" alt="Duckback Products DB-4210-4 2.5-Pound Composite Deck Cleaner" /></td>
 		 <td><strong>Duckback Products DB-4210-4 2.5-Pound Composite Deck Cleaner</strong> by <em>Duckback Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001N7QPOO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001N7QPOO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ecYPh2LiL._AC_SX236_SY340_QL65_.jpg" alt="OLYMPIC/PPG ARCHITECTURAL FIN FBA_52125A/01 GAL LIQ Deck Cleaner" /></td>
 		 <td><strong>OLYMPIC/PPG ARCHITECTURAL FIN FBA_52125A/01 GAL LIQ Deck Cleaner</strong> by <em>OLYMPIC/PPG ARCHITECTURAL FIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000C00XWI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000C00XWI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

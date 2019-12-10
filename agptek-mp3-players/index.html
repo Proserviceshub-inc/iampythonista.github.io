@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Agptek Mp3 Players</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PFCQeHf5L._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK-Adjustable-Earphone-Players-Smartphones" /></td>
-		 <td><strong>AGPTEK-Adjustable-Earphone-Players-Smartphones</strong> by <em>AGPTEK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017U71W52"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lpw0SEMpL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK-Bluetooth-Lossless-Supports-Expandable" /></td>
-		 <td><strong>AGPTEK-Bluetooth-Lossless-Supports-Expandable</strong> by <em>AGPTEK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DXT1J43"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="AGPTEK 16GB Clip MP3 Player with Bluetooth 4.0, Wearable Portable Music Player..." /></td>
 		 <td><strong>AGPTEK 16GB Clip MP3 Player with Bluetooth 4.0, Wearable Portable Music Player...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H2PWPS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07H2PWPS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418+4pHKKnL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK A02 8GB MP3 Player Lossless Sound 70 Hours Playback Music Player (Supports..." /></td>
 		 <td><strong>AGPTEK A02 8GB MP3 Player Lossless Sound 70 Hours Playback Music Player (Supports...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01EMTC84A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01EMTC84A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vPHNN9d1L._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK U3 USB Stick Mp3 Player, 8GB Music Player Supports Replaceable Battery..." /></td>
 		 <td><strong>AGPTEK U3 USB Stick Mp3 Player, 8GB Music Player Supports Replaceable Battery...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NAJ3KQB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01NAJ3KQB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41EpLZK0LDL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK Metal MP3 Player with Loud Speaker, 8GB Lossless Music Player Supports..." /></td>
 		 <td><strong>AGPTEK Metal MP3 Player with Loud Speaker, 8GB Lossless Music Player Supports...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F3BS26W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07F3BS26W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41guaj+KqsL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK 16GB MP3 Player Bluetooth 4.0 with Speaker, A05ST Metal Touch Button Music..." /></td>
 		 <td><strong>AGPTEK 16GB MP3 Player Bluetooth 4.0 with Speaker, A05ST Metal Touch Button Music...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F81T4P8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07F81T4P8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nY6MUJnEL._AC_SX236_SY340_QL65_.jpg" alt="16GB Clip MP3 Player with Bluetooth 4.0, AGPTEK A50S Lossless Sound Music Player..." /></td>
 		 <td><strong>16GB Clip MP3 Player with Bluetooth 4.0, AGPTEK A50S Lossless Sound Music Player...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F33HVY3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F33HVY3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-Srg65GML._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK MP3 Player 8GB Bluetooth 4.0, Upgraded A02T Lossless Sport Music Player..." /></td>
 		 <td><strong>AGPTEK MP3 Player 8GB Bluetooth 4.0, Upgraded A02T Lossless Sport Music Player...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HRHB894"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BXdbFSyVL._AC_SX236_SY340_QL65_.jpg" alt="Bluetooth-Lossless-Recorder-Headphones-Armbands" /></td>
-		 <td><strong>Bluetooth-Lossless-Recorder-Headphones-Armbands</strong> by <em>Aniee</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JP235QD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HRHB894"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-ZsMJNVuL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK E02 8GB Portable Clip MP3 Music Player with 1.0 Inch OLED HD Screen,for..." /></td>
 		 <td><strong>AGPTEK E02 8GB Portable Clip MP3 Music Player with 1.0 Inch OLED HD Screen,for...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ER5FJAE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01ER5FJAE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tXMmsopRL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK 16GB MP3 Player with Bluetooth 4.0, Portable Lossless Music Player Supports..." /></td>
 		 <td><strong>AGPTEK 16GB MP3 Player with Bluetooth 4.0, Portable Lossless Music Player Supports...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GJT77Y8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GJT77Y8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51at96yMLHL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK MP3 Player Bluetooth 4.0 with Loud Speaker, 8GB Metal Lossless Music Player..." /></td>
 		 <td><strong>AGPTEK MP3 Player Bluetooth 4.0 with Loud Speaker, 8GB Metal Lossless Music Player...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F3438KF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07F3438KF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41X+mK7k3fL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK MP3 Player for Kids, K1 Portable 8GB Children Music Player with Built-in..." /></td>
 		 <td><strong>AGPTEK MP3 Player for Kids, K1 Portable 8GB Children Music Player with Built-in...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07K9NC3L1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07K9NC3L1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oRComYenL._AC_SX236_SY340_QL65_.jpg" alt="16GB Bluetooth 4.0 MP3 Player with Speaker, AGPTEK Portable Lossless MP3 Player..." /></td>
 		 <td><strong>16GB Bluetooth 4.0 MP3 Player with Speaker, AGPTEK Portable Lossless MP3 Player...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D784TGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07D784TGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41X9IY3bZGL._AC_SX236_SY340_QL65_.jpg" alt="AGPTEK 16GB MP3 Player with Bluetooth, Touch Button Music Player with FM Radio..." /></td>
 		 <td><strong>AGPTEK 16GB MP3 Player with Bluetooth, Touch Button Music Player with FM Radio...</strong> by <em>AGPTEK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JCPWFBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07JCPWFBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

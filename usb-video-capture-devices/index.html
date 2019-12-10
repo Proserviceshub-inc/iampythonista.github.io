@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Usb Video Capture Devices</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Ph7oUaHOL._AC_SX236_SY340_QL65_.jpg" alt="Capture-Broadcast-Nintendo-Consoles-Camcorder" /></td>
-		 <td><strong>Capture-Broadcast-Nintendo-Consoles-Camcorder</strong> by <em>RayCue</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M5ZJSMS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Yzcy735QL._AC_SX236_SY340_QL65_.jpg" alt="ClonerAlliance-Passthrough-Commentary-Latency-Camcorder" /></td>
-		 <td><strong>ClonerAlliance-Passthrough-Commentary-Latency-Camcorder</strong> by <em>ClonerAlliance</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FF52DT4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Elgato Video Capture - Digitise Video for Mac, PC or iPad (USB 2.0)" /></td>
 		 <td><strong>Elgato Video Capture - Digitise Video for Mac, PC or iPad (USB 2.0)</strong> by <em>Corsair</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0029U2YSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0029U2YSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414oXqYMGyL._AC_SX236_SY340_QL65_.jpg" alt="Hauppauge 610 USB-Live 2 Analog Video Digitizer and Video Capture Device" /></td>
 		 <td><strong>Hauppauge 610 USB-Live 2 Analog Video Digitizer and Video Capture Device</strong> by <em>Hauppauge</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0036VO2BI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0036VO2BI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tscI4gSLL._AC_SX236_SY340_QL65_.jpg" alt="S-Video / Composite to USB Video Capture Cable Adapter w/ TWAIN and Mac Support..." /></td>
 		 <td><strong>S-Video / Composite to USB Video Capture Cable Adapter w/ TWAIN and Mac Support...</strong> by <em>StarTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00535BRBI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00535BRBI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41U4tXTIH2L._AC_SX236_SY340_QL65_.jpg" alt="USB 2.0 Audio/Video Converter - Digitize and Edit Video from Any Analog Source..." /></td>
 		 <td><strong>USB 2.0 Audio/Video Converter - Digitize and Edit Video from Any Analog Source...</strong> by <em>DIGITNOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XJKSJZ8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XJKSJZ8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mHRnTLGpL._AC_SX236_SY340_QL65_.jpg" alt="USB Video Capture Device - DriverGenius VHS/VHS-C / Hi8 Cassette Tape to PC and..." /></td>
 		 <td><strong>USB Video Capture Device - DriverGenius VHS/VHS-C / Hi8 Cassette Tape to PC and...</strong> by <em>DriverGenius</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07448TTTH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07448TTTH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41N26NrO3RL._AC_SX236_SY340_QL65_.jpg" alt="REDGO Video Audio VHS VCR USB Video Capture Card to DVD Converter Capture Card..." /></td>
 		 <td><strong>REDGO Video Audio VHS VCR USB Video Capture Card to DVD Converter Capture Card...</strong> by <em>REDGO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01E5ITE2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01E5ITE2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IUvnDz97L._AC_SX236_SY340_QL65_.jpg" alt="USB Video Capture Device, Easy-Link USB 2.0 Video Grabber Card VHS to DVD Maker..." /></td>
 		 <td><strong>USB Video Capture Device, Easy-Link USB 2.0 Video Grabber Card VHS to DVD Maker...</strong> by <em>Easy-Link</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NBHWRNG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XZTzgF4GL._AC_SX236_SY340_QL65_.jpg" alt="AVerMedia-EzRecorder-Definition-Recording-ER130" /></td>
-		 <td><strong>AVerMedia-EzRecorder-Definition-Recording-ER130</strong> by <em>AVerMedia</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LAP3GC8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01NBHWRNG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZRaEb4ZfL._AC_SX236_SY340_QL65_.jpg" alt="Top-Longer USB 2.0 Video Grabber with Audio for Mac OS X and Windows - VHS to..." /></td>
 		 <td><strong>Top-Longer USB 2.0 Video Grabber with Audio for Mac OS X and Windows - VHS to...</strong> by <em>Top-Longer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01H1J21FE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01H1J21FE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yXlr65frL._AC_SX236_SY340_QL65_.jpg" alt="DIGITNOW Video Capture Converter, Capture Analog Video to Digital for Your Mac..." /></td>
 		 <td><strong>DIGITNOW Video Capture Converter, Capture Analog Video to Digital for Your Mac...</strong> by <em>DIGITNOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0744BB1K5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0744BB1K5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bSkXHPhHL._AC_SX236_SY340_QL65_.jpg" alt="V.TOP USB 2.0 Video Audio Capture Card - VHS to DVD Converter Digital Video Grabber..." /></td>
 		 <td><strong>V.TOP USB 2.0 Video Audio Capture Card - VHS to DVD Converter Digital Video Grabber...</strong> by <em>VTOP\u00ae</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071L2P3TN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071L2P3TN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cxwUznHzL._AC_SX236_SY340_QL65_.jpg" alt="VIDBOX Video Conversion for Mac (Mac)" /></td>
 		 <td><strong>VIDBOX Video Conversion for Mac (Mac)</strong> by <em>VIDBOX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DPHOV0A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00DPHOV0A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414jtOgJvJL._AC_SX236_SY340_QL65_.jpg" alt="AVerMedia EZMaker 7, Standard Definition USB Video Capture Card , Analog to Digital..." /></td>
 		 <td><strong>AVerMedia EZMaker 7, Standard Definition USB Video Capture Card , Analog to Digital...</strong> by <em>AVerMedia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00603S1OS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00603S1OS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mEajQLi+L._AC_SX236_SY340_QL65_.jpg" alt="Diamond VC500 USB 2.0 One Touch VHS to DVD Video Capture Device with Easy to..." /></td>
 		 <td><strong>Diamond VC500 USB 2.0 One Touch VHS to DVD Video Capture Device with Easy to...</strong> by <em>Diamond Multimedia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000VM60I8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000VM60I8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51YloMWFgaL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>27 inch gaming monitors</strong></td>
+                 <td style="text-align: center;"><a href="/27-inch-gaming-monitors"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51d4K0L2NYL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>post workout supplements</strong></td>
+                 <td style="text-align: center;"><a href="/post-workout-supplements"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51AeoR2dQyL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>avantree bluetooth headphones</strong></td>
+                 <td style="text-align: center;"><a href="/avantree-bluetooth-headphones"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31Jl4toEPaL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>vinyl shack computer cases</strong></td>
+                 <td style="text-align: center;"><a href="/vicious-vinyl-shack-computer-cases"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best 16 Channel Dvrs</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JPy1TLNLL._AC_SX236_SY340_QL65_.jpg" alt="TIGERSECU-16-Channel-Security-Cameras-Included" /></td>
-		 <td><strong>TIGERSECU-16-Channel-Security-Cameras-Included</strong> by <em>TIGERSECU</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078PPXZ2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51O3He8C7+L._AC_SX236_SY340_QL65_.jpg" alt="ZOSI-Security-Weatherproof-Surveillance-Included" /></td>
-		 <td><strong>ZOSI-Security-Weatherproof-Surveillance-Included</strong> by <em>ZOSI</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078R2CNZ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Amcrest 1080-Lite 16CH DVR Video Security Recorder, ProHD Pentabrid (5-in-1)..." /></td>
 		 <td><strong>Amcrest 1080-Lite 16CH DVR Video Security Recorder, ProHD Pentabrid (5-in-1)...</strong> by <em>Amcrest</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073V8J8JN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073V8J8JN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31arfFzqSML._AC_SX236_SY340_QL65_.jpg" alt="ZOSI 720p 16 Channel Security DVR Recorder, H.264 1080N Hybrid 4-in-1 TVI DVR..." /></td>
 		 <td><strong>ZOSI 720p 16 Channel Security DVR Recorder, H.264 1080N Hybrid 4-in-1 TVI DVR...</strong> by <em>ZOSI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071NWWH8V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071NWWH8V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41auPZahlVL._AC_SX236_SY340_QL65_.jpg" alt="TIGERSECU Super HD 1080P 16-Channel Hybrid 5-in-1 DVR NVR Security Video Recorder..." /></td>
 		 <td><strong>TIGERSECU Super HD 1080P 16-Channel Hybrid 5-in-1 DVR NVR Security Video Recorder...</strong> by <em>TIGERSECU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078PR1DCM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078PR1DCM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31a9U3bLuGL._AC_SX236_SY340_QL65_.jpg" alt="101AV 16CH Surveillance Digital Video Recorder HD-TVI/AHD H264 Full-HD DVR 2TB..." /></td>
 		 <td><strong>101AV 16CH Surveillance Digital Video Recorder HD-TVI/AHD H264 Full-HD DVR 2TB...</strong> by <em>101 AV Inc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FFINM1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FFINM1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YiDQacYHL._AC_SX236_SY340_QL65_.jpg" alt="(5 in 1) ANRAN 16CH Security DVR 1080N AHD NVR HD Digital Video Recorder for..." /></td>
 		 <td><strong>(5 in 1) ANRAN 16CH Security DVR 1080N AHD NVR HD Digital Video Recorder for...</strong> by <em>ANRAN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014KTGAMI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B014KTGAMI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JPy1TLNLL._AC_SX236_SY340_QL65_.jpg" alt="TIGERSECU Super HD 1080P 16-Channel Hybrid 5-in-1 DVR NVR Security Video Recorder..." /></td>
 		 <td><strong>TIGERSECU Super HD 1080P 16-Channel Hybrid 5-in-1 DVR NVR Security Video Recorder...</strong> by <em>TIGERSECU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078PPXZ2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41osBqfiS0L._AC_SX236_SY340_QL65_.jpg" alt="TIGERSECU-8-Channel-Security-Recording-Included" /></td>
-		 <td><strong>TIGERSECU-8-Channel-Security-Recording-Included</strong> by <em>TIGERSECU</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078PQKMX2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078PPXZ2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51hUJLKF2sL._AC_SX236_SY340_QL65_.jpg" alt="16 Channels DVR Recorder Hybrid DVR H.264 CCTV Security Camera System Digital..." /></td>
 		 <td><strong>16 Channels DVR Recorder Hybrid DVR H.264 CCTV Security Camera System Digital...</strong> by <em>Abowone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01AP8NA2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01AP8NA2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31NIjYK+HVL._AC_SX236_SY340_QL65_.jpg" alt="Q-See QTH916-2 Home Security DVR 16 Channel Analog HD 1080P DVR Camera, Black" /></td>
 		 <td><strong>Q-See QTH916-2 Home Security DVR 16 Channel Analog HD 1080P DVR Camera, Black</strong> by <em>Q-See</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074P1SCPZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074P1SCPZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417lwlGPCPL._AC_SX236_SY340_QL65_.jpg" alt="Westshine 16 Channel 1080N DVR,5 in 1 Hybrid (AHD/TVI/CVI/Analog/IP) CCTV Home..." /></td>
 		 <td><strong>Westshine 16 Channel 1080N DVR,5 in 1 Hybrid (AHD/TVI/CVI/Analog/IP) CCTV Home...</strong> by <em>Westshine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072K1QRQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072K1QRQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51wEpSbNwgL._AC_SX236_SY340_QL65_.jpg" alt="HISVISION 16CH 1080N AHD DVR 5-in-1 Hybird (1080P NVR+1080N AHD+960H Analog+TVI..." /></td>
 		 <td><strong>HISVISION 16CH 1080N AHD DVR 5-in-1 Hybird (1080P NVR+1080N AHD+960H Analog+TVI...</strong> by <em>HISVISION</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GO969AA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01GO969AA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31s1woXXXdL._AC_SX236_SY340_QL65_.jpg" alt="Amcrest UltraHD 4MP HD-Analog 16CH Video Security DVR Digital Recorder, 16-Channel..." /></td>
 		 <td><strong>Amcrest UltraHD 4MP HD-Analog 16CH Video Security DVR Digital Recorder, 16-Channel...</strong> by <em>Amcrest</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0751K7R73"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0751K7R73"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31m9fvZHvyL._AC_SX236_SY340_QL65_.jpg" alt="ZOSI 16CH Full 1080P High Definition Hybrid 4-in-1 HD TVI DVR Video Recorder..." /></td>
 		 <td><strong>ZOSI 16CH Full 1080P High Definition Hybrid 4-in-1 HD TVI DVR Video Recorder...</strong> by <em>ZOSI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BFQ6SX5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BFQ6SX5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Oai85YmiL._AC_SX236_SY340_QL65_.jpg" alt="OOSSXX 1080N 16 Channel 6 in 1 DVR Digital Video Record TVI/IP/AHD/CVI/Analo..." /></td>
 		 <td><strong>OOSSXX 1080N 16 Channel 6 in 1 DVR Digital Video Record TVI/IP/AHD/CVI/Analo...</strong> by <em>OOSSXX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076P9L8BV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076P9L8BV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

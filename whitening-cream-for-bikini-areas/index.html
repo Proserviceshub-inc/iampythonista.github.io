@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Whitening Cream For Bikini Areas</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IDEpJsGML._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>DIVINE DERRIERE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BRB3XG3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51o2RE7lKUL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>DIVINE DERRIERE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBZDH2L"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="PFB Vanish Razor Bump Stopper Skin Care Treatment with Chromabright Dark Spot..." /></td>
 		 <td><strong>PFB Vanish Razor Bump Stopper Skin Care Treatment with Chromabright Dark Spot...</strong> by <em>PFB Vanish</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005GXQ02I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005GXQ02I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IDEpJsGML._AC_SX236_SY340_QL65_.jpg" alt="Divine Derriere Intimate Skin Lightening Gel for Body, Face, Bikini and Sensitive..." /></td>
 		 <td><strong>Divine Derriere Intimate Skin Lightening Gel for Body, Face, Bikini and Sensitive...</strong> by <em>DIVINE DERRIERE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BRB3XG3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BRB3XG3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41naZmIooNL._AC_SX236_SY340_QL65_.jpg" alt="Skin Lightening Serum by Pureauty Naturals with Kojic Acid - Skin Whitening &amp;..." /></td>
 		 <td><strong>Skin Lightening Serum by Pureauty Naturals with Kojic Acid - Skin Whitening &amp;...</strong> by <em>Pureauty Naturals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076TX4RLL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076TX4RLL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5185kB6YZqL._AC_SX236_SY340_QL65_.jpg" alt="Divine Derriere Skin Lightening 2% Hydroquinone Bleaching Cream with 6% AHA Glycolic..." /></td>
 		 <td><strong>Divine Derriere Skin Lightening 2% Hydroquinone Bleaching Cream with 6% AHA Glycolic...</strong> by <em>DIVINE DERRIERE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LX83RZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LX83RZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZExo8oJZL._AC_SX236_SY340_QL65_.jpg" alt="Seductiva Intimate Zone Lightener | Brighten Sensitive Private Parts By Up To..." /></td>
 		 <td><strong>Seductiva Intimate Zone Lightener | Brighten Sensitive Private Parts By Up To...</strong> by <em>SkinPro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0764JCVFY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B0764JCVFY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sdcjdDWnL._AC_SX236_SY340_QL65_.jpg" alt="Skin Lightening Cream by Eva Naturals (4 oz) - Hyperpigmentation Cream for Dark..." /></td>
 		 <td><strong>Skin Lightening Cream by Eva Naturals (4 oz) - Hyperpigmentation Cream for Dark...</strong> by <em>Eva Naturals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01J1ZMM8C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01J1ZMM8C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LgqLv85JL._AC_SX236_SY340_QL65_.jpg" alt="Premium Intimate Skin Lightening Cream - Bleach My Butt - All Natural Formula..." /></td>
 		 <td><strong>Premium Intimate Skin Lightening Cream - Bleach My Butt - All Natural Formula...</strong> by <em>Do Me</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079P7FVHK"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LgqLv85JL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Do Me</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079P7FVHK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B079P7FVHK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51o2RE7lKUL._AC_SX236_SY340_QL65_.jpg" alt="Divine Derriere Intimate Skin Lightening Gel for Body, Face, Bikini and Sensitive..." /></td>
 		 <td><strong>Divine Derriere Intimate Skin Lightening Gel for Body, Face, Bikini and Sensitive...</strong> by <em>DIVINE DERRIERE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBZDH2L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07DBZDH2L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31uDjgNN12L._AC_SX236_SY340_QL65_.jpg" alt="PureBody Cream | Butt and Breast Cream - The #1 and Only Butt and Breast Growth..." /></td>
 		 <td><strong>PureBody Cream | Butt and Breast Cream - The #1 and Only Butt and Breast Growth...</strong> by <em>PureBody Cream</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075FM2ZBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075FM2ZBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31AdI8klizL._AC_SX236_SY340_QL65_.jpg" alt="Secret Bright - BEST SKIN LIGHTENING for Sensitive Skin and All Intimate Areas..." /></td>
 		 <td><strong>Secret Bright - BEST SKIN LIGHTENING for Sensitive Skin and All Intimate Areas...</strong> by <em>Secret</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LFWH17M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00LFWH17M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41dzZGtapNL._AC_SX236_SY340_QL65_.jpg" alt="Black and White Bleaching Cream, 1.5 Ounce" /></td>
 		 <td><strong>Black and White Bleaching Cream, 1.5 Ounce</strong> by <em>Black and White</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0009R1526"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0009R1526"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51J9RRlyZFL._AC_SX236_SY340_QL65_.jpg" alt="Whitening Cream. Anti Aging Skin Lightening Cream - Dark Spot Corrector for Face..." /></td>
 		 <td><strong>Whitening Cream. Anti Aging Skin Lightening Cream - Dark Spot Corrector for Face...</strong> by <em>KissRedE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078ZKT5PR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078ZKT5PR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PoYtjj97L._AC_SX236_SY340_QL65_.jpg" alt="Skin Flowers Face Body Cream Cherries Lightening Whitening Private Part Intimate..." /></td>
 		 <td><strong>Skin Flowers Face Body Cream Cherries Lightening Whitening Private Part Intimate...</strong> by <em>BIOAQUA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074YFNX63"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B074YFNX63"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412pZGt-BEL._AC_SX236_SY340_QL65_.jpg" alt="SKIN LIGHTENING Whitening Cream Mask. Use as Dark Spot Corrector to Brighten..." /></td>
 		 <td><strong>SKIN LIGHTENING Whitening Cream Mask. Use as Dark Spot Corrector to Brighten...</strong> by <em>Pink Madison</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MR05DQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00MR05DQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

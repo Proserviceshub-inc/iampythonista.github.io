@@ -1,0 +1,64 @@
+from bs4 import BeautifulSoup as bs
+from datetime import datetime as dt
+from glob import glob
+
+print('extracting all folders name')
+all_folders_name = glob("./*/")
+
+correct_folders_name = []
+for name in all_folders_name:
+	print('correcting folder name, of '+name)
+	name = name.replace('./','')
+	correct_folders_name.append(name)
+y = 1
+for name in correct_folders_name:
+	print(dt.now().strftime("%I:%M:%S-%P")+" keyword name "+name+" keyword number = "+str(y))
+	try:
+		f = open(name+'index.html','r')
+	except Exception as e:
+		print("problem in opening index.html file in foler "+name)
+		print('error\n '+str(e))
+		continue
+	y = y + 1
+	file_data = f.read()
+	f.close()
+	checking_trending_products = file_data.find("Trending Products")
+	try:
+		if checking_trending_products == -1:
+			print(name+" hasn't trending products")
+			continue
+	except Exception as e:
+		print("problem in trending product of "+name+"\n\n\n")
+		print("Err\n"+str(e))
+	soup = bs(file_data,'html.parser')
+	images = soup.select('.related,.relatd')
+	corrupt_images_keyword = []
+	corrupt_images = {};
+	for image in images:
+		try:
+				if (('https://images' in image['src']) or ('data:image' in image['src'])):
+				continue
+		except:
+				if (('https://images' in image.img['src']) or ('data:image' in image.img['src'])):
+					continue
+		else:
+			keyword_name = image.find_next('a')['href']
+			corrupt_images_keyword.append(keyword_name)
+			corrupt_images[keyword_name] = {'page name': name,'img-tag': str(image)}
+			f = open('corrupt_image_dict','a')
+			for_file_writing = "corrupt_images['"+image.find_next('a')['href']+"'] = { 'page name' : '"+name+"', 'img-tag' : '"+str(image)+"'\n"
+			f.write(for_file_writing)
+			f.close()
+	if len(corrupt_images_keyword) > 0:
+		f = open('corrupt_images_keyword.csv','a')
+		if(len(corrupt_images_keyword) > 1):
+			f.write("~~~~"+"~~~~".join(corrupt_images_keyword))
+		else:
+			f.write("~~~~"+corrupt_images_keyword[0])
+		f.close()
+
+		
+	
+	
+
+	

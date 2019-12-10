@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Bandanas</div>
@@ -89,96 +98,144 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="12pcs Bandanas 22 X 22 Inch 100% Cotton Novelty Double Sided Print Paisley Cowboy..." /></td>
 		 <td><strong>12pcs Bandanas 22 X 22 Inch 100% Cotton Novelty Double Sided Print Paisley Cowboy...</strong> by <em>monochef</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D3B7FUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01D3B7FUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61UzfsZwOCL._AC_SX236_SY340_QL65_.jpg" alt="L&amp;M 12Pcs Bandanas 100% Cotton Paisley Print Head Wrap Scarf Wristband" /></td>
 		 <td><strong>L&amp;M 12Pcs Bandanas 100% Cotton Paisley Print Head Wrap Scarf Wristband</strong> by <em>L&amp;M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XGV3S31"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XGV3S31"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51fvyOH3f2L._AC_SX236_SY340_QL65_.jpg" alt="Camel Brand Bandana 12 Pack 21x21 100% Polyester" /></td>
 		 <td><strong>Camel Brand Bandana 12 Pack 21x21 100% Polyester</strong> by <em>Camel Brand</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MRBI1SC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MRBI1SC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jHKuC0BcL._AC_SX236_SY340_QL65_.jpg" alt="T&amp;Z 100% Cotton 10 Pack,12 Pack Fine Bandanas Professional Factory Manufactured" /></td>
 		 <td><strong>T&amp;Z 100% Cotton 10 Pack,12 Pack Fine Bandanas Professional Factory Manufactured</strong> by <em>T&amp;Z</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GGMF85T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GGMF85T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZpcOZA49L._AC_SX236_SY340_QL65_.jpg" alt="NJ Novelty - Dozen Paisley Bandanas, Cowboy Head Scarf Cowboy bandana" /></td>
 		 <td><strong>NJ Novelty - Dozen Paisley Bandanas, Cowboy Head Scarf Cowboy bandana</strong> by <em>NJ Novelty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IA1U1EK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IA1U1EK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61LjohCahkL._AC_SX236_SY340_QL65_.jpg" alt="100% Cotton Bandanas, Alotpower Multipurpose Paisley Printing Cowboy Bandana..." /></td>
 		 <td><strong>100% Cotton Bandanas, Alotpower Multipurpose Paisley Printing Cowboy Bandana...</strong> by <em>Alotpower</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MDLZQLO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MDLZQLO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510OdWPowFL._AC_SX236_SY340_QL65_.jpg" alt="Alotpower Cotton Novelty Print Paisley Cowboy Bandanas Scarfs Unisex Headwraps" /></td>
 		 <td><strong>Alotpower Cotton Novelty Print Paisley Cowboy Bandanas Scarfs Unisex Headwraps</strong> by <em>Alotpower</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072M98D3J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072M98D3J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BVIl-LAAL._AC_SX236_SY340_QL65_.jpg" alt="Fun Central AZ951, 12 Pcs 21 Inches Assorted Neon Bandana, Neon Bandanas for..." /></td>
 		 <td><strong>Fun Central AZ951, 12 Pcs 21 Inches Assorted Neon Bandana, Neon Bandanas for...</strong> by <em>Fun Central</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K8OPQM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01K8OPQM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61CkqDLfbHL._AC_SX236_SY340_QL65_.jpg" alt="Jeatonge Bandanas for Men and Women Multi-Purpose Cowboy Bandana 22x22 inch Polyester" /></td>
 		 <td><strong>Jeatonge Bandanas for Men and Women Multi-Purpose Cowboy Bandana 22x22 inch Polyester</strong> by <em>Jeatonge</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G2GM54F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G2GM54F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61CIXm7XI2L._AC_SX236_SY340_QL65_.jpg" alt="Boao 12 Pieces Novelty Gradient Bandana, Double Sided Paisley Cotton Bandana,..." /></td>
 		 <td><strong>Boao 12 Pieces Novelty Gradient Bandana, Double Sided Paisley Cotton Bandana,...</strong> by <em>BOAO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HJ7WXPP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07HJ7WXPP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MI5nMQ2KL._AC_SX236_SY340_QL65_.jpg" alt="Alotpower Cotton Bandanas Multipurpose Square Handkerchiefs Headbands" /></td>
 		 <td><strong>Alotpower Cotton Bandanas Multipurpose Square Handkerchiefs Headbands</strong> by <em>Alotpower</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072TXRB57"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072TXRB57"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61QcFVDU2AL._AC_SX236_SY340_QL65_.jpg" alt="BSLINO Bandanas 24pcs 22 X 22 Inch 100% Cotton Novelty Double Sided Print Paisley..." /></td>
 		 <td><strong>BSLINO Bandanas 24pcs 22 X 22 Inch 100% Cotton Novelty Double Sided Print Paisley...</strong> by <em>BSLINO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0748GK2WK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0748GK2WK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

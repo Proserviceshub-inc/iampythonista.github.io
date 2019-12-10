@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ikea Futons</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rAO34gtLL._AC_SX236_SY340_QL65_.jpg" alt="Naomi-Home-Futon-Armrest-White" /></td>
-		 <td><strong>Naomi-Home-Futon-Armrest-White</strong> by <em>Naomi Home</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C5C7CB9"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61P7ikK4TqL._AC_SX236_SY340_QL65_.jpg" alt="DHP-Modern-Design-Sturdy-Upholstery" /></td>
-		 <td><strong>DHP-Modern-Design-Sturdy-Upholstery</strong> by <em>DHP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WWMJ1VF"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="DHP 8-inch Independently Encased Coil Futon Mattress with CertiPUR-US Certified..." /></td>
 		 <td><strong>DHP 8-inch Independently Encased Coil Futon Mattress with CertiPUR-US Certified...</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01AFUEHH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01AFUEHH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HNejESbfL._AC_SX236_SY340_QL65_.jpg" alt="Best Choice Products Living Room Convertible Linen Fabric Tufted Splitback Futon..." /></td>
 		 <td><strong>Best Choice Products Living Room Convertible Linen Fabric Tufted Splitback Futon...</strong> by <em>Best Choice Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074777L4N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074777L4N"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31YflAGmvQL._AC_SX236_SY340_QL65_.jpg" alt="Best Choice Products Modern Faux Leather Convertible Folding Futon Sofa Bed Recliner..." /></td>
 		 <td><strong>Best Choice Products Modern Faux Leather Convertible Folding Futon Sofa Bed Recliner...</strong> by <em>Best Choice Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LXDH29Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LXDH29Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/612JD-HfRWL._AC_SX236_SY340_QL65_.jpg" alt="DHP Emily Futon Couch Bed, Modern Sofa Design Includes Sturdy Chrome Legs and..." /></td>
 		 <td><strong>DHP Emily Futon Couch Bed, Modern Sofa Design Includes Sturdy Chrome Legs and...</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R9HVPBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00R9HVPBK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51it9Qp3UTL._AC_SX236_SY340_QL65_.jpg" alt="DHP Dillan Convertible Futon Couch Bed with Microfiber Upholstery and Wood Legs..." /></td>
 		 <td><strong>DHP Dillan Convertible Futon Couch Bed with Microfiber Upholstery and Wood Legs...</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00USW0MTE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00USW0MTE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61uCHjwQ6vL._AC_SX236_SY340_QL65_.jpg" alt="DHP Emily Futon Couch Bed, Modern Sofa Design Includes Sturdy Chrome Legs and..." /></td>
 		 <td><strong>DHP Emily Futon Couch Bed, Modern Sofa Design Includes Sturdy Chrome Legs and...</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018M0GIS2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B018M0GIS2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51avWLKDv7L._AC_SX236_SY340_QL65_.jpg" alt="Nirvana Futons Arden Futon Frame - Full Size, Solid Hardwood" /></td>
 		 <td><strong>Nirvana Futons Arden Futon Frame - Full Size, Solid Hardwood</strong> by <em>Nirvana Futons</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00CHV46QE"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4120FHmJY1L._AC_SX236_SY340_QL65_.jpg" alt="DHP-Twin-Over-Full-Ladder-Space-Saving-Design" /></td>
-		 <td><strong>DHP-Twin-Over-Full-Ladder-Space-Saving-Design</strong> by <em>DHP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ERXJ20U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00CHV46QE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-2izFceLL._AC_SX236_SY340_QL65_.jpg" alt="Modern Plush Tufted Linen Fabric Sleeper Futon" /></td>
 		 <td><strong>Modern Plush Tufted Linen Fabric Sleeper Futon</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G4HDY46"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01G4HDY46"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/314zeF4gtNL._AC_SX236_SY340_QL65_.jpg" alt="Best Choice Products Microfiber Futon Convertible Reclining Folding Lounge Couch..." /></td>
 		 <td><strong>Best Choice Products Microfiber Futon Convertible Reclining Folding Lounge Couch...</strong> by <em>Best Choice Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017MXLIZI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B017MXLIZI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NVVvg81aL._AC_SX236_SY340_QL65_.jpg" alt="Novogratz Brittany Sofa Futon - Navy Linen" /></td>
 		 <td><strong>Novogratz Brittany Sofa Futon - Navy Linen</strong> by <em>Novogratz</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LY1WBQN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LY1WBQN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ann3HmUJL._AC_SX236_SY340_QL65_.jpg" alt="DHP Lodge Convertible Futon Couch Bed with Microfiber Upholstery and Wood Legs..." /></td>
 		 <td><strong>DHP Lodge Convertible Futon Couch Bed with Microfiber Upholstery and Wood Legs...</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00H8I4H92"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00H8I4H92"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rAO34gtLL._AC_SX236_SY340_QL65_.jpg" alt="Naomi Home Futon Sofa Bed with Armrest White" /></td>
 		 <td><strong>Naomi Home Futon Sofa Bed with Armrest White</strong> by <em>Naomi Home</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C5C7CB9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07C5C7CB9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/519KsFTclOL._AC_SX236_SY340_QL65_.jpg" alt="DHP Haven Small Space Sectional Futon Sofa, Black Faux Leather" /></td>
 		 <td><strong>DHP Haven Small Space Sectional Futon Sofa, Black Faux Leather</strong> by <em>DHP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H5QY9T7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H5QY9T7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51pTGDCdLcL._AC_SX236_SY340_QL65_.jpg" alt="Sofamania Modern Linen Fabric Recliner Sleeper Chaise Lounge - Futon Sleeper..." /></td>
 		 <td><strong>Sofamania Modern Linen Fabric Recliner Sleeper Chaise Lounge - Futon Sleeper...</strong> by <em>Sofamania</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078424J2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B078424J2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51VXOo5TpNL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>wet bags</strong></td>
+                 <td style="text-align: center;"><a href="/wet-bags"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>sceptre tvs</strong></td>
+                 <td style="text-align: center;"><a href="/sceptre-tvs"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41m17MCldzL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>eddie bauer winter boots</strong></td>
+                 <td style="text-align: center;"><a href="/eddie-bauer-winter-boots"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31bDZkhXEvL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>bauer endurance jogging stroller</strong></td>
+                 <td style="text-align: center;"><a href="/eddie-bauer-endurance-jogging-stroller"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

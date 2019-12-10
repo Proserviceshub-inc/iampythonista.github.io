@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Uv Glues</div>
@@ -89,128 +98,156 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof..." /></td>
 		 <td><strong>Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof...</strong> by <em>Bondic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QU5M4MG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00QU5M4MG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="[Special Sale] Riverruns UV Clear Glue Three Formula Thick,Thin and Flew +12..." /></td>
 		 <td><strong>[Special Sale] Riverruns UV Clear Glue Three Formula Thick,Thin and Flew +12...</strong> by <em>Riverruns Fly Tying &amp; Flies</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N4N8OIZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N4N8OIZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cvLbhMEZL._AC_SX236_SY340_QL65_.jpg" alt="UV Light Glue Kit Clear Adhesive Liquid Plastic Welder 5 Seconds Repair Almost..." /></td>
 		 <td><strong>UV Light Glue Kit Clear Adhesive Liquid Plastic Welder 5 Seconds Repair Almost...</strong> by <em>GUGUYeah</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078XHFYJM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B078XHFYJM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514Rnl9cHKL._AC_SX236_SY340_QL65_.jpg" alt="Visbella UV Glue with Light, Hand-Held Welders Resin, Plastic Welder Glue with..." /></td>
 		 <td><strong>Visbella UV Glue with Light, Hand-Held Welders Resin, Plastic Welder Glue with...</strong> by <em>Visbella</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GNTKJXH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GNTKJXH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Av8Qx4pTL._AC_SX236_SY340_QL65_.jpg" alt="RapidFix UV Liquid Plastic Adhesive" /></td>
 		 <td><strong>RapidFix UV Liquid Plastic Adhesive</strong> by <em>RapidFix</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0186N6ABU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0186N6ABU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PZzjiSpaL._AC_SX236_SY340_QL65_.jpg" alt="UV Resin - Hard Type Glue Transparent Ultraviolet Curing Resin for DIY Jewelry..." /></td>
 		 <td><strong>UV Resin - Hard Type Glue Transparent Ultraviolet Curing Resin for DIY Jewelry...</strong> by <em>DecorRom</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CVB2QW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41aexnL5vmL._AC_SX236_SY340_QL65_.jpg" alt="TLBTEK-Adhesive-Digitizer-Optical-Smartphone" /></td>
-		 <td><strong>TLBTEK-Adhesive-Digitizer-Optical-Smartphone</strong> by <em>TLBTEK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D5B2LV7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mw+Jr8llL._AC_SX236_SY340_QL65_.jpg" alt="TLBTEK-Adhesive-Digitizer-Optical-Smartphone" /></td>
-		 <td><strong>TLBTEK-Adhesive-Digitizer-Optical-Smartphone</strong> by <em>TLBTEK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L9WN75R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CVB2QW8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51DIYjNdM9L._AC_SX236_SY340_QL65_.jpg" alt="Greatfishing Fly Tying UV Clear Glue and Power UV Light Combo Three Bottles Thick..." /></td>
 		 <td><strong>Greatfishing Fly Tying UV Clear Glue and Power UV Light Combo Three Bottles Thick...</strong> by <em>Greatfishing</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H95FJDW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H95FJDW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41p9y2mvuAL._AC_SX236_SY340_QL65_.jpg" alt="Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof..." /></td>
 		 <td><strong>Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof...</strong> by <em>Bondic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UAH19FS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00UAH19FS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zKeQiNhdL._AC_SX236_SY340_QL65_.jpg" alt="Xfactor Hydro XFUV10BLK 10ml LOCA UV GLUE - PREMIUM GRADE LOCA (Liquid Optical..." /></td>
 		 <td><strong>Xfactor Hydro XFUV10BLK 10ml LOCA UV GLUE - PREMIUM GRADE LOCA (Liquid Optical...</strong> by <em>Xfactor Hydro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IOPYLJE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00IOPYLJE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bIsY5x4LL._AC_SX236_SY340_QL65_.jpg" alt="ZAP-IT The UV Light Curing Glue that Bonds Virtually Everything" /></td>
 		 <td><strong>ZAP-IT The UV Light Curing Glue that Bonds Virtually Everything</strong> by <em>Pacer Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071J3T3VH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071J3T3VH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31SoT1TdJXL._AC_SX236_SY340_QL65_.jpg" alt="Xfactor Hydro Sticky-Icky1000 LOCA UV GLUE - 50ml Professional Grade Liquid Optical..." /></td>
 		 <td><strong>Xfactor Hydro Sticky-Icky1000 LOCA UV GLUE - 50ml Professional Grade Liquid Optical...</strong> by <em>Xfactor Hydro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HW29AKU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HW29AKU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51aopMleHLL._AC_SX236_SY340_QL65_.jpg" alt="SUNMALL 16 in1 LCD Glass Repair Tool Kit, Opening Pry Tools Kit, Screwdriver..." /></td>
 		 <td><strong>SUNMALL 16 in1 LCD Glass Repair Tool Kit, Opening Pry Tools Kit, Screwdriver...</strong> by <em>SUNMALL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072QW5YLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B072QW5YLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41gKftP+YKL._AC_SX236_SY340_QL65_.jpg" alt="Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof..." /></td>
 		 <td><strong>Bondic - Liquid Plastic Welder - LED UV Light Activated Bonding Tool - Waterproof...</strong> by <em>Bondic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018IBEHQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5176d6ZGY9L._AC_SX236_SY340_QL65_.jpg" alt="OTAO-Tempered-Protector-Friendly-Installation" /></td>
-		 <td><strong>OTAO-Tempered-Protector-Friendly-Installation</strong> by <em>OTAO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074TCMG11"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B018IBEHQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Divano Roma Furniture Couches</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zhJOcfBbL._AC_SX236_SY340_QL65_.jpg" alt="Divano-Roma-Furniture-Sectional-Reclining" /></td>
-		 <td><strong>Divano-Roma-Furniture-Sectional-Reclining</strong> by <em>Divano Roma Furniture</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0743NHTGP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51I0ZLBRUaL._AC_SX236_SY340_QL65_.jpg" alt="Divano-Roma-Furniture-Sectional-Reclining" /></td>
-		 <td><strong>Divano-Roma-Furniture-Sectional-Reclining</strong> by <em>Divano Roma Furniture</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075VJDS4R"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Divano Roma Furniture Modern Soft Brush Microfiber Sectional Sofa - Small Space..." /></td>
 		 <td><strong>Divano Roma Furniture Modern Soft Brush Microfiber Sectional Sofa - Small Space...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013DAC7GI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B013DAC7GI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Xqmf8Z-gL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Bonded Leather Sectional Sofa - Small Space Configurable..." /></td>
 		 <td><strong>Divano Roma Furniture Bonded Leather Sectional Sofa - Small Space Configurable...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B4MDSQ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07B4MDSQ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IY+vaTgoL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Mid Century Modern Ultra Plush Linen Fabric Sofa, Color..." /></td>
 		 <td><strong>Divano Roma Furniture Mid Century Modern Ultra Plush Linen Fabric Sofa, Color...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01KBKJLEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01KBKJLEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LwLpx1fjL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Classic Linen Fabric Scroll Arm Tufted Button Chesterfield..." /></td>
 		 <td><strong>Divano Roma Furniture Classic Linen Fabric Scroll Arm Tufted Button Chesterfield...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BN5HX9H"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BN5HX9H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KJTsncrUL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Modern Tufted Linen Splitback Recliner Sleeper Futon Sofa..." /></td>
 		 <td><strong>Divano Roma Furniture Modern Tufted Linen Splitback Recliner Sleeper Futon Sofa...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NGZ0GKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01NGZ0GKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KawZNqanL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Couch for Living Room, Tufted Velvet Fabric Sofa with Back..." /></td>
 		 <td><strong>Divano Roma Furniture Couch for Living Room, Tufted Velvet Fabric Sofa with Back...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079LYDT62"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B079LYDT62"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rxmMWSwKL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Collection - Modern Plush Tufted Linen Fabric Splitback..." /></td>
 		 <td><strong>Divano Roma Furniture Collection - Modern Plush Tufted Linen Fabric Splitback...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G4HDYA0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KJTsncrUL._AC_SX236_SY340_QL65_.jpg" alt="Divano-Roma-Furniture-Splitback-Recliner" /></td>
-		 <td><strong>Divano-Roma-Furniture-Splitback-Recliner</strong> by <em>Divano Roma Furniture</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NGZ0GKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01G4HDYA0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/318W4FpkUSL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Modern Linen Fabric Small Space Sectional Sofa with Reversible..." /></td>
 		 <td><strong>Divano Roma Furniture Modern Linen Fabric Small Space Sectional Sofa with Reversible...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LWP2BNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LWP2BNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZzMIUxGTL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Modern 2 Tone Modular/Convertible Sleeper (Purple/Beige)" /></td>
 		 <td><strong>Divano Roma Furniture Modern 2 Tone Modular/Convertible Sleeper (Purple/Beige)</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N9HQML9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N9HQML9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qWvJ+DRKL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Mid Century Modern Linen Fabric Small Space Sectional Sofa..." /></td>
 		 <td><strong>Divano Roma Furniture Mid Century Modern Linen Fabric Small Space Sectional Sofa...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MRY1KVX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01MRY1KVX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LUDdm5YVL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Collection - Modern Plush Tufted Velvet Fabric Splitback..." /></td>
 		 <td><strong>Divano Roma Furniture Collection - Modern Plush Tufted Velvet Fabric Splitback...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0789XJR1X"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0789XJR1X"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4135qZrBPcL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Classic Living Room Bonded Leather Scroll Arm Chesterfield..." /></td>
 		 <td><strong>Divano Roma Furniture Classic Living Room Bonded Leather Scroll Arm Chesterfield...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BC6M2RH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BC6M2RH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ayG2K8Q7L._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture - Modern Real Leather Sectional Sofa, L-Shape Couch w/Chaise..." /></td>
 		 <td><strong>Divano Roma Furniture - Modern Real Leather Sectional Sofa, L-Shape Couch w/Chaise...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079XVC957"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079XVC957"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tvVebigkL._AC_SX236_SY340_QL65_.jpg" alt="Divano Roma Furniture Collection - Modern Two Tone Velvet Fabric Living Room..." /></td>
 		 <td><strong>Divano Roma Furniture Collection - Modern Two Tone Velvet Fabric Living Room...</strong> by <em>Divano Roma Furniture</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G67EUMO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01G67EUMO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

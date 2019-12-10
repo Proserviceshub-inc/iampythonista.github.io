@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best 8mm Movie Film Scanners</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417vYU199YL._AC_SX236_SY340_QL65_.jpg" alt="KODAK-SCANZA-Digital-Slide-Scanner" /></td>
-		 <td><strong>KODAK-SCANZA-Digital-Slide-Scanner</strong> by <em>Kodak</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00O2BU8PK"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-ofWc1S6L._AC_SX236_SY340_QL65_.jpg" alt="Jumbl-Scanner-Speed-Load-Adapters-Negative" /></td>
-		 <td><strong>Jumbl-Scanner-Speed-Load-Adapters-Negative</strong> by <em>Jumbl</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LU0XO3O"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Wolverine 8mm &amp; Super 8 Reels to Digital MovieMaker Pro Film Digitizer, Film..." /></td>
 		 <td><strong>Wolverine 8mm &amp; Super 8 Reels to Digital MovieMaker Pro Film Digitizer, Film...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0785H3FGN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0785H3FGN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41VVnau+ZfL._AC_SX236_SY340_QL65_.jpg" alt="8mm &amp; Super 8 Reels to Digital MovieMaker Film Sanner,Pro Film Digitizer Machine..." /></td>
 		 <td><strong>8mm &amp; Super 8 Reels to Digital MovieMaker Film Sanner,Pro Film Digitizer Machine...</strong> by <em>eyesen</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JZ4B44S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07JZ4B44S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417vYU199YL._AC_SX236_SY340_QL65_.jpg" alt="Kodak Digital Film Scanner, Converts 35mm, 126, 110, Super 8 and 8mm Film Negatives..." /></td>
 		 <td><strong>Kodak Digital Film Scanner, Converts 35mm, 126, 110, Super 8 and 8mm Film Negatives...</strong> by <em>Kodak</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00O2BU8PK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00O2BU8PK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51DDNtRIKUL._AC_SX236_SY340_QL65_.jpg" alt="Wolverine 8mm &amp; Super 8mm Reels to Digital MovieMaker Pro Film Digitizer, Film..." /></td>
 		 <td><strong>Wolverine 8mm &amp; Super 8mm Reels to Digital MovieMaker Pro Film Digitizer, Film...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0785SYD46"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0785SYD46"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Wq0BG4LsL._AC_SX236_SY340_QL65_.jpg" alt="Wolverine F2D Mighty 20MP 7-in-1 Film to Digital Converter" /></td>
 		 <td><strong>Wolverine F2D Mighty 20MP 7-in-1 Film to Digital Converter</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00O46B7TY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00O46B7TY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5105Mg3hp0L._AC_SX236_SY340_QL65_.jpg" alt="Wolverine Titan 8-in-1 20MP High Resolution Film to Digital Converter with 4.3..." /></td>
 		 <td><strong>Wolverine Titan 8-in-1 20MP High Resolution Film to Digital Converter with 4.3...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XT96Z4W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51UdD+265uL._AC_SX236_SY340_QL65_.jpg" alt="zonoz-FS-Four-Digital-Scanner-Output" /></td>
-		 <td><strong>zonoz-FS-Four-Digital-Scanner-Output</strong> by <em>zonoz</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MLF87WZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XT96Z4W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61UmywrDeIL._AC_SX236_SY340_QL65_.jpg" alt="Wolverine Titan 8-in-1 20MP High Resolution Film to Digital Converter with 4.3..." /></td>
 		 <td><strong>Wolverine Titan 8-in-1 20MP High Resolution Film to Digital Converter with 4.3...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WRT98S9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06WRT98S9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UdEJ9V9pL._AC_SX236_SY340_QL65_.jpg" alt="Wolverine 8mm and Super 8 Film Reel Converter Scanner to Convert Film into Digital..." /></td>
 		 <td><strong>Wolverine 8mm and Super 8 Film Reel Converter Scanner to Convert Film into Digital...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01KA32HH0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01KA32HH0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31gy2pRW0qL._AC_SX236_SY340_QL65_.jpg" alt="8 mm Film Holder Compatible w/Epson v550/v600 Film scanners" /></td>
 		 <td><strong>8 mm Film Holder Compatible w/Epson v550/v600 Film scanners</strong> by <em>Negative Solutions Film Holders</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JN9DNLJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07JN9DNLJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51y5PqxzNJL._AC_SX236_SY340_QL65_.jpg" alt="Memorable Media Scanning Estimate Box to Amazon Prime Photos - 8mm VHS VHS-C..." /></td>
 		 <td><strong>Memorable Media Scanning Estimate Box to Amazon Prime Photos - 8mm VHS VHS-C...</strong> by <em>Memorable</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N11P8QV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N11P8QV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/517foHljtCL._AC_SX236_SY340_QL65_.jpg" alt="Wolverine F2D Mighty 20MP 7-in-1 Film to Digital Converter and 32GB SD Memory..." /></td>
 		 <td><strong>Wolverine F2D Mighty 20MP 7-in-1 Film to Digital Converter and 32GB SD Memory...</strong> by <em>Wolverine</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YCZMWSW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00YCZMWSW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41X86RrHYXL._AC_SX236_SY340_QL65_.jpg" alt="8 MM Film Holder Compatible w/Plustek Opticfilm Scanners" /></td>
 		 <td><strong>8 MM Film Holder Compatible w/Plustek Opticfilm Scanners</strong> by <em>Negative Solutions Film Holders</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BW1VK2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01BW1VK2W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wU0hEKNjL._AC_SX236_SY340_QL65_.jpg" alt="8 mm Film Holder Compatible w/Canon CanoScan 8800F/9000F/9950F scanners" /></td>
 		 <td><strong>8 mm Film Holder Compatible w/Canon CanoScan 8800F/9000F/9950F scanners</strong> by <em>Negative Solutions Film Holders</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VILLICO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00VILLICO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/31ZTdPsvXqL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>grill tongs</strong></td>
+                 <td style="text-align: center;"><a href="/grill-tongs"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41oxeZHQ1bL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>snow boots for men</strong></td>
+                 <td style="text-align: center;"><a href="/salomon-snow-boots-for-men"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41x+gD6yCML._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>oem backup cameras</strong></td>
+                 <td style="text-align: center;"><a href="/oem-backup-cameras"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>wireless keyboard and mouse</strong></td>
+                 <td style="text-align: center;"><a href="/custom-wireless-keyboard-and-mouse"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

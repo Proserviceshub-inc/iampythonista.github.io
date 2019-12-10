@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Kickboxing Shoes</div>
@@ -86,83 +95,87 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZTKbNkdwL._AC_SX236_SY340_QL65_.jpg" alt="Sanabul-Grips-Kickboxing-Wrestling-X-LARGE" /></td>
-		 <td><strong>Sanabul-Grips-Kickboxing-Wrestling-X-LARGE</strong> by <em>Sanabul</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079RMHDL6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41iNoWfRO+L._AC_SX236_SY340_QL65_.jpg" alt="VGEBY-Taekwondo-Lightweight-Breathable-Traning" /></td>
-		 <td><strong>VGEBY-Taekwondo-Lightweight-Breathable-Traning</strong> by <em>VGEBY</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078PBVRDS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Century Lightfoot Martial Arts Shoes" /></td>
 		 <td><strong>Century Lightfoot Martial Arts Shoes</strong> by <em>Century</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00T6HSKWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00T6HSKWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/518JP07FeiL._AC_SX236_SY340_QL65_.jpg" alt="adidas SM II Low Cut Martial Arts Taekwondo, Karate and Kungfu Shoes" /></td>
 		 <td><strong>adidas SM II Low Cut Martial Arts Taekwondo, Karate and Kungfu Shoes</strong> by <em>adidas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LMD09OG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LMD09OG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZTKbNkdwL._AC_SX236_SY340_QL65_.jpg" alt="NEW ITEM Sanabul Foot Grips for MMA, Kickboxing, Wrestling, Yoga" /></td>
 		 <td><strong>NEW ITEM Sanabul Foot Grips for MMA, Kickboxing, Wrestling, Yoga</strong> by <em>Sanabul</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079RMHDL6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079RMHDL6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41X+PYx23SL._AC_SX236_SY340_QL65_.jpg" alt="FitKicks Maritime Collective - Active Lifetsyle Footwear" /></td>
 		 <td><strong>FitKicks Maritime Collective - Active Lifetsyle Footwear</strong> by <em>FitKicks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073FYPND8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073FYPND8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LNFMcx2bL._AC_SX236_SY340_QL65_.jpg" alt="TechWare Pro Ankle Brace Compression Sleeve - Relieves Achilles Tendonitis, Joint..." /></td>
 		 <td><strong>TechWare Pro Ankle Brace Compression Sleeve - Relieves Achilles Tendonitis, Joint...</strong> by <em>Tech Ware Pro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07144V1QC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Y0FIi45qL._AC_SX236_SY340_QL65_.jpg" alt="VGEBY-Taekwondo-Adults-Breathable-Non-Slip" /></td>
-		 <td><strong>VGEBY-Taekwondo-Adults-Breathable-Non-Slip</strong> by <em>VGEBY</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0768P9RQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07144V1QC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZAscuedWL._AC_SX236_SY340_QL65_.jpg" alt="Mooto Wings Korea TaeKwonDo Shoes TKD Competition Twotone &amp; Black 4 1/2 to 14" /></td>
 		 <td><strong>Mooto Wings Korea TaeKwonDo Shoes TKD Competition Twotone &amp; Black 4 1/2 to 14</strong> by <em>Mooto</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00K9NC0OM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00K9NC0OM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51c8V-i+rSL._AC_SX236_SY340_QL65_.jpg" alt="Plantar Fasciitis Socks with Arch Support for Men &amp; Women - Best 24/7 Compression..." /></td>
 		 <td><strong>Plantar Fasciitis Socks with Arch Support for Men &amp; Women - Best 24/7 Compression...</strong> by <em>Physix Gear Sport</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019WOPQC6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019WOPQC6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -170,7 +183,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -198,13 +211,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

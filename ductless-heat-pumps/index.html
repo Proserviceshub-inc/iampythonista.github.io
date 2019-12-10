@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ductless Heat Pumps</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51x5saPM0TL._AC_SX236_SY340_QL65_.jpg" alt="WYS012-17-Air-Conditioner-Inverter-Ductless" /></td>
-		 <td><strong>WYS012-17-Air-Conditioner-Inverter-Ductless</strong> by <em>PIONEER Air Conditioner</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DVW6G06"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eO4nRSxnL._AC_SX236_SY340_QL65_.jpg" alt="COOPER-HUNTER-Split-Ductless-Conditioner" /></td>
-		 <td><strong>COOPER-HUNTER-Split-Ductless-Conditioner</strong> by <em>COOPER AND HUNTER</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G8K9B18"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Senville SENL-18CD 18000 BTU 15 SEER Split Air Conditioner and Heat Pump, Mini" /></td>
 		 <td><strong>Senville SENL-18CD 18000 BTU 15 SEER Split Air Conditioner and Heat Pump, Mini</strong> by <em>Senville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UV3LH8U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00UV3LH8U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XxOuoJVQL._AC_SX236_SY340_QL65_.jpg" alt="DELLA 18,000 BTU (17 SEER) Ductless Wall Mount Mini Split System AHRI Certified..." /></td>
 		 <td><strong>DELLA 18,000 BTU (17 SEER) Ductless Wall Mount Mini Split System AHRI Certified...</strong> by <em>DELLA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FNVMKPL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FNVMKPL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rcH-mFqnL._AC_SX236_SY340_QL65_.jpg" alt="18000 Btu 23.3 SEER Ductless Mini Split DC Inverter Air Conditioner Heat Pump..." /></td>
 		 <td><strong>18000 Btu 23.3 SEER Ductless Mini Split DC Inverter Air Conditioner Heat Pump...</strong> by <em>Air-Con</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M8Q09LW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M8Q09LW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tGxbnIC4L._AC_SX236_SY340_QL65_.jpg" alt="Senville 18000 BTU SENA-18HF/Z Energy Star Mini Split Air Conditioner Heat Pump..." /></td>
 		 <td><strong>Senville 18000 BTU SENA-18HF/Z Energy Star Mini Split Air Conditioner Heat Pump...</strong> by <em>Senville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BRNFOIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BRNFOIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51x5saPM0TL._AC_SX236_SY340_QL65_.jpg" alt="Pioneer WYS012-17 Air Conditioner Inverter+ Ductless Wall Mount Mini Split System..." /></td>
 		 <td><strong>Pioneer WYS012-17 Air Conditioner Inverter+ Ductless Wall Mount Mini Split System...</strong> by <em>PIONEER Air Conditioner</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DVW6G06"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DVW6G06"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mgcDbHF5L._AC_SX236_SY340_QL65_.jpg" alt="DuctlessAire 24,000 Btu 20.5 SEER Energy Star Ductless Mini Split Air Conditioner..." /></td>
 		 <td><strong>DuctlessAire 24,000 Btu 20.5 SEER Energy Star Ductless Mini Split Air Conditioner...</strong> by <em>DuctlessAire</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0778W5PV5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HX1Idg0WL._AC_SX236_SY340_QL65_.jpg" alt="Koldfront-WAC12001W-230V-Window-Conditioner" /></td>
-		 <td><strong>Koldfront-WAC12001W-230V-Window-Conditioner</strong> by <em>Koldfront</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QXR9794"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0778W5PV5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413Q+mV9tmL._AC_SX236_SY340_QL65_.jpg" alt="Klimaire KSIA 17 SEER 12,000 BTU Ductless Mini-Split Inverter Air Conditioner..." /></td>
 		 <td><strong>Klimaire KSIA 17 SEER 12,000 BTU Ductless Mini-Split Inverter Air Conditioner...</strong> by <em>Klimaire</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GVP7GN5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07GVP7GN5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tU9qa0nNL._AC_SX236_SY340_QL65_.jpg" alt="DELLA 9,000 BTU 115V- 15.5 SEER Ductless System Mini Split Heat Pump Inverter..." /></td>
 		 <td><strong>DELLA 9,000 BTU 115V- 15.5 SEER Ductless System Mini Split Heat Pump Inverter...</strong> by <em>DELLA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G9R4T14"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G9R4T14"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31iDUTEw70L._AC_SX236_SY340_QL65_.jpg" alt="Outdoor Mounting Bracket for Ductless Mini Split Air Conditioner Heat Pump Systems..." /></td>
 		 <td><strong>Outdoor Mounting Bracket for Ductless Mini Split Air Conditioner Heat Pump Systems...</strong> by <em>DuctlessAire</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LDU9R2I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LDU9R2I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51h7oPN2x3L._AC_SX236_SY340_QL65_.jpg" alt="Daikin 12,000 BTU 17 SEER Wall-Mounted Ductless Mini-Split Inverter Air Conditioner..." /></td>
 		 <td><strong>Daikin 12,000 BTU 17 SEER Wall-Mounted Ductless Mini-Split Inverter Air Conditioner...</strong> by <em>Daikin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DY92WXG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07DY92WXG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HDm21xEVL._AC_SX236_SY340_QL65_.jpg" alt="MRCOOL Do It Yourself 24,000 BTU 2 Ton 16 SEER Ductless Mini-Split Air Conditioner..." /></td>
 		 <td><strong>MRCOOL Do It Yourself 24,000 BTU 2 Ton 16 SEER Ductless Mini-Split Air Conditioner...</strong> by <em>MRCOOL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01EJWCJYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01EJWCJYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410Spnc44vL._AC_SX236_SY340_QL65_.jpg" alt="Outdoor Mounting Bracket for Ductless Mini Split Air Conditioner, Condensing..." /></td>
 		 <td><strong>Outdoor Mounting Bracket for Ductless Mini Split Air Conditioner, Condensing...</strong> by <em>Jeacent</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074T958T6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074T958T6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Display Port Cables</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bGcoUO8lL._AC_SX236_SY340_QL65_.jpg" alt="ivanky-DisplayPort-Braided-Display-Compatible" /></td>
-		 <td><strong>ivanky-DisplayPort-Braided-Display-Compatible</strong> by <em>ivanky</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078HVDMW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41owfJiM5JL._AC_SX236_SY340_QL65_.jpg" alt="Moread-DisplayPort-Gold-Plated-Compatible-Projector" /></td>
-		 <td><strong>Moread-DisplayPort-Gold-Plated-Compatible-Projector</strong> by <em>Moread</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N0ZHJFQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="AmazonBasics DisplayPort to DisplayPort Cable - 6 Feet" /></td>
 		 <td><strong>AmazonBasics DisplayPort to DisplayPort Cable - 6 Feet</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01J8S6X2I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01J8S6X2I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nracJKgBL._AC_SX236_SY340_QL65_.jpg" alt="Cable Matters DisplayPort to DisplayPort Cable (DP to DP Cable) 6 Feet - 4K Resolution..." /></td>
 		 <td><strong>Cable Matters DisplayPort to DisplayPort Cable (DP to DP Cable) 6 Feet - 4K Resolution...</strong> by <em>Cable Matters</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005H3Q59U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005H3Q59U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bGcoUO8lL._AC_SX236_SY340_QL65_.jpg" alt="ivanky DisplayPort Cable 6.6ft DP Cable Nylon Braided [2K@165Hz, 2K@144Hz, 4K..." /></td>
 		 <td><strong>ivanky DisplayPort Cable 6.6ft DP Cable Nylon Braided [2K@165Hz, 2K@144Hz, 4K...</strong> by <em>ivanky</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078HVDMW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078HVDMW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41D3vyTUROL._AC_SX236_SY340_QL65_.jpg" alt="DisplayPort Cable, ivanky 10ft DP Cable [2K@165Hz, 2K@144Hz, 4K@60Hz] Nylon Braided..." /></td>
 		 <td><strong>DisplayPort Cable, ivanky 10ft DP Cable [2K@165Hz, 2K@144Hz, 4K@60Hz] Nylon Braided...</strong> by <em>ivanky</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HVVHL23"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HVVHL23"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-dag9vG0L._AC_SX236_SY340_QL65_.jpg" alt="DisplayPort Cable,Capshi 4K DP Cable Nylon Braided -(4K@60Hz, 1440p@144Hz) Ultra..." /></td>
 		 <td><strong>DisplayPort Cable,Capshi 4K DP Cable Nylon Braided -(4K@60Hz, 1440p@144Hz) Ultra...</strong> by <em>Capshi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F7YV4BR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F7YV4BR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JFXBmUngL._AC_SX236_SY340_QL65_.jpg" alt="Cable Matters 2-Pack DisplayPort to DisplayPort Cable (DP to DP Cable) 6 Feet..." /></td>
 		 <td><strong>Cable Matters 2-Pack DisplayPort to DisplayPort Cable (DP to DP Cable) 6 Feet...</strong> by <em>Cable Matters</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00K2E4S8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00K2E4S8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NSqd5nmuL._AC_SX236_SY340_QL65_.jpg" alt="Cablelera DisplayPort Cable (ZC2201MM-10)" /></td>
 		 <td><strong>Cablelera DisplayPort Cable (ZC2201MM-10)</strong> by <em>Cablelera</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008DW5MS2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-dag9vG0L._AC_SX236_SY340_QL65_.jpg" alt="DisplayPort-Capshi-Braided-Laptop-Monitor" /></td>
-		 <td><strong>DisplayPort-Capshi-Braided-Laptop-Monitor</strong> by <em>Capshi</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F7YV4BR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008DW5MS2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fMsUryLtL._AC_SX236_SY340_QL65_.jpg" alt="Rankie DisplayPort to DisplayPort Cable, DP to DP, 4K Resolution, 30Hz, 6 Feet..." /></td>
 		 <td><strong>Rankie DisplayPort to DisplayPort Cable, DP to DP, 4K Resolution, 30Hz, 6 Feet...</strong> by <em>Rankie</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YOP0T7G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YOP0T7G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Z5McOw-oL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics DisplayPort to HDMI Cable - 10 Feet" /></td>
 		 <td><strong>AmazonBasics DisplayPort to HDMI Cable - 10 Feet</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B015OW3P1O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B015OW3P1O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mTtvJJ48L._AC_SX236_SY340_QL65_.jpg" alt="DisplayPort to DisplayPort 6 Feet Cable, Benfei DP to DP Male to Male Cable Gold-Plated..." /></td>
 		 <td><strong>DisplayPort to DisplayPort 6 Feet Cable, Benfei DP to DP Male to Male Cable Gold-Plated...</strong> by <em>BENFEI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077BPW8XJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077BPW8XJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qfxgR62oL._AC_SX236_SY340_QL65_.jpg" alt="GearIT Gold Plated DisplayPort to DisplayPort Cable 10 Feet - 4K Resolution Ready..." /></td>
 		 <td><strong>GearIT Gold Plated DisplayPort to DisplayPort Cable 10 Feet - 4K Resolution Ready...</strong> by <em>GearIT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JKH6YIU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JKH6YIU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nracJKgBL._AC_SX236_SY340_QL65_.jpg" alt="Cable Matters DisplayPort to DisplayPort Cable (DisplayPort 1.4 Cable) with 8K..." /></td>
 		 <td><strong>Cable Matters DisplayPort to DisplayPort Cable (DisplayPort 1.4 Cable) with 8K...</strong> by <em>Cable Matters</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079736Z53"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079736Z53"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uczNxRDDL._AC_SX236_SY340_QL65_.jpg" alt="KabelDirekt - 8K DisplayPort (DP to DP) Cable - 10ft - (up to 32.4 Gbit/s, UHD..." /></td>
 		 <td><strong>KabelDirekt - 8K DisplayPort (DP to DP) Cable - 10ft - (up to 32.4 Gbit/s, UHD...</strong> by <em>KabelDirekt</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HL7RSRW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HL7RSRW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

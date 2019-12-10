@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Pulse Oximeters</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51hg1F9ec5L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Santamedical</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R59OTOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sSRUBAebL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Zacurate</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016J60WB0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Zacurate Pro Series 500DL Fingertip Pulse Oximeter Blood Oxygen Saturation Monitor..." /></td>
 		 <td><strong>Zacurate Pro Series 500DL Fingertip Pulse Oximeter Blood Oxygen Saturation Monitor...</strong> by <em>Zacurate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SCPB9KU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00SCPB9KU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51O5koRxCSL._AC_SX236_SY340_QL65_.jpg" alt="Zacurate 500BL Fingertip Pulse Oximeter Blood Oxygen Saturation Monitor with..." /></td>
 		 <td><strong>Zacurate 500BL Fingertip Pulse Oximeter Blood Oxygen Saturation Monitor with...</strong> by <em>Zacurate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y2FFQB9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06Y2FFQB9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41M7wW3JISL._AC_SX236_SY340_QL65_.jpg" alt="Innovo Deluxe Fingertip Pulse Oximeter with Plethysmograph and Perfusion Index" /></td>
 		 <td><strong>Innovo Deluxe Fingertip Pulse Oximeter with Plethysmograph and Perfusion Index</strong> by <em>Innovo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NATPX6I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01NATPX6I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51hg1F9ec5L._AC_SX236_SY340_QL65_.jpg" alt="Santamedical Generation 2 SM-165 Fingertip Pulse Oximeter Oximetry Blood Oxygen..." /></td>
 		 <td><strong>Santamedical Generation 2 SM-165 Fingertip Pulse Oximeter Oximetry Blood Oxygen...</strong> by <em>Santamedical</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R59OTOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00R59OTOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ovIM-n1qL._AC_SX236_SY340_QL65_.jpg" alt="Santamedical Generation 2 Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation..." /></td>
 		 <td><strong>Santamedical Generation 2 Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation...</strong> by <em>Santamedical</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018HC7H6C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B018HC7H6C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q8BmRid0L._AC_SX236_SY340_QL65_.jpg" alt="Vive Precision Finger Pulse Oximeter - SpO2 Device for Blood Oxygen Saturation..." /></td>
 		 <td><strong>Vive Precision Finger Pulse Oximeter - SpO2 Device for Blood Oxygen Saturation...</strong> by <em>Vive Precision</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00TZ293J8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41j-9Yow9NL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>iProv\u00e8n</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C7VSR8R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00TZ293J8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mGdmXUsfL._AC_SX236_SY340_QL65_.jpg" alt="Concord Pink Fingertip Pulse Oximeter with Reversible Display, Carrying Case..." /></td>
 		 <td><strong>Concord Pink Fingertip Pulse Oximeter with Reversible Display, Carrying Case...</strong> by <em>Concord Health Supply</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0101BGUJM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0101BGUJM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417GYEJqlZL._AC_SX236_SY340_QL65_.jpg" alt="Deluxe SM-110 Two Way Display Finger Pulse Oximeter with Carry Case and Neck/..." /></td>
 		 <td><strong>Deluxe SM-110 Two Way Display Finger Pulse Oximeter with Carry Case and Neck/...</strong> by <em>Santamedical</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003TJH3LI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003TJH3LI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PK61S3HSL._AC_SX236_SY340_QL65_.jpg" alt="Zacurate 430-DL Premium Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation..." /></td>
 		 <td><strong>Zacurate 430-DL Premium Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation...</strong> by <em>Zacurate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BLJTQTZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BLJTQTZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lT7rJDpfL._AC_SX236_SY340_QL65_.jpg" alt="AccuMed CMS-50DL Pulse Oximeter Finger Pulse Blood Oxygen SpO2 Monitor w/Carrying..." /></td>
 		 <td><strong>AccuMed CMS-50DL Pulse Oximeter Finger Pulse Blood Oxygen SpO2 Monitor w/Carrying...</strong> by <em>AccuMed</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00XNVYETQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00XNVYETQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41j-9Yow9NL._AC_SX236_SY340_QL65_.jpg" alt="Pulse Oximeter Fingertip - iProven OXI-27 White - Oxygen Monitor with Heart Monitor..." /></td>
 		 <td><strong>Pulse Oximeter Fingertip - iProven OXI-27 White - Oxygen Monitor with Heart Monitor...</strong> by <em>iProv\u00e8n</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C7VSR8R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C7VSR8R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CuXHyXeZL._AC_SX236_SY340_QL65_.jpg" alt="AccuMed Pulse Oximeter, Sp02 Finger Blood Pulse Oxygen Monitor, w/Carrying case..." /></td>
 		 <td><strong>AccuMed Pulse Oximeter, Sp02 Finger Blood Pulse Oxygen Monitor, w/Carrying case...</strong> by <em>AccuMed</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Y1KMDLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00Y1KMDLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WOYaTYLfL._AC_SX236_SY340_QL65_.jpg" alt="Santamedical SM-150 Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation..." /></td>
 		 <td><strong>Santamedical SM-150 Fingertip Pulse Oximeter Oximetry Blood Oxygen Saturation...</strong> by <em>Santamedical</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019EKP19Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019EKP19Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Organic Moringa Powders</div>
@@ -86,115 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51sNs+dWd9L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>The Rhythms Of Life</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076F7R8ZT"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="1 lb. Premium Organic Moringa Oleifera Leaf Powder. 100% USDA Certified. Sun-Dried..." /></td>
 		 <td><strong>1 lb. Premium Organic Moringa Oleifera Leaf Powder. 100% USDA Certified. Sun-Dried...</strong> by <em>Zen Principle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01A7CBMYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01A7CBMYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AEFQp9vyL._AC_SX236_SY340_QL65_.jpg" alt="Organic Moringa Oleifera Leaf Powder - Perfect for Smoothies, Drinks, Tea &amp; Recipes..." /></td>
 		 <td><strong>Organic Moringa Oleifera Leaf Powder - Perfect for Smoothies, Drinks, Tea &amp; Recipes...</strong> by <em>Feel Good Organics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D9OKAO4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01D9OKAO4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XsvuQ1hIL._AC_SX236_SY340_QL65_.jpg" alt="Pure Organic Moringa Oleifera Leaf Powder, 1 Pound, Natural Energy Booster for..." /></td>
 		 <td><strong>Pure Organic Moringa Oleifera Leaf Powder, 1 Pound, Natural Energy Booster for...</strong> by <em>Micro Ingredients</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N91404L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N91404L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OkGuxyTRL._AC_SX236_SY340_QL65_.jpg" alt="Kiva Organic Moringa Leaf Powder - Non-GMO and RAW - (1 Pound)" /></td>
 		 <td><strong>Kiva Organic Moringa Leaf Powder - Non-GMO and RAW - (1 Pound)</strong> by <em>Kiva</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0132OIJ2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0132OIJ2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mFtT54BYL._AC_SX236_SY340_QL65_.jpg" alt="Organic Premium Moringa Powder by Naturevibe Botanicals (1 Lb), Non GMO Verified..." /></td>
 		 <td><strong>Organic Premium Moringa Powder by Naturevibe Botanicals (1 Lb), Non GMO Verified...</strong> by <em>Naturevibe Botanicals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071H9HQXJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51RzXQ4xTJL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Enfamil</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003VKR0J0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071H9HQXJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rSDMjePiL._AC_SX236_SY340_QL65_.jpg" alt="Moringa Oleifera Leaf Powder Organic 16oz - 1lb. Non GMO multivitamin for metabolism..." /></td>
 		 <td><strong>Moringa Oleifera Leaf Powder Organic 16oz - 1lb. Non GMO multivitamin for metabolism...</strong> by <em>Royal Life Essentials</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HQK20XQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HQK20XQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NqodlFDRL._AC_SX236_SY340_QL65_.jpg" alt="Terrasoul Superfoods Organic Moringa Leaf Powder, 12 Ounces" /></td>
 		 <td><strong>Terrasoul Superfoods Organic Moringa Leaf Powder, 12 Ounces</strong> by <em>Terrasoul Superfoods</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013KP50PQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B013KP50PQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FmG8byPoL._AC_SX236_SY340_QL65_.jpg" alt="PURA VIDA Moringa Oleifera Powder: USDA Certified Organic. Single Origin Green..." /></td>
 		 <td><strong>PURA VIDA Moringa Oleifera Powder: USDA Certified Organic. Single Origin Green...</strong> by <em>Pura Vida Supplements</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073HNY69B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073HNY69B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mOOejuBvL._AC_SX236_SY340_QL65_.jpg" alt="Organic Moringa Leaf Powder (16Oz -1Lb). USDA Certified Organic. Raw Green Super..." /></td>
 		 <td><strong>Organic Moringa Leaf Powder (16Oz -1Lb). USDA Certified Organic. Raw Green Super...</strong> by <em>Organic Veda</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009KBG8X8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009KBG8X8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xyVrrvXSL._AC_SX236_SY340_QL65_.jpg" alt="Organic Moringa Oleifera Powder Capsules: Energy, Metabolism, and Immune Booster..." /></td>
 		 <td><strong>Organic Moringa Oleifera Powder Capsules: Energy, Metabolism, and Immune Booster...</strong> by <em>Pura Vida Supplements</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Y2MAE9O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00Y2MAE9O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ROQkEBhAL._AC_SX236_SY340_QL65_.jpg" alt="Organic Moringa Oleifera Leaf Powder, 2 Pounds (32 Ounce), Sun-Dried, Natural..." /></td>
 		 <td><strong>Organic Moringa Oleifera Leaf Powder, 2 Pounds (32 Ounce), Sun-Dried, Natural...</strong> by <em>Micro Ingredients</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01L2TGLTG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01L2TGLTG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bwF0A6nPL._AC_SX236_SY340_QL65_.jpg" alt="Moringa Powder - Best Pure Raw Organic Oleifera Leaf from India - The Miracle..." /></td>
 		 <td><strong>Moringa Powder - Best Pure Raw Organic Oleifera Leaf from India - The Miracle...</strong> by <em>Freedom Superfoods</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071K23Z8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B071K23Z8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,6 +243,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>heat transfer papers</strong></td>
+                 <td style="text-align: center;"><a href="/heat-transfer-papers"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51cLb3+-rpL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>nexus 7 cases</strong></td>
+                 <td style="text-align: center;"><a href="/nexus-7-cases"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/414eAraAimL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>dual camera baby monitors</strong></td>
+                 <td style="text-align: center;"><a href="/dual-camera-baby-monitors"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51dvrbVIt+L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>ball for laundry washings</strong></td>
+                 <td style="text-align: center;"><a href="/ball-for-laundry-washings"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -230,13 +307,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

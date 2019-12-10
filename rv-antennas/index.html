@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Rv Antennas</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RpiAhXJ6L._AC_SX236_SY340_QL65_.jpg" alt="Winegard-RZ-6035-Rayzar-Antenna-Digital" /></td>
-		 <td><strong>Winegard-RZ-6035-Rayzar-Antenna-Digital</strong> by <em>Winegard</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B9K5UGS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31vHvObmRDL._AC_SX236_SY340_QL65_.jpg" alt="Winegard-RV-7095-Ultimate-Sensar-Antenna" /></td>
-		 <td><strong>Winegard-RV-7095-Ultimate-Sensar-Antenna</strong> by <em>Winegard</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002F67NC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCADDAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiqN3qa28vlRp5sg+9g4C//AF6AL1FYr6ncuflKIPYZ/nUDzzyffmcj0zigDoGkRB87Kv1OKha+tl6zofoc/wAqwNopcD0oA2W1W2HRmb6KajbWIf4Y5D9cCsqigDSOsjtAfxamnWX7QD8W/wDrVn0EcUAX/wC2Jf8Aniv50n9sTf8APFPzqhSMewpAXjrM5OFhTPqSaT+17j/nnH+R/wAapgYGKKALw1ifvFGfzp41lv4oPyb/AOtWbRTA1V1mE/fikX6YNTpqlo//AC12/wC8CKw6aQPSkB08cscozHIrj1U5p1coVA+YcH1FWIb+7h+7LvHpJz/9ei4HR0VkR62RjzoOPVD/AEq5FqlrKceZsb0cY/8ArUwLdFAIYAggg9xRQAUUUUAFFFFABRRRQBn6jfmEi3gP79xnP9xfX6+lZSqEGBk9yT1J9ayNd1o6d4mubeVThgro467SoH4jINWrXVoLlQdwPuv+FAF2ihSrjKMGHtR0pAFFGRRkUAFFGaKACg9KKKAE6c0KO9B6gUtACYoxilpM0AFJRRQAlBoNNZu1ACE5OOwpaAMUZoAKD0opM0ALG7wnMMjRn/ZOKvQ6xcR4EyrKPUcH/CqFFAG/b6paz4Afy3P8MnBq5XJEA9RU9veXFqf3UuV/uPyP/rUAdNRWdbazDLhZx5L+/wB0/jWiDkZHSmAUUUUAYPiXwtB4gSOTzPJuoRhJMZBHoR6fyrgNR0LV9CLPPCxhX/ltGdy/XPUfiK9dooA8gtfEE8ON5z6ZOP16Guq03VBewb8htv3hjDLWvqng7SdT3OYPs8zdZIPlz9R0P5VzQ8M33h29WUSrPZN8pdeCv1Hp9D+VAG77jpRSKMRqPYUtIAooooAKKKKAE96WkHSloAKKKSgAooppbsOtACMcdOtAFGMUUDCiijmgBKKKKBBSUtJQAUlLSUAGM9eamtryezP7pt0feNun4elQ0GgDorPUobz5R8kuOUbr+HrVuuQK7nXnBHOR1FdVauz2sTv95kBP5UJgS0UUUwCsnxGxGnxqOjSgH8if6VrVj+Ix/ocH/XYD/wAdNAFEfdUe1BoXlF+lL2pAJRRRQAUh6UtI33aAFooooAKbmgmm53ewoAC2eF/OlwBR9KKBhSUtFACUUUUCEIopegyegpilpD+7wq93fpQA7FGDVaeaOPIEzyN/sDArMl1Pa5BfGOxbmlcdjcwaTHvWB/ayf89E/wC+6T+1Yx/HH/31RcLG+SB1YfnTfMToDk+g5rB/tUdhn/djJqxbarMpOxW/74x/Oi4WNqGNpJFjxh5GCgHsK6sAAADgCue8Owy3ErXs33ACsffJ7nP6fia6GmgCiiimIKyvEa50wP8A885UY/nj+tatU9XgNxpN1GPvGMlfqOR+ooAxIuYh7cU6sew162uVzHjYfXrWtHLHMP3bg+3ekA7FJTiCKbQAU1z8o+tOpr8gfUUAOPWms+3jqew9aRnJJVOcdW7CkCbfcnqaADBJy35UtLijFAxKKXFGKBCUUuKTGBkkAUAFNd1TryT0UdTSB2lz5Qwvd26VFLcQ2g6lpD07sfpSuOxIynG6YgAc7c8D61XLXN+THYxO4H8QH+PA/H8qv2WiXF+wlv8AMMPVYgfmP19P5/SujihjgjEcKKiDoFGKLXA44eEb65GZ5IY89nYyH8uB+VKPAT/9BCNfZbb/AOyrs6KdhHIL4FI+9qRP+7AB/Wpk8Dwj71/Ofoqiupopgc4ngqxH3ri6b/gYH9KtW3hTS7Y5MTzH/pq5I/Lp+lbNFACKqooVQFUDAAHApaKKACiiigAooooA4TWfh8wlkutAnELMSzWsh+Qnqdp/h+nSuZlvdR0afydTtZrZhwGcZU+4Yda9hpk0EVzEYp4kljbqjqGB/A0AebWficlRl1dffn9a1odbtpfvAr7g5q3qPw80e8YyWokspfWFvlz9P8CK5668B65Z5NldQ3iDoG+Rj/T9aAOgS7tpB8sy/icVIQrjAYMD6GuHmg1rTwTd6ZcIq9WUbh+fT9aji1wL94up91NIDvdhAAAwKXHtXHReIhkBboZ9N1XU12Ygfvc0gOjxRg1hDW5j/EPyp41iY/xD8qYG1ijFYv8Aa0p/j/IU6LUQZlFw5MR6jOKQWNTzNzbYlMje3QfjTZPLiXfcyBiP4c4UVH9pnum+z6Zb7yPTgD3JrSsvDK7lm1KTz5B0jHCL/j+n40bjM2H7Zqr7LGPbEODMwwo+n+fwre07Q7ewIkbM1x1Mj9j7CtJUVFCooVQMAAYApaaQgooopgFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVC91i2sn8slpZe6R8kfX0q3cu8drM8SlpFQlQBkk44ryZZr8n7Qt1HGZZOJCPMDjsgOAVyeTnJz3oA7CbxRqkpmS0sLeLAIjlml3At2yoxx+NS2Gt6dq58nVtOENyOGFxACre4PPB+tcrDrqhil/blJl44OM1LJrqFMRRnPuc07Abuv2fh2xtWMdlC9y4xGsRIAPqcHGBXIS2cCWzyeUpcdyBUrSvO+9z+FOuP8AjxlpAZQkUceTH+VTRhWxmJPyqutWYh0pAXre0ilBLIMD0AqwlnDE29EAYdCBUttHsgHrUm2kUWtLvpLC6WeMFh0kT+8P8a7m3njuYEmhbcjjINeeKSjBh2rX0zUZLJ90fzxN9+P+o96ExM7Ciora6iu4vMhfcO47g+hFS1QgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACua1rwt5ssl9pDLBdtzJCeI5vqOze/5+tdLRQB5VdRLeGSGaI297D9+GQYYf4j0NZRDwvhv/1V6vrOhWmtRKJgY7iMfurhOHjP9R7GuA1PSrqynMF4gEwBKSIPlmHqPf1Hb9aYFKEgjNTz82Mv0qpF8jcDGOo/qKtzc2MlIDLQcCrlrHvlUVWReK19Lh3NuqRmgF2qB6UhFTMMmmEUhkWKEcxtlencU40w0AaNrdlJBJC5jkHoev1rdt9c6Lcx8/3k/wAK44kg5BwasQ6i8fyuA6+hphY7ddStGXcJ1+h6/lUEuvafEQrT5JOAAp5PpXOR3trJ/EYz+YqQzQqTi6UD6UXFY6HTNZtdVhEkJeNyT+5nXZIMHHKnntV+uNcWMs/2pTG9yq4aRPvbT6iui0m8a5hZJDmSI4J9R2/GncRoUUUUwCiiigAooooAKKKKACiiigAooooAKKKKACqep6bDqlm0EvynO6OQDmNuxFXKKAPKb+zktLlldAkiMQy+hHX8D1HsaZIR9icDocEV1fjO0CvDcqvLjax9x0/Qn8hXKsuLNxj+PANMRUReBj6V0FjCIoB9Ky7SHzbhF981vhQqgVmUhhHNMIqQ8VExJ9h6npQMjY4qMtuPygt9BTyQWCqpdj0BHX8KkS2mmbywGZh/yzjXcw/AcD8aAKhRzzwPqaQRf3n/ACrdg8N3koyyRxD/AKavk/kv+NXofCiDma7kPtEoX+eTTsK5y6wKegdvfOBTjDGmD5kSkHlW5yPzrs4/DmmpjdC0pHeRyf0zirsNja2/+ptoo/dUAosFzgk0sai2I4ncOV8wJBlZApyAS3GAfeu10uye1jd5gBLJjKg52j0z61fop2EFFFFMAooooAKKKKACiiigAooooAKKKKACiiigAooooA5/xiQNJTPUyj+RrjZlxbRD+8xaui8YXQmvILND/qwWYe56fy/WsO8XbKsY6RIB+NHQOpNpEGfMlI+6MVfbilsohBpyZ6uS1RyybBnueg/rUFDJHC5zyfT/ABpIbeS7dQAx3fdCjJb6D+tSWNk99OFUbsnv39SfauwsrCKxjwnzOfvORyf/AK3tTSEZlj4eVFBujgH/AJZRnr/vN1P4YFbUMEVvGEhjWNB2UYFPoqhBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVFc3CWttJPKcJGpY1LXO+KL1Qq2m7CgeZIfbsP6/lQBzUTPe6o08xyzsZH9h6UwK1zc+pkep7RNsUs3/PQ7F+nerVjCBP5oUDZ3pMEW7kqmFzhUGD7AVm4a4nx3b07Cpr6X5tg6nlv8K0vDdh5kv2mQcLyM/p/j+VSUbmmWK2VsFKgSMPm9varlFFWSFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV53e3R1DVZInZFjk3M+/IdiPuiPsR07+teiVxeuaDf2t1LPp9ut/Yyt5j2pIDxN1JQ+mecdRQBzz3txGFinhaBYxhVPI+ue9bNtqFvHZiMsBNtMhBOMqO/wBMkVVfWYA2y9t7i2kP8M0ZU/qKYIYb8GOOTf5nyuFh3F1/u454qWNFi2he6WNpeZZ234U5ATt+JrurK2FrbLHxu6tj1rL0jSjEY5ZIRAkYCxxDGeOhPp9K26EgCiiiqEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAIyK67XUMPQjNIkaRjCIqj0AxRRQA6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==" alt="KING OA8500 Jack HDTV Directional Over-the-Air Antenna with Mount and Signal..." /></td>
 		 <td><strong>KING OA8500 Jack HDTV Directional Over-the-Air Antenna with Mount and Signal...</strong> by <em>KING</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N1MLFGK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N1MLFGK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ikjVSV4nL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RVW-395 Sensar IV White DTV/HD TV Antenna" /></td>
 		 <td><strong>Winegard RVW-395 Sensar IV White DTV/HD TV Antenna</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003VAZ6OG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003VAZ6OG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31SdLuZrMpL._AC_SX236_SY340_QL65_.jpg" alt="Winegard White Company RZ-8500 Rayzar Automatic Hd Antenna" /></td>
 		 <td><strong>Winegard White Company RZ-8500 Rayzar Automatic Hd Antenna</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00T36ODKK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00T36ODKK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21UT0ZpcADL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RVW-205 Sensar IV with Wingman - Replacement Head Only, White" /></td>
 		 <td><strong>Winegard RVW-205 Sensar IV with Wingman - Replacement Head Only, White</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003ZOH63W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003ZOH63W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/317LnrOVlCL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RV-3095 Sensar III Batwing Amplified RV TV Antenna (VHF/UHF, Digital..." /></td>
 		 <td><strong>Winegard RV-3095 Sensar III Batwing Amplified RV TV Antenna (VHF/UHF, Digital...</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002F67N2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0002F67N2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RpiAhXJ6L._AC_SX236_SY340_QL65_.jpg" alt="Winegard RZ-6035 Rayzar z1 RV TV Antenna (HD, Digital, 4K Ready, ATSC 3.0 Ready..." /></td>
 		 <td><strong>Winegard RZ-6035 Rayzar z1 RV TV Antenna (HD, Digital, 4K Ready, ATSC 3.0 Ready...</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B9K5UGS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01B9K5UGS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Yc5cKMywL._AC_SX236_SY340_QL65_.jpg" alt="KING OA1000 OmniPro Portable Omnidirectional HDTV Over-the-Air Antenna with Mount..." /></td>
 		 <td><strong>KING OA1000 OmniPro Portable Omnidirectional HDTV Over-the-Air Antenna with Mount...</strong> by <em>KING</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MTF8NKO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/317LnrOVlCL._AC_SX236_SY340_QL65_.jpg" alt="Winegard-RV-3095-Batwing-Amplified-Antenna" /></td>
-		 <td><strong>Winegard-RV-3095-Batwing-Amplified-Antenna</strong> by <em>Winegard</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002F67N2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MTF8NKO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cVXgen2GL._AC_SX236_SY340_QL65_.jpg" alt="Winegard PA-1000 DISH Playmaker HD Portable Satellite Antenna (RV Portable Satellite..." /></td>
 		 <td><strong>Winegard PA-1000 DISH Playmaker HD Portable Satellite Antenna (RV Portable Satellite...</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B9K5TLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01B9K5TLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31VOTspuiCL._AC_SX236_SY340_QL65_.jpg" alt="KING OA1501 OmniGo Portable Omnidirectional HDTV Over-The-Air Antenna - Black" /></td>
 		 <td><strong>KING OA1501 OmniGo Portable Omnidirectional HDTV Over-The-Air Antenna - Black</strong> by <em>KING</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MSDL4UU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MSDL4UU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RgaoL7KsL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RV-5095 RV Antenna" /></td>
 		 <td><strong>Winegard RV-5095 RV Antenna</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002N5S0HA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B002N5S0HA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31qzZMk0+hL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RS-3000 RoadStar Amplified Digital HD RV TV Antenna (4K Ultra-HD Ready..." /></td>
 		 <td><strong>Winegard RS-3000 RoadStar Amplified Digital HD RV TV Antenna (4K Ultra-HD Ready...</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008TVNWX4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008TVNWX4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31A2-e5NC0L._AC_SX236_SY340_QL65_.jpg" alt="Bearifi BearExtender Outdoor RV &amp; Marine High Power USB Wi-Fi Extender Antenna..." /></td>
 		 <td><strong>Bearifi BearExtender Outdoor RV &amp; Marine High Power USB Wi-Fi Extender Antenna...</strong> by <em>BearExtender</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VW4M0WO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00VW4M0WO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31bFx1An4LL._AC_SX236_SY340_QL65_.jpg" alt="Winegard RVW205B Sensar IV Black Replacement Antenna Head" /></td>
 		 <td><strong>Winegard RVW205B Sensar IV Black Replacement Antenna Head</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C5T4Y2O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00C5T4Y2O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

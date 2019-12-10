@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Refillable For Lighters</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/318DBQsEPDL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Preserve</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019Y366KQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Butane Lighter Torch Lighter Jet Flame Lighter Refillable Butane Lighter Flexible..." /></td>
 		 <td><strong>Butane Lighter Torch Lighter Jet Flame Lighter Refillable Butane Lighter Flexible...</strong> by <em>Ancwzoz</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MRJFZS7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07MRJFZS7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i+fy-n+FL._AC_SX236_SY340_QL65_.jpg" alt="Torch Lighter Jet Lighter Gas Butane Lighter Blow Torch Lighter Refillable Jet..." /></td>
 		 <td><strong>Torch Lighter Jet Lighter Gas Butane Lighter Blow Torch Lighter Refillable Jet...</strong> by <em>Megainvo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L3MHRP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07L3MHRP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BNwM9TPbL._AC_SX236_SY340_QL65_.jpg" alt="Torch Cigar Lighter 2 Pack Triple Jet Flame Refillable Butane Lighter Gas Fluid..." /></td>
 		 <td><strong>Torch Cigar Lighter 2 Pack Triple Jet Flame Refillable Butane Lighter Gas Fluid...</strong> by <em>lcfun</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GNHTZBQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GNHTZBQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AcdOcTU3L._AC_SX236_SY340_QL65_.jpg" alt="Great4buy Clear Electronic Cigarette Lighter Refillable 20 Pack Wholesale Lot" /></td>
 		 <td><strong>Great4buy Clear Electronic Cigarette Lighter Refillable 20 Pack Wholesale Lot</strong> by <em>Great4buy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GA5UV0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GA5UV0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31sufuWP4CL._AC_SX236_SY340_QL65_.jpg" alt="VVAY 3 Jet Flame Torch Fire Lighter Gas Butane Refillable, Multipurpose for BBQ..." /></td>
 		 <td><strong>VVAY 3 Jet Flame Torch Fire Lighter Gas Butane Refillable, Multipurpose for BBQ...</strong> by <em>VVAY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KFV189J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KFV189J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oQu747nDL._AC_SX236_SY340_QL65_.jpg" alt="Refillable Long-Reach Butane Lighters (3 Pack)" /></td>
 		 <td><strong>Refillable Long-Reach Butane Lighters (3 Pack)</strong> by <em>Click-n-Flame</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016APTEYG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B016APTEYG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qtlED5xrL._AC_SX236_SY340_QL65_.jpg" alt="VIP Home Essentials Handi Flame 3pk BBQ Grill Click Flame Lighter Refillable..." /></td>
 		 <td><strong>VIP Home Essentials Handi Flame 3pk BBQ Grill Click Flame Lighter Refillable...</strong> by <em>VIP Home Essentials</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H6QS2MK"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i+fy-n+FL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Megainvo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L3MHRP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31eUvCOGi9L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Ancwzoz</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MRJFZS7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H6QS2MK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wjCwpBl+L._AC_SX236_SY340_QL65_.jpg" alt="Cobber Torch Lighter, Quad 4 Jet Red Flame Refillable Butane Lighter with Punch" /></td>
 		 <td><strong>Cobber Torch Lighter, Quad 4 Jet Red Flame Refillable Butane Lighter with Punch</strong> by <em>Cobber</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DXT9G7L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DXT9G7L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41w9opsYWzL._AC_SX236_SY340_QL65_.jpg" alt="Eagle Jet Torch Gun Lighter Adjustable Flame Windproof Butane Refillable Pack..." /></td>
 		 <td><strong>Eagle Jet Torch Gun Lighter Adjustable Flame Windproof Butane Refillable Pack...</strong> by <em>Eagle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ITN61XO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01ITN61XO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/311ywTwgjiL._AC_SX236_SY340_QL65_.jpg" alt="TOMOLO Torch Lighter Quadruple 4 Jet Flame Refillable Butane Cigar Lighter with..." /></td>
 		 <td><strong>TOMOLO Torch Lighter Quadruple 4 Jet Flame Refillable Butane Cigar Lighter with...</strong> by <em>Tomolo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KZCYQC8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07KZCYQC8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51od5t+UqYL._AC_SX236_SY340_QL65_.jpg" alt="5Pack Angle Eagle Jet Flame Butane Torch Lighter Refillable Windproof+FREE Colibri..." /></td>
 		 <td><strong>5Pack Angle Eagle Jet Flame Butane Torch Lighter Refillable Windproof+FREE Colibri...</strong> by <em>Eagle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y6GW3QR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06Y6GW3QR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rsVe2Ne9L._AC_SX236_SY340_QL65_.jpg" alt="VIP Home Essentials Handi Flame 12pk BBQ Grill Click Flame Lighter Refillable..." /></td>
 		 <td><strong>VIP Home Essentials Handi Flame 12pk BBQ Grill Click Flame Lighter Refillable...</strong> by <em>VIP Home Essentials</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H6SSZ1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H6SSZ1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Is+vFPTBL._AC_SX236_SY340_QL65_.jpg" alt="Cobber Torch Cigar Lighter, Quad 4 Jet Red Flame Refillable Butane Cigar Lighter..." /></td>
 		 <td><strong>Cobber Torch Cigar Lighter, Quad 4 Jet Red Flame Refillable Butane Cigar Lighter...</strong> by <em>Cobber</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HLRBFWV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HLRBFWV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31AtSlI7hiL._AC_SX236_SY340_QL65_.jpg" alt="Zippo Flex Neck Utility Lighter" /></td>
 		 <td><strong>Zippo Flex Neck Utility Lighter</strong> by <em>Zippo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004BKI4IA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004BKI4IA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/41zh9ElDVrL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>dog barking deterrents</strong></td>
+                 <td style="text-align: center;"><a href="/dog-barking-deterrents"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>clubs set for men</strong></td>
+                 <td style="text-align: center;"><a href="/knight-golf-clubs-set-for-men"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41OWst+MB0L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>cobra handheld cb radios</strong></td>
+                 <td style="text-align: center;"><a href="/cobra-handheld-cb-radios"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>bissell pet rewind vacuum</strong></td>
+                 <td style="text-align: center;"><a href="/bissell-pet-rewind-vacuum"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

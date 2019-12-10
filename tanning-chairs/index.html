@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Tanning Chairs</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31YdCzUo3BL._AC_SX236_SY340_QL65_.jpg" alt="Goplus-Adjustable-Recliner-Sunbathing-Tanning" /></td>
-		 <td><strong>Goplus-Adjustable-Recliner-Sunbathing-Tanning</strong> by <em>Goplus</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GGSJM1W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="Brands-Backpack-Lounger-Position-Turquoise-x" /></td>
-		 <td><strong>Brands-Backpack-Lounger-Position-Turquoise-x</strong> by <em>RIO Gear</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010M67P40"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Ostrich Lounge Chaise" /></td>
 		 <td><strong>Ostrich Lounge Chaise</strong> by <em>Ostrich</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0042B4AHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0042B4AHM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FZIqyyIJL._AC_SX236_SY340_QL65_.jpg" alt="Rio Beach Portable Folding Backpack Beach Lounge Chair with Backpack Straps and..." /></td>
 		 <td><strong>Rio Beach Portable Folding Backpack Beach Lounge Chair with Backpack Straps and...</strong> by <em>RIO Gear</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010M67P40"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B010M67P40"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hTl-lmH0L._AC_SX236_SY340_QL65_.jpg" alt="Goplus Adjustable Chaise Lounge Chair Recliner w/Pillow Sunbathing Tanning Face..." /></td>
 		 <td><strong>Goplus Adjustable Chaise Lounge Chair Recliner w/Pillow Sunbathing Tanning Face...</strong> by <em>Goplus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LRVIP5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LRVIP5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31aqPV6hLyL._AC_SX236_SY340_QL65_.jpg" alt="Keter Pacific 2-Pack All-weather Adjustable Outdoor Patio Chaise Lounge Furniture..." /></td>
 		 <td><strong>Keter Pacific 2-Pack All-weather Adjustable Outdoor Patio Chaise Lounge Furniture...</strong> by <em>Keter</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C5C7OZA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00C5C7OZA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CN3MXLbIL._AC_SX236_SY340_QL65_.jpg" alt="Outsunny Aluminum Lightweight Outdoor Patio Folding Chaise Lounge Chair - Green" /></td>
 		 <td><strong>Outsunny Aluminum Lightweight Outdoor Patio Folding Chaise Lounge Chair - Green</strong> by <em>Outsunny</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C2ZX7HE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00C2ZX7HE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PzWEGYNRL._AC_SX236_SY340_QL65_.jpg" alt="AmazonBasics Zero Gravity Chair - Black" /></td>
 		 <td><strong>AmazonBasics Zero Gravity Chair - Black</strong> by <em>AmazonBasics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071173FS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071173FS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LPQpjdxjL._AC_SX236_SY340_QL65_.jpg" alt="Goplus Folding Chaise Lounge Chair Bed Outdoor Patio Beach Camping Recliner w..." /></td>
 		 <td><strong>Goplus Folding Chaise Lounge Chair Bed Outdoor Patio Beach Camping Recliner w...</strong> by <em>Goplus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MT5WTVN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51i5LkZvGSL._AC_SX236_SY340_QL65_.jpg" alt="d" /></td>
-		 <td><strong>d</strong> by <em>Artist Hand</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CNHPP7W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01MT5WTVN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31nKv8FQ1eL._AC_SX236_SY340_QL65_.jpg" alt="Ostrich Ladies Comfort Lounge" /></td>
 		 <td><strong>Ostrich Ladies Comfort Lounge</strong> by <em>Ostrich</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008FYHB0A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B008FYHB0A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q6z98yI3L._AC_SX236_SY340_QL65_.jpg" alt="Rio Brands BY405-0138 Hi Back Web Chaise, Blue" /></td>
 		 <td><strong>Rio Brands BY405-0138 Hi Back Web Chaise, Blue</strong> by <em>RIO Gear</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00828BTAC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00828BTAC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415LNPLaRvL._AC_SX236_SY340_QL65_.jpg" alt="COLOR TREE Adjustable Chaise Lounge Chair Recliner Portable Folding Camping Bed..." /></td>
 		 <td><strong>COLOR TREE Adjustable Chaise Lounge Chair Recliner Portable Folding Camping Bed...</strong> by <em>COLOR TREE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y67PDKV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06Y67PDKV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zQsLU54vL._AC_SX236_SY340_QL65_.jpg" alt="PORTAL Adjustable Folding Reclining Lounger Beach Bed Cot, Grey" /></td>
 		 <td><strong>PORTAL Adjustable Folding Reclining Lounger Beach Bed Cot, Grey</strong> by <em>PORTAL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074C8ZPFF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074C8ZPFF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CnCX37WYL._AC_SX236_SY340_QL65_.jpg" alt="GigaTent Portable Beach Lounge Chair Mat with Insulated Cooler and Storage Pocket..." /></td>
 		 <td><strong>GigaTent Portable Beach Lounge Chair Mat with Insulated Cooler and Storage Pocket...</strong> by <em>GigaTent</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G3GF4ND"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G3GF4ND"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41suHVmjh+L._AC_SX236_SY340_QL65_.jpg" alt="Pacific Breeze Lounger - 2 Pack" /></td>
 		 <td><strong>Pacific Breeze Lounger - 2 Pack</strong> by <em>Pacific Breeze Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019JNUW24"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019JNUW24"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417BHDGScsL._AC_SX236_SY340_QL65_.jpg" alt="BaoChen Outdoor Chaise Lounge Chair - Folding Recliner Patio Pool Beach Sunny..." /></td>
 		 <td><strong>BaoChen Outdoor Chaise Lounge Chair - Folding Recliner Patio Pool Beach Sunny...</strong> by <em>BaoChen</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DF9X53S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07DF9X53S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Lavender Hair Dyes</div>
@@ -89,128 +98,156 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Garnier Hair Color Sensation Hair Cream, Sweet Lavender Dreams, 3 Count" /></td>
 		 <td><strong>Garnier Hair Color Sensation Hair Cream, Sweet Lavender Dreams, 3 Count</strong> by <em>Garnier</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CN5CC7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07CN5CC7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAFUAGYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigArPl1q0iJCuZGH9wcfnVu6l8m1mk/uoT+lcVDyv1pAbsmuysf3Uaov+1yaj/te5PWUL9EFZwNBNFwLjapcg8XL/APfK/wCFN/ti7H/LY/8AfIqmRUZpDNKPxDcRcShZR7jBq9b+JbKVlSUmFicfN0/OuZkrPuMUwsenA5GRyDRVDQzu0W0JOf3Yq/TEFFFFABRRRQBU1XjS7n/rma5CD7grr9V/5Bd1/wBcz/KuRg+4KTAnFLQBxS4pDGEVGalaozQBXk6VQuOhq/LWfcUxneeHudCtP9z+prSrM8O/8gK1/wB0/wAzWnTJCiiigAooooAq6p/yC7r/AK5t/KuStx8tddqPOnXP/XNv5VyUH3BSYE4FLigUUhjWFRMKmao2oArSDiqFwK0ZaoXA4NAHbeHf+QHbfQ/zNadZXhs50SD2LfzNatUIKKKKACiiigCvf/8AIPuf+ubfyrkYPuV199/x4XH/AFzb+VcjB9ykwJxS0ClNIBhqM1I1RtQBBJVG46Gr8nSqNx0NMZ2Hhg50WP2Zh+ta9YvhU/8AEmHtI1bVMQUUUUAFFFFAEF7/AMeNx/1zb+VcnAvyCuuuGiWB/PIEZBDZ7+1cfc2MlzdMbWVrS1HCruLM3v7fSkwLYQ4o21RGjyn79+5/D/69H9hqfvXcppAXGHuKjYD1H51WOgxHrdS/lUT+HkPS7kH/AAGgCd146iqVwvynND+HXA+S9Ofdf/r0lppMlpeJJdYu7cfejDFTQM6rwmQdIOP+ejf0rbqtYTW0tsv2QKsY42AY2/hVmqEFFFFABUdxcR20RklOFH5n6U9mCqWY4AGSa5e+vTf3JYf6pDhB/X8aAJLi6kvJd8nCj7qen/16aDUYNOBpCH5paQVIq0AMNMJzUrCoWNADSaYTSk1GxoGCTy20olgba4/I+xrptP1GLUIdy/LIv30PUf8A1q5J2pLW7NnexTqcAMA+O696YHc0UAhgCDkHpRQBR1mbydMlwcFxtH41zEZwK3PEv/HjF/10H8jXPoxwOKALQanhhUAOe1VG1i1SRkJYlTgkDimot7AayvUgkxWL/bdqP7/5VJBqsVzJsiVye/HSm4SQjTeWq7PTGc1GWNSA9mqNnprGoyfegYjvVZ37U+Rj9arOxyKAO70C7+16VEScvH+7b8P/AK2KKzfCJOy5XPGVP86KALniQZ09D6SD+RrnY+ldL4iGdM+jiuaj5/OgCvql2ba22If3kvAPoPWsIcAVPfz/AGq9dgfkX5V/CmQW73MyxR9T1PoK64LliA+1s3vJdi/Kg+83pXQQQR20YjiXAHU+tOhgS2hWOMYA/WnGsJz5mAh6VGTTzTDWYhhpjU80xqBkElVZeo+tWpKqy9R9aAOs8Ij5Ln6r/Wil8JD91c/7y/1ooA0PEH/ILb/eFcjczfZ7OWQdQMD6muv1/wD5Bb/7y/zrg9YkIiiiHdtx/CqgrySAzBwBjk/zrpNNsxa24LD94/JPp7VlaRa+fdb2GY4ufx7Ve8Q3k1jpDS27iOR5EiMpGfLVmALfgDWtWX2UBpEGmniuT1e91HStVt7NNQlkj2qWlZVKrmTGZOPQ449qfY6lfxzatd3dyGsrd5YoY2xlmU8AcZ4H51gB1BBzimGuMXU9TufDsEzX0kV1Fd/Z5zsAZizADII4wDTrvU77TpLieS6kkitbsQOoAwQY+P8Ax7FAHXsMVGRmua0w6gNeeO61BjDbiNXjdvvuyZxjHPOfyqDXpb6XUbu1sJpROZIiiK3QbSSB9aAOlkHX2qpIy7gu4bvTNczJfXMkGmeTK7yRQvFIwbq7bgM+p+Wn6QYpdXVo1YKkZWPAOAM8kk96APUfCP8AqLn/AHl/rRS+Ev8Aj3uf94fyooA0NdGdLk+o/nXnOqvm+x2VRxXpGtjOly/h/OvNbhPtGsOnrIBWlLe4G5pkH2eyQEfM/wAx/GrMsMVzC8E8ayQyDa6MMginDAGB0FKKzbu7gZo8PaYsTxi33I6eU25iSVznGT7gVEPD2kiRj5YLucspkJ5yCTjPfArYB5FcDaRZ+LNy3PAZv/HBQB1kuj2U0kryQ5M0izSfMfmdfun8KJNLspBMHgVlncSSg5O5x0P6CrzfephoApf2bZi++3fZ0N3187HOcY/lSm1gE5uBCgnPWXHzHt1+lWTTGoAqGCGPOyJFzycKBzUDgAgAAc9qtyVVk+8DjvQB13hP/j1uP98fyop3hT/jzn/3/wClFAGjq4zpk49h/MV5zZKZdclb+6zGvR9W/wCQZcf7v9a8/wBGXN1dSf7WM/jVwdkwF13xPZ+HZbZLtJHNxn7g+6o7mtpCJFRkO5XAKkdwa4nxNZnVr3Xjjd/Z1lGF9mJ3n9Kv2GtPH8OBfxNmaC3MYb0YfKKi2gFrU/GOlaXdm1Z5Lm5U4aO3Tdt9q57QbtNS+Id1eQpJGjwkhZF2sOAORWt8P9MgtdBS+2B7q6Ys8jcnAJAGf89arWAz8Ub/AD/z7/8AxNAG7rOu2GhRK99LtZ/uRqMs34VlL42sVkjW+tLyySX7ks0WFNc/Yj+3/iJJLc/PHDIzKp6AJwB+fNdj4nso9R0C8ikUEpGZEPow5FAFq5uUgsZLsfvYkTzBsOdw68Vy58bM9p9rh0e6a1BwZcjAqHwVcvdeFdQtHJK24ITPZWBOPzzUWjanaad4EdLp18ybzEji/icnjgUAat94hiXw02r2a+YDgKjcYbOMH6VDpqavJMlxqU0PkumViiXuehJrK/s2XT/h1Ol2pjkkbzSh6qCwxWzpkmpSmP7ZFFFbhF8vY2Wb0z6UAeheFR/oc3+//Sijwr/x4y/7/wDSigDR1X/kF3P+4a4PR4y1rOFYq0jkBh1HvXe6rzpdz/uGuG0obbEEHHzn+dUvhYGF4d0a4vDqEseoSLZTXEkLow3PMF+XJY/jVDwfA2oaDr/h0kLMjt5YPr0/mK7yCGO2TZbxrEmS21RgZPU/jVO00KwsdUn1K1jaO6uM+b8x2tk5PH1qRuTe5jeAdQjk0YaZKfKvrJmSSF+GxknIH6VTtXEfxYuUP/LSDH/joNdBq3hrTdZuBdTxNFdj/lvAxRz9SOtU9P8AB1np+qx6il1dS3EWeZX3buMc0COZ0oDRviPPbXJ2CV3VWPAIblTXYeJrpNP8PX00hAzGY192PAp2u+HbDxAifa0KzR/cmjOGX/Gsp/BcNy0Y1PUr2+ii+5FI+F/SgDN8D2z2/hfULuQYWfOz3CgjP51kLpwvfh5HdouZbSd3yOu3OD/Q/hXo0ltC9kbMIEtinl7E4AX0FVrXTLTT7D7DaxbbU5yjHOc9c5oA5O81M6t8O3mHzzIFilxzyCOfywa0dM1Yag8MMdrcJGkYzNIm1cjsK14LG2sYzHaW8cMZOSqDAJprHLqPTtQB2HhX/jwl/wCun9KKPC3/ACDpP+uh/kKKANPUhnTrkf8ATM/yrh9Mx9iAP95v513GonGm3R9ImP6VxNh/x6n2kb+dNbAYJ/4TWzZtosb5M5HZsfpR/wAJL4kt+LrwzI+OrREkGutGcUNMkK7pZFRP7zHApAcj/wAJ1cRnE/h7UE+iE/0oX4gQ7sPpGoL9Y67ASq5IV1JHXBzisnX5buGKFrINu3/NsXcWGOnQ45/yKAMj/hPbY9NMv/8Av3UZ8b7v9Xot+3/AKtTz62VXZEI2KnBVQTnLYyOx6VFJPr7OWVNhQnKcbXAB4B9+MfhTAh/4SvUpeIPD12f94EU4al4kufuaTFAD/wA9Xq3pT38d6zagzKpjO9nkG3OeNo+nWrkus6eu7/TIiVzkK2TSAy1tdcn5urqCIf3YxzVqC2MLfNIzt6mrNvdxX9stxbljE2dpZSufwNIfvUAdd4WH/Euf/rof5CineGBjTG/66H+QooA0NT/5Bd3/ANcX/wDQTXD6U4ksyR3bP513OoDOnXQ/6ZP/ACNeeeHpN0EsZPKnNUtmBtiqGu6Uda0w2ausbFg4Z1yARWgO1OqBHEzeD7y2ieRb+GJhL5iz4IPORgjHvToNMurfSLqwGp2+6VehYkkLtUnPbBBrrry2S9tZLabPlyY3Y+uf6VjN4Vtt5aOeVDkhQD8qoTkrj0yaYzCfRXY3Btb9Z7ZIQhmeTBjPfj07Cqs2juJE2atGsRXHJbDKGLDP905xx9a66Dw/Db200MUr/vQnzE5IZTkH/wCt0qObQEnWRZ7qR1mwZQABvYdD7Yz09qYHMXeiLE7/AG7UzklpyyRkhHcdM9MEDpVzTPDVnd20VyZ3dElLxYXaVO7Jzyc9MVtnQoJP+PiWWZeNysQFcgYBIA6gVbigito/LgQJHkttHQE9aQEMcC20Cwx52J0z165phHNWH6VAaAOt8Mf8gxv+uh/kKKPDH/IMb/rof6UUAad4M2VwPWNv5V5Zok/k6gFY4WUYr1S5GbWYeqN/KvGi5jCyA4Mbc/StIdQO8pags7lby1SZSOeGHoe9TgVm1bQANNpkN1Bco7wSrIqMUdh0Vh1B+lIlzby4MU8UgI3Da4OV9fp70CMvUbiZbtk81okVMptH3jULXE18ADIYvLi8w7e7Vauxa3UoK38akjG0SKc/So7mCw2Rv9rSJAnDCQYdR1NbKUbIZas5Wns4pH+8RyfWpGqgdc0iCxEyXsTW6MI8xnd83Ycd6qS+KrBZI0WK5cPtywiICbjgZz05rJ7gaj9KgbrViQbTjg/SoG+9SA63wx/yCyf+mh/pRS+Gf+QV/wBtGooA1ZRmFx6qa8aAG51b7pyDXsz8o30rxqUYlcj+8R+taUwLWk6k2m3BSbJhOBJ7Ds3+NdghVgGVsowyGHQiuEB3gLnDr0NX9H1s2JNvcZNuDyO8f09RTnG+qARoNatLHVNOt9NLfbJpGiullXaquepHXpmsiTQtasLUW9vb5liZrdZIzlTBKOcZ5+Vh+tehpIssSyROHjYZVlOQaMmsgPP4tFksdeuFWzlaEMixOturqQEAzvJyvNVE8NavHaQweS8kJtZCqkjMUjAZT9M16TnAxTSeTTuBwtx4f1G/c3cdgloQYlFv5oUsEzliy9DzV5PC8s8wubp0hnUR+WEZn2FWJPJ65HHNdSeetMalcCGQ7iTVdqsPUDdaAOu8N/8AIJX/AH2oo8N/8ghf99v50UAaxGQRXjMx23UoJwC5BPoc9a9mrxu7XNzOMZ+duPXmrgBC4O70YVG5Wc5zskX+Idv8RUiPuwGPI6N6/WoZoiW3Kdsg/WthlrTdZn0qYLj92x+aEn5W91PY12VlfQahD5lu2R/Ep6qfcV595odSkqjnqD0P+FSW809lMsltIVYdAf8APIqHFMR6G3WmGsfTPEkN2whvF8iY9GP3W/wrZIxWTTW4DCKjapTUbUgIHqButTv1qButAHXeGv8AkEJ/vt/Oil8NjGjx+7Mf1ooA1a8duf8Aj8uB3WVh+pr2KvH9U/caxdNj5GmYN7HNXDcCm4Ayw+6fvD0/+tUbPgESDjs1WXXa4K/gfWotvJ8sDjqhOPyrYZVlAdNy4YfX+tQqzjhDuH91utWPJG4mI7G7jH8xUUgGNsqbf9peRSAb9oU8OCp7g1t6T4la02w3Lebb9mz8yf8A1qw2jkK8EOo/GoXjXuhB9ql6genJIk0SyxMHjYZDDoaY1cFo2r3GjTcBpLRz88RPT3Hoa7qKaK5gSaBw8bjIYVk1YQx6gap3qBqQHY+Hv+QPD7lv50Uvh8Y0eD8f5migDSryXVgp1a/DDKmZgfbmvWq8m1j93r18P4Wmfj8auG4GaGMTeVJyn8LU6RR/EPowp+0bdrDK9s9qYUliHyfPH6HtW4yN+mXwy9m9Px7UzhxhGB9n6/nT9yk8HYx7dP0pjwnrt/FP8KQEEkRQ7trKfUUwkMPmwfcHBqbzJEOEcY9G4prS54lgB98UmBB5W7qWH1Ga1NB1FtNuDDI260lPT+63rWcVtWH3WQ+xNRNDbHjzH57FqloD0N+Ohqu1Z2gXwuLP7MXLSW4AyepXtWgxrJqwjs9A/wCQNB+P8zRS6B/yBbf6H+ZopAaNeVeIIiNcvlIwTKzA/jXqtcdr2lxS38izDBky6OOoz1H51UXZgcOsnJU8N6U9XYE919Kt3ukzwcupdB0kTn86zXLp94bgP4lrov2Azpb2SUu/mBQN2ISBkYxjrzzmnxXDpa58weeWGE9iM5xVwrFMwkZEd16OVyR+PWo/sluCcxdRgYbp9KizApjUZn+/5ZTbkMV4J6YPNRyXc5Z2VYxtAIjA684PNXjZQc5aTDcsCxwaiWxhWYv94YwqHOF+lFpDKRnkBfM/3GwCRgEYB5/OmI6y3MZyzuTxkYwPatL7PBHjbEoxSNJGpzxke1LlfVgW9Nm+y6lHIBhWOxvoa6hzgmuUt7G7vceTEUX/AJ6PwK6ViUiUMdzAAEjuamQju9A/5Att9D/M0VPplsbPTbeA/eRBn69TRWYFqqmoWKX0G0/LIvKN6GrdFAHGB2jmaGVSkqH5lNRzWlrcZ82BSfUcH9K6y+0y21BMTp84+7IvDL9DWBdaNqFo2YVF1F2KkK/4g8H8KaYGFP4dspclWdSe9VX8Msv+quzj0YZrXknMJ23EUkJ/6aIV/WkE8bDhwR7Gr5mBiHw1N3uI8ey0v/CL8/NcgfQVtmVR0NRvcIvVhRzMDMTw5aJzLI8nt0q1FY2dr/qbdQfUjJpXvYs7Vy7eiAsT+Aqxa6Zquon9xaNBF/z0uvkH4L94/pSuBXmm2oWdgqr1JOAK0tA0OTUZ4r66Vo7ONg8MbDDSkchj/s/z+laFl4NtUljn1GZ7yRDuEZG2IH/d7/iTXSVLYBRRRSAKKKKACiiigAIDDDAEHsapyaRp8zbpLKBmPfYKKKAK7+G9JfrZR/gSP5GpINB0u2/1VjD9WXcf1zRRQBejiSJdsaKi+ijAp1FFABRRRQAUUUUAf//Z" alt="Adore Semi-Permanent Haircolor #090 Lavender 4 Ounce (118ml)" /></td>
 		 <td><strong>Adore Semi-Permanent Haircolor #090 Lavender 4 Ounce (118ml)</strong> by <em>Adore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OVF9XVM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00OVF9XVM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31SlL3+bC9L._AC_SX236_SY340_QL65_.jpg" alt="Sparks Long Lasting Bright Hair Color, Lala Lavender, 3 Ounce" /></td>
 		 <td><strong>Sparks Long Lasting Bright Hair Color, Lala Lavender, 3 Ounce</strong> by <em>SPARKS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LX7110B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LX7110B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UjHQ4XsLL._AC_SX236_SY340_QL65_.jpg" alt="Ion Lavender Semi Permanent Hair Color Lavender" /></td>
 		 <td><strong>Ion Lavender Semi Permanent Hair Color Lavender</strong> by <em>Ion</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MY5N4H8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01MY5N4H8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ibo1LGCrL._AC_SX236_SY340_QL65_.jpg" alt="ADORE Creative Image Shining SEMI-PERMANENT Hair Color (STYLIST KIT) No Ammonia..." /></td>
 		 <td><strong>ADORE Creative Image Shining SEMI-PERMANENT Hair Color (STYLIST KIT) No Ammonia...</strong> by <em>Creative Image Systems Adore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KB3424D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07KB3424D"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oSFmrr+1L._AC_SX236_SY340_QL65_.jpg" alt="Celeb Luxury Viral Colorwash: Pastel Lavender Color Depositing Shampoo Concentrate..." /></td>
 		 <td><strong>Celeb Luxury Viral Colorwash: Pastel Lavender Color Depositing Shampoo Concentrate...</strong> by <em>Celeb Luxury</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JPM9644"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/516zOuWZyxL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Clairol</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079NLC39S"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DVb6Ac2FL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>KERACOLOR</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072PT8M84"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01JPM9644"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Z-xosWpaL._AC_SX236_SY340_QL65_.jpg" alt="Splat Rebellious Fantasy Complete Hair Color Kit in Lusty Lavender" /></td>
 		 <td><strong>Splat Rebellious Fantasy Complete Hair Color Kit in Lusty Lavender</strong> by <em>Splat</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00153Z3I0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00153Z3I0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ceYmOmL3L._AC_SX236_SY340_QL65_.jpg" alt="Guy Tang #mydentity 8DL Light Blonde Dusty Lavender Permanent Shades 2.0 Oz" /></td>
 		 <td><strong>Guy Tang #mydentity 8DL Light Blonde Dusty Lavender Permanent Shades 2.0 Oz</strong> by <em>Guy Tang #mydentity</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CKMBGWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07CKMBGWS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Zm3sf74fL._AC_SX236_SY340_QL65_.jpg" alt="Pravana Chromasilk Pastels Long Lasting Color, Luscious Lavender Hair Color for..." /></td>
 		 <td><strong>Pravana Chromasilk Pastels Long Lasting Color, Luscious Lavender Hair Color for...</strong> by <em>Pravana</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EJ18LTS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00EJ18LTS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31pU-SwXa-L._AC_SX236_SY340_QL65_.jpg" alt="Crazy Color Semi Permanent Hair Color Cream, 150ML (LAVENDER)" /></td>
 		 <td><strong>Crazy Color Semi Permanent Hair Color Cream, 150ML (LAVENDER)</strong> by <em>Crazy Color</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KFQZF2R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07KFQZF2R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fgtVSIZ-L._AC_SX236_SY340_QL65_.jpg" alt="IROIRO Premium Natural Semi-Permanent Hair Color 210 Pastel Lavender (8oz)" /></td>
 		 <td><strong>IROIRO Premium Natural Semi-Permanent Hair Color 210 Pastel Lavender (8oz)</strong> by <em>Iroiro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07K4QPR47"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07K4QPR47"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31v5CNhy0iL._AC_SX236_SY340_QL65_.jpg" alt="Adore Semi-Permanent Haircolor #090 Lavender 4 Ounce (118ml) (6 Pack)" /></td>
 		 <td><strong>Adore Semi-Permanent Haircolor #090 Lavender 4 Ounce (118ml) (6 Pack)</strong> by <em>Adore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077J3PBJW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B077J3PBJW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514fPrySN8L._AC_SX236_SY340_QL65_.jpg" alt="SPLAT Splat Singles 12-pack Display Lusty Lavender" /></td>
 		 <td><strong>SPLAT Splat Singles 12-pack Display Lusty Lavender</strong> by <em>Splat</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OVDJVZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CqymZS2aL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Revlon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DG6X86C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00OVDJVZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -32,6 +32,34 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Wand Massagers</div>
@@ -89,104 +98,156 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Mini Wand Massager by Yarosi - Strongest Cordless Handheld Therapeutic Vibrating..." /></td>
 		 <td><strong>Mini Wand Massager by Yarosi - Strongest Cordless Handheld Therapeutic Vibrating...</strong> by <em>Yarosi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JZBQEIG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JZBQEIG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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M341z3Z3JJGDbWD6pKWZf3Q7epqy3h0NPn+FRj611iW9vbxqkMYRFHSgAEk4ApWK5uxxselCKPLDOwkVna9Z7beMxIS5YAKBkk+ldrIEW4kix8rjI9/WsbUljRVZxny8gD3qWaxY7RdUki22eqF4rlR80ZYEY9GHY12Ph9LSP7QLaFELEMzKMbq8n0/T76+1UPZwPOCcMo6j3zXrmg6ZLp9sftBXzXxlVOQtbU0zlxEkzWooorU5AooooAKKKKACiiigAooooAKKKKACiiigAooooAKzdSsS2bmAfvAPnUfxj/GtKigDnona4ASIbmPYUlxCbc+XKMOw4I6fhW/HBHCWMaKu45OB1pJ4I7iMpKuR/KncClpd8Zl8ic/vkHBP8Y9a0awbizls3EgyQhykgHT61uRSCWJHUghhnIoYHICR1ThsU+OV25LE0UVznoLYkkY5xniq7SNg80UUAUL52CwtnncRn8Kp2ka3upQwXA3xtKAVzj+VFFStypfCekW1rBZwiK2iSKMdFQYqWiiuk80KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEZQylWGQeCKzbBjGkyKcKspAHpwKKKAP/9k=" alt="The Original Magic Wand with Free Wand Essentials Travel Massager" /></td>
 		 <td><strong>The Original Magic Wand with Free Wand Essentials Travel Massager</strong> by <em>Magic Wand</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DCHMIF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01DCHMIF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="PALOQUETH Rechargeable Wand Massager Electric Full Body Massager, Deep Tissue..." /></td>
 		 <td><strong>PALOQUETH Rechargeable Wand Massager Electric Full Body Massager, Deep Tissue...</strong> by <em>PALOQUETH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JYBNZT3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07JYBNZT3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RKAN62-7L._AC_SX236_SY340_QL65_.jpg" alt="Shibari Mini Halo 20X Multi-Speed Wireless Power Wand Massager, Purple" /></td>
 		 <td><strong>Shibari Mini Halo 20X Multi-Speed Wireless Power Wand Massager, Purple</strong> by <em>SHIBARI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010GLYPSK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B010GLYPSK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LF1d8pbFL._AC_SX236_SY340_QL65_.jpg" alt="Upgraded Powerful Vibrate Wand Massager with 20 Magic Vibration Modes, Whisper..." /></td>
 		 <td><strong>Upgraded Powerful Vibrate Wand Massager with 20 Magic Vibration Modes, Whisper...</strong> by <em>Comfy Mate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C1LZZBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C1LZZBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411ISD2iG+L._AC_SX236_SY340_QL65_.jpg" alt="Magic VIVA Wand Rechargeable Cordless Therapeutic Kit Includes IntiMD Moisturizer..." /></td>
 		 <td><strong>Magic VIVA Wand Rechargeable Cordless Therapeutic Kit Includes IntiMD Moisturizer...</strong> by <em>IntiMD</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K1627N0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01K1627N0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31hBp8I80VL._AC_SX236_SY340_QL65_.jpg" alt="Vibratex Magic Wand Massager" /></td>
 		 <td><strong>Vibratex Magic Wand Massager</strong> by <em>Vibratex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000K8ALI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000K8ALI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QlfrNmoOL._AC_SX236_SY340_QL65_.jpg" alt="Personal Massager Premium 2018 - Therapeutic Cordless Personal Massager kit for..." /></td>
 		 <td><strong>Personal Massager Premium 2018 - Therapeutic Cordless Personal Massager kit for...</strong> by <em>Sensual-U</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073H22HTM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073H22HTM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410h54n4HoL._AC_SX236_SY340_QL65_.jpg" alt="Magic Wand Original VIVA Kit Therapeutic Wand Massager Includes IntiMD Massaging..." /></td>
 		 <td><strong>Magic Wand Original VIVA Kit Therapeutic Wand Massager Includes IntiMD Massaging...</strong> by <em>IntiMD</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IAVNNU4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IAVNNU4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZsZSg92dL._AC_SX236_SY340_QL65_.jpg" alt="LOVELY Wand Massager Wireless Handheld Personal Body Therapeutic Massager with..." /></td>
 		 <td><strong>LOVELY Wand Massager Wireless Handheld Personal Body Therapeutic Massager with...</strong> by <em>LOVELY WAND</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H479R25"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H479R25"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RlDhp6nvL._AC_SX236_SY340_QL65_.jpg" alt="Upgraded Powerful Vibrate Wand Massager with 20 Magic Vibration Modes, Whisper..." /></td>
 		 <td><strong>Upgraded Powerful Vibrate Wand Massager with 20 Magic Vibration Modes, Whisper...</strong> by <em>Comfy Mate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C1HV5W7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C1HV5W7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31bAFG5uuPL._AC_SX236_SY340_QL65_.jpg" alt="The Thunderstick Supercharged Wand Massager, Black" /></td>
 		 <td><strong>The Thunderstick Supercharged Wand Massager, Black</strong> by <em>Master Series</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00E5PZHOU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00E5PZHOU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qitk6IGYL._AC_SX236_SY340_QL65_.jpg" alt="Magic Wand Massager with Shibari Variable Speed Controller" /></td>
 		 <td><strong>Magic Wand Massager with Shibari Variable Speed Controller</strong> by <em>Magic Wand</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00G7V8SEG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00G7V8SEG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

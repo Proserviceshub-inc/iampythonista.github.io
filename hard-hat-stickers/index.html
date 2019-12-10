@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Hard Hat Stickers</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51IrkHL69HL._AC_SX236_SY340_QL65_.jpg" alt="3Tyto-Sticker-fashion-waterproof-Stickers" /></td>
-		 <td><strong>3Tyto-Sticker-fashion-waterproof-Stickers</strong> by <em>3Tyto</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GS2XGJR"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41s1JyYVkSL._AC_SX236_SY340_QL65_.jpg" alt="MSA-10079479-Suspension-Standard-American" /></td>
-		 <td><strong>MSA-10079479-Suspension-Standard-American</strong> by <em>MSA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000RFEJ3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAD/AOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKZPPFawST3EiRQxqWd3OFUDqSajvr6202zlu72ZYbeIZd26D/ABPYDqa8s8Z+NpFcI8YF1kNb2EgyLYdpbgdDJ3WPovVucCgDV1v4gtbX0f8ApJ0+2bBiU23myMpP+tmXIMcZyAFHzkHPHQ9fo2vRaoxt5QkN8iCRolcOskZ+7LG38cZ7EfQgHivCdG+0alY+Kch7uaSxFxLO5JPyTIxyfpk/8Bpug+IpNKEEU7zPYxOZInhP760Y9WjJ4we6H5W70AfR1Fc94f8AE8WpeRb3UsJnmQvbzw/6q8QdSmeQw/iQ/MvuOa6GgAJwMnpXEa/8TNOsJXtNGjOrX46iE/uk+r9/oM+mRWL8Ybm9abR9NtriWOC78zzY4ycPgrjIHJAyTiuZ0PTbhn+wwGOKOMn96m4CQDH7xucg8gYBGenAU5xq1VTjdmtOm5uxFquteJ9W1Kea71gWs1kwKQ28pjjXIJG3HU9RySeo7V1OkfE2/wBLMEHim2E8MuRHfWowzAH5i0fBwOckAdOhrLsI7X+35NHeOWBUhz+8l8oyPu4MYQgEFTnpniq7xQ/brmTSUMtrCPKlvDhU3MRlARjcvTLjkdckVyrFvms10ubugraHsmmarY6zZrdabdR3MDfxRnOD6EdQfY81br560sz6R4u0u50u4lgiu7qOKVUGwHLjchUcY5xtJJ4PTivoWu6MuZXRySVnYzrnxBpFlcvb3WqWcM6Y3RyTqrLkZ5BPHHNeZfEXxJJJrKnRNal8tbNSv2K6O3zN7Z+6cZxjr2pfihp0kHiJJreD5b+3XLIQCzxv8xPvtZB+HtXLNJI4Oy3ZRIGQFWHc8Hr7VvGCauelhsLCcfaX6PS1+6/DR/Mnj1y93MZNdvjGVUr/AKZJwcfNjnrmkXXr0pHnWNQ3uuWU3cnynb0PzetU7Z5IoYrdoHeWACQqHAG3P69eh71LJNKgn3W74iUHO4ZPykc/nWqStt+B6MIw5E3Ff+AvR7v7tUeq+DfFWmjwnp41PW7f7YEIl+03K+Zu3Hrk5/PtiuttrmC8gSe1mjnhcZWSJgyt9COtfPksjKxaS2KlEYsQy5xwM9favYPh7pk2m+F4zcbQbyQ3Sov8CuAQD746/WsJwUep5OKwsKCTUrt+VjqKKKKg4QopMjPUUtJNPYAooopgFFFFABRRRQAUUUUAeZeOr3V1ubx7eLfc2TB7WHr5UO0ZuUXpI4YspP8AAMHHO6vOvDX9nS64jaxFJeWrpLIyB/mkcKWG49TnBHUckV9C6ppVvq1usc+9HjbfFPEdskL9mU9j+h6EEcV5ffeH73w54lt9XtLWFtVgdmECKUh1JCpDNEB9ybBOY+c9VzytAGhZK8FtGy6TBZXkuktNPbQx4gKmYMFdCcFtgOBnPzMDXM+N/DEenAappto0EDPi7hXHlQFsbNntyynHAZT0GK7PSL6zvNIWK212OK3jilgQHYlxFFIyEA/NlXQK6jjk4bsM4Gua1P4jF1ptlPF/ZbFEvdQEW4DDZjghA++w7YyWJJyq0Acr4WmuFupYVKnSEKzXrSuUS3weJFYcrJ2XbyTxg17v4elvZtEtn1ESC4Ib/WoEcpuOwuo6MV2kjsSenSsPwx4Qgsre1e5tRBFbN5ltZEhvLf8A56ykcPKfXog4X1PXUAeV/F24htdZ8PzXIYwqs+4KoY/wjgHiqfhK6iu4p5YzgOgcbzghQ75z9M5P+8K9B8RWN1PNDcW8XnJGpVlX7w56gd/w5rz3UdNmuzJb30hkh5c3IypiAGSHGR8pwAUHXGcjivJxk1NunNWXfv8A16noYaLilOLv5HLa4sD6jd6pBHJJYzylY7goVV3A+YKfTIOW6nkADk1s+F729ufDupxXqhtPt4mjiGzaxZgcoPUcj3ywq7eTQ6xp1vBPbwPZwMsm23n2RsoyuGGAUHOOpwR3qSS8ku3hguJfNkhUNDEu6UbhwHkbhmOe4Axndg9RE6jnSUJR2/C369yo02p8ye/6nOpf21x4i0qBJRLcLqsZY7T08zHBzjH4d6+gq4HR7K/vlt/3YJRlMkpxtXByRkAAn6D/ABrvq7sJUc4P3bL8zlxEOWW9/wBDzP4n3t3LqllpqCKOCOMXSylSWLZZGGc9ApB+uK4WKCeNEhW4QGHbzsySOcDrXpvjmHS5tf0ddeZI7BoplVvMKFpCUwrEc7cZPpnGe1cxL4ftF8Q6NbXOlS26XLOs0tvdO1vcARsy7Tu3AggEDjv1rWWOp0Jckou9r/1rrsdeGxVOlTScXfXZtb/0jloo5mu/MSdBK8SnGzhVyOBzn86jjuJZ4pQZowVk8kgx/eJwoPX6/lXYax4W07T9C1S5RMzRXKC2aO5kbyYyyDYRnAPLcHPUVffwboP9t6jaLYkQx2Uc6r58nEhaUFvvcn5V6+lYvN6FuZJ21/Tz80avGpfCn1vq+v8AXzOHkhmmd0aZDuXaT5eDgsQR19v1r2rwXcvd+DtIlkADfZlQ477Rtz+leb6ZaaLqHhAa02jFroypa7WvpgHJZUyWB4GWzjFeqaBp0mkaFY6fNMJpLaFYzIq7QcD0rpjiY127Jrldnfv95y4zERr8rSaeu7uM17XrPw7pzXl6WIJCRxIMvK56Ko7k15br2peOddupo4XSzgSQILezuk3ZJAPzg5baXUORwMg4xWZ8Sdak1fxjLAshFvpn7qLaSMPwWb65wP8AgIqnb+IvFWq3nlWMpuLojeEht4wUCkMccYUFlUsOjEAHPSlo1zS2/A4ihqGi6vpVuNQvJW8oyBRLHc7ySclW4OdrbThuhxXZeHbrx/o91FFgajCzENbXNypbAzyGJyoOxwpPHynirFn4R13WdKtZ73XbaPDpcxQR2aOikZKKTx8q5I2YKjJrnNV1nxZ4c1c215eRC4UmVJVhRlkUliCMryAWfAP3SxwKwpYrDV5unTknJf1/VhuLWrPaPD3iGx8TaWl/p7koTtdG+9G3dSPWtSvCPhtrUmk+MooWc/Z9TzFKCer8lW+ucj/gRr3eumLezJCiiiqAKy9U8QWWlSJBIzz3kgzHaW675X98dh/tNge9cf4q8dXVqv2a3T7IjTyxtOjlpPLiYq5A8tgnPc7uO2elV7xbL7NpMNnZJJrSl0uFvpHaXjO53aIls54znPTpXBicZ7Oypxu3fyStv628vvLUb7lvUdem1KXytQknWEjjTdNPL/MExJMSM8kgqpA4OS1JZayumSldEuWS3BUCwviTE2QhxG43NH99eDleeABzWLYXdtJr76dDaxLqCSyRq73LKjMrb3QMIOeeefb2q1qUQ0e80u2urS3S4upwlsyXjNuceWPnzD0+VBntk/h5rr1VVTcnzNXSurW9Nrfj5l2VjvdL8R2mpTC1kV7O/wBu42txgOR6qQSHX3Un8Kv3+n22p2j2t7EJYX6qeCD2II5BHUEcivMlv445oPC9xpltcLC3lpcS3ThElwWCCQRDa4B4xjHTNW/DXji8DXVvIovLeLY8DTTMJmhL7C6sYwJFzjBOD1yTXpYfGOa/eRt59Gns+6v2/Ehx7FLxJ8PvtWoI94l3Od423tlCHkuU/uSrwFk9Jfukfeweu7oltp+g3Kf2hb+Xc2o2wW8K7orNWH8J6u5H3pCMnkDA4rt5JooRmWREHqzAVga+LG+t/tEF1btcwdlkUl17r1/Ee/1rorynGDlT3RVFQc0p7M2bXULW9jL286OF+92K/UHkVJLcwQKGmmjjU9C7AA/nXnshiNlNOYz9ojP7uCZWRXGRli4B2jGT0zx2qv8A2ok8c7Wmj3UUL7Vsby6VzbjOB83TAJ6YOCSK5KWMqThflX3/AOSdjpnhYRlbmf3f8FHRavr8107xWMhitl4Mq8NJ9D2H06/StC20K1vdFtluFPmtGGMi/e55wfUc4wa47V57iJo5rK3cQhdskOdw3epwGb6BQ3viqk/jfxKsCR2As2jjAjKwRGR17DI3E+nVV+lZYeftJSlWaae3Y0rR5IxjTVmt+50c3hS4tWaC3t4pYZV8otHhBs54I7D5m6eta2meFLW1zJchJJGYuyIMJuPUn+9078e1c3peo+LJ5kN5qG1GA/dtZSRFSfVmgI/z1rul1GzCAG9gY45PmLzXVTwlFSckvvOeeIqOKjf7iyqhVCqAFAwAOgparf2jZf8AP5b/APf1f8aP7Rsv+fy3/wC/q/412nKc14i+1y+LtNj02WK2uY7OaRpZkLrJHvjBQqCD1wcg9veuUuJdSstBt9WtWsYbTSbp0hsUhfazeY0O4sWz/EzAe9dfrLAa/aaraPDeRpbyW0sMdwiuu5lYMNxAI+UgjIPIxmud1KxnuPDM+kWEPmPLcGcyzSxRAAzeaVA3kk9vTvkV4+Jp1ZYnSN1p06a3/r7i09BL/RNUuI7/AEQanYC41JjekC2kXG0oDhtxAGQvUE8mov7R1m40Gz1Iz2EV3qjx2DzLbtvTLsufv7SVJY9O9dAN+p6yn2iWax0tYGL4uY42kl3DaMoxbG3d3Haudk0DWW0TTtOtNPlEVlqX2lDEY2URCR2G1zJ83DA4IBrCnh6zpxc4rfa22976eSHdDNO8P6hZRz+FodQtDDbeVfGZ7dt5Jk3BeHxjMY/A16L4d1STWtAsdRmhEMlzEHKKcgfT+dcYNP1xfEuoan9guvKurRIFxHHkEdfl83j657mux8NWlxYeGdMtLuMRXEFtHHIgIOGCgHkcV34JVU5e062e1tWtf0JlboeCeJ4Xt/GGtRygqxu3fB9GO4foRW98NLeZ77Vb23uBD9mhSNl8veX3EnjkYxs/Wtv4s+E5zL/wkWnRbwqBLxFHIA6Se+BwfQAdsmseC00HTo2lsdWhin+xRLLNBfsjeeCTKAFIJDfIAQGA/ukZI2rUnWoOknZ7d/6uCdnc6/TY5J9PuFZbySSQywNJayiNcl2YsAT8rfN15xjHseP+KGo2t1qthY27iSWxR/OfOcFtuFJ9RtyfrVzZ4dgmuFh1qSITS7/Ji1BhG+TDkOwkbn5pASCwxvOflqnBo/hYX0UnnWDWnlSCW3N8vFwMEBcyKSg+YBiwBwOTkZ48PlvssR7eUr2vZeuhTndWOe8MQvceMNFjiBLC7jfA9FO4/oDX0hXlHwn8JzidvEWoxFAVKWaMOcHrJ9McD1BPsa9Xr046tsgKKKKsR4v4tcx3b4vlstw1MbmUN5o8w/u+em7pkc1BqmpL/aNjepp8qR6Za6eWMf3LTJ3lTnnlWC/hzXda/wCHrBNV01EEii9u5nkBbeASjSHbuztywB4xWeuk30upeRcW05sbhmFxMZ1JOC4UsMfN8qx/Tcfw8LEVYUKnLU31fbRt/e7XNYptaGDaXEUniSOwidWux4kuLgoOSIwnJ+n+BqT4hXk51x0t7Z7j7DYLMHT/AJd3MytuPp8sePxrVk0rUbc3U1hZzG78x0DeasZeMBypL9WJKx9h9/HYkNksdSf7RJbWs8wll2iR7hT9ottr4JPckgYB4xIOOtckalJVo1k1ZK263fz7FWdrFE38Nt4u8zSrgXNvf3wjutNlUb1Ypnz4++3aTzx/LFPQbxIzNptlerfaZ9lS4t5HUCa2BnUeU5H1zj2BGBW2ukXiagssdnOkgm+z/agw3pb/ADYIYcnonoBu6cVpaV4csW8QalYsZTbiK3umRX2eZIXkyWKgFvuL19/WtqDp1ZqlB3dl2+y/Lrbb8RO61ZlfEa3n0DT2vrKOKMTzrEJlKB/mBJyFjB7YzvJry2O8aEl4xDu6EyRLIPfh8j9K9f8AjNk+D7fb1+3R4/74euIj1LwzcXkMc1lbwxQ2kIMywZ86QAGRdoXhslgCRyRy3THv8qI5mJa3NzZ+H5tUW6hjLWquIPIGyRmleMrtzt42A5AH3vTro6TPe6q1hI2rTzz3cZljidDIIP3iREqrkj5S0jnGPkj/AIdxK5q3OiLBEJIbJJzpzQsps5GKzgDHUfNIxxk8EbvvkDFUpZtKufElkP7PWPTUi2zwQxsW811JcdM5WR9g4OAoxS9lT103H7Sfc6ixurq5+wm71aFYL2NzvIjjjfakZYBip4DPIpyP4AOOTXLt4z1iGR4EkiSOJmREa3WNgAccqD8p9s8Veln0EpPdfYgsctx5kKPatmSMPAW2nbjChLgN0+97nE9zc6f9ouBa6Sgge4t/LWXTsMdm4zI+1PlOApIT+EZxktmPq1H+RfcP21T+Zlvwr468Qarra6dqd3HdWl1BMpBiVSuI2YEFQOeMc5615lbwmeVUUEkkDCjJ69h3/Cu+0RbNviHDc6dPDJaT/aBEkSbNgEB5KYwoJJx0ztJwoIFcTp0MU7sklzFATjHmkhTz3wK2Mx8VgHKMI2KtgDDggnC5wR94/N9wfMM1I1jGsbEwEc43GQAA4Y4J6Dp9w/Nx1rXt9Ft5dxbXdL3FQvzzNlgAvBwv3eOnB561ZGgWny48Q6TkIUyLh8jgjA+TGznp196YWfYtnQbaNiPK8MNk5yNTYgfm1QzaTbKvMPhoH/Z1Fv8A4qtiS6tnyfN8GJnnAtyP6VhajNG/KXPhpdvUQW3X81oTbNJxUTn9Xhhjkbyksk2tj/RZ2cH6ZJr6C+H/APyIuj/9cP6mvniSUTLOGNovcMse0n/dwK+h/h//AMiLo/8A1w/qaGZHR1A97axXcdrJcRJcygtHEzgM4HUgdTVLWNY+wbba1QT38wJjiJ4Ud3c9lH69BWD/AGajxSC6Z7i4mYPLc/dfePulSPu7f4QOn558vG5lTwrUd3+htTouep2XXg1wGvfCTR9Tma402RtLnY5KxqGiPvs4x+BA9q6PSdXlWZNO1Rh9pI/cT4wtyB+gcDqO/UcZA3K7aVSnXgqkGZtOLszxz/hS+p+Zt/ta08v+95TZ/L/69dJoPwk0fTJVn1KRtUmXosihYh6fJzn8SR7V35OK5+TxK15dSWuhWp1CWIgSyBwkUWfVjnP0AP1q2v5n/XyKhCU/hW39bnQAYGB0ormLm68SWuPNm0lHblY9kpB56bsjJ9sdcDuKlfXtQ0o/8T3T/Lt+95aMZYl/3hgMo98GnzJF+wk/hab8n/V/kdFRTIZo7iJZYZFkjcBlZTkEeoNPqzAz9X0eDWII0leWGWB/Mhnhba8TYIyOx4JBBBBB5FYU1zqeiAjWIPtdmP8AmIWkZO0eskQyV+q5H+7XW0Vx4rBUcVG1Va9+qKjJx2OE8WXsz+F/tGkXMbRSHLzorSJ5e1iSSmSBkDJHSq/gW6ul8PSf2lcxNBbHbHOvESoowQH6MFwRuBI46nqekv8AwpbySy3OmSfYLmXPmqq7oLjPXzIuhzzyMNz1qDTvBttFFCNTZLtYMeVaImy1h+keTuPJ5csc8jFeV/ZElReHurXvzdfu7/PY09przFeLUL7Wvl0CAeQeDqN0pEWP+ma8GTvzwvua29H0SPSfOlaea6vLjHnXMxG58ZwABgKoycADvWnRXqYTAUMIv3a179TOU3Lc5H4keH7/AMReGVttMRZLiG4Wby2YLvADAgE8Z+bPPpXBaR4W8X6VpV9aR6NMJLp45EeO7iQI6MGBPOT34zjn1GawPFfiXXLbxbq8MGtajFDHdyKiJdOqqNxwAAeBVW11vxJd213cr4g1NYbZQWY3cnc4HeuwR6Ctj4tidWi8MIGW5lut7XcRYvIznnJIIG6IjjrED6YwtC8G+MtA1Br2PRo7hzGyFZLiIgkkHJyTnkA1yn/CR+JNrN/b+phVGWP2uXgcYPXvmtPwv4i1+TxhpNtdazqLo13GkkUl05BG4ZBBODQFzr4dL8Z27wvD4ch3xFvlku43jKlHVV254GJDu5+bA6VHcaL4zunWWXQEE4uGuN63cQBLRLG47kZ254OOeh4IztBTXNasmeHX9Va4RY28v7ZJ8+9guRzwASPwrT/sXxCby2sxr+pfaJ/O+U3suIxGxUEnPRmGB9RWXtPU7/qElvKKe+77X7dil4T8B+IdI1xNQ1G0jt7W1hlZm81WLZjZQAFJ9e9eYAkrjt9K9Yt9O1y50ZNSTxBqYBJzCbuUEYcIRnOM5IwDjPPpVubR9ft0Z5PEOoCPL+W32iUeYqxeZuGT6ZX2INNVF2YngZJ254/j0+RwFt4wvYYUiCWCBeObCM4H5VYPjS+DfKdN5JBP9nqOOx6V276J4lVAya3qDBzGsebqQBmckEE542kHPXisfXZ9W0y1EkHiHVJ43jLpcCaZEYjspb749xxzQ6qW6HHA1HpGcX9/+Rztx4xvAcRSabIFHB/s9VJ9vu1nXXia8u9vnQ2DY5G20QY/Svp4AY6ClwPQVqcF7nyU8pcH5EUE5+VcV774Y1c2HgTRLe1jE1/Nb5jjJwqjJy7nso/U8Cu4wPSuZ1izl029n1OFWmtbjb9qVRl4towHXuVx1XtyR3B5MZUqwouVJXZVNRcrSMm8WWwNnOLob5rxTfXUrKnmJsfIOeig4wo6fnXHx3/idYVEmpKjrG5JkuIfl425bnp5mAv5Vs+M9SsZbJtKuFlkilhjuxPAVIK78ADJHUA8+/eucg03TruxmaGW9kSGWOzbEK7ndnyr8NwCQFx2Jzk9K8TBQvS9pWV231V/63sdFRrmtE6zQorq+W8j1i5a4bZCdgmU+RJzuK7eVIZeD7cV1ukavKs66dqbg3BB8i4xgXAH6BwOo79RxkDz7whqllbX8lna/aJW1Ofdl40URttZ88E5BXHHY5rsbW1bXLlVj40+3lDvOOssiNkLH7AjlvwHcgpPEUcbyU46O2myttfy/UJckqd3uXNckl1TUodCtpGiSVDNeSocFYQcbQfVjx9AazvEVm/hyW21PQ4PJVU8i4SJcqycBeP7wySCfTBz0Onon7zxHr8zffEkMQHoojBH6kml1uweNpb9JmIYBJImY4I6AL+J6epyCp5r6Fq6bKU3SlGC2srrvdX1/JdrGIYtNuY7aQbLhrlfNiaY7nkKjkjPJxzwemB3Fa+kagbef7DdzPNBMcW0kgJJOOUJPOPQnrz7CuH1Dw8LDXbPUTcmO0eZSSpKIjBtyo4HG3dznA78CuwsrfUDcedbW0Dz7tr3Eo+UY6qp6qOvQHr1rOErvQqvS5F3XR/o/NbaEkUX/CM65Dbw8aVqLkRx9refGdo9FbnA9R2rpcg96wfGh8vw3NcL/rLaWKaM9wwkXGP5fjW8n3fpxW0dG0c9V88Y1Hu7p/K2v4i1BdXtvZqDcSqm77q9Wb6AcmqHiPXotA0uW6kBd1RmVQM8Dqf1A+pHTqOa/wCJtY3tsdctrcHUGKJNBMXZJApYI+QOoDYK8AjGO9c2KxE6UJSpx5mt/IinBSa5nY6VvEEOfktrhh64UfzOadHr9oxxMssHvIuR+Yzj8axyhXqKSvAWc4i92lb+vM7vqkGtGdWjpKivG4dGGQynINOrk7a4l02XzbcExk5kgHRvcejfz7+o6mGZLiFJomDRuoZSO4Ne/g8ZDFQvHRrdHFVpOm7M+ftSgA+IGo3rABbfU5HBbOJHUllj46ZI69hmqD6tfKdYlilSAXLhpFjjXafmz0xW5rViZdQ1y9jV2mt9YkQYI27XJUlvxAA9z3zXO3NtNbR3omRo2cjAYcgg8gjsehx7j1rok2mdGHhFwba11/Iqtql27K07pNsBI8yNTgEYz0zz+lavhy2/4qrw9dQ5+zm9ji2EcxMHyVJ79cg+nHasiDT7u5kEcEJaQqXVQMk9BkDuSeABXVeEdJNnPp93dFopJNUhhjgbplZBz9R+8HtgirTuc0423RB4c8TS6WVj0+GR72eH7IoUZJJIwV5+9kDFb6+L9agme5uNDnebyFZ3khYHyosOW4PAy6s31Fcz4a0Eajb2V/HqYtLx9QFvax+XuO9Qr785HTcOMenrXQx6nr8kaXdxqyx300dwklrcWILIIg0skbbuindGBjkgjpt5j2aOiWMqS3SfTbsWLvxFrirMs/h+aKAAzyRiM7QWcPv+9/eQke26q58V6vLL9gk0qZpppLiWOIxYYb96ygc9FJfr0I9KmbwzqUbXVgusWd3GY1CgWyPt8oNCr/MwCbVQqz5O0kdTg1m6fPf+IIrTWpNZnXUXa6tUjS2DOo2NI4jO/LMRJhBgYJAHQEns0Cxk10X3GkfFHiGcFotJulW7nWeFkh4V4wM7cnGCEyc8HBx3rA8R+K/7QszYT2As2tWkUQRoVEbtgMCCTjBHT610dpp2t27QW9t4gtkkimFqtylsp3YJiVGfOTKqsSE7Kc5OK5DXtEuE0L/hIbyQx3d5dslxZtAY/KcliTyep25wBxmj2cRrG1Fskvl5WPo3oK4TVNe1S51G6v8ASpW+waS+wwBQftrD/WgH/ZHAx1YEVu+LNVlsbCOzsWA1HUH8i3z/AAZGWc+yqC34Y71yN1e3Hh8x6ZptsXSKNPszFcq5JIYuf7xb+ea8zHV5OapUt9/u/r8+qM6FLm1Z6LZXcN/ZQ3ds4eGZA6MO4NT1x3hq4Gi6xJoj4S0ugbmxGeEP/LSIfQnI9m9q7Gu7DVlXpqSMZx5XY5DW/D1pZtNc/YY7rTpgBcwFNzRAHduQf3dxJK+5I7gtt7CwVd9pa2/lzssu6NRhyDuVuOuCciuovdQtNOh869uI4IycAyNjJ9B6muRlk0CSZxBrHkafM2+a1SNhk9wrdVB7gfhjJryswy+VSXNRla+6vp6nTQlJr4b/ACE07w9p+p3KtY2UNtY27OGuYl2tKx4ZYyOg7Fvqo7kdrFFHBEkUSLHGgCqijAUDoAKxovFOgQxJFFeRJGgCqixsAoHQAYqaDxPo1xMsUeoQ72OFDkrk+gzjmvSwtGFCHLzXfdsynCo9XF29CkWGkeMC8ny22rRqm/sJ04A9sqePUiretkySW9u1xDDG+XBkbaWZccZ/HPTtVzU9Nt9WspLW6UlH7g4ZSOhB7EVzJjvNNvg2uw3GoQJt8u7tlyQB0MiD5hjrlcjJroenoWl7VJp+8vxttb8rFufTrSW3mW7naWB02Osc0ZXHrzjnPfrUXha7fT7ybRbyXzAf3llO3SeMDoD0JAAz+NSvr/hy7t2WbV1aIjBjkO1v1AbP45rImX+1oBb6Ktxdusqy2180ZhjtmB5bcR8xPGQowevWofKneBtThVcXCsmk+r6Pv/n3XyNzxHJ9vvtP0WL5mllW5uR12woc8+m5gAK6EAgAZrM0bRxpyzT3ErXN9ckNPcMMFyOgA7KOwrUrWKe7OSpJaQjsvxfVnJ6og1K5v45FWRJFNuqsONoBBB/4EW/Sufm8PWPifRvDU93rl+hktl2w/aAWkkCjcylurg5yOpHTpg7GqQ3DQarb2jlLotJtKnawLEsMHsSCMHtkVheEJ2fw5Hod7ZOk+najFHayNn5pGYyMOf7qbyR3U4715WXtyrV3J6823pf/AIY0rK0YW7GNpVhqtjY6ve6nreqRQWVwbOyjRyXu5gSAqo4Oc8cAevoa6R9S1rStDjvNX8P3reTCrXM0bwnnHzNsVsgdzwMd8U+PUE1X4stp2ENrolq8ltAmArzELuP1Acj2259azPh9pl/HcavqniSGaGbVpRarDOhRpmYlnIU9gOnsG9K7K+CoV7c8fu0MoVZw2Zcn8RXltq1tpMugXQ1G6TzIIftEXzLzzkNgfdPX0rqPB+o/brO7iaB7eS2nZHhcg+W2fmAI4I3Bjketc9HaXcnxU1PXdTtpodN0uzIgnkQhThRnB79ZDxWr8PVlbRvtM3Ml0qzyN6vIzyH/ANDFY08JRwtWLpLV3W/S1/zsXKpKpF83Q84N2F8feILM3AiaeWUQRyE+XLMJ1dQeuDwcHjnA7nOpfapFr2mQWXiLSjYQ2krRvqSy7gjDlkwAcHpwc9q47XpRD8S72Vm2rHqZYn0xJmteDVZtftZfsNs9xf8A2g7ooGEczoxZt2QOQOnqvGScjHoNXIhKxuaVqdr4bmuZPD+kSajbyRLGt9LLtILfdU5Uc8jIGO34QAbJPC4M0Ut3/bMb3XkPvSOR33FAemQpXI5wc8mqNndSQa9Yf2vDLYSo/wAsU75f5RkZyBtXhcnqe2MGqXhuUFtDjyM/8JAjY7/w0JWKqSUvU9PuPhr4OtbaWd9HJSJC7BbmbJAGePnrgBq/wwK5/wCEc1MD/fb/AOPV7Nqv/IIvf+uD/wDoJr5v0HThqUoQlQIVEhV1LK+CPlOCDg+xobSV2RThKpJQirtnZtJ8PlUs3g7XAozklZOMDJ/5a+gJqKXUPhrFIUn8MatHIACUdnBAPI4830qrdWeq3dzFM89sHjnluMxmSMvJKQWJIORjCgYI4Ue+cXVo1k19xPNCslw4a4aKPbHCxPIAz2HP41CqRlszapha1JXnG33HTWl58M7y+t7WPw7qQkuJFiUtI4ALHAz+9967xvhh4PRSzaTgAZJ+0zf/ABdePwWkdp4n0RYi2HuoWKuysV/eAdV4OetezeL7t7toPD9q5WS8Ba6dTzFbj7x+rcKPrntUVq8adNzMnTanyPcx/wC0he3kuvzxySRSk21giD7sIPzPyQPnIz/uhfWpJb9ZGHlwzKViaXzHUbV24IB565wMd81Lc2GoSToNO1BbC1SNY1txbq4GM8gnoMYGPaskalcSadK32zUvNjYN5n9nLnBG0BVxg/N8x5yMelfLQkqs/a7v1fXvpb176nevcjy2Ld01xq0ZhitntL23IuLSV24Ei9ARwQCCVOexNdnoerR61pMF7GrIXGHjYYaNxwyn3BBH4VxljHq15bwXK6wwiL5ZJbJUdgG5BGeOBj9a0LC4/sPxJuPyWGrthhxiO5A4P/A1H5r7104DERoVfZ3Vn2vp96Xr9/cyrx51zJHNa/cyah4ivZZznyZWgiXsiqccfUjJ+tc9fT3Z1W3tdPeHgbpo2I3Yz3zzjH93mtrVnEOq6pI4O1LmZjjrjca5rW4I3vbLUHMi2rqqvNGcNEc/K3t1/TFevFc1R38z26snTwsFDT4dtNOv/BN9lXPA4prxo6FWUEHqDWZFqlzaW9y+qKkiwOI1eAqWk6jJGcDp7VpQzR3EKywurqw/hIOO+DjvWUoOJ20sRCponr26nonga9mu9BMdw5kNtKYVdjklcAjP0zj8K6QgHqAfrXKfD/8A5A91/wBfJ/8AQVrqXlSMfOwGa74zUaalN2R8liopV5xiurEMEbMGZAWHQnrTgoHIHPrVc3qA8Kx/ClW8jP3sr9RXMsywjfKqiMeSXYsUUisGGQcg9xS13J31RBg63bG3uBfKAY2AWUdACPusfbsT9PeuDstCv9TFqbyW80sWrSTzSQsI5p7qQneykE4RVwoPcZr1llDKVYAqRgg9DWJc6FJGS1hIuz/njKThf91v6H8xXl4rD1oOdXC25pWv307fqdFOcZWjU2RxS+BNLF39sN3qRvN2/wC0m5/ebvXdjOatS+FLG4uYrm6u9TuLmH/VSy3rlo/oc5H4VutbXkZw9lMP90Bv5E0+PT7+Y4S18sH+OZwB+Qyf0rxr5lJ8vvfkddsOlfQxpdHtyhE11qdyJB5Zhe/mYSg/wEFuQfSu00uyFhYpEQoc/M4QYAPoPYDAHsBUVhpEdm4mlfzrjGN5GAo9FHb9TWgxwhI7CvdwWGq0lz15OUvW9jiqzjJ2grI8g134S65qfiK/1G3vNPSO4uHmQO77gCcjI2EVSX4Ma8EkDXmmEv0O+Tjn/crlbUajqNs97JrDrLI0hWOSaTfMUUM+CAQOCPvEZq7Z2F1daY8x1C9W5ycL5rbY8HaFcddxJXgHIDqQG+bb6JidAfhB4k3xuL/TFaNdgw8nI9/kq1ovwo1/Tta026nvrB7e0ukuGRHfJwwJx8nUgetcC8uoQytFPc3sMyHDxySOrKfQgnik+0Xf/P7df9/m/wAaBn0pqv8AyCL3/rg//oJr538OLcNY3/2IE3OxFTaQDy3PX2FdF8Nry7bV9Wt5LuaSBtNldo3csCwKgHnvyfzrE8N6PqWtaXJa28aw6Z5ge7vSOUUDJHvwOB3NRPWNjfDO1S+uie3oTCDX54G8u+jk28MsUqhgfTIHX8ax4rf/AE2O1uFkiJkCyDb8wyfTua0odSNx4mt5LeH7LbJi1itxxsiGQA3q2fmJ7sSa09ejjSTT7w7lkjuFTcgyxU88DvyOPrWXNyS5O52qisRRda7vF2abvoZkUH2bxNoSbJoj9qi/dSsW2YlAGCQODjNev67YWF7qzzSQXK3CKsTSW908RcdQDt6gE9/evIVtUs/FmixrH5bm6hZ1UsU/1gxtLcnjr71654geVH1M22DciCVoVZQwZhFnkdx2+pFc2LbcKcU95Jfmc0larO62Rl21ho15GZLW4vp48ld8Wqu65HUZUkZGR+YPerP9kWJ5zqX/AIMpa5XwxrVrZaDYxafo9wl5euRFaxZIu3+6zrIxwqjaAQc7euCCSNS48W/2fBqY1PTp7S/01Y2ayMyP5ocqBiUDHAbJG38etcdfB4r2j9jbl8whUp8vv7modF09jknUs/8AYSlp8OkaZFPHK8V7MInEgjlv5HXcpyDtPBIPNUdT1fUtD0/7Zq2iPAHZI4I0vkkaWRj9ziPjjcc+2O9XVfUo2Kalp32FiuYwLlZvMH8XRBjHHOe44rnqYfG0oucuWyLU6Mnyq5zup86zqWcEG5l4PpuNY15axBbSyhXalxchnUnOVUbj/IV2viPwxfLfyX+nwm4t7j948affjY9TjuCeeOck1hf2XqBYMdLvdy9CbZ8jPXtXqSjKM27HuU6lGtQiuZJ2S1/FHEtlrLXSnOLlC2Ow3NzW/opszpoOngiPd+8Bz/rMDPX8PatZNJvoyxj0i6Qv97baMN3145p0Gh6m7+RZ6RPGWOcGHykz6kkAVU5SmrWZlQpU6E/aOpF6eXdvT7zrPA0wh0O7bq32k4H/AAFafr+oWqWslnd3/wBkuL2J1ikJYbegzkfd5YD6kVXlb/hD9Fgt1j+3X0sg/cxkgyuxG7bweFX26LWW+s2mt6nabtGjuDKjw29xNMwXJRGIACkj5sqXx8uw884rwcS62IrWafs4X2a3XXXz/BPzPHrTjKpKcerKCW4migB8T7WltyiSASoQu1kC4JACk/MGIyWXj0E1isEV6NV/4Sd7yxtMyzrMX3APwCVA9VOBgdqHNhZaXpMx8PzvHdWxmMMN1I6xKGUxh8gbsGXPI+U5xnrVUXml3EUER8PpFDcI9u0Ud86L5cZBAZVABcliQDz71t71SLtezuvsba3+Zhseh2N+skUdxbsWt5RuGQVyPXB5FbCsHUMpyCMivPrbxL9k8Lrc22kzStHItvb2kLvL5vyhjtYrkhV3Z46oRnvXZafeRS2ccsTh4pAHjb1UjI/nSy3ETwsnSraQ1tfo10/rr8xzSkrrc0KKa7rGjO7BUUZLMcAD1ritU8czzz/ZdAtzMxO0SlCxb/dUfzNfSTqRhuKhh6ld2gtuvRHb0VwAsPGt0PMa4ki7hTKq/otMfWvFPh4htShM1v3aRQV/77Xp+NZ+3tq4tI6v7PctIVIt9rnoVI/+rb6GsrQ/ENpr0DGAmOdB+8gf7y+/uPetV/8AVt9DWykpK6OGdOVOThNWaPnHRgT4YmcTWy+WZ+JDEHUGMZ27vm56cfhzXoV94cTVNMsL3TXRNZisYzJFv2/aI2jK4buDjcFfsR7ced6ZNBB4QuHkiMkyvKUAk24UqiEkbTnBdeMjPPTHO/4p1S80PWvD19YSBZ00uIEH7si5OVYdwf8A6/UVwY2NWVSmqMrS970emz8mEbWdzK1K0S5gtIbC0uUeANHKblh/owX7yyHtg5IzgAepOFw0dXGVPFeoXEFt4405dc8PNHb6xCAJYJVVlkI6JIpGD/ssR+WOOSuraHXp5youItVgjVZIJmP7jaAuznmQs5wOcjegAbnG2GxSrppq0luu3/A8wasWvht/yH9U/wCwXN/Naq+D/FsmjWP2ItF5THEkM3Ec6Hqu7+FsE4PTp1q/8MraVvF+oWMytBM2nyxsGHKEsnPvXRr8Mo9N02OG41KwUJlRcTW4BbcDwctjvkd/lHOBiumUeYqnVdN3WtzjW03StN1x7yDV4biwH72Hc/7wFh0Yeoz1Gc8VS1DWlv8AUrUWx2QQSBg7nbub1Oc4AHqPWvQD4M08ypIuq6Gu1nZkEK7H3A8Ebs4BJI59B0ApjeCbFrUwtrekglChkSNQ3LbgR83BGWA9iBzgVHIubmept9aap+ygrK933ZwcMlq3ifQksJfMt0u4sf7JMoJ4wO9e0XU8lrrNxLGpfJCsgPLcDGPU+x9a5aTwVYS6jaXa63pVsLe6S4ZLeNVDYx8v3uB8vvyT611F21vNfvNBqVgdzq6hpx1GOPzFcuKjUUYOlupL7tbkKcZyk56XRwekWh0PxU+r6XpU93okc08NtBBMruhG1DIoJyyllYD09fVLrQ7/AFnWUvNVhQLqd+s15FHKGW2t4lwiOw4ywJHH90d8gd5b+H7i1gSGKOFYo1WONA5IRFGAORk+ue5JPepTo14eqxH6v/8AWrOpi8SptQo3Xe4Rp07az1OJ1Hw/aS3mlWdpp6R6Ussl3feWNqMVT92rHORn5h9HretNNtNMt3isYUghOWMaDALEDJ/8dH5VsHRrwnJWIn13/wD1qQ6NesMYiGeM7zx+lebiPr9enGnyNW31Wp0U/Ywblc8w+Imt6taeN7yC11a9treKOLZHDOyKuUBPAPrmsGx8Q6nLexJe+I9UitWJDyLdyZHBx3PfFa/j+6Nh8Tbm7RQz24hdVPQkIvWnzJrF1vjOk2DC4hSIlHwAhLFQp6ZDcnryBXvVanJp387HJTgpa/oc6viXXWUZ17UgT/09yf416b8INT1DUItYXUL64u/KeLYZ5C5XIbOCfoPyrjr/AFTUY7S8ubm1s41nCwOsLkMpYF1wMYztkyfXHrXT/BQbYtbH+3D/ACarpzc1exM4KJ0/iu01qe6i/sW4WA+XN5pboSUwnGRzu6Ht1welY9/Y+J3iYwSu589mSMXG3+CPYWIwSgYSZUEfeBweld5eQGRQ6/eX9RXL6leTWeqwsv2to2Qfu4YgyHBOdx7cEfp6V8rilVoYlwUY2d2m1vfX8DaNnG5Vt7PxJHqk0jXkX2dnuDCsgLhNzoY92GG4bQ2AMbfU5pkema+l1e3D3rsJb5DFD5h+SASKWxzgZUMMYz7mm2tzdQwu815qBitwI5FeBWaVmGAykEkYPJHqPwpXurqzkeN9QvGihcDetqG4DYKdcnOM5P8AUZ5/3l3bl/8AAX69vT+rj0Kt3pnik2FwsV48kqTpHBtm2s9upY72OR85DKDyPudea7HTLeRtOgEoYSrGquGOTuwM5POTnvk1X0+eS/t0lEbIzkgKy7Txx0yfet2KMQxhM9Op9a6cDQnjZtVYpRj2VtdrEzagtDi/HGpy3N3b6FZkky7TKF/iJOFX6dz+FcnHcXvg/wAQypFLHLPDgSqp+SZTg49j/I1vwTxj4gX15d52WzSNgDJO1digDueeB64rV8S6FpJimvzEhDuTPsbBXszoezA4yOjbQCCcV9EoOo3O+t9D11ioYNQoSjeDV5fP/I39G1m11ywW6tG46Oh+9G3oa5zx743HhZ7C1it4rmW6YtMkgyFhHDcepzgduDXF5vvDWoOElfy5CYy8bGNblFOGAPUHtkcqau6hZ6HrqWnnW/767VvN1BpWih0wDO2IYGwfxYBxuPPVgRtTqc3uy3OHG4L2FqtJ3pvZlaw1TzAPEej25tIo7p4PILZAwAwH0ZT07EH2r1u1u47/AE6O6hOY5ow6/iOlea+HdBn0r4Zaot8FLyXRmjZTkMqlVDA9wdpIPcEHvW74a16y0bwpC2qXBiRrh4YgEZ2Yn5sBVBJ6ntURXJVcVs1cqtJ18JGrL4ou3quh5Roc0cfhi5ie6iQSmZGhe42nJRSGCAgn7uAcEE4HJ210d7deG9Xt9Ok1ax1EzW9okQeKWJU2rwWz5mAN2Rk45468VzP/AAitxCzKt1E6A4V/s9wNw7ceXxVmPSNQiQRma2khWLyTFJbTlShfzMHEefvnOc57dOKKtGFVpttNbWdtzz0pLodFo934b0C/F5p9lrUU20jyzJEfPXGeFL5cdCCufUUzXNe0vWrs32mWl7a6vbEwu0oSJZSQV8pjvzvxuAK/MP5YzWeqs0btNaeZCuyCT7JPmFcYAX930A9c1JFHrNvdS3ME9rFPM/mStHbXC73yTuOI+eSePu+1YRwVKNVVuZ8y63/AfvWtY0vhZdSXnjyaSTjFi6quANg3qccADqT0AHPAA4q98cCd+h9Sv74lex+5VPwDbweGddn1PU7oiNoGiRIbS4Ykkgk/6sADir/xKvbPWbjwte2ciXNnP55RsfK33OoPuMYNdrdlcIQcpqO19CnP4S8GqIil2QlyjSBhKSYQFL9M8nEkQ/4Cfeq134Y8PadayStFDcukN27ILzlCp3QcA55Tj3xXOQ28cspeK2tvNkt1cI6Dy927HTtxTDb2qzgRRps+3KoyO2OR9M9qn2iOt4GSSlzI1NB0DSbzUtIiuY1mW406S4mjM/l5lDuAN2fl4A4qPxboGiaXoNncaTMJneZkWbzg5uExkttH3drYXjHWqjWkLwq/lJwJd42jn720/hiqmoQxW2mRyJEnmXMajdtHygDJ/Ekj8qFUTdhTwUoRcm9Er/l+rses6t4u1Dw7oXhqGxhgnkurIO73JY/dRPQ9Tu61kn4na8hG6x07/wAif41B4x/48fCHtpzf+gxVn6JqlvYvcw3MskEN0gzPDneOGGOOSPmz9VFTOTUrXOrCYWlUoe0lG7v3Nt/iVr8M8kE2naessZKsu5+COo61t+D/ABvf6/rsmnX9nbxAW7TI8LMejKMEH/e/SuR17WrW+tUt7WeS5BlMzPKCPLOWOFz67sE/7A4q18OmH/CajH8VjL/6HHRGbcrXHXwlKGGdRRs/V9zn/iT/AMlC1HP9yL/0WKztJ0vUdfllS1u5Q0EYbzJpGCq2flUEZ7bsenNbnjuyt73x/q7TahBZtEsChZf+WmYs8c+wHPHPXpmhp8suhwSJbeIrSJJSjeUEWUNKcgjr8uMD5uhyKivUai1D4vNP/I82nDVOWxi38FxZXs1ndmUSxN8yu2Qxxww/Dp7cV6P8Ffua5/vw/wAmrjb62h1a6a7u/ElvO6yfZ/MMQTagAO4LkfLliOAckE5ruPhDAlpca/bx3MVyFNufNiOVJKsTj6HI/DtV0qikknv8/wBSJwa16HptV5bRHJZTsY9cDrSX+o2ml2rXN/cR28K8bnOMn0HqfYc1ydz8TdPR2Wzsbu5APEjARq30yd35gVOIo0a0OSsk0VRpVaj/AHUW/Q6RrKYHjacdOacllKcbmCj25rmLb4m6e7qt5YXluCeXULIq+5wd35A11mn6nZ6tai50+5juITxuQ9D6EdQfY815cMlwTd1d+V/6ZpVVelpUjb5E0UCRD5RyepPU1JRRXs06cKcVCCskcrberPM/FdvLpvirz45FgE7xzxyuhZAVYE5A64K5IHrW3fpquqw3S2WlrBeKAj3jOuJExuAif7zZ3YBIAz1HVa2/EOhRa9p/ksQkyHdDJj7re/se/wD9auP0vxDqPhOUabq1s726/cGfmUf7BPDL7f8A6qx5vYyaezPVdP67Si6fxxVmu66NGxq2gadHHFpUcEVvBNbutozEhYpwQRg9i3X/AGtrZzzXE211feFdVE9pIJYXZlV+kV2isQSPx/LryDz6H/wlvh6+titxcJsYfNFPCf1GMGsPxN4m0S/0xrCG3a5AH7uTb5awnGAVzzkegGD0oquDXMnqbZf9YpSdGdNuD3TX46i+JvFVpqfhmJbNvnuWHmxn70QXkg/jjHrzWX4isTpmh+HLeX5Zna4ZgeDuaFvl+vIFW/CHg+WWePUNSjKQqQyRuMGUjoSOy/z+ldf4htbCbTJp9RsLe+S0iedY7gLtyoz1bhfrSpxlNucuqsRiqtLDuNGg7qMuZ+vRfI8s0kW0FxK2p2sssRjxGPKLbXyOSMr2yOverqPoCiLOn3p2SmRwyE70Jb93nd2G3n1B9atrf6I9il4vg7SXiNnNduEIJXynCMo/d4PJHOcdeuBl327QZPtElr4L0+4tra3luJJkCYCI0yqfuYw3k+v8fAODVKhZWv8AgXUzdzk5OLXpJ/5FRJdA3jOmXiJ5ahty7zn5twHIGeVw3t0FIJtESO2I0y4dkhImQoQXl29d2em72/DtWnp1z4a1G+1W2HhTTlGnwyzB1RG3bDjDDYNhPUdcjPpVK11vwvcR2ksnhPTIY7gpvZ9g8gNKsZL/ACcYDbvcYPGeH7H+rGf9pvs//An/AJGNexxy6hK9jbypaF8xIykFB6Hk/wA6Ne3XGkeFWs0FwTPqEiqjD5lEpJIJ46ZNdJdX3hWAwiPw5o8m6/kspQSmYgr7FbaFLHdwQAO/XHNU/ijBBpMugx2KfY4YEuBGtviMLuKA44wAdxzThTUL+ZniMdPFOmkrOPnf7/uOPXR9XnM6WmnSYib7DnzUO2ZDvKk5xn0x14HWpmiutHS9m1XSQLe5bfH5rgtHKAr5Xacg4IOemGwc1HHqN2H3R6hqCtPIJ22yDmR1YFsY64Uj8RUUuoPc2eb+W5vI2UuFllDbfuqcEdDjaMf7NJ8vRGsFXUrzlG39eXmIttqUWm/b3s2+xG3YvLvXG1nwGxnPVhx1wabqek6tb6PK15p7RW8cEUgdpF+UH5Q2M5IbOKHf7TBFYPc3UtoiExwmQYwCeAMc8jP5Uy+uJr61jF1d3cyvEUXfMpUKuCFHHPIBxweKd4X2M3DEyVnJNbfl5eaOx8XAva+DlX7zafhRnGTiLHPao0u72K4vEbTIZJPPkupIpZVKxDeobI/2WXAP+0eKm8Tq8ieCkjjMkrWICRg43sRFgfiabLq99PqN9dRRW8t4ttKLia3kIIj3gkc4yy4wPVR3xSn8Rvg7ugkknq936EKzaiwhiisVLSbTCxmXzGKkAnPU7vLYNnjPuObvgszH4il7hCkstrK+0ndhSUK4I4IxjB9KqwXd5BPaxwWkEj6Zb/a4YRIxHlt8+R6th/yHqKs+Dobi0+IywXshluUtpVkYtu/uEDPfAwKUfiReK/gTVktvXdeZ1GrzeA7/AFCSTVZtJlvE/du0ki7gRxg89ulUvs/wz9dF/wC/i/415JfWZutf1XaFCpdSl5H4Cjeag8rTDwLp8/3/ACvl/wAa3uePGjKS5tEvNpfmeyw2Pw4uZ44IF0aSWVgiIsgJYngAc9a3ZYtG8E6NdXVrZxW0I+ZkhXDSv0VfcknA9M14Rplk1n4q0ZJEAJvYSrL0YbxXp3xLvWm1HT9NBOyJDcuOxYkqh/AB/wA6mcuWPMaYfDSq11Rejvr5dzDltNV8UTpquo3VnAkpYQG5uAkcYH3lRevGOTjnGTSnQY4QTdavaDLMiG1VrgZX7xcr9xRlcnnG6m2v2G98LXqTW09xdabukRVdVT94yKAD97d8h4GM8gckVDPeW9labYNO02aN5VWHaszAvPbiQ/ecEgkRAAgcD1rKFOM0pPU9DEY7EYWpLD0rRjHbTp39Sxa6VpVzB5h10OMMxkgtmaNAqGTknByVVj+GOtSWdqdJV9b8O6zDLJbpuubeZDGWXdtCsBuBycgcjB6Gq099qun6UyRaVaxJMJZEWOx3FUJC7XXHGV8wY9GGa3NQjivdFvltbCGzvrhUubgpkicpl2AGfkOSxHXPPc1TpRirxWphHH1681TrSvFtX0R3eiavb67pUF/bZCyj5kPVGHBU+4NX684+GV8Y9Q1DT8ny5UFyg7BgQrH8QU/KvR6uEuaKZyYqg8PWlS7Biobqztr6ExXcEc0Z/hkUEVNRV2uYJtO6Oek8D6HI2RbyJ7LK2P51CI/Cfhy6EbNbLejBCEmaYehC8sPwFR3+qtqq3Mq3j6f4fs2KT3kWRJdODgpGRyFDfKWHzMeFx1Jpj3aSnT9D0i30aERrN5l4hZ5QSRnYhGW+Xnc4YZGRzWapwTukbSxNaS5ZTbXqaJ8W6OmPPuJbZT/HdW0sK/8AfTqB+takM0V3FHcWs0csTDKujBlYexFctZjxdp9re3V9JZz+U7OsAR3MqDoEIOVY88YYdOBzULRG3v8A/RrceHdZmOYxu32V8391sYBY+uFfuMgGtDA7MKQABtAHbFNBAAVXQAcYA/TrVPRtWGrWrs8D2t1A5iubaQ5aGQdRnuCCCGHUEGuUk06yltXkksVuruS4mR2KhD5ckxX+A4+YAAv1Kqc88VhWrKjHmk9BpXO33DH3055/zzQWHPzpg5zx+defas9hpupqbfRYJYQsV6zfMGjVN0bfxYynyhey5P1qup0uO4Sxn0e1Ef2FY5OJAom2+f5ed2NucZHUk85pKq32/r5HUsHVlFSS0ep6T8ufvR5+lcb4+8K3viU6fNp8sBa13hkkkKZDFSCCAehWsS3u4JYUnn0a3lme4JkSPespWWEvI4G88lR8rZ5AwMVJHcWvk280Oi2csjfZHWJN43HLqqj5scBRgdMnPJo9o3/T/wAjRYKvB3VvwMkfDXXg6ERWI2DG37Y2D15PydfmP50i/DbXlH3LFieSxu2JOSDz8n+yK0pbrTWso5Bp9pDbmCQ/vPMLTxmchkX5x82ACxyScgYxXSHT9L/twj+zh9l3GTztzDEhGzfnPYfKOMKOQRWU6sIW5rK+i1fyLqTxNL4rdei6b9Di0+GviGI/u47MDaUwLtsEEk4+57mmP8MPELps2WQySSxu2IJPcjZ29qv3d9NpXhHQYtNvU0+Ke/MEk0CEqis77vlk5Xnkg9MEZqm2oavFJFG3jGOZyd0xiEWIo1B8zqOW3bVX1zWP1m7do992+non+Zl7era1/wAEa/jLw/q0X/COjTbae8On2phM1uAGVxsw2M8fdzWItn4tSQyR6TdI7ElisEShsgg5A4OdzcH1+lTLe67FBibxTi8Fz5JiQQkSJ5iJvBxwNr7sn/HCjVdRaOCSPxe8olw6qqQhim9hjBHDBQM9s0PEt62X3v8A+RHSxE6UeSNreaX+ZALHxarq6aVeJIgVVkSKJWCqAAMjngACtbwfpGujxpFqOpadNAiwSLJLIEUEkAAAKfaqMepaozwqPGPn+bFG6+WsSgb2YBjkZCgKuRgkFucDmt/4Y6vqOr216+q3f2maC4aIOAAMADpgDPOaccS7p8vVLd9fWKHUxVSpBwdtfI4VPDupavdXdzpwhMCanK0pkk2lmDkgdD7D6sK61H1Z7gXjaTBASSSILnZk+ZvKsdp4bOGH8RUn2rgDqL22s6pA1xLCn2yZkKuVUNv/AIgO3Cn8BTN+uBt/9pyqMYEi3JCBeuBzwPaivh6lWXvNW6aP/MXLKcVOHvaWsulu/wCZqwaHqOl6rpr6qIkc6nbyJHGSSm5/XGAPlYAZ/hPGMGuj+JQaPxOrnOGsUwfo75/mPzrjLDUJn1nQrD7ZPcwR38DsZHJUtuVRtB6ALxXq3xH0d7zSodSgXdLp5LOo5zEcbjjvghT9Aa6eSbpNS38jfC11RxcJTd7aX9b9fK+5Y1i3j/4R+LTbeawaSyjR5rOeFZvNVUzs8vIIJIBB9veqmia7q99eiC2061jQLG8iT28ltIq/KDjgqcdhnpgdq5S91rRdXuTqGp6ETdvtLXEN2wBwAB8pGOg6V0L6FZ6tBa3KDUtJkVcRwCRU8xNzMWOORkuwxkH2HWtozjL4TkxGFr4fWtG1/Qva7cT2miyzAHfId5H944L4/EisWFE0vTmdmDzxWTyXMhPLSOCqg++XX8/atLV5odO0HTLK6vnC20iqJzH5j3BVSD8uc98k54OBznFclq2qwzW/2azV47JWEkjyAKZSOnA4CjJwM9Tk+yqVFBPXU1wWCqYmpFpe7fV9NDU+G8bHxRK4B2x2bBj7l0x/I/lXqdch8O9HksdIlv7hCk2oFXVT1WID5M+5yzf8CHpXX0Uo8sEmLMK0a+JnOO3+WgVkeJriaLSfs9o5jur6VLSJ16oXOGYe6rub/gNa9YfiGRYr7QpZM+Wt8c/UwygfrVtpK7OEZLc2Fpf2XhVbJWtprRgQx+RYwNoUjuT/AI1HrtpLpem2Wo20k1xLpB3MZH3PLCRiQE9ztwcnuvrU+p+JdD0u4tn1CTy55gwhIt3kcgAbsbVJHWm3HjLQIre1kkvfNivY2eHyoJJd6jhshVOME4IP0qVOM43iy4twlqjbhmjuIY5oWDxyKHVh0IPINYHiOze3nj1y0ge91GAJb2sD/NHH5kiq7gcfNg8ksBgduazdJ8RaZ4at/wCzb69Yxf6+yCW8zuLd+UDgJwRyMHnjoK1LnxxoNnevaTXpWaNlR8wuEViAQC+No6jqaHNLcUo2dlqh14h07xJp1+MKL8fYboDOCwVnjb8CHX/toPSudvby304JGZFguJJZnxJbRgSBpyqnPIJyw6EZBydpNb2v30dxDYwrHIJW1C225AHSVSf/AB0NVWXwvfSOWb+y5SrzSRM8DqwLPujGVYYwxLFhyckcZJOSqQq2lHVA4uOjMV/Ebx4ht9TigJK/KLQMvzkgADAONw2kYJyp5ydtXLXXxJPpE02qILS/2qkXkK3mymVtpLY4yilccEECtA+F7t5w8qaSyllDYt3G5fmZzjdgMzuxB/hBP3jWLdS6ba2qWd3qnh2R4IwiwiJ5jG4fd90OW2qM4B6nnIHFa8/kIlPiSSyuIi2oGchxCFFuNzkA5xhfyxnoezfIkviKfTnglvdUX7HLFDMvl2nzFTgYBI4LHLAHnHbtTdPfR7m6C6ffaB5pfEcTo6SEIAIV+Zgc8ZJA9sd62ZfDN5cshuY9IlKxR24Y2zcRjlgBu9eFHbqSelLn8mBj3GvXFpqUtpPqSNPbtLMFa2AGxFLNtG3k9gQSSVPFPh1K3k1C0tmkhjdrlY5IXslIuF4TMfGdm5Xbd23D2rRn8LXdxJJPLb6O88u95C0UmHYkAK3zfMgABIP3j2XrViHQL63aIRJpYjhdDH+6cFVQHHOepZm9lBxhqHJdYgcxetdS+CrN7Sxg1V/Mb5J3+2BU3sNykAlvQZG4A88g1JNo0quq2/hbRmXahfMcfDEfMPwOf06843I/DF43h5NL1Gf7RI4bz57fEJcly3bueMnqec9aim8GQ3FtFbvC4WHzCjK6ggu25iex5Hp0yK+ZqU6sajjyPd7JtW080dUbNbmNNok6GAW/hjRGU24eZniQbZsN+7A9Cdgz2yevaa80Jo7hhZeHdFuITjDPAinO3nPPTOf09cjRh8Ew29wZ41uTITJy1xnAcYYf4d6gb4eWbqwZLr5kCHbcBehyCAOAeOwHHFQoVb/DL/wGX/yXQendfeUo9GkdB5vhbSAdkjMfKjwzbAUA54y2Qfw571q+BBci2ZrzTYNOkZ3xFBF5YYepXAIPGORyADS3HguK6vJ7qRJxNcMrybZRjIIIwD06CtXQdGOjxxW0YcW8KsFMj7mOTnr3rWhCq6kLwe66NW76tsTtZ6nn198INUudSvLiLVLRY55nkUMjZAJJ5/OsjUPhwNJbbqPifSrd+uxyQ3/fPWut8TeMLnU9Xh0bSbmWw097j7JPq6Rlh52P9WhyAO2TnPccDmpp3h/TrHyDDaJdapbPJDczxfv4y5yPMcyEIpBC/KSGyzDHc/YKjZXmzibOe0TwnYDW7G4XxZpTi2uI5SmShbawOBuxk17nkMMjkH9a8p1zQ47iHTbZ9Dex0+znZ7qRRHK4h5baTGzMBncvPHAORiiym1bwgFutJSe70lI1lvLMyCSOItztgbqSoLE9flUMSQww3Ri17r1/rqF+5oeIfh9PBNJdeHkWSFzuaxZgu09/LJ4x/snGOx6CuVGoanoT7WlvdOOf9XKGRT/wFvlP617NpuoW2rafBfWUgkt513Iw/kfQg8Eeoq1XBOim7rRnq0MzqU4ezmlOPmeGLJe63dNNHHdajcNhSyIXx6DI4UfkK7Hw58P5nnjvPECoFQ7ksVYMM9jIRwf90ZHqT0r0KiiNGMXd6seIzStVh7OKUY9kFFFFbHlhWV4j0+bUdFljtQDdxMs9vnoZEYMo+hxg+xNatFJpNWYHmmtRza1caHq2mwXktqiTeabOdYZ4ywAC5YjkEEEexqguh6rbx6Wz2t9tghnRhY3ccUyB5Ayh3yAxxnJHU8122o6Ld2F9LqGiosqXDb7qwLBRI3/PSMnhX9QeG9jyebu1sdUuZYpNRSzkkmS4NlewmOVXVNmMFl3Lj04z3NeNOFTD2jb3Vs9X33+86E1PXqV7rT9ROsfbVs9XMUtpBGPst+kcm5d2RIS3znkc/Wm6h4f1C5m1O5EcksU17HMdLMoWK7iCpu6HhgR3OPl6GrV7oemxs08+rwwKRKoM7LiNHAAVfmGNuDjOeprTtbjUtWgWHSRkkYfVZYDHCo9Y0Y5kOOn8Oe/as4SqTa9ir9Nn/X6lNRSfMXLZDqfiiFEBNvpYM8rEcee6lUT6hGdj/vJW/qWo2ukafPfX0oit4F3Ox/QD1JOAB3JpmlaVbaNYJaWoYqCWeSRtzyuTlnY92J5J/pXPa/qWnv4v0+x1S9trWzsYvtzC4mRBLKSVjHJyduHbjvtr2KFFUaagjnlLmd2UNWnluYIbzxNHdGK8cR2Ph+1OHlPXMxBG49CQTtXHOSa4bSdU1HUfiXFcwaDGJNKWSMafZSLEIkUsp+boxBc9MBunQ16Hrt7oOqzRXtn4p0211G2hkjtpWuInWIvjc2Mj5sAjOeM9DXmvw6vdEs111tclwfIV42WYxPIFYsVRgQSSQhwDzitiTsfFXjqZ9Ouoj4ZQ/ZtjSpq6gqufu/KMgnnpuB9AecaelJqei6DYavpqvc2MkCS3WkrJ5vlqVGWtmJJ467CSDyAQcV5dpniG61a+02DXJo59Gi1FHeO5lB2bjj5ix3MoB6nIwMV6b4W1zQ9H1XXNPi1fT4tKSaOWzVrlNo3pmQIScbQ3YdOaAO2sr231GyhvLOVZreZQ6OvQg/56VPXI+F9Q0+LxJqul6ZfW91ZyqL+BbeUSLEWJWVMgnA3bWA4++a6i7uorK0lubhtsUSlmOMn8B3PtQA6eeK2haa4lSKJOWd2CqPqTWY3iGFv+PW0urhf74QIv/j5BP1ANZqxT6hcJd6iuZc5ht85S3Hb6v6t+A468rJ4/82TUo7K1hnlt3RbRBJn7QDJ5ZJx0OcEezCvCnmdWtNwwcea27f6G6ppK82d2NfKn97p10F/vJsfH4Bs/kDV6z1G11BWNpMshTh15DJ/vKeR+IrjvDXiH/hJbi/2QeVbW7L5D/wAUqNuAYjt939adpNyfEGmQ6nt+x3avIkcsJyU2uV79QccqeDWNPNa9KTjiYKyte26vqvUbpRfwM7msHxrqsujeFb25tSftTKIYcdd7kKCPcZz+FXtI1Fr6F0uEWO7gOyZF6ezL/skcj8R1BrnPiijnwmsysUWC7ikZx1UZxn8CRX0uHcakotapnPLQ5nQfD0NnLAuk6pcJC3GoxSR5JVF3M4QqCjq+0KcMRvUgnkVHr+rxWKpbzWwmHItrBHIghTpl2ADNuK7wvB7k81qWU8up6ZILyW9ujPDMkc95ZxwtLjymGxCQG+VGO4n+H2Fc/qd1HPr0dvqzSS6NrSwyx3Ct80MoQRmRWPcEYYen4V3xvKd5a/1/X3EMdp3jBbvWIp9TtBC5k3/aLKZ0VWAYZkBLfIC5JI6Ang9K2NfkWygM4vZEsknEOoxR2oP2iYZIKxFvlV235BO0sM4OTmp430218OXUMWjwBtX1SIW0SxIFWFMBGKr2d84z6bu/J2UdbSyeSFhLI1zDC0iIDkxKSzFhlvuLnJAwGUg85Clyu04rQPIj+G2rRNqur6XbQTWtoSLu3tpxhoc4Dr9M4x7V6LXm/hUtN8Qm8vUf7ThttMMa3W5WLAyDALBm3HqeSD7DFekVzV7c90UgooorAYUUUUAFFFFABUVzaW95F5V1BFPGf4JUDD8jUtFAFC30LSbOUS2ul2UEg6PHbopH4gVfoooAK8b8d6NqWo/ESaW10+a+gjto/MWIZ2qwYD9Q35V7JXI+MJ7rw9eQ+JbKETpHEbW8jJI/dlso/wDwFsj6OaT21NKTamnHe55ZHoervcCX+wZmkjRt0abPvZAcnk4GAB0704aDrEEKW50S6WOE+YC2zIAk3HILY6Ec/wCNdNb+JbfU7i6FzZJarcRsswMxw4YnPIAIJDMOD0Prg0SXunLZn5VYsdxRJiWLgna5JHUBmx1GDyMgVhekevyY97Ja+nX/AIY5p/D+uSgn+wLlfl+YKFxkuGz17gGkOgaw820aHcxuA27ywpZCzDBA3d8Y7deK6xr7T3vonHkqhjSF5hOw/dhcbWUDkYABP+1xiqjeJLPSdTEqael1JHJ5guHlJBOCA+McdT0x2z0FF6YcmPe6X4Ib8NtI1DS/iBcm9spbITWUjqkvUrvQfzr0XxC5d7W37Dfckdm8sDaD/wACZW/4DVDwe91rMlx4kv4RC14iw2sePuwLk59fmZmP0C1e1oFdVsJDwjRyx5/2jsYD8lY/hWOPk44Sbj2/r8DyleVX3u55dD4z1t9LLw3yXkskEckki26D7K7ShNh42nK56896sWuvy20iLqv2KGCzW6jgD2qBreZNpRTgYDcZGzg8dTXfXt1JbwB0KBmkRMuPlG5guT+dUNQ1S9s7G8uIha3JsQk8oAIDxDJcDnhgASDz9K+chiqdRWhRSu+6Xl28/wCtTVwcd2cbH4m1nT4rj/R44hsso/MjgRDBI6IxDqAPlKlwOuDgcZq7oeu6nd3cFnLJDpltMLkWkyW6FLmVXPUDG3aOccbiDknOKup4t1T+07G2uFsIEu7ZLs5/gR3IC7mdckKASQDznANXfDHiO4157yG8S3WSAI6i35Xa2cfMGYHp7HrwK3r3jSlN0Y+qd/JdO/8AV9RR1aVyfwfd38osL/UZkme9aSFHUKC0OC0Zfb8u4FW6cfP611mt6VFrejXenT8JcRlN2M7T2b8Dg/hWQv7zVdOjHJ81nOOyqjc/mVH410tetlNVzoc9rK7t5IyrRtKx5NoTytLLp15NLB4gtpEhULBvYOG4meVizMhBCn7q4cgA5BrG8Qa0dQ1WDT2SJNOguklm8pzL5r8AsGPOAvyhe2OcmvUfEnhKHXWS7trmXTtVhUrFe25Ktj+62MZHX6fnnzC58Da/pN1GZ9LN9bJIGY2bg+YAckYPIz7j86+loTpyfM3qc7ub3xD1drfXdH1HTiplhFxE6yJlXCvsZT7H5h6jOeKjl1a2XRIdReS40qF42GnOqmQW5V92HPJYu0Yxxt2rgH5TnJu9M8T+IUSKXQrlZ1uZp0dx5aKspDMnzY6MMg57niut8N/DueFbd/Ed39rjt23waerFoImPOTnqfbGOvXNElThBcz1QK7ZoeAdNuhbXevanEsV/q7iUxqMBIwMIMep5PryM8119FFcE5czuWgoooqQCiiigAooooAKKKKACiiigApskSTRPFKivG4KsjDIYHqCO9OooA8q174c3Wm3BudDjN7ZKSwtS+JYfZSfvr7E56DmuQku2snMV4HgmBHyXMZifHfIOPavoSkZQwwwBHoaylSjI9HD5lWoR5Vqv6/rU+fIbmS/ZIrFHuJCDvjtojKw9MAZ/Wu18P/Du6v7kXfiCMW1oCGFkGDPJ/vkcBf8AZGSe+OlenBQowoAHoKWiNKMQxGZV66cW7IRVCKFUBVUYAAwAKpavYNqFiUhZUuI2EkDt0Vx0z7HkH2Jq9RWkoqScXszztjjp7r7RYM6K8TrIsdxHsDPD8w3ArgjgHOcEY5HFZ2pveppF0miySGbzYVjd7YcbnAfKhRlQOvB4zXY6ho8V5KLmKRra8VdonjA+Yf3XB4YfqOcEZrPa11WA/vLWK5A4D20gVm9yr4C/99Gvlq2W1sPK9GPPG9/+A11+R1KqpfE7Hn09/wCJJFuZbuC4sDE8xgaOzExWRQmyPO0/u/vkN0PrxXYaRdG40kXtzHb2oYbphHhQrAfOW9Oc9e2M1dktNQvI/KbTGC5BxcToiNjkAlCxP0xirNv4cV7s3epOk8p2nyo12xZH3Sw6uR2J46cAiq+pV8XFQlTVNLr/AMDf7ylUpwi+rF0K3eeWTVJkZBIvl2yMMFY85LEdixwcegXvmtuiivo6NGNGmqcNkcjbbuwooorUQUUUUAFFFFABRRRQAUUUUAf/2Q==" alt="32 Hard Hat Sticker,Tool Box Stickers- 100% Plastic(Vinyl), Funny Decals Construction..." /></td>
 		 <td><strong>32 Hard Hat Sticker,Tool Box Stickers- 100% Plastic(Vinyl), Funny Decals Construction...</strong> by <em>Sticker Decals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H6PPWHY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H6PPWHY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61QBHSAc7ZL._AC_SX236_SY340_QL65_.jpg" alt="19-Pack Union Hard Hat, Tool Chest, Lunch Box Stickers | 100% Vinyl | Proudly..." /></td>
 		 <td><strong>19-Pack Union Hard Hat, Tool Chest, Lunch Box Stickers | 100% Vinyl | Proudly...</strong> by <em>SpeedSquare Tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078HG6L9W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078HG6L9W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61jWzCp5KiL._AC_SX236_SY340_QL65_.jpg" alt="28 pack of Crude Humor Hilarious Hard Hat Prank Decal Joke Sticker Funny Laugh..." /></td>
 		 <td><strong>28 pack of Crude Humor Hilarious Hard Hat Prank Decal Joke Sticker Funny Laugh...</strong> by <em>Decals By Haley</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079HNL4DV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079HNL4DV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/611EBQ58glL._AC_SX236_SY340_QL65_.jpg" alt="Hard hat stickers |Big 30-Pack | Badass American patriotic accessories for helmet..." /></td>
 		 <td><strong>Hard hat stickers |Big 30-Pack | Badass American patriotic accessories for helmet...</strong> by <em>carecreation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H4JGYRV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07H4JGYRV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51tNsd9EiAL._AC_SX236_SY340_QL65_.jpg" alt="19-Pack Hard Hat, Tool Box Stickers | 100% Vinyl | Proudly MADE IN USA! Funny..." /></td>
 		 <td><strong>19-Pack Hard Hat, Tool Box Stickers | 100% Vinyl | Proudly MADE IN USA! Funny...</strong> by <em>SpeedSquare Tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BDQDB7T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BDQDB7T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/511NMkq-zIL._AC_SX236_SY340_QL65_.jpg" alt="Classic Biker Gear Ghosted Subdued American Flag car Decal, Silver with ghosted..." /></td>
 		 <td><strong>Classic Biker Gear Ghosted Subdued American Flag car Decal, Silver with ghosted...</strong> by <em>Classic Biker Gear</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071VLP1D8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071VLP1D8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61SdkzG+W8L._AC_SX236_SY340_QL65_.jpg" alt="10-Pack of Funny Hard Hat Stickers. These Vinyl Decals are Awesome, Funny, Badass..." /></td>
 		 <td><strong>10-Pack of Funny Hard Hat Stickers. These Vinyl Decals are Awesome, Funny, Badass...</strong> by <em>Maye Market</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073QFPMLJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YumfoTrTL._AC_SX236_SY340_QL65_.jpg" alt="MSA-475371-Ratchet-Suspension-Standard" /></td>
-		 <td><strong>MSA-475371-Ratchet-Suspension-Standard</strong> by <em>MSA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005TP0SLW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073QFPMLJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61PcQbRYzPL._AC_SX236_SY340_QL65_.jpg" alt="Hard hat stickers |Big 30-Pack | Union American patriotic accessories for helmet..." /></td>
 		 <td><strong>Hard hat stickers |Big 30-Pack | Union American patriotic accessories for helmet...</strong> by <em>carecreation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KKFGXBT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07KKFGXBT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513-7kTPWiL._AC_SX236_SY340_QL65_.jpg" alt="20 Pack Hard Hat Stickers, Tool Box Decals, USA Made 100% Vinyl" /></td>
 		 <td><strong>20 Pack Hard Hat Stickers, Tool Box Decals, USA Made 100% Vinyl</strong> by <em>Bargain Ghost</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D62NHQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07D62NHQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61-p+slw4OL._AC_SX236_SY340_QL65_.jpg" alt="Hard Hat Stickers, Premium Thick Funny Vinyl Decals for Hardhat, Helmet, Toolbox..." /></td>
 		 <td><strong>Hard Hat Stickers, Premium Thick Funny Vinyl Decals for Hardhat, Helmet, Toolbox...</strong> by <em>Foxjoy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JMSFPDL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07JMSFPDL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51B54C3KKrL._AC_SX236_SY340_QL65_.jpg" alt="Funny Hard Hat &amp; Helmet Stickers: 10 Decal Value Pack Two American Flags. Great..." /></td>
 		 <td><strong>Funny Hard Hat &amp; Helmet Stickers: 10 Decal Value Pack Two American Flags. Great...</strong> by <em>America First</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LXCNIYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LXCNIYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61io58ppUuL._AC_SX236_SY340_QL65_.jpg" alt="100 PREMIUM Stickers Decals Vinyls | Pack of The Best Selling Cool Sticker |..." /></td>
 		 <td><strong>100 PREMIUM Stickers Decals Vinyls | Pack of The Best Selling Cool Sticker |...</strong> by <em>Bryta</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019TCW5CK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019TCW5CK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61kyn5cAHnL._AC_SX236_SY340_QL65_.jpg" alt="56 pack of Mexican American Edition Crude Humor Hilarious Hard Hat Prank Decal..." /></td>
 		 <td><strong>56 pack of Mexican American Edition Crude Humor Hilarious Hard Hat Prank Decal...</strong> by <em>Decals by Haley</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FZ9YWL1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07FZ9YWL1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/519qplcNWjL._AC_SX236_SY340_QL65_.jpg" alt="Funny Hard Hat Stickers - BEST SELLER - 14 Decal Value Pack. Great for a Construction..." /></td>
 		 <td><strong>Funny Hard Hat Stickers - BEST SELLER - 14 Decal Value Pack. Great for a Construction...</strong> by <em>H&amp;E Deals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XBXLZV1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XBXLZV1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>blood pressure monitor walgreen</strong></td>
+                 <td style="text-align: center;"><a href="/digital-blood-pressure-monitor-walgreen"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/519PX7aiI4L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>testosterones</strong></td>
+                 <td style="text-align: center;"><a href="/testosterones"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31qmQX54VyL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>ceramic electric griddle</strong></td>
+                 <td style="text-align: center;"><a href="/ceramic-electric-griddle"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31kxjzOHdHL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>havaianas rain boots</strong></td>
+                 <td style="text-align: center;"><a href="/havaianas-rain-boots"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

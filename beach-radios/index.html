@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Beach Radios</div>
@@ -89,128 +98,156 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BQHCE+vGL._AC_SX236_SY340_QL65_.jpg" alt="Sbode Bluetooth Speakers Portable Waterproof Outdoor Wireless Speaker Enhanced..." /></td>
 		 <td><strong>Sbode Bluetooth Speakers Portable Waterproof Outdoor Wireless Speaker Enhanced...</strong> by <em>Sbode</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071DGXVWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071DGXVWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Sangean BB-100 AM/FM / Bluetooth/Aux-in Ultra Rugged Digital Tuning Rechargeable..." /></td>
 		 <td><strong>Sangean BB-100 AM/FM / Bluetooth/Aux-in Ultra Rugged Digital Tuning Rechargeable...</strong> by <em>Sangean</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N5G8N0U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N5G8N0U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510WI58MUTL._AC_SX236_SY340_QL65_.jpg" alt="Bluetooth Speakers Portable, UZOPI 5W Wireless Outdoor Speakers with FM Radio..." /></td>
 		 <td><strong>Bluetooth Speakers Portable, UZOPI 5W Wireless Outdoor Speakers with FM Radio...</strong> by <em>U UZOPI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01J3ABVCS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01J3ABVCS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kLGVyiojL._AC_SX236_SY340_QL65_.jpg" alt="ION Audio Tailgater Express | Compact Water-Resistant Wireless Speaker System..." /></td>
 		 <td><strong>ION Audio Tailgater Express | Compact Water-Resistant Wireless Speaker System...</strong> by <em>ION Audio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01F73LQ34"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01F73LQ34"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51TVzO2F3pL._AC_SX236_SY340_QL65_.jpg" alt="Sangean MMR-88 AM/FM/Weather+Alert Emergency Radio. Solar/Hand Crank/USB/Flashlight..." /></td>
 		 <td><strong>Sangean MMR-88 AM/FM/Weather+Alert Emergency Radio. Solar/Hand Crank/USB/Flashlight...</strong> by <em>Sangean</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OJZOOLI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OJZOOLI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QWtKCZoGL._AC_SX236_SY340_QL65_.jpg" alt="Bluetooth Speaker,Portable Waterproof Outdoor Wireless Speaker with Stereo HD..." /></td>
 		 <td><strong>Bluetooth Speaker,Portable Waterproof Outdoor Wireless Speaker with Stereo HD...</strong> by <em>8Gtech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CKTTK55"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07CKTTK55"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oGhJtbejL._AC_SX236_SY340_QL65_.jpg" alt="AM // FM Portable Pocket Radio with Best Reception - Small Battery Operated Personal..." /></td>
 		 <td><strong>AM // FM Portable Pocket Radio with Best Reception - Small Battery Operated Personal...</strong> by <em>Jameson Electronics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0773TJ1JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51k1a2mdNiL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>AmazonBasics</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MH4QKP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41N0uE+i3IL._AC_SX236_SY340_QL65_.jpg" alt="amazon-echo-dot-kids-edition" /></td>
-		 <td><strong>amazon-echo-dot-kids-edition</strong> by <em>Amazon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077JFK5YH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0773TJ1JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414Wc56tt3L._AC_SX236_SY340_QL65_.jpg" alt="RetroSound LC-116-03-73-B Long Beach Radio (1973-85 GM)" /></td>
 		 <td><strong>RetroSound LC-116-03-73-B Long Beach Radio (1973-85 GM)</strong> by <em>RetroSound</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LZNKOBL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01LZNKOBL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/511RROlkNcL._AC_SX236_SY340_QL65_.jpg" alt="BassPal Shower Radios, IPX7 Waterproof Portable Wireless Bluetooth Speaker with..." /></td>
 		 <td><strong>BassPal Shower Radios, IPX7 Waterproof Portable Wireless Bluetooth Speaker with...</strong> by <em>BassPal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XG1DR9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XG1DR9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Z5-RiYXQL._AC_SX236_SY340_QL65_.jpg" alt="GPX, Inc. R602B Portable AM/FM Radio with Digital Clock and Line Input (Black)" /></td>
 		 <td><strong>GPX, Inc. R602B Portable AM/FM Radio with Digital Clock and Line Input (Black)</strong> by <em>GPX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008I6ITME"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B008I6ITME"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61clO6CzgBL._AC_SX236_SY340_QL65_.jpg" alt="Shower Speaker, Auto Tech Waterproof Bluetooth Speaker, FM Shower Radio, Mic,..." /></td>
 		 <td><strong>Shower Speaker, Auto Tech Waterproof Bluetooth Speaker, FM Shower Radio, Mic,...</strong> by <em>Auto Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076CVGD6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076CVGD6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uN8RDQziL._AC_SX236_SY340_QL65_.jpg" alt="DarkBlue The Newest Generation Ultra Outdoor Portable Wireless Bluetooth Speakers..." /></td>
 		 <td><strong>DarkBlue The Newest Generation Ultra Outdoor Portable Wireless Bluetooth Speakers...</strong> by <em>Darkblue</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072C77LPK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072C77LPK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514JXXesRgL._AC_SX236_SY340_QL65_.jpg" alt="Ultra Portable Wireless Bluetooth Speakers,IPX5 Waterproof Splashproof .support..." /></td>
 		 <td><strong>Ultra Portable Wireless Bluetooth Speakers,IPX5 Waterproof Splashproof .support...</strong> by <em>QUA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F5QXXF1"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mcCFrLQmL._AC_SX236_SY340_QL65_.jpg" alt="iFox-iF012-Bluetooth-Shower-Speaker" /></td>
-		 <td><strong>iFox-iF012-Bluetooth-Shower-Speaker</strong> by <em>ifoxcreations</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KHX9MCW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F5QXXF1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

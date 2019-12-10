@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Yugioh Booster Boxes</div>
@@ -89,112 +98,168 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61HP58VbcyL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! CCG: Legendary Duelists Booster Display Box" /></td>
 		 <td><strong>Yu-Gi-Oh! CCG: Legendary Duelists Booster Display Box</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071NXGFJX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071NXGFJX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="YU-GI-OH! Legendary Duelists: White Dragon Abyss Booster Box" /></td>
 		 <td><strong>YU-GI-OH! Legendary Duelists: White Dragon Abyss Booster Box</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DVWHNH9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DVWHNH9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AT6BNZKcL._AC_SX236_SY340_QL65_.jpg" alt="YuGiOh Shadow Specters 1st Edition Booster Box" /></td>
 		 <td><strong>YuGiOh Shadow Specters 1st Edition Booster Box</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ET2EWMM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00ET2EWMM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61ju9esxYoL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! CCG Spirit Warriors Booster Display Box" /></td>
 		 <td><strong>Yu-Gi-Oh! CCG Spirit Warriors Booster Display Box</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07492C33G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07492C33G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61AhrX0X0yL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! Extreme Force Booster Display Box" /></td>
 		 <td><strong>Yu-Gi-Oh! Extreme Force Booster Display Box</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0762F17H4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0762F17H4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SStPtJrQL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! CCG: Pendulum Evolution Booster Display Box" /></td>
 		 <td><strong>Yu-Gi-Oh! CCG: Pendulum Evolution Booster Display Box</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XFHN9K2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XFHN9K2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61MR3i2C6VL._AC_SX236_SY340_QL65_.jpg" alt="Yugioh Flames Of Destruction 1st Edition Booster Box - 24 packs of 9 cards each" /></td>
 		 <td><strong>Yugioh Flames Of Destruction 1st Edition Booster Box - 24 packs of 9 cards each</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079H549WV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B079H549WV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51EJwQzsssL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! TCG: Soul Fusion Booster Display" /></td>
 		 <td><strong>Yu-Gi-Oh! TCG: Soul Fusion Booster Display</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H2LCXVT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H2LCXVT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61qDcJX2r7L._AC_SX236_SY340_QL65_.jpg" alt="Yugioh Rivals Of Pharaoh Duelist Packs Booster Box - 36 packs of 5 cards each" /></td>
 		 <td><strong>Yugioh Rivals Of Pharaoh Duelist Packs Booster Box - 36 packs of 5 cards each</strong> by <em>Yu-Gi-Oh!</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LOCRXIY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LOCRXIY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OKqDkiMmL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! Legendary Duelists TCG: Sisters of The Rose Booster Display (36)" /></td>
 		 <td><strong>Yu-Gi-Oh! Legendary Duelists TCG: Sisters of The Rose Booster Display (36)</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HM98T6V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07HM98T6V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51zzkxIcQIL._AC_SX236_SY340_QL65_.jpg" alt="YuGiOh Battle Pack 2 War of the Giants Booster Box" /></td>
 		 <td><strong>YuGiOh Battle Pack 2 War of the Giants Booster Box</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00CVXG3QY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00CVXG3QY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/612yc8rRvkL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh Battle Of Legend Lights Revenge Booster Display Box" /></td>
 		 <td><strong>Yu-Gi-Oh Battle Of Legend Lights Revenge Booster Display Box</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0711DLCL8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0711DLCL8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61Pq68eqo9L._AC_SX236_SY340_QL65_.jpg" alt="Konami Yu-Gi-Oh! Code of the Duelist Booster Box" /></td>
 		 <td><strong>Konami Yu-Gi-Oh! Code of the Duelist Booster Box</strong> by <em>Konami</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071XNP9VX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071XNP9VX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/512QG1WwgFL._AC_SX236_SY340_QL65_.jpg" alt="Yu-Gi-Oh! Dimensional Guardians Duelist Pack Booster Display" /></td>
 		 <td><strong>Yu-Gi-Oh! Dimensional Guardians Duelist Pack Booster Display</strong> by <em>Yugioh</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06W55WCJN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06W55WCJN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

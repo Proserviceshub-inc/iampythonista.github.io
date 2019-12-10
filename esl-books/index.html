@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Esl Books</div>
@@ -86,115 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5149ymSbR2L._AC_SX236_SY340_QL65_.jpg" alt="Celebrate-American-Way-English-Language" /></td>
-		 <td><strong>Celebrate-American-Way-English-Language</strong> by <em>Sheila MacKechnie Murtha M.A.</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0738611948"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ESL Intermediate/Advanced Grammar (English as a Second Language Series)" /></td>
 		 <td><strong>ESL Intermediate/Advanced Grammar (English as a Second Language Series)</strong> by <em>Mary Ellen Munoz Page</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0738601012"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0738601012"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jczuCs85L._AC_SX236_SY340_QL65_.jpg" alt="Practice Makes Perfect Basic English, Second Edition: (Beginner) 53 leasons +..." /></td>
 		 <td><strong>Practice Makes Perfect Basic English, Second Edition: (Beginner) 53 leasons +...</strong> by <em>Julie Lachance</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0071849629"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0071849629"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51D6eROgs5L._AC_SX236_SY340_QL65_.jpg" alt="English Made Easy Volume One: A New ESL Approach: Learning English Through Pictures" /></td>
 		 <td><strong>English Made Easy Volume One: A New ESL Approach: Learning English Through Pictures</strong> by <em>Jonathan Crichton</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0804845247"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0804845247"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cOOJ2bd0L._AC_SX236_SY340_QL65_.jpg" alt="Easy English Step-by-Step for ESL Learners: Master English Communication Proficiency..." /></td>
 		 <td><strong>Easy English Step-by-Step for ESL Learners: Master English Communication Proficiency...</strong> by <em>Danielle Pelletier</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0071820981"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/0071820981"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MMzEhHJ5L._AC_SX236_SY340_QL65_.jpg" alt="Complete English Grammar Rules: Examples, Exceptions, Exercises, and Everything..." /></td>
 		 <td><strong>Complete English Grammar Rules: Examples, Exceptions, Exercises, and Everything...</strong> by <em>Farlex International</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IIU5LF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IIU5LF2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MnYSAo1ML._AC_SX236_SY340_QL65_.jpg" alt="Reading, Writing and Learning in ESL: A Resource Book for Teaching K-12 English..." /></td>
 		 <td><strong>Reading, Writing and Learning in ESL: A Resource Book for Teaching K-12 English...</strong> by <em>Suzanne F. Peregoy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0134014545"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MgOitIezL._AC_SX236_SY340_QL65_.jpg" alt="Phonics-Z-3rd-Practical-Guide" /></td>
-		 <td><strong>Phonics-Z-3rd-Practical-Guide</strong> by <em>Wiley Blevins</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/1338113496"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0134014545"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51pCUFO6jeL._AC_SX236_SY340_QL65_.jpg" alt="Practice Makes Perfect English Grammar for ESL Learners, 2nd Edition: With 100..." /></td>
 		 <td><strong>Practice Makes Perfect English Grammar for ESL Learners, 2nd Edition: With 100...</strong> by <em>Ed Swick</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0071807373"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0071807373"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t9Wzsj1YL._AC_SX236_SY340_QL65_.jpg" alt="English the American Way: A Fun ESL Guide to Language &amp; Culture in the U.S. w..." /></td>
 		 <td><strong>English the American Way: A Fun ESL Guide to Language &amp; Culture in the U.S. w...</strong> by <em>Sheila MacKechnie Murtha M.A.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0738606766"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0738606766"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515mXwX-ErL._AC_SX236_SY340_QL65_.jpg" alt="ESL Intermediate/Advanced Writing (English as a Second Language Series)" /></td>
 		 <td><strong>ESL Intermediate/Advanced Writing (English as a Second Language Series)</strong> by <em>Mary Ellen Munoz Page</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0738601225"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0738601225"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51r11Znjq4L._AC_SX236_SY340_QL65_.jpg" alt="ESL Classroom Activities for Teens and Adults: ESL games, fluency activities..." /></td>
 		 <td><strong>ESL Classroom Activities for Teens and Adults: ESL games, fluency activities...</strong> by <em>Shelley Ann Vernon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/1478213795"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/1478213795"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51y4T+cRpPL._AC_SX236_SY340_QL65_.jpg" alt="English for Everyone: Level 1: Beginner, Course Book: A Complete Self-Study Program" /></td>
 		 <td><strong>English for Everyone: Level 1: Beginner, Course Book: A Complete Self-Study Program</strong> by <em>DK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/1465447628"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/1465447628"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZNDIVewBL._AC_SX236_SY340_QL65_.jpg" alt="The Ultimate ESL Teaching Manual: No textbooks, minimal equipment just fantastic..." /></td>
 		 <td><strong>The Ultimate ESL Teaching Manual: No textbooks, minimal equipment just fantastic...</strong> by <em>Andromeda Jones</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/1537511114"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/1537511114"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

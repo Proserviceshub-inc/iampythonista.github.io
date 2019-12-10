@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Body Wraps</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Lipo Applicator Body Wrap</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00G2RRSSM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Brazilian Slimming Tea</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079P8TSCZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCACvAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0Pxc/l+FtRb1ix+ZA/rXC6YuIEHtXX+PJvK8LzJ3mkjT/AMeB/pXK6cnyLj0rlxHQ68OtGacQwPatLRbGLURfxXcYlt5YvJdD0YN1H6VQPyp+FdD4bh2ac0hHMrk/gOKzor3yqztA8Q13RLjw3rE2m3RLhfngl/56xk8H68YPuKpoea9c+J+gnUtAGowLm600mTjq0R++PwADf8B968hjYEAjp1ruOIsClpqmnUALRSUtABSUtJQAUCVoJY50OHicOPwNFCR+fcRQ/wB9wD9O/wClD2Gtz0WeNZogwHBFdN4OvTcaSbWQ5ls28s/7vVf04/Cuctir24A9Kn0K5/s/xFED8sV2vkvk/wAXVT+fH41wUZcsvU7q0eaPod5RRRXecAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBx/xElxptjB3kuQ35Kf8aydPTCrV74gvuvNJh75kc/+OioLVNqCuOv8VjtoL3Cac/LhRyeK7Ozg+zWcMPdFAP171y2mwfatWhUj5Y/nYfSuvrShHRsyrvVIRlDqVYAqRggjgivAfE+hN4a8Q3FgARbN++tT6xk9P+AnI/AHvXv9ct498M/8JHoZa3XOoWeZbc/3v7yf8CA/MCug5zxlDkU8Cq0UgcBhnnqD2qypoAdRRRQAUUUhYDqaACrWkkDWrQMMiRjH+LAgfqRVTevqKktLlbTVLG5bBWG5jkbPoGBNDV9ATs7ndWMhQFGPIPNT3cbSwb4jtkQ7kYdQRyD+dN1e3+w65dwjhWbev0PNLazmS33evtXnSVmemndXO+0y+XUtNt7tMDzUBIH8J7j8DkfhVquT8GXZWa9sGPCkTR/Q8N+uPzrrK74S5opnnzjyyaCqep3sem2kl5O5S3hUvIQMnH0q5XPeOGYeFNRC94GP5YqnsZvRFZfHujSNtSe4LdcCA0reOtIBwbmYH3gNcJq9jbaJJY2inZK1qjXIB3Osh659M+n0pkWmmQK6y5VuQeua4JYirGXLZHK6s1od6fHekdryX/vwf8KY3jjTMfLeyf8Afg/4VxEdpJLCWtysgfK7SpB9CMetQTWk1tErTW8kaOcI7J8rH0B6GpeKqrovuF7aZ3Y8c6d/z+yf9+D/AIU1vHNh2vZP/Ac/4VwjwNA7RTxNHIAMq64IHrzUZjUnoaj65U7IPrEux3h8c2eMi+k/8B//AK1N/wCE5tSOL98/9cP/AK1cKLOVvuxuR/u1YtrGRHJZAAylSDTWLqMr28ux2qeNrWRgi30m718jj8yK6jSriW706KafHmHIOOhwSP6V4xcKIZba1jYOyyLuceuen0r2Dw8zPokDOAGJfOP9812UKkqibka05uS1OS8WH7T4uhjzxDbj8ySf8KkGI9vPWs/Vbj7R4u1CQchGEQ/4CAD+uaukl4gw/h6j2rCq7zZ6tNWgje8Mx7pbqYjkYQH9T/SuhrE8Lj/QZm65lP8AIVt11UlaCOOq7zYUUUVoZnjfxL0FNI1+PULcBYNS3M6D+GUY3H/gWc/UN61yiNmvd/FHh+DxLos1jLhZcb4JT/yzkHQ/TsfYmvBLUyXDrHGhaZiRtHqOtAFjIAyTirmn6TqGq82VqzR/89n+WMf8CPX8K3NI0Kzh2zXu26mHOG/1a/h3/H8q62HzpgBHG7DoOMCuaWI1tFHTHDveTOVtvBKjBv74s39yBcD/AL6P+Fa9v4a0i3Hy2SSEfxTEv/PittdOnY5Zkj/U1ONNyPmnP/ARisXKpLdmyjCOyOen02xAwbC2wO3lL/hWRrug6fPp8vk2yQS7TtaIbQD7joRXayaVbkHczt9Wqpd6Jbz2jIskiHHBznFJcyd0xvkejRnarFL9k0aWXJmlsIg7HqWCjJNNt1CRBF6DpWz4qJfRtOu3ILjCsR6kc/yNYtudyCrrLUVJ3j6FrRZ/svim1OcLOrRN+WR+oFd/Xm8Rx4h0wj/n4UfrXpFbUH7phiF7wVkeKFD+HNSUjObWX/0GteszxAu/Rb5fW2l/9BrZ7M5nseMaY4jlE8q+c+CcOc5OOproLEEWEJJ+Ygn9a5u2HyKfaun08h9OhP8AdBU/UGvIjLU4FuaMNp5klhfpOkItJWaZX43rlSefoKm/tiOOVNkOYgFWRycMdp7ZOODgjjPFUHhW4heJuAwxn0qtY6ZOJpYAgy4VlfGR8rAn6fLuP4Vq6kk0orcvma0RLcCxSK2tjK8+GcpJKeRnB2jnIHfnuTQttFEQVjAI6E1Zi02CcYJyJmRoA8giBiYkpkhT833s9BxWiulpIikF8mYDacBvK3bc7euc0ezcnewcrepjMSaEjycmr93DbIQIOXP3tsm9V59cDOR+VR+XgD3qGuV2E9NDlJk26vCo4X7QP/Qq9k0ZQulwgerf+hGvJShbxBb+huVDe/zCvX9OTZZIvoW/9CNdOD+Fm1DZnmUwMHiTUo3PzfaHOT3yxrXifAxVXxjb/YvFSTLwtzGG49RwaltnDoCaVVWmexTd4I67w6qrYybejSFh+QrWrB8MzfLcQE9CHX8etb1ddN3ijiqK0mFFFFWQFedax4U+y+IL+4skVTqLLIXb7sIx82PdmycfSvRaydcXCxOSBzjk9TUT+EunpJGHp+k2lmowDNKP45OfyHatZSTVWI1aTpXLsdTdxSKQU5hxTAcGgQOMg1COUZT2qR5AvABZvQVTlJYjdzuOFReQT7D+L+VZzqRjp1Ara6y3PgiRom3fZZxkj/ex/JhWTaHECn2re+yudH1ezbDNNbtKijnDAYx+e3pXO6a2+0VuxHBq6jbjFsqlpdE1mpk8Racv/TcN+XNekVwGix+b4nss/wAG9v8Ax0/4139b0PhMcR8QVR1f/kH3Pb9xJ/6DV6s7Wj/xLrkDvBJ/6DWz2OZ7HisC8AYrotLdPsSxbh5m5iF9qxLdPkWtWziEOyeQhPMJEZPTA+8fzwB/wL0rwoyfMeZGWppNLHAAZG256e9SW90JnIhEmem5VP8AMVmGT7TdosxAQnYGHRQeM/1/CrNuYUt2WRJo50bDvGWwee4HQjp+FWql3psWpamm0Uu3aySbfQg446fz/WlcXAfzn84PjBkOc4+tMgvYFKJMLiQZxuAbP+c9s1dLW7KwkNweMdGOfTj6/wAq1Vn1NFZ9SgqDPFSuvy59KdcypGwigtXLOflfnj6g01nwTBICsoXcQRgY9qzbtoLQ5uME+IIAen2lSf8AvqvXLMYtVHuf5mvJ40LeI7UjHN0o/wDHhXrVsMQL9T/Ou3BfCzbD7M5b4hWJl0qC+QZa0k+b/cbg/riud0+bcikV6XdW0V5ay2067opUKMPUEV5XDby6Xf3GnTn54HwD/eHY/iMVpXj1PTw8vsnV6HciLVoweFlUp/UfqK66vPYJGjdJF+8jBh+FegRSLNEkicq6hh+NOg/dsRiI2lcdRRRXQc4Vg+I0lmaCKMKyj5mXOCfz4Nb1clres/ZdWeOW1kdVAwyEEEVnV1i0aU1eQkG5WCHh/wC6Rg/kf6Gr8JZhwM4646j6jrWdDrlpcssLQTMzdE8vd/KtZbfawALey9SPcelec709U9DoegMwYcAk+neoCQAzOwCjqc4A+poa+gLFRIrRjh5VOY09mbuf09amktYpiJY5PMx90khlHuMcD60pSnLfRCuVQTKvyjCf3mGAfoO/1NOICcjqerHqac6yoMuhx6jkVXmnWKIyHnHAHqfStYQjFXiVbsT288UN6vmkAFGRuM4U/wD1wK5e2VbOySKZHRhx8w4zWvv+dIlIa4mG9j/dX1/oP/rUpVLtvJYfuU+8PUmtGrqxaXK7kfh8D+34JDjBR1H1x/8AWrtq4vRbJF12FonYRxs21W7jB6V2ldFJWictf4grP1gZtJR6wyfyrQqnqIzE3/XN/wCVamLPHrdP3ajp2+lbVxFJDei4khfyYAY7dVXIGwkLu/H5j65PrWf5RwwIwwxkenFbV9eXJl3iQQ28gR4sgEkYye3POev0r5+Gidzyo9TNSDz7tIV2AysANhyq568+1aNjPOJ7u6t4pWDNubYRhRknkHrx+VRWiSyreTmIsWXCOFx87HBx/wABLn8BVy1lktbYRrBcAksSVRiCemeo7fyq4KzT+ZcV1JYp5jIFW1lERk/vLjdn1x61oia9XB2pjJAyB1656/rWYs8ipEotrobMDbtYjIxxnNaqXkYKkq4bGHXn5T6da6ISXWRtF+ZnXc+o/aCkewBh1+Xr7GqaPLJcos23KAplQB+o61p3d5DEA/zkufmweQcdRzVAGO6vzLEpCAbmBGMt69T3rCq1fSVzOe+5kQN/xU1rEFBLXSZPp81esQjEQHuf515ZbW7jxXZSjlGuU6duR1r1VPu/ia7sF8LOjD7MWuM8c2HlT2mqxjofJmx6H7p/PI/EV2dVNVtPt2l3NvgFnQ7Qf73UfriuySurHVCXLJM4SPhQ3Y11Xhq8823e1Y5aHlT6qf8AA/0rj2u1msxJjy5hwIu+RxzUdvd3yz4s5SkrDqvde9csLxdztqR542PTpJY4V3SyKi5xljgUoYMMqQQe4riSkbMrSSSTSAcmUknP9KpyXsmmXCCe1ljMrlIXhbO/jORjp+Petva+Rj9X03Oh8b+KI/CugS3QZTdy/urZD3cjqfYdT+XevKvDXgTVNfxd3UktlZOd73UwJlmzySqnnn+8fXvXoSW1hqN5baprBW4W2iP2eS6YCKHuzEdM8dT/AHRXL+Jvio8krWnhhNzZwb6ZOB/1zU/zP5d6l1JyfLBfMxlDldmdVPd+H/AGlrG8hhJHClvMubg+vPr+AHtXA6v451XWXZIEFhpxP/HuCS8w/wCmjjB/AY64Oa5lYnkne6u5XuLqQ5eWVizE/U1NThQjHWWrFzM6G28XvAqI+mwrGowPszmLA9hzU/8AwkcgkE+k3pVj96C5Xa6n2ZSMj8TXL01lDDBFW6US1Vl11PVNE8bTTIpv7NSvSR4j8yn1I71pS6jZ6nP9qtcSW8S/KVUgu546fp+deO2up3Wml0jffG4wUc/yPauz8Na5b6zb2uhW8EkUybpJSx4YZzkEfWsJUnHY2hKDemjOhjA0+KS5lkQT3b8NI2B6KvsKdY280dqYDKGun3SySsPlX3x6dAPwqNJUv3kKxi4jilEa99zqfuj33dfpWv8A2VfCQwRAK0mGmuCPlz7euOw9eTSgm+hrKVt2R6JZvPqaSDIishhiedzkdP1yfwrqqgs7SKxtkghB2r1J5LHuT71PXVCPKrHFUnzyuFVr0ZQ/7jfyqzUFyu7C+oNUQeWzJi7lA7gH8wKs3I3aLZTAENEzwOQeqk7l/wDZqrpJ58glxjfEhx/wEVdW48jRoioDbbo71P8AunH82rwFa8jylvITSrsxBrUkDzXV1J6FgCMe2QevqMe40mcakpt4InaSIhmG7aTzyCP0/GsZ54ZEdUtlXd/FnkGtOG6W11ITyOYzLboXbJ+8VBJOAc561VOf2W9DSMtLN6DvsSKvCSEhjks5yMHGODU1rDEobG0bjypfqfY5/Wq0t/bbAcNKWzuUNgf8CyvJ+nvQuqDaAImG0YALjG7PUjFXzU4sd4plh7S2bcfKUSE5BLHDnPK9ePTNQoNk7otsIdqkOwcsD9CeKdFqUanBgdo8cqZAST1z09ahhlkkuD5kjuNp2hjnaOuKzlKGnKK8bqwyyH/E9sx2Myfzr0VPu151ZkDX7Id/OUD869FT7tejgvgZ10dmLRRRXabHD+KNDlttQ+32UZaOdszAc7T6/TqayrR0O9ImC3kYIKucA89M9q9N6jms3UdAsNSjxLAsco5WWMbWU/Xv+NZyhfY3hV5dGccqvJaQ3Oo289qr8RSH5SpzjBPQfQ1cE9zGWiuFEltgBbkD5Tk4ww7H9Oau3Talo0DpcbJ7eT5PNABDZ45Xsfpmm3enS2Ngbu3DJa7C01vK2DEuOeT1GM8GsnHob+0T3OO8V3p0fRdR01tojvcCyRVO3aSNw9iOSfqPWuCtoBCgA611viTWLCbS59IEn26eORJLa6jIKKO+T67SVI965dRWtNWic1Z3loPFLSUVoZC0hpaQ9KAIJ/mb6U22uLi1m86zuJbaYAgSxMVYA9RmpHGVqPAGTQB2/gDU9R1jxHpOmF0hstKikmIiXa03G0Fznk5cfXmvZK8b+EDKfFOoDyyzfZOJB0Ub1yPx4/75r2Si1htt7hRRRQIKilGXT8alpjffWgDzjSrJdQjmA3RzxwrJHj7pAXlTUKN5lq1oRgytvRj/AH16D8QWH4ir/hGTF5gnAZdnP0I/oKzbwjftB4yTj0Oa8GVklJeZ5jSSUiKFN7KudoPVvQetatqr3Est2rTQp91TEpOAOik9MYxWZHg9TUv0P5VjFpPUiLsbItZ0CFrmfzMZPz44P4cfjUb2CyMZZpJHIALMW5x+I/D8DWYkQdgNwFXrezRVJlGS3QZ6CtVNS05fxNE1LoWU0hXXKCYFTtcEd/bj8R7EUyO0K3B8mG4KBTl3Tg/Spo4440CxAqPrSJCIWllR2BcdM8CtHCOlkXyrsZVow/4SSyGR/r0x+delJ92vLbNQfFlrITytyigH3xXqSfdrtwXwM6KGzFoooruNwooooAx/EcDXFrDGGwBJu64yQOP50eK5CvhDV3A5+xy/qpq3qakxRkZyG7Y/rSXNuNS0W4tSRi4geInPHIIrnhL99JPsi38KPnOFQsShR2qYV0DeCzp8ptry9Z5o+G8pMDPsT1qW38JwTNj7dKnP9wGtXOK3Gqcnsc5zRXXx+AFdz/xNyI+37jn/ANCqT/hX0XbV5P8AvwP/AIql7SPcPZT7HGUV2Y+HsRH/ACGH/wDAcf8AxVH/AAr+BRltVlb6Qgf1o9rDuHsp9jiW4yPxqFvSul13wt/Zli9zb3TzmIgujJj5CcEjHocVzqrnmrjJSV0TKLi7M7H4TyPF4wniX7ktmxYe4ZcfzP517PXjHwrA/wCE0lycH7E+Pc70r2emSFFFFABTW++tOpj/AOsSgDzjw05W+xj7hx+pq+tpHPfuXgTYuc/KefT+H+VUNOnS3vJGUBP3rCTP1OCPT86vR3sFskgV4vPdi2Tt5Hv8/wDWvJpKNrPozz4WtZi3NvbRFI4Iow68sNuTj/vmozGuAVjUJwTlRkj1GEqa0IcGRIvtEnckgqD+L81LJC77pLi4ghY9ASMgfTdVuCetirX1RWWJXUsIlBYYHyjGOv8Ac61etyDHtaIfL0O3k/8AjtRxWVuyqUmWRRxldoH86eTDbgIBheoCKD/I01Dl1GlYsKE3fcBz22//AGNJPHmM7Ijx3UdPrxVb7TEF/iyM4+T/AOvSm7t2XbIHx6BMZ/WqcotWZV0c1a4PjKyUgH/SVIPfivVU+7+Jryq058a2LxDh5xgZ7Yz/AEr1OEERjPXn+dXg/gZeH+Fj6KKK7ToCiiigCveqGtmz2weRmm2DZiYHPBzgjB/zxU8y74ZF9VIqhpjASMqgAEZwFwOv69etck/drxfdFrWLMHxfppSZL6Nflbh8djXMxHy5j2zzXqNzbR3du8MoyrjH0rzjWLCTTb/y5PwPqK1qR0NqMuhet3BX6VYVsms61cFRV0EY61ynSSgjNKfu4piHJpxIGA3TtQBl3yI6PHKD5cgKN/ukYP8AOuVg8F3KgLd30KEdfKUv/PFdZqC/I3qajJLqrE53KG/HHP604zlFWRMqcZO7DwPolnpniYPGZJZjA4Ekh6DI6AV6XXCeEv3niNz2S3Y/qK7uuuk243ZyVUlKyCiiitDIKY/30p9IyhsZzx6GgDyY30C3k6MwVyxB3dDg461NHNIzrFCodjyAVBx+fSvSBpGnA5+wW2c5yYl6+vSpFsLRRhbWED2jArz3g25X5jk+ru97nnxGptjdIwHtIBj8qRdMJDPJMgk/hHJyfc16H9gtD/y7Q/8AfApp06zPW1iP/ABTeDT3dx/V/M8+t5pbV3RVGGxuDDPNLNqrR8eSCTzmu+Ol2J/5dIf++BQdKsW62sX/AHzSWDklZSBUGtEzzh9WdgNu1T3NRfbLidtke53PQRrkn8q9KOkWJIP2dRj04obSbNv+WZH0YiksD3kL6vJ7yOQ0HTTYX66lf7DIiFY41YEpnucd/pXY6ZdNe2Ec7KELlvlGeMMR3+lQtoVg3WJv+/jf41ehhS3iWKJQqKMACu+EI048sTphBQVkPoooqigooooAKyLM7NUaPjjI75wP0rXrEY+R4oRCeJl3qN3sQePqOvuK5q8dYy7MuHVG3XM+NLPzrCO4UfNGcE+1dNVbULcXdhNCRncpx9a6GroUXZ3PN7N/lxWgj8cVkoPJndD/AAnFaMbZ69e1cLVmegtUXFf8acWBFVwcc96lzleTzSAqX3MZz+dVYG3WcZ9Mr+v/ANerV59w8cCs+Jttj9JGyPwFJbMb6HQ+B49+o38/9xFT8yT/AErta5jwNBs0qec9Zpjz7Af/AK66eu6mrRRwVHeTCiiirMwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACs7UoQbywuMNmOXado7MO/44rRpGAI5GeaTV1YadhaKKKYjzbX7b7JrEoHAzkfTtUcD7k9TW742tcNDcj+IbT+Fc3bn0rkqqzO6k7xNAMakRjjBNV1PepkGTisjUjuOYzmsvO2xufaRefwNa04yhxVLTrQ30s1mD/rHj/Ldg/oacFd2Jk7K533hy3NroFlGRgmMOfx5/rWnSKoRQqjCgYAHalruR57d2FFFFMQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=" alt="Ultimate Body Applicator Lipo Wrap. 4 Skinny Wraps for inch loss, tone and contouring..." /></td>
 		 <td><strong>Ultimate Body Applicator Lipo Wrap. 4 Skinny Wraps for inch loss, tone and contouring...</strong> by <em>Lipo Applicator Body Wrap</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00G2RRSSM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00G2RRSSM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41dCJuy2osL._AC_SX236_SY340_QL65_.jpg" alt="Brazilian Detox Clay Body Wraps (10-Applications) Slimming Home Spa Treatment..." /></td>
 		 <td><strong>Brazilian Detox Clay Body Wraps (10-Applications) Slimming Home Spa Treatment...</strong> by <em>Brazilian Slimming Tea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079P8TSCZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079P8TSCZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xp5vALFxL._AC_SX236_SY340_QL65_.jpg" alt="Brazilian Body Wraps - Spa Mud Home Treatment Kit for Women Slimming Home Spa..." /></td>
 		 <td><strong>Brazilian Body Wraps - Spa Mud Home Treatment Kit for Women Slimming Home Spa...</strong> by <em>Brazilian Belle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078Q5D7TS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078Q5D7TS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rO6hPNM0L._AC_SX236_SY340_QL65_.jpg" alt="Brazilian Detox Clay Body Wraps [8-Applications] Slimming Home Spa Treatment..." /></td>
 		 <td><strong>Brazilian Detox Clay Body Wraps [8-Applications] Slimming Home Spa Treatment...</strong> by <em>Brazilian Slimming Tea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075RK8Z84"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B075RK8Z84"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ssQiy2afL._AC_SX236_SY340_QL65_.jpg" alt="Spa Slender Body Wrap Elastic Bandages Latex Free (Pack of 6)" /></td>
 		 <td><strong>Spa Slender Body Wrap Elastic Bandages Latex Free (Pack of 6)</strong> by <em>Spa Slender</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000BJ1QPI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000BJ1QPI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BLsIVj2SL._AC_SX236_SY340_QL65_.jpg" alt="It Works Ultimate Body Applicator - Box of 4 Wraps" /></td>
 		 <td><strong>It Works Ultimate Body Applicator - Box of 4 Wraps</strong> by <em>It Works</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IVPGPK0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510qTagvHWL._AC_SX236_SY340_QL65_.jpg" alt="Isavera-Fat-Freezing-System-Sculpting" /></td>
-		 <td><strong>Isavera-Fat-Freezing-System-Sculpting</strong> by <em>Isavera</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F37V2LT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00IVPGPK0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FvCcq1hwL._AC_SX236_SY340_QL65_.jpg" alt="5 Ultimate Body Applicators and 1 Body Defining Gel, Body Wraps Works in Just..." /></td>
 		 <td><strong>5 Ultimate Body Applicators and 1 Body Defining Gel, Body Wraps Works in Just...</strong> by <em></em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010EZU7V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B010EZU7V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BZ1gUXeHL._AC_SX236_SY340_QL65_.jpg" alt="DIY Body Wrap: SPA Formula for Home Use: Seaweed, Healing Clay, Garcinia Cambogia..." /></td>
 		 <td><strong>DIY Body Wrap: SPA Formula for Home Use: Seaweed, Healing Clay, Garcinia Cambogia...</strong> by <em>Neutripure</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01B6OGV7O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01B6OGV7O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51kwMXb4b8L._AC_SX236_SY340_QL65_.jpg" alt="Neutriherbs 45 Min Ultimate Body Wraps Applicator (5) Plus Bonus Slimming Shape..." /></td>
 		 <td><strong>Neutriherbs 45 Min Ultimate Body Wraps Applicator (5) Plus Bonus Slimming Shape...</strong> by <em>Neutriherbs</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NCARZIR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01NCARZIR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LgnsrFpCL._AC_SX236_SY340_QL65_.jpg" alt="Neutrogena Norwegian Formula Intensive Moisture Wrap Body Treatment Ff, 10.5 Oz" /></td>
 		 <td><strong>Neutrogena Norwegian Formula Intensive Moisture Wrap Body Treatment Ff, 10.5 Oz</strong> by <em>Neutrogena</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001PLJCEI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001PLJCEI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xwY3TwdAL._AC_SX236_SY340_QL65_.jpg" alt="Neutriherbs Body Applicators, 10-Pcs" /></td>
 		 <td><strong>Neutriherbs Body Applicators, 10-Pcs</strong> by <em>Neutriherbs</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JFMAK80"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01JFMAK80"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51r0A5IcwUL._AC_SX236_SY340_QL65_.jpg" alt="Neutriherbs 45 Min Ultimate Body Wraps Applicator (4)" /></td>
 		 <td><strong>Neutriherbs 45 Min Ultimate Body Wraps Applicator (4)</strong> by <em>Neutriherbs</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0150DEQ9C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B0150DEQ9C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TjArQ3MEL._AC_SX236_SY340_QL65_.jpg" alt="SugarBearHair Vitamins (1 Month Supply)" /></td>
 		 <td><strong>SugarBearHair Vitamins (1 Month Supply)</strong> by <em>SugarBearHair</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019ZZB3O2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B019ZZB3O2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Unlocked Flip Phones</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TDhLFuQuL._AC_SX236_SY340_QL65_.jpg" alt="Unlocked-Oukitel-Charging-Fingerprint-Phones-Black" /></td>
-		 <td><strong>Unlocked-Oukitel-Charging-Fingerprint-Phones-Black</strong> by <em>OUKITEL</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JKSC6S1"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IxUg+YiYL._AC_SX236_SY340_QL65_.jpg" alt="Unlocked-Cell-Phones-OUKITEL-C11S" /></td>
-		 <td><strong>Unlocked-Cell-Phones-OUKITEL-C11S</strong> by <em>OUKITEL</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07LB9HFTZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Easyfone Prime A1 3G Unlocked Senior Flip Cell Phone, Big Button Hearing Aids..." /></td>
 		 <td><strong>Easyfone Prime A1 3G Unlocked Senior Flip Cell Phone, Big Button Hearing Aids...</strong> by <em>Easyfone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BHHHT7Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BHHHT7Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31vvaZbfSuL._AC_SX236_SY340_QL65_.jpg" alt="Easyfone Prime A1 3G Unlocked Senior Flip Cell Phone, Big Button Hearing Aids..." /></td>
 		 <td><strong>Easyfone Prime A1 3G Unlocked Senior Flip Cell Phone, Big Button Hearing Aids...</strong> by <em>Easyfone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BHH848H"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BHH848H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51yl8UqpHRL._AC_SX236_SY340_QL65_.jpg" alt="LG B470 Flip Phone Unlocked GSM 3G AT&amp;T Unlocked (NOT CDMA Carriers like Verizon..." /></td>
 		 <td><strong>LG B470 Flip Phone Unlocked GSM 3G AT&amp;T Unlocked (NOT CDMA Carriers like Verizon...</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N3PIIZW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N3PIIZW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41MkJ13gKlL._AC_SX236_SY340_QL65_.jpg" alt="Ushining Unlocked Flip Cell Phone GSM 2G Dual SIM Dual Standby for Seniors -..." /></td>
 		 <td><strong>Ushining Unlocked Flip Cell Phone GSM 2G Dual SIM Dual Standby for Seniors -...</strong> by <em>USHINING</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FKHZVFP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07FKHZVFP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SshnM6JcL._AC_SX236_SY340_QL65_.jpg" alt="Flip Phone 4G LTE GSM Alcatel QuickFlip Unlocked BIG BUTTONS + Extrenal LCD Bluetooth..." /></td>
 		 <td><strong>Flip Phone 4G LTE GSM Alcatel QuickFlip Unlocked BIG BUTTONS + Extrenal LCD Bluetooth...</strong> by <em>Alcatel</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DRM9JWP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07DRM9JWP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31jHH8joBbL._AC_SX236_SY340_QL65_.jpg" alt="[HOLIDAY SPECIAL] Jethro [SC729] 3G Unlocked Flip Senior &amp; Kids Cell Phone, M4..." /></td>
 		 <td><strong>[HOLIDAY SPECIAL] Jethro [SC729] 3G Unlocked Flip Senior &amp; Kids Cell Phone, M4...</strong> by <em>Jethro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076BZX9CT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B076BZX9CT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411qbMyQjhL._AC_SX236_SY340_QL65_.jpg" alt="Flip Phone 4G Unlocked LTE GSM Go Flip Cingular (At&amp;t) BIG BUTTONS + Extrenal..." /></td>
 		 <td><strong>Flip Phone 4G Unlocked LTE GSM Go Flip Cingular (At&amp;t) BIG BUTTONS + Extrenal...</strong> by <em>Alcatel</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DCHV9VX"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416MA9yzOcL._AC_SX236_SY340_QL65_.jpg" alt="Total-Wireless-Alcatel-MyFlip-Prepaid" /></td>
-		 <td><strong>Total-Wireless-Alcatel-MyFlip-Prepaid</strong> by <em>TracFone</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GC6FXZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07DCHV9VX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nU-LFv3mL._AC_SX236_SY340_QL65_.jpg" alt="Kyocera DuraXV LTE E4610 Verizon Wireless Rugged Waterproof Flip Phone (Certified..." /></td>
 		 <td><strong>Kyocera DuraXV LTE E4610 Verizon Wireless Rugged Waterproof Flip Phone (Certified...</strong> by <em>Kyocera</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FNZ85WF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FNZ85WF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JtHojZlYL._AC_SX236_SY340_QL65_.jpg" alt="Kyocera DuraXE 4G LTE Rugged Mobile Flip-phone Unlocked for GSM Networks" /></td>
 		 <td><strong>Kyocera DuraXE 4G LTE Rugged Mobile Flip-phone Unlocked for GSM Networks</strong> by <em>Kyocera</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CDJ7I5K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01CDJ7I5K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31u222XP72L._AC_SX236_SY340_QL65_.jpg" alt="BLU Diva Flex - Flip phone - unlocked Dual Sim - Black" /></td>
 		 <td><strong>BLU Diva Flex - Flip phone - unlocked Dual Sim - Black</strong> by <em>BLU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BE8UUO2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01BE8UUO2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41+I5LFX+XL._AC_SX236_SY340_QL65_.jpg" alt="VOCA V530 Unlocked 3G Flip Phone, Dual Screen with Big Button, Predictive Text..." /></td>
 		 <td><strong>VOCA V530 Unlocked 3G Flip Phone, Dual Screen with Big Button, Predictive Text...</strong> by <em>VOCA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073RPV31Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B073RPV31Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CIlHKQaDL._AC_SX236_SY340_QL65_.jpg" alt="Sports Car Model F15 Mini Flip Phone Dual SIM Card MP3 Backup Phone Best For..." /></td>
 		 <td><strong>Sports Car Model F15 Mini Flip Phone Dual SIM Card MP3 Backup Phone Best For...</strong> by <em>Newmind</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JIP8X5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01JIP8X5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-rb+aUTyL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Rugby 3 A997 GSM Unlocked Rugged Flip Phone - Gray/Black (International..." /></td>
 		 <td><strong>Samsung Rugby 3 A997 GSM Unlocked Rugged Flip Phone - Gray/Black (International...</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00D3Z2GI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00D3Z2GI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

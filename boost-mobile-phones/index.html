@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Boost Mobile Phones</div>
@@ -86,107 +95,123 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NVcUtVbkL._AC_SX236_SY340_QL65_.jpg" alt="Simple-Mobile-TCL-Prepaid-Smartphone" /></td>
-		 <td><strong>Simple-Mobile-TCL-Prepaid-Smartphone</strong> by <em>TracFone</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GC5QKTC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AApdGHlqL._AC_SX236_SY340_QL65_.jpg" alt="Simple-Mobile-Prepaid-compatible-Samsung" /></td>
-		 <td><strong>Simple-Mobile-Prepaid-compatible-Samsung</strong> by <em>TracFone</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GC4PL9W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="LG (LGLS777ABB) Stylo 3 - Prepaid - Carrier Locked - Boost Mobile" /></td>
 		 <td><strong>LG (LGLS777ABB) Stylo 3 - Prepaid - Carrier Locked - Boost Mobile</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y6J869C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06Y6J869C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41l3ja2ykRL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy S9 Unlocked Smartphone - 64GB - Lilac Purple - US Warranty" /></td>
 		 <td><strong>Samsung Galaxy S9 Unlocked Smartphone - 64GB - Lilac Purple - US Warranty</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079H6L4V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079H6L4V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411vr9KjsWL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy S7 G930P 32GB Prepaid Boost Mobile - Black Onyx" /></td>
 		 <td><strong>Samsung Galaxy S7 G930P 32GB Prepaid Boost Mobile - Black Onyx</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQ28D33"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07CQ28D33"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gVOEVofeL._AC_SX236_SY340_QL65_.jpg" alt="LG Stylo 4 - 32GB - Prepaid Cell Phone - Carrier Locked - (Boost Mobile)" /></td>
 		 <td><strong>LG Stylo 4 - 32GB - Prepaid Cell Phone - Carrier Locked - (Boost Mobile)</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FZ6CRRT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07FZ6CRRT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/517I63iDXsL._AC_SX236_SY340_QL65_.jpg" alt="LG Tribute HD - Prepaid - Carrier Locked - Boost Mobile" /></td>
 		 <td><strong>LG Tribute HD - Prepaid - Carrier Locked - Boost Mobile</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LZMYU7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41O7wkguuOL._AC_SX236_SY340_QL65_.jpg" alt="AexPower-Replacement-Motorola-Motorola-XT1767PP" /></td>
-		 <td><strong>AexPower-Replacement-Motorola-Motorola-XT1767PP</strong> by <em>AexPower</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L93J8TR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01LZMYU7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Med8mWtlL._AC_SX236_SY340_QL65_.jpg" alt="HTC One SV 4G LTE Prepaid Android Phone (Boost Mobile)" /></td>
 		 <td><strong>HTC One SV 4G LTE Prepaid Android Phone (Boost Mobile)</strong> by <em>HTC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BPW65OW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00BPW65OW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41EJcL6V5rL._AC_SX236_SY340_QL65_.jpg" alt="Choosebuy Fingerprint Unlocked Cell Phones, 6.18inch Dual SIM HD Camera FHD+..." /></td>
 		 <td><strong>Choosebuy Fingerprint Unlocked Cell Phones, 6.18inch Dual SIM HD Camera FHD+...</strong> by <em>Choosebuy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JMGJT34"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07JMGJT34"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cmeOkT+lL._AC_SX236_SY340_QL65_.jpg" alt="Apple iPhone 6 Unlocked Smartphone, 16 GB (Gold) (Refurbished)" /></td>
 		 <td><strong>Apple iPhone 6 Unlocked Smartphone, 16 GB (Gold) (Refurbished)</strong> by <em>Apple</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YD545CC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00YD545CC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412dy-EuEHL._AC_SX236_SY340_QL65_.jpg" alt="ZTE Max XL 16GB - Prepaid - Carrier Locked (Boost Mobile)" /></td>
 		 <td><strong>ZTE Max XL 16GB - Prepaid - Carrier Locked (Boost Mobile)</strong> by <em>Boost Mobile</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071S896M8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071S896M8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31G7mWhxEyL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy Note 8 N950U 64GB Unlocked GSM 4G LTE Android Smartphone w/Dual..." /></td>
 		 <td><strong>Samsung Galaxy Note 8 N950U 64GB Unlocked GSM 4G LTE Android Smartphone w/Dual...</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HFHX6HX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HFHX6HX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Rockville Car Amplifiers</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418vpcfn10L._AC_SX236_SY340_QL65_.jpg" alt="Rockville-RXD-M4-3000w-Amplifier-Stereo" /></td>
-		 <td><strong>Rockville-RXD-M4-3000w-Amplifier-Stereo</strong> by <em>Rockville</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FBMLTNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418-CbOySvL._AC_SX236_SY340_QL65_.jpg" alt="Rockville-dB15-3000w-Class-Amplifier" /></td>
-		 <td><strong>Rockville-dB15-3000w-Class-Amplifier</strong> by <em>Rockville</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0711ZYMJC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCACYAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKCcDmq02pWNv/r7y3i/35VH9aALNFY0/i7QrYHzNTg4/ukt/Ks6X4i6Cn+qmmuP+uMRNAHVUVwsvxS08Ntt7K4lb0YhD+tULj4pXAbbFpaRHt58hx+goA9Joryi4+I+uuMrDbQKf40QyD+dZ8vjTxHcgkX42+tuqqR+BFAHs9NeWOMZd1Uf7RxXhk2r6zc587U7uRe6SO0Z/TFUJS0hzLcPnus8m8fzNAHutxrml2ozcajaxj/alX/Gs+Xxx4eiHGpxSn0hBc/oK8UzaociRIm9YzkH8KRrq2P3ss395F2mmB63L8TNCUkRfapmH8Kxbf/QiKoTfFW2U7YtKud3bznVB+ma8xa+jI2mJpAOhfAP5imfb2C7VjXb6Od1AHoU/xS1Af6vSoIgejtK0g/QCqM3xE8RyDMZs1T1hhJI/76JriBezL9wqg9FH+NMNxMxz5hB9V4/lRYDtofHniHzVlN4kgB5i8lACPQjGT/30K2bP4oyoAuo2MeQOTGxTn6HP868tZnf7zs31JNN2jmgD2u2+KHhmZlSa8Nu7EKPMXI/NcgD64rsAQwBBBB5BHevlOVHd1jjj3FzhQByWJ4Ar6ntIfs9nBD/zzjVPyGKQEtFeb+N/G+rabrb6fpSiKG3QGWYRh3dzghVB4AwRyR61zX/CV6lqHyzatdbmyMLIUVsdcGPacD1xigD20sFBLEADqTWbceItGtCVuNVso2HVWnXP5ZzXi82nLe/vTK8pPeRvOH/fWQw/WqjRLbny2kiX2Eqsv5Ng0AexT+PfDsAJOob8f884XYfmBis+T4naOAfs9ve3Huka/wBWz+leU+fawnP2iFT6wswP5AEVE+o2meS83v5IB/PIpgelzfFVNxW30ok9hNOEP5bf61Rn+JurH/V2NrBnoZVZh+YNcC2rR4wkEzj0kkBH5FT/ADpg1WRf9VbxR/Rn/lnH6UAdnL488RzAlbhI1/6d4lcfrzWdJ4m1u6Yh9Xmb/Zjl8tvy6VzLalcsc/uUP+zCufzxmmvfXkgw13Nj0DkCgDdla9nOZ5rmQf8ATzuH/jwqsyRp9+REz2eVHH5ZzWKcscsSx9WOaNoz0FAGt51nF0mjVvWDd/IjFNa+tc/MHkP94R7D+YNZh46Uc4oA0W1OPG0QtIv/AE1YH+QzTP7UkUYjhRV9CS38zVKjj1oAsnULnOVKRn/YQCmPd3Mn353J+tRAD1oxQApLN952P1NJtFGKWgAwKBRRQAUUtFACUUtJQAtIeFJ9qUCkb7jZ9KAO9+EWgWd/Jd6veRCaa1lEcAcZEZxksB68jntXrteffB2Ip4XupP8AnpdMfyAFeg0gPL/G+lXcfiGe8WEtbzKpDAdwMH+VcfNZwylt6bTjnHGQOcH2r36SNJkKSKGU9QRXiF/4jtE8QXemanYgqkxjjngOHA9weDTA4e7u5bqRpLmRm5wFzwB6AU2BF3qQODV/U9EuLCSVivn2YbKzL6E8ZHUfjVJB864/SkBOQM9BQB3oApenamAufWjNGB1pRigAHPag0tGfagAwaUYo5PpR+NAC4o6d6TNLQAUUfhS0AFGaTmloAWikpaAClooxQAUUtFABSUtGKAEFJIP3TEelOxTJf9S1AHsvwni8vwRC3eSeVv8Ax7H9K7auV+G0XleBtO/2wz/mxrqqQBXzP45UJ4w1If8ATU19MV82/EFQnjXUh/t0ANtlntZ5bacyZaxYhZgQwBUHH09Ky4hyuK6fzJUWeC5hSGWTT1bpvZ/l/vHJX6CuZi4K1T3EiX65pRgelBowaQwH5076CkAP0pcUAJzTgPejFHegAAHpS9O2KQe9OxxQAn4UvPSjIo60AFGKXFGDQAUUbfelAoASlpcCnYFADRS0AhjgUvSgBMUUUc0AKKMUtLjNADajmz5R9KlxUVx/qT9KAPf/AAVF5Pg3SExjFstblUNDi8jQrCP+7boP/HRV+kAV84/EhdvjnUR/tA/pX0dXzt8TVx45vvfH8qAJLLUpZ7cwSReWkloVDRgASEDJLetc7EPu1raYVZ4BghkgcdeDlfTtWXH2rWrFRkrEQd0Sc0ClxnvRxWZYopaBS/hQAUn4UooxQAZpePSk/Gl6UALkDrxWjDotwyJJdyw2Eb/d+0NhyPUIOfzxWY4+Q4613F1eW9td2V40jPb6kquGjIXy8gZUnGThs5GeK68LShUb53sc2IqThZQW9zD1Lw1Jp2k/2ml/b3VsGCNsyGBNZMUUs7KsMMrl/uhUJz6102umXRGtrO7lYTzXH2ucQk/Kg4UD0zSXPim0uoI2u7OS6BUobUXDxmM56mTBLAjHGeMVrOjR5tzCnXruK93mvfXb8DE/si9RnW5jS12EAm4cICSMgD1OPSrJ8P3MN7FY3UscV5MCY4VBYkAZBPTGTxTr3xJc6hxNZ2O1STCTFvaIYAwCTjoBzjtVKfUb26lSa4upXnjJKS5wy5OTgjpWL9jHbU1j9ZlvZf1oalv4eR7eczSk3UKkGIOqr5mM7cn0yM/jVZbC2S2s3ubq3RlmP2tVkLOV3AbVAyDgAnOe9ZhXcckkk8knuaUACpdWHSJSpVPtT/A2NevrK6CQaYoFurFiBHtA9APWsY0vTpSE1lUqOpLmZpSpKlBQiAooFAqDUWl6UmKUCgAprpv2p/eIH507FSWyeZf2sf8AemQf+PCgD6Ls08uygT+7Go/SpqAAoAHQcUUgCvnv4pLjxvcnHVR/KvoSvAfiwu3xnIfWMUAUbCLYunFWVhJC5bj5h8vH4VjoOBWzpjo66WVVgxR4mPbgE/1rJQcVtV3XoRDqOxntR+lLijFZFiAml60uKKADFAHNL+lFABj3o4oooAUCtLS9YbTEMMtrFe227zEhm6I/94H+Y71m0VUZOLvEidONRcsldE93dz393Ld3kpluJTlmP6ADsBUQ+lJRSbbd2UlZWQ7NGRTaWkMdmjNNpaACl7UlFAC0opKM0ALS02lzigB30q7osfneINNjxndcJ/OqIORkVYs7qTT72C+hKiW3kEibuhI7GgD6NorJ8Ma4PEWhW+o+SYWkyGjznDA4OD6VrUgCvBvi8u3xgD6xA17zXhXxiXHiyE+sIoAxNEHzWJBJLbht+g61QUdeKuaBIwuLM7QVQsoP+8MGqpGGYe5rerfS/YzhbUT8aX60UdaxNAzjoKXJNIRQKAFoAo5NFABS4FGKKACl+tFFABRS4pKAClpM0uaACikpaAFFFJRwKAFoFMaVF6sKuWWlanqRxYadcz+6xnH50AFharfXqQS3EVrGeXllYAAd8ZIGfxrXnj8LafNH5U11qGFbeMZXdjgk5Xv2H41esfhj4ivQPtAt7NDz+9fcfyGa6Sw+EFjHg6jqNxOf7sSiMf1oA80vrq3mvHmgjWCEhQI1G0ZCgEgZOMkE4ycZ60tvpd7rSiKw0+6u/mzmKM7Qfdug/GvctP8ABPh7TMG30uBnH8cw8w/X5s4/Ct4AKoCgADgAdqLgYvhHSJtD8NWdjclTOi7pNpyAxOSBW1RRSAK8P+My7fEts3rCK9wrw34o3kOr+IPMswbiG1TY7xnILe3qB3oAw9HdGi0kAFXV3LMDw3UYI/GqTjErj/aP86XToR9ptbi0lDKHXzYjwU57eop03/HxL/vn+dXOSlaxMVa5HSUdKXvUlCUtJnnAPNKKAFxSdaX60UAFFFHU0ALRSZpC4HU0APpKjEys4RMu5OAqjJNbdj4Q8SanzbaPcov9+4AhH1+bBP4UAZFIWArvbD4Q6pPg6jqdtbD+7AhlP5naB+tdNYfCfw/a4a6+1Xzj/ntLtX8lx+uaAPGTOgYLnk9AOprVsfDuuamR9j0m6dT/ABumxfzbFe86foGk6UuLDTra390iAP59a0KLgeNWPwp125wby4tbRfQEyN+nFdLY/CPSocNfXdzdN6AhF/SvQKKQGNp/hHQtMwbXTLdW/vMu4/ma2FUKoVQAB0ApaKACiiigAooooAKKKKAOR+JE06eGxBbyGP7RKEcg4JXkkfjivKtzxgLtAZeg6Zr2zxLog17SWtg+yVSHjY9Aw9favIr20ltbp7O/haG4T+Fu49R6imBiGzhmuBNCTBMjAyLjGQDnkf1qo7iSR3HRmJFWtRZo5fLzhVXO4dSPSs+CYXEZcKVAOOaAJM1teHdBTWX+0XMjLZxTLFLHEMucgnP+yox1rFJAqxa63caXFIlrIkYkOWYqC34GgDsNa0bSbLQL82VpGpWCJ4pxmR9+75xktxkY7AfWuGU8CrkEOta0VW3hvr0dAFViv59K3rH4aeJr7DSQQ2aHvNJkj8BmgDl80wyKOpFen2HwcjGG1LVZJPVIECg/iea6fT/h14b0/BXTxO46PcMXP+FFwPC4VlunCWsEk7HoI0LfyroLDwH4m1DBTTWt0/vXDBMfgea93t7W3tE2W0EUKf3Y0Cj9KlouB5RY/B66kwdS1aOP1S3jLZ/E4x+VdLYfC3w3ZYM1vNeOO9xKT+i4H512VFICrY6XY6Ymyws7e1U9RDGEz9cVaoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACs3WtBsdetfJvYskcpIvDofY0UUAeT6/8ADvxDBfKLKBdQibgSI6oR6bgxGKksfhNrt1tN5dWdkh/hXMrj8BgfrRRQB0lj8H9Ihw1/e3d4w6qCI1P4Dn9a6fT/AAb4f0vabTSrZXHR3Te35tk0UUAbSqqDCqFHoBiloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==" alt="Rockville 3200w Peak / 800w RMS @ 4 Ohm CEA Compliant Mono Car Amplifier, Loud..." /></td>
 		 <td><strong>Rockville 3200w Peak / 800w RMS @ 4 Ohm CEA Compliant Mono Car Amplifier, Loud...</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0728K1GD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0728K1GD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41g4gCDDGqL._AC_SX236_SY340_QL65_.jpg" alt="Rockville 4000 Watt/1000w RMS Mono Class D 2 Ohm Amplifier Car Audio Amp (dB14)" /></td>
 		 <td><strong>Rockville 4000 Watt/1000w RMS Mono Class D 2 Ohm Amplifier Car Audio Amp (dB14)</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072LX1DS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072LX1DS8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51DoSIidWtL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXH-F5 3200 Watt Peak/1600w RMS 5 Channel Amplifier Car Stereo Amp" /></td>
 		 <td><strong>Rockville RXH-F5 3200 Watt Peak/1600w RMS 5 Channel Amplifier Car Stereo Amp</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YOAEPR6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YOAEPR6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vn34lFvkL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXD-M3 4000 Watt/2000w RMS Mono Class D 1 Ohm Amplifier Car Stereo..." /></td>
 		 <td><strong>Rockville RXD-M3 4000 Watt/2000w RMS Mono Class D 1 Ohm Amplifier Car Stereo...</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019Z3RIYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019Z3RIYI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51khtWe1wCL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXA-F1 1600 Watt Peak/800w RMS 4 Channel Car Stereo Amplifier+Amp Kit" /></td>
 		 <td><strong>Rockville RXA-F1 1600 Watt Peak/800w RMS 4 Channel Car Stereo Amplifier+Amp Kit</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013D9RQ56"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B013D9RQ56"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KXNAkexwL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXH-F5 1600W RMS 5 Channel Car Amplifier + Amp Kit+ 2 Free RCA Cables" /></td>
 		 <td><strong>Rockville RXH-F5 1600W RMS 5 Channel Car Amplifier + Amp Kit+ 2 Free RCA Cables</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071W8M3YP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B071W8M3YP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Mc9JmVabL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXA-F2 2400 Watt Peak/1200w RMS 4 Channel Car Stereo Amplifier+Amp..." /></td>
 		 <td><strong>Rockville RXA-F2 2400 Watt Peak/1200w RMS 4 Channel Car Stereo Amplifier+Amp...</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013DB1KMY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51LtByererL._AC_SX236_SY340_QL65_.jpg" alt="all-new-amazon-echo-speaker-with-wifi-alexa-dark-charcoal" /></td>
-		 <td><strong>all-new-amazon-echo-speaker-with-wifi-alexa-dark-charcoal</strong> by <em>Amazon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XCM9LJ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B013DB1KMY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VyR11LbDL._AC_SX236_SY340_QL65_.jpg" alt="Rockville dB55 4000w Peak / 980w RMS @ 2 Ohm CEA Compliant Mono Car Amplifier..." /></td>
 		 <td><strong>Rockville dB55 4000w Peak / 980w RMS @ 2 Ohm CEA Compliant Mono Car Amplifier...</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071SKCVJD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B071SKCVJD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VyR11LbDL._AC_SX236_SY340_QL65_.jpg" alt="Rockville dB45 3200 Watt/1600w RMS 4 Channel Car Stereo Amplifier+Amp Kit Loud !" /></td>
 		 <td><strong>Rockville dB45 3200 Watt/1600w RMS 4 Channel Car Stereo Amplifier+Amp Kit Loud !</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072622C1J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072622C1J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31mwfCvoPWL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXD-F20 Micro Car/ATV Amplifier 1600w Peak 4 Channel 4x100W/CEA Rated" /></td>
 		 <td><strong>Rockville RXD-F20 Micro Car/ATV Amplifier 1600w Peak 4 Channel 4x100W/CEA Rated</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D85N5MS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01D85N5MS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41I80ORzKyL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RPA5 1000 Watt Peak / 500w RMS 2 Channel Power Amplifier Pro/DJ Amp" /></td>
 		 <td><strong>Rockville RPA5 1000 Watt Peak / 500w RMS 2 Channel Power Amplifier Pro/DJ Amp</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XDRF2GZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XDRF2GZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WWs2kq1uL._AC_SX236_SY340_QL65_.jpg" alt="Rockville RXD-T2 Micro Car Audio Class D Amplifier 2400w 2 Chan 2x600W CEA Rated" /></td>
 		 <td><strong>Rockville RXD-T2 Micro Car Audio Class D Amplifier 2400w 2 Chan 2x600W CEA Rated</strong> by <em>Rockville</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019Z3RITS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B019Z3RITS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

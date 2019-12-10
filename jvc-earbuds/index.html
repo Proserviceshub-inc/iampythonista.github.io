@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Jvc Earbuds</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RHw4PldRL._AC_SX236_SY340_QL65_.jpg" alt="Headphone-earpieces-Included-JVC-HAFX7B" /></td>
-		 <td><strong>Headphone-earpieces-Included-JVC-HAFX7B</strong> by <em>JVC</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073R2RSB2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41aQzirsjxL._AC_SX236_SY340_QL65_.jpg" alt="headphone-earpieces-included-JVC-HAFX7MB" /></td>
-		 <td><strong>headphone-earpieces-included-JVC-HAFX7MB</strong> by <em>JVC</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073R2X1MY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="JVC HAF160R Gumy Ear Bud Headphone Red" /></td>
 		 <td><strong>JVC HAF160R Gumy Ear Bud Headphone Red</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DSTBMZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00DSTBMZ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BTkcjUvpL._AC_SX236_SY340_QL65_.jpg" alt="JVC Memory Foam Earbud Marshmallow Memory Foam Earbud with Mic Green (HAFX38MG)" /></td>
 		 <td><strong>JVC Memory Foam Earbud Marshmallow Memory Foam Earbud with Mic Green (HAFX38MG)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072PPC89N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B072PPC89N"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419euk+6c-L._AC_SX236_SY340_QL65_.jpg" alt="JVC Xtreme Xplosives Series Headphone with remote and Mic Red (HAFX103R) (HAFX103MR)" /></td>
 		 <td><strong>JVC Xtreme Xplosives Series Headphone with remote and Mic Red (HAFX103R) (HAFX103MR)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06X155J4P"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06X155J4P"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41n7tVi8XQL._AC_SX236_SY340_QL65_.jpg" alt="JVC HAFX5V Gumy Plus Inner Ear Headphones (Grape Violet)" /></td>
 		 <td><strong>JVC HAFX5V Gumy Plus Inner Ear Headphones (Grape Violet)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005DHKRVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B005DHKRVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vAI3k-gHL._AC_SX236_SY340_QL65_.jpg" alt="JVC HAECX20B Sports Clip Inner Ear Headphones, Black" /></td>
 		 <td><strong>JVC HAECX20B Sports Clip Inner Ear Headphones, Black</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VV6X1UI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00VV6X1UI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XO4qUBG2L._AC_SX236_SY340_QL65_.jpg" alt="JVC HAFR6B Gumy Plus Headphones (Black)" /></td>
 		 <td><strong>JVC HAFR6B Gumy Plus Headphones (Black)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008SOSE6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B008SOSE6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31VW5fEwwSL._AC_SX236_SY340_QL65_.jpg" alt="JVC HAEN10B Gumy Sport Earbuds, Black" /></td>
 		 <td><strong>JVC HAEN10B Gumy Sport Earbuds, Black</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LG9JAZ0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31K3rfB6VAL._AC_SX236_SY340_QL65_.jpg" alt="JVC-HAF160W-Gumy-Headphone-White" /></td>
-		 <td><strong>JVC-HAF160W-Gumy-Headphone-White</strong> by <em>JVC</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DSTBMSY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00LG9JAZ0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kSnei9NEL._AC_SX236_SY340_QL65_.jpg" alt="JVC Memory Foam Earbud Marshmallow Memory Foam Earbud Black (HAFX38B)" /></td>
 		 <td><strong>JVC Memory Foam Earbud Marshmallow Memory Foam Earbud Black (HAFX38B)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072DZLCM9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B072DZLCM9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RHw4PldRL._AC_SX236_SY340_QL65_.jpg" alt="Black GUMY in Ear Earbuds with Stay fit Ear Tips. Wired 3.3ft Colored Cord Cable..." /></td>
 		 <td><strong>Black GUMY in Ear Earbuds with Stay fit Ear Tips. Wired 3.3ft Colored Cord Cable...</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073R2RSB2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B073R2RSB2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31hFO5cKLzL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic ErgoFit In-Ear Earbud Headphones RP-HJE120-K (Black) Dynamic Crystal..." /></td>
 		 <td><strong>Panasonic ErgoFit In-Ear Earbud Headphones RP-HJE120-K (Black) Dynamic Crystal...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003EM8008"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003EM8008"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ctSH+tONL._AC_SX236_SY340_QL65_.jpg" alt="JVC Earclip Earbud Sport Earbud Earclip Black (HAEC10B)" /></td>
 		 <td><strong>JVC Earclip Earbud Sport Earbud Earclip Black (HAEC10B)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K7MY2N6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01K7MY2N6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vp3xTM4VL._AC_SX236_SY340_QL65_.jpg" alt="JVC HAEBR80B Sports Clip Headphones (Black)" /></td>
 		 <td><strong>JVC HAEBR80B Sports Clip Headphones (Black)</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0078JFQ0K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0078JFQ0K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ijgTsoehL._AC_SX236_SY340_QL65_.jpg" alt="JVC HAF160B Gumy Headphones - Black" /></td>
 		 <td><strong>JVC HAF160B Gumy Headphones - Black</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EO20LFO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00EO20LFO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412v8mJFbxL._AC_SX236_SY340_QL65_.jpg" alt="JVC Gumy Sports Earbuds with Microphone" /></td>
 		 <td><strong>JVC Gumy Sports Earbuds with Microphone</strong> by <em>JVC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0725SSR7K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0725SSR7K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

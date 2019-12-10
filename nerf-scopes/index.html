@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Nerf Scopes</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DaaeZ6hrL._AC_SX236_SY340_QL65_.jpg" alt="Longstrike-Nerf-Extension-Six-Dart-Exclusive" /></td>
-		 <td><strong>Longstrike-Nerf-Extension-Six-Dart-Exclusive</strong> by <em>Nerf</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B3KS1B8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41S49cwqn8L._AC_SX236_SY340_QL65_.jpg" alt="Nerf-N-Strike-Elite-Strongarm-Blaster" /></td>
-		 <td><strong>Nerf-N-Strike-Elite-Strongarm-Blaster</strong> by <em>Hasbro - Import</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DW1JT5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Nerf Modulus Day/Night Zoom Scope" /></td>
 		 <td><strong>Nerf Modulus Day/Night Zoom Scope</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N7YVRA2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N7YVRA2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZjRJ7pzWL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Modulus Long Range Upgrade Kit" /></td>
 		 <td><strong>Nerf Modulus Long Range Upgrade Kit</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00U5UDWLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00U5UDWLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414fL-Tv8PL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Modulus Stealth Ops Upgrade Kit" /></td>
 		 <td><strong>Nerf Modulus Stealth Ops Upgrade Kit</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00U5UDU66"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00U5UDU66"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lw0McwmmL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Modulus Red Dot Sight" /></td>
 		 <td><strong>Nerf Modulus Red Dot Sight</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00T2DFI6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00T2DFI6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DaaeZ6hrL._AC_SX236_SY340_QL65_.jpg" alt="Longstrike Nerf Modulus Toy Blaster with Barrel Extension, Bipod, Scopes, 18..." /></td>
 		 <td><strong>Longstrike Nerf Modulus Toy Blaster with Barrel Extension, Bipod, Scopes, 18...</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B3KS1B8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07B3KS1B8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31knGPhW1fL._AC_SX236_SY340_QL65_.jpg" alt="Scope Sight for Nerf Gun Toy, Plastic Scope Sight Attachment with Reticle Accessory..." /></td>
 		 <td><strong>Scope Sight for Nerf Gun Toy, Plastic Scope Sight Attachment with Reticle Accessory...</strong> by <em>Tbest</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GZN7QF3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GZN7QF3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31knGPhW1fL._AC_SX236_SY340_QL65_.jpg" alt="VGEBY Front Tube Scope, Modulus Proximity Barrel Targeting Scope Sight for Nerf..." /></td>
 		 <td><strong>VGEBY Front Tube Scope, Modulus Proximity Barrel Targeting Scope Sight for Nerf...</strong> by <em>VGEBY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GP1PSMM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31knGPhW1fL._AC_SX236_SY340_QL65_.jpg" alt="VGEBY-Modulus-Proximity-Barrel-Targeting" /></td>
-		 <td><strong>VGEBY-Modulus-Proximity-Barrel-Targeting</strong> by <em>VGEBY</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GP1PSMM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07GP1PSMM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WMb2CE69L._AC_SX236_SY340_QL65_.jpg" alt="Nerf Zombie Strike ZED Squad Longshot CS-12 Blaster" /></td>
 		 <td><strong>Nerf Zombie Strike ZED Squad Longshot CS-12 Blaster</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MHZOMGO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00MHZOMGO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Y2Cx+zjoL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Rival Red Dot Sight" /></td>
 		 <td><strong>Nerf Rival Red Dot Sight</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IHFCZRK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IHFCZRK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31BdF2ahqPL._AC_SX236_SY340_QL65_.jpg" alt="CVLIFE 4x32 Compact Rifle Scope Crosshair Optics Hunting Gun Scope with 20mm..." /></td>
 		 <td><strong>CVLIFE 4x32 Compact Rifle Scope Crosshair Optics Hunting Gun Scope with 20mm...</strong> by <em>CVLIFE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BBTS3JI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01BBTS3JI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419r0bVyxbL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Elite Blaster Rack" /></td>
 		 <td><strong>Nerf Elite Blaster Rack</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BC6XTS5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07BC6XTS5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31S1sDlwhML._AC_SX236_SY340_QL65_.jpg" alt="Lingxuinfo Upgrade Front Tube Scope Decor for nerf stryfe/retaliator/ra..." /></td>
 		 <td><strong>Lingxuinfo Upgrade Front Tube Scope Decor for nerf stryfe/retaliator/ra...</strong> by <em>Lingxuinfo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078V6P7C7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078V6P7C7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4100jYma7tL._AC_SX236_SY340_QL65_.jpg" alt="Nerf Modulus Regulator" /></td>
 		 <td><strong>Nerf Modulus Regulator</strong> by <em>Nerf</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MYFC4OD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MYFC4OD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

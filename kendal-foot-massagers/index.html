@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Kendal Foot Massagers</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51lJIvj+bSL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Cloud Massage</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074P2M8N8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51O55+hie9L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>TheraFlow</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WP7GXX5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Kendal Shiatsu Foot Massager with Intensity Adjustable Deep Kneading, Rolling..." /></td>
 		 <td><strong>Kendal Shiatsu Foot Massager with Intensity Adjustable Deep Kneading, Rolling...</strong> by <em>KENDAL </em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DR8XGSV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DR8XGSV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t1VIFbi7L._AC_SX236_SY340_QL65_.jpg" alt="Kendal Shiatsu Back Neck Massager - Kneading Massage Pillow for Shoulders, Lower..." /></td>
 		 <td><strong>Kendal Shiatsu Back Neck Massager - Kneading Massage Pillow for Shoulders, Lower...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LDERT88"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00LDERT88"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UYiQmlJWL._AC_SX236_SY340_QL65_.jpg" alt="Shiatsu Neck Shoulder Back Tapping Massager Heated Therapy,Electric Full Body..." /></td>
 		 <td><strong>Shiatsu Neck Shoulder Back Tapping Massager Heated Therapy,Electric Full Body...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0053UPAYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0053UPAYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kdM0Y3xML._AC_SX236_SY340_QL65_.jpg" alt="Kendal 2 in 1 Foot Massager Kneading Shiatsu Therapy Plantar Massage with Far..." /></td>
 		 <td><strong>Kendal 2 in 1 Foot Massager Kneading Shiatsu Therapy Plantar Massage with Far...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00WBTYXM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00WBTYXM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415DjT1n1zL._AC_SX236_SY340_QL65_.jpg" alt="All in one Large Safest foot spa bath massager w/heat, HF vibration, O2 bubbles..." /></td>
 		 <td><strong>All in one Large Safest foot spa bath massager w/heat, HF vibration, O2 bubbles...</strong> by <em>KENDAL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HCGB6BC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00HCGB6BC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OqoP4yMwL._AC_SX236_SY340_QL65_.jpg" alt="All in one Large foot spa bath massager with rolling massage, heat, HF vibration..." /></td>
 		 <td><strong>All in one Large foot spa bath massager with rolling massage, heat, HF vibration...</strong> by <em>KENDAL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OWGXAT6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00OWGXAT6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AFrKzCZML._AC_SX236_SY340_QL65_.jpg" alt="All in one deep foot &amp; leg spa bath massager w/motorized rolling massage, heat..." /></td>
 		 <td><strong>All in one deep foot &amp; leg spa bath massager w/motorized rolling massage, heat...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LR76UK4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zNn-THHpL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Make Lemonade</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GZZV7KL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00LR76UK4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oJKAVca2L._AC_SX236_SY340_QL65_.jpg" alt="Physiotherapeutic Device with Foot Reflexology, Acupuncture, and Infrared Therapy..." /></td>
 		 <td><strong>Physiotherapeutic Device with Foot Reflexology, Acupuncture, and Infrared Therapy...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00NXELV62"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00NXELV62"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NCMJGXnpL._AC_SX236_SY340_QL65_.jpg" alt="All in one foot spa bath massager w/heat, HF vibration, O2 bubbles red light..." /></td>
 		 <td><strong>All in one foot spa bath massager w/heat, HF vibration, O2 bubbles red light...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EJXA3HO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00EJXA3HO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eo-y4QJtL._AC_SX236_SY340_QL65_.jpg" alt="Kendal 16 Pcs Professional Large Massage Stone Set Basalt Hot Rocks Stones" /></td>
 		 <td><strong>Kendal 16 Pcs Professional Large Massage Stone Set Basalt Hot Rocks Stones</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CQ6UXV6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01CQ6UXV6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51YQj8C57ZL._AC_SX236_SY340_QL65_.jpg" alt="All in One Foot Spa Bath Massager with Heat, Digital Temperature Control, O2..." /></td>
 		 <td><strong>All in One Foot Spa Bath Massager with Heat, Digital Temperature Control, O2...</strong> by <em>Kendal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077984C21"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077984C21"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41exrjNgvIL._AC_SX236_SY340_QL65_.jpg" alt="All in one foot spa bath massager w/motorized rolling massage, heat, wave, O2..." /></td>
 		 <td><strong>All in one foot spa bath massager w/motorized rolling massage, heat, wave, O2...</strong> by <em>KENDAL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LSPGR62"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00LSPGR62"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

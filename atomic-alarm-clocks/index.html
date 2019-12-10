@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Atomic Alarm Clocks</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410IxZYmNsL._AC_SX236_SY340_QL65_.jpg" alt="Marathon-CL030051WH-Atomic-Auto-Night-Temperature" /></td>
-		 <td><strong>Marathon-CL030051WH-Atomic-Auto-Night-Temperature</strong> by <em>Marathon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XPRKK3T"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41omdO94MaL._AC_SX236_SY340_QL65_.jpg" alt="Marathon-CL030036WH-Feature-Batteries-Included" /></td>
-		 <td><strong>Marathon-CL030036WH-Feature-Batteries-Included</strong> by <em>Marathon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00J2EE98E"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="La Crosse Technology 617-1485B Atomic Color Alarm Clock with USB Charging Port" /></td>
 		 <td><strong>La Crosse Technology 617-1485B Atomic Color Alarm Clock with USB Charging Port</strong> by <em>La Crosse Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011RRA20C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B011RRA20C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51b3gLcWMVL._AC_SX236_SY340_QL65_.jpg" alt="La Crosse Technology 513-1419BLv3-INT Backlight Atomic Full Calendar Clock with..." /></td>
 		 <td><strong>La Crosse Technology 513-1419BLv3-INT Backlight Atomic Full Calendar Clock with...</strong> by <em>La Crosse Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01EZ3C7L2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01EZ3C7L2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bAj8FpBBL._AC_SX236_SY340_QL65_.jpg" alt="La Crosse Technology  616-146 Color Projection Alarm Clock with Outdoor temperature..." /></td>
 		 <td><strong>La Crosse Technology  616-146 Color Projection Alarm Clock with Outdoor temperature...</strong> by <em>La Crosse Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0097C41PC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0097C41PC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413UpiaIQHL._AC_SX236_SY340_QL65_.jpg" alt="DreamSky Auto Time Set Alarm Clock with USB Port for Charging, Snooze, Dimmer..." /></td>
 		 <td><strong>DreamSky Auto Time Set Alarm Clock with USB Port for Charging, Snooze, Dimmer...</strong> by <em>DreamSky</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071LM1B22"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071LM1B22"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DQT+dQKuL._AC_SX236_SY340_QL65_.jpg" alt="AcuRite 13024 Atomic Dual Alarm Clock with USB Charging" /></td>
 		 <td><strong>AcuRite 13024 Atomic Dual Alarm Clock with USB Charging</strong> by <em>AcuRite</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FQAG53A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00FQAG53A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41w2dEr1HFL._AC_SX236_SY340_QL65_.jpg" alt="Marathon CL030051BK Atomic Alarm Clock with Auto-Night Light, Temperature &amp; Date..." /></td>
 		 <td><strong>Marathon CL030051BK Atomic Alarm Clock with Auto-Night Light, Temperature &amp; Date...</strong> by <em>Marathon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014PYU0Y2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CRnvYqmqL._AC_SX236_SY340_QL65_.jpg" alt="All-new-Echo-Dot-3rd-Gen" /></td>
-		 <td><strong>All-new-Echo-Dot-3rd-Gen</strong> by <em>Amazon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0792KTHKJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B014PYU0Y2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/315PhLuwhNL._AC_SX236_SY340_QL65_.jpg" alt="Emerson SmartSet Alarm Clock Radio, USB port for iPhone/iPad/iPod/And... and..." /></td>
 		 <td><strong>Emerson SmartSet Alarm Clock Radio, USB port for iPhone/iPad/iPod/And... and...</strong> by <em>Emerson Radio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F6T4466"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00F6T4466"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51lqLaBVUWL._AC_SX236_SY340_QL65_.jpg" alt="Johnson &amp; Smith Atomic Alarm Desk Clock With USB Port To Charge Cell Phones,..." /></td>
 		 <td><strong>Johnson &amp; Smith Atomic Alarm Desk Clock With USB Port To Charge Cell Phones,...</strong> by <em>Johnson &amp; Smith</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072BJC4T8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072BJC4T8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51G++5YAr4L._AC_SX236_SY340_QL65_.jpg" alt="La Crosse Technology C86279 Atomic Full Calendar Clock with Extra Large Digits..." /></td>
 		 <td><strong>La Crosse Technology C86279 Atomic Full Calendar Clock with Extra Large Digits...</strong> by <em>La Crosse Technology</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D5CBOK4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01D5CBOK4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419gEV-1nNL._AC_SX236_SY340_QL65_.jpg" alt="Marathon Atomic Travel Alarm Clock with Auto Back Light Feature, Calendar and..." /></td>
 		 <td><strong>Marathon Atomic Travel Alarm Clock with Auto Back Light Feature, Calendar and...</strong> by <em>Marathon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00J2EE7ZY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00J2EE7ZY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RWP-pDtEL._AC_SX236_SY340_QL65_.jpg" alt="MARATHON CL030054BK Atomic Humidex Clock with Calendar, Temperature, Heat &amp; Comfort..." /></td>
 		 <td><strong>MARATHON CL030054BK Atomic Humidex Clock with Calendar, Temperature, Heat &amp; Comfort...</strong> by <em>Marathon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017KNVV48"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017KNVV48"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41g1H-XMynL._AC_SX236_SY340_QL65_.jpg" alt="Sangean RCR-22 AM/FM Tuning Clock Radio (White)" /></td>
 		 <td><strong>Sangean RCR-22 AM/FM Tuning Clock Radio (White)</strong> by <em>Sangean</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000QUGKRQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000QUGKRQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,6 +243,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/31XfmnO-nzL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>chicago reciprocating saws</strong></td>
+                 <td style="text-align: center;"><a href="/chicago-reciprocating-saws"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41L+dtL35kL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>driveway patrol</strong></td>
+                 <td style="text-align: center;"><a href="/driveway-patrol"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>margaritaville margarita machines</strong></td>
+                 <td style="text-align: center;"><a href="/margaritaville-margarita-machines"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31UbxjW7RuL._AC_SX225_SY325_QL65_.jpg"/></td>
+                 <td><strong>baby stroller travel systems</strong></td>
+                 <td style="text-align: center;"><a href="/cosco-baby-stroller-travel-systems"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -238,13 +307,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

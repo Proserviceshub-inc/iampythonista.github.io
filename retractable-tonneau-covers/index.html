@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Retractable Tonneau Covers</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51vmYJoHDNL._AC_SX236_SY340_QL65_.jpg" alt="RetraxPRO-Retractable-Tonneau-40461-Limited" /></td>
-		 <td><strong>RetraxPRO-Retractable-Tonneau-40461-Limited</strong> by <em>Retrax</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DRJW2DO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uFTbYF5SL._AC_SX236_SY340_QL65_.jpg" alt="Retrax-60462-Retractable-Truck-Cover" /></td>
-		 <td><strong>Retrax-60462-Retractable-Truck-Cover</strong> by <em>Retrax</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016VABJBQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="2015-2019 Ford F150 5.5 Bed Gator Recoil Retractable Tonneau Truck Bed Cover..." /></td>
 		 <td><strong>2015-2019 Ford F150 5.5 Bed Gator Recoil Retractable Tonneau Truck Bed Cover...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N7KLK1E"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N7KLK1E"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-yu6dNQiL._AC_SX236_SY340_QL65_.jpg" alt="Pace Edwards SWC3250 Switchblade Tonneau Cover" /></td>
 		 <td><strong>Pace Edwards SWC3250 Switchblade Tonneau Cover</strong> by <em>Pace Edwards</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HESVDFM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HESVDFM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51tdwfadB3L._AC_SX236_SY340_QL65_.jpg" alt="2014-2018 Chevy Silverado GMC Sierra 5.8 FT. Bed Gator Recoil Retractable Tonneau..." /></td>
 		 <td><strong>2014-2018 Chevy Silverado GMC Sierra 5.8 FT. Bed Gator Recoil Retractable Tonneau...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MT1GP3P"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MT1GP3P"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31u6JiSjt-L._AC_SX236_SY340_QL65_.jpg" alt="Vesul Updated Version Black Tonneau Cover Retractable Rear Trunk Cargo Luggage..." /></td>
 		 <td><strong>Vesul Updated Version Black Tonneau Cover Retractable Rear Trunk Cargo Luggage...</strong> by <em>Vesul</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077HZ7ZZ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077HZ7ZZ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bKVHHCxFL._AC_SX236_SY340_QL65_.jpg" alt="GatorTrax Retractable Tonneau Truck Bed Cover  2009-2014 Ford F150 5.5 ft Bed" /></td>
 		 <td><strong>GatorTrax Retractable Tonneau Truck Bed Cover  2009-2014 Ford F150 5.5 ft Bed</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013UT1O4S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B013UT1O4S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mLzMab8kL._AC_SX236_SY340_QL65_.jpg" alt="2014-2018 Chevy Silverado GMC Sierra 6.5 FT. Bed Gator Recoil Retractable Tonneau..." /></td>
 		 <td><strong>2014-2018 Chevy Silverado GMC Sierra 6.5 FT. Bed Gator Recoil Retractable Tonneau...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N2WB4HX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N2WB4HX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dvbHV37YL._AC_SX236_SY340_QL65_.jpg" alt="2009-2014 Ford F150 5.5 Bed Gator Recoil Retractable Tonneau Truck Bed Cover..." /></td>
 		 <td><strong>2009-2014 Ford F150 5.5 Bed Gator Recoil Retractable Tonneau Truck Bed Cover...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N0T8ZHK"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Ve5HKnu6L._AC_SX236_SY340_QL65_.jpg" alt="RetraxPRO-Retractable-Tonneau-80841-CrewMax" /></td>
-		 <td><strong>RetraxPRO-Retractable-Tonneau-80841-CrewMax</strong> by <em>Retrax</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SNMOB16"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N0T8ZHK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WQ8VcpgeL._AC_SX236_SY340_QL65_.jpg" alt="Gator Recoil Retractable Tonneau Truck Bed Cover 2015-2018 Ford F150 6.5 FT Bed" /></td>
 		 <td><strong>Gator Recoil Retractable Tonneau Truck Bed Cover 2015-2018 Ford F150 6.5 FT Bed</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01NBN11M7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01NBN11M7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51nzlqGnpCL._AC_SX236_SY340_QL65_.jpg" alt="Retrax 60373 ONE MX Retractable Truck Bed Cover | fits F-150 Super Crew &amp; Super..." /></td>
 		 <td><strong>Retrax 60373 ONE MX Retractable Truck Bed Cover | fits F-150 Super Crew &amp; Super...</strong> by <em>Retrax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016VA6SEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B016VA6SEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-mFq5jDiL._AC_SX236_SY340_QL65_.jpg" alt="GatorTrax Retractable Tonneau Truck Bed Cover 2015-2018 Ford F150 5.5 FT. Bed..." /></td>
 		 <td><strong>GatorTrax Retractable Tonneau Truck Bed Cover 2015-2018 Ford F150 5.5 FT. Bed...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K7PR370"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01K7PR370"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ERpTeDoVL._AC_SX236_SY340_QL65_.jpg" alt="Vesul Black Updated Tonneau Cover Retractable Rear Trunk Cargo Luggage Security..." /></td>
 		 <td><strong>Vesul Black Updated Tonneau Cover Retractable Rear Trunk Cargo Luggage Security...</strong> by <em>Vesul</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075S548WT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075S548WT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513r4v4WVOL._AC_SX236_SY340_QL65_.jpg" alt="2009-2018 Dodge Ram 5.7 FT. Bed No RamBox Gator Recoil Retractable Tonneau Truck..." /></td>
 		 <td><strong>2009-2018 Dodge Ram 5.7 FT. Bed No RamBox Gator Recoil Retractable Tonneau Truck...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N0T8Y84"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N0T8Y84"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51YeugHKHUL._AC_SX236_SY340_QL65_.jpg" alt="GatorTrax Retractable Tonneau Truck Bed Cover 2014-2018 Chevy Silverado GMC Sierra..." /></td>
 		 <td><strong>GatorTrax Retractable Tonneau Truck Bed Cover 2014-2018 Chevy Silverado GMC Sierra...</strong> by <em>Gator Covers</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K7PRSN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01K7PRSN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sr2RI-vOL._AC_SX236_SY340_QL65_.jpg" alt="Vesul Black Updated Tonneau Cover Retractable Rear Trunk Cargo Luggage Security..." /></td>
 		 <td><strong>Vesul Black Updated Tonneau Cover Retractable Rear Trunk Cargo Luggage Security...</strong> by <em>Vesul</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07444VTB5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07444VTB5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

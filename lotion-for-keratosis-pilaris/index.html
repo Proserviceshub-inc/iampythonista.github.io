@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Lotion For Keratosis Pilaris</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fwXgdePvL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>KP Elements</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004IS1GGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yATxVfTQL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Ancient Nutrition</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074PC5JGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="CeraVe Renewing SA Lotion | 8 Ounce | Salicylic Acid Body Lotion for Rough and..." /></td>
 		 <td><strong>CeraVe Renewing SA Lotion | 8 Ounce | Salicylic Acid Body Lotion for Rough and...</strong> by <em>CeraVe</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0071XPQQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0071XPQQ2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41xzNV04L1L._AC_SX236_SY340_QL65_.jpg" alt="KP Elements Keratosis Pilaris Body Scrub &amp; Exfoliating Skin Cream Set, 12 fl..." /></td>
 		 <td><strong>KP Elements Keratosis Pilaris Body Scrub &amp; Exfoliating Skin Cream Set, 12 fl...</strong> by <em>KP Elements</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011M8UFYE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B011M8UFYE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41VoiXBszoL._AC_SX236_SY340_QL65_.jpg" alt="AmLactin Rapid Relief Restoring Lotion + Ceramides | 24-Hr Dry Skin Relief |..." /></td>
 		 <td><strong>AmLactin Rapid Relief Restoring Lotion + Ceramides | 24-Hr Dry Skin Relief |...</strong> by <em>AmLactin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BX57IOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BX57IOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31H1G+yPLhL._AC_SX236_SY340_QL65_.jpg" alt="Touch Keratosis Pilaris Treatment with 12% Glycolic Acid &amp; 2% Salicylic Acid..." /></td>
 		 <td><strong>Touch Keratosis Pilaris Treatment with 12% Glycolic Acid &amp; 2% Salicylic Acid...</strong> by <em>TOUCH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XFJT3P7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XFJT3P7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fwXgdePvL._AC_SX236_SY340_QL65_.jpg" alt="KP Elements Keratosis Pilaris Exfoliating Skin Cream Treatment, 4 fl oz. - All-Natural..." /></td>
 		 <td><strong>KP Elements Keratosis Pilaris Exfoliating Skin Cream Treatment, 4 fl oz. - All-Natural...</strong> by <em>KP Elements</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004IS1GGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004IS1GGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411pDIAem4L._AC_SX236_SY340_QL65_.jpg" alt="AmLactin Daily Moisturizing Body Lotion | Instantly Hydrates, Relieves Roughness..." /></td>
 		 <td><strong>AmLactin Daily Moisturizing Body Lotion | Instantly Hydrates, Relieves Roughness...</strong> by <em>AmLactin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00T7260EC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00T7260EC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41P+dJiRX2L._AC_SX236_SY340_QL65_.jpg" alt="DRMTLGY Keratosis Pilaris Treatment Lactic Acid Skin Lotion. For Rough and Bumpy..." /></td>
 		 <td><strong>DRMTLGY Keratosis Pilaris Treatment Lactic Acid Skin Lotion. For Rough and Bumpy...</strong> by <em>DRMTLGY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KWFNSPD"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31GdOCosrfL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>SAL3</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EZS3Y5G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KWFNSPD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21JY09AASPL._AC_SX236_SY340_QL65_.jpg" alt="Touch Keratosis Pilaris &amp; Acne Exfoliating Body Wash Cleanser - KP Treatment..." /></td>
 		 <td><strong>Touch Keratosis Pilaris &amp; Acne Exfoliating Body Wash Cleanser - KP Treatment...</strong> by <em>TOUCH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078M6TQ87"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078M6TQ87"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eiuGA522L._AC_SX236_SY340_QL65_.jpg" alt="CeraVe SA Lotion for Rough and Bumpy Skin 8 Ounces each (Value Pack of 3)" /></td>
 		 <td><strong>CeraVe SA Lotion for Rough and Bumpy Skin 8 Ounces each (Value Pack of 3)</strong> by <em>CeraVe</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IADZ0NU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B01IADZ0NU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31AR61uwJ4L._AC_SX236_SY340_QL65_.jpg" alt="Ammonium Lactate Lotion 12%C-P , Fliptop - (400grams/14oz)" /></td>
 		 <td><strong>Ammonium Lactate Lotion 12%C-P , Fliptop - (400grams/14oz)</strong> by <em>Ammonium</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000WOS71I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000WOS71I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Ob82GkBaL._AC_SX236_SY340_QL65_.jpg" alt="Excipial Urea Hydrating Healing Lotion, 6.7 Ounce" /></td>
 		 <td><strong>Excipial Urea Hydrating Healing Lotion, 6.7 Ounce</strong> by <em>Excipial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014QVWLUA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B014QVWLUA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jkCaAC+uL._AC_SX236_SY340_QL65_.jpg" alt="KPAway Keratosis Pilaris Treatment - Baby Friendly, Acid Free KP Cream or Lotion..." /></td>
 		 <td><strong>KPAway Keratosis Pilaris Treatment - Baby Friendly, Acid Free KP Cream or Lotion...</strong> by <em>KPAway</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LXPPCJP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LXPPCJP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31HtuY1DCnL._AC_SX236_SY340_QL65_.jpg" alt="AmLactin 12 % Moisturizing Lotion - 567 g / 20 oz" /></td>
 		 <td><strong>AmLactin 12 % Moisturizing Lotion - 567 g / 20 oz</strong> by <em>AmLactin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000TTPZQ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000TTPZQ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RKwN9ofqL._AC_SX236_SY340_QL65_.jpg" alt="Lilah James KP Exfoliating Lotion 8oz - 14% Glycolic Acid and 2% Salicylic Acid..." /></td>
 		 <td><strong>Lilah James KP Exfoliating Lotion 8oz - 14% Glycolic Acid and 2% Salicylic Acid...</strong> by <em>Lilah James Skincare</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077ZHNLLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077ZHNLLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

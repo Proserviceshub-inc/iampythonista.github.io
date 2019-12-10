@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Tv Arabic Iptv Boxes</div>
@@ -86,115 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oJb9Qw9JL._AC_SX236_SY340_QL65_.jpg" alt="SOUDIO-IPTVKINGS-Brazilian-Portuguese-Subscription" /></td>
-		 <td><strong>SOUDIO-IPTVKINGS-Brazilian-Portuguese-Subscription</strong> by <em>SOUDIO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M9JXLWQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Live IPTV Receiver Box 4500+ Global Channels from Arabic American Europe Turkish..." /></td>
 		 <td><strong>Live IPTV Receiver Box 4500+ Global Channels from Arabic American Europe Turkish...</strong> by <em>NN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JNS6RXF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07JNS6RXF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ve5PZdJgL._AC_SX236_SY340_QL65_.jpg" alt="Goldenbox 2019 New International IPTV Box Receiver with Lifetime Subscription..." /></td>
 		 <td><strong>Goldenbox 2019 New International IPTV Box Receiver with Lifetime Subscription...</strong> by <em>Goldenbox</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HH2KMQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07HH2KMQD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4106QrCHZsL._AC_SX236_SY340_QL65_.jpg" alt="International IPTV Receiver Box, 2019 New MACOBOX Global IPTV with 1500+ Live..." /></td>
 		 <td><strong>International IPTV Receiver Box, 2019 New MACOBOX Global IPTV with 1500+ Live...</strong> by <em>MACOBOX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HP1B6SH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HP1B6SH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41h7pfX-cZL._AC_SX236_SY340_QL65_.jpg" alt="IPTV Brazilian Arabic India Europe America 1500+ International Live Channels..." /></td>
 		 <td><strong>IPTV Brazilian Arabic India Europe America 1500+ International Live Channels...</strong> by <em>Goldenbox</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GSW5Y14"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GSW5Y14"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HBlgC0jVL._AC_SX236_SY340_QL65_.jpg" alt="2 Years Renewal Service for Your Arabic IPTV ( Subscription only No Device )..." /></td>
 		 <td><strong>2 Years Renewal Service for Your Arabic IPTV ( Subscription only No Device )...</strong> by <em>ALL IPTV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J32KCQ5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sPPh71RXL._AC_SX236_SY340_QL65_.jpg" alt="GooBang-Doo-Android-ABOX-Amlogic" /></td>
-		 <td><strong>GooBang-Doo-Android-ABOX-Amlogic</strong> by <em>GooBang Doo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JOT42JW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41U6LgM1xlL._AC_SX236_SY340_QL65_.jpg" alt="Live-Box-International-Subscription-Supported" /></td>
-		 <td><strong>Live-Box-International-Subscription-Supported</strong> by <em>IiIPTV</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HCX9X4N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07J32KCQ5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Z2YmuuZ3L._AC_SX236_SY340_QL65_.jpg" alt="IPTV Arabic Box 4K Receiver Lifetime Subscription for 1500 Plus Global Channels..." /></td>
 		 <td><strong>IPTV Arabic Box 4K Receiver Lifetime Subscription for 1500 Plus Global Channels...</strong> by <em>IPTV NO.1</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HCVP7T4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07HCVP7T4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41m9iT+GcJL._AC_SX236_SY340_QL65_.jpg" alt="LOOL MODEL 5 ARABIC CHANNELS IPTV ANDROID HDTV BOX, HUNDREDS OF CHANNELS, WITH..." /></td>
 		 <td><strong>LOOL MODEL 5 ARABIC CHANNELS IPTV ANDROID HDTV BOX, HUNDREDS OF CHANNELS, WITH...</strong> by <em>Model 5</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KWTHJBS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07KWTHJBS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513w8gTUqAL._AC_SX236_SY340_QL65_.jpg" alt="ARABIC TV IPTV RECEIVER, by Best&amp;Quality Products 1000 + HD channels for all..." /></td>
 		 <td><strong>ARABIC TV IPTV RECEIVER, by Best&amp;Quality Products 1000 + HD channels for all...</strong> by <em>IPTV+</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BDPSW8D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BDPSW8D"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41klVqoHYUL._AC_SX236_SY340_QL65_.jpg" alt="Goldenbox IPTV Receiver 1500+ International Global Live Channels 4K Box Including..." /></td>
 		 <td><strong>Goldenbox IPTV Receiver 1500+ International Global Live Channels 4K Box Including...</strong> by <em>Goldenbox</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HRLGQG9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HRLGQG9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415w4UEtRlL._AC_SX236_SY340_QL65_.jpg" alt="Brazil IPTV Box Lifetime Subscription for 1500 Global Live Channels, Smart Newest..." /></td>
 		 <td><strong>Brazil IPTV Box Lifetime Subscription for 1500 Global Live Channels, Smart Newest...</strong> by <em>IiIPTV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GDJ7MFS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GDJ7MFS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41F2cwrp8aL._AC_SX236_SY340_QL65_.jpg" alt="Arabic IPTV Receiver Box 4K with 1500+ International Channels for 10 Years Subscription..." /></td>
 		 <td><strong>Arabic IPTV Receiver Box 4K with 1500+ International Channels for 10 Years Subscription...</strong> by <em>IiIPTV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JM159NW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07JM159NW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

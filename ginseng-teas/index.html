@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ginseng Teas</div>
@@ -86,99 +95,123 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+s10As+TL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Schumacher Ginseng</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Y17V6V0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51d1MVcZZjL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Auragin</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JVA8RO6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Prince Of Peace Instant Korean Panax Ginseng Tea - 100 Count" /></td>
 		 <td><strong>Prince Of Peace Instant Korean Panax Ginseng Tea - 100 Count</strong> by <em>Prince Of Peace</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001CZHAPU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001CZHAPU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418eXBg4wKL._AC_SX236_SY340_QL65_.jpg" alt="The Republic of Tea Honey Ginseng Green Tea, Caffeinated (50 Tea Bags)" /></td>
 		 <td><strong>The Republic of Tea Honey Ginseng Green Tea, Caffeinated (50 Tea Bags)</strong> by <em>The Republic of Tea</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0024SASYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0024SASYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+s10As+TL._AC_SX236_SY340_QL65_.jpg" alt="American Ginseng Tea, 100% Pure Wisconsin Ginseng roots - BEST Herbal Tea made..." /></td>
 		 <td><strong>American Ginseng Tea, 100% Pure Wisconsin Ginseng roots - BEST Herbal Tea made...</strong> by <em>Schumacher Ginseng</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Y17V6V0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00Y17V6V0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ieQTR4z+L._AC_SX236_SY340_QL65_.jpg" alt="Korean Ginseng Tea in Wood Case 0.10oz(3g) x 100 Packets" /></td>
 		 <td><strong>Korean Ginseng Tea in Wood Case 0.10oz(3g) x 100 Packets</strong> by <em>KOREAN GINSENG TEA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Q8SL2HS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00Q8SL2HS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51n+mDMH1rL._AC_SX236_SY340_QL65_.jpg" alt="Korean Red Ginseng Tea 3g x 100 Packets, Ginseng Tea, Made in Korea - 6 Year..." /></td>
 		 <td><strong>Korean Red Ginseng Tea 3g x 100 Packets, Ginseng Tea, Made in Korea - 6 Year...</strong> by <em>Hanil insam</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CFYI5CS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01CFYI5CS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515p7QIC96L._AC_SX236_SY340_QL65_.jpg" alt="American Ginseng Tea, BEST American Ginseng Tea, 20 Tea Bags, Pure American Ginseng..." /></td>
 		 <td><strong>American Ginseng Tea, BEST American Ginseng Tea, 20 Tea Bags, Pure American Ginseng...</strong> by <em>Green Gold Ginseng</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SYY11TS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00SYY11TS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61eEeSi8WuL._AC_SX236_SY340_QL65_.jpg" alt="Celestial Seasonings Green Tea, Honey Lemon Ginseng, 20 Count (Pack of 6)" /></td>
 		 <td><strong>Celestial Seasonings Green Tea, Honey Lemon Ginseng, 20 Count (Pack of 6)</strong> by <em>Celestial Seasonings</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000E63LP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000E63LP6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iHUo2ZyoL._AC_SX236_SY340_QL65_.jpg" alt="Prince of Peace Wild American Ginseng Instant Tea (100 Sachets)" /></td>
 		 <td><strong>Prince of Peace Wild American Ginseng Instant Tea (100 Sachets)</strong> by <em>Prince Of Peace</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00T232XAQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00T232XAQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gpkQNE+qL._AC_SX236_SY340_QL65_.jpg" alt="Prince of Peace Korean Ginseng Tea(instant) 0.07 Oz X 10 Bags X 10 Boxes (1)" /></td>
 		 <td><strong>Prince of Peace Korean Ginseng Tea(instant) 0.07 Oz X 10 Bags X 10 Boxes (1)</strong> by <em>Prince Of Peace</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07453BFLR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07453BFLR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61ExcltmTML._AC_SX236_SY340_QL65_.jpg" alt="Tealyra - Imperial Ginseng Ren Shen - Oolong Loose Leaf Tea - Best Ginseng Tea..." /></td>
 		 <td><strong>Tealyra - Imperial Ginseng Ren Shen - Oolong Loose Leaf Tea - Best Ginseng Tea...</strong> by <em>Tealyra</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0104L8WNQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0104L8WNQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

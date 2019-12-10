@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Solar Pest Repellers</div>
@@ -86,115 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hb-fydSGL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>CIVPOWER</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MZKPJKP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DI+XjO3+L._AC_SX236_SY340_QL65_.jpg" alt="Electronic-Ultrasonic-Repeller-Controller-Game-Boy" /></td>
-		 <td><strong>Electronic-Ultrasonic-Repeller-Controller-Game-Boy</strong> by <em>VEPOWER</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MZJ5LT7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="E&amp;B Innovations Solar Mole Repeller for Rodent Control, 2 Pack- Repels Rodents..." /></td>
 		 <td><strong>E&amp;B Innovations Solar Mole Repeller for Rodent Control, 2 Pack- Repels Rodents...</strong> by <em>E&amp;B Innovations</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B6F1CT7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07B6F1CT7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BJ2WO-bsL._AC_SX236_SY340_QL65_.jpg" alt="LEIPING 8PCS Solar Mole Gopher Snake Rodents Repeller Pest Waterproof Killer..." /></td>
 		 <td><strong>LEIPING 8PCS Solar Mole Gopher Snake Rodents Repeller Pest Waterproof Killer...</strong> by <em>LEIPING</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H2V3MMP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H2V3MMP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514zTs8YjtL._AC_SX236_SY340_QL65_.jpg" alt="Hoont Advanced Solar Powered Ultrasonic Outdoor Animal and Pest Repeller + Flashing..." /></td>
 		 <td><strong>Hoont Advanced Solar Powered Ultrasonic Outdoor Animal and Pest Repeller + Flashing...</strong> by <em>Hoont</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074T1VC2V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074T1VC2V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61T1CYyYyZL._AC_SX236_SY340_QL65_.jpg" alt="Eliminator Advanced Electric Solar Outdoor Animal &amp; Rodent Pest Repeller for..." /></td>
 		 <td><strong>Eliminator Advanced Electric Solar Outdoor Animal &amp; Rodent Pest Repeller for...</strong> by <em>Eliminator</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FSQ5CDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07FSQ5CDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rzRX7tlTL._AC_SX236_SY340_QL65_.jpg" alt="Besiva Ultrasonic Pest Repeller, Outdoor Animal Repellent, Solar Powered Waterproof..." /></td>
 		 <td><strong>Besiva Ultrasonic Pest Repeller, Outdoor Animal Repellent, Solar Powered Waterproof...</strong> by <em>Besiva</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D75HFLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07D75HFLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61MleYoKBFL._AC_SX236_SY340_QL65_.jpg" alt="Yard Solar Power Ultrasonic Sonic Mouse Mole Pest Rodent Repeller Repellent (..." /></td>
 		 <td><strong>Yard Solar Power Ultrasonic Sonic Mouse Mole Pest Rodent Repeller Repellent (...</strong> by <em>GSI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072KD9SL2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kVuWDuDXL._AC_SX236_SY340_QL65_.jpg" alt="Electronic-Ultrasonic-Controller-Repellent-Mosquitoes" /></td>
-		 <td><strong>Electronic-Ultrasonic-Controller-Repellent-Mosquitoes</strong> by <em>VEPOWER</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MXWYJ1L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B072KD9SL2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51x4XzwZHPL._AC_SX236_SY340_QL65_.jpg" alt="Wikomo Ultrasonic Pest Repeller, Solar Powered Waterproof Outdoor Animal Repeller..." /></td>
 		 <td><strong>Wikomo Ultrasonic Pest Repeller, Solar Powered Waterproof Outdoor Animal Repeller...</strong> by <em>Wikomo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JHZRVX3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07JHZRVX3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51S-v9cWjfL._AC_SX236_SY340_QL65_.jpg" alt="Tengcong Solar Powered Ultrasonic Animal Repeller,Outdoor Weatherproof Repeller..." /></td>
 		 <td><strong>Tengcong Solar Powered Ultrasonic Animal Repeller,Outdoor Weatherproof Repeller...</strong> by <em>Tengcong</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M673S9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07M673S9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61zYYa39SNL._AC_SX236_SY340_QL65_.jpg" alt="PestZilla Robust Solar Power Ultrasonic Pest Repeller with Flashing LED lights..." /></td>
 		 <td><strong>PestZilla Robust Solar Power Ultrasonic Pest Repeller with Flashing LED lights...</strong> by <em>PestZilla</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077TLYN62"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077TLYN62"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LS0nEu+wL._AC_SX236_SY340_QL65_.jpg" alt="PestPush Ultrasonic Animal Repeller, Solar Powered Pest Repeller, Waterproof..." /></td>
 		 <td><strong>PestPush Ultrasonic Animal Repeller, Solar Powered Pest Repeller, Waterproof...</strong> by <em>PestPush</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FBS14GY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07FBS14GY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4115v++8MxL._AC_SX236_SY340_QL65_.jpg" alt="Toro Products 4 Pack Mole Repellent Solar Powered for Lawn Garden Yard Outdoor..." /></td>
 		 <td><strong>Toro Products 4 Pack Mole Repellent Solar Powered for Lawn Garden Yard Outdoor...</strong> by <em>Toro Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GR82Z2L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GR82Z2L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,6 +231,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51qfokIOcJL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>vape cases</strong></td>
+                 <td style="text-align: center;"><a href="/vape-cases"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41IBmlSmuYL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>tv tuner cards</strong></td>
+                 <td style="text-align: center;"><a href="/tv-tuner-cards"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41riFZhSetL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>the pioneer woman knives</strong></td>
+                 <td style="text-align: center;"><a href="/the-pioneer-woman-knives"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31d+1E1B9HL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>hair trimmer lady</strong></td>
+                 <td style="text-align: center;"><a href="/hair-trimmer-lady"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -230,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Multi Region Dvd Players</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sx0YmagOL._AC_SX236_SY340_QL65_.jpg" alt="BDP-S3700-Blu-ray-110-240-Dynastar-adapter" /></td>
-		 <td><strong>BDP-S3700-Blu-ray-110-240-Dynastar-adapter</strong> by <em>Dynastar</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075VCYRG4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31jpJBZ-U9L._AC_SX236_SY340_QL65_.jpg" alt="S1700-System-Region-CodeFree-Player" /></td>
-		 <td><strong>S1700-System-Region-CodeFree-Player</strong> by <em>Sony</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010EINLTY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="LG Region Free DVD Player - DP132 - Play Any DVD from Any Country" /></td>
 		 <td><strong>LG Region Free DVD Player - DP132 - Play Any DVD from Any Country</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071XRGM7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071XRGM7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31L6EME+aZL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic DVD-S700P-K HDMI 1080P Up-Converting All Multi Region Code Zone Free..." /></td>
 		 <td><strong>Panasonic DVD-S700P-K HDMI 1080P Up-Converting All Multi Region Code Zone Free...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004QIPKNY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004QIPKNY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sx0YmagOL._AC_SX236_SY340_QL65_.jpg" alt="Sony BDP-S3700 Region Free Blu-ray Player, Multi region Smart Wifi 110-240 volts..." /></td>
 		 <td><strong>Sony BDP-S3700 Region Free Blu-ray Player, Multi region Smart Wifi 110-240 volts...</strong> by <em>Dynastar</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075VCYRG4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075VCYRG4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31jpJBZ-U9L._AC_SX236_SY340_QL65_.jpg" alt="SONY S1700 Multi System All Region CodeFree Blu Ray Disc DVD Player - PAL/NTSC..." /></td>
 		 <td><strong>SONY S1700 Multi System All Region CodeFree Blu Ray Disc DVD Player - PAL/NTSC...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010EINLTY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B010EINLTY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31sr2NWnDAL._AC_SX236_SY340_QL65_.jpg" alt="LG DP132H All Multi Region Code Region Fr DVD Player Full HD 1080p HDMI UpConverting..." /></td>
 		 <td><strong>LG DP132H All Multi Region Code Region Fr DVD Player Full HD 1080p HDMI UpConverting...</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06W557RRR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06W557RRR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31mtC5Ul07L._AC_SX236_SY340_QL65_.jpg" alt="LG DP132H All Multi Region Code Region Free DVD Player Full HD 1080p HDMI UpConverting..." /></td>
 		 <td><strong>LG DP132H All Multi Region Code Region Free DVD Player Full HD 1080p HDMI UpConverting...</strong> by <em>LG</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GZI5IW6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GZI5IW6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/311LIw6QJUL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic S700EP-K Multi Region 1080p Up-Conversion Code Region Free DVD/CD player..." /></td>
 		 <td><strong>Panasonic S700EP-K Multi Region 1080p Up-Conversion Code Region Free DVD/CD player...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KJ10E60"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31UUlxQ1jZL._AC_SX236_SY340_QL65_.jpg" alt="Wi-Fi-Upgraded-Multi-Region-Player" /></td>
-		 <td><strong>Wi-Fi-Upgraded-Multi-Region-Player</strong> by <em>Sony</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014RI99Z2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00KJ10E60"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31WHUj8O0DL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic DVD-S700EP-K All Multi Region Free DVD Player 1080p Up-Conversion with..." /></td>
 		 <td><strong>Panasonic DVD-S700EP-K All Multi Region Free DVD Player 1080p Up-Conversion with...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F4H95T6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00F4H95T6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412HUxdfcWL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic DVD-S500P-K All Multi Region Code Zone Free PAL/NTSC DVD Player" /></td>
 		 <td><strong>Panasonic DVD-S500P-K All Multi Region Code Zone Free PAL/NTSC DVD Player</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007D5LY6O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B007D5LY6O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Q8L9SlkyL._AC_SX236_SY340_QL65_.jpg" alt="Pioneer DV-3052 Multi System All Region HDMI 1080p Upscaling DVD Player with..." /></td>
 		 <td><strong>Pioneer DV-3052 Multi System All Region HDMI 1080p Upscaling DVD Player with...</strong> by <em>Pioneer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OBL5OM8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00OBL5OM8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31hV154I1kL._AC_SX236_SY340_QL65_.jpg" alt="LP-099 Multi Region Code Zone Free PAL/NTSC HD DVD Player CD Player with Remote..." /></td>
 		 <td><strong>LP-099 Multi Region Code Zone Free PAL/NTSC HD DVD Player CD Player with Remote...</strong> by <em>LP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0779PBD4P"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0779PBD4P"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/319JDAFSqUL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic All Multi Region Code Zone Free PAL/NTSC DVD Player. Plays DVDs from..." /></td>
 		 <td><strong>Panasonic All Multi Region Code Zone Free PAL/NTSC DVD Player. Plays DVDs from...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JXXXOS0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00JXXXOS0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31oUhnPshtL._AC_SX236_SY340_QL65_.jpg" alt="Saachi DVD SA-5440 All Multi Region HDMI Full HD 1080p Up-Conversion, Code Region..." /></td>
 		 <td><strong>Saachi DVD SA-5440 All Multi Region HDMI Full HD 1080p Up-Conversion, Code Region...</strong> by <em>Saachi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07958H1JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07958H1JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Feather Dusters</div>
@@ -86,99 +95,111 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510572Mg0yL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Swiffer</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076DJQDLZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+23Nea0dL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Swiffer</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076DRNNCG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Norpro 24-Inch Pure Lambs Wool Duster with Wood Handle" /></td>
 		 <td><strong>Norpro 24-Inch Pure Lambs Wool Duster with Wood Handle</strong> by <em>Norpro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001CFO4FE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001CFO4FE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414gYIzi8yL._AC_SX236_SY340_QL65_.jpg" alt="Ettore 31034 Retractable Ostrich Feather Duster" /></td>
 		 <td><strong>Ettore 31034 Retractable Ostrich Feather Duster</strong> by <em>Ettore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00NBR52D4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00NBR52D4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-42LzPUrL._AC_SX236_SY340_QL65_.jpg" alt="OXO Good Grips Microfiber Delicate Duster, Orange" /></td>
 		 <td><strong>OXO Good Grips Microfiber Delicate Duster, Orange</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HWNVEXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HWNVEXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417euVj5lgL._AC_SX236_SY340_QL65_.jpg" alt="Jet Clean Microfiber Hand Duster-Feather Dust Appliances, Ceiling Fans, Blinds..." /></td>
 		 <td><strong>Jet Clean Microfiber Hand Duster-Feather Dust Appliances, Ceiling Fans, Blinds...</strong> by <em>Jet Clean</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CTW3WLU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IbzPUMzRL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Swiffer</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBCDCTX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01CTW3WLU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IbzPUMzRL._AC_SX236_SY340_QL65_.jpg" alt="Swiffer Dusters Heavy Duty Extender Handle Starter Kit (1 Handle, 12 Dusters)" /></td>
 		 <td><strong>Swiffer Dusters Heavy Duty Extender Handle Starter Kit (1 Handle, 12 Dusters)</strong> by <em>Swiffer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DBCDCTX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DBCDCTX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31QdqCWn+ML._AC_SX236_SY340_QL65_.jpg" alt="Mr. LongArm 741 Ostrich Feather Duster with Extension Pole  3-to-6 Foot" /></td>
 		 <td><strong>Mr. LongArm 741 Ostrich Feather Duster with Extension Pole  3-to-6 Foot</strong> by <em>Mr. Long Arm</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002VECKQ0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002VECKQ0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416uJqlWgwL._AC_SX236_SY340_QL65_.jpg" alt="MEIWO Dust Brush 2 Pack Mini Ostrich Feather Duster Perfect for Small Computer..." /></td>
 		 <td><strong>MEIWO Dust Brush 2 Pack Mini Ostrich Feather Duster Perfect for Small Computer...</strong> by <em>MEIWO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B5WV7C9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07B5WV7C9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51c4zjMWoWL._AC_SX236_SY340_QL65_.jpg" alt="Swiffer 360 Dusters, Heavy Duty Refills, 11 Count" /></td>
 		 <td><strong>Swiffer 360 Dusters, Heavy Duty Refills, 11 Count</strong> by <em>Swiffer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076DDVRPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076DDVRPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Lr9ABeacL._AC_SX236_SY340_QL65_.jpg" alt="Avian Ostrich Feather Duster with Bamboo Handle" /></td>
 		 <td><strong>Avian Ostrich Feather Duster with Bamboo Handle</strong> by <em>Avian Cleaning Co.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0155C5V7Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0155C5V7Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +207,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +235,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

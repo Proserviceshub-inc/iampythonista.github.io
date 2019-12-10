@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Nose Scissors</div>
@@ -86,91 +95,123 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ODUt659-L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>LIVINGO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079KPS3L9"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAFUAN4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKKKACiimu6xoWY4AoAcSFBJIAHc1RuNSVBiIA/7TdPwHU1Rur17mYxR4+U/N3VPr6mrNtp5OHkJB9T94/wCFADPNuJuWdgPrtH5Dmk8lzyCWP+6T/OtRIY0HyqPqafQBi4u4jlXYfVTU0eoyx8TqCP7wrUqGe1jnU8bW/vCgB8UyTLlD9R6U+sa3d7WZkcYaP9VrZBBAI6GgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAPHWsW/u2lbbG20dm/uju319KvajLtiWFThpjtz6DvVKwt/tFw0jDKKc4/kKALOm2Kwxq5Tb/dU9vc+9aFFFABRRRQAUUUUAZl7j+0ogO6HNW7B/Msom9RWRc3XmXF5cLysS+Wnux4q9JOLGyji3bSqhS2MnPoB3NAFu4u4bYDzX5PRRyT+FVH1OX+C22r6yuF/SqEZlnlZYUO8/eOct/wACbt9KvxaUMZnfJ9F6fnQA1dVcH51h/wCAyf8A1qtR30Tgbsp79R+dMOl2rDBQ/nVOfRWiJksZijj+Fuh9qANgEEZHIorEsNQcSPE6GOaP/WQ+o9V/wraRw6BkOVIyDQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAZOotnUol9I2I+p/8A1Vc05AlouP4jmqWsAw3FtcgZVcq3+fzq3YyrsCBsqfmQ+ooAuUUUUAFFFFABVHVbw2ttsjBaaU7EUdSTVi5uo7WPc5yT0UdSaxbx7jejJj+0brKW6nkQL/E5+gP54FAFK3Jkvhao2bXTz5l5KOjzHog+lX4oJb+7LMSpHU9ox6D3NMS2is4YtPtAWSM7nY9ZZDyWb1JPJrctoFt4Qi89yfU0AOhgjt4hHEoVR2p9FFABRRRQBla3b7US/iGJrc5JHde4qexlBd48/KQJE+hqa/AOn3OenlN/KsKC6MFrYP8AxNb4P6UAdLRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEN1bJd27RP0PQjqD61zwafTJjBOuUJyOcA+6nsfaunpk0EVxGY5kV0PYigDOt9VViF3b/Zvlb/69XRdxHqSv1FZlx4fHJtJiv8AsSfMPz61WNvqVmDmIyIP+ebbv0PNAG297Ag+8T/ugmq0l9cScW8IQf35T/Ss631IM4Vl+UnaSOqn3FaGCSF70ARHy7ZHurmQvsGWkbr9AKjsUkO+8uRie4A+U/8ALOPsv9TUbY1C9MfW0s2y/pJL6fQd/erpJYk55INAEWkp5srTNzklvz6fpWvWdoq4sye+4g/hWjQAUUUUAFFFFAFHWpTFo90w+8U2j6nj+tYy2/n6pHZjlba1UH65FaepyLLdW9uT8kf7+X2UdP1qp4aVrmW91J/+XiTan+6P8/pQBv0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFR3E6W0DzSnCIMk0AZerQRtfWvlKBcMcuR3QdSabezyRqkFr/x93BKxk87B3c+w/niiM+Uk99eHY7jc+f8Almo6KP8APWks0bEl7dfJLKM4P/LKMdF/qaAJI4obG1SFGCQRDG5z1Pck9yTzUSalYyPtS6Qn61UNrLrjMD8kY+6T0QduO5py+EVt03W90zSekija3+FAGlav9kvGjf8A1Vwd6N2Ddx+Nadcksstk5truJvLb/lkx/VDW1ZX5MfDGeMfxD76f7w/rQBp0VHHPFKP3bq3tnn8qkJAGScAdzQAVBeXcdlbNNKeBwFHVj2A96jl1CMHbApuJOyx9PxPQVhX+o+TMJXK3N4OIo15jhJ9P7zUARX7TyEWC/wDIQ1Bg05H/ACyTsv4CuotLaOztYreIYSNQorN0PSntFe6uzvvZ+XY8lR6Vr0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWZcv9rugg5hgbPs79vy/nVq9nMUe2P/AFr8L7eprLu5XtoobOzI+2XOVjJ/5Zr/ABSH6fqcUAI3/EwvTH1tbRsyekknZfoOp96S/eS5nSyi5LEGT+g/qamPk6XYKkQykQ2oD1dj3Pvnmp9IsjDGbibmaXk57CgC7a262sCxJ26n1NS0UUARXFtDdRmOeNZEPYisafQJYpPMs5iwHRXOHH0YfyNb1FAHOsb2I7Zo2f3ePd+opd0rH/j1TPb90TXQ0UAYP2O/uhtYFEP947R+Q5q/Y6RBZsJCPMm/vkfd+g7VfooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkZgilmOFAyTS1RuZfPl8leUU/P7n0oAry3CIst7cnZGi557L6fU1X02CVjJf3S7bq6A+Q/8sox91P6n3NNkA1G+EZ+azs2y57SS9l9wvX61JfSSSyJZwn99P8AfI/hT/69ABax/wBqXvnH/j1gOEH94+tblR29ulrAkUYwqjFSUAFFFFABUdxPHbQtLMwVF6k1JXMXl3/bWvx2UR3WdowMhHR5PT6AZoA6cHIBooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiimyyLDG0khwiDJNAEV3OYo9qEea/C+3vWXPK0KLbWrg3U3CE87PVz9P50sttHeTfabhG8wjCruICr6Y9akht4oSfIjCs3Vh1NADD5GmWICg+VCMLnq7e/uTU+kWjxo91cj/SJ+T/ALI7CqsEY1S/DdbS2PHo7etblABRRRQAUUVDeXcVjaSXM7bY4xk+/tQBleJtYOm2flQNi6nBCf7I7tVPwlY+TFvI5xuJ9Wb/AOsP1rALy6xqhmuePNOSP7iDt+Vd3psPk2a5GGf5iPT0/TFAFuiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKzruT7RP5Q/1URDN/tN2H4das3lx5EPy48x+Fz/P8KzhPa29gLmW6jjt848yVtu5iff1NAExOetVrySQhLW3/wBfPwSP4V7mp5pFtomllBAXoO5PpUumWrKGurgfv5ecf3R6UAWrW2S0t0hjGFUfmamoooAKKKKACuI8R6p/aN59mhOba3PzY6O/+Arc8SaqbK2FvAf9JnGB/sr3NcnFbk7Y14z1J/U0Aamg2Rml3MP9YcD/AHB1/M4FdnisrQ7cJbedjAYbUHoo/wATzWrQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFBIUEk4A6miszWL37OkaGGWSFjmVohuKj6deaAGMwu2kkkB2SKUQeinv8AjWHbeHHivUeVYLlYzmOaf5zGPZTwD9K2rW7tdQXfZXEc2OqqfmX2I60y78yeVbCE4Z+ZW/ur6UAFqv8Aa1955ybSA4jz/G3rW3TIIUt4UijGFUYFPoAKKKKACq2oX0WnWb3E3ReAo6sewFWSQASTgDqTWBFnV703sibrWLKW6MOD6uf6e1AGEsd1qV09w6F5pDzj7qjsB7VcTTSLyK03Bpm5kK9EFbU04toHkOAqDgDuaTQrVgj3s3Ms/Iz2FAGsiLGiogwqjAHoKWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAa7iNCx6Cs3e24vn5mOTU15Lvk8sHheT9ahRSzY6etAGVrOk2FzBJevm0uoxlbmH5WJ7A465q/4Z0q50+xMuoSma+uDulY/wAI7L+FQ6fH/bV4t62f7OtyRbKf+WzdDIfb0/OugoAKKKKACiiq2oXq2No0xG9yQsaDq7ngKPqaAKWqzG6uE0yJiFcbrhx/Anp9T0rnbxL9t+mTmaLT2Yg/ZuHmXsu7+EY4OOa3bW3a3iYytvuZm3zP6t6D2HQUXd2bO1LrgyMdsYPr6/QDmgCqITez22nqgjht1HmIpztx0Ge+BxXSKoVQqjAAwBWfo1kbS03Pkyy/MxPWtGgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKjnlEMRbv0H1qSs65l82Xj7q8CgCIA5x1JqpcRtq9w2mREi1T/j9lXjcO0YPv39vrT7ueRGjtbTBvLj7v8A0yXuxrWsLKPT7RLeLJC8lj1YnqT70AToixoqIoVFGAoGAB6UtFFABRRRQAEgDJ4FcpqOqPFq1lf3AH9lszQRnHKsePMPt2+ma2NTlM8i2ETEFxumYfwp6fU9Kz9YtYtTW30j7qFhLLt/5ZxL29i3QfjQBekeOJsSTRj3LCqltCdS1dpGZGgtxhdrZGPw7k/oKr3thYwpHZWlpH5sw2gsNxVPxre0/T4NNtVgt4kjUcnaMZPrQBaooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKjmnWFctyT0A70AR3cxjTYp+dv0FZl3dx6fbec43sTtjiHWRuwqaWZVWS4uG2qoyx9Paquk20mo3f9q3a4Vfltoj0Uf3vrQBd0fT3tUe5uyHvrj5pW/u+ij2FaVFFABRRRQAVXvrxbG1aVlLtkKiDq7HoBVgnAyaxYnOo3v2w58mIlLdf7x6F/6D2oANy6bZS3N22+VjvlI/jc9FH6AUy1jNjaTXd8f38n724b09EH0HApqkajqO/71pZNtX0km7n3C/z+lJchtQ1BLNDmOJg8p9W9Pw/nQBPo1s80kmoXAxJKflU/wjsPwrZpERY0VFGFUYApaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqhdg/aQWOARwT29av1HcW8d1C0Uy7kYYIoA5G/vP7Tu47aHJt94AA/jPr9K7FEEaKijAUYAqpZ6VaWLboIgH6bjyauUAFFFFABRRUN3cpaW7SuCccKo6sT0A9yaAKeqSmdlsImIMgzMw/hTv+J6VVv5niiisrHEd1cDy4TjiFB95/wAB098VLEotYZbi7cB2/eTv2GOw9h0qGwjkkaS+nXE9yAEU/wDLKIfdX+p+tADpDFplgsdsmFjGyJSeSfU+vqat6PZfZbbc/wDrJPmYmqVtH/aWob+tvDwvvW7QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRTGmRc5YcelQHUbcHG8E/Uf40AWqKrfb4R97eo9SvH6VNHNHMMxSK4/2TmgB9FFFABWSZPt1353WCAlYh/efoW/DoKnv7hncWcJIdxmRx/Av+Jqrdz/YbVBbxhpnIit4+xY9CfYdTQBDcD7ffC0621sQ9yezv1VPf1P4VJfTMEESZ82bjjqB/ninW8CWFp5RcuEy8sp6ux6k/jTtLhNxO17KOM4QGgDQsrVbS2WNQM9Wx61PRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUEhRk0AIzBVJPQVjXWp3F1K1vpkQmkHDOxxGn1Pf6CiaaXVrhrW3bbCh/eyjt/sj3rWt7eK1hWKFAiL2FAGKnhprrDatfT3Lf884z5cY9gBzVpfDWkoMLZr9dzZ/PNalFAGS2gxxfNYzy2z9hu3L+RqpIwguEj1SIQyOcJdwkqrH3PY/WuhqK5t4ru3eCdA8bjBU0AUFa/tmwJY7hPSUbW/Mdfyp7Xl3INqwxwf7bNux9AB/WqWnNLCZ9OuHLyWhGxz1eM8qfw6fhVzr1oASKNYwfmJz8zyP1Puap2ZN5cNqLDCYMdqp/hTu31Y/oBS32bqZdOjJAceZcMP4Y+w+rVcGMgKAFAwoHYUAU7nddXSWUXQYaU/wAhW5HGsUaogwqjArG0AhnuTJ/rw53g9Rz/APqrboAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsTV76WWeLT7I/6RPxu/55r3Y1pX1ylrbPJI2FUEk+w61l+G7V3jl1S5GJ7w5UH+CPsKANWys4rC2SCEcL1J6sfU1YoooAKKKKACiiigDGuBjxIpX+K1O73w3FPublLO2kuZFLBMBUXq7HgKPcnFRwN9r1e9nXlIyLdT6kct+px+FMj/ANOvxOObe0YrCOzydC34dB+NAD7O3e1hYzsGup28ydh03H+Eew6D6VOFPWszUtbjsXMMKie67jsp9/eqK6fruq/PLI8SHtnYPy60Ab7W6PMJlPlzj+NDgn6+tTJeTwnFwgdP+ekY5/Ff8K54eEb3GftY3f77VJFa6rpX+sV54/VTvx/WgDqo5ElQNGwZT3FOrBtroT/vLZxFP/db7r+x961rO7W7RvlKSodskZ6qaALFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAc/ru69lhsVPFxKEbH90ct/hW+iqiKijCqMAegrDsx52r28h5xHI4/Fq3aACiiigAooooAKq6jdmzsnlQbpT8sa/3nPAH51arIluI57h7uVgLSzBKse7d2/DoKAK7RNZ2Vvplu5NxKCGk7gdXc/if1pt9cCxtY7WzU7iNkYXk/h70+FmijkvbkbJpxyp/5Zp2X+p96taZY5k+23AzKw/dg/wAC/wCJoAh0bw/HY4uLgB7o8+oT/E+9bVFFABRRRQBRv9KhvUYgeXMRw68fnWHZXs8UsjXAxd2JCz/9NYSev1XrXVVj3too1mOcDiaF4396ANhSGUMpyCMg0VQ0SUyaVCGOWTKE/Q4/lV+gAooooAKKKKACiiigAooooAKKKKAMCzcQ3No7cAPJbt7HPH8q36wb+3RL6W3mJSC9w6SD/lnKP8irunai0jGzvMR30Y+ZTwJB/eX1FAGjRRRQAUUVmz30l07W+nEEjh5z92P6epoAL66aeU2Nq2HI/eyD/lmvp9TVV0S5uVtIwBa2ZBcD+KTsp9h1PvisPX/FVv4csmtdHT7XfucBz8w3nufU1exJo3hSPzXL3UibpJD1aR+WP86AJbWQ61q7qObS2PJ/vmulrN0Gw/s/SokZcSON7/U9q0qACiiigAooooAKoX0oSXc33YYmdj6f5wav1zuqytcFbeM/PeyhB7RjqaANHQY2j0iEvw0mXx9TmtGkRBGioowqgAD2paACiiigAooooAKKKKACiiigAooooAhurWO8gMUo4PIPcH1FYlzHtCwatEXRD+6uk4ZfcEcg10NIyh1KsAQeoIoAx7ee6iUCO9ivE7ecNr4+o4P5VOdTkXPmJBH7mbP9KkfR7RzlUMZ/2DioT4fs2OWMjf8AAqAM+91i3IxcTvOP+eMA2KfqepqBU1TWIxFBEtlZdAMYGP5mt+30mytm3R267v7zcmrlAGLY+HbLSo3uETzrsIf3zjkcdh2qneR/bZ9Jt2OUZ97e+BmulddyMvqMVz1kN72EjdYpGiP15FAHRUUUUAFFFFABRRSO6xoXcgKoySe1AEN3L5cW0HBfjPoO5rG0ZPt+pzagR+5iHlQA/qf8+tR6xdS3Eq2cAP2i4wMf3E9/r1rdsrRLG0jt4x8qDGfU9zQBPRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXPzxGHU57TdsFz++t27CQdRXQVT1PTk1K28tmKSKd0cg6o3rQBLZ3IuoAxG2RfldD1Vu4qeubTUJLW4CaiDbXYG3zwMxzD3rWi1HIHmRkg9HiO5TQBeoquL6E92/wC+TUU+pJEpONvvIdo/xoAuMyopZiAo6k1i6tqqQRqxUsSf3MOOXbsSPQVUl1aS8n8qzja6mHQ4xGnvj/GtDTNF+zzG7vX8+8b+I9F+lADdE0qS233d6d15Nyc/wj0rYoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGTQRXEZSaNZEPZhkVkXOhWsAMls80B9I34/WiigDHLTl9hupyP9+tW08P2cyiSdppj6O/H6UUUAbMNvFbJsgjWNfRRipKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=" alt="Curved and Rounded Facial Hair Scissors For Men - Moustache, Nose Hair &amp; Beard..." /></td>
 		 <td><strong>Curved and Rounded Facial Hair Scissors For Men - Moustache, Nose Hair &amp; Beard...</strong> by <em>Utopia Care</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072JT6KYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072JT6KYS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nVlhQgwtL._AC_SX236_SY340_QL65_.jpg" alt="PIXNOR Nose Hair Scissors Beard Eyebrow Trimmer Scissors Stainless Steel Set..." /></td>
 		 <td><strong>PIXNOR Nose Hair Scissors Beard Eyebrow Trimmer Scissors Stainless Steel Set...</strong> by <em>PIXNOR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MV4V7L7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MV4V7L7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41n8wuODRYL._AC_SX236_SY340_QL65_.jpg" alt="Nose Scissors - 4 Inch Rounded Scissors for Nose, Eyebrow, Ear, Dog Hair Trimming..." /></td>
 		 <td><strong>Nose Scissors - 4 Inch Rounded Scissors for Nose, Eyebrow, Ear, Dog Hair Trimming...</strong> by <em>Kovira</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MSZUZMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MSZUZMQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vFOn1M+GL._AC_SX236_SY340_QL65_.jpg" alt="Mabox Facial Hair Scissors (Made of Forged &amp; Polished Stainless Steel) - Safety..." /></td>
 		 <td><strong>Mabox Facial Hair Scissors (Made of Forged &amp; Polished Stainless Steel) - Safety...</strong> by <em>Mabox</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JAAN8EK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01JAAN8EK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ImupbiWUL._AC_SX236_SY340_QL65_.jpg" alt="Tweezerman G.E.A.R. Facial Hair Scissors" /></td>
 		 <td><strong>Tweezerman G.E.A.R. Facial Hair Scissors</strong> by <em>Tweezerman</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00I8H6FWY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00I8H6FWY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Jfc7JYs8L._AC_SX236_SY340_QL65_.jpg" alt="LIVINGO Premium Manicure Rounded Tip Scissors Multi-purpose Stainless Steel Cuticle..." /></td>
 		 <td><strong>LIVINGO Premium Manicure Rounded Tip Scissors Multi-purpose Stainless Steel Cuticle...</strong> by <em>LIVINGO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079KRHDRT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079KRHDRT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31GgypghylL._AC_SX236_SY340_QL65_.jpg" alt="Kikkerland Crane Nose Hair Scissors.04 Ounce" /></td>
 		 <td><strong>Kikkerland Crane Nose Hair Scissors.04 Ounce</strong> by <em>Kikkerland</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OM1E5UO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OM1E5UO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/319B3nSyWXL._AC_SX236_SY340_QL65_.jpg" alt="Rubis Switzerland Ear/Nose Hair Scissors R1KF003" /></td>
 		 <td><strong>Rubis Switzerland Ear/Nose Hair Scissors R1KF003</strong> by <em>Rubis</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000127IP2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000127IP2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417qNxlcSUL._AC_SX236_SY340_QL65_.jpg" alt="ApeX Nose Hair Trimmer w/Brass Screw Leather Case Lifetime Guarantee Made in..." /></td>
 		 <td><strong>ApeX Nose Hair Trimmer w/Brass Screw Leather Case Lifetime Guarantee Made in...</strong> by <em>Apex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00I5SRBI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00I5SRBI8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416n7zU2MJL._AC_SX236_SY340_QL65_.jpg" alt="Nose Hair Scissors, ETEREAUTY Eyebrow Beard Trimmer Scissors Stainless Steel..." /></td>
 		 <td><strong>Nose Hair Scissors, ETEREAUTY Eyebrow Beard Trimmer Scissors Stainless Steel...</strong> by <em>ETEREAUTY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073W43CG5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B073W43CG5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -178,6 +219,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/511TOdnXihL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>athletic shoes for men</strong></td>
+                 <td style="text-align: center;"><a href="/jiye-athletic-shoes-for-men"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>kohler shower heads</strong></td>
+                 <td style="text-align: center;"><a href="/kohler-shower-heads"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31jCSkUGL-L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>foldable futon</strong></td>
+                 <td style="text-align: center;"><a href="/foldable-futon"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51UJX+-n+iL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>first act discovery keyboard</strong></td>
+                 <td style="text-align: center;"><a href="/first-act-discovery-keyboard"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -206,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

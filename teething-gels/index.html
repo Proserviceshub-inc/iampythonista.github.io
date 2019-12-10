@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Teething Gels</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31j4CYJfUqL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>PerioSciences</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077H52NGB"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51zcQqop4gL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Active Wow</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LBQ9BT2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Nuby Natural Soothing Gel for Sore Gums with Bonus Silicone Massaging Toothbrush..." /></td>
 		 <td><strong>Nuby Natural Soothing Gel for Sore Gums with Bonus Silicone Massaging Toothbrush...</strong> by <em>Nuby</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077HRZBZW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077HRZBZW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DoIgD7NnL._AC_SX236_SY340_QL65_.jpg" alt="Boiron Camilia, 30 Doses, Homeopathic Medicine for Teething Relief" /></td>
 		 <td><strong>Boiron Camilia, 30 Doses, Homeopathic Medicine for Teething Relief</strong> by <em>Boiron</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005KG7U16"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005KG7U16"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/3178gOFTZUL._AC_SX236_SY340_QL65_.jpg" alt="Wink Naturals Cool Gums Teething Gel, Safest Baby Infant Teething Relief, NO..." /></td>
 		 <td><strong>Wink Naturals Cool Gums Teething Gel, Safest Baby Infant Teething Relief, NO...</strong> by <em>Wink Naturals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075K339YJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075K339YJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414GSwVTUFL._AC_SX236_SY340_QL65_.jpg" alt="Orajel Baby Daytime and Nighttime Non-Medicated Cooling Gels for Teething" /></td>
 		 <td><strong>Orajel Baby Daytime and Nighttime Non-Medicated Cooling Gels for Teething</strong> by <em>Orajel</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DKMCDY5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07DKMCDY5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411NEn5OMaL._AC_SX236_SY340_QL65_.jpg" alt="Wink Naturals Cool Gums Teething Gel Double Pack, Safest Baby Teething Relief..." /></td>
 		 <td><strong>Wink Naturals Cool Gums Teething Gel Double Pack, Safest Baby Teething Relief...</strong> by <em>Wink Naturals</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071KLZ6VP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071KLZ6VP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51fTs2lIQRL._AC_SX236_SY340_QL65_.jpg" alt="Natural Baby Teething Relief Oil by AlternaKids - Includes Silicone Feeder Pacifier..." /></td>
 		 <td><strong>Natural Baby Teething Relief Oil by AlternaKids - Includes Silicone Feeder Pacifier...</strong> by <em>Essenzia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071YJ1911"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VhkHweVAL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Pearl Enterprises</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ILZH9BO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071YJ1911"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RGrXACv8L._AC_SX236_SY340_QL65_.jpg" alt="Nuby Ice Gel Teether Keys" /></td>
 		 <td><strong>Nuby Ice Gel Teether Keys</strong> by <em>Nuby</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003N9M6YI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003N9M6YI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Y8sNXUZML._AC_SX236_SY340_QL65_.jpg" alt="Punkin Butt Teething Oil 2 oz. | Natural Relief for Babies First Teeth" /></td>
 		 <td><strong>Punkin Butt Teething Oil 2 oz. | Natural Relief for Babies First Teeth</strong> by <em>Punkin Butt</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004RCYVBG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004RCYVBG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HvwaD2AML._AC_SX236_SY340_QL65_.jpg" alt="Babyganics Benzocaine Free Gel Teething Pods - .3 ml - 10 ct - 2 pk" /></td>
 		 <td><strong>Babyganics Benzocaine Free Gel Teething Pods - .3 ml - 10 ct - 2 pk</strong> by <em>Babyganics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01114D258"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01114D258"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rJwZDrbxL._AC_SX236_SY340_QL65_.jpg" alt="Nuby IcyBite Soother Ring Teether, Colors May Vary" /></td>
 		 <td><strong>Nuby IcyBite Soother Ring Teether, Colors May Vary</strong> by <em>Nuby</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003N9G7AM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003N9G7AM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AHbldk4JL._AC_SX236_SY340_QL65_.jpg" alt="Wellements Baby Tooth Oil, 0.5 Fl Oz, Free From Dyes, Parabens, Alcohol, and..." /></td>
 		 <td><strong>Wellements Baby Tooth Oil, 0.5 Fl Oz, Free From Dyes, Parabens, Alcohol, and...</strong> by <em>Wellements Baby</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QVENMIQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00QVENMIQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FsrAIjx4L._AC_SX236_SY340_QL65_.jpg" alt="Babyganics Single-Use Teething Gel Pods - 10 CT" /></td>
 		 <td><strong>Babyganics Single-Use Teething Gel Pods - 10 CT</strong> by <em>Babyganics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071HHSZH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071HHSZH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Kvm Switches</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lEPhOjcBL._AC_SX236_SY340_QL65_.jpg" alt="CKLau-Control-Computers-Servers-Windows" /></td>
-		 <td><strong>CKLau-Control-Computers-Servers-Windows</strong> by <em>CKLau</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H2ZDJKW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31U+uncBJOL._AC_SX236_SY340_QL65_.jpg" alt="StarTech-com-Port-HDMI-Switch-Audio" /></td>
-		 <td><strong>StarTech-com-Port-HDMI-Switch-Audio</strong> by <em>StarTech</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003AVPUZQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="IOGEAR 4-Port USB VGA Cable KVM Switch with Cables and Remote, GCS24U" /></td>
 		 <td><strong>IOGEAR 4-Port USB VGA Cable KVM Switch with Cables and Remote, GCS24U</strong> by <em>IOGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001S2PJO6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001S2PJO6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OmI+AVBQL._AC_SX236_SY340_QL65_.jpg" alt="UGREEN USB Switch Selector 2 Computers Sharing 4 USB Devices USB 2.0 Peripheral..." /></td>
 		 <td><strong>UGREEN USB Switch Selector 2 Computers Sharing 4 USB Devices USB 2.0 Peripheral...</strong> by <em>UGREEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MXXQKGM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MXXQKGM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+8n3gu15L._AC_SX236_SY340_QL65_.jpg" alt="TESmart HDMI 4K Ultra HD 4x1 HDMI KVM Switch 3840x2160@60Hz 4:4:4 with 2 Pcs..." /></td>
 		 <td><strong>TESmart HDMI 4K Ultra HD 4x1 HDMI KVM Switch 3840x2160@60Hz 4:4:4 with 2 Pcs...</strong> by <em>TESmart</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078KG5N2Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B078KG5N2Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oaa4JXZKL._AC_SX236_SY340_QL65_.jpg" alt="Tripp Lite 2-Port USB HDMI Cable KVM Switch w/Audio/Video, Cables &amp; USB Peripheral..." /></td>
 		 <td><strong>Tripp Lite 2-Port USB HDMI Cable KVM Switch w/Audio/Video, Cables &amp; USB Peripheral...</strong> by <em>Tripp Lite</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072LBN7L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072LBN7L8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31rTUGA+QXL._AC_SX236_SY340_QL65_.jpg" alt="2 Port Dual DisplayPort USB KVM Switch with Audio &amp; USB 2.0 Hub" /></td>
 		 <td><strong>2 Port Dual DisplayPort USB KVM Switch with Audio &amp; USB 2.0 Hub</strong> by <em>StarTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003N3BU6E"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003N3BU6E"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515V7VMmwtL._AC_SX236_SY340_QL65_.jpg" alt="4 Port VGA KVM Switch with USB Hub Support Wireless Keyboard Mouse Connection..." /></td>
 		 <td><strong>4 Port VGA KVM Switch with USB Hub Support Wireless Keyboard Mouse Connection...</strong> by <em>JideTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071Y6C516"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jkRO-q1BL._AC_SX236_SY340_QL65_.jpg" alt="Extended-CKL-Microphone-Keyboard-CKL-922HUA" /></td>
-		 <td><strong>Extended-CKL-Microphone-Keyboard-CKL-922HUA</strong> by <em>CKL</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KN4J2XD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071Y6C516"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31i0wUTd2sL._AC_SX236_SY340_QL65_.jpg" alt="StarTech.com 2-port DisplayPort KVM Switch with Built-in USB 2.0 Hub - Supports..." /></td>
 		 <td><strong>StarTech.com 2-port DisplayPort KVM Switch with Built-in USB 2.0 Hub - Supports...</strong> by <em>StarTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UVH9PRQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00UVH9PRQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514KgDGOnKL._AC_SX236_SY340_QL65_.jpg" alt="RIJER 8 Port Manual Smart VGA USB KVM Switch PC Computer DVR Selector 1 KM Combo..." /></td>
 		 <td><strong>RIJER 8 Port Manual Smart VGA USB KVM Switch PC Computer DVR Selector 1 KM Combo...</strong> by <em>RIJER</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DKME5OQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DKME5OQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416QxBD75nL._AC_SX236_SY340_QL65_.jpg" alt="FJGEAR 4 Ports USB 2.0 HDMI KVM Switch Keyboard Mouse Switcher for PC, Windows..." /></td>
 		 <td><strong>FJGEAR 4 Ports USB 2.0 HDMI KVM Switch Keyboard Mouse Switcher for PC, Windows...</strong> by <em>FJGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075KBCPKZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075KBCPKZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31U+uncBJOL._AC_SX236_SY340_QL65_.jpg" alt="StarTech.com SV231HDMIUA 2 Port USB HDMI KVM Switch with Audio and USB 2.0 Hub" /></td>
 		 <td><strong>StarTech.com SV231HDMIUA 2 Port USB HDMI KVM Switch with Audio and USB 2.0 Hub</strong> by <em>StarTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003AVPUZQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B003AVPUZQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qRqUoTHYL._AC_SX236_SY340_QL65_.jpg" alt="AV Access True HDMI2.0 KVM Switch 4x1,4 Ports HDMI Keyboard &amp; Mouse Switch,4K60Hz..." /></td>
 		 <td><strong>AV Access True HDMI2.0 KVM Switch 4x1,4 Ports HDMI Keyboard &amp; Mouse Switch,4K60Hz...</strong> by <em>AV Access</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CPLB6Y1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CPLB6Y1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41dwtBT3DfL._AC_SX236_SY340_QL65_.jpg" alt="TRENDnet 4-Port USB KVM Switch Kit, VGA &amp; USB Connections, 2048 x 1536 Resolution..." /></td>
 		 <td><strong>TRENDnet 4-Port USB KVM Switch Kit, VGA &amp; USB Connections, 2048 x 1536 Resolution...</strong> by <em>TRENDnet</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000JP1TFG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000JP1TFG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31s668alYgL._AC_SX236_SY340_QL65_.jpg" alt="Sea Wit KVM Switch, HDMI KVM Switch 4 Port USB 2.0 Support HDCP EDID 1080P and..." /></td>
 		 <td><strong>Sea Wit KVM Switch, HDMI KVM Switch 4 Port USB 2.0 Support HDCP EDID 1080P and...</strong> by <em>Sea Wit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079FSD349"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B079FSD349"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,6 +255,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>ridgid wet tile saws</strong></td>
+                 <td style="text-align: center;"><a href="/ridgid-wet-tile-saws"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>bridge cameras</strong></td>
+                 <td style="text-align: center;"><a href="/bridge-cameras"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/31uSb7s0m7L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>the breeze outdoor fans</strong></td>
+                 <td style="text-align: center;"><a href="/in-the-breeze-outdoor-fans"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51Mh63+ee7L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>solo laptop backpacks</strong></td>
+                 <td style="text-align: center;"><a href="/solo-laptop-backpacks"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -246,13 +319,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

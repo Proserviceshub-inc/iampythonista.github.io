@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Travel Rods</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qwrbPga5L._AC_SX236_SY340_QL65_.jpg" alt="Smuggler-Performance-Powerful-Unbreakable-Travelling" /></td>
-		 <td><strong>Smuggler-Performance-Powerful-Unbreakable-Travelling</strong> by <em>RIGGED &amp; READY TRAVEL FISHING</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G8P96L3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sdLLj4UHL._AC_SX236_SY340_QL65_.jpg" alt="RIGGED-READY-PREMIUM-TRAVEL-REEL" /></td>
-		 <td><strong>RIGGED-READY-PREMIUM-TRAVEL-REEL</strong> by <em>RIGGED &amp; READY TRAVEL FISHING</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MSGFT96"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCADuAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoorD1vxDbWEn2RZwtwwycclfQAd2PYUAQ+KPFMWiQGGBla8YcDqIx6n39BXBWmha74gh+3wCQpIx+ZpANx9eev1/wrU0Twnca5qst3qjk2SPkDdkyn0J/mfwr0mONIo1jjUIiDCqowAPQUtx7DqKKKYgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiud8TeKIdGgaKF1N0cD12fh60AJ4r8TLotsYrcg3TjGevl/h3PoPxPvyfhnw1P4jvP7S1EutmrkqSTumP19PU/gKPDfhufxNd/2jqm4WQJwMnMxzyB7erd+3c16ciJFGscaqiKAqqowAB2Apbj2EjjSGNY41CIowFAwBTqKKYgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiuf1zxHBZyNZxTgTgDfsG5+eiIO7n07DmgCHxT4qj0mJra1YNdkcn/nn/wDX9q5fw34buPEl0NR1Qv8AYwcgMeZT/h6mpdF8Jyazqkl3ft/oSvuMYYsS39zd/Fju3foK9HjjSKNY41CIowqqMACluPbQI40ijWONQiKMKqjAA9KdRRTEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVzHinxK2nWci2WGkDbHk/uE9h6n+VADfFnitNJha1tJAbtuGYc+WP8AGuY8K+GZ9eu11K+LpaRsSpDENKc84PXHqe/Sk8MeGZvENx9v1DctiDkAnmY/4epr0+ONIo1jjUIijCqowAKW49gjjSGNY4kVEUYVVGABTqKKYgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACijp1rkPFnjCPT4WtbCQNO3DSoc+X7D/AGv5UAO8WeLU01Gs7Ft1yfldl52f7I9WP6daxfDtjL4kuBNNG0UEQ2t12qp/gjP8Wecv+FU/DHhSXxBMb2/LR2Y3AFT8z56hT6erd+lenw28VvGscSBERQqgdAB0A9KW5V7DookgiWKJAkaDCqowAKdRRTJCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKR3WNSzHAqK8vLfT7SW6u5VigiXc7seAK8+sfiPb6prcsF4otbKQhbSVux/wBv0z+lTJ2V0VFXep2dxeM7Y+6np61zDeDbTU/EC3isy27czwDhT9PTJ61tuJJpRCq5c8Vs2dqlpDsXljyzeprCHNKVzefLGNiWONIY1jjUIiDCqowAKdRRXScwUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUF5eW+n2slzdyrFDGMs7HgVX1jWbPQ7B7u+k2oOFUcs57ADua8c8R+KL3X7tWnQ7M/uLRT8qe59TQBq+IvELeIZRcXIZNKhbNva952/vN/hXP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" alt="Fenwick HMG Travel Rod" /></td>
 		 <td><strong>Fenwick HMG Travel Rod</strong> by <em>Fenwicks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075DD4M5Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075DD4M5Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/217UwGqREqL._AC_SX236_SY340_QL65_.jpg" alt="St. Croix Triumph Travel Spinning Rods" /></td>
 		 <td><strong>St. Croix Triumph Travel Spinning Rods</strong> by <em>St Croix</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00290SPOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00290SPOC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41xHa1RNG+L._AC_SX236_SY340_QL65_.jpg" alt="JEKOSEN Portable Travel Casting/Spinning Bass Fishing Rods with Tube Case,Lightweight..." /></td>
 		 <td><strong>JEKOSEN Portable Travel Casting/Spinning Bass Fishing Rods with Tube Case,Lightweight...</strong> by <em>JEKOSEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XC8GNBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XC8GNBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51s7AEBgG8L._AC_SX236_SY340_QL65_.jpg" alt="Sougayilang Spinning Fishing Rod and Reel Combos Portable Telescopic Fishing..." /></td>
 		 <td><strong>Sougayilang Spinning Fishing Rod and Reel Combos Portable Telescopic Fishing...</strong> by <em>Sougayilang</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074W2QSHD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074W2QSHD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qph+ecsFL._AC_SX236_SY340_QL65_.jpg" alt="Okuma NOMAD Travel Casting Rod (30-60 Lbs, 7-Feet, Medium-Heavy)" /></td>
 		 <td><strong>Okuma NOMAD Travel Casting Rod (30-60 Lbs, 7-Feet, Medium-Heavy)</strong> by <em>Okuma Fishing Tackle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001V7ETWQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51m+JE7ZfdL._AC_SX236_SY340_QL65_.jpg" alt="YONGZHI-Spinning-Telescopic-Shoulder-Freshwater" /></td>
-		 <td><strong>YONGZHI-Spinning-Telescopic-Shoulder-Freshwater</strong> by <em>YONGZHI</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DHHCCYL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001V7ETWQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/215M30tih4L._AC_SX236_SY340_QL65_.jpg" alt="Okuma Nomad Inshore Saltwater Multi Action Travel Rods-NTi-S-703ML-M (Blue/Black..." /></td>
 		 <td><strong>Okuma Nomad Inshore Saltwater Multi Action Travel Rods-NTi-S-703ML-M (Blue/Black...</strong> by <em>Okuma</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0045F028G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0045F028G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SnmQBnuAL._AC_SX236_SY340_QL65_.jpg" alt="OKUMA VS-605-20 Voyager Spinning Travel Kit" /></td>
 		 <td><strong>OKUMA VS-605-20 Voyager Spinning Travel Kit</strong> by <em>OKUMA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000MQTJW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000MQTJW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cPHVb7eqL._AC_SX236_SY340_QL65_.jpg" alt="Fiblink Surf Spinning Fishing Rod 4-Piece Graphite Travel Fishing Rod (9-Feet..." /></td>
 		 <td><strong>Fiblink Surf Spinning Fishing Rod 4-Piece Graphite Travel Fishing Rod (9-Feet...</strong> by <em>Fiblink</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071HQ3GX5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071HQ3GX5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41F-Wc7yZUL._AC_SX236_SY340_QL65_.jpg" alt="Aventik Z Spinning Rod Rough Fish Series Travel Rod High Module Carbon, IM8 4..." /></td>
 		 <td><strong>Aventik Z Spinning Rod Rough Fish Series Travel Rod High Module Carbon, IM8 4...</strong> by <em>Aventik</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F73LBXQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F73LBXQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/2134POW1TmL._AC_SX236_SY340_QL65_.jpg" alt="UglyStik GX2 Spinning Rod" /></td>
 		 <td><strong>UglyStik GX2 Spinning Rod</strong> by <em>UglyStik</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F0KM4DG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00F0KM4DG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jIEmI9JNL._AC_SX236_SY340_QL65_.jpg" alt="Fiblink 3-Piece Spinning Rod Heavy Spinning Fishing Rod Portable Fishing Rod..." /></td>
 		 <td><strong>Fiblink 3-Piece Spinning Rod Heavy Spinning Fishing Rod Portable Fishing Rod...</strong> by <em>Fiblink</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B012C76U7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B012C76U7U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DHJ5g1vUL._AC_SX236_SY340_QL65_.jpg" alt="Okuma Nomad Xpress Inshore Rod 3pc 7ft Spin Med Hvy" /></td>
 		 <td><strong>Okuma Nomad Xpress Inshore Rod 3pc 7ft Spin Med Hvy</strong> by <em>OKUMA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F5E6N6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00F5E6N6G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

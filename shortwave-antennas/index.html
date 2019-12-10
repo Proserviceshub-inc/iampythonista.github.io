@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Shortwave Antennas</div>
@@ -89,128 +98,156 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51diH4i792L._AC_SX236_SY340_QL65_.jpg" alt="Usmile LW1650 Portable Long Line shortwave antenna shortwave radio antenna for..." /></td>
 		 <td><strong>Usmile LW1650 Portable Long Line shortwave antenna shortwave radio antenna for...</strong> by <em>usmile</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0141X3B5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0141X3B5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Sangean ANT-60 Short Wave Antenna" /></td>
 		 <td><strong>Sangean ANT-60 Short Wave Antenna</strong> by <em>Sangean</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000023VW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000023VW2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WJzusOuXL._AC_SX236_SY340_QL65_.jpg" alt="Tecsun AN-03L Professional SW Band 3.5mm Jack External Compact Shortwave Antenna" /></td>
 		 <td><strong>Tecsun AN-03L Professional SW Band 3.5mm Jack External Compact Shortwave Antenna</strong> by <em>Tecsun</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0104MT5HW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0104MT5HW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21q4OcqpghL._AC_SX236_SY340_QL65_.jpg" alt="Super Antenna SW1 SuperWhip Titanium Flex Whip for MP1 Ham Radio Amateur HF Portable..." /></td>
 		 <td><strong>Super Antenna SW1 SuperWhip Titanium Flex Whip for MP1 Ham Radio Amateur HF Portable...</strong> by <em>Super Antenna</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B012SXXV5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B012SXXV5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417wHarI+YL._AC_SX236_SY340_QL65_.jpg" alt="Workman Saturn B100 Base Station Apartment Attic Patio Balcony Boat Truck Antenna" /></td>
 		 <td><strong>Workman Saturn B100 Base Station Apartment Attic Patio Balcony Boat Truck Antenna</strong> by <em>Workman</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009U137NM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B009U137NM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WaW1-X-cL._AC_SX236_SY340_QL65_.jpg" alt="CC Shortwave Reel Antenna" /></td>
 		 <td><strong>CC Shortwave Reel Antenna</strong> by <em>C.Crane</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01I27ZOQM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01I27ZOQM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31n7Nej4b-L._AC_SX236_SY340_QL65_.jpg" alt="MFJ-1020C Indoor active antenna, HF" /></td>
 		 <td><strong>MFJ-1020C Indoor active antenna, HF</strong> by <em>MFJ</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00AR0D32U"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41aEzN+7DRL._AC_SX236_SY340_QL65_.jpg" alt="Sangean-WR-22SE-Light-Walnut-Special" /></td>
-		 <td><strong>Sangean-WR-22SE-Light-Walnut-Special</strong> by <em>Sangean</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075313J1R"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416W0uxhW9L._AC_SX236_SY340_QL65_.jpg" alt="NooElec-Balun-One-Nine-Applications" /></td>
-		 <td><strong>NooElec-Balun-One-Nine-Applications</strong> by <em>NooElec</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R09WHT6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00AR0D32U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410NMR6A99L._AC_SX236_SY340_QL65_.jpg" alt="Kaito T-1 Radio antenna" /></td>
 		 <td><strong>Kaito T-1 Radio antenna</strong> by <em>Kaito</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00066Z9XG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00066Z9XG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51K79xBdiYL._AC_SX236_SY340_QL65_.jpg" alt="Practical Antenna Handbook 5/e" /></td>
 		 <td><strong>Practical Antenna Handbook 5/e</strong> by <em>Joseph J. Carr</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/0071639586"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/0071639586"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31oP8jzc3xL._AC_SX236_SY340_QL65_.jpg" alt="Super Antenna MC60 Supercoil 5 MHz 60 Meter Coil for MP1 Antenna HAM Radio HF..." /></td>
 		 <td><strong>Super Antenna MC60 Supercoil 5 MHz 60 Meter Coil for MP1 Antenna HAM Radio HF...</strong> by <em>Super Antenna</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01C50QNKS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01C50QNKS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51WmMi3tpTL._AC_SX236_SY340_QL65_.jpg" alt="Super Antenna MR1710 SuperWire Radial Set for HF Vertical Antennas 17m 15m 12m..." /></td>
 		 <td><strong>Super Antenna MR1710 SuperWire Radial Set for HF Vertical Antennas 17m 15m 12m...</strong> by <em>Super Antenna</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014CBO6QQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B014CBO6QQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41q3yLxmisL._AC_SX236_SY340_QL65_.jpg" alt="Portable Windom Antenna QRP Ft-817 Eleacraft KX3 Quad-band portable shortwave..." /></td>
 		 <td><strong>Portable Windom Antenna QRP Ft-817 Eleacraft KX3 Quad-band portable shortwave...</strong> by <em>Windom</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FC4WJVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FC4WJVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Hrl1Mpt2L._AC_SX236_SY340_QL65_.jpg" alt="Super Antenna MP1DXMAX Dual HF Plus 2 Meter Bands SuperWhip Tripod All Band Antenna..." /></td>
 		 <td><strong>Super Antenna MP1DXMAX Dual HF Plus 2 Meter Bands SuperWhip Tripod All Band Antenna...</strong> by <em>Super Antenna</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MS8NK0Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MrSHCK5QL._AC_SX236_SY340_QL65_.jpg" alt="Yosoo-Shortwave-Transmitter-Receiver-7-023-7-026MHz" /></td>
-		 <td><strong>Yosoo-Shortwave-Transmitter-Receiver-7-023-7-026MHz</strong> by <em>Yosoo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0175UZ8I6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MS8NK0Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

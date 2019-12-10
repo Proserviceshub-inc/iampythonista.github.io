@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Omelette Makers</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jA-ZHIZsL._AC_SX236_SY340_QL65_.jpg" alt="Omelette-Haofy-Non-stick-Breakfast-Portable" /></td>
-		 <td><strong>Omelette-Haofy-Non-stick-Breakfast-Portable</strong> by <em>Haofy</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KQ2KZ3L"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AcxO+2HsL._AC_SX236_SY340_QL65_.jpg" alt="Dash-DEOM8100RD-Express-Omelette-Maker" /></td>
-		 <td><strong>Dash-DEOM8100RD-Express-Omelette-Maker</strong> by <em>Dash</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C632LPN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Holstein Housewares HH-0937012SS Omelet Maker - Black" /></td>
 		 <td><strong>Holstein Housewares HH-0937012SS Omelet Maker - Black</strong> by <em>Holstein Housewares</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01J681UF0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01J681UF0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eLcrGDt-L._AC_SX236_SY340_QL65_.jpg" alt="TECHEF Specialty Cookware Frittata Omelette Pan, Standard, Purple" /></td>
 		 <td><strong>TECHEF Specialty Cookware Frittata Omelette Pan, Standard, Purple</strong> by <em>TECHEF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01C4TGHRY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01C4TGHRY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RH4yJh91L._AC_SX236_SY340_QL65_.jpg" alt="Red Copper 5 Minute Chef by BulbHead Includes Recipe Guide" /></td>
 		 <td><strong>Red Copper 5 Minute Chef by BulbHead Includes Recipe Guide</strong> by <em>BulbHead</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073RR8T1K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073RR8T1K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hk3vzAOHL._AC_SX236_SY340_QL65_.jpg" alt="Better Chef IM-477R Omelette Maker Color: Red, Medium" /></td>
 		 <td><strong>Better Chef IM-477R Omelette Maker Color: Red, Medium</strong> by <em>Better Chef</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018Z0ZI4O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B018Z0ZI4O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WTmgrezPL._AC_SX236_SY340_QL65_.jpg" alt="Dash Rapid Egg Cooker: 6 Egg Capacity Electric Egg Cooker for Hard Boiled Eggs..." /></td>
 		 <td><strong>Dash Rapid Egg Cooker: 6 Egg Capacity Electric Egg Cooker for Hard Boiled Eggs...</strong> by <em>DASH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DDXWFY0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00DDXWFY0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/512G3M5yECL._AC_SX236_SY340_QL65_.jpg" alt="Holstein Housewares HF-09010B Fun Omelet Maker - Black" /></td>
 		 <td><strong>Holstein Housewares HF-09010B Fun Omelet Maker - Black</strong> by <em>Holstein Housewares</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009F95P5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009F95P5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JhLPRBwFL._AC_SX236_SY340_QL65_.jpg" alt="Nordic Ware 10692AMZ Italian Frittata and Omelette Pan, 8.4 Inches" /></td>
 		 <td><strong>Nordic Ware 10692AMZ Italian Frittata and Omelette Pan, 8.4 Inches</strong> by <em>Nordic Ware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0055FSODU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61LpJ0fIr4L._AC_SX236_SY340_QL65_.jpg" alt="IBBM-Tamagoyaki-Japanese-Omelette-Pan" /></td>
-		 <td><strong>IBBM-Tamagoyaki-Japanese-Omelette-Pan</strong> by <em>IBBM</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074JBCD8K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0055FSODU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LFHco0iML._AC_SX236_SY340_QL65_.jpg" alt="Dash Omelette Maker with Dual Non Stick Plates - Perfect for Eggs, Frittatas,..." /></td>
 		 <td><strong>Dash Omelette Maker with Dual Non Stick Plates - Perfect for Eggs, Frittatas,...</strong> by <em>DASH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FMHQ9BO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01FMHQ9BO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SqSI0vhiL._AC_SX236_SY340_QL65_.jpg" alt="Cuisinart FP2-24BK Frittata 10-Inch Nonstick Pan Set" /></td>
 		 <td><strong>Cuisinart FP2-24BK Frittata 10-Inch Nonstick Pan Set</strong> by <em>Cuisinart</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0078P9D5S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0078P9D5S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rBvXsOZmL._AC_SX236_SY340_QL65_.jpg" alt="Cuisinart WAF-B50 Breakfast Express Waffle/Omelet Maker, Stainless Steel" /></td>
 		 <td><strong>Cuisinart WAF-B50 Breakfast Express Waffle/Omelet Maker, Stainless Steel</strong> by <em>Cuisinart</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IRITLGA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IRITLGA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31J5ZHw-z8L._AC_SX236_SY340_QL65_.jpg" alt="Nordic Ware Microwave Omelet Pan" /></td>
 		 <td><strong>Nordic Ware Microwave Omelet Pan</strong> by <em>Nordic Ware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000BO59WE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000BO59WE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ECoucbnFL._AC_SX236_SY340_QL65_.jpg" alt="Lekue Omelette Maker, Model # 3402700R10U008, Red" /></td>
 		 <td><strong>Lekue Omelette Maker, Model # 3402700R10U008, Red</strong> by <em>Lekue</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BB64RA6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BB64RA6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KjvEVj3fL._AC_SX236_SY340_QL65_.jpg" alt="ZZ Breakfast Sandwich Maker with Sets of Detachable Non-stick Plate" /></td>
 		 <td><strong>ZZ Breakfast Sandwich Maker with Sets of Detachable Non-stick Plate</strong> by <em>ZZ</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0192WNIH8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0192WNIH8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

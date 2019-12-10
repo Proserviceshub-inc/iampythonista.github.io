@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Net10 Phones</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xbU-UwwOL._AC_SX236_SY340_QL65_.jpg" alt="Net10-Keep-Your-Phone-Prepaid" /></td>
-		 <td><strong>Net10-Keep-Your-Phone-Prepaid</strong> by <em>TracFone</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071FM63JT"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Net10 Samsung Galaxy J3 Orbit 4G LTE Prepaid Cell Phone" /></td>
 		 <td><strong>Net10 Samsung Galaxy J3 Orbit 4G LTE Prepaid Cell Phone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GBX2M3Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GBX2M3Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q2QaOpUHL._AC_SX236_SY340_QL65_.jpg" alt="Net10 Samsung Galaxy J3 Luna Pro 4G LTE Prepaid Smartphone" /></td>
 		 <td><strong>Net10 Samsung Galaxy J3 Luna Pro 4G LTE Prepaid Smartphone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQ9K5J4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CQ9K5J4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eEQEJZ2SL._AC_SX236_SY340_QL65_.jpg" alt="Net10 Motorola Moto e5 4G LTE Prepaid Smartphone" /></td>
 		 <td><strong>Net10 Motorola Moto e5 4G LTE Prepaid Smartphone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GC4PZLM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07GC4PZLM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51driyF1nbL._AC_SX236_SY340_QL65_.jpg" alt="Net10 LG Rebel 3 4G LTE Prepaid Smartphone with Free $40 Airtime Bundle" /></td>
 		 <td><strong>Net10 LG Rebel 3 4G LTE Prepaid Smartphone with Free $40 Airtime Bundle</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQCXGFH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07CQCXGFH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hYX6PgfhL._AC_SX236_SY340_QL65_.jpg" alt="Net10 Samsung Galaxy J7 Sky Pro 4G LTE Prepaid Smartphone with Free $40 Airtime..." /></td>
 		 <td><strong>Net10 Samsung Galaxy J7 Sky Pro 4G LTE Prepaid Smartphone with Free $40 Airtime...</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQDKH7K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CQDKH7K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41l3ja2ykRL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy S9+ Unlocked Smartphone - Lilac Purple - US Warranty" /></td>
 		 <td><strong>Samsung Galaxy S9+ Unlocked Smartphone - Lilac Purple - US Warranty</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079JPRTKD"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dHLPiaieL._AC_SX236_SY340_QL65_.jpg" alt="RCA-16GB-Unlocked-Phone-Android" /></td>
-		 <td><strong>RCA-16GB-Unlocked-Phone-Android</strong> by <em>RCA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MRHWQWV"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ougkVWMWL._AC_SX236_SY340_QL65_.jpg" alt="RCA-16GB-Unlocked-Phone-Android" /></td>
-		 <td><strong>RCA-16GB-Unlocked-Phone-Android</strong> by <em>RCA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N071CQE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079JPRTKD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41a-B-GfgaL._AC_SX236_SY340_QL65_.jpg" alt="TracFone Samsung Galaxy J7 Sky Pro 4G LTE Prepaid Smartphone" /></td>
 		 <td><strong>TracFone Samsung Galaxy J7 Sky Pro 4G LTE Prepaid Smartphone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071RR8NCG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071RR8NCG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416MA9yzOcL._AC_SX236_SY340_QL65_.jpg" alt="Net10 Alcatel MyFlip 4G Prepaid Flip Phone" /></td>
 		 <td><strong>Net10 Alcatel MyFlip 4G Prepaid Flip Phone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GC47SZT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GC47SZT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51y8jT32t3L._AC_SX236_SY340_QL65_.jpg" alt="TracFone LG Rebel 4G LTE Prepaid Smartphone - CDMA Variant Handset" /></td>
 		 <td><strong>TracFone LG Rebel 4G LTE Prepaid Smartphone - CDMA Variant Handset</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M0786QB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01M0786QB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51v1I0jQuML._AC_SX236_SY340_QL65_.jpg" alt="Motorola Moto E Prepaid Phone (Net10)" /></td>
 		 <td><strong>Motorola Moto E Prepaid Phone (Net10)</strong> by <em>Motorola</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QQPNYZ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00QQPNYZ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wE4XNt6dL._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy S6 SM-G920V 32GB Sapphire Black Smartphone for Verizon (Certified..." /></td>
 		 <td><strong>Samsung Galaxy S6 SM-G920V 32GB Sapphire Black Smartphone for Verizon (Certified...</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D0JV7AO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01D0JV7AO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Z9ulF4QML._AC_SX236_SY340_QL65_.jpg" alt="Samsung Galaxy S6 G920v 32GB Verizon Wireless CDMA Smartphone - Gold Platinum..." /></td>
 		 <td><strong>Samsung Galaxy S6 G920v 32GB Verizon Wireless CDMA Smartphone - Gold Platinum...</strong> by <em>Samsung</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014V5XDV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B014V5XDV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QZb0l5OEL._AC_SX236_SY340_QL65_.jpg" alt="TracFone LG Fiesta 2 4G LTE Prepaid Smartphone" /></td>
 		 <td><strong>TracFone LG Fiesta 2 4G LTE Prepaid Smartphone</strong> by <em>TracFone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077Y4BYJX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077Y4BYJX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

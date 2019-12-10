@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Cassette To Mp3s</div>
@@ -86,75 +95,75 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515LOv7OieL._AC_SX236_SY340_QL65_.jpg" alt="Electrohome Wellington Record Player Retro Vinyl Turntable Real Wood Stereo System..." /></td>
-		 <td><strong>Electrohome Wellington Record Player Retro Vinyl Turntable Real Wood Stereo System...</strong> by <em>Electrohome</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00574HPX4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAE7AOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooJwM1jXPi/wAP2kzxT6zZJIn3l85SRQBs0ZrmJfiN4ViODrETf7is38hVdvih4VAyuoO/ssD/AOFAHX0VxcnxV8NIuVluZPZLdv64qs3xc0XHyWOpsfTyV/8AiqAszvaK4AfFmxc4i0bVJPpGv/xVJ/ws26lH+jeFdSc9twx/IGgLM9Aorz5/HfiWQj7P4QuAP9vf/wDEUL4t8aSjCeFACehcuB+uKVx2PQaK4I654/lA8rw/ZJ672P8A8WKa158SJj8tjpkAPuD/AOzmi4rHf0ZzXBrH8RpOHutKh9wmf8ae2l/ECUDdr2nRj/Yh5/8AQTRcdjuaK4NvDfjWZsy+K0X2jQD+SipofCHiQj9/4wuf+AR//XFMR21FcafBGqSgCbxdqjAc/Idv9ajk+HTzEGbxNrD47Gc4oA7agkAZJA+tcF/wq21/i13VT/22pn/CqtJK/vNT1J19DKD/ADFK6HY7uS6t4f8AWzxJ/vOBUDavpyHDahaqfQzKP61xf/CqPDuBvlvXx0zIv/xNOHws8MKeUum+si//ABNF0Ox1za/o653arYjHrcJ/jVR/GfhyMZbW7HHtOprnx8M/DAGPIuMf9dj/AIVKPh14YX/lylb2M7UXQWNX/hO/DGf+Q3a/991d0vxJo+tSNHpuowXMijJRG+bH0PNYcXgTwwjgHS1cZ/jkY/1rzPVj/YXi27m0lBCdPnZowq54Hb6YGMUxM9860VW028GoaZaXgXaLiFJdvpuUHH61ZoEFFFFADJ8eRJuOBtOfyrirLwP4agjX/iTxs3fezNz+Jrr78BrGdTkAoRxWegyF+lJlIqQ+HtEiP7vRrAD/AK4qatppemp9zTLNfpAv+FTqvNPHWkMbHbWyDKWsCf7saj+lSqFH3Y0H0UUDpTgOaVwF3MOmB9BTvMY96binbRj3qbgIXYYznnpSksMZ71g6RfahLqpS4dJrW4EjoNuGiCttAPrml0mS4k8SarFNM7Rx7QiE8Lnmlc09m1fyNzJ5oHNYup6xJZa1aWyLmAf8fJ/u7uE/WpvEKPHZGVbiZGX5Ejjfb5jNwM/jSuLlenma3tmkA96wpkY3mn6S9w6CGHzZJFchmYcAe/OTV7W5pbTSHaEky5UKe555/QGjmBxaaXc0hhQSTgepp2R2P0rn/FNzv0WOKE8XjomfY4P8qumLZrtqATtgtH79fmUf0qoy1sQ4PlTfU0wwbkMCOnFNWaN9+yRTs+9g9KwNFD2GoLFvZre/ia4AY52PnJA9iD+lOvr9L3R4TADGdQnEBweQN2GP/fKmqctA5NbI2Y54rqKOaB1kikG5XU5BFKwAOMcVmaGTHLqVoP8AV29ydg9FYBsfQZNabDNQtQtZ2IyBimnFShcnFNKjLdsfrVARkDFNNObp9abjJpiFjx5g9a8T8WgjX9WJPLyufpwa9xWJQoyecj8a8J8U8a3qL5J3vIR7DJqo7iex7hoAx4e0welrF/6AK0Kp6QuzRrFf7tvGP/HRVymIKKKKAK18dtpJ74H61ST7ozVzUD/o3/AhVZBkCpZUR4GKeAM03GaeBzSGKAMU7pSAHFVytz9pwrEwg8+oB9/bn86ljLYGRS9Ac1RWO7YusjYBUhWzyDzg/r+lPt4540Yz/NuyVwfXnB/kKQWMHSnuNLntp5ilxbag4QMFw8RJJUe6/wBa1NOi2eItWkAzuEePyqvpOnXUyWb6jGsCWigRW4Oct03N/SrU5vLXU2NvZefFcFA7iQLsxwTilYuUrtmPqNvcXFhrF4rJsaX5VZcnEZABB7d61LgnUNcsoOTFaL9ol93PCD+Z/Kr8tmp06S1/hZWU++c/41zxsNdg1lpIpFWC4lBd0IICgYAIPPQUti4++nraxcUoPHL+Z1a1XYD65qzq7tLe2VtEqykl5GTdjgLj/wBmp2paGmpXtvc+fJB5QIbyuGceme1SRac0WspcKFFvHb+VGM/NknJJ/IUWdmiHKLs10Rzl1I7+HdHllYE2tx5cpBztIyv+FdRKANTll7C1xn8TVW00MR2+oWtyyyW11KZEUdVB55/GrsNpKsEkUkgLGPy1lA5PHUirjF7hUmnov6uZGnqby8h8o/u7KzEWR08xgMjPsAKoWEZGjaDIeiXhB9slh/Oum0+xi02zjtbcfIvUnqx7k+9QXejpLoslhbt5R5aN/wC427cD+dNw0JVRbIg0UAz6pdkjy5rkhT6hQFz+YNXXu4gfvEdsY9TgH86dFYpFYx2gJ8tV2n/a9/z5pv2NMgszOwXaS3VgDkZqbNIm92RjUIWZAPM+cgBtuBySB/KrDYJOfXmoRYwqE+XIQgrz6HI/Umpef4jk00Maw5puMNkdKfjFJmqJH5DYGP4hXgviJ/M1e/OMYd15+pr3eMkSAe9eD6+wfWtQPYTMP1qoiex77YLt0+2XpiJR+gqemxDEKD/ZFOpiCiiigCrfjMAH+0KgQYFT333EXuW/pUS8CpZSFHSnjrSCpAMjI6etIYg6Uo60qoSOlA4bHehoBfalxmgUtSAmMfjR2x2oopgHp7Uo7UYNO7UtRCAYpcCis668QaZZ3JtpbkNcKMtFEpkZR6kKCR+NCEaWKXFVLPVLK/dls7hJmRQzhDnbnOAfQ8Hg81brRCDFGKKKYCdKYetPppHNZu9xojOcUmM0/BzTT60yhhphoV1dnCMGKHD4P3T6H35FKaYgi5lX614JqjeZrV36PJk/UnmvfIh+9FfP9xk6zcZ6m4A/8fFVEln0UvCD6UtFFABRRRQBVvOsf1J/So15FPu/9dH7KaQDI4qRoco6VyMVtJN8S5rP7Vd/Y4LRbkwfaH2+YWxnGent0rr16iuMgsY9V+JOupNLPGsFvAAbeZozyOhKkflQNknimzEnjPw5CJJ0S8eU3KRzOqyBFGMgGuivtXsdHaO3laRpCm5beGNpXCD+LC5IHua5q406Gw+I/h+GGW4lBguJG+0TvKV+XAxuJxVzwpIbjxZ4qkuBi7S5SIZ6iEL8n4dTRYRqTeJtKt9Ii1VrsPp8pAWeNGYAn1wOPTmlufEdlZ3NpbzpciW9x5AEDEOTzjp1x1Hauc0HTBqun+MbEKDZ3N9OkIP3d/cj/gQH5Vlz6neat4asNWjPzeH1ikmyP9ZNkK4z6KnJ/wB72oC56B/akX9sHS/LmNwIvOL+WdgXoMt9QfyrM8ZazcaNoMklpDI0037oSqOISeNxPrzx71Z0Bfta3Wrnd/xMJA0QYYIhUYTj35b/AIFWf4/OfD0MZbHmXkCk/wDAv/rUAaMmupY2Ns1zbXQurh/Jht2VTLKwHXg4AxySTxTtN1+O/wBQm0+4t5bK/hUO0E2DuQ9GVgcMPXHSsbUriNfiNok7MrW8lvNbxyA5Al7j64xUl0n2v4m2Rg5+xWTGdh0UOSFU+56/hQBqeKtVfRfDd5eQ/wCvCbIv988A/hnP4UzwppkemaBbELuublFmuJT96R2GSWPfrSeMdLm1jwzeW1sN04AkjX+8ynIH44xS+GtatdT0G2eOZRLDGsc8bnDRuAAQQelKwE8lvZ6TeX+tOyQo8C/aGxjOzJ3e5wcVmSeKL61tYdTvdOWLSJmUBw586JW+6zrjAHTPORmofFEx1/wpq8Glo8yRKpWVeVmKsCyr64AxkcZ4qPWtWtNQ8ArHayLNNfxJbwQryzSHA247Ywc56YpgaOo+Jbiz1q1sILA3C3MTSROsgzIccY9ByMk0aZrmoXk+oafc2kEOp2iq4RZC0bBhx82M1lGSK18ceH7GSZPMttOZGG4dcYx+lWNIuoJfiHruyVGIghUYYHJA5x9KALmieIrjUtEvb+7ihtntWkR4wxbYUznd0/SoH8S3sOnaaLmK0g1LUAXVXkIigjAyWcnuBgYHUms29sJo/GV1pESA2WtCO6l9FVD+9H/AuB/wKrPi2ZdJ8QaTrVzCZ9PRHtpwEDeXuwQ2Pw/SgCXTfE95caje6Sxsrq/hiEttNAxEM69weu0j8araPrfifX7SzvLKCyjtZWdJZHBz14YLnoOnqT7Vfs/ElhfNPNp8aR6VBEfNvXjMalzwFXOCfc/SovhzcRS+ELSJXBmjL+YndfmOM/higCt4FF/JY3NxNdJLA91N5gaM+Y75A3bs9OOmK6k1yXgO9jjs59IaOX7ZFczPKpQgRDdxkkYyfQV1vegY6L/WCvn9kzrki8/NdqB+LivoCL79eCWqtL4ihB43X8Yz/wBtBVIln0LRRRQAUUUUAVLoZmX6ULwKJ+bjHoBSipKQo6ccHsfSsbTfC8em6xcaompXktzdH9+JCm2QAYAwF4x7VtDpSgYNIZizeFrefW01iS/vvtkYKxkSKFRD1UDHQ1LqHhu11DUft8dzdWN2yeVLLaSbDKnYN1/PrWtjNYV54ney1pNIXSbme6kQyReXIgDoOrZJGPxpiNixsrfTLOK0sohFBEMKo/Un1JOTn3qGLSLGKwuLCOBRa3JkaWP+8XyW/maqaV4ht9VvrmwaCaz1C2wZbecDO09GUgkEfStgUAJDEkEKQxKFjjUKqjsAMAVDf6fa6pZyWl9Es1vKMMjf54qwDkkUZGM9qBFGbQ9NuNNTTpbOJrOPGyLGAmOhB6g+9S2Om2mmxGOzhESs25j1LH1JPJq11GaMUAJjnNZ114d0e+uftNzpttJOeshQZP19a0hyawP7X1D/AITNdJljgWzNu06umS55wM54Hf8AxoA3Y41hRUjUKiDCqowAPTFVodKsLe6e6gs4IriT70qRgMfxq3xSUAQtY2skhle2iaUnPmFBuyOnNIlnbROHitoUcZwyoAeetWKb1zSYDdq7t20FgMBscgd6GQOpR1DowwVYZBpx4PNZ+uyXdrot5dWDxRzwxNIGlQsMKCegPXimMuCOOJAkcaIg6IowPyoPJJAAJ7461neGrubUPDdhd3T77ieIO7YxnNaJ60AIzZB7Z6+9Mp9NPWgkF43fQ/yrwfSPm8Racx6NqSf+jBXuxbZHKx6KhP6V4V4eJfxHo3HBvo2x9XzVITPoKiiigYUUUUAVJOblvbAp3WmnmeQ9eacKkpC06m08daQxBXF6zqK6f8SIruSCeaO20pmdbdN7AF+uPTiu2A5riba98z4nT3bW1z9kazW2jnNu4UvuyRnFMlkvhizm13xFL4vnVYraeAQ2UQbcxT+82Oh68dqS+8Qz3l5qCQalJp8do5hg8q0aYzOv3i3ykbc8ADB4JpNPNx4N8RXVgbW5m0O9Y3FvJBAzi2cn5kOAeO9QQajqXg7V9Ss5NJvNRsr24a5tJbRN2C/JRvTn/PNMC5D4h1TUtP0a0WA2GqakX88un+pSP77Kp7njGfWrQudU8PSarNqcrXmj21v58FxIV83cOsZ24z9cVn61ba1Zz6P4h+zm8u7QSJd2sHJEb84X129M9+tW3S/8Y6VqCXFrLp1jcW5ht4bhcSPJ13sB0AIAA78k9qAKlxLrtt4WHiX+0XN2IhcvYlV8jyzzsAxkEKfvZ6inapqmq3Ws6Eml33kW2qxNJ5ZiXMYCgkk9T1JxxyKga41TUPCS+G/7NuY9UeL7JLJJGRAijgyb+hBA4A5Oas3VrPaeKtBW1sLqWw0yFoXlVM8soCkevTmgBS+pw6jY+GDq0s08ivc3N8ECyCHd8qDrgnpntSWVpNZ/EC5QTy3Zh04GIztlgC33Se4zzk+tS6/Z32meKrXxFY2kl7F5P2a4ghGZMZJDAd+tRWi6tceKdQ1MaXPbxzWQihaQqCpAJGRnk57dqQFTw9fvrkVu8eq3Ka5FOr31pI5UFQ2GQJ0AA9OeOa7w58s7AN2OMjAzXD3Njca7faNcrpM9hq9vMj3V0ybVCAfMA3R89v6V2V9HLPY3MVs/lzSRMsb5xtYg4P50WA89v76702wSaXU7iTxClyv2hIZGeGNS+NhA+QfL261sa4L9/HWlWdtqVxBFdQysyqRiPA6qOhJ55OcZyKyjpeuS+ELbTItFMLWk8ck5Mqhrlg2SV+p5JP4ZrZmttUn8ZaXqU+nMIbW3eKUxurAO/wDd5BIHQnFAEGk3Umh634hsZbme6sLG3W4X7RJvYErkjNVVspdV8E3eu393c/bZ4JJkCSsqRpg4jCg4IwOcjmr9rpV5d+JdekvrCWGx1OBYUkLISoVdpyAeM9qo21v4is/DF14cfSvPZIXjivBIBG6HPbru54H8qYHReEhjwjpWRj/R1OBWs3Wszw5b3dnoFna30CwzQRiPar7uAOufWtM9aQDCeKTOaWkPWgRDdHFjdN6Quf8Ax014Z4YO7X9DI6fbYuf+BA17fqZK6NqLDqLaQ/8AjprxTwqAfEehjp/pUZxVITPoCiiigYUUUHqKAKg+/IfVqcKavLN6E0+pKHDpSjrSDpSjrQAU7DEdePShSB1rg/Eel3uleF9S1efVb8aiGMiKlywjjy+FUL6AYpiO8wQMDAoGfX8K5W00J7VNL1NdTvSyBZboXN0xjKFPmJBOBg4NbWn67pmru40++inaNdzKpwQD3we3vQBojIHHFGO+aybjxLotrA00+qW6xJJ5Rbfkb+u0Y68elX3vbZLE3jXEa2oTzDMWG3b65pAT80oz61n6Zrenax5g0+7Sdosb0wQy++Dg4PrUI8S6Q92LZb9DK0nlKADh3HVQ2ME/Q0CNWg571HcTx20Ek88gjiiUs7N0A9awPDfiqDXpbpBIqyea32eLBDGIAYY/UknFMZ0fPrRWTF4n0ea9FpFqEbTM5jXghGYdVD42k+wNawGKADJpvmKQSrhgOuD0rjru5n8UeLZdFinlh0qwjzeeSSrTSH+Dd1C/T0NWtZ8I2n9jXMehwmxuwmYzbMUEpH8LDPzA9OaAOoBLCg5AzmuI8WWNvN4p8PRlCovJGFwquy+YoAwDg1a1zwyLDTpb/wAOT3FheWimYKkrMkwAyVZWJBzQI6onvTSc1l+GdZ/4SDQbbUGQJI4KyqOiuDg1qH2pAJjvTT1p1NbrQBT1k7fD2qEdrWX/ANBNeN+DE3+KtGB5xPn8lNexa4wXw3qpPa0l/wDQTXkfgJd/i/SQRn5nb8karS0Ee60UUUhhRRQehoApxHjFSVHHUlSUOHSlHWkHSlHWgBa5X4kybfBky/8APSaJcevziuqrE8S+HpPEtvFavfNa20ciykJGCWYdOSf6UCZF4qi09fB7WurPOttIscWy2P7yVsjai+5IxWRGb24+JGmNf28Nsf7Pl2wRvuKpnGHPQnPYcVv6xoLa7o8VndXZS6gkWaK5hTG2RejbeaqQeEZE1u11WbWLua5iQpMTgCbnIHHCr7DrTEZfg/RNOvpvEUlzaRSq9/NAqsuVWMHoo6D6isLR2lbRNF01rjy4H1eYRSSL5i4TOwYJ+b5jn6j2rX8KWF9qemarJZakLO3u7+dZAIg7AbsFkOeCfcGuivvCWm3nh2DRlDww221reVT88bj+LPryc/WgCsNBaHxLb6tqOsq115DwKkcKxCRMEnPJJx19sViadczaCdN8PeI7IPZRzILHUoj8jODlNw7H/PvW9pXhM2UUx1HVLrUrqWEwLNOf9ShGDsHYnjJ6nFJB4XndbC21PU2vbKwZZIU8kKzsv3S7Z5x2wB70AdG38RIBwK84srqaz+E2p3duTHLJJId4OCAzgE59gTXpB5zxnjpXPaV4Rg0q2ubV7ue6sZg6JaykBI1c5Ycck+56UDKPiSxtF+GMkMapHDBaxvFj+Fhggj3z/Ouj0SWabRLCS5/1z26F/rtGawoPB8q2cOmXmqyXOj27BktzGA7BTlVd+6g44AGcV1IGAAMYAxgcUAcR4PAtPGXie0n4uJJ/OUN1ZCxIP0+YV2M08dtC88zrHFGMs7HAA9SayNZ8NRapfW+oW91NYalbjbHdQ4+Zf7rA8MPamxaFe3EsT67qn2+KI7lt44RFGzDoXGSW+nT2oAzfEjB/HnhhB1BkbH4f/Wrf8QX8WmaHfXc7AKkLBcnqxGAPzxWZqXhi51HW4dV/tcwT2wKwKkCkID1ByeaJ/CI1S4il17U7nUo4SGS1IWOLPqVUfMfrQIg+HlpNaeDrczKVNw7SgHsDjH8s101LgKgVVCqowFAwAKSgBKaetO9aaetMDL8Stt8K6wc4/wBEk5/4Ca8v+Ha7vGenD0jkP/jp/wAa9N8W8eDtY97ZhXmvw4IPjaywOBBKf0qlsI9spACM8mloqRhTZDiNj7U6mT8Qv9KAK0QOBUlNj+7+FOqShQcU4daz9QvnsTEQYxG2SxcHjHYY7mj+2bUYDiSN920hk6HqR+FTzIDRoHWqR1SBBl9ygttUlSA3uPbg805NRgabylLsc4L7DtzjPX6U7oC7UdxBHdQPBMC0cg2sASMj6jmq9vqUFzJ5cTHdgMNwxkHnH1wRSSapbwgtLvUfNxtOcjA/UkYouhDNN0LTtGDDTbVLZXGGCE4P4E1o1UN/CPvFu38J7nH4c0JqVu0M8uWCW5IkJUjGOtHMgLdFUf7WtlSNndl8wZUFDkY5OfTjmgatakx/P/rMlRjkAdSfQUXQF6kqmmoR+Z5TyBpGZgoRTwAcZP5jmnNqFun3pOTkBQDkkHB/Wi6AtUHpVOe9KW0c0OCJHCgOCOpxTL++eyaPHl7CGZy+RgAdvejmSAuUtV7e8juTtj3B8ZKspGOn+NRtqlmsJmMwEQ6naad0wZbJ4pKpz6giTRwwsHlYqSuDwhOM+30p89/DbTNFKSuADuKnBycADHvSuhFgnIpM4qD7ZbmYRCdDK4yq57etN/tGy2CQ3C+WW2K3PJ/KmmgLFNPWore4M81wm3CxMAG/vZGf61KetNagYvjJtvgvVT/0xx/48K88+Gy7fGtuvpbSf0r0DxsSvgrVPeNf1YVwXw2H/FbofSzk/mlWthHstFFFSMKjuDiB/cYqSobo4hP1oAjj6U6mrwB706pHcha3D3cVwXP7oEBNo5z71EdNAX5JWVzK0hfaCQG6gemfWrdOpNXGUTpjNk/aSGyNrbFJUd/xI4zUxsVe2kgeRirvuLdDVkdKWhRSArR2ZS8ecSAI3PlKoGW6ZJ69AKrxWbztczyoIZZCBGrYbYAc5/E8/hWjnFIABzgUcqEUDpLYUef82S0jFAS53bvwGe1LPayQ6NJbR/vZGyBgdcnJ/nWgOaMUKKAzo9KIkeSabeZVYSjbgEtgcegAFOTTpkVSs0ccmfmMcQACHGVX8upzWhRRyILmb/ZbhTtmCs7MZHC8kMc4B7Up0yRZC0ckWAGCq0ZOATk5Oa0aKORBcpSWUz2sMRnDvEwcySLncR06EU0WMklxFLdyRzbA3y7OMnGMDPbH61eJxSU+VBcqxW8sV3JM0gKMDhVHJJI5OfTHaqUOjyQ4ImQ/vBIQQxyQSRyT71rHpSUOCasFzOj02aHyhG8W0FWkLA5Yg9v/AK9OvrGW6lZo5FUMFyGJGdpz1Hbn8av009aXIrWC5jQ2UrzSWgZUSMRrLJtPzAZOFyPcd6lGnXCRssf2ePoEA3cAZ5Y9WPt0rU649qQ01BCuyGGN4mkMhQ7myCowTwBz+IqQkZpT0ph61QjB8ckjwXqA9TH/AOhrXFfDBc+M7g/3bN8/99JXZ+OiP+EPu8/xSRL/AOPiuR+Fi58V3reloR/4+v8AhVdBdT1uijtTVcOMoysAcEg96kodUN1/qx/vCpqgu/8AVr/vCgCJOtPFMXqaeOtKwC06m0oOTSHccKKSlzmnYLhSjrRSUWEPBopoOKN1FgHUUgOaWmAZxTT1pWptABRRRQAE0lA6jH5VFNdW1sD9ouoYsdncD+tAEhOaSoYL6yusfZ7uCQnpskBqY5Bxg/jQAhpKWigQ0nimmlpDTaEc549/5FKdezTRf+hZrlvhOM+I9Rb0tQPzeum+ILKnhb5jgG4QH9a5z4TKRrmpnt9nT/0I1XQOp6sOlIFC/dGO/FKOlFQUFVrw/wCrH+1n9Ks1Vu/vx/jQA1eg/WnjrTF4/Gn9KAFpV60lAOKAHUUDkUUAGaWkpaACiiigAp2eKbRQAUUUUAFKOvtTSc1z3jDVn07TPsts2Lq6BAP9xO5pMLXMnxL4xdXkstKfaFO1588k9wK4edmldmkdpHJyWY9ajZHjYgqQg5Jx+tRlyBkg4pXuXtoTg+X8yOyk/wAStgrXTaV42vtPdIr5vtduMIQfvr6HPf8AGudsbSS4XJ+53HqK0odLRGBPKFTnNTzFKNz1C0uob+1S6tn3wyDIz1B9KlNcj4NvES6lso2+SRdwUnow64rrchuR07VcXcykrMKQ0vSkzmqZJynxHx/wi6Z73C4/I1i/CYZ1LViP+ecYz+JrU+JbH+wrJR/Fc9P+AmqHwkXNxrD47RD/ANCqnsHU9NB4ooHSmLEqlioxuOT7moKH1Uuj++Qe1W6p3P8Ax8j2UUAA7U+mDtT+lACjpRR1ooAcOlFIDjtS0AFLSUdKAFoo60UAFLSH259s0uDjpQAUlLimnrTsAo6ivPPFk/2jxHPETwiIg/LP9a9DHDA15340t/I8Sx3BdY0kQNufpwMdKmS0KjuPsLG3uTcWsiEybCvI9sj+VYZtrWUSIpCsvBzxit/Tbz7ffxNAI/tkHyccCRMfdIPQ45qj4w0UM813agK8aDeIwcFSQBk/WueKalqdU9VoZrXsFkscCYJBGSKr3Wru0o8obUwQ2aw45d8wDsVbr81WGDFeRz3xXRypHJzSNzwvdmLxJYncQskoBOfWvWX4cgdK8f8ADkTSa7pmOB5wr2B+XP1prcl36jaQ0tIaoRxvxKGdM09RxmZm+mEqt8I1/dauxHPmRj9Gq18Q2H2ewQ/3Zmz9FqH4Rf8AIP1TAx+/X/0Gm9hJ6nolFFFQWFUpzm6PsBV2qEhzdSH0wP0oAeO1Ppg7U4HNMAJwOuBWTq2vrpVwIVh80rH5ju77QmThc/U/lUmv60vh/S/tzQmb94sYQNt615bqPiBPEepSzWsc6XUzBAqIWI7AcdaTA7N/G94rgrb2fl+hlJOPripv+E4uHbEGnQt/vXGP6V5pctEu1FVo3BIZnDKxI69qsRxTlQu1yScjBBOMdcGhJk3PSh4n1fbu/sWJh6LcjP8AKpf+EtlV8SaLdbcZJR1bFee2DwOwVdRkiPUsQeB+Bq7evJZyYtdfS7XHylWbP49aLMdzul8aaUOJ/tVsfSWBv6A1ZTxToshULfpluACrD+Yry/7fdTgiWbfs+bIZv8KjOoSqOcY/2lJoQHqWteI7DTNKubhbmOSVUIjRDuJcj5R+dcv4Mk1vWJor+51W4FlCANrkMbh8/NxjAA6cen1rkp7prm0mjwQ8gChgu0DkcmvULXTGs7aG1t8BIkCoQcY45P4mhuwLUmivruTUhCz7VB+ZdtXLa9F3LKoQqI2xu7PWKuswS6g8flCN3UqJmfnb93eB6ZrQe+g09Ft7dCdnBbH61o0Z3fc1Mg1yvjK0S8utOjZAxkDrnHYYrqvQ8Zx271heI45Rc2N3Gu6OJ9jH03Ef4VlP4Ten8SuZNhZ/Yb8NJkqiFywHViMfyrVktUudssiCQJwCD1/DvVN7k/2jJiWOEBNjrKcfiPWtBWt4FLLdRli2d28c+2K5Ffqdc32ILjRdNvVxdWUJI53AbSPyriPFdnZWF1D9h6MPnBPWvQpGaRc4257V594sSRZVulXdAjGMtjvVQfvGbV4sj8NLIniHS4UAIMxfn3BNerP1rx7Rbp9P1a0mnBzC4dvXb0/ka9hJB+ZSCjcqR6V1rc5WxO1JSnpSVQjh/iQwX7B/1xn4+u2pPhJj+x9R45+1cn/gAqt8SxmS1x0WB/1YVb+EnOiagf8Ap6x/44tEthR3O/OcHAyfSmRM7RqZF2ORyuc4/Gn0VBYVnt/x8Sf71aFZqkNI7DoWNAEy96UdTTe9LVAcn8TJVTw5aA97xP0DH+lcOvjYRbUXRLBZEAC3ESlH+vXrXX/FLnRtOA4xcE49QENeWSwsz7gm0fSpKs+U6my1LSL24Cz2qGeZhw6AMSevzd6jvLOCScs05iOduEfHHYGsPRlMutW0QBEmSVBGOcHFbGpWt7p119kmi/0mPl2DggZ798jHP1pXFGKZJDpFujKkdwiyOeNvDEdxU7WOiM21mvI3bhSkgfJ98rVhLiwhbai3jgA+XOHRCP7p2gcY5B55qhKZI/LCCJiz7n3N8ox06Ur23KcGD2OkFisOuOnGCroAfzGKG0W2dMweII5P998f1rnpo1MsjxjYrOzYXJAyeg9qQWxbBB5PrWl0Z+zkdaNHiXT5NmoM92GBAWUeXt754znNd5As0Ef2u9mBgIBWNOfMz0xXjkdpISCp2++K7Pwjr4sI49N1hTLbxkm3nXkxZ6hh3GefUUpNW0BU5Pc6W+tbW8nju2ZrZsfPD5YZgvUqGHTPT8atrrm+YI0Ckv8AKoAFVL26syxP9oWSjbu3NL0H065/CuP1DxFJPIY9LEsUIbLTYwZMf3R1A/Wq5lYnknzHrYUoqg9QADUN1bi8tpbdzgSqVB9D2P51leGfEcXiGwZm2peQ8Sxqeo/vD2rTv7+00u0e6v5lgt0wCzdyegHqfpU7lbM4+7nvDqSYgT7daJ5UySDIkXPDD61s2lvNOyXF6qB1yFjVRtBrmtY+INjc3ETafYSO0Z2meQhCyd1A9DVuHxyNUk+z2FuYJGwPMlOdufYda55U3E6VUUly9Tb1C78lfJjHmTuMKnpWZ4htIrXwuI5UaVldScd271pWVotv+8di8zcs56mrM6JNEQyBhzgH1xwayWjuN9jyK6mK3UhYZl3bjn+EY6V614YumvfC2nTvyxj2k/Qkf0ryHUvm1a85zmUjP04/pXrPg4Y8HaYB0KMR+LE12rXU5H8TRs5o70maTOTVMDg/iOwMmz+JbYEe2X5q/wDCZQPDt4w73jf+gLWN8R3P9qOo/wCfSNT/AN9k1u/CkAeFJm7NeSH9FolsJbncUUCioLCsyLnPux/nWk33T9KzI+VB7UwJ6XOaZ3pw60yTiviZGZ4tKjDhcO7foB/WuLi02ZyokkAViBnd0rrviO0o1HS1iikddjBmRCQuTx0rnSXB+cScc52GsZ7ndQtyleDSp5rxUilCOAdjbwB0JPNVZLe5SYlWLggfe5yasyzyDcFLKW6MRjFNWbI3FydvGR/HU3Zp7osFtLIhQoquSSQT2xniq8v2iIsF8w9+FyPzrTgJm2gSIX5I+YcADpTGvHA2AjIwDnvSLsrbmcqysu7aW3dBjGDUJwZMeWQDwcnoa0vtCoSmAzMccDoaRWRTl0U7QTnbTuLlVitHGgwik4x/COlW4VKLna3rkipIoI5dkjRqAxzxxj3qXCKiouZEAwe1IqKSKUh6nK9erdPxpglw2FZeO45H4VoXNtGpVHMcmY1f5RwM/wAJ9xUJgHy+SEWMjIU9RVJkON9gsNQk0zUotQt3XzYjkjBAZe6n2NP8XeIpfEWpIxjkisYVHkRN3Yj5nP54B9PrUP2RgSwchFI+TrVTUYAmHj5xzj2rRS1OarTurlLr2x9KtaYHN5+6B3BT09uRVXtmr+hMq63bh87JCUbH0NXP4TkjuegaVqolgVXzv75rU+2RxxO7fdVSx+gFZsuhra2ZlhYl1GSPaqOv6zZWOg/ZxIWvriMqI16rkYyfSuJLmdkdsmkrnnjSea8szcF3Mn4E17J4UUx+ENJU9fIB/PJrxkDZDg9uDXtvh9dnhnSx2+yx/wAq7rWSRxPe5fwMUg60UD7woA8y+Iz51yUekEY/Qn+ddL8L1C+GI8E8zTEjseVrlviId2u3PoqIB/3wM11nwzH/ABSVqQhI82X5uw+bvRLYa3O0XoKKB0oqChshxGx9AazYvuAVoTttt5D6Kaz4s7Bnr3poCXoacKaOtOpiHqxTOD1pdxbqoJplOB5yuOPWgLkayWszum1GKnBbZxn0zStZWrkB7OAkccxrxVN9LDRNEJmWFpDIF2A4JznPr1NVrfSJI1jyzRt8wchs5XkKD6k5U59qVkF2Xn0vS9rl7C2VV5ZjGBj1qCfw/oYQvNp9sqn7zMNo9uapyaVcRyLbxMz2205O4gDKhfXJ6E++R6Vaj024htLmMNHNJPtCiRm2qoGD+OP1osh8z7kbeFPD75Q2ES/NggMRzjp1pn/CGaHkf6IVIHQTN0/OmPod0HzFciMBSi4JO359wfnqQPlqR9OvlggEUi/aI7mSUyKcAhgcZB7c8gUuVD55dxp8F6QeESdTkniU/lUDeAdKJJE10uR/z0H+FWp47260gYZ3l80mNgow6jOC444bvjkZ9qSa71GzWWZoNsSZwpTdzk85z6Yo5UP2ku5SbwFYnhby5VSclTtIJ/Ko28AWxz5V/IvpmMHH61oPqV9EGlaHdAsZcuIm+Y44+g61K15cTjT3HyCbeZdmQOOgPGc9eKOVD9rPuYv/AAr/ABtxqh467ocf1qncfDe5lDFNUiwVIO6E45/GuhstWuf3cU0IMjMUMkmVIYliMgDpgYpY9ekaImW1BwOdhJJOM46dcfrmhRSE6kmrM4tvhhqyj5L+zYdshl/pS2fw71y1vYZGks2RHySJD0x9K7u11qK5kRShiMndiMD5Q2M+vzdKSfVltLuWG4VmRXChkxwMLnPPPLjpVPUyWjuQR2F6lr5TMnAxgNwfzrz+/wDBvie51C4ujp6N5jEqFmThew5NeqRSmaMS7WXPZsdOx44qTJqY01HVFym5Kx4zJ4N8Rxqc6ROx9FdDn/x6vW9Lie30awglXbJFborqexCjIq0WpKsgbSfxCnEikH3hQB5L4+l3eJtUU9miUf8AfsV3nwzH/FF23vJJ/wChmvP/AByF/wCEk1JgPmaX+SIB/WvRPhxGI/BNjj+Iu3/j5py2CLuzqaKKKzLM3xBqB0vQL69ELTmCIv5a9WrgLb4rQNGDNpLYP8Ucwwfzr1B1DIysoYEYIIyDXLXHw38MXDs/9miJm6+TIyj8gcCmmBiR/FPSzjdp14OcHBQge/Xmri/Ezw+R80d6h/64g4/I09vhR4dOdv21M/3bg/1FVZvhHpTH/R9QvovYlW/pTuhWNCH4heG5h/x9yx/78LCrUfjTw4+CurQjPZgy/wAxXNSfB+M58vW5h6BrdT/Wq7/CC7A/da5GT6Nbf/ZUaAdtH4n0GX7msWf0MoH86tpqumy/6rUrR8+k6/415m/wn1tDlL6xk+u9f6Gqk/wz8SRsdkdpOD/clx/MCjQD15Z4XGY542+jg/1p4UtypUj2NeKHwB4qi+7pKE+qXCZ/nTX8M+Lrcj/iV3n1jlB/kaAPbDG/cU7Y3pXhog8V2xJ+yawmPTzP6Uv9t+KbThpdXiPbeHI/UUAe4bWzwNvbikKA/eQMvoa8PHjvxDFwdTuVI674h/UVYT4l69EAG1BT6b4V5/SgD2gruG0rlf7p6UirsUKg2qOijoPwryCP4p6yPvTWj/WIDP61aj+K2q8breycf7rD9c0wPVuSMHJ+ppMDOcD8v8+teax/Fi6H+s062b2SRgf61ZX4spj59IOe+Lj/AOxoA75reF1KtEhB9hkf5wKa8EDsS8ETE8ksgPP+QPyFcQvxVsz9/TJl/wB2UH+Yq0nxP0dh89tdof8AdU/1oEdbFBFANsMaxrgDCjA46U/NcqvxI8PsPmN4v1iH9DU6ePvDsnDXkyezQt/QUAdFRWGvjTw23TVEHs0b/wCFTR+KtAkO1dWgyf72V/mKANShRlhVJNa0iT7mqWh+syj+tTx6hYyH93fWr/7syn+tMR5P43Pma7qCgbVilz7sWwP6V6V4BXb4J0sf9Myf/HjXmPjJlbUr1xIkjSzkAoOwPAzXqfglQvg3SgP+eANE9hQ3N6iiiszQKKKKACiiigAooooAKKKKACiiigAooooAQqG+8AfqKiks7aVSslvE4PUMgOamooAz5NB0mXHmaZZtj1gX/Cq7+EfD8md+jWRz/wBMVrYooA52TwD4Zlzu0iH/AICzD+RqnJ8MPDDklbKSPPZJ3GP1rrqKAOJk+FPh5x8pvUPqJ8/zFVZfhFpJ5h1C/jPuyt/7LXoFFO7A83b4QWwOY9YuF+sSmq0/whuAf9F1pWH/AE1g5/Q16jRgUXYjyRvhJq2fl1W0Ye6MKrS/C3xFGcRz2Mw/66MP5ivZMUUXYHiT/DXxQpyLe1YDss45/Oon+HnioEZ0+JvdZ04/WvcqKfMwseL6X8NtfvbuOPUYxY2wOXfzQ5I/2QD19zXsNjZw6fZQ2lsmyCBAiDOeBU9GKTdxhRRRSA//2Q==" alt="How to Convert Records and Tapes to CD" /></td>
-		 <td><strong>How to Convert Records and Tapes to CD</strong> by <em></em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0007CIXB4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kugjYHadL._AC_SX236_SY340_QL65_.jpg" alt="Antoble USB Cassette to MP3 Converter Capture, Portable Audio Tape-to-MP3 Player..." /></td>
 		 <td><strong>Antoble USB Cassette to MP3 Converter Capture, Portable Audio Tape-to-MP3 Player...</strong> by <em>ANTOBLE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IR2PZPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IR2PZPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t23HFseXL._AC_SX236_SY340_QL65_.jpg" alt="Feir Cassette Converter Portable Cassette to MP3 Converter Stereo USB Cassette..." /></td>
 		 <td><strong>Feir Cassette Converter Portable Cassette to MP3 Converter Stereo USB Cassette...</strong> by <em>Feir</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075WSFNJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PkCrELdzL._AC_SX236_SY340_QL65_.jpg" alt="1byone-Nostalgic-Turntable-Bluetooth-Smartphones" /></td>
-		 <td><strong>1byone-Nostalgic-Turntable-Bluetooth-Smartphones</strong> by <em>1byone</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075N326BJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075WSFNJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DGI23ibcL._AC_SX236_SY340_QL65_.jpg" alt="ION Audio Tape 2 PC | USB Cassette Deck Conversion System with RCA &amp; USB cables" /></td>
 		 <td><strong>ION Audio Tape 2 PC | USB Cassette Deck Conversion System with RCA &amp; USB cables</strong> by <em>ION Audio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000VG802I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000VG802I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41enuos7BjL._AC_SX236_SY340_QL65_.jpg" alt="DIGITNOW USB Audio Capture Card Grabber for Vinyl Cassette Tapes to Digital MP3..." /></td>
 		 <td><strong>DIGITNOW USB Audio Capture Card Grabber for Vinyl Cassette Tapes to Digital MP3...</strong> by <em>DIGITNOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079CBGDST"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079CBGDST"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rEczofPUL._AC_SX236_SY340_QL65_.jpg" alt="DIGITNOW Cassette Player,Personal Walkman Tape and Voice Recorder for Convert..." /></td>
 		 <td><strong>DIGITNOW Cassette Player,Personal Walkman Tape and Voice Recorder for Convert...</strong> by <em>DIGITNOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GVC2N6H"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GVC2N6H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513nIdl6WXL._AC_SX236_SY340_QL65_.jpg" alt="Handy USB Cassette Player and Tape-to-MP3 Digital Converter" /></td>
 		 <td><strong>Handy USB Cassette Player and Tape-to-MP3 Digital Converter</strong> by <em>China Supply</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008ASIZR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B008ASIZR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -162,7 +171,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -190,13 +199,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

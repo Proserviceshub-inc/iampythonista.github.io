@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Japanese Diet Pills</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41I0VIaLenL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>THE HALLELUJAH DIET</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000VUP0W2"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ClQsyMplL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Skinny Fiber</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ESZ8Y1E"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Diet generous helping even in night late rice and (30 packages) by Shintani enzyme" /></td>
 		 <td><strong>Diet generous helping even in night late rice and (30 packages) by Shintani enzyme</strong> by <em>Shintani enzyme</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N7HN4AO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N7HN4AO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51P00CdkOkL._AC_SX236_SY340_QL65_.jpg" alt="Svelty Black Ginger Japanese Diet Supplement Pill 150 Tablets" /></td>
 		 <td><strong>Svelty Black Ginger Japanese Diet Supplement Pill 150 Tablets</strong> by <em>Svelty</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KAS7D02"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KAS7D02"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oSkmQvS2L._AC_SX236_SY340_QL65_.jpg" alt="alli Diet Weight Loss Supplement Pills Starter Pack, 60 Count" /></td>
 		 <td><strong>alli Diet Weight Loss Supplement Pills Starter Pack, 60 Count</strong> by <em>alli</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078ZMSLSX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B078ZMSLSX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BRioXtqIL._AC_SX236_SY340_QL65_.jpg" alt="APEX-TX5 Weight Management Dietary Supplement 120 White Blue Red Speck Tablets..." /></td>
 		 <td><strong>APEX-TX5 Weight Management Dietary Supplement 120 White Blue Red Speck Tablets...</strong> by <em>APEX-TX5</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QB7OX68"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00QB7OX68"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ofOulE5RL._AC_SX236_SY340_QL65_.jpg" alt="GENIUS DIET PILLS - The Smart Appetite Suppressant for Safe Weight Loss, Natural..." /></td>
 		 <td><strong>GENIUS DIET PILLS - The Smart Appetite Suppressant for Safe Weight Loss, Natural...</strong> by <em>The Genius Brand</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071VBXW5V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071VBXW5V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61gGz02owSL._AC_SX236_SY340_QL65_.jpg" alt="Naisutoru Z 315 Tablets Diet Fat burning Supplement With One Reuseable Silicone..." /></td>
 		 <td><strong>Naisutoru Z 315 Tablets Diet Fat burning Supplement With One Reuseable Silicone...</strong> by <em>Kobayashi</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079NZKWY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B079NZKWY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51n8t-YLcYL._AC_SX236_SY340_QL65_.jpg" alt="DIET Gold Supplements Late Night Rice 30 Days by Shintani Enzyme" /></td>
 		 <td><strong>DIET Gold Supplements Late Night Rice 30 Days by Shintani Enzyme</strong> by <em>Shintani enzyme</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XB8RG17"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41B24iLjvfL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Nutriana</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KL699LD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XB8RG17"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BF6LT-ejL._AC_SX236_SY340_QL65_.jpg" alt="DIET 30 follicles [2 Box Set] at night late rice (Shintani enzyme)" /></td>
 		 <td><strong>DIET 30 follicles [2 Box Set] at night late rice (Shintani enzyme)</strong> by <em>Diet</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006WJ9U7M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B006WJ9U7M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51daziKX1vL._AC_SX236_SY340_QL65_.jpg" alt="Shintani enzyme night late in rice piled high (6 tablets X30 wrapped) 3 box set" /></td>
 		 <td><strong>Shintani enzyme night late in rice piled high (6 tablets X30 wrapped) 3 box set</strong> by <em>Shintani enzyme</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RZH9UJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00RZH9UJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Pz1eCa3bL._AC_SX236_SY340_QL65_.jpg" alt="NAKATTAKONONI Japanese Popular Supplement Value pack 90 bags" /></td>
 		 <td><strong>NAKATTAKONONI Japanese Popular Supplement Value pack 90 bags</strong> by <em>Gurafiko</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00J0Z1CFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00J0Z1CFI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51H0B2ssk2L._AC_SX236_SY340_QL65_.jpg" alt="Diet generous helping even in night late rice and (120 packages)" /></td>
 		 <td><strong>Diet generous helping even in night late rice and (120 packages)</strong> by <em>Shintani Enzyme</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01H32Z962"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01H32Z962"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41suf1nebfL._AC_SX236_SY340_QL65_.jpg" alt="Resveratrol Supplement 1400mg - Extra Strength Formula for Maximum Anti Aging..." /></td>
 		 <td><strong>Resveratrol Supplement 1400mg - Extra Strength Formula for Maximum Anti Aging...</strong> by <em>NutraChamps</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GS6Q300"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01GS6Q300"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

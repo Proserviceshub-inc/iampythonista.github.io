@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Solar Laptop Chargers</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zFq6VLIDL._AC_SX236_SY340_QL65_.jpg" alt="Voltaic-Systems-Charger-Warranty-Including" /></td>
-		 <td><strong>Voltaic-Systems-Charger-Warranty-Including</strong> by <em>Voltaic Systems</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002W9ICWA"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31gtM6rudUL._AC_SX236_SY340_QL65_.jpg" alt="Innergie-PowerGear-Universal-Interchangeable-Notebooks" /></td>
-		 <td><strong>Innergie-PowerGear-Universal-Interchangeable-Notebooks</strong> by <em>Innergie</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PSQDHNI"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ALLPOWERS 60W Solar Panel Foldable SunPower Solar Charger (Dual 5V USB with iSolar..." /></td>
 		 <td><strong>ALLPOWERS 60W Solar Panel Foldable SunPower Solar Charger (Dual 5V USB with iSolar...</strong> by <em>ALLPOWERS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RFCVR62"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00RFCVR62"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51za2pYMOIL._AC_SX236_SY340_QL65_.jpg" alt="SUAOKI 60W Portable Sunpower Mono-crystalline Solar Panel with DC 18V and USB..." /></td>
 		 <td><strong>SUAOKI 60W Portable Sunpower Mono-crystalline Solar Panel with DC 18V and USB...</strong> by <em>SUAOKI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B018TY8ZYQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B018TY8ZYQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41C3-E+00hL._AC_SX236_SY340_QL65_.jpg" alt="GIARIDE 40W 18V Foldable Solar Charger 5V USB + 18V DC Sunpower Portable Solar..." /></td>
 		 <td><strong>GIARIDE 40W 18V Foldable Solar Charger 5V USB + 18V DC Sunpower Portable Solar...</strong> by <em>GIARIDE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074GQF3CW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074GQF3CW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4177Fj1o9hL._AC_SX236_SY340_QL65_.jpg" alt="SUAOKI Quick Charge 3.0 Portable Solar Charger 28W SUAOKI Foldable Solar Panels..." /></td>
 		 <td><strong>SUAOKI Quick Charge 3.0 Portable Solar Charger 28W SUAOKI Foldable Solar Panels...</strong> by <em>SUAOKI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DD6N9VH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DD6N9VH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41p5WNJT7PL._AC_SX236_SY340_QL65_.jpg" alt="MEGASOLAR 60W Solar Charger Solar Panel with Solar Charge Controller USB Type-C..." /></td>
 		 <td><strong>MEGASOLAR 60W Solar Charger Solar Panel with Solar Charge Controller USB Type-C...</strong> by <em>SZMJSOLAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0785WCZG7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B0785WCZG7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cXGdVU1tL._AC_SX236_SY340_QL65_.jpg" alt="SUAOKI 100W 18V 12V Solar Panel Charger SunPower Cell Portable Foldable with..." /></td>
 		 <td><strong>SUAOKI 100W 18V 12V Solar Panel Charger SunPower Cell Portable Foldable with...</strong> by <em>SUAOKI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074DVRPXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414lZIGGcFL._AC_SX236_SY340_QL65_.jpg" alt="Backpack-Resistant-Charging-Business-Thoughtful" /></td>
-		 <td><strong>Backpack-Resistant-Charging-Business-Thoughtful</strong> by <em>Haweel</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J4Q1DK3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074DVRPXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417V+HOdTOL._AC_SX236_SY340_QL65_.jpg" alt="GIARIDE 18V 80W Foldable Solar Charger Dual 5V USB+18V DC Output Sunpower Solar..." /></td>
 		 <td><strong>GIARIDE 18V 80W Foldable Solar Charger Dual 5V USB+18V DC Output Sunpower Solar...</strong> by <em>Giaride</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072KD4XCD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072KD4XCD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41u4rfNROtL._AC_SX236_SY340_QL65_.jpg" alt="GIARIDE 21W 18V Portable Foldable Solar Charger 5V USB 18V DC Output Sunpower..." /></td>
 		 <td><strong>GIARIDE 21W 18V Portable Foldable Solar Charger 5V USB 18V DC Output Sunpower...</strong> by <em>GIARIDE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0727X1ZPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0727X1ZPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-OxfXBlyL._AC_SX236_SY340_QL65_.jpg" alt="UPEOR Portable Solar Generator Lighting System Solar Power Generator Kit for..." /></td>
 		 <td><strong>UPEOR Portable Solar Generator Lighting System Solar Power Generator Kit for...</strong> by <em>UPEOR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KFSHFQ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07KFSHFQ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YeNGn5gsL._AC_SX236_SY340_QL65_.jpg" alt="TOPDC 39W Solar Panel Charger Portable Waterproof SunPower Solar Charger (5V..." /></td>
 		 <td><strong>TOPDC 39W Solar Panel Charger Portable Waterproof SunPower Solar Charger (5V...</strong> by <em>TOPDC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M7YISQB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M7YISQB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41vfvv40W7L._AC_SX236_SY340_QL65_.jpg" alt="X-DRAGON Solar Charger, 40W Solar Panel Charger (5V USB with SolarIQ + 18V DC..." /></td>
 		 <td><strong>X-DRAGON Solar Charger, 40W Solar Panel Charger (5V USB with SolarIQ + 18V DC...</strong> by <em>X-DRAGON</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IQMAUSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IQMAUSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41o0M5N3w2L._AC_SX236_SY340_QL65_.jpg" alt="Picowe Foldable Solar Charger 60W Portable Solar Panel 18V Smart Dual USB Output..." /></td>
 		 <td><strong>Picowe Foldable Solar Charger 60W Portable Solar Panel 18V Smart Dual USB Output...</strong> by <em>Picowe</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07M5ZPKXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07M5ZPKXK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51uukUZCV2L._AC_SX236_SY340_QL65_.jpg" alt="SUAOKI Solar Charger 60W Portable Solar Panel Foldable High Efficiency 5V USB..." /></td>
 		 <td><strong>SUAOKI Solar Charger 60W Portable Solar Panel Foldable High Efficiency 5V USB...</strong> by <em>SUAOKI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0752TQ5Y7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0752TQ5Y7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

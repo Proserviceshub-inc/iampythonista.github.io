@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Poe Switches</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41GlB+o1-DL._AC_SX236_SY340_QL65_.jpg" alt="BV-Tech-Port-Switch-Ports-Uplink" /></td>
-		 <td><strong>BV-Tech-Port-Switch-Ports-Uplink</strong> by <em>BV-Tech</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005GAATOG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UQRfP1e9L._AC_SX236_SY340_QL65_.jpg" alt="BV-Tech-Gigabit-PoE-Ports-Switch" /></td>
-		 <td><strong>BV-Tech-Gigabit-PoE-Ports-Switch</strong> by <em>BV-Tech</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00F6DL2FS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCABVAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKRmVBlmAHuaAFoqnLq+nQ582/tUI7NMo/rVOXxbocJ+bUYj/uZb+QNAGxRXNy+PNFj+5JPL/uQn+uKqS/ESxH+psbpz/tbV/qaAOvorhZPiJMR+60sD3ef/AAWqknj7Vmz5dvZxj3DMf50Aei0V5fJ4x16Q8XccQ9EhX+uaqS6/rMx+fVLgf7hCfyxQB63TJJo4hmWREHqzAV43Ld3c/wDrr25kz2eZj/WoPKQnJXOfWgD1+TXtJhz5mpWgI7ecufyzVOTxjoURIN+rH/YRm/kK8tCIOiil4x0oA9Fl8f6PH9wXMv8AuRY/mRVOX4jWw/1GnXD+m9lX+Wa4bPoKbuHOCDjr7UAdhL8Rbph+50yNP9+Yt/ICqknj3WX4WOzj+kbE/q1c1uFIXoA25PF+vSZ/08ID2SJP6iqp8Q6yJVlXVLjevIywK/iuMH8qzC1NL0AdzpfxEC7Y9attnb7RbglfxTqPwz9K7Kyv7XUbcT2VxHPEf4o2Bx7H0PtXiRYGiCeayuBcWU8ltOP442wT7H1HsaAPdaK830n4k3FuFj1q289Bx9otxhvxTofwx9K7rTNa0/WYTLp13HOo+8FOGX6qeR+IoAvUUUUAYniXxC2gRQNHa/aXmLADftxgfQ1zL+P9SfmKztUB6bizf1FXviEdsWntnGHc5/AVxEy7T5i/cbqB2P8AgaAN6Xxprkn3ZYIv9yL/ABzVOXxJrc339TlGf7iqv8hWWGzRmgCzLqGoTDEuo3bjuDM3+NVWjD8uWY+rEml3U3dzzQAojjHRB+VO2qOwpm6jdQA/jtS46Z79Kjz6VXaxtX8zfESJSGZdxxn1HpQBZ86PJUSKWXqoPI/CoTfW4j8wShk3+XkAn5vQ+lKYoFl84xoJeMuRycdMmgTxbjsdNzdcYyx96AGNfxeWXjWWUK21hGuSp9/ah7za6KsLujLuLAhdvOMYOOaeZgMcN7YU00SY5ERGe/AoAjF3M023yV8vPDBiTj6Y6+v9amLsQCvAPQkc/iKaZJCOFUfVuf5UgMmcllx6Af1oAM3BAz174IApNkxOTJj23HH9KCWJ++RjsMU07e7Mf+BGgB/koQN43Ec8k4oBjUnbtB74qFjCPvBfxpguYScRsCfRef5UAWDKnqT9ATSed6Ix/Sljtr24/wBRYXcme4gbH54q3H4f1ubG3TnQHvI6r/XNAFEux/g/NqTLY6gH0xmtmPwdrEn32tYs+sjMf0FXI/AVy3+u1ED1EcBP6k0Acxknq+PoKadvdifxrrT4P0m25vdVkGOu+aOMfyqL7N4NtiA9wkzf9dZJM/8AfPFAHKlo06n/AL6Of50yKcJcLLaSvHcJ92SBiHH4jmu0iu/DyBjp+jyXPl/eaKzB2/UtjFVLvxbaFTBFpk8ZRiGHmrHz0IOAaLMC3ovj7XLRVTVNOnv7Yf8ALdIjHIo9TnCt+n1r0exvI9QsorqFXVJVyFkXaw9iK8eufFTyu0i6VabznmVnkHPXjIFem+DL6fUvCtld3WzzpN5bYuBw7AYH0FOzAx/iN/x6WP8AvSf+g1w1pKOYX5U9M/yr0Pxzpl5fWtrNZhZBas7yQ873XH8PqRjp3rzaRVHzxnMUgypFICSUfZ32sflPKk+lM81Scbsn0HNWdgmhUSEktyrYztPr7CqO5xK0IRmlXqqAt/KkBJ52fuo7fhj+eKPNftER/vMP6ZqZLHUJcbNPuuTgboWUH8TipF0jUWKDyYozIQqeZcRjcTnaOGJ5wcfQ0AVd8p7Ivvkn/Cgb+7rj2XH9a2U8Has/+tls4R3/AHjMfyC/1q5D4DncZk1MY7+Xbn+Zb+lAHMkc8yNj0zjNN2x98n6sTXXHwbpNt/x+apOB33yxxj+WaY1j4MsxmW4hlx/euZJP0U0wOTJhTnag98Cm/a4mOFcMfQc12C6n4Tt8G209Zj2MViWJ+hYCpz4uii+W00i6zjIV/Lh49eposByEdrez/wCo0+8kHqsD4P6Vbj8P63N93TXQeskiL/WujtfEupar9oNpZWVuttnzHurlnAx1wEXJHuOKw7fx5c6hqIsxe2lnkkLcrbFozg9izdO+SBRYCSLwdrMn33s4vrKzH9Fq3F4DuXx52pqPUR25P82qnrWtXGm2azXOt6g80qEwxLBHbeZyQGUjOV4HQ9CKw9F11NYvPserPdT3Vw6x2qvdSGNnYgAPgg49wfwoA68+CtMt+bzU5xjrvkjjH8qiex8GWRPnXcMpHXNy0n6Ka43xVcQadqVxpVhYQWk1vJiWVN0m7jgBnJ4wRngcitvwJqV3qNvcxxxRQHTraSY3UcahpzjAR8Y9zk88UAbMepeEoQv2SwWdicL5VluLHsBuAzU9z4sTTVU/2JeQAnaomCw/hgZIryTUdXudYvTqF5Kzz/w5ctsHYDJJx7Z712Us8l74U0nULqbz7q6ll8yXoSFO1QR0yAD+dNAdFa+LL7VJXjtbSztQgyXupXcHrwAoyTwaxo/Hlxd6kbN9Rt7SPJH2uK13Rn/vts49zjpVARtN4W8QrGrPL5UGxUGWz5y9K52Lwrr99EPI0a8I9XiKg/i2KGtbAdlr2uz6ZZRu+rajJdzpujhIW3BBJw4Cg5Q47GqnhW7j8TXsWn3sLXOoOxY+fcS+UYwMn+LIPp1rX8X+DtV8Q6pp02mQQpb21hHbsZJcbWBYle5OARzVnwb4G1PwxrT6jcXVtJuiaIwwk98c5YDuKynVhBXnJL1dhpNnnOo6yst6JdPt0tLWJsJFsBLYP8ZOc11mqavf2/gW11WAraPqVw0Qih+VY0AI3IVxgkr9OelaNt8JbCIhL3V7mZnycRIEz3PXdXR/8IXoo0a20y6R57CzdpI1lkIO5upZlIz1rknmWEhvUXy1/Irkl2PJvBzsviWy0/zvLtryVY506iVc52+ozgCtC4O67uGPeVj+pr0Kwg8H2LJJawWFvcLyqlkaZD7dWB+lcINM1O6uJjb6XesrSMVLQMoIzxy2K6MNiqddy5L6d01+ZMotblJ/umvYfAPHgrTf91//AENq82Twjr064NnHBnvNOmB/3yWP6V6p4T0+bSvDNjZ3LRvLEh3NESVOWJ4JA9fSuqTJRfvVYorL1U5rznxRoy2U5u4ExZXbfOo6Qyn+jcn65HcV6cyhlINZF7ZxSxS29zH5lvMu11Pp/Q+9QM8wjGEVCQSvB9jXRaBEbvS54WuJ4US53AwvtP3MY+nNYl/YTaRqD2UvznIZZf8AnpGejfXjBHqK3vC3/Hldj/psP/QRQBfTSLNQmVd2Qgh2b5jgkjJGM/eP6U+PT9OtTHtt4UZSvllzlsgYXGeeBwPr71ZFZt/HCdTtjczRi4Yj7N+4Lsgz65x15yRQBqKu5gCe9eb69e3F9rl8Jp5DFFM8UcQYhEVTgYHTtk+9elLkSgHqOteW6mf+J3qX/X1L/wChGqiBVEMY6KKt2DJBdCRp/s4UZ3bNxbnoMdD71WzSnkdcVYjTOp20ZDL5jbOAFViMZ5+8+P0py3dvaspFxCdy5cR54OOOijn15qvDPYPIoa2WFs4G7MgOe5yQABxUzXFlafK09upUYDKVIb64Q/zqQKGryg+Dr25UsrtqUaq4+8VKMSueuDgZHsK5ddM1DUIwLWwu589kiZs/pXpng/WLO3i1BiyzPJc71UKXJXHUKOc9a7BdVkkc+RY300e0bR9nZDnnPMm0Y6frXnV8cqU3BQlJrstPvNFC6vc4bxt4c1XWv7ATSrBmS1sVR98ijyzx8pLEcjFVvDfw+1/TdfsNSuTbRRW8qvIok3syjqBgEZ/GvRll1R8iHS/KB/573Cp/6BuoistaKkNPZRfMTkq8x5OeuU6VzfXsRL4KP3yX6D5Y9zjtZ+HD6xr99q1zq620VzJvCCEMyjAABJYDtWroHgSx8PC9MN5cTtfQmCbfhQFPUgAcGt86LdToRcarKQeqwwxqp/76DH9af/YFof8AXT3kx7hrqQA/gpA/Sl7TMJrTlXybC0Ec1H4E8JadgPpjS4Ut5k8jkcY464zz0x60zULXwze29vbwyCOG3JKW1nInBPX5Rz710y6XoMDBhaWhYfxeUHb8yCatvcbYFazRdpOORgflVLD4yXxVX8kl/wAELx7HMaRBZ6RK76PpN6ZZVw7tHKN2M4HzgCtZbjV5XVo9OaIbSCs8yICeOcruPr271oRTXOJHcBtq5CgY5zSefeOPlRF/DNDy3n/iTb9ZP/gBz9kVPs2sz9Wsbb/vuf8A+IpIdFvFiRJNWljCAKBBEi8f8D3n9a0Z4rhjGEkK/L82O5pba1dJ/MkkZsDoTVwyvDx+yvuv+dxOozP/ALDtBzc3t5K3ctdun6IVH6Uf2NoMSrK2n2rnOBLJEJGJ/wB45NXl0uMdRmrP2WPyljwMKciuuGGpQ+Ffp+QuZsqw3MAKwwIQDwAFwBVI28rsxJPJJrZSBEOQOaeEUdq2jFR2JMUWDt1zWvbp5dvGn91QKkwPSiqAKjniEiEVJRQBy+v6KNUsvJXC3URL28h6Bu6n2PT8j2rE8JBmsr3cjI63G10YcqwUZB+ld3cQ7lyKyRoWnXNzPdXFuzTykCQrK6rJgYBZQQpOO5GaAKsksUC7p5I4x/00YAfrWaLjTpNyrqM10SRxDKXIx2GwZ710sGj6ZbNug0yzjb+8sCg/nirRkmBC8LnpgZxQBzttI+FW30+/kC9A0JQ/nJtrjrnwlrV3qd7N5dvbpLO7gTTfMAWJGdobn8a9XCvxkkn1rOeyZ55G9WJprQDgIvAdyf8AX6pCnqI4S36kirsXgSwX/X315L7KUQH9Cf1rtV0496lXTx3FFxHK23gzRFILWLSD/ptK7Z/DOK07fRdLtcG20qziPY+SufzNbv2MH7xJ/GpBaxj+Gi4yhay/Z4ZWdTs3gKEFSG+Y8pbsfqcVe8lNu3HGc0ojUdBUOEW7tBcqTvcKI/KVcsMtnsaYiXbyrvkwuRkAdRWhgUU0ktgKM1m8s7N5jBD0UHgU+2sUgdm6lhirdFMCqlhEo6Cp1hRUCgcCn0UAIEUdqXaB2oooAKKKKACiiigAooooAKKKKACiiigAIzTBGoz9aKKAHBAKNtFFAC4owPSiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z" alt="NETGEAR 8-Port Gigabit Unmanaged Switch, PoE/PoE+ 123W, Fanless, Rackmount, Plug-and-Play..." /></td>
 		 <td><strong>NETGEAR 8-Port Gigabit Unmanaged Switch, PoE/PoE+ 123W, Fanless, Rackmount, Plug-and-Play...</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07788WK5V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07788WK5V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wDkoVn8wL._AC_SX236_SY340_QL65_.jpg" alt="NETGEAR JGS524PE-100NAS 24-Port Gigabit Smart Managed Plus Switch, 100w PoE,..." /></td>
 		 <td><strong>NETGEAR JGS524PE-100NAS 24-Port Gigabit Smart Managed Plus Switch, 100w PoE,...</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GG1ADLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GG1ADLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oNJZLPecL._AC_SX236_SY340_QL65_.jpg" alt="NETGEAR 8-Port Gigabit Ethernet Unmanaged Switch, 4xPoE (GS308P)" /></td>
 		 <td><strong>NETGEAR 8-Port Gigabit Ethernet Unmanaged Switch, 4xPoE (GS308P)</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016XIU1HE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B016XIU1HE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418rg7+BVUL._AC_SX236_SY340_QL65_.jpg" alt="Linksys Business LGS116P 16-Port Desktop Gigabit Ethernet PoE+ Unmanaged Network..." /></td>
 		 <td><strong>Linksys Business LGS116P 16-Port Desktop Gigabit Ethernet PoE+ Unmanaged Network...</strong> by <em>Linksys</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GECC11O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GECC11O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419yF8fhueL._AC_SX236_SY340_QL65_.jpg" alt="BV-Tech 18 Ports PoE/PoE+ Switch (16 PoE+ Ports | 2 Gigabit Ethernet uplink)..." /></td>
 		 <td><strong>BV-Tech 18 Ports PoE/PoE+ Switch (16 PoE+ Ports | 2 Gigabit Ethernet uplink)...</strong> by <em>BV-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MQHD54L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MQHD54L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41pwTMrFqhL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link 5 Port Gigabit PoE Switch | 4 Port PoE 56W | 802.3af Compliant | Shielded..." /></td>
 		 <td><strong>TP-Link 5 Port Gigabit PoE Switch | 4 Port PoE 56W | 802.3af Compliant | Shielded...</strong> by <em>TP-Link</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076HZFY3F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076HZFY3F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31lkPv3cDML._AC_SX236_SY340_QL65_.jpg" alt="CISCO SF300-24PP 24-Port 10/100 PoE+ Managed Switch w/Gig Uplinks (SF300-24PP-K9..." /></td>
 		 <td><strong>CISCO SF300-24PP 24-Port 10/100 PoE+ Managed Switch w/Gig Uplinks (SF300-24PP-K9...</strong> by <em>Cisco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IFE7EUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cFmBIsyGL._AC_SX236_SY340_QL65_.jpg" alt="BV-Tech-Gigabit-Ports-Switch-Uplink" /></td>
-		 <td><strong>BV-Tech-Gigabit-Ports-Switch-Uplink</strong> by <em>BV-Tech</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0754P9KLN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00IFE7EUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31oxZzZfG9L._AC_SX236_SY340_QL65_.jpg" alt="Cisco SG110-24HP 24-Port Gigabit PoE Switch (SG110-24HP-NA)" /></td>
 		 <td><strong>Cisco SG110-24HP 24-Port Gigabit PoE Switch (SG110-24HP-NA)</strong> by <em>Cisco Systems</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VPT8VPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00VPT8VPG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31k0MjmRTNL._AC_SX236_SY340_QL65_.jpg" alt="Ubiquiti Networks 8-Port UniFi Switch, Managed PoE+ Gigabit Switch with SFP,..." /></td>
 		 <td><strong>Ubiquiti Networks 8-Port UniFi Switch, Managed PoE+ Gigabit Switch with SFP,...</strong> by <em>Ubiquiti Networks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DKXT4CI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DKXT4CI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Gk9t2MpXL._AC_SX236_SY340_QL65_.jpg" alt="BV-Tech 10 Port PoE+ Industrial DIN Rail Switch (8 PoE+ Ports | Gigabit Ethernet..." /></td>
 		 <td><strong>BV-Tech 10 Port PoE+ Industrial DIN Rail Switch (8 PoE+ Ports | Gigabit Ethernet...</strong> by <em>BV-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075FZQX14"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075FZQX14"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ewzO9zwLL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link 16-Port Gigabit PoE+ Easy Smart Managed Switch with 110W 8-PoE Ports..." /></td>
 		 <td><strong>TP-Link 16-Port Gigabit PoE+ Easy Smart Managed Switch with 110W 8-PoE Ports...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0721V1TGV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0721V1TGV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ubp6UuFZL._AC_SX236_SY340_QL65_.jpg" alt="TRENDnet 6-Port Fast Ethernet PoE+ Switch, 4 x PoE+ Ports, 2 x Non-PoE Ports,..." /></td>
 		 <td><strong>TRENDnet 6-Port Fast Ethernet PoE+ Switch, 4 x PoE+ Ports, 2 x Non-PoE Ports,...</strong> by <em>TRENDnet</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0152WZRBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0152WZRBM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,6 +243,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="}&#039;, &#039;{"/></td>
+                 <td><strong>coleman self inflating pads</strong></td>
+                 <td style="text-align: center;"><a href="/coleman-self-inflating-pads"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41JYFDz69pL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>guard dog stun gun</strong></td>
+                 <td style="text-align: center;"><a href="/guard-dog-stun-gun"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>canarm ceiling fan</strong></td>
+                 <td style="text-align: center;"><a href="/canarm-ceiling-fan"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>cycling gloves for bikes</strong></td>
+                 <td style="text-align: center;"><a href="/cycling-gloves-for-bikes"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -238,13 +307,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

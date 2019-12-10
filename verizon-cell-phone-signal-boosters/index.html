@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Verizon Cell Phone Signal Boosters</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51pPU+gFTjL._AC_SX236_SY340_QL65_.jpg" alt="weBoost-Connect-470103-Indoor-Booster-x" /></td>
-		 <td><strong>weBoost-Connect-470103-Indoor-Booster-x</strong> by <em>weBoost</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RHMFQTO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41e9vNZJGML._AC_SX236_SY340_QL65_.jpg" alt="weBoost-470210-Signal-Booster-Trucker" /></td>
-		 <td><strong>weBoost-470210-Signal-Booster-Trucker</strong> by <em>weBoost</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GDZLUJ0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Phonelex Cell Phone Signal Booster Verizon 4G LTE Band13 700Mhz Mobile Phone..." /></td>
 		 <td><strong>Phonelex Cell Phone Signal Booster Verizon 4G LTE Band13 700Mhz Mobile Phone...</strong> by <em>phonelex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GBNDN1W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GBNDN1W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TUMxcjKCL._AC_SX236_SY340_QL65_.jpg" alt="Phonelex Verizon Cell Phone Signal Booster Amplifier 4G LTE 700Mhz FDD Band13..." /></td>
 		 <td><strong>Phonelex Verizon Cell Phone Signal Booster Amplifier 4G LTE 700Mhz FDD Band13...</strong> by <em>phonelex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GBNPL8F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GBNPL8F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51zHUoJm-RL._AC_SX236_SY340_QL65_.jpg" alt="Verizon 4G Cell Phone Signal Booster High Gain 700Mhz Band 13 Signal Amplifier..." /></td>
 		 <td><strong>Verizon 4G Cell Phone Signal Booster High Gain 700Mhz Band 13 Signal Amplifier...</strong> by <em>Mingcoll</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072TXY5ML"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072TXY5ML"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/315Ki231pWL._AC_SX236_SY340_QL65_.jpg" alt="Cell Phone Signal Booster Verizon 4G LTE Cell Booster HJCINTL FDD High Gain 700MHz..." /></td>
 		 <td><strong>Cell Phone Signal Booster Verizon 4G LTE Cell Booster HJCINTL FDD High Gain 700MHz...</strong> by <em>HJCINTL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GQLM7BF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GQLM7BF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NOz9VNe+L._AC_SX236_SY340_QL65_.jpg" alt="Phonelex Verizon Cell Phone Signal Booster 4G LTE 700Mhz FDD Band13 Cell Signal..." /></td>
 		 <td><strong>Phonelex Verizon Cell Phone Signal Booster 4G LTE 700Mhz FDD Band13 Cell Signal...</strong> by <em>phonelex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G7RZL7Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07G7RZL7Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4186QL517BL._AC_SX236_SY340_QL65_.jpg" alt="KKBSTR Cell Phone Signal Booster, Home ATT T-Mobile Verizon Sprint Cellular Signal..." /></td>
 		 <td><strong>KKBSTR Cell Phone Signal Booster, Home ATT T-Mobile Verizon Sprint Cellular Signal...</strong> by <em>KKBSTR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GPK2CXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GPK2CXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412Mi1PxL1L._AC_SX236_SY340_QL65_.jpg" alt="weBoost Home 4G 470101 Cell Phone Signal Booster for Home and Office - Enhance..." /></td>
 		 <td><strong>weBoost Home 4G 470101 Cell Phone Signal Booster for Home and Office - Enhance...</strong> by <em>weBoost</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RHMFQSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41WWBgD6zHL._AC_SX236_SY340_QL65_.jpg" alt="Volferda-Booster-1900MHz-Repeater-T-Mobile" /></td>
-		 <td><strong>Volferda-Booster-1900MHz-Repeater-T-Mobile</strong> by <em>VOLFERDA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CJ7LNNM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00RHMFQSA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qyyBjjvkL._AC_SX236_SY340_QL65_.jpg" alt="Verizon Cell Phone Signal Booster 4G LTE Cell Signal Booster Verizon 700Mhz Band13..." /></td>
 		 <td><strong>Verizon Cell Phone Signal Booster 4G LTE Cell Signal Booster Verizon 700Mhz Band13...</strong> by <em>SH\u00b7W\u00b7CELL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KG48JJB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KG48JJB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tHr5vSBOL._AC_SX236_SY340_QL65_.jpg" alt="SolidRF Five Bands 4G-S2 Cell Phone Signal Booster 3G 4G LTE Cell Phone Booster..." /></td>
 		 <td><strong>SolidRF Five Bands 4G-S2 Cell Phone Signal Booster 3G 4G LTE Cell Phone Booster...</strong> by <em>SolidRF</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D8QHZWG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07D8QHZWG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419iJmWvTOL._AC_SX236_SY340_QL65_.jpg" alt="KKBSTR Cell Phone Signal Booster, Verizon Sprint 2G 3G 4G LTE, ATT T-Mobile 2G..." /></td>
 		 <td><strong>KKBSTR Cell Phone Signal Booster, Verizon Sprint 2G 3G 4G LTE, ATT T-Mobile 2G...</strong> by <em>KKBSTR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07LCKB1K7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07LCKB1K7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/518lMub2ENL._AC_SX236_SY340_QL65_.jpg" alt="SureCall Fusion4Home Omni/Whip, Cell Phone Signal Booster Kit for All Carriers..." /></td>
 		 <td><strong>SureCall Fusion4Home Omni/Whip, Cell Phone Signal Booster Kit for All Carriers...</strong> by <em>SureCall</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01AWGY4TE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01AWGY4TE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41StIu7gWqL._AC_SX236_SY340_QL65_.jpg" alt="PROUTONE Cell Phone Signal Booster Dual Band 700MHz ATT Verizon 4G LTE Repeater..." /></td>
 		 <td><strong>PROUTONE Cell Phone Signal Booster Dual Band 700MHz ATT Verizon 4G LTE Repeater...</strong> by <em>PROUTONE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GYSGWXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GYSGWXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Xlww+eG2L._AC_SX236_SY340_QL65_.jpg" alt="Cell Phone Signal Booster for Home and Office Use - Boost 4G LTE Data for at&amp;..." /></td>
 		 <td><strong>Cell Phone Signal Booster for Home and Office Use - Boost 4G LTE Data for at&amp;...</strong> by <em>Phonetone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07L2R2FSB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07L2R2FSB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XSqAc46fL._AC_SX236_SY340_QL65_.jpg" alt="weBoost Drive Sleek 470135 Cell Phone Signal Booster for Your Car and Truck -..." /></td>
 		 <td><strong>weBoost Drive Sleek 470135 Cell Phone Signal Booster for Your Car and Truck -...</strong> by <em>weBoost</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073V5S3T7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B073V5S3T7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51lJIvj+bSL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>kendal foot massagers</strong></td>
+                 <td style="text-align: center;"><a href="/kendal-foot-massagers"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51m+37qfeXL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>enhancement creams</strong></td>
+                 <td style="text-align: center;"><a href="/enhancement-creams"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51ywrBmer6L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>mudder man watches</strong></td>
+                 <td style="text-align: center;"><a href="/mudder-man-watches"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>sylvania dvd players</strong></td>
+                 <td style="text-align: center;"><a href="/sylvania-dvd-players"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

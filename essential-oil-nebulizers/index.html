@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Essential Oil Nebulizers</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hw21xMggL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Organic Aromas</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MWQCNSW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JJAHbtirL._AC_SX236_SY340_QL65_.jpg" alt="Aennon-Essential-Aromatherapy-Waterless-Rechargeable" /></td>
-		 <td><strong>Aennon-Essential-Aromatherapy-Waterless-Rechargeable</strong> by <em>Aennon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CJM10J6"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Aromatherapy Diffuser - Professional Grade - Wood and Glass (Orbis Nox Merus)" /></td>
 		 <td><strong>Aromatherapy Diffuser - Professional Grade - Wood and Glass (Orbis Nox Merus)</strong> by <em>Aromis</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007740TV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B007740TV2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ofHQ3quSL._AC_SX236_SY340_QL65_.jpg" alt="UONE Aroma Essential Oil Nebulizing Diffuser made from Wood and Glass for Aromatherapy..." /></td>
 		 <td><strong>UONE Aroma Essential Oil Nebulizing Diffuser made from Wood and Glass for Aromatherapy...</strong> by <em>Uone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XKYNKRY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B06XKYNKRY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31c9A06c5rL._AC_SX236_SY340_QL65_.jpg" alt="Essential Oil Nebulizer Diffuser for Aromatherapy by Two Scents: Waterless, Wireless..." /></td>
 		 <td><strong>Essential Oil Nebulizer Diffuser for Aromatherapy by Two Scents: Waterless, Wireless...</strong> by <em>Two Scents</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071HR46ZJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B071HR46ZJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31H7gGprIdL._AC_SX236_SY340_QL65_.jpg" alt="Nebulizing Pure Essential Oil Aromatherapy Diffuser With Touch Sensor Light Switch..." /></td>
 		 <td><strong>Nebulizing Pure Essential Oil Aromatherapy Diffuser With Touch Sensor Light Switch...</strong> by <em>Organic Aromas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RBOH7HC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00RBOH7HC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41iJB04JYhL._AC_SX236_SY340_QL65_.jpg" alt="Diffuser World : Aroma-Ace Essential Oil Atomizing Diffuser, State of The Art..." /></td>
 		 <td><strong>Diffuser World : Aroma-Ace Essential Oil Atomizing Diffuser, State of The Art...</strong> by <em>DiffuserWorld</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01H2EH50Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01H2EH50Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hw21xMggL._AC_SX236_SY340_QL65_.jpg" alt="Raindrop 2.0 Nebulizing Essential Oil Diffuser For Aromatherapy By Organic Aromas..." /></td>
 		 <td><strong>Raindrop 2.0 Nebulizing Essential Oil Diffuser For Aromatherapy By Organic Aromas...</strong> by <em>Organic Aromas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MWQCNSW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00MWQCNSW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31x7m3HJJdL._AC_SX236_SY340_QL65_.jpg" alt="Opulence - Nebulizing Essential Oil Diffuser for Aromatherapy with White Ceramic..." /></td>
 		 <td><strong>Opulence - Nebulizing Essential Oil Diffuser for Aromatherapy with White Ceramic...</strong> by <em>Organic Aromas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077S2NC29"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413t7JOjlFL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>ASAKUKI</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BMVCBDD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077S2NC29"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31944ewWYuL._AC_SX236_SY340_QL65_.jpg" alt="Sofia Waterless Nebulizing Essential Oil Diffuser For Best Aromatherapy - OAK..." /></td>
 		 <td><strong>Sofia Waterless Nebulizing Essential Oil Diffuser For Best Aromatherapy - OAK...</strong> by <em>Pilgrim Collection</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K1QS5Z4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01K1QS5Z4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JRBHy5Z0L._AC_SX236_SY340_QL65_.jpg" alt="Utama Spice Nebulizing Diffuser Danau Satu" /></td>
 		 <td><strong>Utama Spice Nebulizing Diffuser Danau Satu</strong> by <em>Utama Spice</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079G5NHCY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079G5NHCY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41REh-jJHtL._AC_SX236_SY340_QL65_.jpg" alt="ASAKUKI 700ml Premium, Essential Oil Diffuser, 5 in 1 Ultrasonic Aromatherapy..." /></td>
 		 <td><strong>ASAKUKI 700ml Premium, Essential Oil Diffuser, 5 in 1 Ultrasonic Aromatherapy...</strong> by <em>ASAKUKI</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073B31V3L"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073B31V3L"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/317Gow8RIbL._AC_SX236_SY340_QL65_.jpg" alt="TOMNEW Essential Oil Nebulizer Diffuser Glass, Pure Essential Oils Fragrances..." /></td>
 		 <td><strong>TOMNEW Essential Oil Nebulizer Diffuser Glass, Pure Essential Oils Fragrances...</strong> by <em>TOMNEW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GDK79F6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GDK79F6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31NtR8A0rBL._AC_SX236_SY340_QL65_.jpg" alt="Elegance 2.0 Nebulizing Essential Oil Diffuser for Aromatherapy With Touch Sensor..." /></td>
 		 <td><strong>Elegance 2.0 Nebulizing Essential Oil Diffuser for Aromatherapy With Touch Sensor...</strong> by <em>Organic Aromas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RDWIBHC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00RDWIBHC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Modular Snowmobile Helmets</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515Zuj9Gw2L._AC_SX236_SY340_QL65_.jpg" alt="Adult-Modular-Snowmobile-Flip-up-Helmet" /></td>
-		 <td><strong>Adult-Modular-Snowmobile-Flip-up-Helmet</strong> by <em>Typhoon Helmets</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R6PYJFO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51B3UE3WX8L._AC_SX236_SY340_QL65_.jpg" alt="Modular-Snowmobile-Helmet-Heated-Shield" /></td>
-		 <td><strong>Modular-Snowmobile-Helmet-Heated-Shield</strong> by <em>Typhoon Helmets</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BCJ2OM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Vega Helmets Unisex-Adult Modular Caldera Electric Snow Snowmobile Helmet with..." /></td>
 		 <td><strong>Vega Helmets Unisex-Adult Modular Caldera Electric Snow Snowmobile Helmet with...</strong> by <em>Vega Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HGQJF6V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07HGQJF6V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cVgoiMA6L._AC_SX236_SY340_QL65_.jpg" alt="Ski-doo Modular 3 Snowmobiling Helmet-Black #4479631290 (X-large)" /></td>
 		 <td><strong>Ski-doo Modular 3 Snowmobiling Helmet-Black #4479631290 (X-large)</strong> by <em>Ski-Doo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00P1JRNJ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00P1JRNJ6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Oc1VIOqrL._AC_SX236_SY340_QL65_.jpg" alt="Typhoon Adult Dual Visor Modular Snowmobile DOT Full Face Flip-up Helmet Bluetooth..." /></td>
 		 <td><strong>Typhoon Adult Dual Visor Modular Snowmobile DOT Full Face Flip-up Helmet Bluetooth...</strong> by <em>Typhoon Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BCIXMB2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01BCIXMB2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41q0t8H6tSL._AC_SX236_SY340_QL65_.jpg" alt="ILM 10 Colors Motorcycle Dual Visor Flip up Modular Full Face Helmet DOT (L,..." /></td>
 		 <td><strong>ILM 10 Colors Motorcycle Dual Visor Flip up Modular Full Face Helmet DOT (L,...</strong> by <em>ILM</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0197VNGO4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0197VNGO4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513nCIuU2XL._AC_SX236_SY340_QL65_.jpg" alt="Typhoon Dual Visor Modular Full Face Snowmobile Helmet With Heated Shield, Breath..." /></td>
 		 <td><strong>Typhoon Dual Visor Modular Full Face Snowmobile Helmet With Heated Shield, Breath...</strong> by <em>Typhoon Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R6PZTOY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00R6PZTOY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41VRV2w7t-L._AC_SX236_SY340_QL65_.jpg" alt="Castle X CX950 Focus Electric Modular Snowmobile Helmet (XLG, Matte Black/Gray)" /></td>
 		 <td><strong>Castle X CX950 Focus Electric Modular Snowmobile Helmet (XLG, Matte Black/Gray)</strong> by <em>Castle X</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DWFT7Z9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07DWFT7Z9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OVJrBH7WL._AC_SX236_SY340_QL65_.jpg" alt="Castle X Atom SV Tarmac Electric Modular Snowmobile Helmet (LRG, Black)" /></td>
 		 <td><strong>Castle X Atom SV Tarmac Electric Modular Snowmobile Helmet (LRG, Black)</strong> by <em>Castle X</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071G94HQ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51K4dU+JXmL._AC_SX236_SY340_QL65_.jpg" alt="Adult-Snocross-Snowmobile-Helmet-Orange" /></td>
-		 <td><strong>Adult-Snocross-Snowmobile-Helmet-Orange</strong> by <em>Typhoon Helmets</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YSOBIF0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B071G94HQ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OLgTwyisL._AC_SX236_SY340_QL65_.jpg" alt="Castle X EXO-CX950 Electric Modular Snowmobile Helmet - Solid Matte Black - XLG" /></td>
 		 <td><strong>Castle X EXO-CX950 Electric Modular Snowmobile Helmet - Solid Matte Black - XLG</strong> by <em>Castle X</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M3Q4NNA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01M3Q4NNA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/418JjbTC06L._AC_SX236_SY340_QL65_.jpg" alt="Castle X CX950 Focus Modular Snowmobile Helmet (LRG, Matte Black/Gray)" /></td>
 		 <td><strong>Castle X CX950 Focus Modular Snowmobile Helmet (LRG, Matte Black/Gray)</strong> by <em>Castle X</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DWFV3LV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07DWFV3LV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41v87vE9WLL._AC_SX236_SY340_QL65_.jpg" alt="Vega Helmets Unisex-Adult Caldera Modular Motorcycle &amp; Snowmobile Helmet 30%..." /></td>
 		 <td><strong>Vega Helmets Unisex-Adult Caldera Modular Motorcycle &amp; Snowmobile Helmet 30%...</strong> by <em>Vega Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FLBPG18"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B07FLBPG18"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41djiGPFc-L._AC_SX236_SY340_QL65_.jpg" alt="Snow Master TX-50 Flat Black Modular Dual Use Snowmobile and Street Helmet -..." /></td>
 		 <td><strong>Snow Master TX-50 Flat Black Modular Dual Use Snowmobile and Street Helmet -...</strong> by <em>Snow Master Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KZPX6YN"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07KZPX6YN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jaUO+RfjL._AC_SX236_SY340_QL65_.jpg" alt="Snowmobile Motorcycle Helmet Mountain Bike Dual Visor Modular Flip up Anti Fog..." /></td>
 		 <td><strong>Snowmobile Motorcycle Helmet Mountain Bike Dual Visor Modular Flip up Anti Fog...</strong> by <em>X4</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0778HNPGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B0778HNPGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51v7+JkKv6L._AC_SX236_SY340_QL65_.jpg" alt="FXR Fuel Modular Evo Helmet W/Elec Shield (Black Ops, X-Large)" /></td>
 		 <td><strong>FXR Fuel Modular Evo Helmet W/Elec Shield (Black Ops, X-Large)</strong> by <em>FXR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KMKPMKF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KMKPMKF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41djiGPFc-L._AC_SX236_SY340_QL65_.jpg" alt="Snow Master TX-50 Flat Black Modular Dual Use Snowmobile and Street Helmet -..." /></td>
 		 <td><strong>Snow Master TX-50 Flat Black Modular Dual Use Snowmobile and Street Helmet -...</strong> by <em>Snow Master Helmets</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KZQGZWX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07KZQGZWX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,24 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><a class="related product image" href = "/shakespeare-antenna-for-digital-tvs"><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51U8+wEX4bL._AC_SX236_SY340_QL65_.jpg"/></a></td>
+                 <td><a class="related product name" style="color: black;" href = "/shakespeare-antenna-for-digital-tvs"><strong>antenna for digital tvs</strong></a></td>
+                 <td style="text-align: center;"><a href="/shakespeare-antenna-for-digital-tvs"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +313,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

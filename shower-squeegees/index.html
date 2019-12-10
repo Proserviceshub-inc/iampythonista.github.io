@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Shower Squeegees</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31nh3KmGYmL._AC_SX236_SY340_QL65_.jpg" alt="OXO-Grips-Wiper-Blade-Squeegee" /></td>
-		 <td><strong>OXO-Grips-Wiper-Blade-Squeegee</strong> by <em>OXO</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MNAYWUE"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/318Yed6zSmL._AC_SX236_SY340_QL65_.jpg" alt="Teletrogy-Squeegee-Stainless-Squeegees-All-Purpose" /></td>
-		 <td><strong>Teletrogy-Squeegee-Stainless-Squeegees-All-Purpose</strong> by <em>Teletrogy</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FQHRXKJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="OXO Good Grips Stainless Steel Squeegee" /></td>
 		 <td><strong>OXO Good Grips Stainless Steel Squeegee</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000NZKHKU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000NZKHKU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31TxfqcS8zL._AC_SX236_SY340_QL65_.jpg" alt="Hiware All-Purpose Shower Squeegee for Shower Doors, Bathroom, Window and Car..." /></td>
 		 <td><strong>Hiware All-Purpose Shower Squeegee for Shower Doors, Bathroom, Window and Car...</strong> by <em>Hiware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F9RGM6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F9RGM6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31x-n2RmymL._AC_SX236_SY340_QL65_.jpg" alt="OXO Good Grips All-Purpose Squeegee" /></td>
 		 <td><strong>OXO Good Grips All-Purpose Squeegee</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000CCDBRK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000CCDBRK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31nh3KmGYmL._AC_SX236_SY340_QL65_.jpg" alt="OXO Good Grips Wiper Blade Squeegee" /></td>
 		 <td><strong>OXO Good Grips Wiper Blade Squeegee</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MNAYWUE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00MNAYWUE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ibccPGrRL._AC_SX236_SY340_QL65_.jpg" alt="HASKO accessories Bathroom Shower Squeegee Chrome Plated Stainless Steel with..." /></td>
 		 <td><strong>HASKO accessories Bathroom Shower Squeegee Chrome Plated Stainless Steel with...</strong> by <em>HASKO accessories</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079LQ8LGS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079LQ8LGS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31PgdDRLC0L._AC_SX236_SY340_QL65_.jpg" alt="Squeegee - for Shower, Window and Car Glass - 2 Extra Silicone Replacement Blades..." /></td>
 		 <td><strong>Squeegee - for Shower, Window and Car Glass - 2 Extra Silicone Replacement Blades...</strong> by <em>desired tools</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0114A566C"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31nq1aRhBFL._AC_SX236_SY340_QL65_.jpg" alt="Budget-Good-All-Purpose-Stainless-Replacement" /></td>
-		 <td><strong>Budget-Good-All-Purpose-Stainless-Replacement</strong> by <em>Budget &amp; Good</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MCXHF7W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0114A566C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31wgJmwc0bL._AC_SX236_SY340_QL65_.jpg" alt="Baban Shower Squeegee Glass Squeegee Window Squeegee All-Purpose Squeegee for..." /></td>
 		 <td><strong>Baban Shower Squeegee Glass Squeegee Window Squeegee All-Purpose Squeegee for...</strong> by <em>Baban</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07518LQLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07518LQLY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31uJtiUMXgL._AC_SX236_SY340_QL65_.jpg" alt="InterDesign Forma Bathroom Shower Door, Window and Mirror Squeegee with Suction..." /></td>
 		 <td><strong>InterDesign Forma Bathroom Shower Door, Window and Mirror Squeegee with Suction...</strong> by <em>InterDesign</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003MR036O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003MR036O"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/315M7mhtalL._AC_SX236_SY340_QL65_.jpg" alt="InterDesign Clara Squeegee, 12-Inch, Clear" /></td>
 		 <td><strong>InterDesign Clara Squeegee, 12-Inch, Clear</strong> by <em>InterDesign</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JF0FNQC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00JF0FNQC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/316g-LK5QVL._AC_SX236_SY340_QL65_.jpg" alt="HASKO accessories Bathroom Shower Squeegee Chrome Plated Stainless Steel with..." /></td>
 		 <td><strong>HASKO accessories Bathroom Shower Squeegee Chrome Plated Stainless Steel with...</strong> by <em>HASKO accessories</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079LDC8W4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079LDC8W4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31k9dFnKXiL._AC_SX236_SY340_QL65_.jpg" alt="OXO Good Grips Comfortable Handle Squeegee" /></td>
 		 <td><strong>OXO Good Grips Comfortable Handle Squeegee</strong> by <em>OXO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004OCLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00004OCLG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41802uEOiZL._AC_SX236_SY340_QL65_.jpg" alt="Gecko-Loc Bathroom Squeegee for Shower w Suction Cup Hook for Glass, Mirror,..." /></td>
 		 <td><strong>Gecko-Loc Bathroom Squeegee for Shower w Suction Cup Hook for Glass, Mirror,...</strong> by <em>Gecko-Loc</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017A6WQRG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017A6WQRG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Mid Range Speakers</div>
@@ -86,67 +95,63 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41E2nfB6HYL._AC_SX236_SY340_QL65_.jpg" alt="Tribit-Portable-Bluetooth-Superior-Waterproof" /></td>
-		 <td><strong>Tribit-Portable-Bluetooth-Superior-Waterproof</strong> by <em>Tribit</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HFXVBYV"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZlT+bRvdL._AC_SX236_SY340_QL65_.jpg" alt="Bass-Rockers-Mid-Range-Bullet-Speaker" /></td>
-		 <td><strong>Bass-Rockers-Mid-Range-Bullet-Speaker</strong> by <em>Bass Rockers</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071FVDXJF"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="DS18 GEN-M8B 8-Inch 580 Watts 8-Ohms Bullet Midrange Speaker" /></td>
 		 <td><strong>DS18 GEN-M8B 8-Inch 580 Watts 8-Ohms Bullet Midrange Speaker</strong> by <em>DS18</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IZZ59IU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00IZZ59IU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cMkU5QYmL._AC_SX236_SY340_QL65_.jpg" alt="New Pair of Orion Cobalt CM65 1000 Watt 4-Ohm Loud Car Audio High Efficiency..." /></td>
 		 <td><strong>New Pair of Orion Cobalt CM65 1000 Watt 4-Ohm Loud Car Audio High Efficiency...</strong> by <em>ORION</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QXS76BE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00QXS76BE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HTR2D2KHL._AC_SX236_SY340_QL65_.jpg" alt="Orion XTX854 8-Inch 1600 Watts High Efficiency Midrange Speakers - Pair - 4 Ohm" /></td>
 		 <td><strong>Orion XTX854 8-Inch 1600 Watts High Efficiency Midrange Speakers - Pair - 4 Ohm</strong> by <em>ORION</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077GHP88H"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41N0uE+i3IL._AC_SX236_SY340_QL65_.jpg" alt="amazon-echo-dot-kids-edition" /></td>
-		 <td><strong>amazon-echo-dot-kids-edition</strong> by <em>Amazon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077JFK5YH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B077GHP88H"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QeZpqTO-L._AC_SX236_SY340_QL65_.jpg" alt="JBL GTO609C Premium 6.5-Inch Component Speaker System - Set of 2" /></td>
 		 <td><strong>JBL GTO609C Premium 6.5-Inch Component Speaker System - Set of 2</strong> by <em>JBL</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ANI3LAK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00ANI3LAK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41nHu80smHL._AC_SX236_SY340_QL65_.jpg" alt="Rockford Fosgate PPS4-6 Punch PRO 6.5-Inch Single Midrange 4 Ohm Loudspeaker" /></td>
 		 <td><strong>Rockford Fosgate PPS4-6 Punch PRO 6.5-Inch Single Midrange 4 Ohm Loudspeaker</strong> by <em>Rockford Fosgate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0076SIJP2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0076SIJP2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -154,7 +159,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -182,13 +187,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

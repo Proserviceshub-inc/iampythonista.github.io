@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Waist Pack With Water Bottles</div>
@@ -86,123 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SRAKwpQGL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Drinkfinity</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JVTBPKC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ji32kfMKL._AC_SX236_SY340_QL65_.jpg" alt="LifeStraw-Filter-2-Stage-Integrated-Backpacking" /></td>
-		 <td><strong>LifeStraw-Filter-2-Stage-Integrated-Backpacking</strong> by <em>LifeStraw</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G7SQBPQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCACUAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKAK2o6hb6XYy3l2+yGIZY15bD8W9W1XVobbTNKt44pXwDMzM23ueMdq6X4oTmPw+Ix91xISPX5Cg/VxXmXhCAJraLkeYkbn/x00wPW/B3je08Wi5iSFre6tj80bHIZc4DA+n8q6ivFfhjmLxxtTgNayKfplT/SvaqQBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBwHxYkMWixMCF3ZQE9AS8Zz/wCOmuYtNFtNC8WaTHavK5liPmiZo2YllPI2Mw2nqAefrW/8XpfMsNMsYxunnmLoo7hRzz0/iFec6Lfw6ZcR3cnnM8LAg7OFwf8A62KaA0/DMt5ZeJWn03D3lsruLY9bpV+/Ev8AtbcsPda9v0zU7XWNOgv7GUS2867lYfqD6EHgj1FeO6XYjUNa17UNHYvJp6i+sZADhmDbiuO+QGXHvXalptHRPE/h+JrjSdQRbm909fvLuAJljH97+8O+PyQHcUVXsb631KyhvLOVZbeZQyOvQirFABRRRQAUVjaxry6fe2mnWsfn6jeH93FnAVR1dj2A/Wlu59S0qCS8mZL23jXfJFHHtkVR1K8/Ngc474pXK5XZeZsUVDZ3lvqFnFd2kqzQTKGR1PBFTUyQooooAa8iR/fdV+pxVdtTskOGuoh/wKsq+tBL5srxiXYCxD/49qoX+rwp4KmkhXabgm3iETdHbjqPTr+FVy6GHtbux0j6jAq7h5jrjOUjZuPwFVjr9oCoxLtY43bOn9a8x8Ma3d6FPI01/NeW4UCaCViRsBwWQnuo5x3Ge9dLd6/oUYaCPU4y68ZIYDP1xiiyHKUkd5RUFjcR3djBPE6vHIgZWU5BGKnqTYKKKKACiiigAooooAKKKKACsPxhq/8AYnhy5ugXEhwkew4O4njnt9a3K4/4nOV8Iuq4y8yDrjvQB57ceNp7/wAOJpD2qW7CTLXKfM2CWJKg9Dyozn19a5qdJIIysDLsk4wRnd75PIox8wGOakI7dcmmBu6L4svdItoUWxspWhfzcBPLdjtKjleD1PBFejfDG7juPB6RQljHa3EsKlupXduGfThhxXjjnCrk9+D6V6b8H5y2m6tAeiXQfA6fMo/woA1ZE/4QrX1mj+XQNUlCSIB8tpcN0YeiN0PYGuxqjrVlaajo93Z6gyLbTxlHZyAFz0PPcHBHuK5bw945sbbw5Zx61eL/AGjCpilVcsWKsVDe+QAfxqW0iowlL4UdvQTjk9BXHT/EzRIv9WLiT6R4/nWVqXxNtrvT7q2tLGdZZomjSRiMKSCAT9KLor2Ur2ZW8DaoviX4h6xqbfMscWIM/wAKbsD9B+ZNen14V4M1L/hDr67uVhN19ojCbRlduDnPSuv/AOFn3JPGkjH/AF0P+FSmkjWdKpOWiKvwv1Y2mu614adsxQTSPbgn7u19rAfofwNeoV4Pok7aF4obXAGmZ3kdosY4fORn8a7yP4pWmf3um3Cj1DA01JClRn/TO8orndL8c6JqkixJdeRM3AScbcn2PSuipp3MZRcd0eRX2ma9rlzKt74gKQ7ivlLACMZ6HkVk+JLO58PaPFYwXkklqx87bt2YYHkgDjvXU6nouvQarcLbapZxxPIWUGEllBORnnrzUTeErrU3DaprAlKjaAIlC4PXjNdklBx9xO54lOdeFf8AezXLrp/SOJvrq2bQ7aaG7SSec7TbopDR9uvfIJ/Kuk0fw/pF3oUV5cWkctw27zJJWJ5BI9cDjFW7T4caRazGYzys6tx+8HA9RxVXUPCWj20bSyvuIbftd2YH1yARUUk4yu1c0xdWFaCjCbjr0PSfCzQnw7aLbFPKjUooQjAwcYrXrL8OQWtvoNoljFFDBt3BIhhQTya1Kwluz0qatBK99AooopFhRRRQAUUUUAFFFFABXlHxT1+3u7+DRYll861fzJWZcLyvGD3616vXzL4n1Ca48XarMJpOLh41Jcn5VYgDn2FAD+pyOaekgd/LIw2M1n28sgPUc9eKvrM6DJVW7gMKYh8iHb/Suy+H2rReG4rm/vGI026zHLIBkxTRjK59AysQPda4oXcs+RFZq+372Cce30qpd3InvfJjOYUPzYPDsO/0GTj/AOvSfYuKW72Om17xRceI7x5rl5Htwx8m3DbY0HbI/iNZImlzn5V/3VAxRYwG7k8uLkjqx4UVbOnYkZDOrMnXbyBxn+tQ+SO50RVetZU1bslp/wAErG5mPHmfpS/aZu0hq2umR9Wkc/TipBYWy9VJ/wB5qh1afRHVHA4x6uVvmUvtEp6yt+dAlkz/AKxvzq8IbRT91AfdqXZaekf50vbQ/lK/s+u96q+9lJZJAf8AWH86f58mMeZVvyLY9FT8DSGyhb+E/gTR7an1Qf2difszX3sz3lduu0+mVrW0/wAc69owRIZ/OgTjypBuGPb0qo+nI33ZXX681Vl024Ufu3SQfkatVKbMp4XGwWquvvO90vxHo/jDUI2u5ZdO1QKEG1sRyeg57/X866A6fY2jFdQ19ISP4WkjT+deFXiTQSB9jxOOQcVXVYLnLBAr9SAeD9K1UpWtfQ8ypRpuXNy2fU97S/8ACcJdbjXLRyDxuvVPH0BqOTWPCaS7rbVdLTIxnzlzXhYiiA4jH481FLGuOFA+gp6k8i2R9G+Gbuxma5jsLyC4j4fEUqtgnOeh+ldBXzf8OrgWnj/SXzwZGTn/AGkZf619Hhg3Qg/Q1LLirKwtFFFAwooooAKq6jqVrpVm91fTLDCndu59AO5qxJIsUbSOdqICxJ7AV4d4t8VSazfPcPkwoStrAeij+8fc1EpW0W50UKKqXlN2it3/AF1On1b4lXTORp8UdrD/AAyTjc7e+O361ijxdrd4nmJqUu0nqgCiuKaZmJeYsc9XHUf/AFq29PydPjPBzk5HQ1lVjKMbtnpYKdKrVcI00kl11ZpXHiPWIYWlfVLoLkKfn9TiuGfT7wyM+wybmyTnJOe9dFq522I3YwZEH61ErmNuWyPeqo/Dc58yaVVQSskjIihliyZInXHPIqZpgFwQ2TWv5hxkcj6/5/zmnsiGMscE9sD/AD/n3re55tjEiuzBpl9IqkSLIkcZPbcrhvxxjHpVXTYflLsOD0qzrDq9pBChG9pmbaPTCgf1pEkWJNqjhVoEzahhWHTftcili+9sHpsHyjj13GoxfuqARxIgAwB2H4VWW8mntgjZJIVC5fKiNTkKq44ycZJz0pNw3HB7dKTipbmlOtOk7wdmP+2XEoyZMA9l4phBP3ixPuaiiZAvf1p5YfwmmopbIU6s56zk2GwZoZQD2qaK0u7i3eaG3eSFOCyjjPXA9eKv2v8AYVklmmsxXV1NehXcwSbFtEY/KcYJdsckdOcUzOxk7dpzTlZ1Pyuw+hq1rOntoutXmmvKJjbSbRJjG4EAjPvgjPvVItx9aNxptbMm+33MecOWx2YZqaPVeP30X1KGqDPgYFJnjnFQ6cHujphjK8NpffqaNzeQ3Fo4VwSoyFcYP4VzcwENyskQ4b+Gr8o+XOO9Z8h+YFmOQ3FEYKCsia+IlXkpSWpZCyPnEZGPWh7O6bA8utK2cSRj1781KX4xn2rSxyc+pixWNxDcRyt8m1gcg9K6yEzwr8l3Lg8ghyKxpDlTk9Byc1r27+ZbwydN0anr6iuWurWPbyp3ck/Itf8ACT6ro7R7NTnCt0BO4fjmuo0P4nyeYE1dEltyQDcwjBT3K+n0rz/XEJS3cKz8nhRnPSsiIXkEhkSCXkcrtOGHpRBPlunqGKnFVnTlC8e6Wp9QQzR3EKTQuskUihldTkEHvT680+GWvOkraPcMwikXzbcPwUP8Sf1/OvS61jLmVzzq1J0p8rOP+IuozWej29vbymNrqXY+OpQAkj+VebhE/uLx0yK674kz+brWn2wP+pgaQj/eOP8A2U1yeDXJWfvH0OXU0sOnbcML/cX8qQ8DAAA9BwKdtPpUcz+VGzYyR29ayO92SuU9Vt5LqySKAAv5oJzxgDP/ANatSzsbaCza5mAlb7oDD+L/AOtWYdQMKNJLGMAcnd0p51iDy0SVikYyeMHk+2a6abkk0jxMZCjOcZt+voT2mbvU/sht0lhJVOPlbcT2I9uararA9lNcx28nnW6PhJCcHH071f0y6sLC0luVv4J52BEewkEFupOcY44FYmsXBysUbZwMsR0JNaRck0mctaNCSlOGyX3t/okZswN1CiNlGRidw7jtQkLAY3cEYNSRo20FjUqgKOep6CtzzQQBY1A4GKTeMMMc4pqPmMe1Dsuw5FAD1ZGRQDkgUhx9KjR0IB6EDtVmzlslnP8AaKSvAUIHkjLBux6jj8aANCw1DbpqWN5aTyWyT+fb3dvkNBJjnnGCCAOK2bqXTl1aPXHtZprpUTyrKOIsiyKAFYnAzyAcdM1kRano1mJI7O61iOB8kRAqozjuc89+cdO1LaazZ/Z1We91SGXb83lFSu7ORjocZ5+vSgZVvlimtbjU5rmd9QmmO+KVecnkknp0PArM3kjINbFzeaFcsnmPqbQogAiYqcsBheewAx2rLvXs2uP+JeJUtsDCzY3ZxzyPegCIsOaUduajYjb7U7AHOeKAFaQEELkg8ZrOELFuvAPeru8SSKoJwD24HSmbABxQBYtZNsoRQTuOOPWthdPkayN5K5jjHBTbl6wGBAyCQeoI7V2Ony/bdNYnBZlD49+9RObWxvQo056y6Nfc9DMi0xLu3Z45XBeMsgIGTVi2iMFtFC7AvGu0ke1NtZfsUKmbKCKRgC3G5eelQC8Z4VECjGMq79/eueblKKv3PVwyp0K7UduVff2NJSQOOPpS729ajgYyQqzAKx61JtNcz3PaTutCIztaTw3a53W0qyg+uDmveI5FliSRDlXAYEdwa8HmQPGQTxgjHrXr3gy9+3+ENMmJyRCI2PqU+U/+g100HujxM1h8MjkPiF4Z1261U6tpQFxCYlRokH7xMeg7jnNeep9ru0kRbqSC5Tgo4wQfevo2srVvDWla2M3tojSgYEyfK4/4EK0lTvqtzjoYtxtGpdx8mfO/m3yOUmuZlkBwVJxW5Z7pNNh8wl2xySc55rrPEXw4u4UaSz/4mEC8hfuzJ9Ozf54rlrVBbRC1O7fESCHXawPoR2rKpL3bNWZ6GCp/vXKM+aLXz+aINQjB0+YY6DOPxFZ0ijaQVOPXFbF4u61kHGSKpLIjJtJGfetKHwnJmitWXoZTQJySME0yNCziNOAep9K0pApVsDPH60wwqirggHuRWx5g1sY44AquZCWJFIZ/MLID869R6+9Rk/LTFYSF8REE85NLuyDu61FGflYEdGp/bB796AHgnaNxB4ppbJpg+6BR3oAdnNLuxSDGKQ9OlAAMmjoaB0+tITQAM3HHFIz801+mDRgHrwKAJI3zKDxhVJwKcDx7VXjIZ3ZegAX/AD+VWB096AHNkjP6U2J54j+7mdCOPlbpSxMJGAUEq2QP9o1cW3Xy9wABzg07XJcrFUBpH3yu0jHuxya3bGAC0hz/AHB/KsxkVYzyDjGK2rcYt4QD0RR+lc+I0SPWypKU5ehS11AulIBwBKOn0NY+n6fJduJWZ4rYHlwT83sK6c2cmqzx2EFq91KWDCJRnp3PoOep4r0rwz4Ei0xo7vVClxdrzHGv+rh+nqfeoptuPLE6MZClGt7So+m3f/gHEaN8NtQ1l0knL6fY/wB5+ZH+g7fU163o+kWuh6ZDYWKssEWcbmySSckk+pNXaK3jFI8qrWlUd3ouwUUUVRiFch8QbG0Oitetbp9rR1VJgMMAT0z3H1rr6434k3ATRba3/imnBH/AR/8AXqKnwM6cGm68Ldzy7VJWg0maVD8y7f8A0IVhR6gkuN0ZBbsDXb6Roo8RT3WmDAZ7WRkZuitjCk+24iuQvPBviPSLgrcaPdsE/jhjMifXcuRUUPhOrNX+/S8iNbiM527xj2/z/nFJJfRsCqbiT15qnKs0BYzW8sWeu9CKjSVNwxyx7AZrc8sZOSZ/MTKkVOs/mAbuH7+9WYNB1rU5P9C0m9lU8blgbH4nGBWfPHNZ3D291C8M0Zw8cilWU+4PSgZOvDsD35p39arRyrvyT2xUnnD1oESjG0UoxVVpiKI3dzwcD1oGWiwXjIpu4etSRI6o0kKBtoyxHLY+lNS6aVlRMuzHARVySfSgQ3NJzTplKnDhUf8A2TkfpUKuc8kUAPbrTTzSlhmmsRtNAEkGDGSQOTUNxOMFIskd29aaC2wJn5R6d6YUZlZlRmRPvMBwv1oA0INjWyqHXKj171YWUkY349cGsYFe5+gFBk9KdwsjYZ0QEySDj1Nb1pJ5thA/IBQY+lcVBBNd3CQW8Uk00hwkcalmY+gA6138mmzaOkOn3Q23EUMZkU/wllDEfhnH4VzV/hR62U29rJeX6nqHgO1t4fDUE0UKJNNkyyAfM5BPU10tcr8O7gS+GhFnLQzOpHpnkfzrqq0h8KOLFJqtNPuwoooqznCiiigAryTxvrsWra6EtX8y3tF2Bl+6z5+bH06V6Vr5uV0G++xIz3JhYRqvXJHavI00LVo4ABpN1gDp5RrCs3ayR6uWwhzOpKSTWxs+CbXUZ2vr/TAiugEG5++fmIGfov51s3EfjQZ8uQH6Yrc8F6TJo/hu3huI9lzKWmmXuGY9D7gYH4Vv1rTXLFI4sXU9rWlI8zmXx/n5HP5VRlT4jn7rMPoK9aoq7nNY8Zlj+JZ/5aT/AIE1k6r4f8a6yF/tOyN0yDCvIgLAegbrXvlFIZ81nwD4j6/2ZIPpTD4F8Rj/AJhk35V9L0UAfMx8EeIv+gXOfwoHgzxGowNLuAPpX0zRQB83WvhnxJayB/7JuG2kHgc8Utpod/DqMssOmXkkrq4jha3ZSpYEcnoAM+tfSFFMD5nXwf4kXj+y5+PVaP8AhDPEbEn+y5x+FfTFFAHzSPBXiTtpk35U8eB/ExH/ACDZfyr6TooA+bh4C8St/wAw2T6Vu6ZpHjvSrb7Np1t9mhPLIiY3n/a9fxr3SikB4U/hTxXdPuudGsnY9WNsoJ/ECrdt4N12NsnQtPP+/bg/zr2qincDz3SNP8U6evl21rZ2iHqsUKID+QrL8cWl5a39pe3+wy3MZjYx9Mr6++D+lerVzXjvSJdW8Pn7LEZLm2kWaNR1OOCB+BNZ1FzROrB1PZVlK/kch4B12HTdXks7p/KhvQoQt0EgOAPxB/SvVK8Rk0HV5YSP7Ku8np+7PFeyaW9xLpVm94pS5aFDKp6h9oz+uazot2s0dWZU4c6qRknfctUUUVueWFFFFABTDCjSByDuHfJoooAfRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAMMKNIHIO4e5p9FFABRRRQB/9k=" alt="WATERFLY Fanny Pack with Water Bottle Holder Unisex Hiking Waist Packs for Walking..." /></td>
 		 <td><strong>WATERFLY Fanny Pack with Water Bottle Holder Unisex Hiking Waist Packs for Walking...</strong> by <em>WATERFLY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QHXTYHE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00QHXTYHE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ESLD9ehDL._AC_SX236_SY340_QL65_.jpg" alt="Genius Earth Travel/Hiking Fanny Pack with Water Bottle Holder, Set of 2 Bottles..." /></td>
 		 <td><strong>Genius Earth Travel/Hiking Fanny Pack with Water Bottle Holder, Set of 2 Bottles...</strong> by <em>Genius Earth</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074TFR7MB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B074TFR7MB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4186wSMTFaL._AC_SX236_SY340_QL65_.jpg" alt="ENGYEN Waist Bag,Fanny Pack,Waist Pack,Adjustable Strap,with Adjustable Water..." /></td>
 		 <td><strong>ENGYEN Waist Bag,Fanny Pack,Waist Pack,Adjustable Strap,with Adjustable Water...</strong> by <em>ENGYEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078HWSBWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078HWSBWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NX0TwxbFL._AC_SX236_SY340_QL65_.jpg" alt="EGOGO Travel Sport Waist Pack Fanny Pack Bum Bag Hiking Bag with Water Bottle..." /></td>
 		 <td><strong>EGOGO Travel Sport Waist Pack Fanny Pack Bum Bag Hiking Bag with Water Bottle...</strong> by <em>EGOGO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019Q67F56"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019Q67F56"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51k2FPVsqYL._AC_SX236_SY340_QL65_.jpg" alt="WATERFLY Hiking Waist Bag Fanny Pack with Water Bottle Holder for Men Women Running..." /></td>
 		 <td><strong>WATERFLY Hiking Waist Bag Fanny Pack with Water Bottle Holder for Men Women Running...</strong> by <em>WATERFLY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073M1CL48"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073M1CL48"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51qUrRb2IKL._AC_SX236_SY340_QL65_.jpg" alt="PYFK Running Belt Hydration Waist Pack with Water Bottle Holder for Men Women..." /></td>
 		 <td><strong>PYFK Running Belt Hydration Waist Pack with Water Bottle Holder for Men Women...</strong> by <em>PYFK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071S55SYM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B071S55SYM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FcW4FXrDL._AC_SX236_SY340_QL65_.jpg" alt="AiRunTech Waist Pack with Water Bottle Holder, Fanny Pack/Pouch Bag for Women..." /></td>
 		 <td><strong>AiRunTech Waist Pack with Water Bottle Holder, Fanny Pack/Pouch Bag for Women...</strong> by <em>AiRunTech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078WKPLJ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078WKPLJ7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51cLcVRi37L._AC_SX236_SY340_QL65_.jpg" alt="everest BH-14NB Insulated Water Bottle Waist Hip Fanny Pack Bag + Bottle" /></td>
 		 <td><strong>everest BH-14NB Insulated Water Bottle Waist Hip Fanny Pack Bag + Bottle</strong> by <em>EVEREST</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00G738VIM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00G738VIM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51v-cmGOlWL._AC_SX236_SY340_QL65_.jpg" alt="Hydration Running Belt with Water Bottles 6oz - Waist Bag for Jogging, Hiking..." /></td>
 		 <td><strong>Hydration Running Belt with Water Bottles 6oz - Waist Bag for Jogging, Hiking...</strong> by <em>FunFitness</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076X4WZG4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076X4WZG4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-1Ku0UFQL._AC_SX236_SY340_QL65_.jpg" alt="Innokids Fanny Pack with Water Bottle Holder Hiking Waist Pack Lumbar Waist Bag..." /></td>
 		 <td><strong>Innokids Fanny Pack with Water Bottle Holder Hiking Waist Pack Lumbar Waist Bag...</strong> by <em>Innokids</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CYWCKL5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CYWCKL5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+avU9xqnL._AC_SX236_SY340_QL65_.jpg" alt="Bp Vision Outdoor Fanny Pack Hiking Camping Fishing Waist Bag 2 Water Bottle..." /></td>
 		 <td><strong>Bp Vision Outdoor Fanny Pack Hiking Camping Fishing Waist Bag 2 Water Bottle...</strong> by <em>Bp Vision</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GMTZP70"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01GMTZP70"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41af-Pgz4EL._AC_SX236_SY340_QL65_.jpg" alt="YUOTO Waist Pack with Water Bottle Holder for Running Walking Hiking Runners..." /></td>
 		 <td><strong>YUOTO Waist Pack with Water Bottle Holder for Running Walking Hiking Runners...</strong> by <em>YUOTO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DMGN67J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DMGN67J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jh-if+r7L._AC_SX236_SY340_QL65_.jpg" alt="Fanny Pack MYCARBON Waist Pack with Water Bottle Holder,Waterproof Running Belt..." /></td>
 		 <td><strong>Fanny Pack MYCARBON Waist Pack with Water Bottle Holder,Waterproof Running Belt...</strong> by <em>MYCARBON</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JG2Z11K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JG2Z11K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

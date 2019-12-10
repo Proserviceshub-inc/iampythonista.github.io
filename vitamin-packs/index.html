@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Vitamin Packs</div>
@@ -86,99 +95,111 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PqMO+nKbL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Thin Fit Line</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQ7G2YW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41n3DfETH2L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Nuun</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BWMXR1K"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Nature Made Maximin Pack Multivitamin for Active Men and Women 30 Day Supply" /></td>
 		 <td><strong>Nature Made Maximin Pack Multivitamin for Active Men and Women 30 Day Supply</strong> by <em>Nature Made</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004M7PJBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004M7PJBW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CrXnpxrbL._AC_SX236_SY340_QL65_.jpg" alt="Animal Pak Multivitamin - Sports Nutrition Vitamins with Amino Acids, Antioxidants..." /></td>
 		 <td><strong>Animal Pak Multivitamin - Sports Nutrition Vitamins with Amino Acids, Antioxidants...</strong> by <em>Animal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000GOT54C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000GOT54C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61+M8FTNJHL._AC_SX236_SY340_QL65_.jpg" alt="Grenade Ration Pack, Multi-Vitamins with added Probiotics and BCAAs to support..." /></td>
 		 <td><strong>Grenade Ration Pack, Multi-Vitamins with added Probiotics and BCAAs to support...</strong> by <em>Grenade</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HM9R4OW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HM9R4OW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XRHhEIQaL._AC_SX236_SY340_QL65_.jpg" alt="Made Man 360 Complete Daily Nutrition Packs for Men with Vitamins, Minerals,..." /></td>
 		 <td><strong>Made Man 360 Complete Daily Nutrition Packs for Men with Vitamins, Minerals,...</strong> by <em>Made Man</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HITT31M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HITT31M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gEzWtuJWL._AC_SX236_SY340_QL65_.jpg" alt="Vital Bulk Daily Health Kit Packet Multivitamin &amp; Mineral Supplements 30 Count..." /></td>
 		 <td><strong>Vital Bulk Daily Health Kit Packet Multivitamin &amp; Mineral Supplements 30 Count...</strong> by <em>VitaBulk</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017OQZXKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CrXnpxrbL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Animal</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000GOT54C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017OQZXKY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51u3SUSsBwL._AC_SX236_SY340_QL65_.jpg" alt="ISS Super Vitamin Pak, 30 Packets" /></td>
 		 <td><strong>ISS Super Vitamin Pak, 30 Packets</strong> by <em>ISS Research</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000H7328S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000H7328S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31A79BeOVLL._AC_SX236_SY340_QL65_.jpg" alt="CareZone Core Supplement Daily Vitamin Packs - Support for Optimal Health and..." /></td>
 		 <td><strong>CareZone Core Supplement Daily Vitamin Packs - Support for Optimal Health and...</strong> by <em>CareZone</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073XSXNR9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073XSXNR9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PqMO+nKbL._AC_SX236_SY340_QL65_.jpg" alt="Vitamin Packs For Men and Women - 30 Servings, Individual Multivitamin Pack,..." /></td>
 		 <td><strong>Vitamin Packs For Men and Women - 30 Servings, Individual Multivitamin Pack,...</strong> by <em>Thin Fit Line</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CQ7G2YW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CQ7G2YW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-npe1S89L._AC_SX236_SY340_QL65_.jpg" alt="Onnit Total Human | Convenient Day and Night Vitamin Packs Complete with Essential..." /></td>
 		 <td><strong>Onnit Total Human | Convenient Day and Night Vitamin Packs Complete with Essential...</strong> by <em>ONNIT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GVRW5D8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GVRW5D8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +207,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +235,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

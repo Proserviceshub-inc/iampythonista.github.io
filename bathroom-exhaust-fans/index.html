@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Bathroom Exhaust Fans</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31+39gJ8knL._AC_SX236_SY340_QL65_.jpg" alt="d" /></td>
-		 <td><strong>d</strong> by <em>Win Air</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0752YSMMB"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51G0LZBtOHL._AC_SX236_SY340_QL65_.jpg" alt="Tatsumaki-LD-120-Bathroom-Fan-Ultra" /></td>
-		 <td><strong>Tatsumaki-LD-120-Bathroom-Fan-Ultra</strong> by <em>Tatsumaki</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01K8S1BZG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Delta Breez SLM70 Slim 70 CFM Exhaust Fan" /></td>
 		 <td><strong>Delta Breez SLM70 Slim 70 CFM Exhaust Fan</strong> by <em>Delta Products Corporation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C2N9CS4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00C2N9CS4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/518QVrQTiLL._AC_SX236_SY340_QL65_.jpg" alt="BV Ultra-Quiet 90 CFM, 0.8 Sone Bathroom Ventilation and Exhaust Bath Fan" /></td>
 		 <td><strong>BV Ultra-Quiet 90 CFM, 0.8 Sone Bathroom Ventilation and Exhaust Bath Fan</strong> by <em>BV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01884PENC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01884PENC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RMaxrRCxL._AC_SX236_SY340_QL65_.jpg" alt="Electric Motors C01575 Replacement Electric Motor Kit with Fan, 120V" /></td>
 		 <td><strong>Electric Motors C01575 Replacement Electric Motor Kit with Fan, 120V</strong> by <em>Endurance Pro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073X7P42F"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073X7P42F"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51S1zIEJwsL._AC_SX236_SY340_QL65_.jpg" alt="Air King BFQ 90 Bath Fan, CFM" /></td>
 		 <td><strong>Air King BFQ 90 Bath Fan, CFM</strong> by <em>Air King</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000EVUAXW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000EVUAXW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51KqkTS7eDL._AC_SX236_SY340_QL65_.jpg" alt="Broan AE80B Invent Energy Star Qualified Single-Speed Ventilation Fan, 80 CFM..." /></td>
 		 <td><strong>Broan AE80B Invent Energy Star Qualified Single-Speed Ventilation Fan, 80 CFM...</strong> by <em>Broan</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016UQ2YXS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B016UQ2YXS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41jb4nMxcbL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic FV-0511VQ1 WhisperCeiling DC Ventilation Fan, Speed Selector, SmartFlow..." /></td>
 		 <td><strong>Panasonic FV-0511VQ1 WhisperCeiling DC Ventilation Fan, Speed Selector, SmartFlow...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076Q7V5WX"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TsdTmqryL._AC_SX236_SY340_QL65_.jpg" alt="Horisun-Dimmable-Droplight-Lighting-Chandelier" /></td>
-		 <td><strong>Horisun-Dimmable-Droplight-Lighting-Chandelier</strong> by <em>Horisun</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C1T85BC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076Q7V5WX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/512eE4Iz1OL._AC_SX236_SY340_QL65_.jpg" alt="Delta BreezSignature VFB25AEH 130 CFM Exhaust Bath Fan with Fixed Humidity Sensor" /></td>
 		 <td><strong>Delta BreezSignature VFB25AEH 130 CFM Exhaust Bath Fan with Fixed Humidity Sensor</strong> by <em>Delta Products Corporation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003O0MNHG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003O0MNHG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419ANGYA4VL._AC_SX236_SY340_QL65_.jpg" alt="Broan 688 Ceiling and Wall Mount Fan, 50 CFM 4.0 Sones, White Plastic Grille" /></td>
 		 <td><strong>Broan 688 Ceiling and Wall Mount Fan, 50 CFM 4.0 Sones, White Plastic Grille</strong> by <em>Broan</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004TTZZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00004TTZZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NJy84SaJL._AC_SX236_SY340_QL65_.jpg" alt="Delta BreezGreenBuilder GBR100 100 CFM Exhaust Bath Fan" /></td>
 		 <td><strong>Delta BreezGreenBuilder GBR100 100 CFM Exhaust Bath Fan</strong> by <em>Delta Products Corporation</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C2N9HD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00C2N9HD4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41dticJhuoL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic FV-08-11VF5 WhisperFitEZ Fan 80 or 110 CFM" /></td>
 		 <td><strong>Panasonic FV-08-11VF5 WhisperFitEZ Fan 80 or 110 CFM</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00XBZFWWM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00XBZFWWM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AdQru1cwL._AC_SX236_SY340_QL65_.jpg" alt="Hunter 83002 Ventilation Sona Bathroom Exhaust Fan with Light, Imperial Bronze..." /></td>
 		 <td><strong>Hunter 83002 Ventilation Sona Bathroom Exhaust Fan with Light, Imperial Bronze...</strong> by <em>Hunter Home Comfort</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JFO1F6A"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00JFO1F6A"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XM-eVuHSL._AC_SX236_SY340_QL65_.jpg" alt="Broan SPK110 110-CFM 1.0-Sones Sensonic Speaker Fan with Wireless Technology,..." /></td>
 		 <td><strong>Broan SPK110 110-CFM 1.0-Sones Sensonic Speaker Fan with Wireless Technology,...</strong> by <em>Broan</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SE71A50"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00SE71A50"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wBSj8g+5L._AC_SX236_SY340_QL65_.jpg" alt="Panasonic FV-30VQ3 WhisperCeiling 290 CFM Ceiling Mounted Fan" /></td>
 		 <td><strong>Panasonic FV-30VQ3 WhisperCeiling 290 CFM Ceiling Mounted Fan</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00013BMP8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00013BMP8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

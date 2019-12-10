@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Outdoor Brooms</div>
@@ -86,91 +95,99 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KB9OXPeiL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Gorich</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D8LCKRL"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CaBYtyBJL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>BETTER! BROOM</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FC65ZJC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="O-Cedar Heavy Duty Commercial 100% Corn Broom with Solid Wood Handle" /></td>
 		 <td><strong>O-Cedar Heavy Duty Commercial 100% Corn Broom with Solid Wood Handle</strong> by <em>O-Cedar</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0106FW42U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0106FW42U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ryPGZ6LCL._AC_SX236_SY340_QL65_.jpg" alt="O-Cedar Power Corner Large Angle Broom" /></td>
 		 <td><strong>O-Cedar Power Corner Large Angle Broom</strong> by <em>O-Cedar</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004TR6H9I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004TR6H9I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Qg3ezH+4L._AC_SX236_SY340_QL65_.jpg" alt="O-Cedar Outdoor Power Corner Large Angle Broom" /></td>
 		 <td><strong>O-Cedar Outdoor Power Corner Large Angle Broom</strong> by <em>O-Cedar</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000HM7MUM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41v0LsLFayL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Cszxx</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FYV5DBY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000HM7MUM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41FRD6pQJrL._AC_SX236_SY340_QL65_.jpg" alt="CleanX 2032X Jumbo Indoor/Outdoor Heavy Duty Angle Broom with Grip Handle, 15..." /></td>
 		 <td><strong>CleanX 2032X Jumbo Indoor/Outdoor Heavy Duty Angle Broom with Grip Handle, 15...</strong> by <em>Mintcraft</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0058LTIVS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0058LTIVS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31yzrM50GiL._AC_SX236_SY340_QL65_.jpg" alt="Black &amp; Decker 261019 Angle Broom" /></td>
 		 <td><strong>Black &amp; Decker 261019 Angle Broom</strong> by <em>Black &amp; Decker</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ATZV9QK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00ATZV9QK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31q3ekcpPwL._AC_SX236_SY340_QL65_.jpg" alt="Carlisle 36141503 Duo-Pan Dustpan &amp; Lobby Broom Combo, 3 Foot Overall Height,..." /></td>
 		 <td><strong>Carlisle 36141503 Duo-Pan Dustpan &amp; Lobby Broom Combo, 3 Foot Overall Height,...</strong> by <em>Carlisle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005TLD5RK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B005TLD5RK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uBHjKA2BL._AC_SX236_SY340_QL65_.jpg" alt="Quickie Bulldozer 24-Inch Multi-Surface Push Broom" /></td>
 		 <td><strong>Quickie Bulldozer 24-Inch Multi-Surface Push Broom</strong> by <em>Quickie</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000VBGTD0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000VBGTD0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41racnjgouL._AC_SX236_SY340_QL65_.jpg" alt="Weiler 44008 Corn Fiber Heavy-Duty Wire Banded Warehouse Broom with Wood Handle..." /></td>
 		 <td><strong>Weiler 44008 Corn Fiber Heavy-Duty Wire Banded Warehouse Broom with Wood Handle...</strong> by <em>Weiler</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004FTPT0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004FTPT0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -178,7 +195,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -206,13 +223,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

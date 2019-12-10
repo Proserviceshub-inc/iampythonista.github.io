@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Sony Earbuds</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UdE8vTcwL._AC_SX236_SY340_QL65_.jpg" alt="Sony-MDR-EX110AP-Step-Up-Earbud-Headset" /></td>
-		 <td><strong>Sony-MDR-EX110AP-Step-Up-Earbud-Headset</strong> by <em>Sony</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IKYI47O"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31aAxRla9YL._AC_SX236_SY340_QL65_.jpg" alt="SNYHREX110AL-MDREX110AP-Ear-Headphones-Microphone" /></td>
-		 <td><strong>SNYHREX110AL-MDREX110AP-Ear-Headphones-Microphone</strong> by <em>Sony</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DLJYQDE"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Sony MDRXB50AP Extra Bass Earbud Headset (Black)" /></td>
 		 <td><strong>Sony MDRXB50AP Extra Bass Earbud Headset (Black)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JRD13T8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00JRD13T8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419Q6xL-zSL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDREX15AP (Black)" /></td>
 		 <td><strong>Sony MDREX15AP (Black)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JG2WRUO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00JG2WRUO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bXOJAxoTL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDRE9LP/BLK Ear Buds" /></td>
 		 <td><strong>Sony MDRE9LP/BLK Ear Buds</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004RE3YNA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004RE3YNA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/311rs4g+oCL._AC_SX236_SY340_QL65_.jpg" alt="Sony Earphones- MDREX15LP (Black)" /></td>
 		 <td><strong>Sony Earphones- MDREX15LP (Black)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00I3LUQPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00I3LUQPW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/311IQelmdrL._AC_SX236_SY340_QL65_.jpg" alt="Sony Earbuds with Microphone, in-Ear Headphones and Volume Control, Built-in..." /></td>
 		 <td><strong>Sony Earbuds with Microphone, in-Ear Headphones and Volume Control, Built-in...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078P3LFMG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078P3LFMG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31z3F3JssZL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDRXB510AS/B Extra Bass Wired Headphones, Best Sports Headphones W/Mic IPX5..." /></td>
 		 <td><strong>Sony MDRXB510AS/B Extra Bass Wired Headphones, Best Sports Headphones W/Mic IPX5...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MTEU4V9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01MTEU4V9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31hJLq776uL._AC_SX236_SY340_QL65_.jpg" alt="Sony Wireless Bluetooth In Ear Headphones: Noise Cancelling Sports Workout Ear..." /></td>
 		 <td><strong>Sony Wireless Bluetooth In Ear Headphones: Noise Cancelling Sports Workout Ear...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079H1JQY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ueiU+jojL._AC_SX236_SY340_QL65_.jpg" alt="POPCHOSE-H9-Bluetooth-Waterproof-Headphones" /></td>
-		 <td><strong>POPCHOSE-H9-Bluetooth-Waterproof-Headphones</strong> by <em>POPCHOSE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H7Z7XK2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B079H1JQY7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31hFO5cKLzL._AC_SX236_SY340_QL65_.jpg" alt="Panasonic ErgoFit In-Ear Earbud Headphones RP-HJE120-K (Black) Dynamic Crystal..." /></td>
 		 <td><strong>Panasonic ErgoFit In-Ear Earbud Headphones RP-HJE120-K (Black) Dynamic Crystal...</strong> by <em>Panasonic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003EM8008"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003EM8008"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31YjXAYF1aL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDREX15LP/L In-Ear Headphone (Blue)" /></td>
 		 <td><strong>Sony MDREX15LP/L In-Ear Headphone (Blue)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IJXBX74"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00IJXBX74"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31dmPyie+aL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDR-AS210/B Sport In-ear Headphones, Black" /></td>
 		 <td><strong>Sony MDR-AS210/B Sport In-ear Headphones, Black</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M19O50V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01M19O50V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31-1K98Y65L._AC_SX236_SY340_QL65_.jpg" alt="Sony MDREX110AP - Black" /></td>
 		 <td><strong>Sony MDREX110AP - Black</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00IKYI2EY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00IKYI2EY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31cOO3dHEAL._AC_SX236_SY340_QL65_.jpg" alt="Sony SP700N Wireless Noise Canceling Sports in-Ear Headphones White WF-SP700N..." /></td>
 		 <td><strong>Sony SP700N Wireless Noise Canceling Sports in-Ear Headphones White WF-SP700N...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FK2BG8S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07FK2BG8S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310zJV+5rEL._AC_SX236_SY340_QL65_.jpg" alt="Sony DREX12IPW Earbuds with iPod Remote (White) - Ear set - Retail Packaging..." /></td>
 		 <td><strong>Sony DREX12IPW Earbuds with iPod Remote (White) - Ear set - Retail Packaging...</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004QOA952"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004QOA952"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31bCFW3tJVL._AC_SX236_SY340_QL65_.jpg" alt="Sony MDR-EX100AP/L In-Ear Headset for Android Smartphone, Blue \n" /></td>
 		 <td><strong>Sony MDR-EX100AP/L In-Ear Headset for Android Smartphone, Blue \n</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BN0N03U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BN0N03U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

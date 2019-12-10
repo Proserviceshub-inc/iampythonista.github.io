@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Gigabit Routers</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RBJ3p1iAL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link-AC1900-Smart-Wireless-Router" /></td>
-		 <td><strong>TP-Link-AC1900-Smart-Wireless-Router</strong> by <em>TP-LINK</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PDLRHFW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/3164H0T8TjL._AC_SX236_SY340_QL65_.jpg" alt="MOTOROLA-Gigabit-MD1600-CenturyLink-Frontier" /></td>
-		 <td><strong>MOTOROLA-Gigabit-MD1600-CenturyLink-Frontier</strong> by <em>Motorola</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077NNGNJM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ASUS Dual-Band 2x2 AC1300 Super-Fast Wifi 4-port Gigabit Router with MU-MIMO..." /></td>
 		 <td><strong>ASUS Dual-Band 2x2 AC1300 Super-Fast Wifi 4-port Gigabit Router with MU-MIMO...</strong> by <em>Asus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LXL1AR8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LXL1AR8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PWwqc5fYL._AC_SX236_SY340_QL65_.jpg" alt="NETGEAR R6700 Nighthawk AC1750 Dual Band Smart WiFi Router, Gigabit Ethernet..." /></td>
 		 <td><strong>NETGEAR R6700 Nighthawk AC1750 Dual Band Smart WiFi Router, Gigabit Ethernet...</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R2AZLD2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00R2AZLD2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-BaVTMLdL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link AC1200 Smart WiFi Router - 5GHz Gigabit Dual Band Wireless Internet Router..." /></td>
 		 <td><strong>TP-Link AC1200 Smart WiFi Router - 5GHz Gigabit Dual Band Wireless Internet Router...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IUDUJE0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IUDUJE0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41P-KCyUsJL._AC_SX236_SY340_QL65_.jpg" alt="Netgear (R7800-100NAS) Nighthawk X4S AC2600 4x4 Dual Band Smart WiFi Router,..." /></td>
 		 <td><strong>Netgear (R7800-100NAS) Nighthawk X4S AC2600 4x4 Dual Band Smart WiFi Router,...</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0192911RA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0192911RA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41G7dq-rlrL._AC_SX236_SY340_QL65_.jpg" alt="Medialink AC1200 Wireless Gigabit Router - Gigabit (1000 Mbps) Wired Speed &amp;..." /></td>
 		 <td><strong>Medialink AC1200 Wireless Gigabit Router - Gigabit (1000 Mbps) Wired Speed &amp;...</strong> by <em>Mediabridge</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MS84IIF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MS84IIF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415vAIn9uEL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link AC1750 Smart WiFi Router - Dual Band Gigabit Wireless Internet Routers..." /></td>
 		 <td><strong>TP-Link AC1750 Smart WiFi Router - Dual Band Gigabit Wireless Internet Routers...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079JD7F7G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B079JD7F7G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31J3tVRn4NL._AC_SX236_SY340_QL65_.jpg" alt="Ubiquiti EdgeRouter X Advanced Gigabit Ethernet Routers ER-X 256MB Storage 5..." /></td>
 		 <td><strong>Ubiquiti EdgeRouter X Advanced Gigabit Ethernet Routers ER-X 256MB Storage 5...</strong> by <em>Ubiquiti Networks</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YFJT29C"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31i+hlpdyeL._AC_SX236_SY340_QL65_.jpg" alt="Tenda-MW6-Coverage-bedrooms-Parental" /></td>
-		 <td><strong>Tenda-MW6-Coverage-bedrooms-Parental</strong> by <em>Tenda</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078MZTRBS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YFJT29C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UhtKBCsWL._AC_SX236_SY340_QL65_.jpg" alt="NETGEAR Nighthawk Pro Gaming XR500 WiFi Router with 4 Ethernet Ports and Wireless..." /></td>
 		 <td><strong>NETGEAR Nighthawk Pro Gaming XR500 WiFi Router with 4 Ethernet Ports and Wireless...</strong> by <em>NETGEAR</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078GWJ44Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078GWJ44Z"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31DTBKM9c4L._AC_SX236_SY340_QL65_.jpg" alt="Linksys EA6350 Wi-Fi Wireless Dual-Band+ Router with Gigabit &amp; USB Ports, Smart..." /></td>
 		 <td><strong>Linksys EA6350 Wi-Fi Wireless Dual-Band+ Router with Gigabit &amp; USB Ports, Smart...</strong> by <em>Linksys</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00JZWQW4C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00JZWQW4C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41NDcVogq-L._AC_SX236_SY340_QL65_.jpg" alt="TP-Link AC900 Gigabit Router - Reliable AC Router, 802.11ac Internet Router(Archer..." /></td>
 		 <td><strong>TP-Link AC900 Gigabit Router - Reliable AC Router, 802.11ac Internet Router(Archer...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074MGY628"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074MGY628"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41n7zWQrwzL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link SafeStream TL-R600VPN Gigabit Broadband Desktop VPN Router, 680M NAT..." /></td>
 		 <td><strong>TP-Link SafeStream TL-R600VPN Gigabit Broadband Desktop VPN Router, 680M NAT...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007B60SCG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B007B60SCG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31O66mslgYL._AC_SX236_SY340_QL65_.jpg" alt="ASUS Tri-Band Gigabit (AC3200) WiFi Router (Up to 3167 Mbps) with MU-MIMO to..." /></td>
 		 <td><strong>ASUS Tri-Band Gigabit (AC3200) WiFi Router (Up to 3167 Mbps) with MU-MIMO to...</strong> by <em>Asus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00S9SGNNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00S9SGNNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31RBJ3p1iAL._AC_SX236_SY340_QL65_.jpg" alt="TP-Link AC1900 Smart Wireless Router - High Speed, Long Range, Dual Band Gigabit..." /></td>
 		 <td><strong>TP-Link AC1900 Smart Wireless Router - High Speed, Long Range, Dual Band Gigabit...</strong> by <em>TP-LINK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PDLRHFW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00PDLRHFW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31-r1geqz+L._AC_SX236_SY340_QL65_.jpg" alt="ASUS Dual-Band Gigabit WiFi Gaming Router (AC3100) with MU-MIMO, supporting AiProtection..." /></td>
 		 <td><strong>ASUS Dual-Band Gigabit WiFi Gaming Router (AC3100) with MU-MIMO, supporting AiProtection...</strong> by <em>Asus</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016EWKQAQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B016EWKQAQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>beautyko leg massagers</strong></td>
+                 <td style="text-align: center;"><a href="/beautyko-leg-massagers"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51Di+cTZnXL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>starry night night lights</strong></td>
+                 <td style="text-align: center;"><a href="/the-starry-night-night-lights"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>automotive scan tools</strong></td>
+                 <td style="text-align: center;"><a href="/automotive-scan-tools"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51LOUjftqiL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>russian watches</strong></td>
+                 <td style="text-align: center;"><a href="/russian-watches"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

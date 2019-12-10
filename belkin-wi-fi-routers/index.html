@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Belkin Wi Fi Routers</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/21tYA833+xL._AC_SX236_SY340_QL65_.jpg" alt="GRYPHON-Security-Protection-AI-Intrusion-Detection" /></td>
-		 <td><strong>GRYPHON-Security-Protection-AI-Intrusion-Detection</strong> by <em>Gryphon</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078Z3PTJP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419zbDrMBPL._AC_SX236_SY340_QL65_.jpg" alt="AmpliFi-Ubiquiti-Seamless-Wireless-Extenders" /></td>
-		 <td><strong>AmpliFi-Ubiquiti-Seamless-Wireless-Extenders</strong> by <em>AmpliFi</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01L9O08PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAFUALsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAoorzn4h/EJtGZ9J0Z1N8R+/uByIAegA7uf0/kAdbrnizRvDoxqV6kcpGRCvzSH/gI5rlm+LljNJt0/S7y4H95sJj+dcBovhaS/EmqazM6xE7m8w5dyfUnqfatGW4jTCWsKxRD/AFceO395vU+1O2gr6nZQ/EqVvmn0doYz0JnG4/hiqdz8QNVuG/0W3gt07FgWb/CuVUlmLOxZj1JqdDikM2T4q1+Q5+2Af7sYFTR+K9ej/wCXhH/3owayENWUPFMDdt/H2oREC6sopR6oSp/rWzZ+OtMuCFuBLbMf765H5iuOVVbqKGs0kHSkB6jbXlveR77aeOZfVGBqavIhZzW0gltpHjcdGQkH9K2bHxnqlgQl5Gt5EOpPyuPx6H8aAPRKKydK8S6bq+Egm2Tn/ljL8r/h6/hWtQAUUUUAFFFFABRRRQAUUUUAFFFFAGB4y8Q/8I3oEtzEA13KfJtkPeQ9D9B1P0rxjwzpL6zqv2iVjKiyEh3/AOWsh5Zz7dT+Fb3xT1d7/wAQrYQtlbVfJQD/AJ6P98/guBVzRYIdM0w2q5WQx7S3ZV6ufrgYprcUr20I9dv0+W3gGLeJflX+9k8E+7EE/QYrCViSSTknkn1pb2czTjdwT+8YehPQfgu0fnUJkWONpJHCRr1Y9qAStsWlap0bNZVnqVreyGOBz5g5CsMZ+laEZoGXozVlDVKNqtRtzQBbQ1OlVkNWENAE605oElGGFNU1KtAGXf6cYojNDDJMU52Rff8Awq54e8dzR/uTL9uiTh4pPlnj/A9cVeQ4OQaz9Y8N2Wu/vSTaagv+ru4uDn/a9RQB6HpurWerQebZzB8feQ8Mh9CO1XK8Nt9W1Pw1rCW+rn7Ldj/U3yfcmH+12Ir1Tw/4mi1YC3uAsN8ozsB+WQf3lPf6UgN6iiigAooooAKKKKACorq4S0tZriU4SJC7H2Ayalrm/Hl59k8KXShsNcFYR9Cef0BoA8dtGfWPFTXE/OzMz/7zHP8ALArp55CLCUn5WnYQj2B5Y/kDXO+FImlW6vC+0SyELxWtqrmJFG8kpCzkHsWO0f1pgYrSebK7/wB9iRWFrV4ZpxbIf3UXXHdq1ZJhb27yH+Bcj69q5fJYlm5LHJNIBUZonWSMlXU5BHY12WmX66jaiUYEycSqPX1+hrjKs6ffPp14s6cr0df7woA7uNqtxtVCKRJESSJt0cg3KfarUbUwL6NViM1SjarKNQBcQ1MhqqhqdDQBZU1MtV0NTIaAEv8ATrPW7BrHU498Lcq4+9G3qprgv9M8JasmlarK32YnfZXq/wAPoQfT1HavRFPFQ6to9t4i0p9NvMAn5oJe8T9j9PWgDc8M+If7UjNreFVvolycdJV/vD+oroK8I0G9v9N1F9IvGMOqae/7hz/EB/D7gjp6ivaNF1WLWdOjuYxtf7skfdGHUUgL9FFFABRRRQAV5z8Xb7yNMtrcNgkSSEfgFX9WP5V6NXjfxbuPP1lLf0EcX5ksf5igCl4ft/I0m1QjkguaZrkmfPPrKsQ+irz+prVtIhEIEB4CgEVg6w+4Ww7yb5j+LY/pTAwNYl22ixg/6xufoKxavau+67VM/cX9T/kVSFIAooooEb3hvUdshsJm+VzmIns3p+NdOhwcGvOslSGUkMpyCO1dzpl+NSsUn48xfllH+16/jQM1o2q0jVQjarUbUwLsbVYQ1SRqsoaALSGp0NVUNToaALSGplNV0NTKaAOZ+IWjPc2EWv2I232nkecV6tH2b8P5Grng3xAi3Vvdq2LW/ASZeySev5/zro4SjFo5kDwyKUkQ9GU8EV5hp9q2heItT8PTMfLLF7dj+YP4jH4igD3qis7QNQOpaNbXDHMm3bJ/vDg1o0gCiiigArwvxpL9u8bRIDkG4c/gMKP5GvcpHEcbOeigk14EzG68bq3Xy48/iSW/rQB0DER/aJcfcjbH5Vz2scagsf8AzyhjX9M/zNb8422s2OfMKp+bAVzurv8A8Ta9fsrkfkKYHJXb+ZezN/tY/KoaM7iW9TmikAtFGaDQIK0dD1D+z78BziCb5H9B6H8KzhSdRQM9HX5WINWI2rD0K/8At2nAOf31vhGz3HY1rxtTAvo1WY2qjG3FWY2oAuo1ToaqIanRqALiGp1NVENWENAFlTXE/Ey3NneaRr0Iwyt5MhHfHI/TIrtENZnjKx/tLwZfxgZeACdf+A9f0zQBreBbwOLu3DfI22eMezDB/kPzrr68n+GOo+Y1gSTkq9u34cj+Qr1ikAUUUUAUtan+zaLey/3YW/lXheiDzvEl/Kf4cKPwGK9l8Yy+T4YvT/eUJ+ZFeO+Fvnn1Gb+9Kf50Abtwfkt1/v3Ma/rmuU1h+dQk9Xf9TXVzH/StKX+9dZP4CuL1d/8AiXyt3d/60wOdXpS0DpQaQgooo7UAFFFFAF/Rr7+z9RR2P7qT5JPoe9dwPkYivNyMiu10O9+26YjMcyQ/u39/Q/lQM242q0jVQjarUbUwL0bVYQ1SjNWkNAFtDVlDVJDVqM0AWkNW4Y1nWSB+UlQoR7EYqkhq3bttdTQB5j4CmbTNVubaQ/NaXSsR9G2n+Ve814VeRHTviRqkIGFuAZF/EBv55r2+0l86zglBzvRWz+FICaiiigDlfiHN5XhsDP350H8z/SvLvCAzpMsh6ySE13/xWn8rRrRc/elY/kpriPDCbNAh/wBok0AXrptt/pQ9PNf8lri9bO2wjH95/wCldhqDY1XTx6Ws7f8AjprjfEBxBbr6kmmBiUUUUgCikooEFLRRQMK1fDl59l1MRMcR3A2H69v1/nWVRkqQy8EHIIoA9HXg4NWY2rOsrv7bZw3Ixl1+bH97vV2M0wLsbVajNUo2q1GaALiGrKGqaGrMZoAuIeKsxHkGqkZqzHQBxPjaH7P480m6HAuYNh+oJH9RXqvh+TzdCs29I8flxXmnxHXZL4fu/wDnnO0Z/Haf6GvQ/Cb79BiH91mX9aQG1RRRQB5j8Y59ttp8XqszfoB/WsPRk8vRrZf9mr/xmlzfaZF/0wlP5lR/Sq1gu3Trcf7NNAVdVbGuWS/9OMp/MGuR8ScNbL7E11esH/io7Qf9OL/1rk/E3/Hxbj/YP86AMaiiikAhpaKSgQUtJRQMWikpaBHSeFbrMc9ox5B8xf5H+ldIhxXBaTc/Y9UglJwpba30PBrvB8rEUDLcZzVqNqpRmrUZzTAuxmrMZqnGatRmgC7GasxmqkZq1GaAOd+I6bvDdrL3hu0b+YrtPBUm/RWHpKf1Ark/Hqeb4NuiOsbo/wCTCuj+H8nmaPL/AL4P5qKQHV0UUUAeMfGGTd4osYv7tmD+ch/wqe3GLSEf7Aqj8WG8zx3bp/ds4x/4+xrQj4gjH+yKaAydaP8AxVNmP+nJh/OuW8T/APH5B/1z/rXT66ceLLAetoR+hrmfFP8Ax/Qf9c/60gMWiiigBDRRRQAUUUUAGKWkFHegAPIrvNNuftWnW85OWK4b6jg1wddP4Wud1pPbseY23j6Hg/yoA6WM1pzRJGkbIMZGD71nNA9uyLIQd4yMfyqyJJCqxyZwnQY6UwLUZq3GapR5HXvVuM0AXYz0qyhqnGasoaAKviqPzvCWpp38kt+XNXvhlJ5miyfSM/8Ajv8A9ao9STztFvYv78LD9Kh+E77tGkHokf8AWkB6BRRRQB4Z8TW3/EUj+7BEP61rLxGg/wBkVi/EU5+Jc49EhH/jora/hX6CmgMTXz/xV2me9sR+jVzviwf6fD/1z/rXReIv+Rq0g+tuR+jVz/i4Yvbf/rn/AFpAYNFFFAhO9FFFAwooooAKKKKAFrT8OzeVqyoThZVK/wBRWZUltKbe7hlBxscH9aAPRjcSTPG0hBMfAq+bpXMuUZS4GAR0+tZKt+8VhyMgitNr2OTziFI8wACmBOsuYkTHK96sRvWfG3FWomoA0YzxVmNqoRtVqJqALj/Nbyqf4lI/SqHwmOLG6j7qFH5Fqu5/dn6VT+GA8u41GL0J/wDQjQB6JRRRSA8G+IJz8Tbn6Rf+gCt30+lc/wCPTn4m3f1i/wDQBXQHt9KaAwvE52+ItFb1jx+pFYXi4f6Tan/YP863PFvGqaC/+0B/4/WN4vX5rRvYigDnKKSikAUUUUAFFFFAAKWkooAWkPSlpD0oEdzYTedYW0nUlBV5G71meErpIrON5eQhZM9cE81rWU6Q3XmSD5OenamMmjbmrUbVRjPJ7AmrUZoAvxP2q5E1Z0Rq5EelAF7d+6P0pvgFPK1rUV9U3f8Aj1Jn92fpUngj/kYL/wD64j/0IUAd5RRRSA8C8dn/AIuZeezR/wDoAroPT6Vzvjw4+Jd7/vR/+gCuh7D6U0BheNDsTR5f7kh/mDWX4vX9zat6MwrU8crnRbJ/7kx/lWd4oHmaTbSf7YP5igDlKDSUtIAoNJRQAtFIKWgAoFFFAC0lFKKAOh8Mvm2uI/7rhvzH/wBat9DxXM+GWxPcJ6qD+v8A9eukQ0AW4zVmM1UjNWIzTAuxmrkRqgjVbiagC+DmM1N4H/5GG/8A+uI/9CFVVPyH6Va8Dc6/qH/XEf8AoVAHe0UUUgPn/wCIg2fEq69zEf8AxwV0CnKKfYVhfE4bPiRMfVYT/wCOitqJswxn/ZFNAZnjFd/hlT/cnH6isrVv33haJxztCGtzxInmeF7v/YZW/WsRP9I8HsBzti/9BP8A9agDkQaWkFLSASig0UAFGKKKAAUtIKWgApRSUtAGr4dbGpOPWM/0rp0PNcpoRxq8Y9VYfpXUqeaALSGp0OKqoanQ0wLsbVahaqEZq3E1AGgp+Wr3gTnXdSPpGv8AOs1W+U1pfD/nVtVP+yn8zQB3tFFFIDwf4sp5fj9G/vwRN+pH9K0bc5toj/siqvxmUr4xspMcG0Tn6O9TWTbrGE/7NNAP1NPN0DUY/wDpiWH4c1zvh4/aNBmhPben5jP9a6oL5sFxF18yJ1/NTXHeEpNv2mE9mB/pQBzHTINFT30Rhv7iM8bZGH61BSAKKKKACjvRRQAtFFFAC0UUUCLujHGsQfj/AOgmurB5rk9JONWt/wDe/oa6vPJoGTqanQ1WU1MhpgWozVuJqoI1WomoA0Fb5DWx8ORm71Z/eMf+hVhbsRmuj+Gyf6HqUv8AfnA/If8A16QHbUUUUAeM/HCLbqmky92hdfyYH+tVNLffpkLe1bPxxt822j3PdXkj/MKf6Vznh+Xfo8XPTimgNu3bbMp964vSx9j8TXdv0BZgPwNdajYYGuU1QfZPGm/tIVb8xQwM3xHD5WtSntIA4/L/ABBrLrovFsX722mA+8pUn6c/1rnaQBRRR2oAKKKO9ACiiijtQAtFFFAi1pf/ACFbf/errON1cppf/IUt/wDerqv4jQMlU1MtV1qZTTAsIasxHkVTQ81ai7UAWnbbAx9q7L4cx7fDbSHrJO5/kK4e7fZaOc9q9F8DwmDwlYAjBdS5/EmkB0FFFFAHn/xis/tHhGOYD5oLhT+BBFebeFps6e6ejV7F8Rbf7R4G1PAyY4xJ+RBrw/wxLteWMng00B1IfvXPeLF231jdDjK7T9Qf/r1tb6zfEqedpCyDrDID+B4piI/EEYudESYdY2VvwPH9a5LtXZ2gF/oLRdS8ZX8R0/pXGYwSD1FSMKKKKACiiigBcUUgpRQAtFFFAi3pX/IVg+p/ka6jPJrmNH51WH2z/I10oPNAyVTUymoFNSqeaYE6GrUXSqidatRkUAR6rIVtdo6twK9l0u1+xaVaW2MeVEq/kK8fs7f+1PEmm2WMq8wLf7o5P6A17XSAKKKKAKup2Y1DS7u0IBE8LR8+4Ir5k0ljaap5b8EHaf5V9S183+OLD+x/G99Go2oZvMUD+63zD+f6UAafmckU2ZRc2c8H/PRCB9e1Vo5xJGr5+8KesuGB9DVCK3hqc+Q0R6qenp/nisPWrX7JqsyAfKx3r9DzWnC32DXJMcRyHzB9D1/z7VZ8U2fmWsV2gz5Z2t/unofz/nSGcrRSUUgFooooABSikFLmgBaKKKBF7RhnUlPopP6V0OeawdDGb9z6Rn+lbo60DJFqZTUC1MtMCwlSmQIuTVdTgVXnea4kjtbRDJcTsI40HdjQB2fwx09r3V77V5F/dW4+zwk92PLH8Bgf8Cr0+szw7osXh/Q7bT4juMS5kf8AvueWP51p0gCiiigAryT406ISbLWIl4I+zy8dxlkP6sPyr1uszxFosXiDQrvTZuPOT5H/ALjjlT+BxQB866bc77fYeq1dEmelYzw3GkapLaXUZjlicpIh7GtFSTz2NUgC/BaJLheWtzyPVT1rbsWjv9NMMh3KV2N7g9DWQrYPIyDwR6ijTbn+zL4ROT5D8KT/AHf/AK1IDCvLV7G7lt5R8yHGfUdjVcV2+vaP/aNuJYBm5iHy4/5aL6VxJBUkMCCOCDSAKKKKAAUtJRQAtFGaKANXQBmadvRAP1rZrL0Bf3Vw3uBWnTAkWpVNQBgKY8x3LGitJI5wkaDLMfQCgCa4uVhjLMQAOpr0H4c+E5ID/bupxFZ5FxbROOY0P8RHqf5fWmeDvh2Uki1TxCgaYYaGzPKxnsX9W9ugr0ekAUUUUAFFFFABRRRQB538S/ALa/EdV0pM6jEuJIh/y3Uen+0P16eleP2l4YGNtdqyMpx8wwVPoa+pK5jxN4A0XxOWmuYTBeEYFzDwx+o6N+NAHiJ6ZGCD3FMcJNGY5BleoI6qfUV1198IddsHY6TewXcXZXOxv14/WsaXwX4utz+90ORveJ0b+RNO4Eemap9kC21+/wC56RXA/h9m9qn1jw7FqX7+Fliujzu/gl9/r71HH4R8UTZQaDc/NwQ+1R+pq9b+FPGmjxEjTQ1qOTFJcRkL9DuyKAOFvLC6sJNl1C0Z9T0P0PQ1XrvP7dsjug1KF7dgdrLIm9M+xGajbStAvwWhaIE/88pcfpSA4ejFde3g+zfmK7cA+4NRN4Rt05e+wPoBQByvSnwxSXEgjhRndugArpRpOh2nNxdiQjsX/oKcdZ0qzQpaIcf7C4z+J5oAWysvsFoImIMjHc+OmfSpCrHoKz7jX8RK1tGm5s5VgSU/pWXcajd3XEkp2n+FeBTA6EBW4Eik+xro/Duv2/hw+bHoiXN43DXTTfNj0AxgfhXmscRJzzV+2kuISPKmdfxyKQHsafFaAD9/pNwv+5ID/hVqH4raAxAnS8t/UvDuA/75JryeDUC+FulHPR1H8xU8ka9wDTA9ntPHnhm94h1m2U9MSkxE/gwFbkF3b3QzbzxTD1jcN/KvnOS3ibqgqARLatvhleBuuY3Kn9KLAfTFFeR/DHXfEN/4gks5bqa80yKMmVpzuMZ/hwx5yT29M165SAKKKxfEXi3SfC9uJNTuNsjDKQRjdJJ9B/U4HvQBtUEgDJOAK8X1b4x6rdsyaNZRWkXQSzfvH+uOg/WuRvtc1zWWJ1LVrqZT1QOVT/vkYH6UAe96p4x0DR8i91S3Vx/Ajb2/IZrk7/4w6euU0rTrm7bs8mI0/qf0ryeGzjTBCjPqa0IYlUZ4CjuadgOmvPiL4n1EkQSQafGe0MYZvzbP8qx3+3ag+++vbm6f1llZqz5NXtbbKxq1xJ6Lwv51QuNX1G4BVXFvGf4Y+D+fWgDduBb2i/6TNGg/uscn8q5e9uYZ7/zYYVWFSMLjG4D1+tQtCzMWZixPUmk8o9/0oAkurhZ7qSW3jFtExysSE4X6ZqDLHqxNSiA/T608Qj0z9aQFbaD6tTtp9AKtiAnoMfSpFtfamBREZJ7mpUgNaCWvqKmW29qAKUcB71ZSHHarQhCjLYFIZFRlRRl2OFHc/QdTQA1YqlS4WNfLYk46Y7V0Gk+Adf1na5gFlbnB826ymR7IPmPHrtrvdF+GWjaaA98G1KYc/vhiMH2QcfnmgDy3TdJ1bX326VZySpnBk6KPqx4ru9E+EsKFZtduzM2cmG3YqPoX6/lj616RHEkMaxxIqIowFUYA/CnUgKunaXZaRarbadaxW0I/giXGT6n1PuatUUUAFeK/E7wXqqa7PrdnFLe2k4DPtyzQkDGMddvGQR0/n7VRQB8pRTp3OD71ejdT0Ir6G1bwhoWtsz6hpdvJK3WULtc/Vhgn8a5O++DOiTZaxu7yzbsNwdR+B5/WncDyzzRGvA3N2FQSLJOf3rEr2XtXe3XwY1OFibHWYJRjgTRlCfyzWRcfDbxdaDK2tvcj/plKM/rii4HMrbgdBS+QM9M1qy+G/E9t/r9BuyB3Rdw/TNVHS/gO2bSb1COxhb/CgCt9mz1/IUC1PYYqx9olT71hdD6xGnrdufu2F0fpEaAKwsvapVsyO1WVnuGOE0u9Y+ggNXYdP1y5x5Hh+/bPQmEqP1oAzltCe1TLaYGTxW7beCvF14ONOhtR63Ew/kM1uWfwmv5mDapraxjvHaxZyP8Aebp+VFwOHfyYULOwCjuelT6bp2pa2wXR9OnuVJx5oG2MfVzxXrel/Dvw9pjrKbP7bOvSW8bzT+R4H5V1AAAAAwB2FIDy/SvhPPKyya5qIUdTBZj+bt/QV3WkeGNH0IA6dYxRSYwZiN0jfVjzWtRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z" alt="Belkin AC1600 Dual-Band AC Gigabit Wi-Fi Router (F9K1119)" /></td>
 		 <td><strong>Belkin AC1600 Dual-Band AC Gigabit Wi-Fi Router (F9K1119)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017NN9FSE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B017NN9FSE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fpXl+RLeL._AC_SX236_SY340_QL65_.jpg" alt="Belkin AC750 Wi-Fi Dual-Band AC+ Router (F9K1116)" /></td>
 		 <td><strong>Belkin AC750 Wi-Fi Dual-Band AC+ Router (F9K1116)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00C4OAPBE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00C4OAPBE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31LQShZtTpL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N600 Dual-Band Wi-Fi Range Extender (F9K1122)" /></td>
 		 <td><strong>Belkin N600 Dual-Band Wi-Fi Range Extender (F9K1122)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00CQJO2AC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00CQJO2AC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31bx7bu57aL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N600 Wireless Dual-Band N+ Router (Latest Generation)" /></td>
 		 <td><strong>Belkin N600 Wireless Dual-Band N+ Router (Latest Generation)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004N625AA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B004N625AA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41P7ONhCOzL._AC_SX236_SY340_QL65_.jpg" alt="Belkin F9K1119-RM AC1600 Dual-Band AC Gigabit Wi-Fi Router (Certified Refurbished)" /></td>
 		 <td><strong>Belkin F9K1119-RM AC1600 Dual-Band AC Gigabit Wi-Fi Router (Certified Refurbished)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073V5LXX4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B073V5LXX4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416TIwdX66L._AC_SX236_SY340_QL65_.jpg" alt="Belkin E2S4000 Wireless Dual Band Range Extension" /></td>
 		 <td><strong>Belkin E2S4000 Wireless Dual Band Range Extension</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007IQNLDW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B007IQNLDW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uxb7DgeHL._AC_SX236_SY340_QL65_.jpg" alt="Belkin Wireless Router N300" /></td>
 		 <td><strong>Belkin Wireless Router N300</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0046TVJ8I"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41zgNqvkdUL._AC_SX236_SY340_QL65_.jpg" alt="Tenda-Wireless-Internet-Parental-AC10U" /></td>
-		 <td><strong>Tenda-Wireless-Internet-Parental-AC10U</strong> by <em>Tenda</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ES6ZQ7O"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B0046TVJ8I"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Sci5nrfdL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N750 Dual Band Wireless N plus Gigabit Router (F9K1110)" /></td>
 		 <td><strong>Belkin N750 Dual Band Wireless N plus Gigabit Router (F9K1110)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008BGYJSO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B008BGYJSO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/314C3E+sHGL._AC_SX236_SY340_QL65_.jpg" alt="Belkin Router Surf N300" /></td>
 		 <td><strong>Belkin Router Surf N300</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0056ENLKG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B0056ENLKG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31pAuhlO7WL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N300 Wall-Mount Wi-Fi Range Extender with Simple Start (F9K1015)" /></td>
 		 <td><strong>Belkin N300 Wall-Mount Wi-Fi Range Extender with Simple Start (F9K1015)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00K6HKJKI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00K6HKJKI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31By95bIrBL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N600 DB F9L1101 Wireless Dual-Band USB Adapter, Up to 300Mbps Speed (Black)" /></td>
 		 <td><strong>Belkin N600 DB F9L1101 Wireless Dual-Band USB Adapter, Up to 300Mbps Speed (Black)</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004N625BY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004N625BY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41lgXds5BqL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N150 Wireless Router" /></td>
 		 <td><strong>Belkin N150 Wireless Router</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00Q595CHQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00Q595CHQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411g-cFnxuL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N300 Wi-Fi Router, External Antenna" /></td>
 		 <td><strong>Belkin N300 Wi-Fi Router, External Antenna</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QVJ0PDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B00QVJ0PDQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31c-f5wFNxL._AC_SX236_SY340_QL65_.jpg" alt="Belkin N300 Pocket WiFi Adapter, 300Mbps Link Rate" /></td>
 		 <td><strong>Belkin N300 Pocket WiFi Adapter, 300Mbps Link Rate</strong> by <em>Belkin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004N625BO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004N625BO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>alera office chair</strong></td>
+                 <td style="text-align: center;"><a href="/alera-office-chair"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41JNNbP1qjL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>collagen drink for skins</strong></td>
+                 <td style="text-align: center;"><a href="/collagen-drink-for-skins"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/51zZj+B1IPL._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>solar power banks</strong></td>
+                 <td style="text-align: center;"><a href="/solar-power-banks"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/513BuDCCA3L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>ice fishing lures</strong></td>
+                 <td style="text-align: center;"><a href="/ice-fishing-lures"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

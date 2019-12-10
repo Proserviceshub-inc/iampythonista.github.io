@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Transmission Additives</div>
@@ -89,88 +98,120 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Lubegard 19610 Dr. Tranny Instant Shudder Fixx, 2 oz." /></td>
 		 <td><strong>Lubegard 19610 Dr. Tranny Instant Shudder Fixx, 2 oz.</strong> by <em>Lubegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002JMLQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0002JMLQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41o1G8omw+L._AC_SX236_SY340_QL65_.jpg" alt="Lubegard 60902 Automatic Transmission Fluid Protectant, 10 oz." /></td>
 		 <td><strong>Lubegard 60902 Automatic Transmission Fluid Protectant, 10 oz.</strong> by <em>Lubegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0007ZAJRM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0007ZAJRM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oWUzu3UEL._AC_SX236_SY340_QL65_.jpg" alt="Sea Foam TT-16 Trans Tune Transmission Additive - 16 oz." /></td>
 		 <td><strong>Sea Foam TT-16 Trans Tune Transmission Additive - 16 oz.</strong> by <em>Sea Foam</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002JN2F4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0002JN2F4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KMLGelm+L._AC_SX236_SY340_QL65_.jpg" alt="Lucas LUC10009 24 Ounce Transmission Fix 24 Oz" /></td>
 		 <td><strong>Lucas LUC10009 24 Ounce Transmission Fix 24 Oz</strong> by <em>Lucas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000ARTZPO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000ARTZPO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VeT4xGFML._AC_SX236_SY340_QL65_.jpg" alt="ProTecta Automatic Transmission treatment 10 Ounce Bottle" /></td>
 		 <td><strong>ProTecta Automatic Transmission treatment 10 Ounce Bottle</strong> by <em>ProTecta</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0041OXK0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B0041OXK0S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31V8V81bqTL._AC_SX236_SY340_QL65_.jpg" alt="Liqui Moly 20040 ATF Additive" /></td>
 		 <td><strong>Liqui Moly 20040 ATF Additive</strong> by <em>Liqui Moly</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004X63XVU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510EIBpysFL._AC_SX236_SY340_QL65_.jpg" alt="Lucas-Oil-High-Mileage-Car" /></td>
-		 <td><strong>Lucas-Oil-High-Mileage-Car</strong> by <em>Lucas Oil</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07B5BPPT7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004X63XVU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41KMLGelm+L._AC_SX236_SY340_QL65_.jpg" alt="Lucas 10009-12PK Transmission Fix Stop Leak - 24 oz, (Pack of 12)" /></td>
 		 <td><strong>Lucas 10009-12PK Transmission Fix Stop Leak - 24 oz, (Pack of 12)</strong> by <em>Lucas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001OZJNPI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B001OZJNPI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41TDcOZcBgL._AC_SX236_SY340_QL65_.jpg" alt="Lucas Oil 10052-PK6 Semi-Synthetic Automatic Transmission Fluid - 1 Quart,Pack..." /></td>
 		 <td><strong>Lucas Oil 10052-PK6 Semi-Synthetic Automatic Transmission Fluid - 1 Quart,Pack...</strong> by <em>Lucas</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001OZJNVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B001OZJNVC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SciZbKXOL._AC_SX236_SY340_QL65_.jpg" alt="CRC 402015 Trans-X Slip-Stop Leak-Fix - 15 Fl Oz." /></td>
 		 <td><strong>CRC 402015 Trans-X Slip-Stop Leak-Fix - 15 Fl Oz.</strong> by <em>CRC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000CITXQM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000CITXQM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41daqPgRTSL._AC_SX236_SY340_QL65_.jpg" alt="Lubegard 63010 Platinum Universal ATF Protectant, 10 oz." /></td>
 		 <td><strong>Lubegard 63010 Platinum Universal ATF Protectant, 10 oz.</strong> by <em>Lubegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002MB57UI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002MB57UI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -178,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -206,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

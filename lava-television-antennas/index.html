@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Lava Television Antennas</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UxaQPZiIL._AC_SX236_SY340_QL65_.jpg" alt="2018-Upgraded-HDTV-Antenna-Television" /></td>
-		 <td><strong>2018-Upgraded-HDTV-Antenna-Television</strong> by <em>Vansky</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FUB4ZG8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41C5h0RxMxL._AC_SX236_SY340_QL65_.jpg" alt="HDTV-Antenna-Akinger-Definition-Television" /></td>
-		 <td><strong>HDTV-Antenna-Akinger-Definition-Television</strong> by <em>Akinger</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079J68HRN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="LAVA HD-2805 ULTRA UHF - VHF Outdoor HDTV Antenna with Motor Rotor and G3 technology" /></td>
 		 <td><strong>LAVA HD-2805 ULTRA UHF - VHF Outdoor HDTV Antenna with Motor Rotor and G3 technology</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00U6O45JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00U6O45JM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41j8+C5U4AL._AC_SX236_SY340_QL65_.jpg" alt="Lava Electronics HD-2605 UHF/VHF HDTV Antenna with Remote Control" /></td>
 		 <td><strong>Lava Electronics HD-2605 UHF/VHF HDTV Antenna with Remote Control</strong> by <em>Lava Electronics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002MW0K22"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B002MW0K22"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xdFW+yIVL._AC_SX236_SY340_QL65_.jpg" alt="Lava HD8008 Omnidirectional Outdoor TV Antenna HD TV 4K 360 Degree OmniPro HD..." /></td>
 		 <td><strong>Lava HD8008 Omnidirectional Outdoor TV Antenna HD TV 4K 360 Degree OmniPro HD...</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075KZLTZ9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075KZLTZ9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/315dhUghnpL._AC_SX236_SY340_QL65_.jpg" alt="Lava Omnipro HD-8008 Omni-Directional HDTV Antenna" /></td>
 		 <td><strong>Lava Omnipro HD-8008 Omni-Directional HDTV Antenna</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EPP5ZSS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00EPP5ZSS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31BaSbzs+xL._AC_SX236_SY340_QL65_.jpg" alt="Winegard DS-2000 Universal 22-inch Tower Mount for Off-Air TV Antennas (1.5in..." /></td>
 		 <td><strong>Winegard DS-2000 Universal 22-inch Tower Mount for Off-Air TV Antennas (1.5in...</strong> by <em>Winegard</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00068YUN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00068YUN4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Y4nlKM+dL._AC_SX236_SY340_QL65_.jpg" alt="LAVA HD2605 Outdoor HD TV Antenna Remote Controlled Rotation Long Range 4K TV..." /></td>
 		 <td><strong>LAVA HD2605 Outdoor HD TV Antenna Remote Controlled Rotation Long Range 4K TV...</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075LNC3Q3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B075LNC3Q3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31h6I6iG0yL._AC_SX236_SY340_QL65_.jpg" alt="LAVA Omnipro HDTV Antenna RV &amp; Marine - RVHD-2016" /></td>
 		 <td><strong>LAVA Omnipro HDTV Antenna RV &amp; Marine - RVHD-2016</strong> by <em>LAVA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074KV79V7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iato0E2UL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Bikuu</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J64V129"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B074KV79V7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31VOIetZ16L._AC_SX236_SY340_QL65_.jpg" alt="Lava HD-8000 OmniPro Version Omni-Directional HDTV Antenna: 50 miles" /></td>
 		 <td><strong>Lava HD-8000 OmniPro Version Omni-Directional HDTV Antenna: 50 miles</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EPP1CNU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00EPP1CNU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61bSZUU4ReL._AC_SX236_SY340_QL65_.jpg" alt="[Upgraded 2018] LAVA HD8008 Omni-Directional Amplified Outdoor HDTV Antenna with..." /></td>
 		 <td><strong>[Upgraded 2018] LAVA HD8008 Omni-Directional Amplified Outdoor HDTV Antenna with...</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DRK16ZS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07DRK16ZS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Mf6PmZ7yL._AC_SX236_SY340_QL65_.jpg" alt="Lava Electronics HD-2605 UHF/VHF HDTV Antenna with Remote Control" /></td>
 		 <td><strong>Lava Electronics HD-2605 UHF/VHF HDTV Antenna with Remote Control</strong> by <em>Lava Electronics</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01KAHTO86"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01KAHTO86"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/519J0R5aB7L._AC_SX236_SY340_QL65_.jpg" alt="LAVA HD8008 360 Degree Omnidirectional HD TV 4K Omnidirectional TV Antenna Top..." /></td>
 		 <td><strong>LAVA HD8008 360 Degree Omnidirectional HD TV 4K Omnidirectional TV Antenna Top...</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0773XGL8W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0773XGL8W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51TaoMcUBPL._AC_SX236_SY340_QL65_.jpg" alt="LAVA HD2805 Remote Controlled Rotation Long Range outdoor HD TV 4K TV Antenna..." /></td>
 		 <td><strong>LAVA HD2805 Remote Controlled Rotation Long Range outdoor HD TV 4K TV Antenna...</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075LT9NZX"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B075LT9NZX"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bg7U6EVpL._AC_SX236_SY340_QL65_.jpg" alt="Lava HD-468 Indoor HDTV Antenna 50 Mile Receiving Range" /></td>
 		 <td><strong>Lava HD-468 Indoor HDTV Antenna 50 Mile Receiving Range</strong> by <em>Lava</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01KAFXAGA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01KAFXAGA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Ak+gkr3AL._AC_SX236_SY340_QL65_.jpg" alt="LAVA HD-8000 360-DEGREES HDTV DIGITAL AMPLIFIED OUTDOOR TV ANTENNA HD VHF CABLE" /></td>
 		 <td><strong>LAVA HD-8000 360-DEGREES HDTV DIGITAL AMPLIFIED OUTDOOR TV ANTENNA HD VHF CABLE</strong> by <em>UNBRANDED*</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079SWLLYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B079SWLLYY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

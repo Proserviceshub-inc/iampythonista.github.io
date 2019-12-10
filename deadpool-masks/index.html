@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Deadpool Masks</div>
@@ -89,112 +98,132 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41l989n46bL._AC_SX236_SY340_QL65_.jpg" alt="2016 Deadpool Cosplay Mask Balaclava Costume Halloween Hood Cotton Spandex Leather..." /></td>
 		 <td><strong>2016 Deadpool Cosplay Mask Balaclava Costume Halloween Hood Cotton Spandex Leather...</strong> by <em>ZjpMask</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LZETL6Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LZETL6Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Xcoser Wade Mask Helmet Movie Vesion Latex Full Head Mask Cosplay Props" /></td>
 		 <td><strong>Xcoser Wade Mask Helmet Movie Vesion Latex Full Head Mask Cosplay Props</strong> by <em>Xcoser</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MT1Y1E5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MT1Y1E5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410A-RX6FyL._AC_SX236_SY340_QL65_.jpg" alt="xcoser DP Mask Deluxe Full Head Latex Flexible Helmet Cosplay Costume Accessory" /></td>
 		 <td><strong>xcoser DP Mask Deluxe Full Head Latex Flexible Helmet Cosplay Costume Accessory</strong> by <em>Xcoser</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0719SR5LZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0719SR5LZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/517E8-dGmyL._AC_SX236_SY340_QL65_.jpg" alt="Marvel Deadpool Face Hider Mask" /></td>
 		 <td><strong>Marvel Deadpool Face Hider Mask</strong> by <em>Marvel</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076JPC32B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076JPC32B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51n36D6qSML._AC_SX236_SY340_QL65_.jpg" alt="DP Mask Deluxe Full Head Latex Movie Helmet Halloween Cosplay Costume Adult Accessory" /></td>
 		 <td><strong>DP Mask Deluxe Full Head Latex Movie Helmet Halloween Cosplay Costume Adult Accessory</strong> by <em>Joyfunny</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C3RWQWT"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/516Z7yyyZyL._AC_SX236_SY340_QL65_.jpg" alt="DP-Mask-Wade-Full-Accessory" /></td>
-		 <td><strong>DP-Mask-Wade-Full-Accessory</strong> by <em>Cosday</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HJ3NPWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412LKAr+yVL._AC_SX236_SY340_QL65_.jpg" alt="Tigerdoe-Foam-Swords-Kids-Weapons" /></td>
-		 <td><strong>Tigerdoe-Foam-Swords-Kids-Weapons</strong> by <em>Tigerdoe</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075QP6K2D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C3RWQWT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413KoYISPzL._AC_SX236_SY340_QL65_.jpg" alt="Zanheadgear WNFM109 Adult/Unisex Full Mask (Neoprene, Red Dawn)" /></td>
 		 <td><strong>Zanheadgear WNFM109 Adult/Unisex Full Mask (Neoprene, Red Dawn)</strong> by <em>Zanheadgear</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013XJE6UE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B013XJE6UE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510pOsq-b2L._AC_SX236_SY340_QL65_.jpg" alt="Halloween Costume Cosplay Dexule Full Head Latex Accessory Deadpool Mask" /></td>
 		 <td><strong>Halloween Costume Cosplay Dexule Full Head Latex Accessory Deadpool Mask</strong> by <em>Nuoka</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J682B5T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07J682B5T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/516Z7yyyZyL._AC_SX236_SY340_QL65_.jpg" alt="DP Mask Wade Full Mask - Deluxe Full Head Latex Movie Helmet Cosplay Costume..." /></td>
 		 <td><strong>DP Mask Wade Full Mask - Deluxe Full Head Latex Movie Helmet Cosplay Costume...</strong> by <em>Cosday</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HJ3NPWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07HJ3NPWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PVLH6W0ML._AC_SX236_SY340_QL65_.jpg" alt="Yacn Deadpool mask Cosplay Costume for Men Dress for Teens Replica Full Head..." /></td>
 		 <td><strong>Yacn Deadpool mask Cosplay Costume for Men Dress for Teens Replica Full Head...</strong> by <em>Yacn</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G18HLRD"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07G18HLRD"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41B+5y7bikL._AC_SX236_SY340_QL65_.jpg" alt="CHECKIN Halloween Latex Deluxe Masks Adult Costume Full Face Mask Cosplay Props" /></td>
 		 <td><strong>CHECKIN Halloween Latex Deluxe Masks Adult Costume Full Face Mask Cosplay Props</strong> by <em>CHECKIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HVTMQD5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07HVTMQD5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cjV-GbuTL._AC_SX236_SY340_QL65_.jpg" alt="DP Mask Deluxe Full Head Latex Helmet Halloween Cosplay Costume Accessory" /></td>
 		 <td><strong>DP Mask Deluxe Full Head Latex Helmet Halloween Cosplay Costume Accessory</strong> by <em>TJoyfun</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J595WW7"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41iG3Yn-kYL._AC_SX236_SY340_QL65_.jpg" alt="Tigerdoe-Piggyback-Costume-Riding-Shoulder" /></td>
-		 <td><strong>Tigerdoe-Piggyback-Costume-Riding-Shoulder</strong> by <em>Tigerdoe</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B071RY2L7T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07J595WW7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

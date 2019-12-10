@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Snugg Ipad Cases</div>
@@ -89,104 +98,156 @@
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dku5AA4qL._AC_SX236_SY340_QL65_.jpg" alt="iPad Pro 12.9 2017/2015 Keyboard, Snugg [Black] Wireless Bluetooth Keyboard Case..." /></td>
 		 <td><strong>iPad Pro 12.9 2017/2015 Keyboard, Snugg [Black] Wireless Bluetooth Keyboard Case...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FWHELQY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01FWHELQY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="ProCase iPad 9.7 Case 2018/2017 iPad Case - Stand Folio Cover Case for Apple..." /></td>
 		 <td><strong>ProCase iPad 9.7 Case 2018/2017 iPad Case - Stand Folio Cover Case for Apple...</strong> by <em>ProCase</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XSFJCXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XSFJCXT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51GQmFstQpL._AC_SX236_SY340_QL65_.jpg" alt="Snugg iPad 3 &amp; 4 Case - Smart Cover with Flip Stand &amp; (Grey Leather) for Apple..." /></td>
 		 <td><strong>Snugg iPad 3 &amp; 4 Case - Smart Cover with Flip Stand &amp; (Grey Leather) for Apple...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FF7MVEQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FF7MVEQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ONg++puQL._AC_SX236_SY340_QL65_.jpg" alt="iPad Air &amp; New iPad 9.7 inch 2017 Case, Snugg - Smart Cover Case with Kick Stand..." /></td>
 		 <td><strong>iPad Air &amp; New iPad 9.7 inch 2017 Case, Snugg - Smart Cover Case with Kick Stand...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EYDTA3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00EYDTA3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rTXgOTLpL._AC_SX236_SY340_QL65_.jpg" alt="New IPad 9.7 Inch 2018/2017 Case, Ztotop Premium Leather Business Slim Folding..." /></td>
 		 <td><strong>New IPad 9.7 Inch 2018/2017 Case, Ztotop Premium Leather Business Slim Folding...</strong> by <em>Ztotop</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075LNGGCL"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075LNGGCL"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51P+HlVA46L._AC_SX236_SY340_QL65_.jpg" alt="New S-Tech Black and Tan Apple iPad 9.7 5th Generation 2017 / 6th Generation..." /></td>
 		 <td><strong>New S-Tech Black and Tan Apple iPad 9.7 5th Generation 2017 / 6th Generation...</strong> by <em>S-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B072862XG6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B072862XG6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51UbhahJVBL._AC_SX236_SY340_QL65_.jpg" alt="iPad 9.7 Case 2018 iPad 6th Generation Case / 2017 iPad 5th Generation Case -..." /></td>
 		 <td><strong>iPad 9.7 Case 2018 iPad 6th Generation Case / 2017 iPad 5th Generation Case -...</strong> by <em>ProCase</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077PV288K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077PV288K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51a8k5kmQ-L._AC_SX236_SY340_QL65_.jpg" alt="S-Tech New Black and Tan Apple iPad 2 3 4 Generation Soft Leather Wallet Smart..." /></td>
 		 <td><strong>S-Tech New Black and Tan Apple iPad 2 3 4 Generation Soft Leather Wallet Smart...</strong> by <em>S-Tech</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HUNY9GK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HUNY9GK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uuYPAT73L._AC_SX236_SY340_QL65_.jpg" alt="Snugg iPad Pro 11 (2018) Case Leather iPad Pro 11 Case Cover Protective Flip..." /></td>
 		 <td><strong>Snugg iPad Pro 11 (2018) Case Leather iPad Pro 11 Case Cover Protective Flip...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KMDBJGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KMDBJGZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51RZ1L5uBwL._AC_SX236_SY340_QL65_.jpg" alt="iPad Pro 12.9 2017 and 2015 Case, Snugg Leather iPad Pro 12.9 2017 and 2015 Case..." /></td>
 		 <td><strong>iPad Pro 12.9 2017 and 2015 Case, Snugg Leather iPad Pro 12.9 2017 and 2015 Case...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OBP9Q6E"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OBP9Q6E"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51M6xBDxwdL._AC_SX236_SY340_QL65_.jpg" alt="iPad Air 2 Case, Snugg - Shark Skin Grey Leather Smart Case Cover Apple iPad..." /></td>
 		 <td><strong>iPad Air 2 Case, Snugg - Shark Skin Grey Leather Smart Case Cover Apple iPad...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LXKBOWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LXKBOWB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CfPvzcLKL._AC_SX236_SY340_QL65_.jpg" alt="ProCase iPad 9.7 Case 2018 iPad 6th Generation Case / 2017 iPad 5th Generation..." /></td>
 		 <td><strong>ProCase iPad 9.7 Case 2018 iPad 6th Generation Case / 2017 iPad 5th Generation...</strong> by <em>ProCase</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XT31NXQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06XT31NXQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HklPDIsYL._AC_SX236_SY340_QL65_.jpg" alt="Snugg iPad 4 &amp; iPad 3 Case - Leather Case Cover and Flip Stand with Elastic Hand..." /></td>
 		 <td><strong>Snugg iPad 4 &amp; iPad 3 Case - Leather Case Cover and Flip Stand with Elastic Hand...</strong> by <em>Snugg</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BBIMKEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B00BBIMKEY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

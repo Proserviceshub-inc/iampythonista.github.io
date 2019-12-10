@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Ogx Shampoos</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51-f2N6k-xL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>R+Co</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01D3L3VS0"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Dp0qK-ILL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Ultrax Labs</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007SZCG0C"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="OGX Nourishing Shampoo, Coconut Milk, Salon Size, (1) 25.4 Ounce Bottle, Paraben..." /></td>
 		 <td><strong>OGX Nourishing Shampoo, Coconut Milk, Salon Size, (1) 25.4 Ounce Bottle, Paraben...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002KG28PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002KG28PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41yocqE8IGL._AC_SX236_SY340_QL65_.jpg" alt="OGX Renewing Moroccan Argan Oil Shampoo, 25.4 Ounce Bottle, Salon Size, Strengthens..." /></td>
 		 <td><strong>OGX Renewing Moroccan Argan Oil Shampoo, 25.4 Ounce Bottle, Salon Size, Strengthens...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008J2GP9G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008J2GP9G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FXxxgpbNL._AC_SX236_SY340_QL65_.jpg" alt="OGX Hydrating TeaTree Mint Shampoo, 13 Ounce Bottle, Moisturizing Shampoo Infused..." /></td>
 		 <td><strong>OGX Hydrating TeaTree Mint Shampoo, 13 Ounce Bottle, Moisturizing Shampoo Infused...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000TGC8D2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000TGC8D2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bAZyD97+L._AC_SX236_SY340_QL65_.jpg" alt="OGX Shampoo with Thick and Full Biotin and Collagen, (1) 13 Fluid Ounce Bottle..." /></td>
 		 <td><strong>OGX Shampoo with Thick and Full Biotin and Collagen, (1) 13 Fluid Ounce Bottle...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010817MR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B010817MR4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51d4ZI5BPlL._AC_SX236_SY340_QL65_.jpg" alt="OGX Organix Argan Oil of Morocco Shampoo &amp; Conditioner Set (19.5 Oz Set)" /></td>
 		 <td><strong>OGX Organix Argan Oil of Morocco Shampoo &amp; Conditioner Set (19.5 Oz Set)</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OU0IHQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OU0IHQU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4126uEHbpOL._AC_SX236_SY340_QL65_.jpg" alt="Organix: Nourishing Coconut Milk Shampoo + Conditioner (Combo Pack) (19.5 OUNCE..." /></td>
 		 <td><strong>Organix: Nourishing Coconut Milk Shampoo + Conditioner (Combo Pack) (19.5 OUNCE...</strong> by <em>Organix</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FN5YN82"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FN5YN82"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ncj94SlhL._AC_SX236_SY340_QL65_.jpg" alt="OGX Anti-Breakage Keratin Oil Shampoo + Conditioner (19.5oz)" /></td>
 		 <td><strong>OGX Anti-Breakage Keratin Oil Shampoo + Conditioner (19.5oz)</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00M9D7D5Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31tlP5xPjkL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Olaplex</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SNM5US4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00M9D7D5Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JHQof5YPL._AC_SX236_SY340_QL65_.jpg" alt="Ogx Shampoo Niacin 3 &amp; Caffeine 13 Ounce (384ml) (2 Pack)" /></td>
 		 <td><strong>Ogx Shampoo Niacin 3 &amp; Caffeine 13 Ounce (384ml) (2 Pack)</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017HYB6A4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017HYB6A4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41e5PKstNkL._AC_SX236_SY340_QL65_.jpg" alt="OGX Extra Strength Damage Remedy + Coconut Miracle Oil Shampoo, 13 Ounce" /></td>
 		 <td><strong>OGX Extra Strength Damage Remedy + Coconut Miracle Oil Shampoo, 13 Ounce</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M5KZQF6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M5KZQF6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412dVJg-LML._AC_SX236_SY340_QL65_.jpg" alt="Ogx Shampoo Biotin &amp; Collagen 13 Ounce (384ml) (3 Pack)" /></td>
 		 <td><strong>Ogx Shampoo Biotin &amp; Collagen 13 Ounce (384ml) (3 Pack)</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GMP7OVA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B00GMP7OVA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51sYB-CstiL._AC_SX236_SY340_QL65_.jpg" alt="OGX Healing Plus Vitamin E Shampoo and Vitamin E Conditioner 13 oz [Bundle of..." /></td>
 		 <td><strong>OGX Healing Plus Vitamin E Shampoo and Vitamin E Conditioner 13 oz [Bundle of...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VGNGSA6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00VGNGSA6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51axloXaiOL._AC_SX236_SY340_QL65_.jpg" alt="OGX Eucalyptus Mint Shampoo &amp; Conditioner (13 Ounces)" /></td>
 		 <td><strong>OGX Eucalyptus Mint Shampoo &amp; Conditioner (13 Ounces)</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00ZZDGVUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00ZZDGVUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416cVV5qsLL._AC_SX236_SY340_QL65_.jpg" alt="OGX Limited Edition Holiday Collection 2018 Midnight Kisses Shampoo, 13 Ounce..." /></td>
 		 <td><strong>OGX Limited Edition Holiday Collection 2018 Midnight Kisses Shampoo, 13 Ounce...</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GPS4J86"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07GPS4J86"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41YBT6ne79L._AC_SX236_SY340_QL65_.jpg" alt="OGX (Thick &amp; Full) Biotin &amp; Collagen Shampoo + Conditioner 19.5oz, Duo-Set" /></td>
 		 <td><strong>OGX (Thick &amp; Full) Biotin &amp; Collagen Shampoo + Conditioner 19.5oz, Duo-Set</strong> by <em>OGX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00P1DJCXM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00P1DJCXM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

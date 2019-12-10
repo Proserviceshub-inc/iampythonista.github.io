@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Photo Scanner For Macs</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RACh3otpL._AC_SX236_SY340_QL65_.jpg" alt="Plustek-Photo-Scanner-Sensor-Support" /></td>
-		 <td><strong>Plustek-Photo-Scanner-Sensor-Support</strong> by <em>Plustek</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LZJH63M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kpr9yVphL._AC_SX236_SY340_QL65_.jpg" alt="HP-CF400X-Cartridge-Laserjet-M252dw" /></td>
-		 <td><strong>HP-CF400X-Cartridge-Laserjet-M252dw</strong> by <em>HP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UBMO61G"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Epson Perfection V600 Color Photo, Image, Film, Negative &amp; Document Scanner -..." /></td>
 		 <td><strong>Epson Perfection V600 Color Photo, Image, Film, Negative &amp; Document Scanner -...</strong> by <em>Epson</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002OEBMRU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002OEBMRU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fPv-7iVkL._AC_SX236_SY340_QL65_.jpg" alt="Epson Perfection V39 Color Photo &amp; Document Scanner with scan-to-Cloud &amp; 4800..." /></td>
 		 <td><strong>Epson Perfection V39 Color Photo &amp; Document Scanner with scan-to-Cloud &amp; 4800...</strong> by <em>Epson</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SSXQ7Q2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00SSXQ7Q2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Gk7lMoshL._AC_SX236_SY340_QL65_.jpg" alt="Fujitsu ScanSnap iX500 Color Duplex Desk Scanner for Mac and PC (PA03656-B305)" /></td>
 		 <td><strong>Fujitsu ScanSnap iX500 Color Duplex Desk Scanner for Mac and PC (PA03656-B305)</strong> by <em>Fujitsu</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G3JYVYM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01G3JYVYM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RACh3otpL._AC_SX236_SY340_QL65_.jpg" alt="Plustek Photo Scanner - ephoto Z300, Scan 4x6 Photo in 2sec, Auto Crop and Deskew..." /></td>
 		 <td><strong>Plustek Photo Scanner - ephoto Z300, Scan 4x6 Photo in 2sec, Auto Crop and Deskew...</strong> by <em>Plustek</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LZJH63M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LZJH63M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51gAQ44C2FL._AC_SX236_SY340_QL65_.jpg" alt="Epson FastFoto FF-680W Wireless High-Speed Photo and Document Scanning System" /></td>
 		 <td><strong>Epson FastFoto FF-680W Wireless High-Speed Photo and Document Scanning System</strong> by <em>Epson</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DLX26BB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DLX26BB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Z22VrTgNL._AC_SX236_SY340_QL65_.jpg" alt="Epson Perfection V370 Color Photo, Image, Film, Negative &amp; Document  Scanner..." /></td>
 		 <td><strong>Epson Perfection V370 Color Photo, Image, Film, Negative &amp; Document  Scanner...</strong> by <em>Epson</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008ZDCZ8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008ZDCZ8Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ike8zSfVL._AC_SX236_SY340_QL65_.jpg" alt="Doxie Go SE - The Intuitive Portable Scanner with Rechargeable Battery and Amazing..." /></td>
 		 <td><strong>Doxie Go SE - The Intuitive Portable Scanner with Rechargeable Battery and Amazing...</strong> by <em>Doxie</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073H7V4DM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41reMvJ8rLL._AC_SX236_SY340_QL65_.jpg" alt="HP-CF410A-Cartridge-Laserjet-M477fdn" /></td>
-		 <td><strong>HP-CF410A-Cartridge-Laserjet-M477fdn</strong> by <em>HP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0156KUB5M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073H7V4DM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411Dt9yaBPL._AC_SX236_SY340_QL65_.jpg" alt="Epson Perfection V800 Photo scanner" /></td>
 		 <td><strong>Epson Perfection V800 Photo scanner</strong> by <em>Epson</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00OCEJM9K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00OCEJM9K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41mOCpvgc5L._AC_SX236_SY340_QL65_.jpg" alt="Canon CanoScan 9000F MKII Photo, Film and Negative Scanner, Flatbed" /></td>
 		 <td><strong>Canon CanoScan 9000F MKII Photo, Film and Negative Scanner, Flatbed</strong> by <em>Canon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00AGV7TQG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00AGV7TQG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417vYU199YL._AC_SX236_SY340_QL65_.jpg" alt="Kodak Digital Film Scanner, Converts 35mm, 126, 110, Super 8 and 8mm Film Negatives..." /></td>
 		 <td><strong>Kodak Digital Film Scanner, Converts 35mm, 126, 110, Super 8 and 8mm Film Negatives...</strong> by <em>Kodak</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00O2BU8PK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00O2BU8PK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31cfutzirDL._AC_SX236_SY340_QL65_.jpg" alt="Doxie Flip - Cordless Flatbed Photo &amp; Notebook Scanner w/Removable Lid" /></td>
 		 <td><strong>Doxie Flip - Cordless Flatbed Photo &amp; Notebook Scanner w/Removable Lid</strong> by <em>Doxie</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00E00FSDU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00E00FSDU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51eqpP+k4PL._AC_SX236_SY340_QL65_.jpg" alt="DIGITNOW Photo Scanner Film &amp;Slide Multi-Function Scanner with HD 22MP, Convert..." /></td>
 		 <td><strong>DIGITNOW Photo Scanner Film &amp;Slide Multi-Function Scanner with HD 22MP, Convert...</strong> by <em>DIGITNOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077BTTG5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077BTTG5W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ELxAsHJbL._AC_SX236_SY340_QL65_.jpg" alt="Canon CanoScan LiDE220 Photo and Document Scanner" /></td>
 		 <td><strong>Canon CanoScan LiDE220 Photo and Document Scanner</strong> by <em>Canon</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LN0NUGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LN0NUGC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

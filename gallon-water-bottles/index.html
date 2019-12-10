@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Gallon Water Bottles</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+AI4HZfqL._AC_SX236_SY340_QL65_.jpg" alt="Coldest-Water-Insulated-Stainless-2-0-128" /></td>
-		 <td><strong>Coldest-Water-Insulated-Stainless-2-0-128</strong> by <em>The Coldest Water</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BMM9BSC"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414FJlhg68L._AC_SX236_SY340_QL65_.jpg" alt="Simple-Modern-Summit-Water-Bottle" /></td>
-		 <td><strong>Simple-Modern-Summit-Water-Bottle</strong> by <em>Simple Modern</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076CV59ZR"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Under Armour Sideline 64 Ounce Water Bottle, Black" /></td>
 		 <td><strong>Under Armour Sideline 64 Ounce Water Bottle, Black</strong> by <em>Thermos</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00KBHO0V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00KBHO0V2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41qDKbPYrLL._AC_SX236_SY340_QL65_.jpg" alt="RTIC One Gallon Vacuum Insulated Jug, Black" /></td>
 		 <td><strong>RTIC One Gallon Vacuum Insulated Jug, Black</strong> by <em>RTIC</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DHWHT1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DHWHT1G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Lt9i-jotL._AC_SX236_SY340_QL65_.jpg" alt="Simple Modern 40oz &amp; 64oz Summit Water Bottle + Extra Lid - Wide Mouth Vacuum..." /></td>
 		 <td><strong>Simple Modern 40oz &amp; 64oz Summit Water Bottle + Extra Lid - Wide Mouth Vacuum...</strong> by <em>Simple Modern</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N94CXXF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N94CXXF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310fL-Z38wL._AC_SX236_SY340_QL65_.jpg" alt="1 Gallon (128oz) Water Bottle With a Straw - Motivational Time Increments to..." /></td>
 		 <td><strong>1 Gallon (128oz) Water Bottle With a Straw - Motivational Time Increments to...</strong> by <em>Tymedration</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CYJW9SV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CYJW9SV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514n9Z9Or-L._AC_SX236_SY340_QL65_.jpg" alt="New Wave Enviro BpA Free 1 Gallon Water Bottle (Round)" /></td>
 		 <td><strong>New Wave Enviro BpA Free 1 Gallon Water Bottle (Round)</strong> by <em>New Wave</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005P0NPKM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B005P0NPKM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41u2EW6FKyL._AC_SX236_SY340_QL65_.jpg" alt="QuiFit Portable Drinking Straw Daily Water Bottle Sport Water Jug Gallon BPA..." /></td>
 		 <td><strong>QuiFit Portable Drinking Straw Daily Water Bottle Sport Water Jug Gallon BPA...</strong> by <em>QuiFit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HQ5YQCF"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HQ5YQCF"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412sn0yqgoL._AC_SX236_SY340_QL65_.jpg" alt="Hydro Jug | Stylish | Custom Gift Choice | 3 Months Warranty | Lightweight |..." /></td>
 		 <td><strong>Hydro Jug | Stylish | Custom Gift Choice | 3 Months Warranty | Lightweight |...</strong> by <em>SOCOO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C183Q6W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ji32kfMKL._AC_SX236_SY340_QL65_.jpg" alt="LifeStraw-Filter-2-Stage-Integrated-Backpacking" /></td>
-		 <td><strong>LifeStraw-Filter-2-Stage-Integrated-Backpacking</strong> by <em>LifeStraw</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01G7SQBPQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07C183Q6W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/413lfCnpLUL._AC_SX236_SY340_QL65_.jpg" alt="FUNUS Big Water Bottle 1.3-2.2L Water Bottle Huge Big Leak Proof BPA Free Large..." /></td>
 		 <td><strong>FUNUS Big Water Bottle 1.3-2.2L Water Bottle Huge Big Leak Proof BPA Free Large...</strong> by <em>FUNUS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FXKB7LY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FXKB7LY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51pZ7q09anL._AC_SX236_SY340_QL65_.jpg" alt="H2OCOACH Half Gallon Sports Water Bottle with Time Marker | Motivational 2.5..." /></td>
 		 <td><strong>H2OCOACH Half Gallon Sports Water Bottle with Time Marker | Motivational 2.5...</strong> by <em>H2OCOACH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DG35GLV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DG35GLV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41e5OHEAudL._AC_SX236_SY340_QL65_.jpg" alt="Geo Sports Bottles 1 Gallon (128oz) BPA Free Reusable Leak-Proof Drinking Water..." /></td>
 		 <td><strong>Geo Sports Bottles 1 Gallon (128oz) BPA Free Reusable Leak-Proof Drinking Water...</strong> by <em>Geo Sports Bottles</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074GMFGHJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B074GMFGHJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+AI4HZfqL._AC_SX236_SY340_QL65_.jpg" alt="The Coldest Water Bottle One Gallon Vacuum Insulated Stainless Steel Jug with..." /></td>
 		 <td><strong>The Coldest Water Bottle One Gallon Vacuum Insulated Stainless Steel Jug with...</strong> by <em>The Coldest Water</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BMM9BSC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BMM9BSC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hYG-nPIOL._AC_SX236_SY340_QL65_.jpg" alt="Half Gallon Water Bottle Dishwasher Safe US Eastman Tritan BPA Free Reusable..." /></td>
 		 <td><strong>Half Gallon Water Bottle Dishwasher Safe US Eastman Tritan BPA Free Reusable...</strong> by <em>ArtLife Sports</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H25MK33"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H25MK33"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414FJlhg68L._AC_SX236_SY340_QL65_.jpg" alt="Simple Modern 84oz Summit Water Bottle + Extra Lid - Wide Mouth Vacuum Insulated..." /></td>
 		 <td><strong>Simple Modern 84oz Summit Water Bottle + Extra Lid - Wide Mouth Vacuum Insulated...</strong> by <em>Simple Modern</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076CV59ZR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076CV59ZR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31NwQuKJnmL._AC_SX236_SY340_QL65_.jpg" alt="Highland Peak 64 oz Stainless Steel Insulated Water Bottle and Beer Growler by..." /></td>
 		 <td><strong>Highland Peak 64 oz Stainless Steel Insulated Water Bottle and Beer Growler by...</strong> by <em>Highland Peak</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01JL0VYCC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01JL0VYCC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

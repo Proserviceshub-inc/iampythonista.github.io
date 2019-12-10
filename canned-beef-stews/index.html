@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Canned Beef Stews</div>
@@ -86,99 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ha49qvxwL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Farmers Market Pet Food</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0728D6DB3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Armour Classic Homestyle Beef Stew, 20 Ounce (Pack of 12)" /></td>
 		 <td><strong>Armour Classic Homestyle Beef Stew, 20 Ounce (Pack of 12)</strong> by <em>Armour</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00N2IWFIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00N2IWFIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51eF1ZLiYjL._AC_SX236_SY340_QL65_.jpg" alt="Dinty Moore Beef Stew with Fresh Potatoes &amp; Carrots 20 oz (Pack of 12)" /></td>
 		 <td><strong>Dinty Moore Beef Stew with Fresh Potatoes &amp; Carrots 20 oz (Pack of 12)</strong> by <em>Dinty Moore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0005ZW3UA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0005ZW3UA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51eF1ZLiYjL._AC_SX236_SY340_QL65_.jpg" alt="Dinty Moore Beef Stew, 20 Ounce Can" /></td>
 		 <td><strong>Dinty Moore Beef Stew, 20 Ounce Can</strong> by <em>Dinty Moore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IVKN8GI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IVKN8GI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51dV9dBtkEL._AC_SX236_SY340_QL65_.jpg" alt="Dinty Moore Beef Stew, 9-Ounce Packages (Pack of 6)" /></td>
 		 <td><strong>Dinty Moore Beef Stew, 9-Ounce Packages (Pack of 6)</strong> by <em>Dinty Moore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001E52WAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001E52WAG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514XNvXDG7L._AC_SX236_SY340_QL65_.jpg" alt="Dinty Moore Big Bowls Beef Stew, 15 Ounce" /></td>
 		 <td><strong>Dinty Moore Big Bowls Beef Stew, 15 Ounce</strong> by <em>Dinty Moore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00286M6LU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00286M6LU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41iVcuWJBLL._AC_SX216_SY312_QL65_.jpg" alt="Dinty Moore Hearty Meals Beef Stew 20 oz (pack of 4)" /></td>
 		 <td><strong>Dinty Moore Hearty Meals Beef Stew 20 oz (pack of 4)</strong> by <em>Dinty Moore</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BLQ3O46"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BLQ3O46"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61uFJgCjcfL._AC_SX236_SY340_QL65_.jpg" alt="Armour Classic Homestyle Beef Stew, 20 Ounce" /></td>
 		 <td><strong>Armour Classic Homestyle Beef Stew, 20 Ounce</strong> by <em>Armour</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01GCNYLJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01GCNYLJY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/415jy8xt3JL._AC_SX236_SY340_QL65_.jpg" alt="Mountain House Beef Stew" /></td>
 		 <td><strong>Mountain House Beef Stew</strong> by <em>Mountain House</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000M7V18G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000M7V18G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rF5reV0BL._AC_SX236_SY340_QL65_.jpg" alt="Purina One Smartblend Natural Classic Ground Beef &amp; Brown Rice Entree Adult Wet..." /></td>
 		 <td><strong>Purina One Smartblend Natural Classic Ground Beef &amp; Brown Rice Entree Adult Wet...</strong> by <em>Purina ONE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004IN8YYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B004IN8YYO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5110GbX83LL._AC_SX236_SY340_QL65_.jpg" alt="Dinty Moore XL Beef Stew, 12.5 Ounce (Pack of 5)" /></td>
 		 <td><strong>Dinty Moore XL Beef Stew, 12.5 Ounce (Pack of 5)</strong> by <em>Compleats</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BZR7VX1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07BZR7VX1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HI2oK3sxL._AC_SX236_SY340_QL65_.jpg" alt="Great Value Canned Beef Stew, 20 oz" /></td>
 		 <td><strong>Great Value Canned Beef Stew, 20 oz</strong> by <em>Great Value</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06XZW6ZF9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B06XZW6ZF9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Mountain Bike Kickstands</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31l8fgrNoeL._AC_SX236_SY340_QL65_.jpg" alt="Sataway-Kickstand-Adjustable-Aluminum-Mountain" /></td>
-		 <td><strong>Sataway-Kickstand-Adjustable-Aluminum-Mountain</strong> by <em>Sataway</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G6NXFV5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51K6n+MnuVL._AC_SX236_SY340_QL65_.jpg" alt="Aluminium-Alloy-Kickstand-Mountain-Bicycles" /></td>
-		 <td><strong>Aluminium-Alloy-Kickstand-Mountain-Bicycles</strong> by <em>Greallthy</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LPYZ02C"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="BV Bike Kickstand - Alloy Adjustable Height Rear Side Bicycle Stand, for Bike..." /></td>
 		 <td><strong>BV Bike Kickstand - Alloy Adjustable Height Rear Side Bicycle Stand, for Bike...</strong> by <em>BV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LNM79CQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LNM79CQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Ux6z8vhwL._AC_SX236_SY340_QL65_.jpg" alt="TOPCABIN Bike Kickstand Adjustable Aluminium Alloy Bicycle Kickstand Bike Side..." /></td>
 		 <td><strong>TOPCABIN Bike Kickstand Adjustable Aluminium Alloy Bicycle Kickstand Bike Side...</strong> by <em>TOPCABIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00FIKIK7C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00FIKIK7C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51K6n+MnuVL._AC_SX236_SY340_QL65_.jpg" alt="Greallthy Aluminium Alloy Bike Kickstand (for Mountain Bikes, 700 Road Bicycles..." /></td>
 		 <td><strong>Greallthy Aluminium Alloy Bike Kickstand (for Mountain Bikes, 700 Road Bicycles...</strong> by <em>Greallthy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LPYZ02C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01LPYZ02C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41kc0qw3s-L._AC_SX236_SY340_QL65_.jpg" alt="TOPTREK Bike Kickstand Aluminum Alloy Adjustable Bicycle Kickstand Rear Side..." /></td>
 		 <td><strong>TOPTREK Bike Kickstand Aluminum Alloy Adjustable Bicycle Kickstand Rear Side...</strong> by <em>TOPTREK</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078SHN849"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B078SHN849"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31O092YvHvL._AC_SX236_SY340_QL65_.jpg" alt="Lumintrail Center Mount Double Leg Bike Kickstand Quick Adjust Height fits Most..." /></td>
 		 <td><strong>Lumintrail Center Mount Double Leg Bike Kickstand Quick Adjust Height fits Most...</strong> by <em>Lumintrail</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M1DUBM6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M1DUBM6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31sX9gREVyL._AC_SX236_SY340_QL65_.jpg" alt="BV Adjustable Bicycle Bike Kickstand with Concealed Spring-Loaded Latch, for..." /></td>
 		 <td><strong>BV Adjustable Bicycle Bike Kickstand with Concealed Spring-Loaded Latch, for...</strong> by <em>BV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00DYFS3N4"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41uRACU+OBL._AC_SX236_SY340_QL65_.jpg" alt="Kickstand-HOOPEN-Adjustable-Stand-Mountain" /></td>
-		 <td><strong>Kickstand-HOOPEN-Adjustable-Stand-Mountain</strong> by <em>HOOPEN</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076HNJ6B6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00DYFS3N4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Yj3-l881L._AC_SX236_SY340_QL65_.jpg" alt="Puroma Adjustable Bicycle Kickstand, Center Side Kick Stand, Aluminum Alloy Prop..." /></td>
 		 <td><strong>Puroma Adjustable Bicycle Kickstand, Center Side Kick Stand, Aluminum Alloy Prop...</strong> by <em>Puroma</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D7VJM7B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07D7VJM7B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51u3dk7cYIL._AC_SX236_SY340_QL65_.jpg" alt="BV Bike Kickstand, Center Mount Bicycle Stand - Length Adjustable, Foldable Double..." /></td>
 		 <td><strong>BV Bike Kickstand, Center Mount Bicycle Stand - Length Adjustable, Foldable Double...</strong> by <em>BV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00LNLXML4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00LNLXML4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Foa44wSQL._AC_SX236_SY340_QL65_.jpg" alt="Lumintrail Center Mount Bike Kickstand Quick Adjust Height Side Stand fits Most..." /></td>
 		 <td><strong>Lumintrail Center Mount Bike Kickstand Quick Adjust Height Side Stand fits Most...</strong> by <em>Lumintrail</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LWIRFXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LWIRFXB"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31Qj3woiqTL._AC_SX236_SY340_QL65_.jpg" alt="Greenfield SKS2 Rear-Mounted Bicycle Kickstand" /></td>
 		 <td><strong>Greenfield SKS2 Rear-Mounted Bicycle Kickstand</strong> by <em>Greenfield</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002FVYTLI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002FVYTLI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31J5Ai-k+tL._AC_SX236_SY340_QL65_.jpg" alt="Greenfield Kickstand" /></td>
 		 <td><strong>Greenfield Kickstand</strong> by <em>Greenfield</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000AOA452"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000AOA452"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JXSObE1vL._AC_SX236_SY340_QL65_.jpg" alt="FOXNOVO Adjustable Kickstand Kick Stand Mount for MTB Mountain Bicycle Cycling..." /></td>
 		 <td><strong>FOXNOVO Adjustable Kickstand Kick Stand Mount for MTB Mountain Bicycle Cycling...</strong> by <em>Foxnovo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IHV8ZTG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01IHV8ZTG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

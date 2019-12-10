@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Toilet Repair Kits</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="Fluidmaster-400CRP14-Universal-Flapper-Toilets" /></td>
-		 <td><strong>Fluidmaster-400CRP14-Universal-Flapper-Toilets</strong> by <em>Fluidmaster</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007TUHQWY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310aq0dkSZL._AC_SX236_SY340_QL65_.jpg" alt="Fluidmaster-703AP4-Specialty-Conservation-Flapperless" /></td>
-		 <td><strong>Fluidmaster-703AP4-Specialty-Conservation-Flapperless</strong> by <em>Fluidmaster</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B004TPTFEE"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Fluidmaster 400AKRP10 Universal, All In One, Complete Toilet Tank Repair Kit..." /></td>
 		 <td><strong>Fluidmaster 400AKRP10 Universal, All In One, Complete Toilet Tank Repair Kit...</strong> by <em>Fluidmaster</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0002YVK44"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0002YVK44"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416nmwpxmLL._AC_SX236_SY340_QL65_.jpg" alt="Fluidmaster 400CRP14 Universal Toilet Fill Valve and Flapper Repair Kit, for..." /></td>
 		 <td><strong>Fluidmaster 400CRP14 Universal Toilet Fill Valve and Flapper Repair Kit, for...</strong> by <em>Fluidmaster</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007TUHQWY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B007TUHQWY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41HnO6qG5eL._AC_SX236_SY340_QL65_.jpg" alt="Fluidmaster 400ARHRKP10 PerforMAX Universal High Performance All-In-One Toilet..." /></td>
 		 <td><strong>Fluidmaster 400ARHRKP10 PerforMAX Universal High Performance All-In-One Toilet...</strong> by <em>Fluidmaster</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01E1E1K1S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01E1E1K1S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AtOgLxYeL._AC_SX236_SY340_QL65_.jpg" alt="Korky 4010PK Universal Complete Repair-Stops Running Leaking Noisy Toilets-Easy..." /></td>
 		 <td><strong>Korky 4010PK Universal Complete Repair-Stops Running Leaking Noisy Toilets-Easy...</strong> by <em>Korky</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B003V934X2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B003V934X2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41EI6+qmMJL._AC_SX236_SY340_QL65_.jpg" alt="Universal Toilet Fill Valve Kit Easy and Rapid Adjustable Water Line - Toilet..." /></td>
 		 <td><strong>Universal Toilet Fill Valve Kit Easy and Rapid Adjustable Water Line - Toilet...</strong> by <em>Hibbent</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H27NYNP"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/310eacGV+cL._AC_SX236_SY340_QL65_.jpg" alt="Fluidmaster-PerforMAX-Universal-Performance-Toilet" /></td>
-		 <td><strong>Fluidmaster-PerforMAX-Universal-Performance-Toilet</strong> by <em>Fluidmaster</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006MWQKOU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07H27NYNP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417Dq0bXtLL._AC_SX236_SY340_QL65_.jpg" alt="Fluidmaster 402CARHRP14 PerforMAX Universal High Performance Toilet Fill Valve..." /></td>
 		 <td><strong>Fluidmaster 402CARHRP14 PerforMAX Universal High Performance Toilet Fill Valve...</strong> by <em>Fluidmaster</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01E1E20QC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01E1E20QC"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51I+XM97QNL._AC_SX236_SY340_QL65_.jpg" alt="NEXT BY DANCO HydroRight Universal Water-Saving Total Toilet Repair Kit with..." /></td>
 		 <td><strong>NEXT BY DANCO HydroRight Universal Water-Saving Total Toilet Repair Kit with...</strong> by <em>Next by Danco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005FPNGWO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B005FPNGWO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41um-OaCl0L._AC_SX236_SY340_QL65_.jpg" alt="Korky 818CP 818BP QuietFILL Universal Toilet Fill Valve and Premium Flapper -..." /></td>
 		 <td><strong>Korky 818CP 818BP QuietFILL Universal Toilet Fill Valve and Premium Flapper -...</strong> by <em>Korky</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000WE53NI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000WE53NI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/514zQkVgXxL._AC_SX236_SY340_QL65_.jpg" alt="NEXT BY DANCO HydroRight Universal Water-Saving Total Toilet Repair Kit with..." /></td>
 		 <td><strong>NEXT BY DANCO HydroRight Universal Water-Saving Total Toilet Repair Kit with...</strong> by <em>Next by Danco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00B9BNGU0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00B9BNGU0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419omgtGPqL._AC_SX236_SY340_QL65_.jpg" alt="NEXT BY DANCO HydroStop Toilet Tank Flapper Replacement, Gray and Chrome, 1-Pack..." /></td>
 		 <td><strong>NEXT BY DANCO HydroStop Toilet Tank Flapper Replacement, Gray and Chrome, 1-Pack...</strong> by <em>Next by Danco</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BQK1EDK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BQK1EDK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31lzCa7xpcL._AC_SX236_SY340_QL65_.jpg" alt="WDI B3260 Universal Fill Valve for Most Toilets" /></td>
 		 <td><strong>WDI B3260 Universal Fill Valve for Most Toilets</strong> by <em>WDI Technology Co. Ltd.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075DCRFM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B075DCRFM4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411+GlfXIeL._AC_SX236_SY340_QL65_.jpg" alt="FLUSH N SPARKLE 400AFS Fluidmaster Complete Toilet Repair Kit with Cleaning System" /></td>
 		 <td><strong>FLUSH N SPARKLE 400AFS Fluidmaster Complete Toilet Repair Kit with Cleaning System</strong> by <em>FLUSH N SPARKLE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B009XUGY2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B009XUGY2G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

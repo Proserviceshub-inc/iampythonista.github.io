@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Am Antennas</div>
@@ -86,131 +95,159 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51HnNB2-KxL._AC_SX236_SY340_QL65_.jpg" alt="ANTOP-Antenna-Signals-Adapter-Connector" /></td>
-		 <td><strong>ANTOP-Antenna-Signals-Adapter-Connector</strong> by <em>ANTOP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DXK6Q4Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41hjXulxepL._AC_SX236_SY340_QL65_.jpg" alt="ANTOP-Digital-Amplified-Broadcast-Receiver" /></td>
-		 <td><strong>ANTOP-Digital-Amplified-Broadcast-Receiver</strong> by <em>ANTOP</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07J5LNZFG"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Terk Indoor AM Antenna ADVANTAGE" /></td>
 		 <td><strong>Terk Indoor AM Antenna ADVANTAGE</strong> by <em>Terk</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000069EUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000069EUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/416ccDBrGyL._AC_SX236_SY340_QL65_.jpg" alt="Fancasee AM Loop Antenna 2 Pin Bare Wire Connector AM Antenna Cable Wire for..." /></td>
 		 <td><strong>Fancasee AM Loop Antenna 2 Pin Bare Wire Connector AM Antenna Cable Wire for...</strong> by <em>Fancasee</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0793F5JWR"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0793F5JWR"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BI8zhIBXL._AC_SX236_SY340_QL65_.jpg" alt="Ancable Hi-Fi AM Loop Wire Antenna for Sharp/Panasonic etc. Receiver Runer Audio..." /></td>
 		 <td><strong>Ancable Hi-Fi AM Loop Wire Antenna for Sharp/Panasonic etc. Receiver Runer Audio...</strong> by <em>Ancable</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CSFVFT4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01CSFVFT4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41U7qlbKhvL._AC_SX236_SY340_QL65_.jpg" alt="Eton Corp. NGAN200 Grundig Indoor Antenna" /></td>
 		 <td><strong>Eton Corp. NGAN200 Grundig Indoor Antenna</strong> by <em>Eton</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001PNNXGO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B001PNNXGO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41GQA5gmawL._AC_SX236_SY340_QL65_.jpg" alt="Tecsun AN-200 AM/MW Rotatable Tuneable Loop Gain Radio Antenna(No Battery Needed)" /></td>
 		 <td><strong>Tecsun AN-200 AM/MW Rotatable Tuneable Loop Gain Radio Antenna(No Battery Needed)</strong> by <em>Tecsun</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00BLW627G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00BLW627G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51shUGf42wL._AC_SX236_SY340_QL65_.jpg" alt="ANTOP Radio Antenna, Indoor Amplified AM FM Antenna 50 Miles Multi-Directional..." /></td>
 		 <td><strong>ANTOP Radio Antenna, Indoor Amplified AM FM Antenna 50 Miles Multi-Directional...</strong> by <em>ANTOP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07HMPV582"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07HMPV582"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411jro+waLL._AC_SX236_SY340_QL65_.jpg" alt="Ancable Replacement AM Antenna 2-Pin Mini Connector for Sony Compact Disc Receiver..." /></td>
 		 <td><strong>Ancable Replacement AM Antenna 2-Pin Mini Connector for Sony Compact Disc Receiver...</strong> by <em>Ancable</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M8PRIDT"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31ipV7sGYoL._AC_SX236_SY340_QL65_.jpg" alt="Magadyne-Recreational-Vehicle-Antenna-RV71" /></td>
-		 <td><strong>Magadyne-Recreational-Vehicle-Antenna-RV71</strong> by <em>Magnadyne</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00V5P6N3W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M8PRIDT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31YALh0bQeL._AC_SX236_SY340_QL65_.jpg" alt="Herdio Waterproof Marine Radio Antenna Rubber Duck Dipole Flexible Mast FM AM..." /></td>
 		 <td><strong>Herdio Waterproof Marine Radio Antenna Rubber Duck Dipole Flexible Mast FM AM...</strong> by <em>Herdio</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B073W5V6BG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B073W5V6BG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/411rU7VS2UL._AC_SX236_SY340_QL65_.jpg" alt="Car Magnet Antenna Universal Magnetic Am Fm Antenna for Radio Car Home 16ft Long..." /></td>
 		 <td><strong>Car Magnet Antenna Universal Magnetic Am Fm Antenna for Radio Car Home 16ft Long...</strong> by <em>CHHLIUT</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07DCQJX3R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07DCQJX3R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51d2xGrKCyL._AC_SX236_SY340_QL65_.jpg" alt="ANTV Amplified Radio Antenna, 50 Miles Indoor FM/AM Antenna for Stereo Radio..." /></td>
 		 <td><strong>ANTV Amplified Radio Antenna, 50 Miles Indoor FM/AM Antenna for Stereo Radio...</strong> by <em>ANTV</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JV9VGF9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07JV9VGF9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ajs1bKSuL._AC_SX236_SY340_QL65_.jpg" alt="ANTOP Amplified Radio Antenna,Indoor AM/FM Antenna for Home Stereo Receiver Use" /></td>
 		 <td><strong>ANTOP Amplified Radio Antenna,Indoor AM/FM Antenna for Home Stereo Receiver Use</strong> by <em>ANTOP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GVDL42C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GVDL42C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LLe+wB4ZL._AC_SX236_SY340_QL65_.jpg" alt="Amplified Indoor AM/FM Antenna, 50 Mile Radio Antenna for AM/FM Radio Signal..." /></td>
 		 <td><strong>Amplified Indoor AM/FM Antenna, 50 Mile Radio Antenna for AM/FM Radio Signal...</strong> by <em>ANTOP</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KHXHW4T"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07KHXHW4T"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Q00zGtrDL._AC_SX236_SY340_QL65_.jpg" alt="Kaito AN-100 Tunable Passive AM Radio Loop Antenna for All Brands Like Kaito,..." /></td>
 		 <td><strong>Kaito AN-100 Tunable Passive AM Radio Loop Antenna for All Brands Like Kaito,...</strong> by <em>Kaito</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001KC579Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001KC579Q"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -218,7 +255,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -246,13 +283,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

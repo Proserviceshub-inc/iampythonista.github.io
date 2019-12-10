@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Pancake Makers</div>
@@ -86,107 +95,123 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51TmSGIkHNL._AC_SX236_SY340_QL65_.jpg" alt="Flip-Cooker-Pancakes-Mold-Silicone" /></td>
-		 <td><strong>Flip-Cooker-Pancakes-Mold-Silicone</strong> by <em>Life \uff06 Kitchen</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07MJLR1XR"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eouuuLVgL._AC_SX236_SY340_QL65_.jpg" alt="Silicone-Pancake-Elover-Reusable-Flipper" /></td>
-		 <td><strong>Silicone-Pancake-Elover-Reusable-Flipper</strong> by <em>Elover</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078W237FY"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Dash DMS001WH Mini Maker Electric Round Griddle for Individual Pancakes, Cookies..." /></td>
 		 <td><strong>Dash DMS001WH Mini Maker Electric Round Griddle for Individual Pancakes, Cookies...</strong> by <em>DASH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B010XQZIBQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B010XQZIBQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513yUiwtwsL._AC_SX236_SY340_QL65_.jpg" alt="Gourmia GPA9510 Blini Pan Nonstick Silver Dollar Pancake Pan With 7-Mold Design..." /></td>
 		 <td><strong>Gourmia GPA9510 Blini Pan Nonstick Silver Dollar Pancake Pan With 7-Mold Design...</strong> by <em>Gourmia</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MREGYOP"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MREGYOP"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31r203FohQL._AC_SX236_SY340_QL65_.jpg" alt="Presto 07061 22-inch Electric Griddle With Removable Handles" /></td>
 		 <td><strong>Presto 07061 22-inch Electric Griddle With Removable Handles</strong> by <em>Presto</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B005FYF3OY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B005FYF3OY"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51l8gdwg3DL._AC_SX236_SY340_QL65_.jpg" alt="Animal Mini Waffle Maker- Makes 7 Fun, Different Shaped Pancakes - Electric Non-stick..." /></td>
 		 <td><strong>Animal Mini Waffle Maker- Makes 7 Fun, Different Shaped Pancakes - Electric Non-stick...</strong> by <em>CucinaPro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0721CXBWG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0721CXBWG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414EGpNrq0L._AC_SX236_SY340_QL65_.jpg" alt="Cuisinart WAF-300 Belgian Waffle Maker with Pancake Plates" /></td>
 		 <td><strong>Cuisinart WAF-300 Belgian Waffle Maker with Pancake Plates</strong> by <em>Cuisinart</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EQT6EBU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VzgQZAkrL._AC_SX236_SY340_QL65_.jpg" alt="Secura-GR-1503XL-Electric-Reversible-Griddle" /></td>
-		 <td><strong>Secura-GR-1503XL-Electric-Reversible-Griddle</strong> by <em>Secura</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00MF55AAI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00EQT6EBU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41258MOFL5L._AC_SX236_SY340_QL65_.jpg" alt="Disney DCM-12 Mickey Mouse Waffle Maker, Red" /></td>
 		 <td><strong>Disney DCM-12 Mickey Mouse Waffle Maker, Red</strong> by <em>Disney</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01AVWGBG8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01AVWGBG8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41-hZXW+2aL._AC_SX236_SY340_QL65_.jpg" alt="Holstein Housewares HU-09005R-M Arepa Maker - Metallic Red" /></td>
 		 <td><strong>Holstein Housewares HU-09005R-M Arepa Maker - Metallic Red</strong> by <em>Holstein Housewares</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00PY3SVM2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00PY3SVM2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51JbKAxRKIL._AC_SX236_SY340_QL65_.jpg" alt="Hamilton Beach 040094923793 25490A Dual Breakfast Sandwich Maker, Double w/Timer..." /></td>
 		 <td><strong>Hamilton Beach 040094923793 25490A Dual Breakfast Sandwich Maker, Double w/Timer...</strong> by <em>Hamilton Beach</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00N3L2DMG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00N3L2DMG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31MXxCjCFFL._AC_SX236_SY340_QL65_.jpg" alt="Oster Belgian Waffle Maker, Stainless Steel (CKSTWF2000-1AM)" /></td>
 		 <td><strong>Oster Belgian Waffle Maker, Stainless Steel (CKSTWF2000-1AM)</strong> by <em>Oster</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00A1MEP6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00A1MEP6M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510BlzHNoGL._AC_SX236_SY340_QL65_.jpg" alt="Nonstick 12-Inch Electric Crepe Maker - Aluminum Griddle Hot Plate Cooktop with..." /></td>
 		 <td><strong>Nonstick 12-Inch Electric Crepe Maker - Aluminum Griddle Hot Plate Cooktop with...</strong> by <em>NutriChef</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0179IU3XE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0179IU3XE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

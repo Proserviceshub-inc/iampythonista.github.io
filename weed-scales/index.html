@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Weed Scales</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t0TstNHjL._AC_SX236_SY340_QL65_.jpg" alt="Weigh-Gram-Digital-Jewelry-Kitchen" /></td>
-		 <td><strong>Weigh-Gram-Digital-Jewelry-Kitchen</strong> by <em>Weigh Gram</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y61YW7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41bhufuBO1L._AC_SX236_SY340_QL65_.jpg" alt="Digital-Kitchen-Scale-Zerla-Versatile" /></td>
-		 <td><strong>Digital-Kitchen-Scale-Zerla-Versatile</strong> by <em>ZERLA</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01A6D9ANI"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="American Weigh Scales AWS-600-BLK Digital Personal Nutrition Scale, Pocket Size..." /></td>
 		 <td><strong>American Weigh Scales AWS-600-BLK Digital Personal Nutrition Scale, Pocket Size...</strong> by <em>American Weigh Scales</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000O37TDO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000O37TDO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41tJWv3fqTL._AC_SX236_SY340_QL65_.jpg" alt="Toprime Digital Gram Scale, Mini Size Food Scale 600g x 0.01g, High Precision..." /></td>
 		 <td><strong>Toprime Digital Gram Scale, Mini Size Food Scale 600g x 0.01g, High Precision...</strong> by <em>Toprime</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WD3C2KV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06WD3C2KV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51t0TstNHjL._AC_SX236_SY340_QL65_.jpg" alt="Weigh Gram Scale Digital Pocket Scale,100g by 0.01g,Digital Grams Scale, Food..." /></td>
 		 <td><strong>Weigh Gram Scale Digital Pocket Scale,100g by 0.01g,Digital Grams Scale, Food...</strong> by <em>Weigh Gram</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06Y61YW7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06Y61YW7S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51CBPfYwrtL._AC_SX236_SY340_QL65_.jpg" alt="Smart Weigh SWS600 Elite Pocket Sized Digital Gram Scale,Jewelry Scale,Nutrition..." /></td>
 		 <td><strong>Smart Weigh SWS600 Elite Pocket Sized Digital Gram Scale,Jewelry Scale,Nutrition...</strong> by <em>Smart Weigh</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GS8LWIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00GS8LWIW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51fwkr8odlL._AC_SX236_SY340_QL65_.jpg" alt="Smart Weigh SWS100 Elite Digital Pocket Gram Scale,Kitchen Nutrition Scale,Jewelry..." /></td>
 		 <td><strong>Smart Weigh SWS100 Elite Digital Pocket Gram Scale,Kitchen Nutrition Scale,Jewelry...</strong> by <em>Smart Weigh</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00EPO9M2Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00EPO9M2Y"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41A79yuOSKL._AC_SX236_SY340_QL65_.jpg" alt="American Weigh Scales Signature Series Black AWS-1KG-BLK Digital Pocket Scale..." /></td>
 		 <td><strong>American Weigh Scales Signature Series Black AWS-1KG-BLK Digital Pocket Scale...</strong> by <em>American Weigh Scales</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002SC3LLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B002SC3LLS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i6dN+TssL._AC_SX236_SY340_QL65_.jpg" alt="Etekcity Digital Kitchen Scale Multifunction Food Scale with Removable Bowl 2.15L..." /></td>
 		 <td><strong>Etekcity Digital Kitchen Scale Multifunction Food Scale with Removable Bowl 2.15L...</strong> by <em>Etekcity</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UIVIXVO"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RJE1HN9UL._AC_SX236_SY340_QL65_.jpg" alt="TBBSC-Electronic-Digital-Balance-Silver-200g" /></td>
-		 <td><strong>TBBSC-Electronic-Digital-Balance-Silver-200g</strong> by <em>TBBSC</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013L9DJRC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00UIVIXVO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MQKvsBcgL._AC_SX236_SY340_QL65_.jpg" alt="Smart Weigh Premium High Precision Digital Milligram Scale with Case, Tweezers..." /></td>
 		 <td><strong>Smart Weigh Premium High Precision Digital Milligram Scale with Case, Tweezers...</strong> by <em>Smart Weigh</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011J88S8M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B011J88S8M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41BPROSBiZL._AC_SX236_SY340_QL65_.jpg" alt="NEXT-SHINE P221 Gram Scale Digital Kitchen Series Scale 500 x 0.01g Multi-functionals..." /></td>
 		 <td><strong>NEXT-SHINE P221 Gram Scale Digital Kitchen Series Scale 500 x 0.01g Multi-functionals...</strong> by <em>NEXT-SHINE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017LUWCAW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017LUWCAW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41wVh9IqviL._AC_SX236_SY340_QL65_.jpg" alt="Digital Kitchen Scale/Food Scale - Gorgeous Slim, Compact Design, Multi-functional..." /></td>
 		 <td><strong>Digital Kitchen Scale/Food Scale - Gorgeous Slim, Compact Design, Multi-functional...</strong> by <em>Vont</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FLM2784"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01FLM2784"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41gqJP+l1ML._AC_SX236_SY340_QL65_.jpg" alt="EX-650C Black Digital Coin/Jewelry Pocket Scale 650 gm Weighmax" /></td>
 		 <td><strong>EX-650C Black Digital Coin/Jewelry Pocket Scale 650 gm Weighmax</strong> by <em>Weighmax</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002HEIE0U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B002HEIE0U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RCSHRrJ4L._AC_SX236_SY340_QL65_.jpg" alt="GDEALER DS1 Digital Pocket Kitchen Multifunction Food Scale for Bake Jewelry..." /></td>
 		 <td><strong>GDEALER DS1 Digital Pocket Kitchen Multifunction Food Scale for Bake Jewelry...</strong> by <em>GDEALER</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01E6RE3A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01E6RE3A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ll4nIgvfL._AC_SX236_SY340_QL65_.jpg" alt="Mini Scales Digital Weight Grams - SKYROKU Pocket Portable Scale for Jewelry..." /></td>
 		 <td><strong>Mini Scales Digital Weight Grams - SKYROKU Pocket Portable Scale for Jewelry...</strong> by <em>SKYROKU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LWTAJ66"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01LWTAJ66"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41GKXfShTvL._AC_SX236_SY340_QL65_.jpg" alt="Multifunction Digital LCD Screen Pocket Scales,with Large Plastic Platform and..." /></td>
 		 <td><strong>Multifunction Digital LCD Screen Pocket Scales,with Large Plastic Platform and...</strong> by <em>SENDY FEATHER</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077XSKZQJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077XSKZQJ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,42 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51LyJZyYs+L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>evalectric flat iron</strong></td>
+                 <td style="text-align: center;"><a href="/evalectric-flat-iron"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="https://images-na.ssl-images-amazon.com/images/I/41+T1pd-W1L._AC_SX236_SY340_QL65_.jpg"/></td>
+                 <td><strong>rival ice cream machines</strong></td>
+                 <td style="text-align: center;"><a href="/rival-ice-cream-machines"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,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"/></td>
+                 <td><strong>holmes electric space heaters</strong></td>
+                 <td style="text-align: center;"><a href="/holmes-electric-space-heaters"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<tr>
+                 <td ><img class="relatd" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCACdAOwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1yiiigAooooAKKKKACiiigAooooAKKK4jxf8AES30VpLDSgt3qQ+VjnMcB/2j3Pt+dAHV6nq9ho1sbjUruK2i/vSNjP0HeuC1X4w2UTFNH0+a7P8Az1mPlJ+HUn8hXm19c3Wq3bXmp3D3VwT95zwvsB0AquUAp2Fc6S/+Jvim9JEdxBZIe1vCCfzbNYNzruuXjA3Gs3r/AOz57bT+GcVWIx2yfSkI24znnoB3pgI7zSsWlld2PUk0LI8fKTSDHUq5ApGIx82Bg9M8D6+pqF2y38qALketalbEC21G+jwf4LmRQP1q3D438S23Met3X0d/M/8AQs1iHJ4NJigDsLP4reKLQjzbiC8A7T26j/0Eiul0/wCNkZIXU9HkT1e3kDf+OnH868qxSY9KVgPaNX+LmmxWMUmix/bJ3bDxzZj8se/HOfarHh34r6RrEqW1+jabdOcDzG3RsfQN2/ECvDwdpzinERuOmG9+lFgufVQORkUVxHw58X2WsaTBpbOY9RtIwrRyNkyKP4lPce3au3pDCiiigAooooAKKKKACiiigAooooAKKKKACgnAyaK81+IfjFhJJoemSYI4uplPI/2B/X8qAIfGvxAkuJJNK0CYpGMrPeoeT6rGf5t+XrXnixqi4UcetOACKAowBUcsyRKd7AD3qhCtxmmHn2qxNZ3lvbQXN1bSQQTnETSDbv4zwOuPfGKgYhRk9uw70AMPyAcZJPA9ajZgMnOT0OOM+w9qexI3Fzz3x/DnoB7/AOfSqkjlj0AHYDoBQA1mz0GP5D6U0U7jFIRQAnakpaKAEYHBx1p2FYxqOASQx/rSdaKAEPBI9DikxninbaXGOtABC81tPHcW0rxTxHckkbYZSPQ17D4K+JseomLTfEDJDfHCx3PAjn+vZW/Q+3SvHwQXH0qQoskShhkFB/WgD6joryDwF8RZLGWHR9fmL27YS3u3PKeiufT37fTp6/UjCiiigAooooAKKKKACiiigAoopssqQRPLKwSONSzMegA5JoA5rxz4n/4R3SdlswOoXWUgH931c+wz+ZFeLAEAlmLMxyzNyWPcmtPxBrMniDW7jUJMiMnZAh/gjHQfjyT7ms3sTVCIbiUxJlV3MThVHc9q9DsvB6+FNITULqFLvWHIMjnBW1U9kHTPbd+VcDHLJa3tpeQgNLazJMqt0YqQQD+VelS/FDQbiEPJbXIkP3oimTn696APM9QvL+fUJrjV1m+1scEOpwo7BfaqhuUyCeG/hB6D3r0h/iRoQQldLmZVxwUxgfn9PyqlL478NzE+doj59Cgb9aAPPmmjJwrZUZ69T70zcDyDXbya/wCCLokz6I6k9WEZH8j6VSktfAl6V8m9vLBiOQfmGfxFAHKUh9a6OTwX543aNrdje9/LZtj/AOf8aw7/AE290mcW+pW7W8pGVDdGHqCODQBXNFJmigBaUDJpKUfnQAvpSelL/SigBBwc9gKsRofLXPUIBUGNwCjq7Y/DvVtOFb0ztH4f5NAEMkYkUqwyDXp/wx8bszR+HtXlJkAxZzufvAf8syfUdvy9M+aleeKjdG3K0bFJFIZGB5UjoRQB9Q0Vy3gHxT/wk+hBpyBf2pEVwvqezfj/ADzXU1IwooooAKKKKACiiigArjPiXq5sdAFlE2Jb1thx2Qcn+grs68V8bawNb8RSPDl7e2/cxEDIOOp/E/yoQHN4wAoFNflgo/GpNpVSWVgT3IqLkIxUbnPb0qhDc4cj0pJNsSbmAz6UsK5frk96ikYyTM5BKxnCgfxN6UANkbaOf4OSPVz0/AdfyquSFG09c5/GnnLFhnds7+rHqf6fTFRmM9aAEOCO2P8AP+faoHXJ5FT4xUUi7aAIfLAORlfccVIzySFTLK8jKMAu2cD0pKKAFzSim+lOHT2FAC9vpSig8UD+tADj/Kk60Z9KOnJ6YzQA+P8A1pb/AJ5rgfU/5FTj5UwO1Q24+XJHLHcfpUx5zQAopspxt5A4JJIz0GcUoPT9aX7ylfyoA6DwJq7aF4wtWdttveH7PMCeOfun8Dj8698r5imXfGQDgjoR2Ir6G8Kat/bnhjT79jmSWICT/fHyt+oNJga9Q3F5bWi7rq4ihX1kcKP1rx7xZ8T9Tvr6ex8PuLW1iYobgfffHcHsP1rhZvOupTLe3k08h6ksSfzNIZ9BXHjjw7bEh9VhYj/nkGk/9BBrGuviz4ftyRGl7Oe2yHaD/wB9EV4l5MY6b/xaniR0GBIxX0Y5FAHqlx8ZYuRa6PI3vLMF/QA1mXHxc1WVWEFtawHsSrMR+tefl43zvxG3qvT8qjLlDgkEdiOhpiOwu/HWv30RDas0SNxiONRn1wQM+o/KudKvt4feBwNp5z/jVIN1I4JpwlP8XcYpgTCeQY2yuv4077bOv3tsnP8AEOT+IqvvzwefejPbNAFuO+hH+sV4nxgHG5R1/EdaSV1WIuhBUAhSpyBn09+vNVc57UzywCSpKk+lAEkLF14GEGcf1NEkoXiowTGMcg427h6dfz4poCsxckbeW69BQA4yg9uc1E77qdIFBx0NRcHnvQA4DIxTcc0q80rCgBB608UwU/vQAMcfSj6UH1pq/wD6qAJMYpG+YBf77YP0p3bHrSxLmRj2T5fx7/59qAJlyM+gpQcUhpfSgAI5pwzmkpwxnNACjqRXp3wz12HT/Dk9tct9y7coCcYUqp/mTXmK9a0tPvDbQugOMvn9BQB6Jr/wls9RvZbvS71rB5mLvEU3xlj1I5BH0rE/4U1qW7nWLbb6+U2f516/RUjPJY/gxdE/vtbjA/2Lc5/U1o2/wZ01cG51S8l9kCoP5GvSaKAONtvhX4Yt8F7SWcjvNMxz+AxUurfDbw9qVh9ngs1sZF+5NbjBU+47j611tFAHzZ4j8Naj4Svvs+opuhcnyblB8kg/ofUHp9Oay819N6tpNnrenS2OoQrNbyjkHqD2IPYj1rwDxb4SvPB2oCOQmawlJ8i4x/463oadxGJQP1pO1HWmA4Gne45plKPWgBwPbvTWjV+R8pz1FL1FFAEEispzJ3Odw6H6+lR52DDdcVcz+VQvb8HyvxQ9PwoAYvrTx+tRKOeAc5xtPUVIhB9xQAYwSaU8HGfrTjwP1zTB06YoAM8YpB1pw4pvT86AH79qluDtH6+lTRpsjRTnOMk/5/H86hCl3Vc98knt6VZLDBwMZ/l70AHX3paRef8A61L9KAFHTNPFMHNOFADh1rV0rTHv7eSRFZgshU4GewP9ayh3r1v4V6ch8JvPMm77RdSOpPoAF/mpoYHfUUUVIwooooAKKKKACqeraTZ63p01hqEIlglGCD1B7EHsR61cooA+cfFPhW88Ial9mucy2UpJt7kDhh6H0I9Kx8Yr6W1vRbLxBpc2n6hEHhkHB7o3ZlPYivnrXtBvPDGrvpt8Nw+9BMB8sqdiP8O1NMRne1L0oFLTAT+Y6e1KOf8APWjvSjHcdfSgBP6fpR707Gf4x7butOG49AnB74oAidVkxu4I6MOoqMo0ZAlG0MMLJjgj3qyNwBIZV+mBnj2/KkO1fvHfnqD0NAEB688enuPWlxgU/wAplBMa5j6mMnoOvBpgGcleSOq45HPTFADDSn5QxIzto3DcxHb+dKibnA7Jyf8AP+etAD4l8tMHlnPNOzzQeefWgcigB69Mj9KcKaKd7UAOAwOadTQcc08dKAGyNsjdj0Ar6C8I6edL8KaXaMMOkClx/tN8zfqTXhuiaadZ8Qafp+MpNMPM/wBwct+gr6LAAGB0FJggooopDCiiigAooooAKKKKACsLxb4WtfFejvZz4SdfmgmxzG/+HqK3aKAPmG9sbvS7+fT9QiMV3AcMp6EdiPUHrmoa918feC4/FOnie1Cx6tbLmCTpvH9xj6Ht6H6nPhbK6SyQzRtFNExWSNhgqR14piEpw/L3pKBTAdsLAkbSB3yPTNDbQeY2Qeh9PxpPrShmXIBIHsaAEG09ATn3qQK4yQgTHXPB/WkMkhyWdjnrz1/zikAoAXAzksWPbHT86ayq4HBUjow6inY7UdRQBUlDQEs65BHyuvr71ZSNY4i+d0efvDuevNO5HvmmhdufKPl55wOVP4UANLAnPr0pRxTSnPCiOQ9Bn5X+h7GlRiz7WBUjqD1FADwad1puRnAP408ZH0oAUehp69KZjihm2xknsKAPQfhJpn2jV77VHX5bZBDGf9puT+gH5163XM/D7Sf7I8IWaOuJrgfaJPq3I/TFdNUjCiiigAooooAKKKKACiiigAooooAK4Px/8P18QKdT0oLHqsa8joLgDsff0P8Akd5RQB8uukkM0kE8bw3ETFZInGGU9xigV7x4v8B6f4rj87P2TUUHyXUY5I9HH8Q/UevUHxnXfDmr+GZimq2hWPOFuYvmif6Ht9Dg07iM2lxTVdW5BBpw6UwF9KWgUUAFHSk3jdjPPpUhjEa5mdI19WOP0oAZig9M96Y9/bR8RRtM3qflX/E/pTbfWtRsrxLuymFtNGcqYlHH55z+NAHSaP4G8Qa6B5Viba2b/ltdjYMeoHU1t658JtS0/T0m0u5/tB0X95Cw2t/wD1+h5rIs/i34ptB+/e1vM95oQP8A0ArW7bfHCZVUXehqzd2iuCo/Iqf50tQPO0Voi0UiskiNh1dcMh9CKmWuv8Q+M/CXiuLzLzT76w1EDCXcKI+PZvmG4fhn0rkY8PAJIiGTODj+H60wFHFafhzRm8QeJbLTgCYmbzJyO0a8n8+B+NZpwoJPTFet/Cnw8bDR31i5TFzqGDHkcrCPu/8AfR5+m2gDv1UKoVQAAMADtRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACmyRpNG0cqK6MMMrDII9xTqKAOP1X4YeHNTdpI7ZrKVud1s20Z/wB3pXMXPwYkU/6HrOR6TRf4GvV6KAPHh8HNV3fNq1pjPaNs1p2Xwat1IOoarNL6rCgUH8TXp1FO4HLW3w58M21o8A04P5gw0ruS/wCB7fhXA+JPg7ew3TT+H5FuLcjPkzviQHvzjBr2eikB8u6joWraPkajptxbgfxsh2/n0rPLqwBB+or6xZQwIYAg9iK57VPAfhvV9zXOlQLI3JkhHltn1yuM/jTuI+cm6LjvxSH2r2O9+CmmyEmx1W7t+cgSqsgH5ba4/Wfh42kPt/tTzuSP+Pfb/wCzUXA4srk4xUkM0lpJ5kR4/iU9GFX/AOySJtnnjk4zs/8Ar10uifDhtcO3+1RBzj/j23f+zCmBj6TYnxDqllYWiki6kAcDqijlz+AzX0fFEkMSRRKEjRQqqOgA6Cuc8J+B9M8IwsbXdPdSDElzJjcR6AdhXS0hhRRRSA//2Q=="/></td>
+                 <td><strong>nike golf hats</strong></td>
+                 <td style="text-align: center;"><a href="/nike-golf-hats"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+
+
+
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +331,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

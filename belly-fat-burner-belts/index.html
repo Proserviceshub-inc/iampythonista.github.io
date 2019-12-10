@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Belly Fat Burner Belts</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51fGZXBimFL._AC_SX236_SY340_QL65_.jpg" alt="Heating-Relief-Dysmenorrhea-Abdominal-Vibration" /></td>
-		 <td><strong>Heating-Relief-Dysmenorrhea-Abdominal-Vibration</strong> by <em>Semme</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D34FBV8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41eSSFlAfCL._AC_SX236_SY340_QL65_.jpg" alt="ZSZBACE-Slimming-Adjustable-Waistline-74-110cm" /></td>
-		 <td><strong>ZSZBACE-Slimming-Adjustable-Waistline-74-110cm</strong> by <em>ZSZBACE</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B074GZXC2H"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Belly Burner Weight Loss Belt, Black, One-Size Fits All" /></td>
 		 <td><strong>Belly Burner Weight Loss Belt, Black, One-Size Fits All</strong> by <em>2 Elevens</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00313WE9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00313WE9S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+zZiRFR3L._AC_SX236_SY340_QL65_.jpg" alt="iDofit Premium Adjustable Waist Trimmer Belt - Sauna Belt Weight Loss Band Slimming..." /></td>
 		 <td><strong>iDofit Premium Adjustable Waist Trimmer Belt - Sauna Belt Weight Loss Band Slimming...</strong> by <em>iDofit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0175VE1A6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0175VE1A6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QdOzYOf1L._AC_SX236_SY340_QL65_.jpg" alt="Perfotek Waist Trimmer Belt, Slimmer Kit, Weight Loss Wrap, Stomach Fat Burner..." /></td>
 		 <td><strong>Perfotek Waist Trimmer Belt, Slimmer Kit, Weight Loss Wrap, Stomach Fat Burner...</strong> by <em>Perfotek</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01HOR711C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01HOR711C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RNaHDeRxL._AC_SX236_SY340_QL65_.jpg" alt="Woolala Abdominal Toning Belt, ABS Muscle Trainer Electric Waist Trimmer Belly..." /></td>
 		 <td><strong>Woolala Abdominal Toning Belt, ABS Muscle Trainer Electric Waist Trimmer Belly...</strong> by <em>Woolala</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GWNV8YZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GWNV8YZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41fXEdFNzML._AC_SX236_SY340_QL65_.jpg" alt="TNT Pro Series Waist Trimmer Weight Loss Ab Belt - Premium Stomach Fat Burner..." /></td>
 		 <td><strong>TNT Pro Series Waist Trimmer Weight Loss Ab Belt - Premium Stomach Fat Burner...</strong> by <em>TNT Pro Series</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FMWJ6QE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01FMWJ6QE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510ZjG3LH5L._AC_SX236_SY340_QL65_.jpg" alt="LODAY Women Slimming Body Shaper Weight Loss Sweat Belt Neoprene Sauna Waist..." /></td>
 		 <td><strong>LODAY Women Slimming Body Shaper Weight Loss Sweat Belt Neoprene Sauna Waist...</strong> by <em>LODAY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B079J98JW9"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B079J98JW9"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513zHq1kQ3L._AC_SX236_SY340_QL65_.jpg" alt="Actervate Waist Trimmer Belt Black 50 Inch, Slimmer Belt &amp; Sweat Belt for Women..." /></td>
 		 <td><strong>Actervate Waist Trimmer Belt Black 50 Inch, Slimmer Belt &amp; Sweat Belt for Women...</strong> by <em>Actervate</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B011K66YWU"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51IsE15uZpL._AC_SX236_SY340_QL65_.jpg" alt="Reformer-Athletics-Adjustable-Resistant-Smartphone" /></td>
-		 <td><strong>Reformer-Athletics-Adjustable-Resistant-Smartphone</strong> by <em>Reformer Athletics</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00XUKP124"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B011K66YWU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51mLe+6SvEL._AC_SX236_SY340_QL65_.jpg" alt="Junlan Neoprene Sauna Women Waist Trainer Trimmer Belt Fat Burner Sweat Corset..." /></td>
 		 <td><strong>Junlan Neoprene Sauna Women Waist Trainer Trimmer Belt Fat Burner Sweat Corset...</strong> by <em>Junlan</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GZ7NRJT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07GZ7NRJT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41S0gNAmF1L._AC_SX236_SY340_QL65_.jpg" alt="FTEOX Waist Trimmer,Waist Trainer Premium Stomach Fat Burner Wrap Slimming Belt..." /></td>
 		 <td><strong>FTEOX Waist Trimmer,Waist Trainer Premium Stomach Fat Burner Wrap Slimming Belt...</strong> by <em>FTEOX</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C1MKWNV"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C1MKWNV"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51bhqL0DvXL._AC_SX236_SY340_QL65_.jpg" alt="Waist Trimmer Sweat Belt | Waist Shaper Band Trainer for Men and Women| Stomach..." /></td>
 		 <td><strong>Waist Trimmer Sweat Belt | Waist Shaper Band Trainer for Men and Women| Stomach...</strong> by <em>ReccoFlex</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FDTRPR8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FDTRPR8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51PEY6pL0+L._AC_SX236_SY340_QL65_.jpg" alt="Biange Waist Trimmer Belt for Women &amp; Men, Sweat Waist Slimmer Waist trainer,..." /></td>
 		 <td><strong>Biange Waist Trimmer Belt for Women &amp; Men, Sweat Waist Slimmer Waist trainer,...</strong> by <em>Biange</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H49TQN3"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H49TQN3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/312qpwTuZLL._AC_SX236_SY340_QL65_.jpg" alt="RoseJeopal Sauna Waist Belt hot Sweat Neoprene AB Slimming Belt Women Belly Fat..." /></td>
 		 <td><strong>RoseJeopal Sauna Waist Belt hot Sweat Neoprene AB Slimming Belt Women Belly Fat...</strong> by <em>RoseJeopal</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CCN5G1V"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B07CCN5G1V"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515Y7H2ix1L._AC_SX236_SY340_QL65_.jpg" alt="Bracoo SE22 Advanced Waist Trimmer, Broad Coverage Sweat Belt, Caloric Burner..." /></td>
 		 <td><strong>Bracoo SE22 Advanced Waist Trimmer, Broad Coverage Sweat Belt, Caloric Burner...</strong> by <em>Bracoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M0HSLCT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M0HSLCT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/515xgKUZ3iL._AC_SX236_SY340_QL65_.jpg" alt="Fitru Waist Trimmer Weight Loss Ab Belt for Women &amp; Men - Waist Trainer Stomach..." /></td>
 		 <td><strong>Fitru Waist Trimmer Weight Loss Ab Belt for Women &amp; Men - Waist Trainer Stomach...</strong> by <em>Fitru</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01CJ57M4U"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01CJ57M4U"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Hunting Headlamp With Green Lights</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41ZhKh9AiOL._AC_SX236_SY340_QL65_.jpg" alt="Black-Diamond-Icon-Headlamp" /></td>
-		 <td><strong>Black-Diamond-Icon-Headlamp</strong> by <em>Black Diamond</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01LE9Z8PW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41voIXjtDSL._AC_SX236_SY340_QL65_.jpg" alt="Black-Diamond-Spot-Headlamp-Aluminum" /></td>
-		 <td><strong>Black-Diamond-Spot-Headlamp-Aluminum</strong> by <em>Black Diamond</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WGP5FH5"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Princeton Tec Remix LED Headlamp" /></td>
 		 <td><strong>Princeton Tec Remix LED Headlamp</strong> by <em>Princeton Tec</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00UAACCE2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00UAACCE2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510mzRwXw1L._AC_SX236_SY340_QL65_.jpg" alt="BESTSUN Headlamp with Green Light, Red Coyote Varmint Hog Hunting Light, Super..." /></td>
 		 <td><strong>BESTSUN Headlamp with Green Light, Red Coyote Varmint Hog Hunting Light, Super...</strong> by <em>BESTSUN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00J21SMW6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00J21SMW6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51opH2AF2+L._AC_SX236_SY340_QL65_.jpg" alt="GREEN Spot and Flood Retractable Lens Heavy-duty CREE LED Headlight" /></td>
 		 <td><strong>GREEN Spot and Flood Retractable Lens Heavy-duty CREE LED Headlight</strong> by <em>XKGLOW</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00U7VPLD8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00U7VPLD8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/510mzRwXw1L._AC_SX236_SY340_QL65_.jpg" alt="BESTSUN Green Color Light Headlamps Green Coyote Hog Hunting Light Tactical 5000LM..." /></td>
 		 <td><strong>BESTSUN Green Color Light Headlamps Green Coyote Hog Hunting Light Tactical 5000LM...</strong> by <em>BESTSUN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00VNDRJJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00VNDRJJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OMpAvg2ML._AC_SX236_SY340_QL65_.jpg" alt="Boruit Hunnting Headlight with Green light 3T6 LED Night Flashlight Cycling Headlamp..." /></td>
 		 <td><strong>Boruit Hunnting Headlight with Green light 3T6 LED Night Flashlight Cycling Headlamp...</strong> by <em>Boruit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B019WCPV5K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B019WCPV5K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ZKl4C8o9L._AC_SX236_SY340_QL65_.jpg" alt="BORUIT Headlamp with Green Light - Green Coyote Hog Hunting Light - Green Fishing..." /></td>
 		 <td><strong>BORUIT Headlamp with Green Light - Green Coyote Hog Hunting Light - Green Fishing...</strong> by <em>Boruit</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JFV4D13"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07JFV4D13"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61+hOAKyeKL._AC_SX236_SY340_QL65_.jpg" alt="Wicked Lights W403iC &amp; ScanPro iC Green Night Hunting Light and Headlamp Combo..." /></td>
 		 <td><strong>Wicked Lights W403iC &amp; ScanPro iC Green Night Hunting Light and Headlamp Combo...</strong> by <em>Wicked Lights</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078P69MNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51c1t5F2QkL._AC_SX236_SY340_QL65_.jpg" alt="Rechargeable-Mifanstech-Flashlight-Lightweight-Waterproof" /></td>
-		 <td><strong>Rechargeable-Mifanstech-Flashlight-Lightweight-Waterproof</strong> by <em>Mifanstech</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KTMC13C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B078P69MNS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/410yDOQxjtL._AC_SX236_SY340_QL65_.jpg" alt="Black Diamond Storm Headlamp" /></td>
 		 <td><strong>Black Diamond Storm Headlamp</strong> by <em>Black Diamond</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B06WWFW53M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B06WWFW53M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41QbhsDNYML._AC_SX236_SY340_QL65_.jpg" alt="Streamlight 61070 BuckMasters Trident Headlamp, Camo - 80 Lumens" /></td>
 		 <td><strong>Streamlight 61070 BuckMasters Trident Headlamp, Camo - 80 Lumens</strong> by <em>Streamlight</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000PWDEIS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000PWDEIS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Tu5jiptPL._AC_SX236_SY340_QL65_.jpg" alt="Lighthouse Beacon 1000 SUPER BRIGHT LED Headlamp - The best and brightest spotlight..." /></td>
 		 <td><strong>Lighthouse Beacon 1000 SUPER BRIGHT LED Headlamp - The best and brightest spotlight...</strong> by <em>Outdoor Pro Gear</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MSM5ATW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MSM5ATW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OAhZ7EEvL._AC_SX236_SY340_QL65_.jpg" alt="Kohree New 8W 4400mAh Dimmable LED Miner Headlamp Mining Hunting Camping Head..." /></td>
 		 <td><strong>Kohree New 8W 4400mAh Dimmable LED Miner Headlamp Mining Hunting Camping Head...</strong> by <em>Kohree</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00N3HUE1W"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00N3HUE1W"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jzytyU9QL._AC_SX236_SY340_QL65_.jpg" alt="Wicked Lights ScanPro IC Night Hunting Headlamp with Green Intensity Control..." /></td>
 		 <td><strong>Wicked Lights ScanPro IC Night Hunting Headlamp with Green Intensity Control...</strong> by <em>Wicked Lights</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077T9HT86"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077T9HT86"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/417+0s1JwKL._AC_SX236_SY340_QL65_.jpg" alt="GLORYFIRE Tactical Headlamp Headlight Battery Powered Helmet Light Camping Running..." /></td>
 		 <td><strong>GLORYFIRE Tactical Headlamp Headlight Battery Powered Helmet Light Camping Running...</strong> by <em>GLORYFIRE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N1T22A7"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01N1T22A7"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/5179mA2uKGL._AC_SX236_SY340_QL65_.jpg" alt="WINDFIRE Hunting Green Light Tactical 5000LM 1xT6 LED + 2 x Green R5 LED Headlight..." /></td>
 		 <td><strong>WINDFIRE Hunting Green Light Tactical 5000LM 1xT6 LED + 2 x Green R5 LED Headlight...</strong> by <em>WINDFIRE</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B015MVMBSK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B015MVMBSK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

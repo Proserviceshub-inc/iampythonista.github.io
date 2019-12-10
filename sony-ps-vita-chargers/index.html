@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Sony Ps Vita Chargers</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RzL8ZD2oL._AC_SX236_SY340_QL65_.jpg" alt="Charging-Charger-Compatible-Nintendo-Controller" /></td>
-		 <td><strong>Charging-Charger-Compatible-Nintendo-Controller</strong> by <em>TPFOON</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077D4893G"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41pcG1-WJwL._AC_SX236_SY340_QL65_.jpg" alt="Playstation-Charger-Transfer-Replacement-Warranty" /></td>
-		 <td><strong>Playstation-Charger-Transfer-Replacement-Warranty</strong> by <em>Exinoz</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B075ZRJ8Q8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="iKNOWTECH Quality 2IN1 Usb Charger Charging cable for Sony PS Vita Data Sync..." /></td>
 		 <td><strong>iKNOWTECH Quality 2IN1 Usb Charger Charging cable for Sony PS Vita Data Sync...</strong> by <em>iKNOWTECH</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B014KSQXAS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B014KSQXAS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/419nP51aJKL._AC_SX236_SY340_QL65_.jpg" alt="KMD PSVita AC Adapter Home Charger - Sony PS Vita (Sony PSP)" /></td>
 		 <td><strong>KMD PSVita AC Adapter Home Charger - Sony PS Vita (Sony PSP)</strong> by <em>KMD</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00AG361X6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00AG361X6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31HL5Rm37cL._AC_SX236_SY340_QL65_.jpg" alt="SLLEA New USB Cable AC Power Wall Charger Supply Convert Adapter for Sony PSV..." /></td>
 		 <td><strong>SLLEA New USB Cable AC Power Wall Charger Supply Convert Adapter for Sony PSV...</strong> by <em>SLLEA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BWDJV6C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B01BWDJV6C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BiS2brXiL._AC_SX236_SY340_QL65_.jpg" alt="Tomee AC Adapter for PS Vita (Sony PSP)" /></td>
 		 <td><strong>Tomee AC Adapter for PS Vita (Sony PSP)</strong> by <em>Tomee</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007WPM8WO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B007WPM8WO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41R9CPuqnJL._AC_SX236_SY340_QL65_.jpg" alt="PlayStation Vita USB Cable (PlayStation Vita)" /></td>
 		 <td><strong>PlayStation Vita USB Cable (PlayStation Vita)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006PP3YMU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B006PP3YMU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/513iZ6cngZL._AC_SX236_SY340_QL65_.jpg" alt="EtryBest(TM) PSV Power Supply AC Charger Adapter + USB Cable for Sony PS Vita..." /></td>
 		 <td><strong>EtryBest(TM) PSV Power Supply AC Charger Adapter + USB Cable for Sony PS Vita...</strong> by <em>EtryBest</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00SVEJVE8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00SVEJVE8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31CyovHzbnL._AC_SX236_SY340_QL65_.jpg" alt="FunTurbo Upgraded PS Vita Charger Cable, Playstation Vita Charging Cable PSV..." /></td>
 		 <td><strong>FunTurbo Upgraded PS Vita Charger Cable, Playstation Vita Charging Cable PSV...</strong> by <em>Funturbo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07H2W7Y3P"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41dMKecP0RL._AC_SX236_SY340_QL65_.jpg" alt="PSP-3000-Faceplate-Piano-Black-ORIGINAL" /></td>
-		 <td><strong>PSP-3000-Faceplate-Piano-Black-ORIGINAL</strong> by <em>Playstation</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B016CRJ1KY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07H2W7Y3P"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51UjDGPaY2L._AC_SX236_SY340_QL65_.jpg" alt="Khanka All-in-one Double Compartment Hard Carry Travel Case Bag For Sony Psvita... (PlayStation Vita)" /></td>
 		 <td><strong>Khanka All-in-one Double Compartment Hard Carry Travel Case Bag For Sony Psvita... (PlayStation Vita)</strong> by <em>Khanka</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DX8B0OU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DX8B0OU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41SlnsppBXL._AC_SX236_SY340_QL65_.jpg" alt="LANMU AC Adapter Power Supply Charger with USB Charging Cable Accessories Kit..." /></td>
 		 <td><strong>LANMU AC Adapter Power Supply Charger with USB Charging Cable Accessories Kit...</strong> by <em>LANMU</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07G2TY2H1"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07G2TY2H1"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41CJmuKxLGL._AC_SX236_SY340_QL65_.jpg" alt="PS Vita Portable Charger (PlayStation Vita)" /></td>
 		 <td><strong>PS Vita Portable Charger (PlayStation Vita)</strong> by <em>Sony</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006JKARP8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B006JKARP8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41RzL8ZD2oL._AC_SX236_SY340_QL65_.jpg" alt="(New) 5 in 1 USB Type C Charging Cable 6Ft, Micro USB Multi Charger Cord Compatible..." /></td>
 		 <td><strong>(New) 5 in 1 USB Type C Charging Cable 6Ft, Micro USB Multi Charger Cord Compatible...</strong> by <em>TPFOON</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077D4893G"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077D4893G"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51oKvfpOccL._AC_SX236_SY340_QL65_.jpg" alt="TNP PS Vita Charger AC Adapter Adaptor Power Supply Home Wall Travel Charging..." /></td>
 		 <td><strong>TNP PS Vita Charger AC Adapter Adaptor Power Supply Home Wall Travel Charging...</strong> by <em>TNP Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017BC72LO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017BC72LO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31wDkjgUakL._AC_SX236_SY340_QL65_.jpg" alt="Goliton USB charge charger &amp; data sync transfer cable for Sony PlayStation PS..." /></td>
 		 <td><strong>Goliton USB charge charger &amp; data sync transfer cable for Sony PlayStation PS...</strong> by <em>Goliton</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HRTG7H2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00HRTG7H2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41XkTL1Dq6L._AC_SX236_SY340_QL65_.jpg" alt="Gomadic High Output Home Wall AC Charger designed for the Sony Playstation Vita..." /></td>
 		 <td><strong>Gomadic High Output Home Wall AC Charger designed for the Sony Playstation Vita...</strong> by <em>Gomadic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0056A3CX6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0056A3CX6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,6 +267,24 @@
 
 	   </table>
 	</div>
+<div class="table-users my-3">
+           <div class="header">Trending Products</div>
+
+           <table cellspacing="10">
+              <tr>
+                 <th>Product Image</th>
+                 <th>Product Name</th>
+                 <th>View Product</th>
+              </tr>
+
+                              <tr>
+                 <td ><a class="related product image" href = "/aqua-quest-waterproof-travel-backpacks"><img class = "related" src="https://images-na.ssl-images-amazon.com/images/I/51dJkneRZzL._AC_SX236_SY340_QL65_.jpg"/></a></td>
+                 <td><a class="related product name" style="color: black;" href = "/aqua-quest-waterproof-travel-backpacks"><strong>quest waterproof travel backpacks</strong></a></td>
+                 <td style="text-align: center;"><a href="/aqua-quest-waterproof-travel-backpacks"><button type="button" class="btn btn-success">Check Product</button></td></a>
+              </tr>
+	<!--rpBreak-->
+        </table>
+        </div>
 
 
     <footer id="myFooter">
@@ -254,13 +313,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

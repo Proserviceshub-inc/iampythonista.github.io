@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Chocolate Espresso Beans</div>
@@ -86,123 +95,147 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41OucFZIszL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Kicking Horse Coffee</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0027Z8VES"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/4132zIbqlUL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>COCOPOD</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077V3FLNN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAFUAMYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDqdf8AHE+j6zJYRWKSBFB3s+M5FV4viHOQN+mqSem2TH9KyfGaL/wlMzHrsX+VY4lZVO0ZI6CuWVSSk0e1RwlKVOLa1Ovk+IkkIy2nbvYSYqD/AIWc55Glcf8AXX/61cZNM+0go2T6LUUaPKcIv51PtZdzb6jS7Hcf8LQbH/IJOf8Art/9ao2+KMv8OlD8Zf8A61cq1paRxj7RdOX/ALkS/wBTTWigAwkLdN2WJyR60e1l3J+pUux1f/Cz7gjjS0z/ANdD/hR/ws65x/yDEz/10NcjLbhFEitmNumSM1EsbyECNGZj2VSTT9pIX1SjvY7VfifL30xT9Jf/AK1TJ8T0/wCWmlOPpMP8K4KRHjbDqUYdiMGmBgeQQar2kiHhKXRHon/CzrX/AKB0/wD32KX/AIWda/8AQOn/AO+xXnWeKcKftGR9Tp9j0FvibF/Dpcp+soH9KaPiZu6aSw/7bj/CuEVd3J6VKABjj9aTqspYKn1R3Y+I425bSnz/ANdh/hSf8LMgDhW0yYD18wH+lcMZNp9ahkkyeBU+1kX9TpdvxPQW+Jdqoz/Z8x+jimH4o2S/e065H0K157vFRs+fSn7SXcX1Oj2PRh8VdL/isrwfRVP9acPiro/e1vf++F/xrzMkelN+gp+1kQ8HSPUv+Fo6HtyIrwn08of40h+KOijrBef9+x/jXl270FLnjpR7WQlgqfmeqp8TtAcgMbpCf70P+BrQi8caDIgb7cEB/vI3+FeMEemKBlee1UqjIlg4dD3rTtYsNWV20+5ScRkBtuePzorjPhUo+yak3XMqj9DRW0XdXPPqQ5JuJQ8bEf8ACTyf9c1/lWADznqa6Xx9NbnWUiitylyqgyTZ4dccDHtXLK+Cc1xVPiZ9BhnejG/YnEzbcSfMPSmmeGNcgcnkgdqozNNOTtBjiXqzDFV32pGBhi2eTWdjp5i1LdrvZ1Xn36VCLl5GG5yW+vSn3ZWd40iBMaDrjvVZlMSk7ST9KdktiVKT1ZeutTnvGja4Idol2JgYAFRpeXEbZhlKM/ykqcZHoaqzEARtDuOV+YY6GrBaKGEhE8yUjg9adtdyebSyRc1HTlsFgb7dDdTyDLpG27y/qaz5ZvPbzSqoDx8owPypsJbLI0Zy/wB75cYFOZNzk7SR0wB0ptomKb0Y1EaSTCZNTLGQeWoG60GXQ/OuVxVV7lyflUgfSp1ZaSW5ekmEZAj545zTTPIPrVbbKsAnJQI3T5hn8qH3qI5vNBic4YjqtNRZLqRRK1yQOaillkUqWUAOMrTLmHypyvm74yMhu/40TsdiRbllEf3ZF7j0qlEzdS+wgmBbDMf+AjvTfPY8bckelRKSMAHDY6+lG7yx8rA+tMm7RMZGVSx2jHbuaeMvtK9GGS3ZaqozSPt4LnoPWrclqYY9kVykndo+hB+vehLsDlbdkAkJOad5v1pqqz/dwPrTpLSeKHznwQRkDuB649KEmNzihfMzjjPv6U7zVPYkVAJfMj2sx/DvSkOqZUAn0NVYi9z074U4OnaiR/z2X+VFafw+t9Jh0eVtHnmmV3BmMwwQ+OQOKK6YfCeLXd6jZzvj5SPEasDjMK9/rXOwNIkrSKzBgOCOtdF8RSU1+DA6wj+Zrlo3w53MV49a5KnxM9zDa0Y+hJcXdxNjzXkcKeN3OKjF046rnj0pjOzHAk6/7QpjOVGM/wDj1ZM600W47yU52Rk8elSpqcpbHk7s/wAKrzVDecZ3YHru5p8bFHV4iwcHKndg/hRdobSZeXU1ZgEgdmbsoBzUsOqRNuEdkzsoJI4FZSysk29CUlU5zuxg0GUxEtgZfrhjVJmcoJmq+rxGBJDZMquSFOeuKY965sTdQW7bFbazAA7fr6VnR3YWJ43hWTd912JzGfUYq3aTCzt90tv5kM4IKuzKrD1OOtO9yHHlWhYudRRtOVYbUrPwzzEgjB9BWc17IBwBioiYxuYD5GPA3HA9quXuj3NosQa1MMroXZZTjcB3APak7y1LVoadyo12xOSo/IUw3bnoo/75FQ+buOduP0oO/wDu0hjzdN/dH12igX0ijAAx/uiom3AYOPpTo4Z5ztt4WlbGdqDJx9KZLHnUJAx4XntgYoW9kP3VQ4/2RUUcRlYKo+djgDHekKGMnd8pHBpkP0JDeucrti5/2BULS8kEID/u4p3kkhXAwvqSBQINwMgUsAetUQyLyiVyOc9KUBVG5pi2Rjk9KkeNkALIyk9Mg0wRLhgVbB64HemjNjQWjOY2XI6HApyncoB5I601ihJXy2V+gyvNTlUCDC4+WqJR6j8Lk2+GpWxjdcN/IUVP8NFC+EkI/imc/rRXRD4UePXd6kvUzfiFCp1GzeRSUaMgkdRg9q4q60qdFElozXMTHqv3gfQivRviDEfsNnOBkpKV/Mf/AFq4aGeSC4UoHAchWCjqK5qllJnr4S8qKsYxgCyMkkbEjp9aRYZFOQjZ9q6We2MvySxH1VhyR+NZssUkDbHU4PRsdaycjuVMqWmnlphJL90djT7lzJclVGFTgVYDMi42nP0qtKG5YZB71NykktGSLZ2xhjmNxGzFislucqy+hzg8GoJUjLiNUKOvDEPuVvpxUO4q24Zye9PhXc2F3DPYCi+g0tR4AAxnirNrdyCNrYbTH1GRk/Sqbkpkc5qNXZHDqDkUJjmrqxMqh43QjO08Crg1G5uox57CZ0XyhM/LBOyj0FUos7xwcnrUkA2yyKAfWmmZzV0JfSvMYvMOSgwvsPSqhcjvVu5iaRMqrF15wB1FUtjtyUYD3FN7hDVEiTDyJEfknpUljez6beRXdo+yeM5U/wBDUIiI5Kk/hQ6EDK59xjpU37FcujTRZlme+vpLiUBXkbzHKjAz7Ul4vmQ7j1U9aS0OUbAJOelWIpbW3vC13H9ujCfKiZChj6+uKtWsZO99FsUI3D2bxk8qcgGktp3hmDKxXHqM5q48ck5VktY7fAx8oPPvUiWn8UgZj9KLodtBiziWZpLlpJWJyVTln9var0WjTRupvVNqJG3x2qnMzZ6D/wCucVs6VZW2jzxXWrwkOAJILYdT6M/p64qbxDqNy2ZLlbeK6f5sRLgxpjjcepY/pWnS7OVybkowWnf/ACOZ1yWKKaOyt1X7Q/E0i8hfUA+g6e/NUyoVDnnFV4HlF3JM0e/eCoP93PeppFcRkFWyfaobN4RstT2HwRbC28J2IAwXUyH8Sf6YorT0iAW2j2UI/ggRf0FFdq0R87Ud5tmb4yiMnh2Zh1jZW/XH9a81DMZYy2cbh0r1fxBF52g3qdf3RP5c15TEPmRj071x4he9c9vLJfu2vM15W3bJO7AH8aTepGJF3ofvD/Coy22xRxyFYirF5aPZSoGzsmQSRsR1B7H3rlSb1PVulaL8/wACjcQNaMpY74ZOUf1/+vUJ24zjir32qGIMkoXyZDzCx6+4PY1RuI4BJ+4lLRdtxGR9alq2qLjLm0e/9fiUipJ6d8CnKzDhRt96cI0X/lrxnON1OLR9FcEe5qGzZJkDHHUUgBJ4GBVjYrD7y/nTvJjxkzqBTQnYbBC82/YOY1L4x1ApgcGUMOQwrVtvtmgXEcjRw7p4iQkhHMZ9RWeba3ExkjmWNQ25V3Z2+1aKNku5z86k3Z6dC9aKYZUiSPzpWw8wA/h7J/jUt3FsmaOWHy8/MqMOQD0rtfCUFiNJW4tFDSSE+bL1Zm+tcn4yu1TxJIpVywjX7qEjp7V0SpPkvuebTxkXWcNkupkvbJ2GKj+yKab9vh6OxU/7SkUHULb/AJ7LWLg+x3qvF/aQosolOeeaesUafdUD8Ki+323/AD2Wka/th/y1H5UKD7B7WPdE/NbOl2kdpYTa5eoHht+IIj0kfoCfbNYlkf7RvYbS33NJMwUHacL7k11nibSdQvP7P0fTbNhZQYMlwWCoPUn17n8a2p03bmscNfEQuoc2+78v+CZFpqFxNZS6nqQWSKOQmJSOZpj0z/sr6fSub1e5kf5ZHLTTHfI1bnih5bW7s9MtIFFpbwnyWL8uc/MxHbmuWuldZMzMvmnspzROLWjHQnCac49fwJbaP/Rg3cyfoBVy3jM93bwj/lpIq/mapW5JEY7AH+dbfh2LzvEmnoRkeaG/Lms0rySOqUuWnJ+p6+AFAA6AYFFLRXpnyRHcR+dbSxH+NCv5ivHXuIYleI53KSOPavZq8TvIvL1S8QjlZW/nXLiFsevlb1kvQ19PkDwQmZA0QmDMParus6gl/qVxLbhzBhchuikDAOO1ZunxvLpjhFLfMM47ACtLSrmI6PdQsFjjjVjNKcAy54Vc1yxu/dPUrWi/aWu1p9/UXwpZWt7r9+t/BFcBLZCBIgYDLHpnpXTnw7obKf8AiW2x9tmM1h+FNJ1LTtZvpb+2ZElt0SN8hgxDHjitHUtYjiiEVnMjynPmbDkxgDv6V6NJNQWh89iql68mmWB4Y0L/AKBNvgdttL/wjeggcaTbD/gNczJeXNpNHNBdMxflACSH68H8v1rrra6jvLSKdGUl1+ZVOdp71pZGHO2iqfDuhf8AQKt/++afH4e0MOv/ABKrbr/czVgtzT0POc9OlFhc7G6hp1jcTB72yglcDCs6gkL2FV00jShyum2v/fsVfuVMoSR+BjknoKzbTWrC71RLCxka8k5817cbo4QP7z9Ae2OtArs2NOjiitykESRIG+6i4FVbuUidwPWqEniCx0nUo7TUtVt0mYt+4jGcZPBY9uPXFUb/AFDVre6luY7SDVtMdiUeyceag9MHhvwNAmaJkBOGVT9RSgRH/ljF/wB8Cs/T9UsNWBNjcBpF+/A42Sxn0ZTyKt5K9aY07EpMa9Io/wDvkUwyAdEQf8BFR8mkNANmjpjGS66ABRngVJrF0YohChwz9fYVX0mZIrhxIwXcvBPSqF5Obi4kkPc4H0pCOE8duw1XTmRiD5brkH3Fcos5M478966bx622bT3Pq4/lXLxJ8+4/gK5qq949XCSfs0l3NeyXO411ngiDzPEyORkRRs39K5iwTbFz1PJruPh5Duv76fHCIqZ9yc/0rCmrzR34mXLQk/I76iiiu8+bCvH9fj8nxHqKf9NSfz5r2CvIvG5a38W3SrgB1Rxx6gVhXV4no5dNRqu/YXSp3XT7tFOOn86ktmjj0G9aRkLTNsjjc9B/exWLptxK0s8Jk2LImCwH3eRzVdre5Vj+8WUqcBwc1yxi1qevOpGWnoek6BqE7CO4mdpp2tVVmLfIoBOBj+8e9dJbx2lwWmSGNZWGGYKMmvPPh1PO8+sWs2WgCxsFPZvmyRXZopBwjFR7V6NP4UfOYhJVZJdzMvvDoub+2WO7dbK2TaRnLOSc9avWmk2WnzyS2UTI8v3ssSPyq0qhRgDilAZztj6nv6VpzS7mFkhpQmQoOWHX2rMuPENtDObPTYn1XUQceRbn5Y/d36KP1rIv75PEMtxbwXLQeHbA5v7yMkG5cf8ALJD1x6kdajt/G1pY6ZJb6TpK2jL8tugA24/vN71m5Jbm0KU5/CiXxBJIltF/wkDC+u4/3p02zkMUKIf7/d8Y/wDrVoeC7uee0u76VYoLb7kFtAm1IwoyePXpXnc1xczXUlzcTNJcSHLyE9fb6V0HhXX5bS6XTrje9rctsVUXhCerHHNZKd5eR2Tw6hTdtWcM12JLq4uJCGkkkZixPvXpXgqcw+BxdKCUSSRzzjp70tvp+iz6tJBYaHYvptpn7ZfOfkVhyVX1Ncrqur/2hPLZ2Di20kOTHCo2oQOnA9a0clE5qdGUnrodDaahpHi6OSbUrb7DdwEBZ45Nr89MMOevY1ckm1TQXSGa+tdTiYfJFcsIbkD/AHvut+IFcBE4inhmYfLE4fGeuK1dakN7dx6tOrTxznAP3RIR2VTyFHTPeoVTQ3lhY82jsjt7LWLW/ujZlJbS/C7vstyu1yPUHow+lW2Y9CKyWsG8T6DbveTRw6jH+8tp7c82p/hB7/UU3Rdcku7p9I1tFtNchH3eiXK/3kPT8K2OJqzsa2M1HKuxCzVK7CIEvx7VQ1CZoY3Lkbh2Bzigk4XxpcCa+tUyMRhsfWsS3XfKoyNvc1J4mnMmowjPKoT+tUYyWyBxuxiueqrs9LCzUYpHUw/KmfbivQvh7Bs0a4nI5mnP5AD+ua8s850TAc8DpXsXguHyfCljn7zqXP1JNZUY+9c6sdUXsbd2b1FAorrPECvK/iRF5fiWGT/npbr+hIr1SvOPijDi606YDqroT+INZ1PhOrCO1VHH6ThtSEZ6SKV/SgRSm7SKFlRpG2EscKvufaq9rMbe/glzwrgmtF9M1HUp5msrKeSB3IDohINc9rnruVnqzq/BEdvBqetRW1yLtESIGYLgMfmzgeldT1Nct4G0S40W41OO7CpJKsWEVgzDr1x0rqFRlbD5Deh612Q+FHhVneo9bkihnYIo5Nchrmtya7qE3hzQ7gQ20Sk6pqQ6RIPvIp9e36etdLqlv9q0ieL7VLapICsk0A+dR3we1VdH0HTdF0X+zbKISWs3zSvIMtPn+9+FMzXmcTe30V/bR6ZpCi00OwHyhjjzD/fb1JNZoZ7dUmcAJIDsz/EPWvQLzwho915ZW3NuqAjbCcBs9z9KsW3hnQ7SzEX2UTvuDFpuTke/p7Vi6bb1PQjiaUI2ijz6PSNQuLSW8gtme1iGWkHQj29arWdzdtHJDp6zMlxiOVoUyxH90HtXrTOeAMBVGAoHAHpio12woRCiQp1IQBR9ar2SXUz+uP8AlOU1jSNUvNAs7PToBbQJ96xRhnb6ue7VxN0TFIIpIfIkiGxo8YYn1Ir1RdXs2G9ZcjL7m6bAv3iamslt9SVrpbWJdRVQSSo37D0GfXHWnKCYQrygneJ5hY2Tqovr/T7iezAzGiqQJG7A98VqL4f1/WFbUJkSJtv7uJjtwo6Kq9sV1B8QqsGpXYjzaWLeUjg8zS/3QPrgVda4kW2SS6ASYoGkVeQp7gUKmthSxE1rY8/sdP8AEVpOz2FvcwOxBf0fB71u6hpWpeJ7bbrcVtYXNqu6zuoSd4f0P+zVvUtQuw/kx6gbO7LIscYQOCXzgNn0AJNX9OhuTC0urTR3DQ8s8S7Uc9lApqNjKpW590jK0TV9RktVtvEFu8WqhT5Um3AdBxuPYH+Y5pl/J+7ZQfrWhd3MkzPLIdzMayZvuMWqzA4fxMgXU4j3aPn86pWy5OfQf1q/4o/5CUH/AFz/AK1Qs8s+3Gc9Kxmd+G6F9n+Qmvd/DkfleHtPT0gX+VeCN90AdzX0Lp8fladaxj+GJR+gqKW5tj3pFFiiiitzywrhvihFu0mzlx9ybH5iu5rlviJD5vhaRscxyK364/rUy+Fm1B2qRPIZj+7zjjoa39J1i8bTj9lvJYJ4BtkRGIDp2bHqO9ZNs6o/zqGVuCDQUbTr1LqEZjBw6+qnqPyrmR7Elc7L4dpO0utTSsS7Sp8xPsa7FdJa71K3vJrh91u2/aOjcYA+neuY8FWsU+n6zaTFhFNIoDL3QrwfyrsNLIt4jAJomgiULGE/hA46966o/Cjx6r/eSa7kWvX1pY2ax3OcTuEWFB80zE/dA/nWdPq0MEkFv5Ze9mYolqhBK7fvEnoAPWpdUsY7+/tb3zvLntdxR+DwRjPse4quvh61MrXtvO8KeT5LsWy8i5yTu7E09SV7OyuWhqMBnit3YKJI2kDnoMdRTNKvba9sbnVDGyR5ZIjI3EgXoQO2TTE0OxFw4muWmi8srHGG/wBUrdfepri0s2NqtsrxJaJ5cYU8bfp+HWnqHuLYpXGqyxtZLFah5LolTGWwVIGTj2HephdRi5gsLxk+3zIZPJiyVwOvP+NS/Z4xdrdBcSpH5Sc8KucnA9aV7Fb0SbQd5Xa5RtrFfT6UybxehxpH9rao6RoLbT7mfyNq944/mds+7HFX5NcuoDqV3ZIkcdqRb2kZXO5yRkse/JAxXQGyhjSCM2wjW34iG3GynLp9tFbySzwosMjbjHj/AFrev51NjR1U90c9qEtvd6ppll5Rhe3/ANLuoI0xHJIehH/AsmrOp35t7m0txbSXLX0hjyhx5YxksT7VcYI0vm+Wvm4278cgemajlRJI2jkVXRuoYZFUlYynLmscfcaPLrnigWenXRe3s2LXF1knfK3BTd3IXjjpWnr+rZutL0zTrkrEHJcw/dKL1+pJwBXSaXFHFukCCO2tBvCIMAt2rGuIgXUwpFG6tuB2DgHrj0zQSYt/d3TXOoP9r+zWtpErSnAIV+oVffGM/Wsdtbv/ACBJcbVaO282VQv3WJ+T8T6Vrtf6ZOs8FxARCH3sWXKyMD94/pRPNpM1vMV2yG5dd6AHdIw+7+VAHJeInaS7tHkx5jW4LY6Z71DpX/H/AB+igmrPiUBdXjUAALEAAO1QaSM3bN6CsKnU9DC9C80GdRhjUcSSqB+Jr6CVQqhR0AxXiekwC81/S425/wBIQ49gcmvbaVJbjxzu4oKKKK2PPCsbxdD5/hXUUxkiIt+Rz/Stmq2ow/aNMu4f+ekLr+YIpPYqDtJM8FHzJx1xT7ictbqoPzY5qFeI+eopsozyPSuU91s734f3iX2kajavKkU0G1WZscoQQDz9K2Et9CtWjZtXTdHjGbkdO4x715Lb3JsrtLlUDlRtZD0de4Nak1papsmt41MEw3RnH6H3FbKrZWsefLC88272uejypoNvZXBj1VI7PUHIabzgen8AJ4GAenvVh7vQ7zSDb/b7Z7a227ykoyq/wkn68V57o91FZzmC4hSbT7ohbiFhkezD0I9ah0aOOLW7vTJJUFvchrdpSPlyDlGPtuAo9t5EvBtX1PQ7fWvDkd15cOpWwluXAba2cnoB7VPrGq6boVysOoXPk+YN0fyE5H4CvMXthBO0FwnlvE+1yP4cdx61Lq3iO/1WMWlzcLc20D5hlaMK5HQE/hR7XyH9S1VmejaXrug61M1rbXp+1DlchkyPbPBqtqniPTtFvDDO9wZF/wCWkUZ2k+gNea7dyg52n1HUVBK8kihZpXk29Nxzil7byK+pL+Y9AufibpkieU9vdS7TnIjxn9aoT/EiylYFrK8cqMDOBgVwuAenFDYVQAc+ppe2ZX1KHdnZt8RLUfd0u4P1YVC3xDjYgJpEzMxwo8wcmuQyCOTjFbPhKOBNUl1W+QtaaZH5uP78hOEX655/Cmqsm7EywtOKvqdzrniSLQLC10+S0d7y4QTTorD91nsT6/4Vz0njG14LWM4+hBrAurqW9vJ7u4OZZ3Lt+PaoSAwINVzsy+rxtqdEPFWlsu1rSUL3HlgioLvxNouFBjdZR0PlcqK5tztjZicAfrWc3QfrT52J4ddy1rN5DfakZ7Zi8WwDJGOak0tgvmNis7vWhYkCIk+vSom7q5vh1yySOu8CQm78YWrH7sKvJ+mP617HXmfwttzNfaheEfLGixL9Scn+VemVVNWiY4uV6voFFFFaHIFBGQQehoooA8Bvovs9/dw4/wBXKwx+NU2Jrc8WQ/Z/FepJ2aXf+fNYuws5z90VyvQ9uLvFMSC0N1P5bSCLILBiM5+lamjWczyzaZdgxqA0sb8H7vXH1qjDctbltqqWIwrMPu02e8uJQjMwwi7AwHUZzihNA4yvobEujXABYFUh7l2wV47+las+mjV9NhspWhg11FIjYKR9oiUdD2LAdD3xXOwa1dyOyTzHc5zkgYJ/yBTnuLkSxy+e4libfG+eUb1HpTvFCcZvrsdBHoX9vaTFcWDypqkEYWe3n6uo4yPQ4xxWQ2hRx+Yk8xSRWKkgHhs4Ax9a3bK8XV7ldR06c2uuQjzJrRmxFckDll7ZI6itKw1bQvEKTajqdqYtQs1xMqk4b0OB159au0WYOdSN+35f8A4u2tRFevBflQlvGXkYkquewz9cVPdaCsl3HIjPDbzEAoV/1Xux7Dg81Vv7czNJdPcLIJGO2PPzbe2aoTPI8IRncjoSSTkdqjRaWOizeqZpPoSRF5JZHhjWTG04+5/eB/Go7nSYLGO5uHZpUiUqikgAyE4A9e+fwqna39xYxSx27AeaMMx5IHoPzqkqqhBGePWi8ewKMurNl7TT3hSAuFMCYd0IBkcDLHPcc4FbN1Ywab4Ws9JP/Hzcsbxwcb1ODtB/D+dc54dsoNQ8T6ba3K7oHmG5fXvitDxBcS3viK/mnG1hKYwv91VOAPyFVF6XsYVE+ZRv5kdnbiS2XzFjJmYoGbqp6AD8efwqQaZGYgiSAOT95+uM/pWeVHNQSSgfcJ4707kuPmPv9MHm7VmbcPuqV6/5INUWtE3yKCSy4QZ4y3Un8Kryyu0jSb2Vj6Hmo1d1O5XIb1zTViXfuPlgMIXewLN0A9PWrFk23JPIPWqhdmOXYtjpmp4DiAmlPYqh8Z7V8NbNbfwsJgMG5lZ8+3Qfyrr6x/Cdv9l8K6ZH3+zq35jP9a2K1jojhqy5pthRRRTMwooooA8i+IsHk+Ky+MCaFW+uOP6VzA6Cu4+KkG29065/vI0f5HP9a4SAPLMIY13SN91R3PpXNNas9ihJezTFdowJA4Jbb8hHY1WkneQgsenQAYAq3Po2rook+wyMM9BVU6bqEhHlWs2R2KmnGm2rkVcRGErEZfJG4Zq5Dd4AWY7l7P3H1qjd2d3YIpvbaSHzPusw6/Sq0c6wAu3zK3H1qvZPuZfXF2N8jGCr4PVXB6VCl88DOqTBC/D4P3h71V06x1jV3WHTLQrET/rJF2qPxNbd3YafZQSWMsKPq0T83Ac7X9VC+nvR7LzF9c/umeLqMcllLds0k1zFyqEY9KozhUkKAgkHqORmnXNneWLhbuNonKhwrdcHoar2XmL64/5QaVc8sAfSmGRMZzkeoHFRSymZ978uepq5DetDGsKqsluSC8Z6MaPYruH12XYseH7kW3iLT51YfJKM59K6rx1pP9n6yb2PJhvvnx/dbvXHRTxpcq6qANw49K9I8c3UTaJpSNy0pLqfQYFV7NJWMniJOXNY8+nJjUh8qx6AiqDyqkxRiMDoam1i7bMeDlu5NZrSloiv3h1we1LkD6w+wjtljzSVFlVfKcj1p8XBJPJIxT5A9vfoDelWY1JhVB1ZgKqAcmtTR4ftGp6fD133CD9RUSWljajK8uY+i7SEW9nBCvSONVH4DFTUUVqcAUUUUAFFFFAHB/FaHdo1lPj/AFdxtz9VP+FeWrK8M8c0TFJUOVYdjXsnxHtvtHg65YdYHSQfnj+RrxeQEorA8isJ7npYZ/uz0TQ9VfU7aK5VwtxGdsqjsfXHvWi8kUblwRXmWmavNpF2LiIF1b5ZY8/eX/GvRbZ7O506O9ilEkcn5j2NXDY5cQrT0GzSS3aSCeNXQ9A4yKiXTbCJBLNbwseoGwcVNPdulvJNDF5jRrlI2/jqpaXEGq2/nK5WR3CtGf4D/nvVmBpXd9b6fp0k28CRV/doo4z2z6V5neSyyu80nzSkk5+vWun8W+ZFNbQMCsOzeMdGNYcEgtgZWiWTjhXGQfrTQGTbkC4UydPf1q8bk3dwFuZGycJuJzgdqq3Tws2+LO0jJ3djRBbXdxCZYbaWRF/jVTiqEOt7WKS/a3uJBEoyC/UA9qrMrxylMENnGKAWDkvnPeng7iHJOfWgDRm0Oa2shdNLFJGMbijg4J7Y7muq8aSrNd2dtkhbS1RR9SMn+lcFLKTliefrXX+IJ2Fzbu53NNaRMWP+4KQHMNFG+57kFl5C4OOe1ZcqGOVkJHBwcVoTfvnIDfu4uoHUmo4/Lkc4jUH1bvQMZNEjp5tohWADJVuSKhMMqQiZoz5TdGrRiV53+YjYv8A4waW8lD2MsKH7hBK+lIDKXkV0nguDz/FukpjO2UOfw5rm4cFlzkg8cV23wzg87xjAx/5ZQu/6Y/rWctzrpu0W/I9uooorQ4wooooAKKKKAMzxJbfbPDmowf3oGx+Az/SvAUO6PntX0dNGJYJIz0dSv5ivnKeJop54jwY5GH5GsqnQ78I9GiKUY+ZR+FafhXWE0i9eC7y1ldMMk9I2/vVniGRlwwpqSbAcKMjgkjp9KKbvdCxUdpHqkpMbhepI49xXOWELaRrW26wgugQoz3zxVSz8RXdzociSPm6tnG2ZhkvGf8DVWa+musyXEm9xjDHrxWpxF7X7nOpzxzHeFAwM/cbHasBneU+WOX9Kvzyx3bvPdszTSf3OMH1NZoGJP3ZOScZpgMEMayF5V5X+A9DUskl5KU3zPk8IqtwB6AVLe6ddWsSy3cLxgj5NwxmswO7thMgj36UwJLp2QeS2MofvY5+hp8d9stTD5a7T1OOc/Wi1W2Ys97vZBxiMgNn15pk6RrgxkOmPxoEMSBLg5kk8uHOGYDJA9hXS+LrhB9jjiOHNtDGu7qBtrkyzAYXnJ6Vs+IZ4p9XzPz5cEaonQZ2DmkBSuIGtYopbcfvISPNI6kH19amuYIYwGcBS5wpHqapW175N0lxJ+9ZDnb6n/Cm3cgmlWbzS6O24xjgpSGNmjlgkK5OeuKcMBVcNuZhhlNE9yQzNE3EnOD1HtUW7zRmMBXXqvrTAdZsYb63cIHKSqQh6Nz0r0P4TQ+Z4j1OfHCQgfQlv/rGuG0WD7TrllDjlmzj0IBIr0X4OpkazKepeNc/99Vl1R1bQl8j0+iiitDkCiiigAooooAK8E8W2jab4t1OADGZPNT0ww3D+de915r8VtDcxwa5boSYh5U+B0X+FvzOPxqJq6OnDT5Z2fU86jnYxsz8d6rBlZlLcevvU0iloAy9GXNOs5IIbdxLCJXkUqN38B/vCppdWbYxv3UaWlXQtZJGMaSqy7SjDIIqOdVExWNsr2aqFm+Jm3ZIQHkVaX94wJ4XNbM4RwLLnIwfcdaktisQfP324BPYVNdXRuUijYZWBcRkDovoapBWYsfSgB1xdzciV3liA2qrHIU+tUooPPuNsbBI+7t0H1q1NFKPleMqCO461UZjFH5GcL1ye9ADrq2Ns+1ZA4xw69GHrVdm3/dzmlZizYByMdKuRPbiAQPGvznPn/wAS+30piH290thC6RqkqTJtlLLkgex7Gqmq4eZJwxaN1GC3WoplCMREx2mp5YJDpSNIh2q3B9aQFVraRMF1IJG7B7j1ohthLuLNgg42L94+9DXTzx7XbcQOCeoA7Z9KjWV1k8zOG9aBjlji89BOXEWfnI6ge1JOFSRlQhkB+VsckUSyNIfmOT0qEgkdKANnw9dmDVjIyeZJ9mmSPHUMUIB/CvR/g5EF0TUH7tcAZ+ij/GvK9PuRZzyybdzGFok9iwxn8s1698JItnheZv79y36AVmtzpl/Db9DvKKKKs5QooooAKKKKACo54IrqCSC4jWSGRSrowyGB7VJRQB4X4j8NXHh7VZbSKGSazY7oGHPynPyn3GDWL/Z86KXlKQIOTvPP5Dmuv+LOpmXXbW0tpW3W0WZAjEYLHIB/CuN07VDZ3BkCKZD13jI/EHtUxVr2N60nNRb7FjS7mC2lYvGXU/c3r8p+tXLrypD5kO1Q/JjXonsPas64dJXMsQCKx5jHRfpUlvaS3ByJkhyCV3HAbHarMTUsbZJSBM/lx55fGcVWuD5E7qu07TgEd6zl1CeOQxPww4xjrU9teRPKfPQkjgjPFIBWuZThSWb/AHu1V5kEw+Y4Uc/h7VoPfSbBA0SNCpzgL8351RkC+YdnTqM9qYFaUQAEwFgOwfqKYHwcsMgip1toirM83z55QDj86ijVXbYxwD0YdRTENRGmYhOqjOD3q3byOzSQylgjL901aia2LEQKYwEAw5ySe5zUTIpuVk5xjaVHekBWtbe3iknW7B5XELDoG96pTABiOOD1Fa99YTQ7llBQgAlTzgHpWaI2tiszbXXONp6E0hldk29Tz6UrOSiggZHcUjMGJPQGmkjtQxrccudwNe6fDCAw+DLckY8yR3/XH9K8J5OAoJY8ADua+kvDunHSfD9hZMMNDCob/e6n9Salbm03aFjToooqjnCiiigAooooAKp6tfrpWk3d84ytvE0mPXA4FXK434oXxtfCLwqcNdSLFj26n+VJuyLhHmkkeR6b4iubHWX1G4zObhy86nq2eta2rWMF1MZSiOsg3RyxKE3qe+B37GuYEYaTaemK19IuHKLYSOBtYmAse56r+NZc3Lsdzoqb94qSaXPEd0TbkHPv+VMYySKEYYAPftW6W5IYFWBwR6UySGOUfvFB9+9HtWP6nDozIlHmIq5yy9Gp0kMIhEyzAydDEAcj3q2+nR/wsR9aiOn8thuMfKfU0e1ZP1SPcbatNcxBfukccnFRToyIdozTxBNHlAOvJOeKsi0eG282bcFYHaT0aj2jD6rDuZZ3hAoHXmmneMhlIYHnNSFi2dqsyjqQOBT0InkVJOCRgNT9oxfVodx1nvJfcvTp61ZQsr7iM4psA8tWDfeBwT6+lOJ4p87J+rx7lhLtlhaFhmNzk+prHutxLp/DHyB+NXy21Sx7DNZsZLlwx5kU0KbE6EUVskZ4pO1OHKkH8KDgEADnvVXMuVJnV/DnQTrnimGWRc2tjiaTPdh90fnz+Fe9V4V8M9fg0DxFJFeOI7a+QRmQ9EcH5SfbqPxr3UdOuaaImnfUKKKKZmFFFFABRRRQAV5X8Xr0fbNMs93Cq0pH44/pXqleHfFGcz+N5Iz0ggjT8xu/rUy2NqGk7nLSxsoSTBw3NIgaXOwEleuO3pUrbmjLbiQMDBptnObOYygZ4xj0PY/hWVkd93ubcc0l3kSpi8hGJk7kdm/xoJx97g+hp1prFgkqOsTBwck7AR+I9egNWrO+tRJJNqkZnmlk3E7eAMHJ/lxU2LU2lsUwwz1pSRjjmr32/Sza4NtmcJgYHGd3f8O9LdXOkzI4tgIpSTh2U7cYHQfnijlHz+TGKlnbGNJ/37cSuY+Rj+4O31NZWsajNrF8iZALnaiL0RfSta61Swe1aKDETEeUrMTho1GRn03NycelZMU1lFcLcRLHuddpVsjY3qPQdT361XKZ83lqS3Eq6bm0t1Eq7BuTHCnuzGsZ4WCCRPmBP3B1Fbfm6WDIxfc7cjIKg46A+vJP5Ci2vrKENJHEmVQkDBGXY4wD2ABP403qTeyvbUzLe4kddrqzAdGxVlY3OSEYgdTirVq9lNdfLujgh+WIqCdgHQ+5JJPPtTTqsU2IGPlouWLMDnd0C49MU7EuT7GZdynymQnqeCOmKoZ2N7jmt6+v7Mwv5ECbTk/Mg5boPw7/AFqlc3FrMIjIhVVORtUcjGOf5/jQkJvyMxx+9+XkE5FLjMhq214EUMisz4wzEAc56j8Kp53OzepzTM92O4CkYzkV778P9U/tXwdYyMxMkKmF8+q8fyxXgSnk16t8GLlm0zVbYniKdXH/AAIH/wCJpx3Jq/DY9MoooqzlCiiigAooooAK8A8cyeb451Zj/C6r+SgV7/Xz14uO7xlrB/6eGFRPY6MP8TKC/wCpf6VVYnFWkB8pvpUC43YPesjvtoEL4kUjqDWpJ82f7p9KyioU571pRvvt1bv0NJlLsyIrhsZx/WliPz4PTpT/AL6nPUVA5Ksp6c4xSAdcdOOo6VASGJOOtTTMAmT1qtHG0gaRgRCn327fShK4N21FYjZ04PA9KteWjKqgYKjBzVIOZidxCrjn6egqdJtxUIh3AdzngVdrGXM5D1YwzCRScDhgO4qxqkUZkW4hdWDgbgOo96hADruyMNTPPaCJ4FCbZOu4c/nTQmQOMoRUkUXm2qjbnb3pGwq88U21uPKcp1U9KEKRG9s6Mc5x2quowTntWtdXXkwhk2sX4BPasgkkkk9aoyY4N0HpXpfwXfF3rSeqxN/6FXmY616P8GjjV9WX1hQ/qf8AGmZy1iz16iiirOYKKKKACiiigAr528TNv8W6wfW6f+dfRNfOur7brX9Qkzjdcuc/jWc2deFjdsgQfuj9KrSjkEelW4xlWH1qs3OM9Ky6ncleJHgyLnuKtWjExuh6jmqwBRgRViIZYuvSkxpE5ODmoyQVIcDHY9807dn60xxke4oERyspA3AkL1xTZJjKqoWxGv3UHAFNzmKbPHA/nVYE7emTVoxne48jBCjoDT4pJIrhJITiRTx7+1NByMtjAFOlt54kWSWJkV+V3cEj1xTBbF64aGeP7VaqYznbPCf4G9R7GoGdZEw45HRql0xRcR3UYIE5iO0t3XuKp5Cx5zzQw2GyNvkC0Om2PcTg54qSxhWe8IkzsClmx7CmQwtO5d8BB+GaCdyKZi+z6dKZjHWrLoI2MjDhgdg9KgAyeapESVhBxXofwfDR+IL7dwJLb5c98MK8+UZdQe5r0H4eOYvFsWePMiZcfhn+lJytJIap81OTfQ9hooorU4AooooAKKKKAIrp/KtJpB/CjN+Qr5yL+ZM5zks5JP419GXkLXFlPChAaSNkBPYkYryq3+EWqJ/rNUth7BGNZzV7HXh6ignfqcWgwjVWbr9K9Cf4U6oqER6jasT6qwrF1D4b+JbMF44IbxB/zxk5/I4rPlfY61Vp20ZyueKmtx8+faobmKexmMN7bzW0w6pKhU/rUtvIh5DCpZpF3JmIHOOaY02wZxzSPKufvCoHkUn7wpFNFu3tGvbWWQyKGHzfQDsazCdzbV7nFXba4WO2ugHA3KM0mm6Pqupo0+n6bc3MScGSOMkZ+taLbQ55aPUi2rjaBwKc7PI4aSVnYDALHOBU0+n6hZ/8fWnXUPvJCw/pVZplHByD7ip1NYpMltgReRlTgk7TjuDUbxqHZQc4OKW1uI1u4mJGM0+6aOK6lUEYzxTWxLSuRqCmSpxkYOPSjkkAd+gFRGdM9anilVV3bG3HheOlAJdht2jw7UfGeuAc1W5qzcCWWWGCOGWSduBGiksx9hXQaT8N/EmquPMtRp8PeS5OD+Cjmrjsc9VpPU5fowGcc12XgO8D+MdPRuGO4cd+DXUWHwb0+MK2o6jcXD9xGAi5/U10elfD/QNGvor20tpPtERyjvKxx+HSm43M1WUYtLqdNRRRWhyBRRRQAUUUUAFFFFABRRRQBFcWlveJsuoIpk/uyIGH61kS+DPD0xJbSbYE/wB1dv8AKiik0UpNbMrn4f8Ahpuulx/99N/jSD4feGQf+QXH+LN/jRRSsiueXcsxeDPD0IwmkWv/AAJM/wA62o40ijWOJFRFGFVRgAewoopkNt7jqrS6dZTnM1pBIT3eNT/SiimIqt4b0ZzltKs8+vkr/hSN4a0Vm3NpdoW9TEKKKVkVzPuWItH02AYisLVP92FR/SpzaW5ABgiIH+wKKKYrsVLeGN98cMaMe6qAakoooEFFFFABRRRQAUUUUAf/2Q==" alt="Hoosier Hill Farm Hoosier Hill Farm Gourmet Dark Chocolate covered Espresso Beans..." /></td>
 		 <td><strong>Hoosier Hill Farm Hoosier Hill Farm Gourmet Dark Chocolate covered Espresso Beans...</strong> by <em>Hoosier Hill Farm</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0176IXTTW"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0176IXTTW"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51H9JCOsHFL._AC_SX236_SY340_QL65_.jpg" alt="Chocolate Espresso Bean Blend - White, Milk &amp; Dark Chocolate - 3lb Jar - by Dilettante" /></td>
 		 <td><strong>Chocolate Espresso Bean Blend - White, Milk &amp; Dark Chocolate - 3lb Jar - by Dilettante</strong> by <em>Dilettante</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0016NRLHU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0016NRLHU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cacUmiO2L._AC_SX236_SY340_QL65_.jpg" alt="SweetGourmet Chocolate Covered Espresso Beans Blend | White, Milk &amp; Dark Chocolate..." /></td>
 		 <td><strong>SweetGourmet Chocolate Covered Espresso Beans Blend | White, Milk &amp; Dark Chocolate...</strong> by <em>SweetGourmet</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B017F3S1A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B017F3S1A0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51DXpoX-cVL._AC_SX236_SY340_QL65_.jpg" alt="Gourmet Milk &amp; Dark Chocolate covered Espresso Beans, Hoosier Hill Farm (2 lb..." /></td>
 		 <td><strong>Gourmet Milk &amp; Dark Chocolate covered Espresso Beans, Hoosier Hill Farm (2 lb...</strong> by <em>Hoosier Hill Farm</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MQ3I3N6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MQ3I3N6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51IKbc2ldeL._AC_SX236_SY340_QL65_.jpg" alt="Gourmet Milk Chocolate covered Espresso Beans, Hoosier Hill Farm (2 lb Bag)" /></td>
 		 <td><strong>Gourmet Milk Chocolate covered Espresso Beans, Hoosier Hill Farm (2 lb Bag)</strong> by <em>Hoosier Hill Farm</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M15QGYH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M15QGYH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414WPPe0LJL._AC_SX236_SY340_QL65_.jpg" alt="Premium Dark Chocolate Covered Espresso Coffee Beans (1 LB)" /></td>
 		 <td><strong>Premium Dark Chocolate Covered Espresso Coffee Beans (1 LB)</strong> by <em>THE MADELAINE CHOCOLATE COMPANY</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00RC3AWOM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51VKMBUga9L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>KIND</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B007PE7ANY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00RC3AWOM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51jNUYR-j+L._AC_SX236_SY340_QL65_.jpg" alt="Dark Chocolate Covered Espresso Coffee Beans 2 Lb, 32 oz in Resealable Bag By..." /></td>
 		 <td><strong>Dark Chocolate Covered Espresso Coffee Beans 2 Lb, 32 oz in Resealable Bag By...</strong> by <em>First Choice Candy</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01AIXIKH8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01AIXIKH8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Wb72VXoQL._AC_SX236_SY340_QL65_.jpg" alt="Cuckoo Luckoo Gourmet Chocolate Espresso Beans Blend, 2 lb Bag in a BlackTie..." /></td>
 		 <td><strong>Cuckoo Luckoo Gourmet Chocolate Espresso Beans Blend, 2 lb Bag in a BlackTie...</strong> by <em>Black Tie Mercantile</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HS8ZMAA"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HS8ZMAA"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41JoA1-z2cL._AC_SX236_SY340_QL65_.jpg" alt="Cuckoo Luckoo Gourmet Dark Chocolate Espresso Beans, 1 lb Bag in a BlackTie Box" /></td>
 		 <td><strong>Cuckoo Luckoo Gourmet Dark Chocolate Espresso Beans, 1 lb Bag in a BlackTie Box</strong> by <em>Black Tie Mercantile</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00G4HZ7WE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00G4HZ7WE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41EwDxMLPKL._AC_SX236_SY340_QL65_.jpg" alt="Happy Bites 3 Flavor Coffee Beans - Milk Chocolate, Dark Chocolate &amp; Yogurt Covered..." /></td>
 		 <td><strong>Happy Bites 3 Flavor Coffee Beans - Milk Chocolate, Dark Chocolate &amp; Yogurt Covered...</strong> by <em>Happy Bites</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KCMMLGH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07KCMMLGH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51OyUgr79ML._AC_SX236_SY340_QL65_.jpg" alt="Cuckoo Luckoo Gourmet Chocolate Espresso Beans Blend, 1 lb Bag in a BlackTie..." /></td>
 		 <td><strong>Cuckoo Luckoo Gourmet Chocolate Espresso Beans Blend, 1 lb Bag in a BlackTie...</strong> by <em>Black Tie Mercantile</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HS8YDYQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00HS8YDYQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51G9cR4JBKL._AC_SX236_SY340_QL65_.jpg" alt="Chocolate Covered Coffee Espresso Beans (Regular Chocolate, 1 Lb) Branded and..." /></td>
 		 <td><strong>Chocolate Covered Coffee Espresso Beans (Regular Chocolate, 1 Lb) Branded and...</strong> by <em>Jellybean Foods</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00GZ01Z8K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00GZ01Z8K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -210,7 +243,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -238,13 +271,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

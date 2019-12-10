@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Garage Door Thresholds</div>
@@ -86,99 +95,111 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/414HUUouoPL._AC_SX236_SY340_QL65_.jpg" alt="Garadry-Garage-Door-Threshold-Seal" /></td>
-		 <td><strong>Garadry-Garage-Door-Threshold-Seal</strong> by <em>Garadry</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01FR2GCUW"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41oOncBjJ5L._AC_SX236_SY340_QL65_.jpg" alt="Garadry-Garage-Door-Threshold-Design" /></td>
-		 <td><strong>Garadry-Garage-Door-Threshold-Design</strong> by <em>Garadry</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MRA6YUI"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Universal Garage Door Threshold Seal DIY Weather Stripping 11/16 Inch Thick 20..." /></td>
 		 <td><strong>Universal Garage Door Threshold Seal DIY Weather Stripping 11/16 Inch Thick 20...</strong> by <em>Vat Industries</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0791ZT3TT"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0791ZT3TT"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51wiqIYftRL._AC_SX236_SY340_QL65_.jpg" alt="Auto Care Products Inc 53016 16-Feet Tsunami Seal Garage Door Threshold Seal..." /></td>
 		 <td><strong>Auto Care Products Inc 53016 16-Feet Tsunami Seal Garage Door Threshold Seal...</strong> by <em>Auto Care Products Inc.</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000XQ4XYK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000XQ4XYK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IWtTSwEPL._AC_SX236_SY340_QL65_.jpg" alt="M-D Building Products 50101 Weather-Strip Garage Dr 20Ft Bl" /></td>
 		 <td><strong>M-D Building Products 50101 Weather-Strip Garage Dr 20Ft Bl</strong> by <em>M-D Building Products</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001JDCUSM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001JDCUSM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cTW16jBDL._AC_SX236_SY340_QL65_.jpg" alt="Universal Garage Door Threshold Seal DIY Weather Stripping 9.84 Ft Length" /></td>
 		 <td><strong>Universal Garage Door Threshold Seal DIY Weather Stripping 9.84 Ft Length</strong> by <em>Txbizzer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JJMYT47"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07JJMYT47"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41sEc5qCYeL._AC_SX236_SY340_QL65_.jpg" alt="Sensible Solutions 3020 Storm Shield 20-Foot Garage Door Threshold" /></td>
 		 <td><strong>Sensible Solutions 3020 Storm Shield 20-Foot Garage Door Threshold</strong> by <em>Sensible Solutions</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00008YGQS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00008YGQS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51XA9XzPxyL._AC_SX236_SY340_QL65_.jpg" alt="BOWSEN Garage Door Threshold Seal Bottom Weatherproof Floor Buffer Rubber, Not..." /></td>
 		 <td><strong>BOWSEN Garage Door Threshold Seal Bottom Weatherproof Floor Buffer Rubber, Not...</strong> by <em>BOWSEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IJ8T5RS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B01IJ8T5RS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/516lbA6nHxL._AC_SX236_SY340_QL65_.jpg" alt="Weather Defender Original Ultimate Garage Door Threshold Floor Seal" /></td>
 		 <td><strong>Weather Defender Original Ultimate Garage Door Threshold Floor Seal</strong> by <em>Weather Defender</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F2V19PS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51xpMGlG7IL._AC_SX236_SY340_QL65_.jpg" alt="LED-Garage-Ceiling-Light-Deformable" /></td>
-		 <td><strong>LED-Garage-Ceiling-Light-Deformable</strong> by <em>Tanbaby</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BQV1CMY"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07F2V19PS"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41MxUAcYZRL._AC_SX236_SY340_QL65_.jpg" alt="Building &amp; Hardware Garage Door Weather Seal Threshold Bottom Seal - 16 Foot" /></td>
 		 <td><strong>Building &amp; Hardware Garage Door Weather Seal Threshold Bottom Seal - 16 Foot</strong> by <em>Garage Doors</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01IPPNYG8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B01IPPNYG8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31wD8eu9aYL._AC_SX236_SY340_QL65_.jpg" alt="BOWSEN Garage Door Seal Bottom Rubber Weatherproof Threshold Buffering Replacement..." /></td>
 		 <td><strong>BOWSEN Garage Door Seal Bottom Rubber Weatherproof Threshold Buffering Replacement...</strong> by <em>BOWSEN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07GVLJ7D5"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07GVLJ7D5"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -186,7 +207,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -214,13 +235,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

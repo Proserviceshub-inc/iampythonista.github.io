@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Liquid Smokes</div>
@@ -89,56 +98,72 @@
 		 <td><img src="data:image/jpeg;base64,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" alt="Living Nutritionals All-Natural Pure Liquid Smoke 5oz (147ml)" /></td>
 		 <td><strong>Living Nutritionals All-Natural Pure Liquid Smoke 5oz (147ml)</strong> by <em>the raw food world</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00R3SUZDO"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00R3SUZDO"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61P7mRfG0iL._AC_SX236_SY340_QL65_.jpg" alt="Colgin Assorted Liquid Smoke Gift Box 4.0 OZ" /></td>
 		 <td><strong>Colgin Assorted Liquid Smoke Gift Box 4.0 OZ</strong> by <em></em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00H5WG6IG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00H5WG6IG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41AgwQCv9ZL._AC_SX236_SY340_QL65_.jpg" alt="Lazy Kettle Brand All Natural Liquid Smoke | Perfect for Flavoring Meat | Hickory..." /></td>
 		 <td><strong>Lazy Kettle Brand All Natural Liquid Smoke | Perfect for Flavoring Meat | Hickory...</strong> by <em>Lazy Kettle</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000I552GE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000I552GE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41J7k6SdOLL._AC_SX236_SY340_QL65_.jpg" alt="Colgin Liquid Smoke, 16.0 Ounce" /></td>
 		 <td><strong>Colgin Liquid Smoke, 16.0 Ounce</strong> by <em>Colgin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000YOMRA8"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UFZy4WUiL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>La Tourangelle</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B006K3RCPC"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000YOMRA8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41cPoJEAjiL._AC_SX236_SY340_QL65_.jpg" alt="Colgin All Natural Hickory Liquid Smoke 4oz Bottle (Pack of 2) New" /></td>
 		 <td><strong>Colgin All Natural Hickory Liquid Smoke 4oz Bottle (Pack of 2) New</strong> by <em></em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0161BSOC2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B0161BSOC2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41PYZNC0J+L._AC_SX236_SY340_QL65_.jpg" alt="Colgin Mesquite Liquid Smoke, 4.0 Ounce" /></td>
 		 <td><strong>Colgin Mesquite Liquid Smoke, 4.0 Ounce</strong> by <em>Colgin</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SBPCE0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000SBPCE0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -146,7 +171,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -174,13 +199,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

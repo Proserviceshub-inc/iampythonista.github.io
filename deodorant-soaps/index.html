@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Deodorant Soaps</div>
@@ -86,139 +95,171 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/412UtoL9qYL._AC_SX236_SY340_QL65_.jpg" alt="Lumi-Outdoors-Deodorizer-Eliminator-Freshener" /></td>
-		 <td><strong>Lumi-Outdoors-Deodorizer-Eliminator-Freshener</strong> by <em>Lumi Outdoors</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B013TSRYUS"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51Jeit4nUTL._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Alra</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077WKP6VD"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Dial Lavender &amp; Twilight Jasmine Antibacterial Deodorant Soap, 4 oz. Bars -24..." /></td>
 		 <td><strong>Dial Lavender &amp; Twilight Jasmine Antibacterial Deodorant Soap, 4 oz. Bars -24...</strong> by <em>Dial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07CV3L96J"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07CV3L96J"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41rJ6X-GT4L._AC_SX236_SY340_QL65_.jpg" alt="Dial Advanced Deodorant Soap (6 Bars)" /></td>
 		 <td><strong>Dial Advanced Deodorant Soap (6 Bars)</strong> by <em>Dial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01M0L795K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01M0L795K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51FT1rlmGwL._AC_SX236_SY340_QL65_.jpg" alt="Dial Antibacterial Deodorant Soap, White, 4 Ounce, 8 Bars" /></td>
 		 <td><strong>Dial Antibacterial Deodorant Soap, White, 4 Ounce, 8 Bars</strong> by <em>Dial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B001TSLWL8"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B001TSLWL8"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/61T6sVked9L._AC_SX236_SY340_QL65_.jpg" alt="Irish Spring Deodorant Soap Original Scent - 20 ct" /></td>
 		 <td><strong>Irish Spring Deodorant Soap Original Scent - 20 ct</strong> by <em>Irish Spring</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000KTB19K"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000KTB19K"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41Z0ec7m-CL._AC_SX236_SY340_QL65_.jpg" alt="Vermont Soap Organic Deodorant: Sage Lime 3.25 Ounce Value Size | USDA Certified..." /></td>
 		 <td><strong>Vermont Soap Organic Deodorant: Sage Lime 3.25 Ounce Value Size | USDA Certified...</strong> by <em>Vermont Soap</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00V2G016E"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00V2G016E"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51iXMQ2iQ8L._AC_SX236_SY340_QL65_.jpg" alt="Dial Advanced Bar Soap, Hydrofresh Scent, 5 Ounce Bars, 2 Count (Pack of 24)" /></td>
 		 <td><strong>Dial Advanced Bar Soap, Hydrofresh Scent, 5 Ounce Bars, 2 Count (Pack of 24)</strong> by <em>Dial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01ABM6HJE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B01ABM6HJE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31IRuE1U3bL._AC_SX236_SY340_QL65_.jpg" alt="Art of Sport Body Bar Soap (2-Pack), Compete Scent, with Activated Charcoal,..." /></td>
 		 <td><strong>Art of Sport Body Bar Soap (2-Pack), Compete Scent, with Activated Charcoal,...</strong> by <em>Art of Sport</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07F289VL3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+TNFhWk+L._AC_SX236_SY340_QL65_.jpg" alt="gp" /></td>
-		 <td><strong>gp</strong> by <em>Old Spice</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B078J7PNSS"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07F289VL3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51rNZqU5WWL._AC_SX236_SY340_QL65_.jpg" alt="Irish Spring Deodorant Soap Original - 8 Ct" /></td>
 		 <td><strong>Irish Spring Deodorant Soap Original - 8 Ct</strong> by <em>Irish Spring</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00H3R4OLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00H3R4OLE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41IfSTNzXDL._AC_SX236_SY340_QL65_.jpg" alt="Set of (4) Himalayan Salt Soaps Natural Deodorant and Beauty Bar" /></td>
 		 <td><strong>Set of (4) Himalayan Salt Soaps Natural Deodorant and Beauty Bar</strong> by <em>Pure Himalayan Salt</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00HU90RNE"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00HU90RNE"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51QxHYJUn7L._AC_SX236_SY340_QL65_.jpg" alt="Irish Spring Original Deodorant Bar Soap, 3.7 Ounce, 3 Count (8 pack)" /></td>
 		 <td><strong>Irish Spring Original Deodorant Bar Soap, 3.7 Ounce, 3 Count (8 pack)</strong> by <em>Irish Spring</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FY17L3N"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FY17L3N"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51SAlJKAvbL._AC_SX236_SY340_QL65_.jpg" alt="IRISH SPRING Deodorant Soap Original, 3.75 Ounce" /></td>
 		 <td><strong>IRISH SPRING Deodorant Soap Original, 3.75 Ounce</strong> by <em>Irish Spring</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00QU5PGH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00QU5PGH6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51up7WciHKL._AC_SX236_SY340_QL65_.jpg" alt="Dial Antibacterial Deodorant Soap, White - 4 Ounce, 12 Bars" /></td>
 		 <td><strong>Dial Antibacterial Deodorant Soap, White - 4 Ounce, 12 Bars</strong> by <em>Dial</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077YWQZ11"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B077YWQZ11"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51BFwErItvL._AC_SX236_SY340_QL65_.jpg" alt="Irish Spring Original Deodorant Soap 20 x 3.75 oz. Soap Unisex" /></td>
 		 <td><strong>Irish Spring Original Deodorant Soap 20 x 3.75 oz. Soap Unisex</strong> by <em>Kodiake</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B008MTVY3S"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B008MTVY3S"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AjYorolRL._AC_SX236_SY340_QL65_.jpg" alt="Pure &amp; Basic Deodorant Bar Soap, Natural, Green Tea, 6.4-Ounces (Pack of 6)" /></td>
 		 <td><strong>Pure &amp; Basic Deodorant Bar Soap, Natural, Green Tea, 6.4-Ounces (Pack of 6)</strong> by <em>Pure &amp; Basic</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SSSWD6"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000SSSWD6"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -226,7 +267,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -254,13 +295,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

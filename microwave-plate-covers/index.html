@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Microwave Plate Covers</div>
@@ -86,115 +95,135 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DLWcNEP+L._AC_SX236_SY340_QL65_.jpg" alt="Microwave-Plate-Covers-Adjustable-Splatter" /></td>
-		 <td><strong>Microwave-Plate-Covers-Adjustable-Splatter</strong> by <em>SIZL Cooking</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BBKX65M"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="data:image/jpeg;base64,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" alt="Microwave-Plate-Cover-Anti-Splatter-Dishwasher" /></td>
-		 <td><strong>Microwave-Plate-Cover-Anti-Splatter-Dishwasher</strong> by <em>ROSERAIN</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BC6D2LH"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="Tovolo Vented, Easy Grip, Collapsible Microwave Cover, 10.5 Inch, Red" /></td>
 		 <td><strong>Tovolo Vented, Easy Grip, Collapsible Microwave Cover, 10.5 Inch, Red</strong> by <em>Tovolo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000SOS7WG"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000SOS7WG"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DlX-k2SHL._AC_SX236_SY340_QL65_.jpg" alt="Microwave Plate Cover, Anti-Splatter Plate Lid w/Steam Vents Microwave Food Cover..." /></td>
 		 <td><strong>Microwave Plate Cover, Anti-Splatter Plate Lid w/Steam Vents Microwave Food Cover...</strong> by <em>ROSERAIN</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BC6D2LH"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		 <td class="address"><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+		
+		
+				 <td><a href="https://amazon.com/dp/B07BC6D2LH"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31gGpQvVR9L._AC_SX236_SY340_QL65_.jpg" alt="Microwave Plate Cover with Magnetic Hover Function | Microwave Cover for Food..." /></td>
 		 <td><strong>Microwave Plate Cover with Magnetic Hover Function | Microwave Cover for Food...</strong> by <em>ELIFANA</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0796BY26B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B0796BY26B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31wmjUfK0LL._AC_SX236_SY340_QL65_.jpg" alt="Bezrat Glass Microwave Cover for Food (Large 12-inch) Black, Collapsible and..." /></td>
 		 <td><strong>Bezrat Glass Microwave Cover for Food (Large 12-inch) Black, Collapsible and...</strong> by <em>Bezrat</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07FWCJJ31"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07FWCJJ31"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LB8wB3QdL._AC_SX236_SY340_QL65_.jpg" alt="Nordic Ware Deluxe Plate Covers, 2 Pack" /></td>
 		 <td><strong>Nordic Ware Deluxe Plate Covers, 2 Pack</strong> by <em>Nordic Ware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01N04T8X3"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41LHlovlBsL._AC_SX236_SY340_QL65_.jpg" alt="Microwave-Splatter-Multiple-Dishwasher-Cooking" /></td>
-		 <td><strong>Microwave-Splatter-Multiple-Dishwasher-Cooking</strong> by <em>Big Dreem</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KVK8ZPZ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01N04T8X3"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41VmXF3dIaL._AC_SX236_SY340_QL65_.jpg" alt="Elegant Live Set of 5 Microwave Food Covers" /></td>
 		 <td><strong>Elegant Live Set of 5 Microwave Food Covers</strong> by <em>Elegant Live</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01DFG8RUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01DFG8RUK"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41DLWcNEP+L._AC_SX236_SY340_QL65_.jpg" alt="Set of 5 Microwave Plate Covers with Adjustable Steam Vents; Microwave Splatter..." /></td>
 		 <td><strong>Set of 5 Microwave Plate Covers with Adjustable Steam Vents; Microwave Splatter...</strong> by <em>SIZL Cooking</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07BBKX65M"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07BBKX65M"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/319KGZ9-PXL._AC_SX236_SY340_QL65_.jpg" alt="Ventilated Nesting Microwave Covers - Set of 5" /></td>
 		 <td><strong>Ventilated Nesting Microwave Covers - Set of 5</strong> by <em>AGIS</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B0060YJFVU"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B0060YJFVU"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41T7u4amH4L._AC_SX236_SY340_QL65_.jpg" alt="Nordic Ware Microwave Plate Cover, 11-Inch" /></td>
 		 <td><strong>Nordic Ware Microwave Plate Cover, 11-Inch</strong> by <em>Nordic Ware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00004W4UQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00004W4UQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31tnl-uvx3L._AC_SX236_SY340_QL65_.jpg" alt="Nordic Ware Microondas Spatter Cover 2 Pack" /></td>
 		 <td><strong>Nordic Ware Microondas Spatter Cover 2 Pack</strong> by <em>Nordic Ware</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00YW6FP12"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B00YW6FP12"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31PahesqoQL._AC_SX236_SY340_QL65_.jpg" alt="Ram-Pro Plastic Microwave Plate Cover Spatter Guard w/Paragon Steam Vented Clear..." /></td>
 		 <td><strong>Ram-Pro Plastic Microwave Plate Cover Spatter Guard w/Paragon Steam Vented Clear...</strong> by <em>Ram-Pro</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07C99B77R"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07C99B77R"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -202,7 +231,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -230,13 +259,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>

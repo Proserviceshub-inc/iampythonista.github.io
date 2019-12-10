@@ -24,14 +24,42 @@
 	<meta content='$' name='currency'>
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" media="all" href="../css/main.css" data-turbolinks-track="true" />
 	<link rel="stylesheet" media="all" href="../css/custom.css" data-turbolinks-track="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--	<link rel="stylesheet" href="assets/css/footer.css">-->
   </head>
+<style>
+.imagee {
+  width: 200px;
+  height: 130px;
+  box-shadow: 5px 6px #888888;
+}
+
+.card {
+        height: 175px;
+}
+
+.col {
+        font-family: latolatin,sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+        text-transform: capitalize;
+
+}
+h4 {
+
+        text-transform: capitalize;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: underline;
+}
+
+</style>
   <body>
 
 <div class="nav">
@@ -49,31 +77,12 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Trending</a>
-    <a href="#" target="_blank">Services</a>
-    <a href="#" target="_blank">ContactUs</a>
+    <a href="/" target="_blank">Home</a>
+    <a href="/categories" target="_blank">All Categories</a>
+    
+    <a href="/contact" target="_blank">ContactUs</a>
   </div>
 </div>
-<!-- =======================================================================================================================  
-<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature">
-      <span itemprop="name">Literature</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  ›
-  <li itemprop="itemListElement" itemscope
-      itemtype="https://schema.org/ListItem">
-    <a itemtype="https://schema.org/Thing"
-       itemprop="item" href="https://example.com/literature/speculativefiction">
-      <span itemprop="name">Speculative Fiction</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol>
--->
 
 	<div class="table-users">
 	   <div class="header">Best Window Insulation Kits</div>
@@ -86,107 +95,123 @@
 		 <th>View Product</th>
 	      </tr>
 			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41UHVpYnddL._AC_SX236_SY340_QL65_.jpg" alt="Insulation-Insulator-Plastics-Windows-Weatherization" /></td>
-		 <td><strong>Insulation-Insulator-Plastics-Windows-Weatherization</strong> by <em>fowong</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07KPWD59W"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NbjUTXISL._AC_SX236_SY340_QL65_.jpg" alt="Hicoo-Stripping-Insulation-Weatherstrip-Soundproofing" /></td>
-		 <td><strong>Hicoo-Stripping-Insulation-Weatherstrip-Soundproofing</strong> by <em>Hicoo</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JMQC6HM"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
 		 <td><img src="data:image/jpeg;base64,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" alt="3M Indoor Window Insulator Kit, 5-Window" /></td>
 		 <td><strong>3M Indoor Window Insulator Kit, 5-Window</strong> by <em>3M</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B00002NCJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B00002NCJI"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MwulMV-xL._AC_SX236_SY340_QL65_.jpg" alt="Duck Brand Indoor 5-Window Shrink Film Insulator Kit, 62-Inch x 210-Inch, 281504" /></td>
 		 <td><strong>Duck Brand Indoor 5-Window Shrink Film Insulator Kit, 62-Inch x 210-Inch, 281504</strong> by <em>Duck</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000NHY1P0"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B000NHY1P0"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41e-VAMFfOL._AC_SX236_SY340_QL65_.jpg" alt="2 Pack 33Ft Long Insulation Weatherproof Doors and Windows Soundproofing Seal..." /></td>
 		 <td><strong>2 Pack 33Ft Long Insulation Weatherproof Doors and Windows Soundproofing Seal...</strong> by <em>CloudBuyer</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B076Z9591D"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B076Z9591D"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31qkqAxeioL._AC_SX236_SY340_QL65_.jpg" alt="Duck MAX Strength Heavy Duty Insulating Film Window Kit, 3-Window, 62-Inch x..." /></td>
 		 <td><strong>Duck MAX Strength Heavy Duty Insulating Film Window Kit, 3-Window, 62-Inch x...</strong> by <em>Duck</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01MF50VOQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B01MF50VOQ"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51r4iwBUP4L._AC_SX236_SY340_QL65_.jpg" alt="Frost King V76H Shrink Window Kit 84-Inch by 110-Inch, Clear" /></td>
 		 <td><strong>Frost King V76H Shrink Window Kit 84-Inch by 110-Inch, Clear</strong> by <em>Frost King</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000AXON8C"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000AXON8C"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51H5a-3JyTL._AC_SX236_SY340_QL65_.jpg" alt="SES.CO Reusable Transparent Indoor Window Insulation Kit,Heavy Duty Weatherproof..." /></td>
 		 <td><strong>SES.CO Reusable Transparent Indoor Window Insulation Kit,Heavy Duty Weatherproof...</strong> by <em>SES.CO</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B077K6KRWN"><button type="button" class="btn btn-success">Check Product</button></td></a>
-	      </tr>
-
-			      <tr>
-		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/41i6piC-pvL._AC_SX236_SY340_QL65_.jpg" alt="Reflective-Insulation-Shield-Thermal-x100ft" /></td>
-		 <td><strong>Reflective-Insulation-Shield-Thermal-x100ft</strong> by <em>IMP AD-3</em></td>
-
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B01BDWY92I"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B077K6KRWN"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/512I8LbA0XL._AC_SX236_SY340_QL65_.jpg" alt="Frost King V73/9H Indoor Shrink Window Kit 42-Inch by 62-Inch, Clear" /></td>
 		 <td><strong>Frost King V73/9H Indoor Shrink Window Kit 42-Inch by 62-Inch, Clear</strong> by <em>Frost King</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B000AXSVJ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+				 <td><a href="https://amazon.com/dp/B000AXSVJ4"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51NbjUTXISL._AC_SX236_SY340_QL65_.jpg" alt="Hicoo Weather Stripping for Door Window Insulation kit Rubber Door Seal Strip..." /></td>
 		 <td><strong>Hicoo Weather Stripping for Door Window Insulation kit Rubber Door Seal Strip...</strong> by <em>Hicoo</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07JMQC6HM"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></td>
+				 <td><a href="https://amazon.com/dp/B07JMQC6HM"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/51+IHowZrSL._AC_SX236_SY340_QL65_.jpg" alt="Duck 281068 5 Window Insulation Kit" /></td>
 		 <td><strong>Duck 281068 5 Window Insulation Kit</strong> by <em>Duck</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B002M411I2"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span></td>
+		
+		
+				 <td><a href="https://amazon.com/dp/B002M411I2"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			      <tr>
 		 <td><img src="https://images-na.ssl-images-amazon.com/images/I/31HhqqCW7ZL._AC_SX236_SY340_QL65_.jpg" alt="G Greenfilm Static Cling Window Tint 70% Easy DIY for Home and Residential, No..." /></td>
 		 <td><strong>G Greenfilm Static Cling Window Tint 70% Easy DIY for Home and Residential, No...</strong> by <em>G</em></td>
 
-		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></td>
-		 <td><a href="https://amazon.com/dp/B07D7GFH6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
+		
+		
+		
+		
+		
+		 <td class="address"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></td>		 <td><a href="https://amazon.com/dp/B07D7GFH6B"><button type="button" class="btn btn-success">Check Product</button></td></a>
 	      </tr>
 
 			
@@ -194,7 +219,7 @@
 
 	   </table>
 	</div>
-
+<!--htmlBreak-->
 
     <footer id="myFooter">
         <div class="container">
@@ -222,13 +247,8 @@
                         
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                <div class="col-sm-3 my-5">
+                    <button type="button" class="btn btn-default my-5">Contact us</button>
                 </div>
             </div>
         </div>
